@@ -579,11 +579,11 @@ function FixturesTab({ squads, fixtures, setSelectedTeamFilter, setTab }) {
    ═══════════════════════════════════════════ */
 function OptimizerPanel({ preset, setPreset, chip, setChip, transferMode, setTransferMode, myTeam, freeTransfers, setFreeTransfers, optimizing, runOptimize, result }) {
   const presets = [
-    { id: 'default', label: '⚡ Balanced', desc: 'Max total xPts' },
-    { id: 'value', label: '💎 Value', desc: 'Best pts per $' },
-    { id: 'safe', label: '🛡️ Safe', desc: 'High ownership' },
-    { id: 'risky', label: '🎯 Differential', desc: 'Low ownership gems' },
-    { id: 'template', label: '👥 Template', desc: 'Popular picks' },
+    { id: 'default', label: '⚡ Balanced', desc: 'Max total xPts, balanced risk & reward' },
+    { id: 'value', label: '💎 Value', desc: 'Maximize points-per-million, hunt for budget gems' },
+    { id: 'safe', label: '🛡️ Safe', desc: 'Prioritize high ownership, protect your rank' },
+    { id: 'risky', label: '🎯 Differential', desc: 'Target low ownership gems for maximum upside' },
+    { id: 'template', label: '👥 Template', desc: 'Follow the crowd, highly popular picks' },
   ];
 
   return (
@@ -603,9 +603,9 @@ function OptimizerPanel({ preset, setPreset, chip, setChip, transferMode, setTra
                   key={p.id}
                   className={`preset-btn ${preset === p.id ? 'active' : ''}`}
                   onClick={() => setPreset(p.id)}
-                  title={p.desc}
                 >
-                  {p.label}
+                  <div className="preset-label">{p.label}</div>
+                  <div className="preset-desc">{p.desc}</div>
                 </button>
               ))}
             </div>
