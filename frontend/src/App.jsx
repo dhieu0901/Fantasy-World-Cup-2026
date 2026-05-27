@@ -180,12 +180,14 @@ export default function App() {
     
     // Apply search filter
     if (debouncedSearch) {
-      const lowerSearch = debouncedSearch.toLowerCase();
+      const normalizeStr = (str) => str ? str.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase() : '';
+      const lowerSearch = normalizeStr(debouncedSearch);
       list = list.filter(p => 
-        (p.known_name || '').toLowerCase().includes(lowerSearch) || 
-        (p.last_name || '').toLowerCase().includes(lowerSearch) ||
-        (p.first_name || '').toLowerCase().includes(lowerSearch) ||
-        (p.team_abbr || '').toLowerCase().includes(lowerSearch)
+        normalizeStr(p.known_name).includes(lowerSearch) || 
+        normalizeStr(p.last_name).includes(lowerSearch) ||
+        normalizeStr(p.first_name).includes(lowerSearch) ||
+        normalizeStr(p.team_abbr).includes(lowerSearch) ||
+        normalizeStr(p.display_name).includes(lowerSearch)
       );
     }
 

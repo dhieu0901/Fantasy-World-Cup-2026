@@ -114,7 +114,8 @@ function PlayerSelectModal({ isOpen, onClose, players, targetPos, onSelect, curr
   const filtered = players.filter(p => {
     if (currentTeamIds.includes(p.id)) return false;
     if (targetPos && targetPos !== 'ANY' && p.position !== targetPos) return false;
-    if (search && !p.display_name.toLowerCase().includes(search.toLowerCase())) return false;
+    const normalizeStr = (str) => str ? str.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase() : '';
+    if (search && !normalizeStr(p.display_name).includes(normalizeStr(search))) return false;
     return true;
   }).sort((a,b) => (b.projected_pts||0) - (a.projected_pts||0)).slice(0, 50);
 
