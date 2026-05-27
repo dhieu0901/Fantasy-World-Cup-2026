@@ -4,14 +4,14 @@ import React, { useState, useMemo, useRef, useEffect } from 'react';
 // Transfer rules per stage (WC 2026 Fantasy)
 // ══════════════════════════════════════════════
 const TRANSFER_RULES = {
-  GROUP_MD1: { label: 'Group MD1', freeOptions: ['unlimited'], default: 'unlimited' },
-  GROUP_MD2: { label: 'Group MD2', freeOptions: [0, 1, 2, 3], default: 2 },
-  GROUP_MD3: { label: 'Group MD3', freeOptions: [0, 1, 2, 3], default: 2 },
-  R32:       { label: 'Round of 32', freeOptions: ['unlimited'], default: 'unlimited' },
-  R16:       { label: 'Round of 16', freeOptions: [0, 1, 2, 3, 4], default: 4 },
-  QF:        { label: 'Quarter-Finals', freeOptions: [0, 1, 2, 3, 4], default: 4 },
-  SF:        { label: 'Semi-Finals', freeOptions: [0, 1, 2, 3, 4, 5], default: 5 },
-  FINAL:     { label: 'Final', freeOptions: [0, 1, 2, 3, 4, 5, 6], default: 6 },
+  GROUP_MD1: { label: 'Group MD1', freeOptions: ['unlimited'], default: 'unlimited', maxCountry: 3 },
+  GROUP_MD2: { label: 'Group MD2', freeOptions: [0, 1, 2, 3], default: 2, maxCountry: 3 },
+  GROUP_MD3: { label: 'Group MD3', freeOptions: [0, 1, 2, 3], default: 2, maxCountry: 3 },
+  R32:       { label: 'Round of 32', freeOptions: ['unlimited'], default: 'unlimited', maxCountry: 3 },
+  R16:       { label: 'Round of 16', freeOptions: [0, 1, 2, 3, 4], default: 4, maxCountry: 4 },
+  QF:        { label: 'Quarter-Finals', freeOptions: [0, 1, 2, 3, 4], default: 4, maxCountry: 5 },
+  SF:        { label: 'Semi-Finals', freeOptions: [0, 1, 2, 3, 4, 5], default: 5, maxCountry: 6 },
+  FINAL:     { label: 'Final', freeOptions: [0, 1, 2, 3, 4, 5, 6], default: 6, maxCountry: 8 },
 };
 
 const TRANSFER_PENALTY = -3; // pts per extra transfer
@@ -449,6 +449,21 @@ export default function SquadPlannerTab({ players, myTeamIds, setMyTeam, optimRe
 
   const handleSelectPlayer = (newPlayer) => {
     let newIds = [...myTeamIds];
+    
+    // Validate country limit
+    const maxPerCountry = TRANSFER_RULES[stage]?.maxCountry || 3;
+    const currentCountryCount = newIds.reduce((count, id) => {
+      if (playerToAction && id === playerToAction.id) return count; // Ignore player being replaced
+      const p = players.find(x => x.id === id);
+      if (p && p.team_abbr === newPlayer.team_abbr) return count + 1;
+      return count;
+    }, 0);
+
+    if (currentCountryCount >= maxPerCountry) {
+      alert(`Rule violation: You can only select up to ${maxPerCountry} players from ${newPlayer.team_abbr} in ${TRANSFER_RULES[stage]?.label}.`);
+      return;
+    }
+
     if (playerToAction) {
       // If transferring out the manual captain, clear captain override
       if (playerToAction.id === manualCaptainId) {
