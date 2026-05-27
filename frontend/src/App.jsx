@@ -146,6 +146,23 @@ export default function App() {
     setOptimizing(false);
   }, [preset, chip, transferMode, myTeam, freeTransfers]);
 
+  // Force Sync
+  const [isSyncing, setIsSyncing] = useState(false);
+  const handleSync = async () => {
+    setIsSyncing(true);
+    try {
+      await api.triggerSync();
+      // Reload stats
+      const sData = await api.getStats();
+      setStats(sData);
+      alert("✅ Data synchronized successfully!");
+    } catch (e) {
+      console.error('Sync failed:', e);
+      alert("❌ Sync failed: " + e.message);
+    }
+    setIsSyncing(false);
+  };
+
   // Sort handler
   const handleSort = (col) => {
     if (sortBy === col) { setSortDesc(!sortDesc); }
@@ -284,6 +301,24 @@ export default function App() {
 
         {/* ── Sidebar ── */}
         <aside className="app-sidebar">
+          <div style={{ display: 'flex', justifyContent: 'flex-end', marginBottom: '16px' }}>
+            <button 
+              onClick={handleSync}
+              disabled={isSyncing}
+              style={{
+                display: 'flex', alignItems: 'center', gap: '6px',
+                background: 'var(--clr-bg-elevated)', border: '1px solid var(--clr-border)',
+                color: 'var(--clr-text-muted)', padding: '6px 12px', borderRadius: '4px',
+                fontSize: '0.75rem', cursor: isSyncing ? 'not-allowed' : 'pointer',
+                transition: 'all 0.2s'
+              }}
+              onMouseEnter={(e) => { e.currentTarget.style.color = 'var(--clr-text)'; e.currentTarget.style.borderColor = 'var(--clr-border-hover)'; }}
+              onMouseLeave={(e) => { e.currentTarget.style.color = 'var(--clr-text-muted)'; e.currentTarget.style.borderColor = 'var(--clr-border)'; }}
+            >
+              {isSyncing ? <Icon.Loader /> : <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 2v6h-6"/><path d="M3 12a9 9 0 1 0 2.13-5.88L2 8"/></svg>}
+              {isSyncing ? 'Syncing...' : 'Force Sync Data'}
+            </button>
+          </div>
           <OptimizerPanel
             preset={preset}
             setPreset={setPreset}
