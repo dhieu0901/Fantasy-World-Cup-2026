@@ -3,7 +3,7 @@
    Dark theme with gold/navy FIFA World Cup palette
    ═══════════════════════════════════════════════ */
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Geist+Mono:wght@400;500;600;700&family=Geist:wght@300;400;500;600;700&display=swap');
 
 /* ── Tokens ── */
 :root {
@@ -77,8 +77,9 @@
   --transition-slow: 400ms var(--ease-out);
 
   /* Font */
-  --font-sans:  'Inter', system-ui, -apple-system, sans-serif;
-  --font-mono:  'JetBrains Mono', 'Cascadia Code', monospace;
+  --font-display: 'Bebas Neue', sans-serif;
+  --font-sans:  'Geist', system-ui, -apple-system, sans-serif;
+  --font-mono:  'Geist Mono', monospace;
 
   /* Layout */
   --header-h: 56px;
@@ -102,6 +103,7 @@ html {
 
 body {
   font-family: var(--font-sans);
+  font-variant-numeric: tabular-nums;
   background: var(--clr-bg);
   color: var(--clr-text);
   line-height: 1.5;
@@ -139,15 +141,16 @@ img { max-width: 100%; display: block; }
 
 /* ── Typography ── */
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 700;
-  line-height: 1.2;
-  letter-spacing: -0.02em;
+  font-family: var(--font-display);
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: 0.04em;
 }
 
-h1 { font-size: 1.75rem; }
-h2 { font-size: 1.375rem; }
-h3 { font-size: 1.125rem; }
-h4 { font-size: 1rem; }
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.5rem; }
+h4 { font-size: 1.25rem; }
 
 .mono { font-family: var(--font-mono); }
 .text-dim { color: var(--clr-text-dim); }
@@ -205,8 +208,9 @@ h4 { font-size: 1rem; }
 }
 
 .header-brand h1 {
-  font-size: 1.125rem;
-  font-weight: 800;
+  font-size: 1.75rem;
+  font-weight: 400;
+  letter-spacing: 0.05em;
   background: linear-gradient(135deg, var(--clr-gold), var(--clr-teal));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -923,9 +927,9 @@ h4 { font-size: 1rem; }
 /* Points badge below name */
 .pitch-pts {
   padding: 2px 4px;
-  font-size: 0.7rem;
-  font-weight: 800;
-  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  font-weight: 400;
+  font-family: var(--font-display);
   width: 100%;
   text-align: center;
   color: #fff;
