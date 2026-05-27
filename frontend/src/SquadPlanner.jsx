@@ -324,17 +324,24 @@ export default function SquadPlannerTab({ players, myTeamIds, setMyTeam, optimRe
   // Determine which squad to show: optimizer result OR myTeam
   const isOptimMode = !!optimResult;
   
-  const rawXi = isOptimMode ? optimResult.starting_xi : teamPlayers.filter(p => !benchedIds.includes(p.id));
-  const rawBench = isOptimMode ? optimResult.bench : teamPlayers.filter(p => benchedIds.includes(p.id));
+  const rawXi = isOptimMode ? [...optimResult.starting_xi] : teamPlayers.filter(p => !benchedIds.includes(p.id));
+  const rawBench = isOptimMode ? [...optimResult.bench] : teamPlayers.filter(p => benchedIds.includes(p.id));
   
   // Sort bench properly (GK first, then pts descending)
-  if (!isOptimMode) {
-    rawBench.sort((a, b) => {
-      if (a.position === 'GK' && b.position !== 'GK') return -1;
-      if (b.position === 'GK' && a.position !== 'GK') return 1;
-      return (b.projected_pts || 0) - (a.projected_pts || 0);
-    });
-  }
+  rawBench.sort((a, b) => {
+    if (a.position === 'GK' && b.position !== 'GK') return -1;
+    if (b.position === 'GK' && a.position !== 'GK') return 1;
+    return (b.projected_pts || 0) - (a.projected_pts || 0);
+  });
+
+  // Sort XI properly (by position, then pts descending) to prevent jumping around
+  const posOrder = { 'GK': 1, 'DEF': 2, 'MID': 3, 'FWD': 4, 'ANY': 5 };
+  rawXi.sort((a, b) => {
+    if (posOrder[a.position] !== posOrder[b.position]) {
+      return (posOrder[a.position] || 9) - (posOrder[b.position] || 9);
+    }
+    return (b.projected_pts || 0) - (a.projected_pts || 0);
+  });
 
   const { xi, bench } = padSquad(rawXi, rawBench, isOptimMode ? rawXi.concat(rawBench) : teamPlayers);
 
