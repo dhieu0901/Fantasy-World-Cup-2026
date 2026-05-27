@@ -458,11 +458,37 @@ def calculate_xpts_from_db(player_id: int, position: str, price: float,
         opp_factor = 1.0 - (opponent_strength - 0.5) * 0.4  # ±20%
         team_factor = 1.0 + (team_strength - 0.5) * 0.3  # ±15%
 
-        # Starter probability from price + minutes pattern
+        # Smart Starter probability: Signal Blending (Ownership + Price + Fitness)
         matches = xstats.get("matches_played", 0) or 1
         min_per_match = minutes / matches if matches > 0 else 0
-        p_start = min(0.98, max(0.3, min_per_match / 90))
-        p_60_plus = min(0.95, max(0.3, min_per_match / 85)) if p_start > 0.4 else 0.5
+        club_p = min_per_match / 90
+
+        # 1. Ownership Signal (60%)
+        ownership = percent_selected
+        if ownership > 10: ownership_p = 0.95
+        elif ownership > 5: ownership_p = 0.85
+        elif ownership > 2: ownership_p = 0.70
+        elif ownership > 0.5: ownership_p = 0.40
+        else: ownership_p = 0.10
+
+        # 2. Price Signal (40%)
+        base_price = 4.0 if position in ("GK", "DEF") else 4.5
+        premium = price - base_price
+        if premium >= 1.5: price_p = 0.95
+        elif premium >= 1.0: price_p = 0.85
+        elif premium >= 0.5: price_p = 0.60
+        else: price_p = 0.20
+
+        # Blended base probability
+        p_base = (ownership_p * 0.6) + (price_p * 0.4)
+
+        # 3. Fitness Penalty (from club stats)
+        fitness_penalty = 1.0
+        if club_p < 0.1: fitness_penalty = 0.7   # <9 mins/match -> severe penalty
+        elif club_p < 0.3: fitness_penalty = 0.9 # <27 mins/match -> minor penalty
+
+        p_start = min(0.98, max(0.05, p_base * fitness_penalty))
+        p_60_plus = min(0.95, p_start * (1.05 if position in ("GK", "DEF") else 0.85))
 
         # Build per-match stats from per-90 data
         xg_per90 = xstats.get("xG_per90", 0) or 0
