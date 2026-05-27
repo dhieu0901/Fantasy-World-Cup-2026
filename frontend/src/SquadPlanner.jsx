@@ -217,14 +217,57 @@ export default function SquadPlannerTab({ players, myTeamIds, setMyTeam, optimRe
   return (
     <div className="fade-in">
       {isOptimMode && (
-        <div style={{ marginBottom: '16px', padding: '16px', background: 'rgba(45, 212, 191, 0.1)', border: '1px solid var(--clr-teal)', borderRadius: '8px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+        <div style={{ marginBottom: '16px', padding: '16px', background: 'linear-gradient(135deg, rgba(45, 212, 191, 0.15), rgba(15, 118, 110, 0.2))', border: '1px solid rgba(45, 212, 191, 0.3)', borderRadius: '12px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }}>
           <div>
-            <h3 style={{ color: 'var(--clr-teal)', margin: '0 0 4px 0' }}>Optimizer Suggestion</h3>
+            <h3 style={{ color: 'var(--clr-teal)', margin: '0 0 6px 0', display: 'flex', alignItems: 'center', gap: '8px' }}>
+              ✨ Optimizer Suggestion
+            </h3>
             <p style={{ margin: 0, fontSize: '0.85rem', color: 'var(--clr-text-muted)' }}>Review the suggested squad. Accept to overwrite your team.</p>
           </div>
-          <div style={{ display: 'flex', gap: '8px' }}>
-            <button className="primary-btn" onClick={() => { setMyTeam(optimResult.squad.map(p => p.id)); setOptimResult(null); }}>✅ Accept</button>
-            <button onClick={() => setOptimResult(null)} style={{ background: 'rgba(239, 68, 68, 0.2)', color: '#fca5a5', border: '1px solid rgba(239, 68, 68, 0.4)', padding: '8px 16px', borderRadius: '4px', cursor: 'pointer' }}>❌ Discard</button>
+          <div style={{ display: 'flex', gap: '12px' }}>
+            <button 
+              onClick={() => { setMyTeam(optimResult.squad.map(p => p.id)); setOptimResult(null); }}
+              style={{
+                background: 'linear-gradient(135deg, #10b981, #059669)',
+                color: 'white',
+                border: 'none',
+                padding: '10px 20px',
+                borderRadius: '8px',
+                fontWeight: '700',
+                fontSize: '0.9rem',
+                cursor: 'pointer',
+                boxShadow: '0 4px 10px rgba(16, 185, 129, 0.3)',
+                transition: 'all 0.2s ease',
+                display: 'flex',
+                alignItems: 'center',
+                gap: '6px'
+              }}
+              onMouseEnter={(e) => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = '0 6px 14px rgba(16, 185, 129, 0.4)'; }}
+              onMouseLeave={(e) => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = '0 4px 10px rgba(16, 185, 129, 0.3)'; }}
+            >
+              ✅ Accept
+            </button>
+            <button 
+              onClick={() => setOptimResult(null)} 
+              style={{ 
+                background: 'rgba(239, 68, 68, 0.1)', 
+                color: '#fca5a5', 
+                border: '1px solid rgba(239, 68, 68, 0.3)', 
+                padding: '10px 20px', 
+                borderRadius: '8px', 
+                fontWeight: '600',
+                fontSize: '0.9rem',
+                cursor: 'pointer',
+                transition: 'all 0.2s ease',
+                display: 'flex',
+                alignItems: 'center',
+                gap: '6px'
+              }}
+              onMouseEnter={(e) => { e.currentTarget.style.background = 'rgba(239, 68, 68, 0.2)'; e.currentTarget.style.borderColor = 'rgba(239, 68, 68, 0.5)'; }}
+              onMouseLeave={(e) => { e.currentTarget.style.background = 'rgba(239, 68, 68, 0.1)'; e.currentTarget.style.borderColor = 'rgba(239, 68, 68, 0.3)'; }}
+            >
+              ❌ Discard
+            </button>
           </div>
         </div>
       )}
