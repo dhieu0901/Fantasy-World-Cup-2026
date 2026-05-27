@@ -128,20 +128,7 @@ export default function App() {
     return () => clearTimeout(t);
   }, [search]);
 
-  useEffect(() => {
-    if (loading) return; // Prevent interfering with initial load
-    async function searchPlayers() {
-      try {
-        const data = await api.getPlayers({
-          search: debouncedSearch || undefined,
-          position: posFilter || undefined,
-          sortBy, sortDesc,
-        });
-        setPlayers(data.players || []);
-      } catch (e) { console.error(e); }
-    }
-    searchPlayers();
-  }, [debouncedSearch, posFilter, sortBy, sortDesc, loading]);
+  // Removed search API fetch to prevent overwriting master players list
 
   // Optimize
   const runOptimize = useCallback(async () => {
@@ -168,6 +155,23 @@ export default function App() {
   // Filtered & sorted players (client-side for instant feel)
   const displayPlayers = useMemo(() => {
     let list = [...players];
+
+    // Apply position filter
+    if (posFilter) {
+      list = list.filter(p => p.position === posFilter);
+    }
+    
+    // Apply search filter
+    if (debouncedSearch) {
+      const lowerSearch = debouncedSearch.toLowerCase();
+      list = list.filter(p => 
+        (p.known_name || '').toLowerCase().includes(lowerSearch) || 
+        (p.last_name || '').toLowerCase().includes(lowerSearch) ||
+        (p.first_name || '').toLowerCase().includes(lowerSearch) ||
+        (p.team_abbr || '').toLowerCase().includes(lowerSearch)
+      );
+    }
+
     // client-side sort
     list.sort((a, b) => {
       const va = a[sortBy] ?? 0;
@@ -175,7 +179,7 @@ export default function App() {
       return sortDesc ? vb - va : va - vb;
     });
     return list; // Return all, let ProjectionsTab paginate
-  }, [players, sortBy, sortDesc]);
+  }, [players, sortBy, sortDesc, posFilter, debouncedSearch]);
 
   // Breadcrumb for projections tab
   const getTabLabel = (id, label) => {
