@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback, useMemo } from 'react';
 import './index.css';
 import * as api from './api';
-
+import SquadPlannerTab from './SquadPlanner';
 /* ═══════════════════════════════════════════
    SVG Icons (inline for zero-dep)
    ═══════════════════════════════════════════ */
@@ -258,10 +258,13 @@ export default function App() {
                 />
               )}
               {tab === 'lineup' && (
-                <LineupTab result={optimResult} players={players} setMyTeam={(ids) => {
-                  setMyTeam(ids);
-                  localStorage.setItem('myTeam', JSON.stringify(ids));
-                }} />
+                <SquadPlannerTab 
+                  players={players} 
+                  myTeamIds={myTeamState} 
+                  setMyTeam={setMyTeam}
+                  optimResult={optimResult}
+                  setOptimResult={setOptimResult}
+                />
               )}
               {tab === 'fixtures' && (
                 <FixturesTab 
@@ -313,234 +316,6 @@ function StatCard({ label, value, cls, sub }) {
 
 
 
-/* ═══════════════════════════════════════════
-   LINEUP TAB — FPL-Style Pitch View
-   ═══════════════════════════════════════════ */
-
-/* Country code → ISO 3166 alpha-2 for flag images */
-const COUNTRY_ISO = {
-  ARG:'ar',FRA:'fr',BRA:'br',ENG:'gb-eng',ESP:'es',POR:'pt',GER:'de',NED:'nl',
-  URU:'uy',COL:'co',CRO:'hr',MAR:'ma',JPN:'jp',BEL:'be',SUI:'ch',USA:'us',
-  SEN:'sn',TUR:'tr',AUT:'at',KOR:'kr',NOR:'no',EGY:'eg',MEX:'mx',SWE:'se',
-  ECU:'ec',IRN:'ir',SCO:'gb-sct',CIV:'ci',PAR:'py',ALG:'dz',CZE:'cz',AUS:'au',
-  RSA:'za',TUN:'tn',PAN:'pa',GHA:'gh',IRQ:'iq',QAT:'qa',CAN:'ca',BIH:'ba',
-  JOR:'jo',UZB:'uz',KSA:'sa',NZL:'nz',COD:'cd',HAI:'ht',CUW:'cw',CPV:'cv',
-};
-
-function getFlagUrl(abbr) {
-  const iso = COUNTRY_ISO[abbr];
-  if (!iso) return null;
-  return `https://flagcdn.com/w80/${iso}.png`;
-}
-
-function LineupTab({ result, setMyTeam, players }) {
-  const handleSaveTeam = () => {
-    if (!result?.squad) return;
-    setMyTeam(result.squad.map(p => p.id));
-    alert("Saved successfully! You can now use this squad as your base in the Transfer Planner.");
-  };
-
-  if (!result) {
-    return (
-      <div className="fade-in" style={{ textAlign: 'center', padding: '80px 20px' }}>
-        <div style={{ fontSize: '4rem', marginBottom: '16px', filter: 'drop-shadow(0 4px 12px rgba(0,0,0,0.3))' }}>⚽</div>
-        <h3 style={{ color: 'var(--clr-text-dim)', marginBottom: '8px' }}>No squad optimized yet</h3>
-        <p style={{ color: 'var(--clr-text-muted)', fontSize: '0.85rem', maxWidth: '320px', margin: '0 auto' }}>
-          Choose a strategy and hit <strong style={{ color: 'var(--clr-gold)' }}>Optimize Squad</strong> in the panel on the right
-        </p>
-      </div>
-    );
-  }
-
-  const xi = result.starting_xi || [];
-  const bench = [...(result.bench || [])].sort((a, b) => {
-    if (a.position === 'GK' && b.position !== 'GK') return -1;
-    if (b.position === 'GK' && a.position !== 'GK') return 1;
-    return 0;
-  });
-  const captain = result.captain;
-  const viceCaptain = result.vice_captain;
-
-  // Group XI by position for pitch layout
-  const gks = xi.filter(p => p.position === 'GK');
-  const defs = xi.filter(p => p.position === 'DEF');
-  const mids = xi.filter(p => p.position === 'MID');
-  const fwds = xi.filter(p => p.position === 'FWD');
-
-  // Bench slot labels
-  const benchLabels = bench.map((p, i) => {
-    if (i === 0 || p.position === 'GK') return 'GKP';
-    return `${i}. ${p.position}`;
-  });
-
-  // Transfer Maps
-  const transfersInIds = new Set((result.transfers_in || []).map(p => p.id));
-  
-  return (
-    <div className="fade-in">
-      {/* Transfer Summary */}
-      {(result.transfers_in?.length > 0 || result.transfers_out?.length > 0) && (
-        <div style={{
-          marginBottom: '16px', padding: '12px', background: 'var(--clr-bg-card)', 
-          borderRadius: 'var(--r-md)', border: '1px solid var(--clr-border)',
-          display: 'flex', flexDirection: 'column', gap: '8px'
-        }}>
-          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-            <h4 style={{ margin: 0, fontSize: '0.9rem' }}>🔄 Transfer Summary</h4>
-            {result.transfer_cost > 0 && (
-              <span style={{ background: '#ef4444', color: 'white', padding: '2px 8px', borderRadius: '12px', fontSize: '0.75rem', fontWeight: 600 }}>
-                -{result.transfer_cost} pts Hit
-              </span>
-            )}
-          </div>
-          
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px', fontSize: '0.8rem' }}>
-            <div>
-              <div style={{ color: '#ef4444', fontWeight: 600, marginBottom: '4px' }}>🔴 TRANSFERRED OUT</div>
-              {result.transfers_out?.length ? result.transfers_out.map(pid => {
-                const outPlayer = players?.find(p => p.id === pid);
-                return <div key={pid}>{outPlayer?.display_name || `ID: ${pid}`} (Out)</div>;
-              }) : <div style={{ color: 'var(--clr-text-muted)' }}>None</div>}
-            </div>
-            <div>
-              <div style={{ color: '#2dd4bf', fontWeight: 600, marginBottom: '4px' }}>🟢 TRANSFERRED IN</div>
-              {result.transfers_in?.length ? result.transfers_in.map(p => (
-                <div key={p.id}>{p.display_name} ({p.position})</div>
-              )) : <div style={{ color: 'var(--clr-text-muted)' }}>None</div>}
-            </div>
-          </div>
-        </div>
-      )}
-
-      {/* Squad summary bar */}
-      <div style={{
-        display: 'flex', justifyContent: 'space-between', alignItems: 'center',
-        padding: '8px 16px', marginBottom: '12px',
-        background: 'var(--clr-bg-card)', borderRadius: 'var(--r-sm)',
-        border: '1px solid var(--clr-border)', fontSize: '0.75rem'
-      }}>
-        <span style={{ color: 'var(--clr-text-muted)' }}>
-          ⭐ Captain: <strong style={{ color: 'var(--clr-gold)' }}>{captain?.display_name}</strong> (2× pts)
-        </span>
-        <span style={{ color: 'var(--clr-text-muted)' }}>
-          Total xPts: <strong style={{ color: 'var(--clr-teal)' }}>{result.total_projected_pts?.toFixed(1)}</strong>
-        </span>
-        <button className="primary-btn" onClick={handleSaveTeam} style={{ padding: '4px 8px', fontSize: '0.7rem', background: 'var(--clr-bg-elevated)', border: '1px solid var(--clr-border)', color: 'var(--clr-text)', cursor: 'pointer' }}>
-             💾 Save as My Team
-        </button>
-      </div>
-
-      {/* Pitch */}
-      <div className="pitch">
-        {/* Pitch markings */}
-        <div className="pitch-markings">
-          <div className="pitch-box-top" />
-          <div className="pitch-goal-top" />
-          <div className="pitch-box-bottom" />
-          <div className="pitch-goal-bottom" />
-        </div>
-
-        {/* FWD row */}
-        <div className="pitch-row" style={{ paddingTop: '16px' }}>
-          {fwds.map(p => (
-            <PitchPlayer key={p.id} player={p}
-              isCaptain={captain?.id === p.id}
-              isVice={viceCaptain?.id === p.id}
-              isNew={transfersInIds.has(p.id)} />
-          ))}
-        </div>
-        {/* MID row */}
-        <div className="pitch-row">
-          {mids.map(p => (
-            <PitchPlayer key={p.id} player={p}
-              isCaptain={captain?.id === p.id}
-              isVice={viceCaptain?.id === p.id}
-              isNew={transfersInIds.has(p.id)} />
-          ))}
-        </div>
-        {/* DEF row */}
-        <div className="pitch-row">
-          {defs.map(p => (
-            <PitchPlayer key={p.id} player={p}
-              isCaptain={captain?.id === p.id}
-              isVice={viceCaptain?.id === p.id}
-              isNew={transfersInIds.has(p.id)} />
-          ))}
-        </div>
-        {/* GK row */}
-        <div className="pitch-row" style={{ paddingBottom: '16px' }}>
-          {gks.map(p => (
-            <PitchPlayer key={p.id} player={p}
-              isCaptain={captain?.id === p.id}
-              isVice={viceCaptain?.id === p.id}
-              isNew={transfersInIds.has(p.id)} />
-          ))}
-        </div>
-      </div>
-
-      {/* Bench — FPL style */}
-      <div className="bench-section">
-        <div className="bench-header">
-          {bench.map((p, i) => (
-            <div key={i} className="slot-label">{benchLabels[i]}</div>
-          ))}
-        </div>
-        <div className="bench-row">
-          {bench.map(p => (
-            <div key={p.id} className="bench-player">
-              <div className={`pitch-jersey ${p.position?.toLowerCase()}`}>
-                <img className="jersey-flag" src={getFlagUrl(p.team_abbr)} alt={p.team_abbr}
-                     onError={e => { e.target.style.display = 'none'; e.target.parentNode.innerText = p.team_abbr; }} />
-              </div>
-              <div className="pitch-player-info">
-                <div className="pitch-nameplate">{p.display_name?.split(' ').pop()}</div>
-                <div className="pitch-pts">{p.projected_pts?.toFixed(1)}</div>
-                {p.next_match_date && p.next_match_date !== "2099-12-31T00:00:00Z" && (
-                  <div style={{ fontSize: '0.55rem', color: '#94a3b8', background: 'rgba(0,0,0,0.5)', width: '100%', textAlign: 'center', borderTop: '1px solid rgba(255,255,255,0.1)', padding: '1px 0' }}>
-                    {new Date(p.next_match_date).toLocaleDateString('en-GB', { day: 'numeric', month: 'short' })}
-                  </div>
-                )}
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-    </div>
-  );
-}
-
-function PitchPlayer({ player: p, isCaptain, isVice, isNew }) {
-  const lastName = p.display_name?.split(' ').pop() || '?';
-  const flagUrl = getFlagUrl(p.team_abbr);
-  const pos = p.position?.toLowerCase();
-
-  return (
-    <div className={`pitch-player ${isNew ? 'is-new' : ''}`}>
-      <div className={`pitch-jersey ${pos}`}>
-        {/* Captain / Vice-Captain / 12th Man badge */}
-        {isCaptain && <div className="pitch-badge captain">C</div>}
-        {isVice && !p.is_12th_man && <div className="pitch-badge vice">V</div>}
-        {p.is_12th_man && <div className="pitch-badge twelfth" title="12th Man">12</div>}
-        {/* Country flag */}
-        {flagUrl ? (
-          <img className="jersey-flag" src={flagUrl} alt={p.team_abbr}
-               onError={e => { e.target.style.display = 'none'; e.target.parentNode.innerText = p.team_abbr; }} />
-        ) : (
-          <span style={{ fontSize: '1.1rem' }}>{countryFlag(p.team_abbr)}</span>
-        )}
-      </div>
-      <div className="pitch-player-info">
-        <div className="pitch-nameplate">{lastName}</div>
-        <div className={`pitch-pts ${isCaptain || p.is_12th_man ? 'is-captain' : ''}`}>{p.projected_pts?.toFixed(1)}</div>
-        {p.next_match_date && p.next_match_date !== "2099-12-31T00:00:00Z" && (
-          <div style={{ fontSize: '0.55rem', color: '#94a3b8', background: 'rgba(0,0,0,0.5)', width: '100%', textAlign: 'center', borderTop: '1px solid rgba(255,255,255,0.1)', padding: '1px 0' }}>
-            {new Date(p.next_match_date).toLocaleDateString('en-GB', { day: 'numeric', month: 'short' })}
-          </div>
-        )}
-      </div>
-    </div>
-  );
-}
 
 
 /* ═══════════════════════════════════════════
