@@ -156,7 +156,7 @@ function PlayerSelectModal({ isOpen, onClose, players, targetPos, onSelect, curr
 // ══════════════════════════════════════════════
 // Action Menu Modal (with Captain option)
 // ══════════════════════════════════════════════
-function ActionMenuModal({ player, isOpen, onClose, onTransfer, onSub, onSetCaptain, isInXI }) {
+function ActionMenuModal({ player, isOpen, onClose, onTransfer, onSub, onSetCaptain, onSetViceCaptain, isInXI }) {
   if (!isOpen || !player) return null;
   return (
     <div style={{ position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, background: 'rgba(0,0,0,0.7)', zIndex: 1000, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
@@ -173,6 +173,16 @@ function ActionMenuModal({ player, isOpen, onClose, onTransfer, onSub, onSetCapt
               onMouseLeave={e => { e.currentTarget.style.background = 'linear-gradient(135deg, rgba(250, 204, 21, 0.2), rgba(250, 204, 21, 0.05))'; e.currentTarget.style.transform = 'translateY(0)'; }}
             >
               🧢 Set Captain
+            </button>
+          )}
+          {isInXI && onSetViceCaptain && (
+            <button 
+              onClick={() => { onSetViceCaptain(player); onClose(); }} 
+              style={{ background: 'linear-gradient(135deg, rgba(167, 139, 250, 0.2), rgba(167, 139, 250, 0.05))', color: '#a78bfa', border: '1px solid rgba(167, 139, 250, 0.4)', padding: '12px', borderRadius: '8px', cursor: 'pointer', fontWeight: 700, display: 'flex', justifyContent: 'center', gap: '8px', transition: 'all 0.2s' }}
+              onMouseEnter={e => { e.currentTarget.style.background = 'rgba(167, 139, 250, 0.25)'; e.currentTarget.style.transform = 'translateY(-1px)'; }}
+              onMouseLeave={e => { e.currentTarget.style.background = 'linear-gradient(135deg, rgba(167, 139, 250, 0.2), rgba(167, 139, 250, 0.05))'; e.currentTarget.style.transform = 'translateY(0)'; }}
+            >
+              ⭐ Set Vice Captain
             </button>
           )}
           <button 
@@ -248,7 +258,7 @@ function PitchPlayer({ player: p, isCaptain, isViceCaptain, isSubSource, onClick
         transform: isSubSource ? 'scale(1.1)' : 'scale(1)'
       }}>
         {isCaptain && <div className="pitch-badge captain">C</div>}
-        {isViceCaptain && <div className="pitch-badge vice">V</div>}
+        {isViceCaptain && <div className="pitch-badge vice">VC</div>}
         {flagUrl ? (
           <img className="jersey-flag" src={flagUrl} alt={p.team_abbr} onError={e => { e.target.style.display = 'none'; e.target.parentNode.innerText = p.team_abbr; }} />
         ) : (
@@ -282,6 +292,7 @@ export default function SquadPlannerTab({ players, myTeamIds, setMyTeam, optimRe
 
   // Manual captain override
   const [manualCaptainId, setManualCaptainId] = useState(null);
+  const [manualViceCaptainId, setManualViceCaptainId] = useState(null);
 
   // Manage benched players state explicitly to allow manual subs
   const [benchedIds, setBenchedIds] = useState([]);
@@ -354,14 +365,22 @@ export default function SquadPlannerTab({ players, myTeamIds, setMyTeam, optimRe
   if (isOptimMode) {
     captain = optimResult.captain;
     viceCaptain = optimResult.vice_captain;
-  } else if (manualCaptainId) {
-    // Manual captain: must be in XI
-    const manualCap = rawXi.find(p => p.id === manualCaptainId);
-    captain = manualCap || sortedXiByPts[0]; // Fallback if manual captain not in XI
-    viceCaptain = sortedXiByPts.find(p => p.id !== captain?.id) || sortedXiByPts[1];
   } else {
-    captain = sortedXiByPts[0]; // Auto: highest xPts in XI
-    viceCaptain = sortedXiByPts[1];
+    // Determine Captain
+    if (manualCaptainId) {
+      captain = rawXi.find(p => p.id === manualCaptainId) || sortedXiByPts[0];
+    } else {
+      captain = sortedXiByPts[0];
+    }
+    
+    // Determine Vice Captain
+    if (manualViceCaptainId) {
+      viceCaptain = rawXi.find(p => p.id !== captain?.id && p.id === manualViceCaptainId) 
+                 || sortedXiByPts.find(p => p.id !== captain?.id) 
+                 || sortedXiByPts[1];
+    } else {
+      viceCaptain = sortedXiByPts.find(p => p.id !== captain?.id) || sortedXiByPts[1];
+    }
   }
   
   // Calculate total xPts (XI points + captain bonus)
@@ -449,7 +468,13 @@ export default function SquadPlannerTab({ players, myTeamIds, setMyTeam, optimRe
   };
 
   const handleSetCaptain = (player) => {
+    if (player.id === manualViceCaptainId) setManualViceCaptainId(null);
     setManualCaptainId(player.id);
+  };
+
+  const handleSetViceCaptain = (player) => {
+    if (player.id === manualCaptainId) setManualCaptainId(null);
+    setManualViceCaptainId(player.id);
   };
 
   const handleSelectPlayer = (newPlayer) => {
@@ -473,6 +498,9 @@ export default function SquadPlannerTab({ players, myTeamIds, setMyTeam, optimRe
       // If transferring out the manual captain, clear captain override
       if (playerToAction.id === manualCaptainId) {
         setManualCaptainId(null);
+      }
+      if (playerToAction.id === manualViceCaptainId) {
+        setManualViceCaptainId(null);
       }
       newIds = newIds.filter(id => id !== playerToAction.id);
     }
@@ -563,6 +591,9 @@ export default function SquadPlannerTab({ players, myTeamIds, setMyTeam, optimRe
           )}
           <span style={{ color: 'var(--clr-text-muted)' }}>|</span>
           <span>V: <strong style={{ color: 'var(--clr-gold)' }}>{viceCaptain?.display_name || '-'}</strong></span>
+          {manualViceCaptainId && !isOptimMode && (
+            <span style={{ fontSize: '0.6rem', color: '#a78bfa', background: 'rgba(167, 139, 250, 0.15)', padding: '2px 6px', borderRadius: '4px' }}>MANUAL</span>
+          )}
         </span>
         <span style={{ color: 'var(--clr-text-muted)', display: 'flex', alignItems: 'center', gap: '8px' }}>
           Total xPts: <strong style={{ color: 'var(--clr-teal)' }}>{totalXPts?.toFixed(1) || '0.0'}</strong>
@@ -695,6 +726,7 @@ export default function SquadPlannerTab({ players, myTeamIds, setMyTeam, optimRe
         onTransfer={handleTransferClick}
         onSub={handleSubClick}
         onSetCaptain={handleSetCaptain}
+        onSetViceCaptain={handleSetViceCaptain}
         isInXI={playerToAction ? isPlayerInXI(playerToAction.id) : false}
       />
 
