@@ -129,7 +129,7 @@ export default function App() {
   }, [search]);
 
   useEffect(() => {
-    if (!debouncedSearch && !posFilter) return;
+    if (loading) return; // Prevent interfering with initial load
     async function searchPlayers() {
       try {
         const data = await api.getPlayers({
@@ -141,7 +141,7 @@ export default function App() {
       } catch (e) { console.error(e); }
     }
     searchPlayers();
-  }, [debouncedSearch, posFilter, sortBy, sortDesc]);
+  }, [debouncedSearch, posFilter, sortBy, sortDesc, loading]);
 
   // Optimize
   const runOptimize = useCallback(async () => {
