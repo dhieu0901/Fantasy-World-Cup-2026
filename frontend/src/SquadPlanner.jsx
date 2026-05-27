@@ -222,7 +222,7 @@ function getFlagUrl(abbr) {
 // ══════════════════════════════════════════════
 // PitchPlayer component
 // ══════════════════════════════════════════════
-function PitchPlayer({ player: p, isCaptain, isSubSource, onClick }) {
+function PitchPlayer({ player: p, isCaptain, isViceCaptain, isSubSource, onClick }) {
   if (p.isPlaceholder) {
     return (
       <div className="pitch-player is-placeholder" onClick={onClick} style={{ cursor: 'pointer', opacity: 0.6 }}>
@@ -248,6 +248,7 @@ function PitchPlayer({ player: p, isCaptain, isSubSource, onClick }) {
         transform: isSubSource ? 'scale(1.1)' : 'scale(1)'
       }}>
         {isCaptain && <div className="pitch-badge captain">C</div>}
+        {isViceCaptain && <div className="pitch-badge vice">V</div>}
         {flagUrl ? (
           <img className="jersey-flag" src={flagUrl} alt={p.team_abbr} onError={e => { e.target.style.display = 'none'; e.target.parentNode.innerText = p.team_abbr; }} />
         ) : (
@@ -349,14 +350,18 @@ export default function SquadPlannerTab({ players, myTeamIds, setMyTeam, optimRe
   const sortedXiByPts = [...rawXi].sort((a, b) => (b.projected_pts || 0) - (a.projected_pts || 0));
   
   let captain;
+  let viceCaptain;
   if (isOptimMode) {
     captain = optimResult.captain;
+    viceCaptain = optimResult.vice_captain;
   } else if (manualCaptainId) {
     // Manual captain: must be in XI
     const manualCap = rawXi.find(p => p.id === manualCaptainId);
     captain = manualCap || sortedXiByPts[0]; // Fallback if manual captain not in XI
+    viceCaptain = sortedXiByPts.find(p => p.id !== captain?.id) || sortedXiByPts[1];
   } else {
     captain = sortedXiByPts[0]; // Auto: highest xPts in XI
+    viceCaptain = sortedXiByPts[1];
   }
   
   // Calculate total xPts (XI points + captain bonus)
@@ -551,11 +556,13 @@ export default function SquadPlannerTab({ players, myTeamIds, setMyTeam, optimRe
 
       {/* Captain & Points Bar */}
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '8px 16px', marginBottom: '12px', background: 'var(--clr-bg-card)', borderRadius: 'var(--r-sm)', border: '1px solid var(--clr-border)', fontSize: '0.75rem' }}>
-        <span style={{ color: 'var(--clr-text-muted)' }}>
-          ⭐ Captain: <strong style={{ color: 'var(--clr-gold)' }}>{captain?.display_name || '-'}</strong>
+        <span style={{ color: 'var(--clr-text-muted)', display: 'flex', alignItems: 'center', gap: '8px' }}>
+          <span>⭐ C: <strong style={{ color: 'var(--clr-gold)' }}>{captain?.display_name || '-'}</strong></span>
           {manualCaptainId && !isOptimMode && (
-            <span style={{ marginLeft: '8px', fontSize: '0.6rem', color: 'var(--clr-teal)', background: 'rgba(45,212,191,0.15)', padding: '2px 6px', borderRadius: '4px' }}>MANUAL</span>
+            <span style={{ fontSize: '0.6rem', color: 'var(--clr-teal)', background: 'rgba(45,212,191,0.15)', padding: '2px 6px', borderRadius: '4px' }}>MANUAL</span>
           )}
+          <span style={{ color: 'var(--clr-text-muted)' }}>|</span>
+          <span>V: <strong style={{ color: 'var(--clr-gold)' }}>{viceCaptain?.display_name || '-'}</strong></span>
         </span>
         <span style={{ color: 'var(--clr-text-muted)', display: 'flex', alignItems: 'center', gap: '8px' }}>
           Total xPts: <strong style={{ color: 'var(--clr-teal)' }}>{totalXPts?.toFixed(1) || '0.0'}</strong>
@@ -623,16 +630,16 @@ export default function SquadPlannerTab({ players, myTeamIds, setMyTeam, optimRe
           </div>
 
           <div className="pitch-row" style={{ paddingTop: '16px' }}>
-            {fwds.map((p, i) => <PitchPlayer key={p.id || `fwd-${i}`} player={p} isCaptain={captain?.id === p.id} isSubSource={subSourcePlayer?.id === p.id} onClick={() => handleSlotClick(p)} />)}
+            {fwds.map((p, i) => <PitchPlayer key={p.id || `fwd-${i}`} player={p} isCaptain={captain?.id === p.id} isViceCaptain={viceCaptain?.id === p.id} isSubSource={subSourcePlayer?.id === p.id} onClick={() => handleSlotClick(p)} />)}
           </div>
           <div className="pitch-row">
-            {mids.map((p, i) => <PitchPlayer key={p.id || `mid-${i}`} player={p} isCaptain={captain?.id === p.id} isSubSource={subSourcePlayer?.id === p.id} onClick={() => handleSlotClick(p)} />)}
+            {mids.map((p, i) => <PitchPlayer key={p.id || `mid-${i}`} player={p} isCaptain={captain?.id === p.id} isViceCaptain={viceCaptain?.id === p.id} isSubSource={subSourcePlayer?.id === p.id} onClick={() => handleSlotClick(p)} />)}
           </div>
           <div className="pitch-row">
-            {defs.map((p, i) => <PitchPlayer key={p.id || `def-${i}`} player={p} isCaptain={captain?.id === p.id} isSubSource={subSourcePlayer?.id === p.id} onClick={() => handleSlotClick(p)} />)}
+            {defs.map((p, i) => <PitchPlayer key={p.id || `def-${i}`} player={p} isCaptain={captain?.id === p.id} isViceCaptain={viceCaptain?.id === p.id} isSubSource={subSourcePlayer?.id === p.id} onClick={() => handleSlotClick(p)} />)}
           </div>
           <div className="pitch-row" style={{ paddingBottom: '16px' }}>
-            {gks.map((p, i) => <PitchPlayer key={p.id || `gk-${i}`} player={p} isCaptain={captain?.id === p.id} isSubSource={subSourcePlayer?.id === p.id} onClick={() => handleSlotClick(p)} />)}
+            {gks.map((p, i) => <PitchPlayer key={p.id || `gk-${i}`} player={p} isCaptain={captain?.id === p.id} isViceCaptain={viceCaptain?.id === p.id} isSubSource={subSourcePlayer?.id === p.id} onClick={() => handleSlotClick(p)} />)}
           </div>
         </div>
 
