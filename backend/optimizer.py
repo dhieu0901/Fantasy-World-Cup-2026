@@ -44,22 +44,23 @@ except ImportError:
 # Simplified strength ratings (0-1) based on FIFA rankings / Elo
 # Will be used for xPts calculations
 TEAM_STRENGTH = {
-    # Top tier (0.85-0.95)
-    "ARG": 0.93, "FRA": 0.92, "BRA": 0.90, "ENG": 0.90,
-    "ESP": 0.89, "POR": 0.88, "GER": 0.87, "NED": 0.86,
-    # Strong (0.70-0.84)
-    "URU": 0.82, "COL": 0.81, "CRO": 0.80, "MAR": 0.79,
-    "JPN": 0.78, "BEL": 0.77, "SUI": 0.76, "USA": 0.75,
-    "SEN": 0.74, "TUR": 0.74, "AUT": 0.73, "KOR": 0.72,
-    "NOR": 0.72, "EGY": 0.71, "MEX": 0.70, "SWE": 0.70,
-    # Mid tier (0.55-0.69)
-    "ECU": 0.68, "IRN": 0.67, "SCO": 0.66, "CIV": 0.65,
-    "PAR": 0.64, "ALG": 0.63, "CZE": 0.62, "AUS": 0.61,
-    "RSA": 0.60, "TUN": 0.59, "PAN": 0.58, "GHA": 0.57,
-    "IRQ": 0.56, "QAT": 0.55, "CAN": 0.55, "BIH": 0.55,
-    # Lower tier (0.40-0.54)
-    "JOR": 0.52, "UZB": 0.51, "KSA": 0.50, "NZL": 0.48,
-    "COD": 0.48, "HAI": 0.45, "CUW": 0.42, "CPV": 0.42,
+    # Top tier (0.85-0.95) - FDR 5
+    "FRA": 0.95, "ESP": 0.94, "ARG": 0.93, "ENG": 0.92,
+    "POR": 0.91, "BRA": 0.90, "NED": 0.89, "MAR": 0.88,
+    # Strong (0.75-0.84) - FDR 4
+    "BEL": 0.84, "GER": 0.83, "CRO": 0.82, "COL": 0.81,
+    "SEN": 0.80, "MEX": 0.79, "USA": 0.78, "URU": 0.77,
+    # Mid tier (0.60-0.74) - FDR 3
+    "JPN": 0.74, "SUI": 0.73, "IRN": 0.72, "TUR": 0.71,
+    "ECU": 0.70, "AUT": 0.69, "KOR": 0.68, "AUS": 0.67,
+    "ALG": 0.66, "EGY": 0.65, "CAN": 0.64, "NOR": 0.63,
+    "PAN": 0.62, "CIV": 0.61, "SWE": 0.61, "PAR": 0.60, "CZE": 0.60,
+    # Lower Mid tier (0.50-0.59) - FDR 2
+    "SCO": 0.59, "TUN": 0.58, "COD": 0.57, "UZB": 0.56,
+    "QAT": 0.55, "IRQ": 0.54, "KSA": 0.53, "RSA": 0.52,
+    "GHA": 0.51, "CPV": 0.50,
+    # Lower tier (0.40-0.49) - FDR 1
+    "BIH": 0.49, "JOR": 0.48, "HAI": 0.46, "CUW": 0.44, "NZL": 0.42,
 }
 
 
