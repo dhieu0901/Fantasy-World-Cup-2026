@@ -235,11 +235,11 @@ def calculate_xpts(player_stats: dict, position: str) -> dict:
     # ── 2. Goals ──
     xg = s.get("xG", 0.0)
     goal_pts = GOAL_POINTS.get(position, 5)
-    breakdown["xGoals"] = xg * goal_pts
+    breakdown["xGoals"] = xg * p_play * goal_pts
 
     # ── 3. Assists ──
     xa = s.get("xA", 0.0)
-    breakdown["xAssists"] = xa * SCORING_ALL["assist"]
+    breakdown["xAssists"] = xa * p_play * SCORING_ALL["assist"]
 
     # ── 4. Clean Sheet ──
     xcs = s.get("xCS", 0.0)
@@ -362,15 +362,15 @@ def calculate_simple_xpts(price: float, position: str, team_strength: float = 0.
     """
     # Base xPts from price tier (empirical FPL-like correlation)
     base_by_price = {
-        (0, 4.0):   1.5,
-        (4.0, 5.0): 2.0,
-        (5.0, 6.0): 2.8,
-        (6.0, 7.0): 3.5,
-        (7.0, 8.0): 4.2,
-        (8.0, 9.0): 5.0,
-        (9.0, 10.0): 5.8,
-        (10.0, 12.0): 6.5,
-        (12.0, 20.0): 7.5,
+        (0, 4.0):   2.2,   # Budget enablers
+        (4.0, 5.0): 2.8,
+        (5.0, 6.0): 3.5,
+        (6.0, 7.0): 4.3,
+        (7.0, 8.0): 5.1,
+        (8.0, 9.0): 6.0,
+        (9.0, 10.0): 6.8,
+        (10.0, 12.0): 7.8,
+        (12.0, 20.0): 8.8,
     }
     
     base = 2.0
@@ -517,7 +517,7 @@ def calculate_xpts_from_db(player_id: int, position: str, price: float,
             "xTackles": (xstats.get("tackles_per90", 0) or 0) * opp_factor,
             "xChancesCreated": (xstats.get("chances_created_per90", 0) or 0) * team_factor,
             "xShotsOnTarget": (xstats.get("shots_per90", 0) or 0) * 0.4 * opp_factor,
-            "p_yellow": min(0.3, (xstats.get("yellow_per90", 0) or 0)),
+            "p_yellow": min(0.3, (xstats.get("yellow_per90", 0) or 0)) * opp_factor,
             "p_red": 0.005,
             "p_own_goal": 0.005 if position in ("DEF", "GK") else 0.001,
             "p_pen_won": 0.04 if position in ("FWD", "MID") else 0.01,

@@ -121,15 +121,18 @@ def api_get_players(
             players = [p for p in players if p.get("price", 0) <= max_price]
 
         # Add display_name and projected_pts
+        from rules import calculate_xpts_from_db
         for p in players:
             p["display_name"] = p.get("known_name") or f"{p.get('first_name', '')} {p.get('last_name', '')}"
-            # Quick xPts estimate (no DB lookup for speed)
-            from rules import calculate_simple_xpts
-            p["projected_pts"] = calculate_simple_xpts(
-                p.get("price", 4.0), p.get("position", "MID"),
+            xpts_data = calculate_xpts_from_db(
+                player_id=p["id"],
+                position=p.get("position", "MID"),
+                price=p.get("price", 4.0),
+                percent_selected=p.get("percent_selected", 0.0),
                 team_strength=TEAM_STRENGTH.get(p.get("team_abbr", ""), 0.5),
-                percent_selected=p.get("percent_selected", 0),
+                conn=conn
             )
+            p["projected_pts"] = xpts_data.get("xPts", 2.0)
 
         # Apply limit AFTER all Python-side filters
         if limit and search:
