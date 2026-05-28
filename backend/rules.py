@@ -384,11 +384,16 @@ def calculate_simple_xpts(price: float, position: str, team_strength: float = 0.
     base *= position_mod.get(position, 1.0)
 
     # Match context modifier
-    strength_diff = team_strength - opponent_strength
-    context_mod = 1.0 + (strength_diff * 0.3)
+    # Heavily penalize playing against strong teams regardless of own strength
+    # A top team vs top team match is usually low-scoring
+    opp_penalty = (opponent_strength - 0.5) * 0.6  # Up to -25% for FDR 5
+    team_bonus = (team_strength - 0.5) * 0.2       # Up to +10% for being a strong team
+    
+    context_mod = 1.0 - opp_penalty + team_bonus
+    
     if is_home:
         context_mod *= 1.05
-    base *= context_mod
+    base *= max(0.5, context_mod)
 
     # Ownership as quality/play-probability signal
     # Extremely low ownership usually means they don't play (0 points).
@@ -455,7 +460,8 @@ def calculate_xpts_from_db(player_id: int, position: str, price: float,
 
         # Adjust for opponent strength (WC matches vs club matches)
         # Strong opponent → fewer goals, more defensive actions
-        opp_factor = 1.0 - (opponent_strength - 0.5) * 0.4  # ±20%
+        # Opponent strength is absolute: playing FDR 5 reduces attacking output by ~35%
+        opp_factor = max(0.5, 1.0 - (opponent_strength - 0.5) * 0.7)
         team_factor = 1.0 + (team_strength - 0.5) * 0.3  # ±15%
 
         # Smart Starter probability: Signal Blending (Ownership + Price + Fitness)

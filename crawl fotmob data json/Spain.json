@@ -1,0 +1,1079 @@
+[
+    {
+        "profile": {
+            "id": 562727,
+            "name": "David Raya",
+            "position": "Keeper",
+            "nationality": "Spain",
+            "club": "Arsenal",
+            "league": "Premier League"
+        },
+        "participation": {
+            "matches": 37,
+            "started": "not found",
+            "minutes_played": 3330
+        },
+        "overview_metrics": {
+            "goals": "not found",
+            "assists": "not found",
+            "xG": null,
+            "xGoT": null,
+            "NPxG": null,
+            "xA": null,
+            "xGI": null,
+            "CS": null,
+            "GC": "26",
+            "xGC": null
+        },
+        "goalkeeping_metrics": {
+            "penalties_conceded": null,
+            "penalties_saved": null,
+            "saves": "60",
+            "goal_prevented": "-1.13"
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        }
+    },
+    {
+        "profile": {
+            "id": 1167220,
+            "name": "Joan García",
+            "position": "Keeper",
+            "nationality": "Spain",
+            "club": "Barcelona",
+            "league": "LaLiga"
+        },
+        "participation": {
+            "matches": 30,
+            "started": "not found",
+            "minutes_played": 2700
+        },
+        "overview_metrics": {
+            "goals": "not found",
+            "assists": "not found",
+            "xG": null,
+            "xGoT": null,
+            "NPxG": null,
+            "xA": null,
+            "xGI": null,
+            "CS": null,
+            "GC": "21",
+            "xGC": null
+        },
+        "goalkeeping_metrics": {
+            "penalties_conceded": "3",
+            "penalties_saved": "0",
+            "saves": "74",
+            "goal_prevented": "10.24"
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        }
+    },
+    {
+        "profile": {
+            "id": 660625,
+            "name": "Unai Simón",
+            "position": "Keeper",
+            "nationality": "Spain",
+            "club": "Athletic Club",
+            "league": "LaLiga"
+        },
+        "participation": {
+            "matches": 37,
+            "started": "not found",
+            "minutes_played": 3330
+        },
+        "overview_metrics": {
+            "goals": "not found",
+            "assists": "not found",
+            "xG": null,
+            "xGoT": null,
+            "NPxG": null,
+            "xA": null,
+            "xGI": null,
+            "CS": null,
+            "GC": "54",
+            "xGC": null
+        },
+        "goalkeeping_metrics": {
+            "penalties_conceded": "3",
+            "penalties_saved": "2",
+            "saves": "100",
+            "goal_prevented": "-3.04"
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        }
+    },
+    {
+        "profile": {
+            "id": 940573,
+            "name": "Eric García",
+            "position": "Center Back",
+            "nationality": "Spain",
+            "club": "Barcelona",
+            "league": "LaLiga"
+        },
+        "participation": {
+            "matches": 34,
+            "started": 32,
+            "minutes_played": 2730
+        },
+        "overview_metrics": {
+            "goals": 1,
+            "assists": 2,
+            "xG": "2.96",
+            "xGoT": "2.24",
+            "NPxG": "2.96",
+            "xA": "2.40",
+            "xGI": "5.36",
+            "CS": "11",
+            "GC": "22",
+            "xGC": "32.99"
+        },
+        "detailed_actions": {
+            "shots": "25",
+            "shots_on_target": "7",
+            "chances_created": "31",
+            "big_chances_created": "3",
+            "clearances": "78",
+            "blocks": "7",
+            "interceptions": "48",
+            "tackles": "74",
+            "recoveries": "113"
+        },
+        "discipline": {
+            "yellow_cards": 6,
+            "red_cards": 0
+        }
+    },
+    {
+        "profile": {
+            "id": 1323897,
+            "name": "Marc Pubill",
+            "position": "Center Back",
+            "nationality": "Spain",
+            "club": "Atletico Madrid",
+            "league": "LaLiga"
+        },
+        "participation": {
+            "matches": 19,
+            "started": 15,
+            "minutes_played": 1382
+        },
+        "overview_metrics": {
+            "goals": 1,
+            "assists": 1,
+            "xG": "0.92",
+            "xGoT": "1.44",
+            "NPxG": "0.92",
+            "xA": "0.60",
+            "xGI": "1.52",
+            "CS": "5",
+            "GC": "16",
+            "xGC": "19.98"
+        },
+        "detailed_actions": {
+            "shots": "11",
+            "shots_on_target": "4",
+            "chances_created": "3",
+            "big_chances_created": "1",
+            "clearances": "85",
+            "blocks": "15",
+            "interceptions": "20",
+            "tackles": "25",
+            "recoveries": "60"
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 0
+        }
+    },
+    {
+        "profile": {
+            "id": 1532137,
+            "name": "Pau Cubarsí",
+            "position": "Center Back",
+            "nationality": "Spain",
+            "club": "Barcelona",
+            "league": "LaLiga"
+        },
+        "participation": {
+            "matches": 31,
+            "started": 31,
+            "minutes_played": 2708
+        },
+        "overview_metrics": {
+            "goals": 1,
+            "assists": 0,
+            "xG": "0.54",
+            "xGoT": "0.46",
+            "NPxG": "0.54",
+            "xA": "0.73",
+            "xGI": "1.27",
+            "CS": "11",
+            "GC": "29",
+            "xGC": "38.47"
+        },
+        "detailed_actions": {
+            "shots": "10",
+            "shots_on_target": "2",
+            "chances_created": "5",
+            "big_chances_created": "1",
+            "clearances": "147",
+            "blocks": "12",
+            "interceptions": "30",
+            "tackles": "42",
+            "recoveries": "104"
+        },
+        "discipline": {
+            "yellow_cards": 3,
+            "red_cards": 0
+        }
+    },
+    {
+        "profile": {
+            "id": 602563,
+            "name": "Marcos Llorente",
+            "position": "Right Back",
+            "nationality": "Spain",
+            "club": "Atletico Madrid",
+            "league": "LaLiga"
+        },
+        "participation": {
+            "matches": 29,
+            "started": 25,
+            "minutes_played": 2184
+        },
+        "overview_metrics": {
+            "goals": 0,
+            "assists": 4,
+            "xG": "1.98",
+            "xGoT": "1.78",
+            "NPxG": "1.98",
+            "xA": "3.80",
+            "xGI": "5.78",
+            "CS": "6",
+            "GC": "26",
+            "xGC": "26.83"
+        },
+        "detailed_actions": {
+            "shots": "18",
+            "shots_on_target": "6",
+            "chances_created": "20",
+            "big_chances_created": "9",
+            "clearances": "53",
+            "blocks": "2",
+            "interceptions": "12",
+            "tackles": "59",
+            "recoveries": "124"
+        },
+        "discipline": {
+            "yellow_cards": 5,
+            "red_cards": 1
+        }
+    },
+    {
+        "profile": {
+            "id": 941573,
+            "name": "Pedro Porro",
+            "position": "Right Back",
+            "nationality": "Spain",
+            "club": "Tottenham Hotspur",
+            "league": "Premier League"
+        },
+        "participation": {
+            "matches": 34,
+            "started": 32,
+            "minutes_played": 2798
+        },
+        "overview_metrics": {
+            "goals": 1,
+            "assists": 2,
+            "xG": "1.05",
+            "xGoT": "1.38",
+            "NPxG": "1.05",
+            "xA": "4.48",
+            "xGI": "5.53",
+            "CS": "9",
+            "GC": "40",
+            "xGC": "38.32"
+        },
+        "detailed_actions": {
+            "shots": "32",
+            "shots_on_target": "8",
+            "chances_created": "53",
+            "big_chances_created": "8",
+            "clearances": "102",
+            "blocks": "10",
+            "interceptions": "31",
+            "tackles": "76",
+            "recoveries": "133"
+        },
+        "discipline": {
+            "yellow_cards": 10,
+            "red_cards": 0
+        }
+    },
+    {
+        "profile": {
+            "id": 411617,
+            "name": "Aymeric Laporte",
+            "position": "Center Back",
+            "nationality": "Spain",
+            "club": "Athletic Club",
+            "league": "LaLiga"
+        },
+        "participation": {
+            "matches": 25,
+            "started": 24,
+            "minutes_played": 2060
+        },
+        "overview_metrics": {
+            "goals": 0,
+            "assists": 1,
+            "xG": "1.62",
+            "xGoT": "1.44",
+            "NPxG": "1.62",
+            "xA": "0.33",
+            "xGI": "1.95",
+            "CS": "1",
+            "GC": "35",
+            "xGC": "24.39"
+        },
+        "detailed_actions": {
+            "shots": "15",
+            "shots_on_target": "5",
+            "chances_created": "7",
+            "big_chances_created": "1",
+            "clearances": "127",
+            "blocks": "13",
+            "interceptions": "25",
+            "tackles": "27",
+            "recoveries": "87"
+        },
+        "discipline": {
+            "yellow_cards": 4,
+            "red_cards": 0
+        }
+    },
+    {
+        "profile": {
+            "id": 873289,
+            "name": "Marc Cucurella",
+            "position": "Left Back",
+            "nationality": "Spain",
+            "club": "Chelsea",
+            "league": "Premier League"
+        },
+        "participation": {
+            "matches": 34,
+            "started": 31,
+            "minutes_played": 2710
+        },
+        "overview_metrics": {
+            "goals": 1,
+            "assists": 4,
+            "xG": "2.35",
+            "xGoT": "1.81",
+            "NPxG": "2.35",
+            "xA": "3.21",
+            "xGI": "5.56",
+            "CS": "9",
+            "GC": "37",
+            "xGC": "40.98"
+        },
+        "detailed_actions": {
+            "shots": "20",
+            "shots_on_target": "6",
+            "chances_created": "39",
+            "big_chances_created": "6",
+            "clearances": "87",
+            "blocks": "8",
+            "interceptions": "32",
+            "tackles": "55",
+            "recoveries": "113"
+        },
+        "discipline": {
+            "yellow_cards": 8,
+            "red_cards": 1
+        }
+    },
+    {
+        "profile": {
+            "id": 1279040,
+            "name": "Gavi",
+            "position": "Defensive Midfielder",
+            "nationality": "Spain",
+            "club": "Barcelona",
+            "league": "LaLiga"
+        },
+        "participation": {
+            "matches": 11,
+            "started": 7,
+            "minutes_played": 574
+        },
+        "overview_metrics": {
+            "goals": 0,
+            "assists": 1,
+            "xG": null,
+            "xGoT": null,
+            "NPxG": null,
+            "xA": "0.33",
+            "xGI": null,
+            "CS": "0",
+            "GC": "6",
+            "xGC": "5.55"
+        },
+        "detailed_actions": {
+            "shots": "0",
+            "shots_on_target": null,
+            "chances_created": "8",
+            "big_chances_created": "1",
+            "clearances": "7",
+            "blocks": "2",
+            "interceptions": "3",
+            "tackles": "17",
+            "recoveries": "26"
+        },
+        "discipline": {
+            "yellow_cards": 3,
+            "red_cards": 0
+        }
+    },
+    {
+        "profile": {
+            "id": 1031325,
+            "name": "Martín Zubimendi",
+            "position": "Central Midfielder",
+            "nationality": "Spain",
+            "club": "Arsenal",
+            "league": "Premier League"
+        },
+        "participation": {
+            "matches": 38,
+            "started": 34,
+            "minutes_played": 3001
+        },
+        "overview_metrics": {
+            "goals": 5,
+            "assists": 1,
+            "xG": "2.85",
+            "xGoT": "3.61",
+            "NPxG": "2.85",
+            "xA": "2.26",
+            "xGI": "5.11",
+            "CS": "10",
+            "GC": "25",
+            "xGC": "25.90"
+        },
+        "detailed_actions": {
+            "shots": "27",
+            "shots_on_target": "9",
+            "chances_created": "19",
+            "big_chances_created": "1",
+            "clearances": "78",
+            "blocks": "5",
+            "interceptions": "39",
+            "tackles": "68",
+            "recoveries": "116"
+        },
+        "discipline": {
+            "yellow_cards": 4,
+            "red_cards": 0
+        }
+    },
+    {
+        "profile": {
+            "id": 288406,
+            "name": "Alejandro Grimaldo",
+            "position": "Left Wing-Back",
+            "nationality": "Spain",
+            "club": "Bayer Leverkusen",
+            "league": "Bundesliga"
+        },
+        "participation": {
+            "matches": 29,
+            "started": 29,
+            "minutes_played": 2524
+        },
+        "overview_metrics": {
+            "goals": 8,
+            "assists": 8,
+            "xG": "6.65",
+            "xGoT": "6.58",
+            "NPxG": "4.29",
+            "xA": "10.13",
+            "xGI": "16.78",
+            "CS": "5",
+            "GC": "40",
+            "xGC": "38.86"
+        },
+        "detailed_actions": {
+            "shots": "60",
+            "shots_on_target": "21",
+            "chances_created": "70",
+            "big_chances_created": "16",
+            "clearances": "52",
+            "blocks": "5",
+            "interceptions": "19",
+            "tackles": "49",
+            "recoveries": "127"
+        },
+        "discipline": {
+            "yellow_cards": 5,
+            "red_cards": 0
+        }
+    },
+    {
+        "profile": {
+            "id": 574645,
+            "name": "Mikel Merino",
+            "position": "Central Midfielder",
+            "nationality": "Spain",
+            "club": "Arsenal",
+            "league": "Premier League"
+        },
+        "participation": {
+            "matches": 22,
+            "started": 10,
+            "minutes_played": 1027
+        },
+        "overview_metrics": {
+            "goals": 4,
+            "assists": 3,
+            "xG": "3.38",
+            "xGoT": "3.69",
+            "NPxG": "3.38",
+            "xA": "1.46",
+            "xGI": "4.84",
+            "CS": "2",
+            "GC": "10",
+            "xGC": "7.30"
+        },
+        "detailed_actions": {
+            "shots": "22",
+            "shots_on_target": "8",
+            "chances_created": "12",
+            "big_chances_created": "4",
+            "clearances": "19",
+            "blocks": "2",
+            "interceptions": "10",
+            "tackles": "26",
+            "recoveries": "57"
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        }
+    },
+    {
+        "profile": {
+            "id": 605654,
+            "name": "Fabián Ruiz",
+            "position": "Central Midfielder",
+            "nationality": "Spain",
+            "club": "Paris Saint-Germain",
+            "league": "Ligue 1"
+        },
+        "participation": {
+            "matches": 20,
+            "started": 13,
+            "minutes_played": 1129
+        },
+        "overview_metrics": {
+            "goals": 1,
+            "assists": 4,
+            "xG": "1.37",
+            "xGoT": "0.48",
+            "NPxG": "1.37",
+            "xA": "2.13",
+            "xGI": "3.5",
+            "CS": "2",
+            "GC": "12",
+            "xGC": "11.81"
+        },
+        "detailed_actions": {
+            "shots": "19",
+            "shots_on_target": "4",
+            "chances_created": "19",
+            "big_chances_created": "3",
+            "clearances": "7",
+            "blocks": null,
+            "interceptions": "14",
+            "tackles": "17",
+            "recoveries": "49"
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 0
+        }
+    },
+    {
+        "profile": {
+            "id": 614834,
+            "name": "Dani Olmo",
+            "position": "Attacking Midfielder",
+            "nationality": "Spain",
+            "club": "Barcelona",
+            "league": "LaLiga"
+        },
+        "participation": {
+            "matches": 33,
+            "started": 24,
+            "minutes_played": 2077
+        },
+        "overview_metrics": {
+            "goals": 7,
+            "assists": 8,
+            "xG": "7.66",
+            "xGoT": "7.53",
+            "NPxG": "7.66",
+            "xA": "5.64",
+            "xGI": "13.3",
+            "CS": "2",
+            "GC": "17",
+            "xGC": "24.35"
+        },
+        "detailed_actions": {
+            "shots": "70",
+            "shots_on_target": "21",
+            "chances_created": "49",
+            "big_chances_created": "11",
+            "clearances": "23",
+            "blocks": "1",
+            "interceptions": "14",
+            "tackles": "33",
+            "recoveries": "102"
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        }
+    },
+    {
+        "profile": {
+            "id": 1047676,
+            "name": "Yéremi Pino",
+            "position": "Attacking Midfielder",
+            "nationality": "Spain",
+            "club": "Crystal Palace",
+            "league": "Premier League"
+        },
+        "participation": {
+            "matches": 34,
+            "started": 26,
+            "minutes_played": 2091
+        },
+        "overview_metrics": {
+            "goals": 2,
+            "assists": 2,
+            "xG": "4.51",
+            "xGoT": "4.17",
+            "NPxG": "4.51",
+            "xA": "6.11",
+            "xGI": "10.62",
+            "CS": "1",
+            "GC": "28",
+            "xGC": "29.89"
+        },
+        "detailed_actions": {
+            "shots": "45",
+            "shots_on_target": "11",
+            "chances_created": "48",
+            "big_chances_created": "15",
+            "clearances": "21",
+            "blocks": "1",
+            "interceptions": "9",
+            "tackles": "36",
+            "recoveries": "101"
+        },
+        "discipline": {
+            "yellow_cards": 4,
+            "red_cards": 0
+        }
+    },
+    {
+        "profile": {
+            "id": 942372,
+            "name": "Álex Baena",
+            "position": "Left Midfielder",
+            "nationality": "Spain",
+            "club": "Atletico Madrid",
+            "league": "LaLiga"
+        },
+        "participation": {
+            "matches": 27,
+            "started": 21,
+            "minutes_played": 1572
+        },
+        "overview_metrics": {
+            "goals": 2,
+            "assists": 3,
+            "xG": "2.00",
+            "xGoT": "2.25",
+            "NPxG": "2.00",
+            "xA": "6.08",
+            "xGI": "8.08",
+            "CS": "2",
+            "GC": "20",
+            "xGC": "22.19"
+        },
+        "detailed_actions": {
+            "shots": "29",
+            "shots_on_target": "7",
+            "chances_created": "46",
+            "big_chances_created": "13",
+            "clearances": "12",
+            "blocks": "4",
+            "interceptions": "16",
+            "tackles": "18",
+            "recoveries": "63"
+        },
+        "discipline": {
+            "yellow_cards": 5,
+            "red_cards": 0
+        }
+    },
+    {
+        "profile": {
+            "id": 675088,
+            "name": "Rodri",
+            "position": "Defensive Midfielder",
+            "nationality": "Spain",
+            "club": "Manchester City",
+            "league": "Premier League"
+        },
+        "participation": {
+            "matches": 21,
+            "started": 17,
+            "minutes_played": 1513
+        },
+        "overview_metrics": {
+            "goals": 1,
+            "assists": 0,
+            "xG": "1.13",
+            "xGoT": "0.61",
+            "NPxG": "1.13",
+            "xA": "2.59",
+            "xGI": "3.72",
+            "CS": "3",
+            "GC": "15",
+            "xGC": "20.84"
+        },
+        "detailed_actions": {
+            "shots": "16",
+            "shots_on_target": "3",
+            "chances_created": "25",
+            "big_chances_created": "2",
+            "clearances": "41",
+            "blocks": "3",
+            "interceptions": "14",
+            "tackles": "41",
+            "recoveries": "107"
+        },
+        "discipline": {
+            "yellow_cards": 3,
+            "red_cards": 0
+        }
+    },
+    {
+        "profile": {
+            "id": 1083323,
+            "name": "Pedri",
+            "position": "Defensive Midfielder",
+            "nationality": "Spain",
+            "club": "Barcelona",
+            "league": "LaLiga"
+        },
+        "participation": {
+            "matches": 29,
+            "started": 23,
+            "minutes_played": 2107
+        },
+        "overview_metrics": {
+            "goals": 2,
+            "assists": 9,
+            "xG": "1.57",
+            "xGoT": "1.74",
+            "NPxG": "1.57",
+            "xA": "5.39",
+            "xGI": "6.96",
+            "CS": "4",
+            "GC": "20",
+            "xGC": "26.20"
+        },
+        "detailed_actions": {
+            "shots": "21",
+            "shots_on_target": "10",
+            "chances_created": "63",
+            "big_chances_created": "8",
+            "clearances": "23",
+            "blocks": "2",
+            "interceptions": "24",
+            "tackles": "50",
+            "recoveries": "163"
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 1
+        }
+    },
+    {
+        "profile": {
+            "id": 881771,
+            "name": "Ferran Torres",
+            "position": "Striker",
+            "nationality": "Spain",
+            "club": "Barcelona",
+            "league": "LaLiga"
+        },
+        "participation": {
+            "matches": 33,
+            "started": 23,
+            "minutes_played": 1976
+        },
+        "overview_metrics": {
+            "goals": 16,
+            "assists": 2,
+            "xG": "13.16",
+            "xGoT": "12.42",
+            "NPxG": "13.16",
+            "xA": "1.72",
+            "xGI": "14.88",
+            "CS": "2",
+            "GC": "20",
+            "xGC": "27.59"
+        },
+        "detailed_actions": {
+            "shots": "69",
+            "shots_on_target": "37",
+            "chances_created": "23",
+            "big_chances_created": "5",
+            "clearances": "10",
+            "blocks": "1",
+            "interceptions": "3",
+            "tackles": "7",
+            "recoveries": "36"
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 0
+        }
+    },
+    {
+        "profile": {
+            "id": 609505,
+            "name": "Borja Iglesias",
+            "position": "Striker",
+            "nationality": "Spain",
+            "club": "Celta Vigo",
+            "league": "LaLiga"
+        },
+        "participation": {
+            "matches": 35,
+            "started": 21,
+            "minutes_played": 1902
+        },
+        "overview_metrics": {
+            "goals": 14,
+            "assists": 2,
+            "xG": "10.45",
+            "xGoT": "12.19",
+            "NPxG": "7.30",
+            "xA": "1.58",
+            "xGI": "12.03",
+            "CS": "0",
+            "GC": "26",
+            "xGC": "31.48"
+        },
+        "detailed_actions": {
+            "shots": "46",
+            "shots_on_target": "26",
+            "chances_created": "17",
+            "big_chances_created": "3",
+            "clearances": "17",
+            "blocks": "5",
+            "interceptions": "1",
+            "tackles": "8",
+            "recoveries": "48"
+        },
+        "discipline": {
+            "yellow_cards": 7,
+            "red_cards": 0
+        }
+    },
+    {
+        "profile": {
+            "id": 1202110,
+            "name": "Nico Williams",
+            "position": "Left Winger",
+            "nationality": "Spain",
+            "club": "Athletic Club",
+            "league": "LaLiga"
+        },
+        "participation": {
+            "matches": 25,
+            "started": 20,
+            "minutes_played": 1687
+        },
+        "overview_metrics": {
+            "goals": 6,
+            "assists": 3,
+            "xG": "5.37",
+            "xGoT": "6.41",
+            "NPxG": "3.80",
+            "xA": "4.98",
+            "xGI": "10.35",
+            "CS": "1",
+            "GC": "27",
+            "xGC": "21.94"
+        },
+        "detailed_actions": {
+            "shots": "46",
+            "shots_on_target": "16",
+            "chances_created": "34",
+            "big_chances_created": "5",
+            "clearances": "9",
+            "blocks": null,
+            "interceptions": "7",
+            "tackles": "15",
+            "recoveries": "90"
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 0
+        }
+    },
+    {
+        "profile": {
+            "id": 1467236,
+            "name": "Lamine Yamal",
+            "position": "Right Winger",
+            "nationality": "Spain",
+            "club": "Barcelona",
+            "league": "LaLiga"
+        },
+        "participation": {
+            "matches": 28,
+            "started": 26,
+            "minutes_played": 2268
+        },
+        "overview_metrics": {
+            "goals": 16,
+            "assists": 11,
+            "xG": "12.81",
+            "xGoT": "12.18",
+            "NPxG": "9.66",
+            "xA": "10.09",
+            "xGI": "22.9",
+            "CS": "6",
+            "GC": "23",
+            "xGC": "32.43"
+        },
+        "detailed_actions": {
+            "shots": "117",
+            "shots_on_target": "37",
+            "chances_created": "72",
+            "big_chances_created": "26",
+            "clearances": "3",
+            "blocks": null,
+            "interceptions": "10",
+            "tackles": "35",
+            "recoveries": "99"
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        }
+    },
+    {
+        "profile": {
+            "id": 678234,
+            "name": "Mikel Oyarzabal",
+            "position": "Striker",
+            "nationality": "Spain",
+            "club": "Real Sociedad",
+            "league": "LaLiga"
+        },
+        "participation": {
+            "matches": 34,
+            "started": 30,
+            "minutes_played": 2714
+        },
+        "overview_metrics": {
+            "goals": 15,
+            "assists": 4,
+            "xG": "15.24",
+            "xGoT": "15.14",
+            "NPxG": "9.72",
+            "xA": "3.63",
+            "xGI": "18.87",
+            "CS": "2",
+            "GC": "45",
+            "xGC": "45.98"
+        },
+        "detailed_actions": {
+            "shots": "79",
+            "shots_on_target": "36",
+            "chances_created": "42",
+            "big_chances_created": "13",
+            "clearances": "28",
+            "blocks": "3",
+            "interceptions": "4",
+            "tackles": "29",
+            "recoveries": "93"
+        },
+        "discipline": {
+            "yellow_cards": 3,
+            "red_cards": 0
+        }
+    },
+    {
+        "profile": {
+            "id": 1553105,
+            "name": "Víctor Muñoz",
+            "position": "Left Winger",
+            "nationality": "Spain",
+            "club": "Osasuna",
+            "league": "LaLiga"
+        },
+        "participation": {
+            "matches": 34,
+            "started": 31,
+            "minutes_played": 2668
+        },
+        "overview_metrics": {
+            "goals": 6,
+            "assists": 2,
+            "xG": "5.86",
+            "xGoT": "7.48",
+            "NPxG": "5.86",
+            "xA": "3.24",
+            "xGI": "9.1",
+            "CS": "3",
+            "GC": "32",
+            "xGC": "35.18"
+        },
+        "detailed_actions": {
+            "shots": "81",
+            "shots_on_target": "31",
+            "chances_created": "27",
+            "big_chances_created": "2",
+            "clearances": "20",
+            "blocks": null,
+            "interceptions": "9",
+            "tackles": "22",
+            "recoveries": "96"
+        },
+        "discipline": {
+            "yellow_cards": 3,
+            "red_cards": 0
+        }
+    }
+]
