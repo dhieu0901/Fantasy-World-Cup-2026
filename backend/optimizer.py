@@ -190,6 +190,12 @@ def optimize_greedy(players: list[dict], stage: str = "GROUP_MD1", preset: str =
     # Select starting XI (best 11 in a valid formation)
     starting_xi, bench = _select_starting_xi(selected, chip, stage)
 
+    # Handle Qualification Booster (Apply to projected_pts BEFORE captain selection)
+    if chip == "qualification" and stage not in ("GROUP_MD1", "GROUP_MD2", "GROUP_MD3"):
+        for p in starting_xi:
+            bonus = get_team_strength(p.get("team_abbr", "")) * 2.0
+            p["projected_pts"] = p.get("projected_pts", 0) + bonus
+
     # Captain = highest projected points in starting XI
     captain = max(starting_xi, key=lambda p: p.get("projected_pts", 0)) if starting_xi else None
     
@@ -211,12 +217,6 @@ def optimize_greedy(players: list[dict], stage: str = "GROUP_MD1", preset: str =
     else:
         if captain:
             total_xpts += captain.get("projected_pts", 0)  # Normal double for captain
-
-    # Handle Qualification Booster
-    if chip == "qualification" and stage not in ("GROUP_MD1", "GROUP_MD2", "GROUP_MD3"):
-        for p in starting_xi:
-            total_xpts += 1.0  # +1.0 EV for advancing
-            p["projected_pts"] += 1.0
 
     return {
         "squad": selected,
@@ -480,9 +480,17 @@ def optimize_lp(players: list[dict], stage: str = "GROUP_MD1",
     # Ensure starting_xi format matches what greedy would return
     if len(starting_xi) != 11:
         starting_xi, bench = _select_starting_xi(selected, chip, stage)
-        captain = max(starting_xi, key=lambda p: p.get("projected_pts", 0)) if starting_xi else None
+        # Captain was already chosen by LP, keep it unless it was lost in fallback
+        if not captain or captain not in starting_xi:
+            captain = max(starting_xi, key=lambda p: p.get("projected_pts", 0)) if starting_xi else None
     else:
         bench = [p for p in selected if p not in starting_xi]
+
+    # Handle Qualification Booster (Apply to projected_pts BEFORE total points calc)
+    if chip == "qualification" and stage not in ("GROUP_MD1", "GROUP_MD2", "GROUP_MD3"):
+        for p in starting_xi:
+            bonus = get_team_strength(p.get("team_abbr", "")) * 2.0
+            p["projected_pts"] = p.get("projected_pts", 0) + bonus
 
     vice_candidates = [p for p in starting_xi if not captain or p["id"] != captain["id"]]
     vice_captain = max(vice_candidates, key=lambda p: p.get("projected_pts", 0)) if vice_candidates else None
@@ -502,12 +510,6 @@ def optimize_lp(players: list[dict], stage: str = "GROUP_MD1",
     else:
         if captain:
             total_xpts += captain.get("projected_pts", 0)  # Normal double for captain
-        
-    # Handle Qualification Booster
-    if chip == "qualification" and stage not in ("GROUP_MD1", "GROUP_MD2", "GROUP_MD3"):
-        for p in starting_xi:
-            total_xpts += 1.0  # +1.0 EV for advancing
-            p["projected_pts"] += 1.0
 
     # Calculate actual transfers
     transfers_in = []
