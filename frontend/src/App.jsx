@@ -31,7 +31,7 @@ function countryFlag(abbr) {
     JOR:'jo', UZB:'uz', KSA:'sa', NZL:'nz', COD:'cd', HAI:'ht', CUW:'cw', CPV:'cv',
   };
   const code = map2[abbr];
-  if (!code) return '🏳️';
+  if (!code) return '?';
   return <img src={`https://flagcdn.com/w20/${code}.png`} width="20" alt={abbr} style={{ verticalAlign: 'middle', borderRadius: '2px', boxShadow: '0 0 1px rgba(255,255,255,0.5)', display: 'inline-block' }} />;
 }
 
@@ -155,10 +155,10 @@ export default function App() {
       // Reload stats
       const sData = await api.getStats();
       setStats(sData);
-      alert("✅ Data synchronized successfully!");
+      alert("Data synchronized successfully!");
     } catch (e) {
       console.error('Sync failed:', e);
-      alert("❌ Sync failed: " + e.message);
+      alert("Sync failed: " + e.message);
     }
     setIsSyncing(false);
   };
@@ -213,7 +213,6 @@ export default function App() {
       {/* ── Header ── */}
       <header className="header">
         <div className="header-brand">
-          <span style={{ fontSize: '1.3rem' }}>⚽</span>
           <h1>WC2026 Fantasy Planner</h1>
           <span className="badge">Beta</span>
         </div>
@@ -232,7 +231,6 @@ export default function App() {
         <main className="app-content">
           {recommendations.length > 0 && (
             <div className="slide-up" style={{ background: 'rgba(245, 158, 11, 0.15)', border: '1px solid rgba(245, 158, 11, 0.5)', color: '#fcd34d', padding: '12px 16px', borderRadius: '8px', marginBottom: '20px', display: 'flex', alignItems: 'center', gap: '12px' }}>
-              <span style={{ fontSize: '1.4rem' }}>💡</span>
               <div>
                 <strong style={{ display: 'block', fontSize: '0.9rem', marginBottom: '4px' }}>Live Sub Recommendation</strong>
                 <span style={{ fontSize: '0.85rem', color: '#fde68a' }}>{recommendations[0].reason}</span>
@@ -251,9 +249,9 @@ export default function App() {
           {/* ── Tabs ── */}
           <div className="tabs">
             {[
-              { id: 'projections', label: '📊 Projections' },
-              { id: 'lineup', label: '⚽ Lineup' },
-              { id: 'fixtures', label: '📅 Fixtures' },
+              { id: 'projections', label: 'Projections' },
+              { id: 'lineup', label: 'Lineup' },
+              { id: 'fixtures', label: 'Fixtures' },
             ].map(t => (
               <button key={t.id} className={`tab ${tab === t.id ? 'active' : ''}`} onClick={() => setTab(t.id)}>
                 {getTabLabel(t.id, t.label)}
@@ -581,11 +579,11 @@ function FixturesTab({ squads, fixtures, setSelectedTeamFilter, setTab }) {
    ═══════════════════════════════════════════ */
 function OptimizerPanel({ preset, setPreset, chip, setChip, transferMode, setTransferMode, myTeam, freeTransfers, setFreeTransfers, optimizing, runOptimize, result }) {
   const presets = [
-    { id: 'default', label: '⚡ Balanced', desc: 'Max total xPts, balanced risk & reward' },
-    { id: 'value', label: '💎 Value', desc: 'Maximize points-per-million, hunt for budget gems' },
-    { id: 'safe', label: '🛡️ Safe', desc: 'Prioritize high ownership, protect your rank' },
-    { id: 'risky', label: '🎯 Differential', desc: 'Target low ownership gems for maximum upside' },
-    { id: 'template', label: '👥 Template', desc: 'Follow the crowd, highly popular picks' },
+    { id: 'default', label: 'Balanced', desc: 'Max total xPts, balanced risk & reward' },
+    { id: 'value', label: 'Value', desc: 'Maximize points-per-million, hunt for budget gems' },
+    { id: 'safe', label: 'Safe', desc: 'Prioritize high ownership, protect your rank' },
+    { id: 'risky', label: 'Differential', desc: 'Target low ownership gems for maximum upside' },
+    { id: 'template', label: 'Template', desc: 'Follow the crowd, highly popular picks' },
   ];
 
   return (
@@ -617,14 +615,14 @@ function OptimizerPanel({ preset, setPreset, chip, setChip, transferMode, setTra
           <div style={{ marginBottom: 'var(--sp-4)' }}>
             <div style={{ fontSize: '0.7rem', color: 'var(--clr-text-muted)', marginBottom: 'var(--sp-2)', fontWeight: 600 }}>STAGE</div>
             <div style={{ fontSize: '0.8rem', color: 'var(--clr-text)', padding: 'var(--sp-2)', background: 'var(--clr-bg-elevated)', borderRadius: 'var(--r-sm)', textAlign: 'center', fontWeight: 600 }}>
-              📍 Group Stage — Matchday 1
+              Group Stage — Matchday 1
             </div>
           </div>
           
           {/* Transfer Planner Toggle */}
           <div style={{ marginBottom: 'var(--sp-4)', background: 'rgba(255, 255, 255, 0.03)', padding: '12px', borderRadius: '8px', border: '1px solid var(--clr-border)' }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '8px' }}>
-              <div style={{ fontSize: '0.8rem', fontWeight: 600 }}>🔄 Transfer Planner</div>
+              <div style={{ fontSize: '0.8rem', fontWeight: 600 }}>Transfer Planner</div>
               <label className="switch" style={{ cursor: 'pointer' }}>
                 <input type="checkbox" checked={transferMode} onChange={(e) => setTransferMode(e.target.checked)} />
                 <span className="slider"></span>
@@ -634,9 +632,9 @@ function OptimizerPanel({ preset, setPreset, chip, setChip, transferMode, setTra
             {transferMode && (
               <div style={{ marginTop: '12px', fontSize: '0.8rem' }}>
                 {myTeam.length === 15 ? (
-                  <div style={{ color: '#2dd4bf', marginBottom: '8px' }}>✓ My Team loaded (15 players)</div>
+                  <div style={{ color: '#2dd4bf', marginBottom: '8px' }}>My Team loaded (15 players)</div>
                 ) : (
-                  <div style={{ color: '#fb7185', marginBottom: '8px' }}>⚠️ Save a team first!</div>
+                  <div style={{ color: '#fb7185', marginBottom: '8px' }}>Save a team first!</div>
                 )}
                 
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
@@ -661,12 +659,12 @@ function OptimizerPanel({ preset, setPreset, chip, setChip, transferMode, setTra
                 fontSize: '0.8rem', outline: 'none', cursor: 'pointer'
               }}
             >
-              <option value="none">🚫 No Booster</option>
-              <option value="12th_man">👤 12th Man</option>
-              <option value="max_captain">⭐ Maximum Captain</option>
-              <option value="wildcard">🃏 Wildcard</option>
-              <option value="qualification">📈 Qualification Booster</option>
-              <option value="mystery">❓ Mystery Booster (TBA)</option>
+              <option value="none">No Booster</option>
+              <option value="12th_man">12th Man</option>
+              <option value="max_captain">Maximum Captain</option>
+              <option value="wildcard">Wildcard</option>
+              <option value="qualification">Qualification Booster</option>
+              <option value="mystery">Mystery Booster (TBA)</option>
             </select>
           </div>
 
@@ -741,11 +739,11 @@ function OptimizerPanel({ preset, setPreset, chip, setChip, transferMode, setTra
       <div className="sidebar-section">
         <div className="section-title">Quick Rules (WC 2026)</div>
         <div className="card" style={{ fontSize: '0.7rem', color: 'var(--clr-text-dim)' }}>
-          <div style={{ marginBottom: '6px' }}>🔄 <strong>Rolling Lockout:</strong> Manual subs allowed during a round! Swap unlocked bench players for unlocked starters, OR for locked starters who have <em>finished</em> playing.</div>
-          <div style={{ marginBottom: '6px', color: 'var(--clr-warning)' }}>⚠️ <strong>Warning:</strong> Making a manual sub or changing Captain cancels Auto-Subs for that matchday.</div>
-          <div style={{ marginBottom: '6px' }}>⭐ <strong>Captaincy:</strong> Can be changed multiple times to players who haven't played yet.</div>
-          <div style={{ marginBottom: '6px' }}>📉 <strong>Transfers:</strong> -3 pts per extra transfer (not -4 like FPL).</div>
-          <div>🚀 <strong>Boosters:</strong> 12th Man (extra player), Max Captain (auto highest scorer), Wildcard, Qualification, Mystery.</div>
+          <div style={{ marginBottom: '6px' }}><strong>Rolling Lockout:</strong> Manual subs allowed during a round! Swap unlocked bench players for unlocked starters, OR for locked starters who have <em>finished</em> playing.</div>
+          <div style={{ marginBottom: '6px', color: 'var(--clr-warning)' }}><strong>Warning:</strong> Making a manual sub or changing Captain cancels Auto-Subs for that matchday.</div>
+          <div style={{ marginBottom: '6px' }}><strong>Captaincy:</strong> Can be changed multiple times to players who haven't played yet.</div>
+          <div style={{ marginBottom: '6px' }}><strong>Transfers:</strong> -3 pts per extra transfer (not -4 like FPL).</div>
+          <div><strong>Boosters:</strong> 12th Man (extra player), Max Captain (auto highest scorer), Wildcard, Qualification, Mystery.</div>
         </div>
       </div>
     </div>

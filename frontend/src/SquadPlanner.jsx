@@ -173,7 +173,7 @@ function ActionMenuModal({ player, isOpen, onClose, onTransfer, onSub, onSetCapt
               onMouseEnter={e => { e.currentTarget.style.background = 'rgba(250, 204, 21, 0.25)'; e.currentTarget.style.transform = 'translateY(-1px)'; }}
               onMouseLeave={e => { e.currentTarget.style.background = 'linear-gradient(135deg, rgba(250, 204, 21, 0.2), rgba(250, 204, 21, 0.05))'; e.currentTarget.style.transform = 'translateY(0)'; }}
             >
-              🧢 Set Captain
+              Set Captain
             </button>
           )}
           {isInXI && onSetViceCaptain && (
@@ -183,7 +183,7 @@ function ActionMenuModal({ player, isOpen, onClose, onTransfer, onSub, onSetCapt
               onMouseEnter={e => { e.currentTarget.style.background = 'rgba(167, 139, 250, 0.25)'; e.currentTarget.style.transform = 'translateY(-1px)'; }}
               onMouseLeave={e => { e.currentTarget.style.background = 'linear-gradient(135deg, rgba(167, 139, 250, 0.2), rgba(167, 139, 250, 0.05))'; e.currentTarget.style.transform = 'translateY(0)'; }}
             >
-              ⭐ Set Vice Captain
+              Set Vice Captain
             </button>
           )}
           <button 
@@ -192,19 +192,19 @@ function ActionMenuModal({ player, isOpen, onClose, onTransfer, onSub, onSetCapt
             onMouseEnter={e => e.currentTarget.style.background = 'rgba(45, 212, 191, 0.1)'}
             onMouseLeave={e => e.currentTarget.style.background = 'var(--clr-bg-elevated)'}
           >
-            🔄 Substitute
+            Substitute
           </button>
           <button 
             onClick={() => { onTransfer(player); onClose(); }} 
             style={{ background: 'linear-gradient(135deg, var(--clr-gold), var(--clr-gold-dim))', color: 'var(--clr-bg)', border: 'none', padding: '12px', borderRadius: '8px', cursor: 'pointer', fontWeight: 700, display: 'flex', justifyContent: 'center', gap: '8px' }}
           >
-            🛒 Transfer
+            Transfer
           </button>
           <button 
             onClick={() => { onOpenScenario(player); onClose(); }} 
             style={{ background: 'linear-gradient(135deg, #3b82f6, #1d4ed8)', color: 'white', border: 'none', padding: '12px', borderRadius: '8px', cursor: 'pointer', fontWeight: 700, display: 'flex', justifyContent: 'center', gap: '8px' }}
           >
-            🎮 Scenario Simulator
+            Scenario Simulator
           </button>
           <button 
             onClick={onClose} 
@@ -271,7 +271,7 @@ function ScenarioSimulatorModal({ player, isOpen, onClose, onSaveMockPoints }) {
   return (
     <div style={{ position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, background: 'rgba(0,0,0,0.8)', zIndex: 1100, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
       <div style={{ background: 'var(--clr-bg)', padding: '24px', borderRadius: '12px', width: '350px', border: '1px solid var(--clr-border)', boxShadow: '0 10px 30px rgba(0,0,0,0.8)' }}>
-        <h3 style={{ margin: '0 0 4px 0', color: 'var(--clr-teal)' }}>🎮 Scenario Simulator</h3>
+        <h3 style={{ margin: '0 0 4px 0', color: 'var(--clr-teal)' }}>Scenario Simulator</h3>
         <p style={{ margin: '0 0 16px 0', fontSize: '0.9rem', color: 'var(--clr-text-muted)' }}>{player.display_name} ({player.position})</p>
         
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '12px', marginBottom: '20px', fontSize: '0.85rem' }}>
@@ -310,8 +310,8 @@ function ScenarioSimulatorModal({ player, isOpen, onClose, onSaveMockPoints }) {
           <div>
             <label style={{ display: 'block', marginBottom: '4px', color: 'var(--clr-text-muted)' }}>Cards & O.G.</label>
             <div style={{ display: 'flex', gap: '8px' }}>
-              <button onClick={() => setYellowCards(y => y ? 0 : 1)} style={{ padding: '4px 8px', background: yellowCards ? '#eab308' : 'var(--clr-bg-elevated)', color: yellowCards ? 'black' : 'white', border: '1px solid #eab308', borderRadius: '4px', cursor: 'pointer' }}>🟨</button>
-              <button onClick={() => setRedCards(r => r ? 0 : 1)} style={{ padding: '4px 8px', background: redCards ? '#ef4444' : 'var(--clr-bg-elevated)', color: 'white', border: '1px solid #ef4444', borderRadius: '4px', cursor: 'pointer' }}>🟥</button>
+              <button onClick={() => setYellowCards(y => y ? 0 : 1)} style={{ padding: '4px 8px', background: yellowCards ? '#eab308' : 'var(--clr-bg-elevated)', color: yellowCards ? 'black' : 'white', border: '1px solid #eab308', borderRadius: '4px', cursor: 'pointer' }}>YC</button>
+              <button onClick={() => setRedCards(r => r ? 0 : 1)} style={{ padding: '4px 8px', background: redCards ? '#ef4444' : 'var(--clr-bg-elevated)', color: 'white', border: '1px solid #ef4444', borderRadius: '4px', cursor: 'pointer' }}>RC</button>
               <button onClick={() => setOwnGoals(o => o ? 0 : 1)} style={{ padding: '4px 8px', background: ownGoals ? '#ef4444' : 'var(--clr-bg-elevated)', color: 'white', border: '1px solid #ef4444', borderRadius: '4px', cursor: 'pointer' }}>OG</button>
             </div>
           </div>
@@ -404,7 +404,7 @@ function PitchPlayer({ player: p, isCaptain, isViceCaptain, isSubSource, onClick
         {flagUrl ? (
           <img className="jersey-flag" src={flagUrl} alt={p.team_abbr} onError={e => { e.target.style.display = 'none'; e.target.parentNode.innerText = p.team_abbr; }} />
         ) : (
-          <span style={{ fontSize: '1.1rem' }}>🏳️</span>
+          <span style={{ fontSize: '0.8rem' }}>None</span>
         )}
       </div>
       <div className="pitch-player-info">
@@ -450,6 +450,8 @@ export default function SquadPlannerTab({ players, myTeamIds, setMyTeam, optimRe
 
   // Flag to skip auto-sort when we manually set benchedIds (e.g. on Accept)
   const skipAutoSortRef = useRef(false);
+
+  const [advisorData, setAdvisorData] = useState(null);
 
   const teamPlayers = useMemo(() => {
     return myTeamIds.map(id => players.find(p => p.id === id)).filter(Boolean);
@@ -677,6 +679,43 @@ export default function SquadPlannerTab({ players, myTeamIds, setMyTeam, optimRe
     setPlayerToAction(null);
   };
 
+  // Fetch Gameweek Advisor recommendations
+  useEffect(() => {
+    if (isOptimMode || myTeamIds.length !== 15) {
+      setAdvisorData(null);
+      return;
+    }
+    const fetchAdvisor = async () => {
+      try {
+        const xi_ids = teamPlayers.filter(p => !benchedIds.includes(p.id)).map(p => p.id);
+        const bench_ids = teamPlayers.filter(p => benchedIds.includes(p.id)).map(p => p.id);
+        
+        let cId = manualCaptainId;
+        if (!cId) {
+          const sortedXi = [...teamPlayers.filter(p => !benchedIds.includes(p.id))].sort((a,b) => (b.projected_pts||0) - (a.projected_pts||0));
+          if (sortedXi.length > 0) cId = sortedXi[0].id;
+        }
+
+        const res = await fetch('/api/advisor', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            xi_ids,
+            bench_ids,
+            captain_id: cId
+          })
+        });
+        if (res.ok) {
+          const data = await res.json();
+          setAdvisorData(data);
+        }
+      } catch (e) {
+        console.error("Advisor error", e);
+      }
+    };
+    fetchAdvisor();
+  }, [myTeamIds, benchedIds, manualCaptainId, teamPlayers, isOptimMode]);
+
   const handleAccept = () => {
     // Set benchedIds from optimizer result BEFORE setting myTeam
     // This prevents auto-sort from overriding with stale data
@@ -711,7 +750,7 @@ export default function SquadPlannerTab({ players, myTeamIds, setMyTeam, optimRe
         <div style={{ marginBottom: '16px', padding: '16px', background: 'linear-gradient(135deg, rgba(45, 212, 191, 0.15), rgba(15, 118, 110, 0.2))', border: '1px solid rgba(45, 212, 191, 0.3)', borderRadius: '12px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }}>
           <div>
             <h3 style={{ color: 'var(--clr-teal)', margin: '0 0 6px 0', display: 'flex', alignItems: 'center', gap: '8px' }}>
-              ✨ Optimizer Suggestion
+              Optimizer Suggestion
             </h3>
             <p style={{ margin: 0, fontSize: '0.85rem', color: 'var(--clr-text-muted)' }}>Review the suggested squad. Accept to overwrite your team.</p>
           </div>
@@ -722,7 +761,7 @@ export default function SquadPlannerTab({ players, myTeamIds, setMyTeam, optimRe
               onMouseEnter={(e) => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = '0 6px 14px rgba(16, 185, 129, 0.4)'; }}
               onMouseLeave={(e) => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = '0 4px 10px rgba(16, 185, 129, 0.3)'; }}
             >
-              ✅ Accept
+              Accept
             </button>
             <button 
               onClick={() => setOptimResult(null)} 
@@ -730,7 +769,7 @@ export default function SquadPlannerTab({ players, myTeamIds, setMyTeam, optimRe
               onMouseEnter={(e) => { e.currentTarget.style.background = 'rgba(239, 68, 68, 0.2)'; e.currentTarget.style.borderColor = 'rgba(239, 68, 68, 0.5)'; }}
               onMouseLeave={(e) => { e.currentTarget.style.background = 'rgba(239, 68, 68, 0.1)'; e.currentTarget.style.borderColor = 'rgba(239, 68, 68, 0.3)'; }}
             >
-              ❌ Discard
+              Discard
             </button>
           </div>
         </div>
@@ -750,7 +789,7 @@ export default function SquadPlannerTab({ players, myTeamIds, setMyTeam, optimRe
       {/* Captain & Points Bar */}
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '8px 16px', marginBottom: '12px', background: 'var(--clr-bg-card)', borderRadius: 'var(--r-sm)', border: '1px solid var(--clr-border)', fontSize: '0.75rem' }}>
         <span style={{ color: 'var(--clr-text-muted)', display: 'flex', alignItems: 'center', gap: '8px' }}>
-          <span>⭐ C: <strong style={{ color: 'var(--clr-gold)' }}>{captain?.display_name || '-'}</strong></span>
+          <span>C: <strong style={{ color: 'var(--clr-gold)' }}>{captain?.display_name || '-'}</strong></span>
           {manualCaptainId && !isOptimMode && (
             <span style={{ fontSize: '0.6rem', color: 'var(--clr-teal)', background: 'rgba(45,212,191,0.15)', padding: '2px 6px', borderRadius: '4px' }}>MANUAL</span>
           )}
@@ -775,16 +814,39 @@ export default function SquadPlannerTab({ players, myTeamIds, setMyTeam, optimRe
           <span style={{ color: 'var(--clr-text-muted)' }}>|</span>
           Total xPts: <strong style={{ color: 'var(--clr-teal)' }}>{totalXPts?.toFixed(1) || '0.0'}</strong>
           {transferPenalty < 0 && (
-            <strong style={{ color: '#ef4444', fontSize: '0.8rem' }}>({transferPenalty})</strong>
+            <span style={{ color: '#ef4444', fontWeight: 600, marginLeft: '4px' }}>
+              Hit: {transferPenalty} pts
+            </span>
           )}
         </span>
       </div>
+
+      {/* Gameweek Advisor Banner */}
+      {advisorData && (advisorData.captain_advice || (advisorData.sub_advice && advisorData.sub_advice.length > 0)) && !isOptimMode && (
+        <div style={{ marginBottom: '12px', padding: '12px', background: 'linear-gradient(135deg, rgba(250, 204, 21, 0.1), rgba(250, 204, 21, 0.05))', borderRadius: '8px', border: '1px solid rgba(250, 204, 21, 0.3)', fontSize: '0.8rem', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }}>
+          <strong style={{ color: 'var(--clr-gold)', display: 'flex', alignItems: 'center', gap: '6px', marginBottom: '8px', fontSize: '0.9rem' }}>
+            Gameweek Advisor
+          </strong>
+          {advisorData.captain_advice && (
+            <div style={{ marginBottom: '6px', background: 'rgba(0,0,0,0.2)', padding: '6px 10px', borderRadius: '4px' }}>
+               <span style={{ color: '#fca5a5' }}>Twist Captain:</span> <strong>{advisorData.captain_advice.from_name}</strong> ({advisorData.captain_advice.from_pts} pts) 
+               {' ➔ '} <strong style={{color: 'var(--clr-teal)'}}>{advisorData.captain_advice.to_name}</strong> <span style={{ color: 'var(--clr-gold)' }}>(Gain EV: +{advisorData.captain_advice.ev_gain})</span>
+            </div>
+          )}
+          {advisorData.sub_advice && advisorData.sub_advice.map((sub, i) => (
+             <div key={i} style={{ marginBottom: '4px', background: 'rgba(0,0,0,0.2)', padding: '6px 10px', borderRadius: '4px' }}>
+                <span style={{ color: '#fca5a5' }}>Sub Out:</span> <strong>{sub.out_name}</strong> ({sub.out_pts} pts) 
+                {' ➔ '} <span style={{ color: 'var(--clr-teal)' }}>Sub In:</span> <strong>{sub.in_name}</strong> <span style={{ color: 'var(--clr-gold)' }}>(Gain EV: +{sub.ev_gain})</span>
+             </div>
+          ))}
+        </div>
+      )}
 
       {/* Transfer Planner Controls */}
       {!isOptimMode && myTeamIds.length > 0 && (
         <div style={{ marginBottom: '12px', padding: '10px 16px', background: 'rgba(255,255,255,0.03)', borderRadius: '8px', border: '1px solid var(--clr-border)', display: 'flex', gap: '16px', alignItems: 'center', flexWrap: 'wrap', fontSize: '0.75rem' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
-            <span style={{ color: 'var(--clr-text-muted)' }}>📅 Stage:</span>
+            <span style={{ color: 'var(--clr-text-muted)' }}>Stage:</span>
             <select 
               value={stage} 
               onChange={e => setStage(e.target.value)}
@@ -796,32 +858,29 @@ export default function SquadPlannerTab({ players, myTeamIds, setMyTeam, optimRe
             </select>
           </div>
           <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
-            <span style={{ color: 'var(--clr-text-muted)' }}>🎟️ Free:</span>
+            <span style={{ color: 'var(--clr-text-muted)' }}>Free:</span>
             <select 
               value={freeTransfers} 
               onChange={e => setFreeTransfers(e.target.value === 'unlimited' ? 'unlimited' : Number(e.target.value))}
               style={{ background: 'var(--clr-bg-elevated)', color: 'var(--clr-text)', border: '1px solid var(--clr-border)', borderRadius: '4px', padding: '3px 6px', fontSize: '0.72rem', cursor: 'pointer' }}
             >
               {TRANSFER_RULES[stage].freeOptions.map(opt => (
-                <option key={opt} value={opt}>{opt === 'unlimited' ? '∞ Unlimited' : opt}</option>
+                <option key={opt} value={opt}>{opt === 'unlimited' ? 'Unlimited' : opt}</option>
               ))}
             </select>
           </div>
           <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
-            <span style={{ color: 'var(--clr-text-muted)' }}>🔄 Used:</span>
-            <select 
+            <span style={{ color: 'var(--clr-text-muted)' }}>Used:</span>
+            <input 
+              type="number" 
               value={transfersUsed} 
               onChange={e => setTransfersUsed(Number(e.target.value))}
-              style={{ background: 'var(--clr-bg-elevated)', color: 'var(--clr-text)', border: '1px solid var(--clr-border)', borderRadius: '4px', padding: '3px 6px', fontSize: '0.72rem', cursor: 'pointer' }}
-            >
-              {[0,1,2,3,4,5,6,7,8,9,10].map(n => (
-                <option key={n} value={n}>{n}</option>
-              ))}
-            </select>
+              style={{ background: 'var(--clr-bg-elevated)', color: 'var(--clr-text)', border: '1px solid var(--clr-border)', borderRadius: '4px', padding: '3px 6px', width: '40px', fontSize: '0.72rem' }}
+            />
           </div>
           {transferPenalty < 0 && (
             <div style={{ marginLeft: 'auto', color: '#ef4444', fontWeight: 700, fontSize: '0.8rem', display: 'flex', alignItems: 'center', gap: '4px' }}>
-              ⚠️ Hit: {transferPenalty} pts
+              Hit: {transferPenalty} pts
             </div>
           )}
         </div>

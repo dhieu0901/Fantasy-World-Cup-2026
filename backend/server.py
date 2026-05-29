@@ -557,25 +557,23 @@ def api_health():
     finally:
         conn.close()
 
-@app.get("/api/recommend-subs")
-def api_recommend_subs(device_id: str = Query(...)):
-    """Recommend live substitutions based on current team's actual performance."""
+class AdvisorRequest(BaseModel):
+    xi_ids: list[int]
+    bench_ids: list[int]
+    captain_id: int | None = None
+
+@app.post("/api/advisor")
+def api_advisor(req: AdvisorRequest):
+    """Advanced In-Gameweek Assistant using Expected Points (xPts) vs Actual Points."""
     conn = get_connection()
     try:
-        row = conn.execute("SELECT player_ids FROM user_teams WHERE device_id = ?", (device_id,)).fetchone()
-        if not row:
-            return {"recommendations": []}
+        all_ids = req.xi_ids + req.bench_ids
+        if not all_ids:
+            return {"captain_advice": None, "sub_advice": []}
             
-        player_ids = [int(x) for x in row["player_ids"].split(",")]
-        if len(player_ids) != 15:
-            return {"recommendations": []}
-            
-        starters_ids = player_ids[:11]
-        bench_ids = player_ids[11:]
-        
-        placeholders = ",".join("?" for _ in player_ids)
-        query = f"SELECT id, known_name, first_name, last_name, position, mock_points, mock_match_status, total_points FROM players WHERE id IN ({placeholders})"
-        players = conn.execute(query, player_ids).fetchall()
+        placeholders = ",".join("?" for _ in all_ids)
+        query = f"SELECT id, known_name, first_name, last_name, position, price, percent_selected, mock_points, mock_match_status, total_points, team_abbr FROM players WHERE id IN ({placeholders})"
+        players = conn.execute(query, all_ids).fetchall()
         
         player_map = {}
         for p in players:
