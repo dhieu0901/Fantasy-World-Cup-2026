@@ -246,6 +246,14 @@ def optimize_lp(players: list[dict], stage: str = "GROUP_MD1",
     locked_out = set(locked_out or [])
     current_squad = set(current_squad or [])
 
+    # ─── PRE-SELECT 12TH MAN ───
+    # The 12th man is completely free (no budget, no country limit).
+    # Optimally, we pick the best player in the game for free, then optimize the remaining 15.
+    twelfth_man = None
+    if chip == "12th_man":
+        twelfth_man = max(players, key=lambda p: p.get("projected_pts", 0))
+        players = [p for p in players if p["id"] != twelfth_man["id"]]
+
     # Calculate objective values based on preset
     obj_values = {}
     for p in players:
@@ -264,6 +272,10 @@ def optimize_lp(players: list[dict], stage: str = "GROUP_MD1",
             obj_values[pid] = xpts + (pct / 15.0)  # Strong additive bonus for popular (up to +6.6)
         else:
             obj_values[pid] = xpts
+            
+        # Qualification booster: players in XI get +2 if team advances (~50% chance = +1.0 EV)
+        if chip == "qualification" and stage not in ("GROUP_MD1", "GROUP_MD2", "GROUP_MD3"):
+            obj_values[pid] += 1.0
 
     # Create problem
     prob = pulp.LpProblem("WC2026_Fantasy_Optimizer", pulp.LpMaximize)
@@ -447,22 +459,18 @@ def optimize_lp(players: list[dict], stage: str = "GROUP_MD1",
     vice_captain = max(vice_candidates, key=lambda p: p.get("projected_pts", 0)) if vice_candidates else None
 
     # Handle 12th Man Booster
-    if chip == "12th_man":
-        selected_ids = {p["id"] for p in selected}
-        available_12th = [p for p in players if p["id"] not in selected_ids]
-        if available_12th:
-            twelfth_man = max(available_12th, key=lambda p: p.get("projected_pts", 0))
-            twelfth_man["is_12th_man"] = True
-            starting_xi.append(twelfth_man)
-            selected.append(twelfth_man)
+    if twelfth_man:
+        twelfth_man["is_12th_man"] = True
+        starting_xi.append(twelfth_man)
+        selected.append(twelfth_man)
 
     spent = sum(p["price"] for p in selected if not p.get("is_12th_man"))
     total_xpts = sum(p.get("projected_pts", 0) for p in starting_xi)
 
-    # Handle Maximum Captain Booster (captain scores triple xPts: 1x base + 2x captain)
+    # Handle Maximum Captain Booster (captain scores double xPts: 1x base + 1x bonus)
     if chip == "max_captain":
         if captain:
-            total_xpts += captain.get("projected_pts", 0) * 2  # Triple total for captain
+            total_xpts += captain.get("projected_pts", 0)  # Max captain is identical to normal captain in EV terms
     else:
         if captain:
             total_xpts += captain.get("projected_pts", 0)  # Normal double for captain
@@ -470,8 +478,8 @@ def optimize_lp(players: list[dict], stage: str = "GROUP_MD1",
     # Handle Qualification Booster
     if chip == "qualification" and stage not in ("GROUP_MD1", "GROUP_MD2", "GROUP_MD3"):
         for p in starting_xi:
-            total_xpts += 2.0  # +2 pts for advancing
-            p["projected_pts"] += 2.0
+            total_xpts += 1.0  # +1.0 EV for advancing
+            p["projected_pts"] += 1.0
 
     # Calculate actual transfers
     transfers_in = []
