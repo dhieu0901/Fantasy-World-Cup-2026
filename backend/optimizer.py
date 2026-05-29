@@ -100,15 +100,22 @@ def project_player_points(player: dict, conn: sqlite3.Connection = None,
 # GREEDY OPTIMIZER (fallback when PuLP unavailable)
 # ══════════════════════════════════════════════
 
-def optimize_greedy(players: list[dict], stage: str = "GROUP_MD1", preset: str = "default", chip: str = "none") -> dict:
+def optimize_greedy(players: list[dict], stage: str = "GROUP_MD1", preset: str = "default", chip: str = "none", locked_in: list[int] = None, locked_out: list[int] = None) -> dict:
     """
     Fallback greedy optimizer if PuLP is not available or fails.
     """
+    locked_in = set(locked_in or [])
+    locked_out = set(locked_out or [])
+
+    # Filter out locked_out players immediately
+    players = [p for p in players if p["id"] not in locked_out]
+
     # ─── PRE-SELECT 12TH MAN ───
     twelfth_man = None
     if chip == "12th_man":
-        twelfth_man = max(players, key=lambda p: p.get("projected_pts", 0))
-        players = [p for p in players if p["id"] != twelfth_man["id"]]
+        if players:
+            twelfth_man = max(players, key=lambda p: p.get("projected_pts", 0))
+            players = [p for p in players if p["id"] != twelfth_man["id"]]
 
     budget = SQUAD_RULES["budget"]["group_stage"]
     if stage in ("ROUND_OF_32", "ROUND_OF_16", "QUARTER_FINAL", "SEMI_FINAL", "FINAL"):
@@ -130,9 +137,17 @@ def optimize_greedy(players: list[dict], stage: str = "GROUP_MD1", preset: str =
         elif preset == "risky":
             p["_score"] = xpts * (1 + (100 - pct) / 200)  # Boost differentials
         elif preset == "template":
-            p["_score"] = xpts * (1 + pct / 100)  # Strongly prefer popular
-        else:  # default
+            p["_score"] = xpts + (pct / 15.0)
+        else:
             p["_score"] = xpts
+
+        # Qualification booster EV for Greedy
+        if chip == "qualification" and stage not in ("GROUP_MD1", "GROUP_MD2", "GROUP_MD3"):
+            p["_score"] += 1.0
+
+        # Boost locked_in players so they are always picked
+        if p["id"] in locked_in:
+            p["_score"] += 1000.0
 
     selected = []
     country_counts = {}
@@ -168,7 +183,7 @@ def optimize_greedy(players: list[dict], stage: str = "GROUP_MD1", preset: str =
             picked += 1
 
     # Select starting XI (best 11 in a valid formation)
-    starting_xi, bench = _select_starting_xi(selected)
+    starting_xi, bench = _select_starting_xi(selected, chip, stage)
 
     # Captain = highest projected points in starting XI
     captain = max(starting_xi, key=lambda p: p.get("projected_pts", 0)) if starting_xi else None
@@ -237,7 +252,7 @@ def optimize_lp(players: list[dict], stage: str = "GROUP_MD1",
         locked_out: player IDs that must NOT be in the squad
     """
     if not HAS_PULP:
-        return optimize_greedy(players, stage, preset, chip)
+        return optimize_greedy(players, stage, preset, chip, list(locked_in) if locked_in else None, list(locked_out) if locked_out else None)
 
     budget = SQUAD_RULES["budget"]["group_stage"]
     if stage in ("ROUND_OF_32", "ROUND_OF_16", "QUARTER_FINAL", "SEMI_FINAL", "FINAL"):
@@ -251,8 +266,10 @@ def optimize_lp(players: list[dict], stage: str = "GROUP_MD1",
     # ─── PRE-SELECT 12TH MAN ───
     twelfth_man = None
     if chip == "12th_man":
-        twelfth_man = max(players, key=lambda p: p.get("projected_pts", 0))
-        players = [p for p in players if p["id"] != twelfth_man["id"]]
+        available_12th = [p for p in players if p["id"] not in locked_out]
+        if available_12th:
+            twelfth_man = max(available_12th, key=lambda p: p.get("projected_pts", 0))
+            players = [p for p in players if p["id"] != twelfth_man["id"]]
 
     # Calculate objective values based on preset
     obj_values = {}
@@ -451,7 +468,7 @@ def optimize_lp(players: list[dict], stage: str = "GROUP_MD1",
     bench = [p for p in selected if p not in starting_xi]
     # Ensure starting_xi format matches what greedy would return
     if not starting_xi:
-        starting_xi, bench = _select_starting_xi(selected)
+        starting_xi, bench = _select_starting_xi(selected, chip, stage)
         captain = max(starting_xi, key=lambda p: p.get("projected_pts", 0)) if starting_xi else None
 
     vice_candidates = [p for p in starting_xi if not captain or p["id"] != captain["id"]]
@@ -516,7 +533,7 @@ def optimize_lp(players: list[dict], stage: str = "GROUP_MD1",
 # STARTING XI SELECTION
 # ══════════════════════════════════════════════
 
-def _select_starting_xi(squad: list[dict]) -> tuple[list[dict], list[dict]]:
+def _select_starting_xi(squad: list[dict], chip: str = "none", stage: str = "GROUP_MD1") -> tuple[list[dict], list[dict]]:
     """
     Select best starting XI from 15-player squad in a valid formation.
     Returns (starting_xi, bench).
@@ -538,11 +555,12 @@ def _select_starting_xi(squad: list[dict]) -> tuple[list[dict], list[dict]]:
         if pos in by_pos:
             by_pos[pos].append(p)
 
-    # Sort each position group by next_match_date (earliest first), then projected points
+    # Sort each position group by next_match_date (earliest first), then projected points (boosted by qualification)
+    qual_bonus = 1.0 if (chip == "qualification" and stage not in ("GROUP_MD1", "GROUP_MD2", "GROUP_MD3")) else 0.0
     for pos in by_pos:
         by_pos[pos].sort(key=lambda p: (
             p.get("next_match_date") or "2099-12-31T00:00:00Z",
-            -p.get("projected_pts", 0)
+            -(p.get("projected_pts", 0) + qual_bonus)
         ))
 
     # Try each formation, pick the one with highest total xPts from starters? 
@@ -574,7 +592,7 @@ def _select_starting_xi(squad: list[dict]) -> tuple[list[dict], list[dict]]:
         # Fallback: just take top 11 by date
         best_xi = sorted(squad, key=lambda p: (
             p.get("next_match_date") or "2099-12-31T00:00:00Z",
-            -p.get("projected_pts", 0)
+            -(p.get("projected_pts", 0) + qual_bonus)
         ))[:11]
 
     xi_ids = {p["id"] for p in best_xi}
@@ -583,7 +601,7 @@ def _select_starting_xi(squad: list[dict]) -> tuple[list[dict], list[dict]]:
     # Re-sort Bench by date
     bench.sort(key=lambda p: (
         p.get("next_match_date") or "2099-12-31T00:00:00Z",
-        -p.get("projected_pts", 0)
+        -(p.get("projected_pts", 0) + qual_bonus)
     ))
 
     return best_xi, bench
