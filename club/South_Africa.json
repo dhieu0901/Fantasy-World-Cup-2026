@@ -1,0 +1,672 @@
+[
+    {
+        "id": 253991,
+        "name": "Ronwen Williams",
+        "position": "Keeper",
+        "nationality": "South Africa",
+        "club": "Mamelodi Sundowns FC",
+        "league": "Premiership",
+        "appearances": {
+            "matches_played": 29,
+            "started": 0,
+            "minutes_played": 2610
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 13,
+            "goals_conceded": 21,
+            "xgc": null
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        "goalkeeping_metrics": {
+            "penalties_conceded": 4,
+            "penalties_saved": 2,
+            "saves": 46,
+            "goal_prevented": 0.88
+        }
+    },
+    {
+        "id": 615351,
+        "name": "Veli Mothwa",
+        "position": "keeper",
+        "nationality": "South Africa",
+        "club": "University of Pretoria",
+        "league": null,
+        "appearances": {
+            "matches_played": 0,
+            "started": 0,
+            "minutes_played": 0
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 2,
+            "goals_conceded": 13,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": null,
+            "shots_on_target": null,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": null,
+            "blocks": null,
+            "interceptions": null,
+            "tackles": null,
+            "recoveries": null
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 428006,
+        "name": "Ricardo Goss",
+        "position": "Keeper",
+        "nationality": "South Africa",
+        "club": "Siwelele",
+        "league": "Premiership",
+        "appearances": {
+            "matches_played": 29,
+            "started": 0,
+            "minutes_played": 2610
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 14,
+            "goals_conceded": 26,
+            "xgc": null
+        },
+        "discipline": {
+            "yellow_cards": 3,
+            "red_cards": 0
+        },
+        "goalkeeping_metrics": {
+            "penalties_conceded": 1,
+            "penalties_saved": 1,
+            "saves": 77,
+            "goal_prevented": 1.03
+        }
+    },
+    {
+        "id": 940010,
+        "name": "Khuliso Mudau",
+        "position": "Right Back",
+        "nationality": "South Africa",
+        "club": "Mamelodi Sundowns FC",
+        "league": "Premiership",
+        "appearances": {
+            "matches_played": 21,
+            "started": 17,
+            "minutes_played": 1527
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 1,
+            "xg": 0.51,
+            "xgot": 0.32,
+            "npxg": 0.51,
+            "xa": 2.44,
+            "xgi": 2.95,
+            "clean_sheets": 5,
+            "goals_conceded": 14,
+            "xgc": 15.63
+        },
+        "detailed_actions": {
+            "shots": 3,
+            "shots_on_target": 1,
+            "chances_created": 13,
+            "big_chances_created": 4,
+            "clearances": 20,
+            "blocks": 2,
+            "interceptions": 18,
+            "tackles": 22,
+            "recoveries": 93
+        },
+        "discipline": {
+            "yellow_cards": 8,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 616179,
+        "name": "Aubrey Modiba",
+        "position": "Left Back",
+        "nationality": "South Africa",
+        "club": "Mamelodi Sundowns FC",
+        "league": "Premiership",
+        "appearances": {
+            "matches_played": 27,
+            "started": 22,
+            "minutes_played": 2017
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 3,
+            "xg": 1.22,
+            "xgot": 1.27,
+            "npxg": 1.22,
+            "xa": 3.09,
+            "xgi": 4.31,
+            "clean_sheets": 5,
+            "goals_conceded": 18,
+            "xgc": 20.66
+        },
+        "detailed_actions": {
+            "shots": 24,
+            "shots_on_target": 9,
+            "chances_created": 39,
+            "big_chances_created": 4,
+            "clearances": 29,
+            "blocks": 3,
+            "interceptions": 23,
+            "tackles": 41,
+            "recoveries": 109
+        },
+        "discipline": {
+            "yellow_cards": 4,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 753455,
+        "name": "Mothobi Mvala",
+        "position": "defender",
+        "nationality": "South Africa",
+        "club": "Mamelodi Sundowns FC",
+        "league": "Premiership",
+        "appearances": {
+            "matches_played": 2,
+            "started": 0,
+            "minutes_played": 44
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": null,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": null,
+            "shots_on_target": null,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": null,
+            "blocks": null,
+            "interceptions": null,
+            "tackles": null,
+            "recoveries": null
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1979445,
+        "name": "Siyanda Xulu",
+        "position": "Right Back",
+        "nationality": "South Africa",
+        "club": "TS Galaxy",
+        "league": "Premiership",
+        "appearances": {
+            "matches_played": 4,
+            "started": 4,
+            "minutes_played": 332
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": 0.06,
+            "xgot": 0.15,
+            "npxg": 0.06,
+            "xa": 0.89,
+            "xgi": 0.95,
+            "clean_sheets": 1,
+            "goals_conceded": 4,
+            "xgc": 5.95
+        },
+        "detailed_actions": {
+            "shots": 2,
+            "shots_on_target": 1,
+            "chances_created": 7,
+            "big_chances_created": 1,
+            "clearances": 8,
+            "blocks": 1,
+            "interceptions": 3,
+            "tackles": 9,
+            "recoveries": 21
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 253993,
+        "name": "Grant Kekana",
+        "position": "Center Back",
+        "nationality": "South Africa",
+        "club": "Mamelodi Sundowns FC",
+        "league": "Premiership",
+        "appearances": {
+            "matches_played": 17,
+            "started": 15,
+            "minutes_played": 1322
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": 0.04,
+            "xgot": null,
+            "npxg": 0.04,
+            "xa": 0.16,
+            "xgi": 0.2,
+            "clean_sheets": 5,
+            "goals_conceded": 15,
+            "xgc": 15.54
+        },
+        "detailed_actions": {
+            "shots": 1,
+            "shots_on_target": null,
+            "chances_created": 1,
+            "big_chances_created": null,
+            "clearances": 44,
+            "blocks": 1,
+            "interceptions": 7,
+            "tackles": 8,
+            "recoveries": 29
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 848361,
+        "name": "Teboho Mokoena",
+        "position": "Defensive Midfielder",
+        "nationality": "South Africa",
+        "club": "Mamelodi Sundowns FC",
+        "league": "Premiership",
+        "appearances": {
+            "matches_played": 23,
+            "started": 18,
+            "minutes_played": 1618
+        },
+        "core_stats": {
+            "goals": 4,
+            "assists": 2,
+            "xg": 2.69,
+            "xgot": 3.25,
+            "npxg": 2.69,
+            "xa": 1.99,
+            "xgi": 4.68,
+            "clean_sheets": 5,
+            "goals_conceded": 15,
+            "xgc": 19.29
+        },
+        "detailed_actions": {
+            "shots": 43,
+            "shots_on_target": 15,
+            "chances_created": 25,
+            "big_chances_created": 2,
+            "clearances": 24,
+            "blocks": 1,
+            "interceptions": 15,
+            "tackles": 30,
+            "recoveries": 88
+        },
+        "discipline": {
+            "yellow_cards": 5,
+            "red_cards": 1
+        }
+    },
+    {
+        "id": 1107735,
+        "name": "Sphephelo Sithole",
+        "position": "Defensive Midfielder",
+        "nationality": "South Africa",
+        "club": "Tondela",
+        "league": "Liga Portugal",
+        "appearances": {
+            "matches_played": 26,
+            "started": 16,
+            "minutes_played": 1541
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 0,
+            "xg": 0.32,
+            "xgot": 0.98,
+            "npxg": 0.32,
+            "xa": 0.29,
+            "xgi": 0.61,
+            "clean_sheets": 2,
+            "goals_conceded": 26,
+            "xgc": 26.43
+        },
+        "detailed_actions": {
+            "shots": 4,
+            "shots_on_target": 2,
+            "chances_created": 5,
+            "big_chances_created": null,
+            "clearances": 36,
+            "blocks": 6,
+            "interceptions": 9,
+            "tackles": 34,
+            "recoveries": 88
+        },
+        "discipline": {
+            "yellow_cards": 6,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 303609,
+        "name": "Themba Zwane",
+        "position": "Attacking Midfielder",
+        "nationality": "South Africa",
+        "club": "Mamelodi Sundowns FC",
+        "league": "Premiership",
+        "appearances": {
+            "matches_played": 15,
+            "started": 4,
+            "minutes_played": 532
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 1,
+            "xg": 0.89,
+            "xgot": 0.42,
+            "npxg": 0.89,
+            "xa": 1.25,
+            "xgi": 2.14,
+            "clean_sheets": null,
+            "goals_conceded": 4,
+            "xgc": 5.33
+        },
+        "detailed_actions": {
+            "shots": 8,
+            "shots_on_target": 2,
+            "chances_created": 9,
+            "big_chances_created": 2,
+            "clearances": null,
+            "blocks": null,
+            "interceptions": 3,
+            "tackles": 8,
+            "recoveries": 21
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1124424,
+        "name": "Thalente Mbatha",
+        "position": "Defensive Midfielder",
+        "nationality": "South Africa",
+        "club": "Orlando Pirates",
+        "league": "Premiership",
+        "appearances": {
+            "matches_played": 22,
+            "started": 20,
+            "minutes_played": 1607
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 1,
+            "xg": 1.26,
+            "xgot": 0.78,
+            "npxg": 1.26,
+            "xa": 1.83,
+            "xgi": 3.09,
+            "clean_sheets": 4,
+            "goals_conceded": 6,
+            "xgc": 5.74
+        },
+        "detailed_actions": {
+            "shots": 35,
+            "shots_on_target": 11,
+            "chances_created": 19,
+            "big_chances_created": 3,
+            "clearances": 14,
+            "blocks": 3,
+            "interceptions": 25,
+            "tackles": 43,
+            "recoveries": 118
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1178629,
+        "name": "Jayden Adams",
+        "position": "Defensive Midfielder",
+        "nationality": "South Africa",
+        "club": "Mamelodi Sundowns FC",
+        "league": "Premiership",
+        "appearances": {
+            "matches_played": 23,
+            "started": 17,
+            "minutes_played": 1422
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 0,
+            "xg": 0.98,
+            "xgot": 1.31,
+            "npxg": 0.98,
+            "xa": 1.34,
+            "xgi": 2.32,
+            "clean_sheets": 7,
+            "goals_conceded": 6,
+            "xgc": 9.78
+        },
+        "detailed_actions": {
+            "shots": 12,
+            "shots_on_target": 3,
+            "chances_created": 13,
+            "big_chances_created": 2,
+            "clearances": 23,
+            "blocks": 2,
+            "interceptions": 11,
+            "tackles": 31,
+            "recoveries": 71
+        },
+        "discipline": {
+            "yellow_cards": 3,
+            "red_cards": 2
+        }
+    },
+    {
+        "id": 563065,
+        "name": "Percy Tau",
+        "position": "Right Winger",
+        "nationality": "South Africa",
+        "club": "Nam Dinh",
+        "league": "V-League",
+        "appearances": {
+            "matches_played": 7,
+            "started": 4,
+            "minutes_played": 455
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": null,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": null,
+            "shots_on_target": null,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": null,
+            "blocks": null,
+            "interceptions": null,
+            "tackles": null,
+            "recoveries": null
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 881500,
+        "name": "Lyle Foster",
+        "position": "Striker",
+        "nationality": "South Africa",
+        "club": "Burnley",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 26,
+            "started": 15,
+            "minutes_played": 1372
+        },
+        "core_stats": {
+            "goals": 3,
+            "assists": 2,
+            "xg": 3.25,
+            "xgot": 3.31,
+            "npxg": 3.25,
+            "xa": 0.49,
+            "xgi": 3.74,
+            "clean_sheets": null,
+            "goals_conceded": 30,
+            "xgc": 27.86
+        },
+        "detailed_actions": {
+            "shots": 20,
+            "shots_on_target": 6,
+            "chances_created": 10,
+            "big_chances_created": 2,
+            "clearances": 20,
+            "blocks": 3,
+            "interceptions": 4,
+            "tackles": 16,
+            "recoveries": 42
+        },
+        "discipline": {
+            "yellow_cards": 4,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1137059,
+        "name": "Evidence Makgopa",
+        "position": "Striker",
+        "nationality": "South Africa",
+        "club": "Orlando Pirates",
+        "league": "Premiership",
+        "appearances": {
+            "matches_played": 24,
+            "started": 11,
+            "minutes_played": 1067
+        },
+        "core_stats": {
+            "goals": 6,
+            "assists": 4,
+            "xg": 6.93,
+            "xgot": 5.44,
+            "npxg": 5.36,
+            "xa": 1.45,
+            "xgi": 8.38,
+            "clean_sheets": null,
+            "goals_conceded": 3,
+            "xgc": 4.52
+        },
+        "detailed_actions": {
+            "shots": 29,
+            "shots_on_target": 9,
+            "chances_created": 17,
+            "big_chances_created": 3,
+            "clearances": 10,
+            "blocks": null,
+            "interceptions": 4,
+            "tackles": 18,
+            "recoveries": 24
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1054166,
+        "name": "Oswin Appollis",
+        "position": "Left Winger",
+        "nationality": "South Africa",
+        "club": "Orlando Pirates",
+        "league": "Premiership",
+        "appearances": {
+            "matches_played": 30,
+            "started": 24,
+            "minutes_played": 2170
+        },
+        "core_stats": {
+            "goals": 9,
+            "assists": 6,
+            "xg": 8.38,
+            "xgot": 8.17,
+            "npxg": 7.59,
+            "xa": 5.87,
+            "xgi": 14.25,
+            "clean_sheets": 6,
+            "goals_conceded": 10,
+            "xgc": 9.65
+        },
+        "detailed_actions": {
+            "shots": 78,
+            "shots_on_target": 31,
+            "chances_created": 59,
+            "big_chances_created": 13,
+            "clearances": 4,
+            "blocks": 2,
+            "interceptions": 20,
+            "tackles": 18,
+            "recoveries": 111
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    }
+]

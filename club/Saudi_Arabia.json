@@ -1,0 +1,997 @@
+[
+    {
+        "id": 535669,
+        "name": "Mohammed Al Owais",
+        "position": "keeper",
+        "nationality": "Saudi Arabia",
+        "club": "Al-Ula FC",
+        "league": "Saudi First Division",
+        "appearances": {
+            "matches_played": 35,
+            "started": 0,
+            "minutes_played": 3210
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 12,
+            "goals_conceded": 32,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": null,
+            "shots_on_target": null,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": null,
+            "blocks": null,
+            "interceptions": null,
+            "tackles": null,
+            "recoveries": null
+        },
+        "discipline": {
+            "yellow_cards": 3,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1125083,
+        "name": "Nawaf Al Aqidi",
+        "position": "Keeper",
+        "nationality": "Saudi Arabia",
+        "club": "Al Nassr FC",
+        "league": "Saudi Pro League",
+        "appearances": {
+            "matches_played": 11,
+            "started": 0,
+            "minutes_played": 960
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 3,
+            "goals_conceded": 12,
+            "xgc": null
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 1
+        },
+        "goalkeeping_metrics": {
+            "penalties_conceded": 1,
+            "penalties_saved": 0,
+            "saves": 25,
+            "goal_prevented": 0.64
+        }
+    },
+    {
+        "id": 1002617,
+        "name": "Saud Abdulhamid",
+        "position": "Right Wing-Back",
+        "nationality": "Saudi Arabia",
+        "club": "Lens",
+        "league": "Ligue 1",
+        "appearances": {
+            "matches_played": 25,
+            "started": 14,
+            "minutes_played": 1345
+        },
+        "core_stats": {
+            "goals": 2,
+            "assists": 4,
+            "xg": 0.83,
+            "xgot": 1.78,
+            "npxg": 0.83,
+            "xa": 3.28,
+            "xgi": 4.11,
+            "clean_sheets": 3,
+            "goals_conceded": 17,
+            "xgc": 19.24
+        },
+        "detailed_actions": {
+            "shots": 8,
+            "shots_on_target": 3,
+            "chances_created": 23,
+            "big_chances_created": 5,
+            "clearances": 19,
+            "blocks": 2,
+            "interceptions": 11,
+            "tackles": 34,
+            "recoveries": 69
+        },
+        "discipline": {
+            "yellow_cards": 4,
+            "red_cards": 1
+        }
+    },
+    {
+        "id": 1543647,
+        "name": "Mohammed Abu Al Shamat",
+        "position": "Right Back",
+        "nationality": "Saudi Arabia",
+        "club": "Al Qadsiah",
+        "league": "Saudi Pro League",
+        "appearances": {
+            "matches_played": 31,
+            "started": 29,
+            "minutes_played": 2494
+        },
+        "core_stats": {
+            "goals": 2,
+            "assists": 8,
+            "xg": 4.11,
+            "xgot": 3.63,
+            "npxg": 4.11,
+            "xa": 8.35,
+            "xgi": 12.46,
+            "clean_sheets": 4,
+            "goals_conceded": 26,
+            "xgc": 28.0
+        },
+        "detailed_actions": {
+            "shots": 46,
+            "shots_on_target": 12,
+            "chances_created": 40,
+            "big_chances_created": 18,
+            "clearances": 52,
+            "blocks": 4,
+            "interceptions": 39,
+            "tackles": 75,
+            "recoveries": 129
+        },
+        "discipline": {
+            "yellow_cards": 3,
+            "red_cards": 1
+        }
+    },
+    {
+        "id": 1024928,
+        "name": "Khalid Al Ghannam",
+        "position": "Left Winger",
+        "nationality": "Saudi Arabia",
+        "club": "Al-Ettifaq",
+        "league": "Saudi Pro League",
+        "appearances": {
+            "matches_played": 32,
+            "started": 25,
+            "minutes_played": 2172
+        },
+        "core_stats": {
+            "goals": 13,
+            "assists": 6,
+            "xg": 6.3,
+            "xgot": 10.9,
+            "npxg": 6.3,
+            "xa": 6.01,
+            "xgi": 12.31,
+            "clean_sheets": 2,
+            "goals_conceded": 40,
+            "xgc": 43.28
+        },
+        "detailed_actions": {
+            "shots": 42,
+            "shots_on_target": 28,
+            "chances_created": 42,
+            "big_chances_created": 17,
+            "clearances": 10,
+            "blocks": 1,
+            "interceptions": 6,
+            "tackles": 27,
+            "recoveries": 71
+        },
+        "discipline": {
+            "yellow_cards": 4,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1138003,
+        "name": "Moteb Al Harbi",
+        "position": "Right Back",
+        "nationality": "Saudi Arabia",
+        "club": "Al Hilal",
+        "league": "Saudi Pro League",
+        "appearances": {
+            "matches_played": 30,
+            "started": 20,
+            "minutes_played": 1832
+        },
+        "core_stats": {
+            "goals": 2,
+            "assists": 2,
+            "xg": 0.81,
+            "xgot": 1.55,
+            "npxg": 0.81,
+            "xa": 0.83,
+            "xgi": 1.64,
+            "clean_sheets": 3,
+            "goals_conceded": 18,
+            "xgc": 14.65
+        },
+        "detailed_actions": {
+            "shots": 8,
+            "shots_on_target": 4,
+            "chances_created": 5,
+            "big_chances_created": 3,
+            "clearances": 42,
+            "blocks": 4,
+            "interceptions": 35,
+            "tackles": 41,
+            "recoveries": 95
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 848600,
+        "name": "Abdulelah Al Amri",
+        "position": "Center Back",
+        "nationality": "Saudi Arabia",
+        "club": "Al Nassr FC",
+        "league": "Saudi Pro League",
+        "appearances": {
+            "matches_played": 25,
+            "started": 20,
+            "minutes_played": 1788
+        },
+        "core_stats": {
+            "goals": 2,
+            "assists": 2,
+            "xg": 1.41,
+            "xgot": 0.77,
+            "npxg": 1.41,
+            "xa": 0.96,
+            "xgi": 2.37,
+            "clean_sheets": 10,
+            "goals_conceded": 18,
+            "xgc": 19.24
+        },
+        "detailed_actions": {
+            "shots": 16,
+            "shots_on_target": 3,
+            "chances_created": 4,
+            "big_chances_created": 2,
+            "clearances": 71,
+            "blocks": 8,
+            "interceptions": 38,
+            "tackles": 34,
+            "recoveries": 106
+        },
+        "discipline": {
+            "yellow_cards": 3,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1399717,
+        "name": "Zakaria Hawsawi",
+        "position": "Left Back",
+        "nationality": "Saudi Arabia",
+        "club": "Al Ahli",
+        "league": "Saudi Pro League",
+        "appearances": {
+            "matches_played": 22,
+            "started": 18,
+            "minutes_played": 1604
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 1,
+            "xg": 0.96,
+            "xgot": 1.1,
+            "npxg": 0.96,
+            "xa": 2.07,
+            "xgi": 3.03,
+            "clean_sheets": 5,
+            "goals_conceded": 14,
+            "xgc": 13.81
+        },
+        "detailed_actions": {
+            "shots": 3,
+            "shots_on_target": 2,
+            "chances_created": 8,
+            "big_chances_created": 4,
+            "clearances": 25,
+            "blocks": 3,
+            "interceptions": 27,
+            "tackles": 36,
+            "recoveries": 85
+        },
+        "discipline": {
+            "yellow_cards": 5,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 431215,
+        "name": "Hassan Kadesh",
+        "position": "Center Back",
+        "nationality": "Saudi Arabia",
+        "club": "Al Ittihad",
+        "league": "Saudi Pro League",
+        "appearances": {
+            "matches_played": 27,
+            "started": 27,
+            "minutes_played": 2272
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 0,
+            "xg": 0.67,
+            "xgot": 0.62,
+            "npxg": 0.67,
+            "xa": 0.69,
+            "xgi": 1.36,
+            "clean_sheets": 8,
+            "goals_conceded": 33,
+            "xgc": 36.15
+        },
+        "detailed_actions": {
+            "shots": 8,
+            "shots_on_target": 1,
+            "chances_created": 2,
+            "big_chances_created": null,
+            "clearances": 94,
+            "blocks": 13,
+            "interceptions": 26,
+            "tackles": 46,
+            "recoveries": 93
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 1
+        }
+    },
+    {
+        "id": 640284,
+        "name": "Ali Lajami",
+        "position": "Center Back",
+        "nationality": "Saudi Arabia",
+        "club": "Al Hilal",
+        "league": "Saudi Pro League",
+        "appearances": {
+            "matches_played": 25,
+            "started": 5,
+            "minutes_played": 627
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": 0.38,
+            "xgot": null,
+            "npxg": 0.38,
+            "xa": 0.19,
+            "xgi": 0.57,
+            "clean_sheets": 2,
+            "goals_conceded": 10,
+            "xgc": 5.8
+        },
+        "detailed_actions": {
+            "shots": 4,
+            "shots_on_target": null,
+            "chances_created": 2,
+            "big_chances_created": null,
+            "clearances": 16,
+            "blocks": 1,
+            "interceptions": 25,
+            "tackles": 7,
+            "recoveries": 34
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 910986,
+        "name": "Ali Majrashi",
+        "position": "Right Back",
+        "nationality": "Saudi Arabia",
+        "club": "Al Ahli",
+        "league": "Saudi Pro League",
+        "appearances": {
+            "matches_played": 27,
+            "started": 26,
+            "minutes_played": 2169
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 3,
+            "xg": 1.29,
+            "xgot": 1.02,
+            "npxg": 1.29,
+            "xa": 3.53,
+            "xgi": 4.82,
+            "clean_sheets": 7,
+            "goals_conceded": 19,
+            "xgc": 19.32
+        },
+        "detailed_actions": {
+            "shots": 18,
+            "shots_on_target": 6,
+            "chances_created": 15,
+            "big_chances_created": 8,
+            "clearances": 45,
+            "blocks": 5,
+            "interceptions": 35,
+            "tackles": 74,
+            "recoveries": 109
+        },
+        "discipline": {
+            "yellow_cards": 5,
+            "red_cards": 2
+        }
+    },
+    {
+        "id": 848607,
+        "name": "Hassan Tambakti",
+        "position": "Center Back",
+        "nationality": "Saudi Arabia",
+        "club": "Al Hilal",
+        "league": "Saudi Pro League",
+        "appearances": {
+            "matches_played": 29,
+            "started": 28,
+            "minutes_played": 2349
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 0,
+            "xg": 1.21,
+            "xgot": 1.47,
+            "npxg": 1.21,
+            "xa": 0.75,
+            "xgi": 1.96,
+            "clean_sheets": 6,
+            "goals_conceded": 21,
+            "xgc": 19.57
+        },
+        "detailed_actions": {
+            "shots": 8,
+            "shots_on_target": 3,
+            "chances_created": 5,
+            "big_chances_created": null,
+            "clearances": 83,
+            "blocks": 17,
+            "interceptions": 40,
+            "tackles": 85,
+            "recoveries": 119
+        },
+        "discipline": {
+            "yellow_cards": 5,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1232530,
+        "name": "Jehad Thikri",
+        "position": "Center Back",
+        "nationality": "Saudi Arabia",
+        "club": "Al Qadsiah",
+        "league": "Saudi Pro League",
+        "appearances": {
+            "matches_played": 24,
+            "started": 16,
+            "minutes_played": 1513
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": 0.77,
+            "xgot": null,
+            "npxg": 0.77,
+            "xa": 0.88,
+            "xgi": 1.65,
+            "clean_sheets": 5,
+            "goals_conceded": 12,
+            "xgc": 21.27
+        },
+        "detailed_actions": {
+            "shots": 8,
+            "shots_on_target": null,
+            "chances_created": 1,
+            "big_chances_created": 1,
+            "clearances": 57,
+            "blocks": 11,
+            "interceptions": 16,
+            "tackles": 24,
+            "recoveries": 81
+        },
+        "discipline": {
+            "yellow_cards": 5,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 848612,
+        "name": "Nasser Al Dawsari",
+        "position": "Central Midfielder",
+        "nationality": "Saudi Arabia",
+        "club": "Al Hilal",
+        "league": "Saudi Pro League",
+        "appearances": {
+            "matches_played": 27,
+            "started": 17,
+            "minutes_played": 1621
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 1,
+            "xg": 0.93,
+            "xgot": 0.19,
+            "npxg": 0.93,
+            "xa": 2.4,
+            "xgi": 3.33,
+            "clean_sheets": 6,
+            "goals_conceded": 12,
+            "xgc": 12.48
+        },
+        "detailed_actions": {
+            "shots": 14,
+            "shots_on_target": 3,
+            "chances_created": 15,
+            "big_chances_created": 2,
+            "clearances": 23,
+            "blocks": 5,
+            "interceptions": 28,
+            "tackles": 50,
+            "recoveries": 65
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 1
+        }
+    },
+    {
+        "id": 1174962,
+        "name": "Ziyad Al Johani",
+        "position": "Defensive Midfielder",
+        "nationality": "Saudi Arabia",
+        "club": "Al Ahli",
+        "league": "Saudi Pro League",
+        "appearances": {
+            "matches_played": 26,
+            "started": 17,
+            "minutes_played": 1500
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 1,
+            "xg": 0.83,
+            "xgot": 0.76,
+            "npxg": 0.83,
+            "xa": 1.24,
+            "xgi": 2.07,
+            "clean_sheets": 6,
+            "goals_conceded": 14,
+            "xgc": 14.39
+        },
+        "detailed_actions": {
+            "shots": 12,
+            "shots_on_target": 3,
+            "chances_created": 14,
+            "big_chances_created": 2,
+            "clearances": 17,
+            "blocks": 5,
+            "interceptions": 13,
+            "tackles": 34,
+            "recoveries": 67
+        },
+        "discipline": {
+            "yellow_cards": 6,
+            "red_cards": 2
+        }
+    },
+    {
+        "id": 1235341,
+        "name": "Musab Al Juwayr",
+        "position": "Central Midfielder",
+        "nationality": "Saudi Arabia",
+        "club": "Al Qadsiah",
+        "league": "Saudi Pro League",
+        "appearances": {
+            "matches_played": 31,
+            "started": 31,
+            "minutes_played": 2537
+        },
+        "core_stats": {
+            "goals": 6,
+            "assists": 11,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": null,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": null,
+            "shots_on_target": null,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": null,
+            "blocks": null,
+            "interceptions": null,
+            "tackles": null,
+            "recoveries": null
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 823457,
+        "name": "Abdullah Al Khaibari",
+        "position": "Central Midfielder",
+        "nationality": "Saudi Arabia",
+        "club": "Al Nassr FC",
+        "league": "Saudi Pro League",
+        "appearances": {
+            "matches_played": 32,
+            "started": 15,
+            "minutes_played": 1676
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 1,
+            "xg": 0.38,
+            "xgot": null,
+            "npxg": 0.38,
+            "xa": 0.93,
+            "xgi": 1.31,
+            "clean_sheets": 4,
+            "goals_conceded": 17,
+            "xgc": 16.05
+        },
+        "detailed_actions": {
+            "shots": 10,
+            "shots_on_target": null,
+            "chances_created": 14,
+            "big_chances_created": null,
+            "clearances": 10,
+            "blocks": 4,
+            "interceptions": 8,
+            "tackles": 32,
+            "recoveries": 74
+        },
+        "discipline": {
+            "yellow_cards": 5,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1251448,
+        "name": "Saleh Abu Al Shamat",
+        "position": "Left Winger",
+        "nationality": "Saudi Arabia",
+        "club": "Al Ahli",
+        "league": "Saudi Pro League",
+        "appearances": {
+            "matches_played": 28,
+            "started": 7,
+            "minutes_played": 762
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 3,
+            "xg": 2.2,
+            "xgot": 3.42,
+            "npxg": 2.2,
+            "xa": 3.34,
+            "xgi": 5.54,
+            "clean_sheets": null,
+            "goals_conceded": 8,
+            "xgc": 8.31
+        },
+        "detailed_actions": {
+            "shots": 21,
+            "shots_on_target": 9,
+            "chances_created": 20,
+            "big_chances_created": 5,
+            "clearances": 7,
+            "blocks": null,
+            "interceptions": 8,
+            "tackles": 24,
+            "recoveries": 58
+        },
+        "discipline": {
+            "yellow_cards": 5,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 866373,
+        "name": "Mohammed Kanno",
+        "position": "Central Midfielder",
+        "nationality": "Saudi Arabia",
+        "club": "Al Hilal",
+        "league": "Saudi Pro League",
+        "appearances": {
+            "matches_played": 32,
+            "started": 25,
+            "minutes_played": 2084
+        },
+        "core_stats": {
+            "goals": 5,
+            "assists": 3,
+            "xg": 2.18,
+            "xgot": 4.85,
+            "npxg": 2.18,
+            "xa": 2.98,
+            "xgi": 5.16,
+            "clean_sheets": 6,
+            "goals_conceded": 15,
+            "xgc": 16.56
+        },
+        "detailed_actions": {
+            "shots": 31,
+            "shots_on_target": 20,
+            "chances_created": 21,
+            "big_chances_created": 3,
+            "clearances": 20,
+            "blocks": 3,
+            "interceptions": 26,
+            "tackles": 54,
+            "recoveries": 110
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 619824,
+        "name": "Sultan Mandash",
+        "position": "Right Winger",
+        "nationality": "Saudi Arabia",
+        "club": "Al Hilal",
+        "league": "Saudi Pro League",
+        "appearances": {
+            "matches_played": 28,
+            "started": 14,
+            "minutes_played": 1329
+        },
+        "core_stats": {
+            "goals": 6,
+            "assists": 5,
+            "xg": 3.05,
+            "xgot": 4.74,
+            "npxg": 3.05,
+            "xa": 3.07,
+            "xgi": 6.12,
+            "clean_sheets": 2,
+            "goals_conceded": 12,
+            "xgc": 14.53
+        },
+        "detailed_actions": {
+            "shots": 22,
+            "shots_on_target": 14,
+            "chances_created": 25,
+            "big_chances_created": 10,
+            "clearances": 7,
+            "blocks": 1,
+            "interceptions": 8,
+            "tackles": 38,
+            "recoveries": 67
+        },
+        "discipline": {
+            "yellow_cards": 3,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1095207,
+        "name": "Ayman Yahya",
+        "position": "Left Back",
+        "nationality": "Saudi Arabia",
+        "club": "Al Nassr FC",
+        "league": "Saudi Pro League",
+        "appearances": {
+            "matches_played": 27,
+            "started": 14,
+            "minutes_played": 1248
+        },
+        "core_stats": {
+            "goals": 2,
+            "assists": 2,
+            "xg": 1.2,
+            "xgot": 1.9,
+            "npxg": 1.2,
+            "xa": 1.65,
+            "xgi": 2.85,
+            "clean_sheets": 1,
+            "goals_conceded": 12,
+            "xgc": 11.97
+        },
+        "detailed_actions": {
+            "shots": 19,
+            "shots_on_target": 8,
+            "chances_created": 11,
+            "big_chances_created": 2,
+            "clearances": 16,
+            "blocks": 2,
+            "interceptions": 20,
+            "tackles": 36,
+            "recoveries": 83
+        },
+        "discipline": {
+            "yellow_cards": 7,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 307753,
+        "name": "Salem Al Dawsari",
+        "position": "Left Winger",
+        "nationality": "Saudi Arabia",
+        "club": "Al Hilal",
+        "league": "Saudi Pro League",
+        "appearances": {
+            "matches_played": 26,
+            "started": 22,
+            "minutes_played": 1885
+        },
+        "core_stats": {
+            "goals": 8,
+            "assists": 8,
+            "xg": 9.23,
+            "xgot": 8.29,
+            "npxg": 7.66,
+            "xa": 7.17,
+            "xgi": 16.4,
+            "clean_sheets": 5,
+            "goals_conceded": 17,
+            "xgc": 16.35
+        },
+        "detailed_actions": {
+            "shots": 54,
+            "shots_on_target": 20,
+            "chances_created": 39,
+            "big_chances_created": 12,
+            "clearances": 9,
+            "blocks": null,
+            "interceptions": 6,
+            "tackles": 21,
+            "recoveries": 66
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 909198,
+        "name": "Abdullah Al Hamdan",
+        "position": "Striker",
+        "nationality": "Saudi Arabia",
+        "club": "Al Nassr FC",
+        "league": "Saudi Pro League",
+        "appearances": {
+            "matches_played": 25,
+            "started": 3,
+            "minutes_played": 317
+        },
+        "core_stats": {
+            "goals": 3,
+            "assists": 1,
+            "xg": 2.61,
+            "xgot": 2.13,
+            "npxg": 2.61,
+            "xa": 1.13,
+            "xgi": 3.74,
+            "clean_sheets": null,
+            "goals_conceded": 4,
+            "xgc": 2.88
+        },
+        "detailed_actions": {
+            "shots": 15,
+            "shots_on_target": 4,
+            "chances_created": 6,
+            "big_chances_created": 1,
+            "clearances": 2,
+            "blocks": null,
+            "interceptions": null,
+            "tackles": 9,
+            "recoveries": 9
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 618180,
+        "name": "Abdullah Al Salem",
+        "position": "Striker",
+        "nationality": "Saudi Arabia",
+        "club": "Al Qadsiah",
+        "league": "Saudi Pro League",
+        "appearances": {
+            "matches_played": 22,
+            "started": 6,
+            "minutes_played": 613
+        },
+        "core_stats": {
+            "goals": 4,
+            "assists": 0,
+            "xg": 3.12,
+            "xgot": 3.32,
+            "npxg": 3.12,
+            "xa": 0.48,
+            "xgi": 3.6,
+            "clean_sheets": null,
+            "goals_conceded": 6,
+            "xgc": 5.79
+        },
+        "detailed_actions": {
+            "shots": 21,
+            "shots_on_target": 8,
+            "chances_created": 5,
+            "big_chances_created": 2,
+            "clearances": 3,
+            "blocks": null,
+            "interceptions": 3,
+            "tackles": 5,
+            "recoveries": 13
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 384407,
+        "name": "Saleh Al Shehri",
+        "position": "Striker",
+        "nationality": "Saudi Arabia",
+        "club": "Al Ittihad",
+        "league": "Saudi Pro League",
+        "appearances": {
+            "matches_played": 18,
+            "started": 4,
+            "minutes_played": 422
+        },
+        "core_stats": {
+            "goals": 3,
+            "assists": 2,
+            "xg": 3.43,
+            "xgot": 3.46,
+            "npxg": 2.64,
+            "xa": 1.18,
+            "xgi": 4.61,
+            "clean_sheets": null,
+            "goals_conceded": 8,
+            "xgc": 8.06
+        },
+        "detailed_actions": {
+            "shots": 20,
+            "shots_on_target": 6,
+            "chances_created": 8,
+            "big_chances_created": 3,
+            "clearances": 2,
+            "blocks": null,
+            "interceptions": 1,
+            "tackles": 5,
+            "recoveries": 14
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        }
+    }
+]

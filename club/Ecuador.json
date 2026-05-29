@@ -1,0 +1,667 @@
+[
+    {
+        "id": 146801,
+        "name": "Hernán Galíndez",
+        "position": "Keeper",
+        "nationality": "Ecuador",
+        "club": "Huracan",
+        "league": "Liga Profesional Apertura",
+        "appearances": {
+            "matches_played": 17,
+            "started": 0,
+            "minutes_played": 1590
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 6,
+            "goals_conceded": 16,
+            "xgc": null
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        "goalkeeping_metrics": {
+            "penalties_conceded": 2,
+            "penalties_saved": 2,
+            "saves": 45,
+            "goal_prevented": 3.53
+        }
+    },
+    {
+        "id": 978290,
+        "name": "Moisés Ramírez",
+        "position": "Keeper",
+        "nationality": "Ecuador",
+        "club": "Kifisia FC",
+        "league": "Super League",
+        "appearances": {
+            "matches_played": 28,
+            "started": 0,
+            "minutes_played": 2520
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 8,
+            "goals_conceded": 37,
+            "xgc": null
+        },
+        "discipline": {
+            "yellow_cards": 8,
+            "red_cards": 0
+        },
+        "goalkeeping_metrics": {
+            "penalties_conceded": 9,
+            "penalties_saved": 1,
+            "saves": 73,
+            "goal_prevented": -0.55
+        }
+    },
+    {
+        "id": 52445,
+        "name": "Alexander Domínguez",
+        "position": "Keeper",
+        "nationality": "Ecuador",
+        "club": "LDU de Quito",
+        "league": "Serie A",
+        "appearances": {
+            "matches_played": 1,
+            "started": 0,
+            "minutes_played": 90
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 1,
+            "goals_conceded": 0,
+            "xgc": null
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        "goalkeeping_metrics": {
+            "penalties_conceded": null,
+            "penalties_saved": null,
+            "saves": 5,
+            "goal_prevented": null
+        }
+    },
+    {
+        "id": 1137667,
+        "name": "Piero Hincapié",
+        "position": "Left Back",
+        "nationality": "Ecuador",
+        "club": "Arsenal",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 25,
+            "started": 20,
+            "minutes_played": 1792
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 2,
+            "xg": 0.36,
+            "xgot": 0.31,
+            "npxg": 0.36,
+            "xa": 1.63,
+            "xgi": 1.99,
+            "clean_sheets": 4,
+            "goals_conceded": 19,
+            "xgc": 17.33
+        },
+        "detailed_actions": {
+            "shots": 3,
+            "shots_on_target": 2,
+            "chances_created": 13,
+            "big_chances_created": 2,
+            "clearances": 88,
+            "blocks": 9,
+            "interceptions": 26,
+            "tackles": 48,
+            "recoveries": 63
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1137670,
+        "name": "Willian Pacho",
+        "position": "Center Back",
+        "nationality": "Ecuador",
+        "club": "Paris Saint-Germain",
+        "league": "Ligue 1",
+        "appearances": {
+            "matches_played": 23,
+            "started": 21,
+            "minutes_played": 1915
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": 1.0,
+            "xgot": 0.19,
+            "npxg": 1.0,
+            "xa": 0.46,
+            "xgi": 1.46,
+            "clean_sheets": 8,
+            "goals_conceded": 22,
+            "xgc": 17.69
+        },
+        "detailed_actions": {
+            "shots": 8,
+            "shots_on_target": 1,
+            "chances_created": 2,
+            "big_chances_created": null,
+            "clearances": 66,
+            "blocks": 10,
+            "interceptions": 24,
+            "tackles": 40,
+            "recoveries": 110
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 825641,
+        "name": "Félix Torres",
+        "position": "Center Back",
+        "nationality": "Ecuador",
+        "club": "Internacional",
+        "league": "Serie A",
+        "appearances": {
+            "matches_played": 12,
+            "started": 10,
+            "minutes_played": 948
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 0,
+            "xg": 2.52,
+            "xgot": 1.9,
+            "npxg": 2.52,
+            "xa": 0.39,
+            "xgi": 2.91,
+            "clean_sheets": 3,
+            "goals_conceded": 12,
+            "xgc": 11.23
+        },
+        "detailed_actions": {
+            "shots": 9,
+            "shots_on_target": 2,
+            "chances_created": 4,
+            "big_chances_created": null,
+            "clearances": 54,
+            "blocks": 3,
+            "interceptions": 21,
+            "tackles": 15,
+            "recoveries": 43
+        },
+        "discipline": {
+            "yellow_cards": 3,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 688278,
+        "name": "Pervis Estupiñán",
+        "position": "Left Midfielder",
+        "nationality": "Ecuador",
+        "club": "Milan",
+        "league": "Serie A",
+        "appearances": {
+            "matches_played": 19,
+            "started": 13,
+            "minutes_played": 1036
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 1,
+            "xg": 0.39,
+            "xgot": 0.48,
+            "npxg": 0.39,
+            "xa": 1.46,
+            "xgi": 1.85,
+            "clean_sheets": 5,
+            "goals_conceded": 6,
+            "xgc": 9.11
+        },
+        "detailed_actions": {
+            "shots": 9,
+            "shots_on_target": 1,
+            "chances_created": 13,
+            "big_chances_created": 2,
+            "clearances": 23,
+            "blocks": null,
+            "interceptions": 11,
+            "tackles": 15,
+            "recoveries": 59
+        },
+        "discipline": {
+            "yellow_cards": 5,
+            "red_cards": 1
+        }
+    },
+    {
+        "id": 848593,
+        "name": "Ángelo Preciado",
+        "position": "Right Midfielder",
+        "nationality": "Ecuador",
+        "club": "Atletico MG",
+        "league": "Serie A",
+        "appearances": {
+            "matches_played": 7,
+            "started": 4,
+            "minutes_played": 376
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": 0.14,
+            "xgot": null,
+            "npxg": 0.14,
+            "xa": 0.09,
+            "xgi": 0.23,
+            "clean_sheets": 1,
+            "goals_conceded": 4,
+            "xgc": 4.42
+        },
+        "detailed_actions": {
+            "shots": 4,
+            "shots_on_target": null,
+            "chances_created": 3,
+            "big_chances_created": null,
+            "clearances": 19,
+            "blocks": 1,
+            "interceptions": 7,
+            "tackles": 8,
+            "recoveries": 19
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1137668,
+        "name": "Moisés Caicedo",
+        "position": "Defensive Midfielder",
+        "nationality": "Ecuador",
+        "club": "Chelsea",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 33,
+            "started": 32,
+            "minutes_played": 2802
+        },
+        "core_stats": {
+            "goals": 3,
+            "assists": 1,
+            "xg": 1.44,
+            "xgot": 1.54,
+            "npxg": 1.44,
+            "xa": 2.38,
+            "xgi": 3.82,
+            "clean_sheets": 5,
+            "goals_conceded": 46,
+            "xgc": 42.04
+        },
+        "detailed_actions": {
+            "shots": 27,
+            "shots_on_target": 7,
+            "chances_created": 18,
+            "big_chances_created": 4,
+            "clearances": 28,
+            "blocks": 15,
+            "interceptions": 59,
+            "tackles": 87,
+            "recoveries": 177
+        },
+        "discipline": {
+            "yellow_cards": 11,
+            "red_cards": 1
+        }
+    },
+    {
+        "id": 1443464,
+        "name": "Kendry Páez",
+        "position": "Right Winger",
+        "nationality": "Ecuador",
+        "club": "River Plate",
+        "league": "Liga Profesional Apertura",
+        "appearances": {
+            "matches_played": 10,
+            "started": 3,
+            "minutes_played": 361
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 0,
+            "xg": 0.91,
+            "xgot": 1.72,
+            "npxg": 0.91,
+            "xa": 1.52,
+            "xgi": 2.43,
+            "clean_sheets": null,
+            "goals_conceded": 3,
+            "xgc": 3.36
+        },
+        "detailed_actions": {
+            "shots": 10,
+            "shots_on_target": 6,
+            "chances_created": 9,
+            "big_chances_created": 3,
+            "clearances": 1,
+            "blocks": null,
+            "interceptions": 3,
+            "tackles": 7,
+            "recoveries": 11
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 832165,
+        "name": "Alan Franco",
+        "position": "Center Back",
+        "nationality": "Ecuador",
+        "club": "Sao Paulo",
+        "league": "Serie A",
+        "appearances": {
+            "matches_played": 12,
+            "started": 12,
+            "minutes_played": 985
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": 0.27,
+            "xgot": null,
+            "npxg": 0.27,
+            "xa": 0.18,
+            "xgi": 0.45,
+            "clean_sheets": 1,
+            "goals_conceded": 12,
+            "xgc": 13.86
+        },
+        "detailed_actions": {
+            "shots": 3,
+            "shots_on_target": null,
+            "chances_created": 2,
+            "big_chances_created": null,
+            "clearances": 52,
+            "blocks": 9,
+            "interceptions": 6,
+            "tackles": 10,
+            "recoveries": 53
+        },
+        "discipline": {
+            "yellow_cards": 3,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 317822,
+        "name": "Carlos Gruezo",
+        "position": "Defensive Midfielder",
+        "nationality": "Ecuador",
+        "club": "Santos Laguna",
+        "league": "Liga MX Clausura",
+        "appearances": {
+            "matches_played": 12,
+            "started": 11,
+            "minutes_played": 812
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 0,
+            "xg": 0.23,
+            "xgot": 0.36,
+            "npxg": 0.23,
+            "xa": 0.28,
+            "xgi": 0.51,
+            "clean_sheets": null,
+            "goals_conceded": 23,
+            "xgc": 17.58
+        },
+        "detailed_actions": {
+            "shots": 5,
+            "shots_on_target": 1,
+            "chances_created": 5,
+            "big_chances_created": null,
+            "clearances": 8,
+            "blocks": 2,
+            "interceptions": 11,
+            "tackles": 19,
+            "recoveries": 31
+        },
+        "discipline": {
+            "yellow_cards": 4,
+            "red_cards": 1
+        }
+    },
+    {
+        "id": 980311,
+        "name": "Gonzalo Plata",
+        "position": "Right Winger",
+        "nationality": "Ecuador",
+        "club": "Flamengo",
+        "league": "Serie A",
+        "appearances": {
+            "matches_played": 10,
+            "started": 6,
+            "minutes_played": 561
+        },
+        "core_stats": {
+            "goals": 2,
+            "assists": 2,
+            "xg": 2.62,
+            "xgot": 2.99,
+            "npxg": 2.62,
+            "xa": 1.03,
+            "xgi": 3.65,
+            "clean_sheets": 1,
+            "goals_conceded": 5,
+            "xgc": 6.71
+        },
+        "detailed_actions": {
+            "shots": 22,
+            "shots_on_target": 12,
+            "chances_created": 10,
+            "big_chances_created": 3,
+            "clearances": 3,
+            "blocks": 1,
+            "interceptions": 5,
+            "tackles": 17,
+            "recoveries": 27
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 195927,
+        "name": "Enner Valencia",
+        "position": "Striker",
+        "nationality": "Ecuador",
+        "club": "Pachuca",
+        "league": "Liga MX Clausura",
+        "appearances": {
+            "matches_played": 12,
+            "started": 5,
+            "minutes_played": 619
+        },
+        "core_stats": {
+            "goals": 4,
+            "assists": 0,
+            "xg": 3.46,
+            "xgot": 3.78,
+            "npxg": 1.89,
+            "xa": 0.22,
+            "xgi": 3.68,
+            "clean_sheets": null,
+            "goals_conceded": 12,
+            "xgc": 9.65
+        },
+        "detailed_actions": {
+            "shots": 27,
+            "shots_on_target": 9,
+            "chances_created": 7,
+            "big_chances_created": null,
+            "clearances": 3,
+            "blocks": 2,
+            "interceptions": 1,
+            "tackles": 4,
+            "recoveries": 15
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 1
+        }
+    },
+    {
+        "id": 1421270,
+        "name": "Kevin Rodríguez",
+        "position": "Striker",
+        "nationality": "Ecuador",
+        "club": "Union St.Gilloise",
+        "league": "Belgian Pro League",
+        "appearances": {
+            "matches_played": 31,
+            "started": 22,
+            "minutes_played": 1825
+        },
+        "core_stats": {
+            "goals": 10,
+            "assists": 2,
+            "xg": 8.63,
+            "xgot": 9.44,
+            "npxg": 8.63,
+            "xa": 2.84,
+            "xgi": 11.47,
+            "clean_sheets": 2,
+            "goals_conceded": 12,
+            "xgc": 18.12
+        },
+        "detailed_actions": {
+            "shots": 76,
+            "shots_on_target": 30,
+            "chances_created": 19,
+            "big_chances_created": 4,
+            "clearances": 14,
+            "blocks": 3,
+            "interceptions": 5,
+            "tackles": 19,
+            "recoveries": 77
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 766159,
+        "name": "Jordy Caicedo",
+        "position": "Striker",
+        "nationality": "Ecuador",
+        "club": "Huracan",
+        "league": "Liga Profesional Apertura",
+        "appearances": {
+            "matches_played": 17,
+            "started": 17,
+            "minutes_played": 1490
+        },
+        "core_stats": {
+            "goals": 8,
+            "assists": 0,
+            "xg": 7.89,
+            "xgot": 7.25,
+            "npxg": 5.53,
+            "xa": 0.39,
+            "xgi": 8.28,
+            "clean_sheets": 3,
+            "goals_conceded": 12,
+            "xgc": 16.47
+        },
+        "detailed_actions": {
+            "shots": 33,
+            "shots_on_target": 17,
+            "chances_created": 7,
+            "big_chances_created": 1,
+            "clearances": 16,
+            "blocks": 2,
+            "interceptions": null,
+            "tackles": 11,
+            "recoveries": 26
+        },
+        "discipline": {
+            "yellow_cards": 8,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1298925,
+        "name": "Jeremy Sarmiento",
+        "position": "Left Winger",
+        "nationality": "Ecuador",
+        "club": "Middlesbrough",
+        "league": "Championship",
+        "appearances": {
+            "matches_played": 17,
+            "started": 5,
+            "minutes_played": 534
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": 1.16,
+            "xgot": 0.19,
+            "npxg": 1.16,
+            "xa": 0.62,
+            "xgi": 1.78,
+            "clean_sheets": null,
+            "goals_conceded": 6,
+            "xgc": 7.5
+        },
+        "detailed_actions": {
+            "shots": 11,
+            "shots_on_target": 3,
+            "chances_created": 11,
+            "big_chances_created": null,
+            "clearances": 2,
+            "blocks": 1,
+            "interceptions": 2,
+            "tackles": 9,
+            "recoveries": 13
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        }
+    }
+]

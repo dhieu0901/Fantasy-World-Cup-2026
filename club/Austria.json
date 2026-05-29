@@ -1,0 +1,1027 @@
+[
+    {
+        "id": 630672,
+        "name": "Patrick Pentz",
+        "position": "Keeper",
+        "nationality": "Austria",
+        "club": "Brøndby IF",
+        "league": "Superligaen",
+        "appearances": {
+            "matches_played": 30,
+            "started": 0,
+            "minutes_played": 2685
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 11,
+            "goals_conceded": 33,
+            "xgc": null
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 1
+        },
+        "goalkeeping_metrics": {
+            "penalties_conceded": 4,
+            "penalties_saved": 0,
+            "saves": 104,
+            "goal_prevented": 8.41
+        }
+    },
+    {
+        "id": 450739,
+        "name": "Alexander Schlager",
+        "position": "Keeper",
+        "nationality": "Austria",
+        "club": "Salzburg",
+        "league": "Bundesliga",
+        "appearances": {
+            "matches_played": 31,
+            "started": 0,
+            "minutes_played": 2790
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 5,
+            "goals_conceded": 40,
+            "xgc": null
+        },
+        "discipline": {
+            "yellow_cards": 4,
+            "red_cards": 0
+        },
+        "goalkeeping_metrics": {
+            "penalties_conceded": 3,
+            "penalties_saved": 0,
+            "saves": 77,
+            "goal_prevented": 4.17
+        }
+    },
+    {
+        "id": 1514693,
+        "name": "Florian Wiegele",
+        "position": "Keeper",
+        "nationality": "Austria",
+        "club": "Viktoria Plzen",
+        "league": "1. Liga",
+        "appearances": {
+            "matches_played": 20,
+            "started": 0,
+            "minutes_played": 1785
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 10,
+            "goals_conceded": 15,
+            "xgc": null
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        "goalkeeping_metrics": {
+            "penalties_conceded": null,
+            "penalties_saved": null,
+            "saves": 60,
+            "goal_prevented": null
+        }
+    },
+    {
+        "id": 1073980,
+        "name": "David Affengruber",
+        "position": "Center Back",
+        "nationality": "Austria",
+        "club": "Elche",
+        "league": "LaLiga",
+        "appearances": {
+            "matches_played": 36,
+            "started": 33,
+            "minutes_played": 2953
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 1,
+            "xg": 0.86,
+            "xgot": 0.8,
+            "npxg": 0.86,
+            "xa": 1.64,
+            "xgi": 2.5,
+            "clean_sheets": 6,
+            "goals_conceded": 49,
+            "xgc": 55.8
+        },
+        "detailed_actions": {
+            "shots": 14,
+            "shots_on_target": 4,
+            "chances_created": 8,
+            "big_chances_created": 2,
+            "clearances": 178,
+            "blocks": 26,
+            "interceptions": 51,
+            "tackles": 74,
+            "recoveries": 158
+        },
+        "discipline": {
+            "yellow_cards": 7,
+            "red_cards": 1
+        }
+    },
+    {
+        "id": 121633,
+        "name": "David Alaba",
+        "position": "Center Back",
+        "nationality": "Austria",
+        "club": "Real Madrid",
+        "league": "LaLiga",
+        "appearances": {
+            "matches_played": 11,
+            "started": 5,
+            "minutes_played": 421
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": 0.25,
+            "xgot": 0.05,
+            "npxg": 0.25,
+            "xa": 0.08,
+            "xgi": 0.33,
+            "clean_sheets": 1,
+            "goals_conceded": 5,
+            "xgc": 5.43
+        },
+        "detailed_actions": {
+            "shots": 4,
+            "shots_on_target": 1,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": 18,
+            "blocks": 5,
+            "interceptions": null,
+            "tackles": 5,
+            "recoveries": 15
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 754126,
+        "name": "Kevin Danso",
+        "position": "Center Back",
+        "nationality": "Austria",
+        "club": "Tottenham Hotspur",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 24,
+            "started": 17,
+            "minutes_played": 1491
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": 0.59,
+            "xgot": 0.05,
+            "npxg": 0.59,
+            "xa": 0.27,
+            "xgi": 0.86,
+            "clean_sheets": 4,
+            "goals_conceded": 25,
+            "xgc": 20.39
+        },
+        "detailed_actions": {
+            "shots": 11,
+            "shots_on_target": 2,
+            "chances_created": 3,
+            "big_chances_created": 1,
+            "clearances": 135,
+            "blocks": 11,
+            "interceptions": 25,
+            "tackles": 27,
+            "recoveries": 45
+        },
+        "discipline": {
+            "yellow_cards": 8,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 767789,
+        "name": "Marco Friedl",
+        "position": "Center Back",
+        "nationality": "Austria",
+        "club": "Werder Bremen",
+        "league": "Bundesliga",
+        "appearances": {
+            "matches_played": 30,
+            "started": 29,
+            "minutes_played": 2549
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 0,
+            "xg": 0.68,
+            "xgot": 0.62,
+            "npxg": 0.68,
+            "xa": 1.08,
+            "xgi": 1.76,
+            "clean_sheets": 5,
+            "goals_conceded": 49,
+            "xgc": 44.82
+        },
+        "detailed_actions": {
+            "shots": 8,
+            "shots_on_target": 2,
+            "chances_created": 5,
+            "big_chances_created": null,
+            "clearances": 157,
+            "blocks": 24,
+            "interceptions": 35,
+            "tackles": 44,
+            "recoveries": 117
+        },
+        "discipline": {
+            "yellow_cards": 9,
+            "red_cards": 1
+        }
+    },
+    {
+        "id": 643724,
+        "name": "Philipp Lienhart",
+        "position": "Center Back",
+        "nationality": "Austria",
+        "club": "Freiburg",
+        "league": "Bundesliga",
+        "appearances": {
+            "matches_played": 20,
+            "started": 14,
+            "minutes_played": 1300
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 0,
+            "xg": 1.06,
+            "xgot": 0.86,
+            "npxg": 1.06,
+            "xa": 0.58,
+            "xgi": 1.64,
+            "clean_sheets": 3,
+            "goals_conceded": 22,
+            "xgc": 20.19
+        },
+        "detailed_actions": {
+            "shots": 8,
+            "shots_on_target": 2,
+            "chances_created": 4,
+            "big_chances_created": null,
+            "clearances": 76,
+            "blocks": 8,
+            "interceptions": 15,
+            "tackles": 18,
+            "recoveries": 47
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 1
+        }
+    },
+    {
+        "id": 423812,
+        "name": "Phillipp Mwene",
+        "position": "Left Midfielder",
+        "nationality": "Austria",
+        "club": "Mainz 05",
+        "league": "Bundesliga",
+        "appearances": {
+            "matches_played": 29,
+            "started": 24,
+            "minutes_played": 2072
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 2,
+            "xg": 1.96,
+            "xgot": 0.99,
+            "npxg": 1.96,
+            "xa": 3.08,
+            "xgi": 5.04,
+            "clean_sheets": 1,
+            "goals_conceded": 36,
+            "xgc": 37.64
+        },
+        "detailed_actions": {
+            "shots": 10,
+            "shots_on_target": 2,
+            "chances_created": 18,
+            "big_chances_created": 3,
+            "clearances": 46,
+            "blocks": 9,
+            "interceptions": 15,
+            "tackles": 29,
+            "recoveries": 78
+        },
+        "discipline": {
+            "yellow_cards": 4,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 557325,
+        "name": "Stefan Posch",
+        "position": "Center Back",
+        "nationality": "Austria",
+        "club": "Mainz 05",
+        "league": "Bundesliga",
+        "appearances": {
+            "matches_played": 16,
+            "started": 16,
+            "minutes_played": 1395
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": 0.48,
+            "xgot": 0.47,
+            "npxg": 0.48,
+            "xa": 1.24,
+            "xgi": 1.72,
+            "clean_sheets": 2,
+            "goals_conceded": 22,
+            "xgc": 19.86
+        },
+        "detailed_actions": {
+            "shots": 11,
+            "shots_on_target": 3,
+            "chances_created": 8,
+            "big_chances_created": 1,
+            "clearances": 89,
+            "blocks": 11,
+            "interceptions": 21,
+            "tackles": 46,
+            "recoveries": 68
+        },
+        "discipline": {
+            "yellow_cards": 4,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1027194,
+        "name": "Alexander Prass",
+        "position": "Left Midfielder",
+        "nationality": "Austria",
+        "club": "Hoffenheim",
+        "league": "Bundesliga",
+        "appearances": {
+            "matches_played": 32,
+            "started": 12,
+            "minutes_played": 1297
+        },
+        "core_stats": {
+            "goals": 3,
+            "assists": 2,
+            "xg": 1.19,
+            "xgot": 3.77,
+            "npxg": 1.19,
+            "xa": 3.25,
+            "xgi": 4.44,
+            "clean_sheets": 1,
+            "goals_conceded": 25,
+            "xgc": 26.96
+        },
+        "detailed_actions": {
+            "shots": 18,
+            "shots_on_target": 11,
+            "chances_created": 18,
+            "big_chances_created": 4,
+            "clearances": 18,
+            "blocks": 3,
+            "interceptions": 7,
+            "tackles": 32,
+            "recoveries": 77
+        },
+        "discipline": {
+            "yellow_cards": 4,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 951921,
+        "name": "Michael Svoboda",
+        "position": "Center Back",
+        "nationality": "Austria",
+        "club": "Venezia",
+        "league": "Serie B",
+        "appearances": {
+            "matches_played": 29,
+            "started": 28,
+            "minutes_played": 2527
+        },
+        "core_stats": {
+            "goals": 3,
+            "assists": 2,
+            "xg": 1.42,
+            "xgot": 1.69,
+            "npxg": 1.42,
+            "xa": 1.91,
+            "xgi": 3.33,
+            "clean_sheets": 12,
+            "goals_conceded": 20,
+            "xgc": 25.12
+        },
+        "detailed_actions": {
+            "shots": 18,
+            "shots_on_target": 5,
+            "chances_created": 14,
+            "big_chances_created": 2,
+            "clearances": 152,
+            "blocks": 14,
+            "interceptions": 43,
+            "tackles": 49,
+            "recoveries": 179
+        },
+        "discipline": {
+            "yellow_cards": 7,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 747718,
+        "name": "Christoph Baumgartner",
+        "position": "Central Midfielder",
+        "nationality": "Austria",
+        "club": "RB Leipzig",
+        "league": "Bundesliga",
+        "appearances": {
+            "matches_played": 33,
+            "started": 32,
+            "minutes_played": 2789
+        },
+        "core_stats": {
+            "goals": 13,
+            "assists": 8,
+            "xg": 15.1,
+            "xgot": 12.43,
+            "npxg": 14.31,
+            "xa": 3.94,
+            "xgi": 19.04,
+            "clean_sheets": 6,
+            "goals_conceded": 37,
+            "xgc": 43.94
+        },
+        "detailed_actions": {
+            "shots": 81,
+            "shots_on_target": 35,
+            "chances_created": 37,
+            "big_chances_created": 6,
+            "clearances": 43,
+            "blocks": 4,
+            "interceptions": 21,
+            "tackles": 54,
+            "recoveries": 113
+        },
+        "discipline": {
+            "yellow_cards": 10,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1089685,
+        "name": "Carney Chukwuemeka",
+        "position": "Attacking Midfielder",
+        "nationality": "Austria",
+        "club": "Borussia Dortmund",
+        "league": "Bundesliga",
+        "appearances": {
+            "matches_played": 28,
+            "started": 8,
+            "minutes_played": 907
+        },
+        "core_stats": {
+            "goals": 2,
+            "assists": 0,
+            "xg": 1.93,
+            "xgot": 0.99,
+            "npxg": 1.93,
+            "xa": 2.14,
+            "xgi": 4.07,
+            "clean_sheets": null,
+            "goals_conceded": 7,
+            "xgc": 11.66
+        },
+        "detailed_actions": {
+            "shots": 18,
+            "shots_on_target": 2,
+            "chances_created": 11,
+            "big_chances_created": null,
+            "clearances": 5,
+            "blocks": 1,
+            "interceptions": 6,
+            "tackles": 21,
+            "recoveries": 49
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 617044,
+        "name": "Florian Grillitsch",
+        "position": "Central Midfielder",
+        "nationality": "Austria",
+        "club": "Braga",
+        "league": "Liga Portugal",
+        "appearances": {
+            "matches_played": 20,
+            "started": 12,
+            "minutes_played": 1129
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 1,
+            "xg": 0.73,
+            "xgot": 1.12,
+            "npxg": 0.73,
+            "xa": 1.03,
+            "xgi": 1.76,
+            "clean_sheets": 1,
+            "goals_conceded": 16,
+            "xgc": 13.8
+        },
+        "detailed_actions": {
+            "shots": 8,
+            "shots_on_target": 2,
+            "chances_created": 8,
+            "big_chances_created": 1,
+            "clearances": 20,
+            "blocks": 4,
+            "interceptions": 17,
+            "tackles": 21,
+            "recoveries": 54
+        },
+        "discipline": {
+            "yellow_cards": 3,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 526827,
+        "name": "Konrad Laimer",
+        "position": "Right Back",
+        "nationality": "Austria",
+        "club": "Bayern München",
+        "league": "Bundesliga",
+        "appearances": {
+            "matches_played": 29,
+            "started": 22,
+            "minutes_played": 1997
+        },
+        "core_stats": {
+            "goals": 3,
+            "assists": 9,
+            "xg": 2.42,
+            "xgot": 3.2,
+            "npxg": 2.42,
+            "xa": 5.21,
+            "xgi": 7.63,
+            "clean_sheets": 6,
+            "goals_conceded": 20,
+            "xgc": 22.77
+        },
+        "detailed_actions": {
+            "shots": 17,
+            "shots_on_target": 8,
+            "chances_created": 45,
+            "big_chances_created": 5,
+            "clearances": 30,
+            "blocks": 6,
+            "interceptions": 17,
+            "tackles": 46,
+            "recoveries": 90
+        },
+        "discipline": {
+            "yellow_cards": 9,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 215151,
+        "name": "Marcel Sabitzer",
+        "position": "Defensive Midfielder",
+        "nationality": "Austria",
+        "club": "Borussia Dortmund",
+        "league": "Bundesliga",
+        "appearances": {
+            "matches_played": 26,
+            "started": 21,
+            "minutes_played": 1822
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 2,
+            "xg": 1.15,
+            "xgot": 1.17,
+            "npxg": 1.15,
+            "xa": 2.18,
+            "xgi": 3.33,
+            "clean_sheets": 5,
+            "goals_conceded": 22,
+            "xgc": 24.75
+        },
+        "detailed_actions": {
+            "shots": 20,
+            "shots_on_target": 4,
+            "chances_created": 15,
+            "big_chances_created": 4,
+            "clearances": 43,
+            "blocks": 6,
+            "interceptions": 19,
+            "tackles": 30,
+            "recoveries": 66
+        },
+        "discipline": {
+            "yellow_cards": 3,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 620027,
+        "name": "Xaver Schlager",
+        "position": "Central Midfielder",
+        "nationality": "Austria",
+        "club": "RB Leipzig",
+        "league": "Bundesliga",
+        "appearances": {
+            "matches_played": 26,
+            "started": 21,
+            "minutes_played": 1837
+        },
+        "core_stats": {
+            "goals": 3,
+            "assists": 1,
+            "xg": 2.11,
+            "xgot": 2.79,
+            "npxg": 2.11,
+            "xa": 2.51,
+            "xgi": 4.62,
+            "clean_sheets": 5,
+            "goals_conceded": 29,
+            "xgc": 30.19
+        },
+        "detailed_actions": {
+            "shots": 21,
+            "shots_on_target": 7,
+            "chances_created": 21,
+            "big_chances_created": 2,
+            "clearances": 29,
+            "blocks": 2,
+            "interceptions": 8,
+            "tackles": 37,
+            "recoveries": 123
+        },
+        "discipline": {
+            "yellow_cards": 6,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 749488,
+        "name": "Romano Schmid",
+        "position": "Attacking Midfielder",
+        "nationality": "Austria",
+        "club": "Werder Bremen",
+        "league": "Bundesliga",
+        "appearances": {
+            "matches_played": 34,
+            "started": 34,
+            "minutes_played": 2988
+        },
+        "core_stats": {
+            "goals": 4,
+            "assists": 8,
+            "xg": 7.83,
+            "xgot": 6.75,
+            "npxg": 4.68,
+            "xa": 10.44,
+            "xgi": 18.27,
+            "clean_sheets": 4,
+            "goals_conceded": 57,
+            "xgc": 52.99
+        },
+        "detailed_actions": {
+            "shots": 57,
+            "shots_on_target": 21,
+            "chances_created": 89,
+            "big_chances_created": 17,
+            "clearances": 13,
+            "blocks": 4,
+            "interceptions": 11,
+            "tackles": 46,
+            "recoveries": 173
+        },
+        "discipline": {
+            "yellow_cards": 4,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 461357,
+        "name": "Alessandro Schopf",
+        "position": "Defensive Midfielder",
+        "nationality": "Austria",
+        "club": "Wolfsberger AC",
+        "league": "Bundesliga",
+        "appearances": {
+            "matches_played": 24,
+            "started": 21,
+            "minutes_played": 1804
+        },
+        "core_stats": {
+            "goals": 5,
+            "assists": 5,
+            "xg": 3.9,
+            "xgot": 3.76,
+            "npxg": 3.11,
+            "xa": 1.46,
+            "xgi": 5.36,
+            "clean_sheets": 2,
+            "goals_conceded": 25,
+            "xgc": 31.01
+        },
+        "detailed_actions": {
+            "shots": 27,
+            "shots_on_target": 9,
+            "chances_created": 24,
+            "big_chances_created": 5,
+            "clearances": 15,
+            "blocks": 4,
+            "interceptions": 26,
+            "tackles": 36,
+            "recoveries": 126
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1024672,
+        "name": "Nicolas Seiwald",
+        "position": "Central Midfielder",
+        "nationality": "Austria",
+        "club": "RB Leipzig",
+        "league": "Bundesliga",
+        "appearances": {
+            "matches_played": 33,
+            "started": 31,
+            "minutes_played": 2703
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 2,
+            "xg": 1.83,
+            "xgot": 1.66,
+            "npxg": 1.83,
+            "xa": 1.89,
+            "xgi": 3.72,
+            "clean_sheets": 8,
+            "goals_conceded": 37,
+            "xgc": 43.23
+        },
+        "detailed_actions": {
+            "shots": 19,
+            "shots_on_target": 7,
+            "chances_created": 15,
+            "big_chances_created": 3,
+            "clearances": 64,
+            "blocks": 10,
+            "interceptions": 56,
+            "tackles": 66,
+            "recoveries": 117
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1327149,
+        "name": "Paul Wanner",
+        "position": "Defensive Midfielder",
+        "nationality": "Austria",
+        "club": "PSV Eindhoven",
+        "league": "Eredivisie",
+        "appearances": {
+            "matches_played": 22,
+            "started": 19,
+            "minutes_played": 1641
+        },
+        "core_stats": {
+            "goals": 3,
+            "assists": 3,
+            "xg": 4.6,
+            "xgot": 4.83,
+            "npxg": 4.6,
+            "xa": 3.72,
+            "xgi": 8.32,
+            "clean_sheets": 3,
+            "goals_conceded": 22,
+            "xgc": 21.81
+        },
+        "detailed_actions": {
+            "shots": 33,
+            "shots_on_target": 14,
+            "chances_created": 23,
+            "big_chances_created": 5,
+            "clearances": 15,
+            "blocks": 2,
+            "interceptions": 5,
+            "tackles": 43,
+            "recoveries": 74
+        },
+        "discipline": {
+            "yellow_cards": 5,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1073498,
+        "name": "Patrick Wimmer",
+        "position": "Left Winger",
+        "nationality": "Austria",
+        "club": "Wolfsburg",
+        "league": "Bundesliga",
+        "appearances": {
+            "matches_played": 25,
+            "started": 21,
+            "minutes_played": 1634
+        },
+        "core_stats": {
+            "goals": 4,
+            "assists": 3,
+            "xg": 3.12,
+            "xgot": 3.26,
+            "npxg": 3.12,
+            "xa": 2.19,
+            "xgi": 5.31,
+            "clean_sheets": null,
+            "goals_conceded": 32,
+            "xgc": 28.35
+        },
+        "detailed_actions": {
+            "shots": 24,
+            "shots_on_target": 8,
+            "chances_created": 16,
+            "big_chances_created": 4,
+            "clearances": 21,
+            "blocks": 2,
+            "interceptions": 25,
+            "tackles": 47,
+            "recoveries": 80
+        },
+        "discipline": {
+            "yellow_cards": 4,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 110148,
+        "name": "Marko Arnautovic",
+        "position": "Striker",
+        "nationality": "Austria",
+        "club": "FK Crvena Zvezda",
+        "league": "Super Liga",
+        "appearances": {
+            "matches_played": 16,
+            "started": 14,
+            "minutes_played": 994
+        },
+        "core_stats": {
+            "goals": 7,
+            "assists": 8,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": 4,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": 38,
+            "shots_on_target": 17,
+            "chances_created": 30,
+            "big_chances_created": 8,
+            "clearances": 3,
+            "blocks": null,
+            "interceptions": 2,
+            "tackles": 8,
+            "recoveries": 28
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 198316,
+        "name": "Michael Gregoritsch",
+        "position": "Striker",
+        "nationality": "Austria",
+        "club": "Augsburg",
+        "league": "Bundesliga",
+        "appearances": {
+            "matches_played": 17,
+            "started": 11,
+            "minutes_played": 918
+        },
+        "core_stats": {
+            "goals": 6,
+            "assists": 2,
+            "xg": 5.27,
+            "xgot": 5.67,
+            "npxg": 4.49,
+            "xa": 0.74,
+            "xgi": 6.01,
+            "clean_sheets": null,
+            "goals_conceded": 14,
+            "xgc": 16.99
+        },
+        "detailed_actions": {
+            "shots": 29,
+            "shots_on_target": 10,
+            "chances_created": 7,
+            "big_chances_created": 3,
+            "clearances": 15,
+            "blocks": 5,
+            "interceptions": 5,
+            "tackles": 5,
+            "recoveries": 18
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 858198,
+        "name": "Sasa Kalajdzic",
+        "position": "Striker",
+        "nationality": "Austria",
+        "club": "LASK",
+        "league": "Bundesliga",
+        "appearances": {
+            "matches_played": 23,
+            "started": 15,
+            "minutes_played": 1323
+        },
+        "core_stats": {
+            "goals": 6,
+            "assists": 5,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": null,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": null,
+            "shots_on_target": null,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": null,
+            "blocks": null,
+            "interceptions": null,
+            "tackles": null,
+            "recoveries": null
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 0
+        }
+    }
+]

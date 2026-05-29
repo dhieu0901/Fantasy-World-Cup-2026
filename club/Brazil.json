@@ -1,0 +1,1032 @@
+[
+    {
+        "id": 319784,
+        "name": "Alisson",
+        "position": "Keeper",
+        "nationality": "Brazil",
+        "club": "Liverpool",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 26,
+            "started": 0,
+            "minutes_played": 2340
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 8,
+            "goals_conceded": 31,
+            "xgc": null
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        },
+        "goalkeeping_metrics": {
+            "penalties_conceded": 2,
+            "penalties_saved": 0,
+            "saves": 57,
+            "goal_prevented": -2.7
+        }
+    },
+    {
+        "id": 957203,
+        "name": "Ederson",
+        "position": "Defensive Midfielder",
+        "nationality": "Brazil",
+        "club": "Atalanta",
+        "league": "Serie A",
+        "appearances": {
+            "matches_played": 30,
+            "started": 26,
+            "minutes_played": 2235
+        },
+        "core_stats": {
+            "goals": 2,
+            "assists": 1,
+            "xg": 4.36,
+            "xgot": 2.79,
+            "npxg": 3.57,
+            "xa": 1.63,
+            "xgi": 5.99,
+            "clean_sheets": 7,
+            "goals_conceded": 18,
+            "xgc": 29.54
+        },
+        "detailed_actions": {
+            "shots": 35,
+            "shots_on_target": 11,
+            "chances_created": 25,
+            "big_chances_created": 3,
+            "clearances": 41,
+            "blocks": 7,
+            "interceptions": 28,
+            "tackles": 59,
+            "recoveries": 133
+        },
+        "discipline": {
+            "yellow_cards": 3,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 267826,
+        "name": "Weverton",
+        "position": "Keeper",
+        "nationality": "Brazil",
+        "club": "Gremio",
+        "league": "Serie A",
+        "appearances": {
+            "matches_played": 17,
+            "started": 0,
+            "minutes_played": 1530
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 5,
+            "goals_conceded": 20,
+            "xgc": null
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        },
+        "goalkeeping_metrics": {
+            "penalties_conceded": 2,
+            "penalties_saved": 2,
+            "saves": 49,
+            "goal_prevented": 2.48
+        }
+    },
+    {
+        "id": 267365,
+        "name": "Marquinhos",
+        "position": "Center Back",
+        "nationality": "Brazil",
+        "club": "Paris Saint-Germain",
+        "league": "Ligue 1",
+        "appearances": {
+            "matches_played": 14,
+            "started": 11,
+            "minutes_played": 1049
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": 0.14,
+            "xgot": null,
+            "npxg": 0.14,
+            "xa": 0.45,
+            "xgi": 0.59,
+            "clean_sheets": 6,
+            "goals_conceded": 6,
+            "xgc": 10.61
+        },
+        "detailed_actions": {
+            "shots": 3,
+            "shots_on_target": null,
+            "chances_created": 2,
+            "big_chances_created": null,
+            "clearances": 35,
+            "blocks": 4,
+            "interceptions": 8,
+            "tackles": 15,
+            "recoveries": 43
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1785055,
+        "name": "Gabriel Magalhães",
+        "position": "forward",
+        "nationality": "Brazil",
+        "club": "Mixto",
+        "league": null,
+        "appearances": {
+            "matches_played": 0,
+            "started": 0,
+            "minutes_played": 0
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": null,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": null,
+            "shots_on_target": null,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": null,
+            "blocks": null,
+            "interceptions": null,
+            "tackles": null,
+            "recoveries": null
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 857269,
+        "name": "Bremer",
+        "position": "Center Back",
+        "nationality": "Brazil",
+        "club": "Juventus",
+        "league": "Serie A",
+        "appearances": {
+            "matches_played": 26,
+            "started": 25,
+            "minutes_played": 2175
+        },
+        "core_stats": {
+            "goals": 4,
+            "assists": 3,
+            "xg": 2.79,
+            "xgot": 2.05,
+            "npxg": 2.79,
+            "xa": 1.17,
+            "xgi": 3.96,
+            "clean_sheets": 12,
+            "goals_conceded": 19,
+            "xgc": 18.74
+        },
+        "detailed_actions": {
+            "shots": 23,
+            "shots_on_target": 9,
+            "chances_created": 8,
+            "big_chances_created": null,
+            "clearances": 94,
+            "blocks": 11,
+            "interceptions": 32,
+            "tackles": 28,
+            "recoveries": 112
+        },
+        "discipline": {
+            "yellow_cards": 5,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 862538,
+        "name": "Ibáñez",
+        "position": "Center Back",
+        "nationality": "Brazil",
+        "club": "Al Ahli",
+        "league": "Saudi Pro League",
+        "appearances": {
+            "matches_played": 28,
+            "started": 28,
+            "minutes_played": 2426
+        },
+        "core_stats": {
+            "goals": 2,
+            "assists": 2,
+            "xg": 2.86,
+            "xgot": 3.57,
+            "npxg": 2.86,
+            "xa": 1.33,
+            "xgi": 4.19,
+            "clean_sheets": 12,
+            "goals_conceded": 20,
+            "xgc": 21.61
+        },
+        "detailed_actions": {
+            "shots": 31,
+            "shots_on_target": 11,
+            "chances_created": 8,
+            "big_chances_created": 3,
+            "clearances": 106,
+            "blocks": 8,
+            "interceptions": 26,
+            "tackles": 30,
+            "recoveries": 110
+        },
+        "discipline": {
+            "yellow_cards": 3,
+            "red_cards": 2
+        }
+    },
+    {
+        "id": 523801,
+        "name": "Léo Pereira",
+        "position": "Center Back",
+        "nationality": "Brazil",
+        "club": "Flamengo",
+        "league": "Serie A",
+        "appearances": {
+            "matches_played": 14,
+            "started": 14,
+            "minutes_played": 1231
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 0,
+            "xg": 0.75,
+            "xgot": 0.21,
+            "npxg": 0.75,
+            "xa": 0.53,
+            "xgi": 1.28,
+            "clean_sheets": 4,
+            "goals_conceded": 12,
+            "xgc": 13.2
+        },
+        "detailed_actions": {
+            "shots": 16,
+            "shots_on_target": 3,
+            "chances_created": 4,
+            "big_chances_created": null,
+            "clearances": 64,
+            "blocks": 17,
+            "interceptions": 15,
+            "tackles": 14,
+            "recoveries": 55
+        },
+        "discipline": {
+            "yellow_cards": 6,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 362120,
+        "name": "Danilo",
+        "position": "Central Midfielder",
+        "nationality": "Brazil",
+        "club": "Lazio",
+        "league": "Serie A",
+        "appearances": {
+            "matches_played": 27,
+            "started": 24,
+            "minutes_played": 1992
+        },
+        "core_stats": {
+            "goals": 3,
+            "assists": 3,
+            "xg": 2.99,
+            "xgot": 2.67,
+            "npxg": 1.41,
+            "xa": 1.44,
+            "xgi": 4.43,
+            "clean_sheets": 6,
+            "goals_conceded": 26,
+            "xgc": 30.22
+        },
+        "detailed_actions": {
+            "shots": 26,
+            "shots_on_target": 7,
+            "chances_created": 23,
+            "big_chances_created": 2,
+            "clearances": 45,
+            "blocks": 9,
+            "interceptions": 21,
+            "tackles": 34,
+            "recoveries": 106
+        },
+        "discipline": {
+            "yellow_cards": 6,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 157865,
+        "name": "Alex Sandro",
+        "position": "Left Back",
+        "nationality": "Brazil",
+        "club": "Flamengo",
+        "league": "Serie A",
+        "appearances": {
+            "matches_played": 13,
+            "started": 13,
+            "minutes_played": 1068
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": 0.05,
+            "xgot": null,
+            "npxg": 0.05,
+            "xa": 1.22,
+            "xgi": 1.27,
+            "clean_sheets": 2,
+            "goals_conceded": 12,
+            "xgc": 12.91
+        },
+        "detailed_actions": {
+            "shots": 2,
+            "shots_on_target": null,
+            "chances_created": 9,
+            "big_chances_created": 2,
+            "clearances": 41,
+            "blocks": 4,
+            "interceptions": 7,
+            "tackles": 19,
+            "recoveries": 36
+        },
+        "discipline": {
+            "yellow_cards": 3,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 346000,
+        "name": "Douglas Santos",
+        "position": "Left Back",
+        "nationality": "Brazil",
+        "club": "Zenit St. Petersburg",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 23,
+            "started": 22,
+            "minutes_played": 1920
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 0,
+            "xg": 1.95,
+            "xgot": 1.33,
+            "npxg": 1.95,
+            "xa": 2.39,
+            "xgi": 4.34,
+            "clean_sheets": 8,
+            "goals_conceded": 17,
+            "xgc": 15.32
+        },
+        "detailed_actions": {
+            "shots": 26,
+            "shots_on_target": 7,
+            "chances_created": 17,
+            "big_chances_created": 2,
+            "clearances": 54,
+            "blocks": 4,
+            "interceptions": 25,
+            "tackles": 55,
+            "recoveries": 64
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 1
+        }
+    },
+    {
+        "id": 917802,
+        "name": "Wesley",
+        "position": "Center Back",
+        "nationality": "Brazil",
+        "club": "Chelsea",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 25,
+            "started": 20,
+            "minutes_played": 1726
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 1,
+            "xg": 0.72,
+            "xgot": 0.06,
+            "npxg": 0.72,
+            "xa": 0.62,
+            "xgi": 1.34,
+            "clean_sheets": 3,
+            "goals_conceded": 24,
+            "xgc": 25.35
+        },
+        "detailed_actions": {
+            "shots": 8,
+            "shots_on_target": 1,
+            "chances_created": 3,
+            "big_chances_created": 1,
+            "clearances": 129,
+            "blocks": 19,
+            "interceptions": 40,
+            "tackles": 19,
+            "recoveries": 81
+        },
+        "discipline": {
+            "yellow_cards": 5,
+            "red_cards": 2
+        }
+    },
+    {
+        "id": 850354,
+        "name": "Bruno Guimarães",
+        "position": "Central Midfielder",
+        "nationality": "Brazil",
+        "club": "Newcastle United",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 29,
+            "started": 27,
+            "minutes_played": 2455
+        },
+        "core_stats": {
+            "goals": 9,
+            "assists": 5,
+            "xg": 5.6,
+            "xgot": 8.57,
+            "npxg": 4.02,
+            "xa": 4.98,
+            "xgi": 10.58,
+            "clean_sheets": 6,
+            "goals_conceded": 37,
+            "xgc": 31.96
+        },
+        "detailed_actions": {
+            "shots": 42,
+            "shots_on_target": 23,
+            "chances_created": 45,
+            "big_chances_created": 7,
+            "clearances": 36,
+            "blocks": 3,
+            "interceptions": 15,
+            "tackles": 62,
+            "recoveries": 135
+        },
+        "discipline": {
+            "yellow_cards": 6,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 208494,
+        "name": "Casemiro",
+        "position": "Defensive Midfielder",
+        "nationality": "Brazil",
+        "club": "Manchester United",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 34,
+            "started": 33,
+            "minutes_played": 2588
+        },
+        "core_stats": {
+            "goals": 9,
+            "assists": 2,
+            "xg": 5.52,
+            "xgot": 5.82,
+            "npxg": 5.52,
+            "xa": 3.12,
+            "xgi": 8.64,
+            "clean_sheets": 2,
+            "goals_conceded": 31,
+            "xgc": 31.76
+        },
+        "detailed_actions": {
+            "shots": 52,
+            "shots_on_target": 18,
+            "chances_created": 36,
+            "big_chances_created": 4,
+            "clearances": 73,
+            "blocks": 27,
+            "interceptions": 31,
+            "tackles": 90,
+            "recoveries": 138
+        },
+        "discipline": {
+            "yellow_cards": 9,
+            "red_cards": 1
+        }
+    },
+    {
+        "id": 766435,
+        "name": "Lucas Paquetá",
+        "position": "Attacking Midfielder",
+        "nationality": "Brazil",
+        "club": "Flamengo",
+        "league": "Serie A",
+        "appearances": {
+            "matches_played": 12,
+            "started": 10,
+            "minutes_played": 819
+        },
+        "core_stats": {
+            "goals": 3,
+            "assists": 0,
+            "xg": 1.71,
+            "xgot": 2.3,
+            "npxg": 1.71,
+            "xa": 1.27,
+            "xgi": 2.98,
+            "clean_sheets": 2,
+            "goals_conceded": 9,
+            "xgc": 9.04
+        },
+        "detailed_actions": {
+            "shots": 26,
+            "shots_on_target": 8,
+            "chances_created": 12,
+            "big_chances_created": null,
+            "clearances": 12,
+            "blocks": 2,
+            "interceptions": 1,
+            "tackles": 20,
+            "recoveries": 49
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 359188,
+        "name": "Fabinho",
+        "position": "Defensive Midfielder",
+        "nationality": "Brazil",
+        "club": "Al Ittihad",
+        "league": "Saudi Pro League",
+        "appearances": {
+            "matches_played": 30,
+            "started": 30,
+            "minutes_played": 2642
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 3,
+            "xg": 1.62,
+            "xgot": 1.75,
+            "npxg": 0.83,
+            "xa": 2.79,
+            "xgi": 4.41,
+            "clean_sheets": 8,
+            "goals_conceded": 39,
+            "xgc": 42.54
+        },
+        "detailed_actions": {
+            "shots": 15,
+            "shots_on_target": 6,
+            "chances_created": 26,
+            "big_chances_created": 6,
+            "clearances": 61,
+            "blocks": 13,
+            "interceptions": 35,
+            "tackles": 56,
+            "recoveries": 132
+        },
+        "discipline": {
+            "yellow_cards": 5,
+            "red_cards": 2
+        }
+    },
+    {
+        "id": 1789927,
+        "name": "Danilo Santos",
+        "position": "midfielder",
+        "nationality": "Brazil",
+        "club": "Uniao Tocantins",
+        "league": "NISA Pro Cup Grp. A",
+        "appearances": {
+            "matches_played": 2,
+            "started": 2,
+            "minutes_played": 180
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": null,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": null,
+            "shots_on_target": null,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": null,
+            "blocks": null,
+            "interceptions": null,
+            "tackles": null,
+            "recoveries": null
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 846033,
+        "name": "Vinícius Júnior",
+        "position": "Left Winger",
+        "nationality": "Brazil",
+        "club": "Real Madrid",
+        "league": "LaLiga",
+        "appearances": {
+            "matches_played": 36,
+            "started": 32,
+            "minutes_played": 2825
+        },
+        "core_stats": {
+            "goals": 16,
+            "assists": 5,
+            "xg": 13.65,
+            "xgot": 15.46,
+            "npxg": 9.71,
+            "xa": 5.6,
+            "xgi": 19.25,
+            "clean_sheets": 4,
+            "goals_conceded": 30,
+            "xgc": 34.79
+        },
+        "detailed_actions": {
+            "shots": 101,
+            "shots_on_target": 46,
+            "chances_created": 70,
+            "big_chances_created": 7,
+            "clearances": 1,
+            "blocks": null,
+            "interceptions": 2,
+            "tackles": 29,
+            "recoveries": 88
+        },
+        "discipline": {
+            "yellow_cards": 8,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 696679,
+        "name": "Raphinha",
+        "position": "Left Winger",
+        "nationality": "Brazil",
+        "club": "Barcelona",
+        "league": "LaLiga",
+        "appearances": {
+            "matches_played": 22,
+            "started": 18,
+            "minutes_played": 1388
+        },
+        "core_stats": {
+            "goals": 13,
+            "assists": 3,
+            "xg": 10.36,
+            "xgot": 11.26,
+            "npxg": 7.99,
+            "xa": 5.81,
+            "xgi": 16.17,
+            "clean_sheets": 3,
+            "goals_conceded": 9,
+            "xgc": 16.01
+        },
+        "detailed_actions": {
+            "shots": 65,
+            "shots_on_target": 24,
+            "chances_created": 41,
+            "big_chances_created": 11,
+            "clearances": 11,
+            "blocks": 1,
+            "interceptions": 5,
+            "tackles": 15,
+            "recoveries": 47
+        },
+        "discipline": {
+            "yellow_cards": 5,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 19533,
+        "name": "Neymar",
+        "position": "Striker",
+        "nationality": "Brazil",
+        "club": "Santos FC",
+        "league": "Serie A",
+        "appearances": {
+            "matches_played": 8,
+            "started": 8,
+            "minutes_played": 686
+        },
+        "core_stats": {
+            "goals": 4,
+            "assists": 2,
+            "xg": 2.71,
+            "xgot": 3.39,
+            "npxg": 1.92,
+            "xa": 1.31,
+            "xgi": 4.02,
+            "clean_sheets": 2,
+            "goals_conceded": 9,
+            "xgc": 7.78
+        },
+        "detailed_actions": {
+            "shots": 21,
+            "shots_on_target": 7,
+            "chances_created": 17,
+            "big_chances_created": 2,
+            "clearances": 3,
+            "blocks": null,
+            "interceptions": null,
+            "tackles": 4,
+            "recoveries": 23
+        },
+        "discipline": {
+            "yellow_cards": 5,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 863098,
+        "name": "Matheus Cunha",
+        "position": "Left Winger",
+        "nationality": "Brazil",
+        "club": "Manchester United",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 33,
+            "started": 29,
+            "minutes_played": 2503
+        },
+        "core_stats": {
+            "goals": 10,
+            "assists": 2,
+            "xg": 7.06,
+            "xgot": 7.18,
+            "npxg": 7.06,
+            "xa": 3.28,
+            "xgi": 10.34,
+            "clean_sheets": 3,
+            "goals_conceded": 35,
+            "xgc": 35.95
+        },
+        "detailed_actions": {
+            "shots": 90,
+            "shots_on_target": 35,
+            "chances_created": 34,
+            "big_chances_created": 4,
+            "clearances": 22,
+            "blocks": 3,
+            "interceptions": 21,
+            "tackles": 39,
+            "recoveries": 127
+        },
+        "discipline": {
+            "yellow_cards": 4,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1021586,
+        "name": "Gabriel Martinelli",
+        "position": "Left Winger",
+        "nationality": "Brazil",
+        "club": "Arsenal",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 30,
+            "started": 11,
+            "minutes_played": 1073
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 4,
+            "xg": 3.99,
+            "xgot": 2.7,
+            "npxg": 3.99,
+            "xa": 1.26,
+            "xgi": 5.25,
+            "clean_sheets": null,
+            "goals_conceded": 8,
+            "xgc": 10.43
+        },
+        "detailed_actions": {
+            "shots": 29,
+            "shots_on_target": 13,
+            "chances_created": 13,
+            "big_chances_created": 4,
+            "clearances": 10,
+            "blocks": 1,
+            "interceptions": 1,
+            "tackles": 12,
+            "recoveries": 52
+        },
+        "discipline": {
+            "yellow_cards": 3,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1176214,
+        "name": "Luiz Henrique",
+        "position": "Right Winger",
+        "nationality": "Brazil",
+        "club": "Zenit St. Petersburg",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 28,
+            "started": 24,
+            "minutes_played": 2036
+        },
+        "core_stats": {
+            "goals": 5,
+            "assists": 3,
+            "xg": 5.95,
+            "xgot": 5.58,
+            "npxg": 5.17,
+            "xa": 3.49,
+            "xgi": 9.44,
+            "clean_sheets": 4,
+            "goals_conceded": 13,
+            "xgc": 14.5
+        },
+        "detailed_actions": {
+            "shots": 51,
+            "shots_on_target": 14,
+            "chances_created": 26,
+            "big_chances_created": 4,
+            "clearances": 20,
+            "blocks": null,
+            "interceptions": 11,
+            "tackles": 45,
+            "recoveries": 121
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1302005,
+        "name": "Igor Thiago",
+        "position": "Striker",
+        "nationality": "Brazil",
+        "club": "Brentford",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 38,
+            "started": 37,
+            "minutes_played": 3284
+        },
+        "core_stats": {
+            "goals": 22,
+            "assists": 1,
+            "xg": 20.57,
+            "xgot": 20.06,
+            "npxg": 13.47,
+            "xa": 1.88,
+            "xgi": 22.45,
+            "clean_sheets": 9,
+            "goals_conceded": 50,
+            "xgc": 53.13
+        },
+        "detailed_actions": {
+            "shots": 84,
+            "shots_on_target": 43,
+            "chances_created": 24,
+            "big_chances_created": 6,
+            "clearances": 64,
+            "blocks": 8,
+            "interceptions": 12,
+            "tackles": 38,
+            "recoveries": 93
+        },
+        "discipline": {
+            "yellow_cards": 7,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1406729,
+        "name": "Endrick",
+        "position": "Right Winger",
+        "nationality": "Brazil",
+        "club": "Lyon",
+        "league": "Ligue 1",
+        "appearances": {
+            "matches_played": 16,
+            "started": 14,
+            "minutes_played": 1222
+        },
+        "core_stats": {
+            "goals": 5,
+            "assists": 7,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": null,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": null,
+            "shots_on_target": null,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": null,
+            "blocks": null,
+            "interceptions": null,
+            "tackles": null,
+            "recoveries": null
+        },
+        "discipline": {
+            "yellow_cards": 3,
+            "red_cards": 1
+        }
+    },
+    {
+        "id": 1104053,
+        "name": "Rayan",
+        "position": "Attacking Midfielder",
+        "nationality": "Brazil",
+        "club": "Manchester City",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 33,
+            "started": 19,
+            "minutes_played": 1786
+        },
+        "core_stats": {
+            "goals": 4,
+            "assists": 12,
+            "xg": 4.13,
+            "xgot": 4.56,
+            "npxg": 4.13,
+            "xa": 8.65,
+            "xgi": 12.78,
+            "clean_sheets": 3,
+            "goals_conceded": 18,
+            "xgc": 25.78
+        },
+        "detailed_actions": {
+            "shots": 55,
+            "shots_on_target": 13,
+            "chances_created": 60,
+            "big_chances_created": 19,
+            "clearances": 7,
+            "blocks": 1,
+            "interceptions": 7,
+            "tackles": 26,
+            "recoveries": 91
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        }
+    }
+]

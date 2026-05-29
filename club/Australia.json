@@ -1,0 +1,747 @@
+[
+    {
+        "id": 185644,
+        "name": "Mathew Ryan",
+        "position": "Keeper",
+        "nationality": "Australia",
+        "club": "Levante",
+        "league": "LaLiga",
+        "appearances": {
+            "matches_played": 36,
+            "started": 0,
+            "minutes_played": 3240
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 9,
+            "goals_conceded": 56,
+            "xgc": null
+        },
+        "discipline": {
+            "yellow_cards": 4,
+            "red_cards": 0
+        },
+        "goalkeeping_metrics": {
+            "penalties_conceded": 3,
+            "penalties_saved": 1,
+            "saves": 126,
+            "goal_prevented": 0.71
+        }
+    },
+    {
+        "id": 302176,
+        "name": "Paul Izzo",
+        "position": "Keeper",
+        "nationality": "Australia",
+        "club": "Randers FC",
+        "league": "Superligaen",
+        "appearances": {
+            "matches_played": 26,
+            "started": 0,
+            "minutes_played": 2340
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 8,
+            "goals_conceded": 37,
+            "xgc": null
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        },
+        "goalkeeping_metrics": {
+            "penalties_conceded": 1,
+            "penalties_saved": 0,
+            "saves": 86,
+            "goal_prevented": 2.59
+        }
+    },
+    {
+        "id": 970296,
+        "name": "Joe Gauci",
+        "position": "Keeper",
+        "nationality": "Australia",
+        "club": "Port Vale",
+        "league": "League One",
+        "appearances": {
+            "matches_played": 34,
+            "started": 0,
+            "minutes_played": 3060
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 11,
+            "goals_conceded": 40,
+            "xgc": null
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        "goalkeeping_metrics": {
+            "penalties_conceded": 1,
+            "penalties_saved": 1,
+            "saves": 89,
+            "goal_prevented": -0.92
+        }
+    },
+    {
+        "id": 671518,
+        "name": "Harry Souttar",
+        "position": "Center Back",
+        "nationality": "Australia",
+        "club": "Leicester City",
+        "league": "Championship",
+        "appearances": {
+            "matches_played": 2,
+            "started": 2,
+            "minutes_played": 178
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 0,
+            "xg": 0.38,
+            "xgot": 1.14,
+            "npxg": 0.38,
+            "xa": 0.01,
+            "xgi": 0.39,
+            "clean_sheets": null,
+            "goals_conceded": 1,
+            "xgc": 3.43
+        },
+        "detailed_actions": {
+            "shots": 2,
+            "shots_on_target": 2,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": 22,
+            "blocks": 2,
+            "interceptions": 1,
+            "tackles": 1,
+            "recoveries": 4
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 564842,
+        "name": "Cameron Burgess",
+        "position": "Center Back",
+        "nationality": "Australia",
+        "club": "Swansea City",
+        "league": "Championship",
+        "appearances": {
+            "matches_played": 46,
+            "started": 46,
+            "minutes_played": 4140
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": 1.92,
+            "xgot": 0.39,
+            "npxg": 1.92,
+            "xa": 0.76,
+            "xgi": 2.68,
+            "clean_sheets": 12,
+            "goals_conceded": 59,
+            "xgc": 57.25
+        },
+        "detailed_actions": {
+            "shots": 24,
+            "shots_on_target": 4,
+            "chances_created": 10,
+            "big_chances_created": 1,
+            "clearances": 384,
+            "blocks": 50,
+            "interceptions": 58,
+            "tackles": 43,
+            "recoveries": 161
+        },
+        "discipline": {
+            "yellow_cards": 7,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 825231,
+        "name": "Kye Rowles",
+        "position": "Center Back",
+        "nationality": "Australia",
+        "club": "DC United",
+        "league": "Major League Soccer",
+        "appearances": {
+            "matches_played": 14,
+            "started": 14,
+            "minutes_played": 1260
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 0,
+            "xg": 0.81,
+            "xgot": 1.6,
+            "npxg": 0.81,
+            "xa": 0.74,
+            "xgi": 1.55,
+            "clean_sheets": 4,
+            "goals_conceded": 21,
+            "xgc": 18.08
+        },
+        "detailed_actions": {
+            "shots": 6,
+            "shots_on_target": 3,
+            "chances_created": 4,
+            "big_chances_created": 2,
+            "clearances": 104,
+            "blocks": 17,
+            "interceptions": 23,
+            "tackles": 26,
+            "recoveries": 39
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 416124,
+        "name": "Milos Degenek",
+        "position": "Center Back",
+        "nationality": "Australia",
+        "club": "APOEL Nicosia",
+        "league": "Cyprus League",
+        "appearances": {
+            "matches_played": 10,
+            "started": 7,
+            "minutes_played": 722
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 4,
+            "goals_conceded": 15,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": 4,
+            "shots_on_target": 2,
+            "chances_created": 2,
+            "big_chances_created": null,
+            "clearances": 57,
+            "blocks": 6,
+            "interceptions": 10,
+            "tackles": 21,
+            "recoveries": 41
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 192735,
+        "name": "Aziz Behich",
+        "position": "Left Back",
+        "nationality": "Australia",
+        "club": "Melbourne City FC",
+        "league": "A-League Men",
+        "appearances": {
+            "matches_played": 24,
+            "started": 24,
+            "minutes_played": 2160
+        },
+        "core_stats": {
+            "goals": 3,
+            "assists": 1,
+            "xg": 1.73,
+            "xgot": 2.6,
+            "npxg": 1.73,
+            "xa": 3.8,
+            "xgi": 5.53,
+            "clean_sheets": 8,
+            "goals_conceded": 33,
+            "xgc": 31.21
+        },
+        "detailed_actions": {
+            "shots": 30,
+            "shots_on_target": 12,
+            "chances_created": 24,
+            "big_chances_created": 3,
+            "clearances": 73,
+            "blocks": 6,
+            "interceptions": 22,
+            "tackles": 32,
+            "recoveries": 127
+        },
+        "discipline": {
+            "yellow_cards": 5,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1316930,
+        "name": "Jordan Bos",
+        "position": "Left Back",
+        "nationality": "Australia",
+        "club": "Feyenoord",
+        "league": "Eredivisie",
+        "appearances": {
+            "matches_played": 28,
+            "started": 24,
+            "minutes_played": 2058
+        },
+        "core_stats": {
+            "goals": 4,
+            "assists": 7,
+            "xg": 2.27,
+            "xgot": 2.52,
+            "npxg": 2.27,
+            "xa": 3.94,
+            "xgi": 6.21,
+            "clean_sheets": 5,
+            "goals_conceded": 32,
+            "xgc": 23.57
+        },
+        "detailed_actions": {
+            "shots": 38,
+            "shots_on_target": 14,
+            "chances_created": 37,
+            "big_chances_created": 9,
+            "clearances": 66,
+            "blocks": 7,
+            "interceptions": 24,
+            "tackles": 69,
+            "recoveries": 109
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 369742,
+        "name": "Jackson Irvine",
+        "position": "Defensive Midfielder",
+        "nationality": "Australia",
+        "club": "St. Pauli",
+        "league": "Bundesliga",
+        "appearances": {
+            "matches_played": 24,
+            "started": 18,
+            "minutes_played": 1624
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 1,
+            "xg": 1.44,
+            "xgot": 1.61,
+            "npxg": 1.44,
+            "xa": 1.34,
+            "xgi": 2.78,
+            "clean_sheets": 3,
+            "goals_conceded": 24,
+            "xgc": 28.66
+        },
+        "detailed_actions": {
+            "shots": 19,
+            "shots_on_target": 4,
+            "chances_created": 11,
+            "big_chances_created": 3,
+            "clearances": 51,
+            "blocks": 8,
+            "interceptions": 27,
+            "tackles": 34,
+            "recoveries": 73
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 1
+        }
+    },
+    {
+        "id": 733486,
+        "name": "Riley McGree",
+        "position": "Attacking Midfielder",
+        "nationality": "Australia",
+        "club": "Middlesbrough",
+        "league": "Championship",
+        "appearances": {
+            "matches_played": 25,
+            "started": 18,
+            "minutes_played": 1489
+        },
+        "core_stats": {
+            "goals": 5,
+            "assists": 3,
+            "xg": 5.24,
+            "xgot": 3.69,
+            "npxg": 5.24,
+            "xa": 2.37,
+            "xgi": 7.61,
+            "clean_sheets": 1,
+            "goals_conceded": 14,
+            "xgc": 13.91
+        },
+        "detailed_actions": {
+            "shots": 44,
+            "shots_on_target": 12,
+            "chances_created": 28,
+            "big_chances_created": 1,
+            "clearances": 10,
+            "blocks": null,
+            "interceptions": 7,
+            "tackles": 22,
+            "recoveries": 72
+        },
+        "discipline": {
+            "yellow_cards": 3,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 817901,
+        "name": "Keanu Baccus",
+        "position": "Central Midfielder",
+        "nationality": "Australia",
+        "club": "St. Mirren",
+        "league": "Premiership",
+        "appearances": {
+            "matches_played": 16,
+            "started": 13,
+            "minutes_played": 1255
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 0,
+            "xg": 1.18,
+            "xgot": 0.69,
+            "npxg": 1.18,
+            "xa": 0.94,
+            "xgi": 2.12,
+            "clean_sheets": 1,
+            "goals_conceded": 23,
+            "xgc": 18.57
+        },
+        "detailed_actions": {
+            "shots": 22,
+            "shots_on_target": 5,
+            "chances_created": 6,
+            "big_chances_created": null,
+            "clearances": 27,
+            "blocks": null,
+            "interceptions": 16,
+            "tackles": 22,
+            "recoveries": 74
+        },
+        "discipline": {
+            "yellow_cards": 6,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 885870,
+        "name": "Connor Metcalfe",
+        "position": "Attacking Midfielder",
+        "nationality": "Australia",
+        "club": "St. Pauli",
+        "league": "Bundesliga",
+        "appearances": {
+            "matches_played": 25,
+            "started": 3,
+            "minutes_played": 575
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 2,
+            "xg": 0.62,
+            "xgot": 0.59,
+            "npxg": 0.62,
+            "xa": 1.55,
+            "xgi": 2.17,
+            "clean_sheets": null,
+            "goals_conceded": 13,
+            "xgc": 14.8
+        },
+        "detailed_actions": {
+            "shots": 16,
+            "shots_on_target": 4,
+            "chances_created": 10,
+            "big_chances_created": 3,
+            "clearances": 5,
+            "blocks": null,
+            "interceptions": 6,
+            "tackles": 15,
+            "recoveries": 18
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 785377,
+        "name": "Aiden O'Neill",
+        "position": "Defensive Midfielder",
+        "nationality": "Australia",
+        "club": "New York City FC",
+        "league": "Major League Soccer",
+        "appearances": {
+            "matches_played": 11,
+            "started": 11,
+            "minutes_played": 909
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 1,
+            "xg": 0.3,
+            "xgot": 0.21,
+            "npxg": 0.3,
+            "xa": 0.3,
+            "xgi": 0.6,
+            "clean_sheets": 1,
+            "goals_conceded": 15,
+            "xgc": 12.76
+        },
+        "detailed_actions": {
+            "shots": 5,
+            "shots_on_target": 1,
+            "chances_created": 4,
+            "big_chances_created": 1,
+            "clearances": 18,
+            "blocks": 7,
+            "interceptions": 13,
+            "tackles": 29,
+            "recoveries": 39
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 245633,
+        "name": "Mitchell Duke",
+        "position": "Striker",
+        "nationality": "Australia",
+        "club": "Macarthur FC",
+        "league": "A-League Men",
+        "appearances": {
+            "matches_played": 13,
+            "started": 11,
+            "minutes_played": 864
+        },
+        "core_stats": {
+            "goals": 5,
+            "assists": 3,
+            "xg": 5.36,
+            "xgot": 3.49,
+            "npxg": 5.36,
+            "xa": 1.67,
+            "xgi": 7.03,
+            "clean_sheets": null,
+            "goals_conceded": 19,
+            "xgc": 14.27
+        },
+        "detailed_actions": {
+            "shots": 32,
+            "shots_on_target": 9,
+            "chances_created": 18,
+            "big_chances_created": 3,
+            "clearances": 6,
+            "blocks": null,
+            "interceptions": 6,
+            "tackles": 4,
+            "recoveries": 18
+        },
+        "discipline": {
+            "yellow_cards": 3,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 305033,
+        "name": "Craig Goodwin",
+        "position": "Left Midfielder",
+        "nationality": "Australia",
+        "club": "Adelaide United",
+        "league": "A-League Men",
+        "appearances": {
+            "matches_played": 16,
+            "started": 15,
+            "minutes_played": 1178
+        },
+        "core_stats": {
+            "goals": 3,
+            "assists": 4,
+            "xg": 3.34,
+            "xgot": 3.27,
+            "npxg": 2.55,
+            "xa": 1.89,
+            "xgi": 5.23,
+            "clean_sheets": null,
+            "goals_conceded": 20,
+            "xgc": 22.99
+        },
+        "detailed_actions": {
+            "shots": 17,
+            "shots_on_target": 7,
+            "chances_created": 27,
+            "big_chances_created": 3,
+            "clearances": 4,
+            "blocks": null,
+            "interceptions": 2,
+            "tackles": 10,
+            "recoveries": 47
+        },
+        "discipline": {
+            "yellow_cards": 3,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 192782,
+        "name": "Martin Boyle",
+        "position": "Striker",
+        "nationality": "Australia",
+        "club": "Hibernian",
+        "league": "Premiership",
+        "appearances": {
+            "matches_played": 36,
+            "started": 26,
+            "minutes_played": 2067
+        },
+        "core_stats": {
+            "goals": 8,
+            "assists": 3,
+            "xg": 8.79,
+            "xgot": 6.75,
+            "npxg": 6.42,
+            "xa": 2.61,
+            "xgi": 11.4,
+            "clean_sheets": null,
+            "goals_conceded": 26,
+            "xgc": 28.87
+        },
+        "detailed_actions": {
+            "shots": 54,
+            "shots_on_target": 21,
+            "chances_created": 23,
+            "big_chances_created": 5,
+            "clearances": 11,
+            "blocks": 1,
+            "interceptions": 1,
+            "tackles": 13,
+            "recoveries": 57
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1327214,
+        "name": "Nestory Irankunda",
+        "position": "Right Midfielder",
+        "nationality": "Australia",
+        "club": "Watford",
+        "league": "Championship",
+        "appearances": {
+            "matches_played": 40,
+            "started": 22,
+            "minutes_played": 2031
+        },
+        "core_stats": {
+            "goals": 4,
+            "assists": 4,
+            "xg": 5.44,
+            "xgot": 4.76,
+            "npxg": 5.44,
+            "xa": 2.91,
+            "xgi": 8.35,
+            "clean_sheets": 1,
+            "goals_conceded": 37,
+            "xgc": 29.16
+        },
+        "detailed_actions": {
+            "shots": 67,
+            "shots_on_target": 24,
+            "chances_created": 35,
+            "big_chances_created": 8,
+            "clearances": 19,
+            "blocks": null,
+            "interceptions": 9,
+            "tackles": 31,
+            "recoveries": 62
+        },
+        "discipline": {
+            "yellow_cards": 12,
+            "red_cards": 1
+        }
+    },
+    {
+        "id": 1134956,
+        "name": "Kusini Yengi",
+        "position": "Striker",
+        "nationality": "Australia",
+        "club": "Cerezo Osaka",
+        "league": "J. League 100 Year Vision League West",
+        "appearances": {
+            "matches_played": 4,
+            "started": 0,
+            "minutes_played": 52
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": null,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": null,
+            "shots_on_target": null,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": null,
+            "blocks": null,
+            "interceptions": null,
+            "tackles": null,
+            "recoveries": null
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    }
+]

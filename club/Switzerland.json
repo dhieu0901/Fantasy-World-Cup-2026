@@ -1,0 +1,1027 @@
+[
+    {
+        "id": 764018,
+        "name": "Gregor Kobel",
+        "position": "Keeper",
+        "nationality": "Switzerland",
+        "club": "Borussia Dortmund",
+        "league": "Bundesliga",
+        "appearances": {
+            "matches_played": 34,
+            "started": 0,
+            "minutes_played": 3060
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 15,
+            "goals_conceded": 34,
+            "xgc": null
+        },
+        "discipline": {
+            "yellow_cards": 3,
+            "red_cards": 0
+        },
+        "goalkeeping_metrics": {
+            "penalties_conceded": 5,
+            "penalties_saved": 0,
+            "saves": 89,
+            "goal_prevented": 5.78
+        }
+    },
+    {
+        "id": 1107298,
+        "name": "Marvin Keller",
+        "position": "Keeper",
+        "nationality": "Switzerland",
+        "club": "Young Boys",
+        "league": "Super League",
+        "appearances": {
+            "matches_played": 38,
+            "started": 0,
+            "minutes_played": 3420
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 8,
+            "goals_conceded": 69,
+            "xgc": null
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 0
+        },
+        "goalkeeping_metrics": {
+            "penalties_conceded": 8,
+            "penalties_saved": 3,
+            "saves": 118,
+            "goal_prevented": -0.71
+        }
+    },
+    {
+        "id": 274787,
+        "name": "Yvon Mvogo",
+        "position": "Keeper",
+        "nationality": "Switzerland",
+        "club": "Lorient",
+        "league": "Ligue 1",
+        "appearances": {
+            "matches_played": 31,
+            "started": 0,
+            "minutes_played": 2790
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 6,
+            "goals_conceded": 43,
+            "xgc": null
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        "goalkeeping_metrics": {
+            "penalties_conceded": 4,
+            "penalties_saved": 0,
+            "saves": 75,
+            "goal_prevented": -3.92
+        }
+    },
+    {
+        "id": 521318,
+        "name": "Manuel Akanji",
+        "position": "Center Back",
+        "nationality": "Switzerland",
+        "club": "Inter",
+        "league": "Serie A",
+        "appearances": {
+            "matches_played": 33,
+            "started": 31,
+            "minutes_played": 2820
+        },
+        "core_stats": {
+            "goals": 2,
+            "assists": 0,
+            "xg": 2.05,
+            "xgot": 1.72,
+            "npxg": 2.05,
+            "xa": 1.39,
+            "xgi": 3.44,
+            "clean_sheets": 15,
+            "goals_conceded": 26,
+            "xgc": 28.18
+        },
+        "detailed_actions": {
+            "shots": 23,
+            "shots_on_target": 6,
+            "chances_created": 7,
+            "big_chances_created": 1,
+            "clearances": 105,
+            "blocks": 13,
+            "interceptions": 37,
+            "tackles": 48,
+            "recoveries": 129
+        },
+        "discipline": {
+            "yellow_cards": 4,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1257648,
+        "name": "Aurèle Amenda",
+        "position": "Center Back",
+        "nationality": "Switzerland",
+        "club": "Eintracht Frankfurt",
+        "league": "Bundesliga",
+        "appearances": {
+            "matches_played": 24,
+            "started": 18,
+            "minutes_played": 1676
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": 0.77,
+            "xgot": 0.5,
+            "npxg": 0.77,
+            "xa": 0.88,
+            "xgi": 1.65,
+            "clean_sheets": 4,
+            "goals_conceded": 35,
+            "xgc": 28.68
+        },
+        "detailed_actions": {
+            "shots": 10,
+            "shots_on_target": 2,
+            "chances_created": 6,
+            "big_chances_created": 1,
+            "clearances": 119,
+            "blocks": 7,
+            "interceptions": 26,
+            "tackles": 15,
+            "recoveries": 76
+        },
+        "discipline": {
+            "yellow_cards": 5,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 705484,
+        "name": "Eray Cömert",
+        "position": "Center Back",
+        "nationality": "Switzerland",
+        "club": "Valencia",
+        "league": "LaLiga",
+        "appearances": {
+            "matches_played": 17,
+            "started": 15,
+            "minutes_played": 1339
+        },
+        "core_stats": {
+            "goals": 2,
+            "assists": 1,
+            "xg": 1.19,
+            "xgot": 1.14,
+            "npxg": 1.19,
+            "xa": 0.52,
+            "xgi": 1.71,
+            "clean_sheets": 3,
+            "goals_conceded": 21,
+            "xgc": 16.0
+        },
+        "detailed_actions": {
+            "shots": 11,
+            "shots_on_target": 3,
+            "chances_created": 6,
+            "big_chances_created": 1,
+            "clearances": 88,
+            "blocks": 6,
+            "interceptions": 20,
+            "tackles": 26,
+            "recoveries": 46
+        },
+        "discipline": {
+            "yellow_cards": 3,
+            "red_cards": 1
+        }
+    },
+    {
+        "id": 517346,
+        "name": "Nico Elvedi",
+        "position": "Center Back",
+        "nationality": "Switzerland",
+        "club": "Borussia Mönchengladbach",
+        "league": "Bundesliga",
+        "appearances": {
+            "matches_played": 33,
+            "started": 33,
+            "minutes_played": 2967
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 2,
+            "xg": 0.45,
+            "xgot": null,
+            "npxg": 0.45,
+            "xa": 1.27,
+            "xgi": 1.72,
+            "clean_sheets": 12,
+            "goals_conceded": 50,
+            "xgc": 49.94
+        },
+        "detailed_actions": {
+            "shots": 9,
+            "shots_on_target": null,
+            "chances_created": 13,
+            "big_chances_created": 3,
+            "clearances": 270,
+            "blocks": 29,
+            "interceptions": 41,
+            "tackles": 43,
+            "recoveries": 104
+        },
+        "discipline": {
+            "yellow_cards": 5,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1270002,
+        "name": "Luca Jaquez",
+        "position": "Center Back",
+        "nationality": "Switzerland",
+        "club": "VfB Stuttgart",
+        "league": "Bundesliga",
+        "appearances": {
+            "matches_played": 14,
+            "started": 10,
+            "minutes_played": 900
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 1,
+            "xg": 0.12,
+            "xgot": null,
+            "npxg": 0.12,
+            "xa": 0.47,
+            "xgi": 0.59,
+            "clean_sheets": 2,
+            "goals_conceded": 13,
+            "xgc": 14.09
+        },
+        "detailed_actions": {
+            "shots": 4,
+            "shots_on_target": null,
+            "chances_created": 5,
+            "big_chances_created": 1,
+            "clearances": 45,
+            "blocks": 7,
+            "interceptions": 10,
+            "tackles": 8,
+            "recoveries": 45
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 759817,
+        "name": "Miro Muheim",
+        "position": "Left Midfielder",
+        "nationality": "Switzerland",
+        "club": "Hamburger SV",
+        "league": "Bundesliga",
+        "appearances": {
+            "matches_played": 29,
+            "started": 27,
+            "minutes_played": 2437
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 4,
+            "xg": 1.19,
+            "xgot": 0.88,
+            "npxg": 1.19,
+            "xa": 4.25,
+            "xgi": 5.44,
+            "clean_sheets": 5,
+            "goals_conceded": 42,
+            "xgc": 47.99
+        },
+        "detailed_actions": {
+            "shots": 23,
+            "shots_on_target": 7,
+            "chances_created": 41,
+            "big_chances_created": 6,
+            "clearances": 62,
+            "blocks": 5,
+            "interceptions": 27,
+            "tackles": 62,
+            "recoveries": 126
+        },
+        "discipline": {
+            "yellow_cards": 7,
+            "red_cards": 1
+        }
+    },
+    {
+        "id": 115591,
+        "name": "Ricardo Rodriguez",
+        "position": "Left Back",
+        "nationality": "Switzerland",
+        "club": "Real Betis",
+        "league": "LaLiga",
+        "appearances": {
+            "matches_played": 23,
+            "started": 18,
+            "minutes_played": 1546
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 1,
+            "xg": 0.12,
+            "xgot": null,
+            "npxg": 0.12,
+            "xa": 0.43,
+            "xgi": 0.55,
+            "clean_sheets": 5,
+            "goals_conceded": 17,
+            "xgc": 22.52
+        },
+        "detailed_actions": {
+            "shots": 3,
+            "shots_on_target": null,
+            "chances_created": 7,
+            "big_chances_created": 1,
+            "clearances": 67,
+            "blocks": 3,
+            "interceptions": 8,
+            "tackles": 24,
+            "recoveries": 44
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 275034,
+        "name": "Silvan Widmer",
+        "position": "Right Midfielder",
+        "nationality": "Switzerland",
+        "club": "Mainz 05",
+        "league": "Bundesliga",
+        "appearances": {
+            "matches_played": 27,
+            "started": 22,
+            "minutes_played": 1819
+        },
+        "core_stats": {
+            "goals": 2,
+            "assists": 1,
+            "xg": 2.49,
+            "xgot": 2.49,
+            "npxg": 2.49,
+            "xa": 2.94,
+            "xgi": 5.43,
+            "clean_sheets": null,
+            "goals_conceded": 25,
+            "xgc": 26.93
+        },
+        "detailed_actions": {
+            "shots": 20,
+            "shots_on_target": 4,
+            "chances_created": 8,
+            "big_chances_created": 4,
+            "clearances": 62,
+            "blocks": 8,
+            "interceptions": 16,
+            "tackles": 40,
+            "recoveries": 50
+        },
+        "discipline": {
+            "yellow_cards": 5,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 792756,
+        "name": "Michel Aebischer",
+        "position": "Central Midfielder",
+        "nationality": "Switzerland",
+        "club": "Pisa",
+        "league": "Serie A",
+        "appearances": {
+            "matches_played": 35,
+            "started": 33,
+            "minutes_played": 2900
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 2,
+            "xg": 0.65,
+            "xgot": 1.1,
+            "npxg": 0.65,
+            "xa": 2.5,
+            "xgi": 3.15,
+            "clean_sheets": 4,
+            "goals_conceded": 49,
+            "xgc": 46.3
+        },
+        "detailed_actions": {
+            "shots": 19,
+            "shots_on_target": 5,
+            "chances_created": 33,
+            "big_chances_created": 8,
+            "clearances": 32,
+            "blocks": 6,
+            "interceptions": 37,
+            "tackles": 65,
+            "recoveries": 169
+        },
+        "discipline": {
+            "yellow_cards": 8,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 618774,
+        "name": "Christian Fassnacht",
+        "position": "Right Winger",
+        "nationality": "Switzerland",
+        "club": "Young Boys",
+        "league": "Super League",
+        "appearances": {
+            "matches_played": 33,
+            "started": 27,
+            "minutes_played": 2361
+        },
+        "core_stats": {
+            "goals": 18,
+            "assists": 7,
+            "xg": 12.55,
+            "xgot": 15.23,
+            "npxg": 10.98,
+            "xa": 2.52,
+            "xgi": 15.07,
+            "clean_sheets": 4,
+            "goals_conceded": 53,
+            "xgc": 46.9
+        },
+        "detailed_actions": {
+            "shots": 75,
+            "shots_on_target": 32,
+            "chances_created": 27,
+            "big_chances_created": 6,
+            "clearances": 18,
+            "blocks": 1,
+            "interceptions": 10,
+            "tackles": 56,
+            "recoveries": 87
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 201704,
+        "name": "Remo Freuler",
+        "position": "Defensive Midfielder",
+        "nationality": "Switzerland",
+        "club": "Bologna",
+        "league": "Serie A",
+        "appearances": {
+            "matches_played": 29,
+            "started": 26,
+            "minutes_played": 2217
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 2,
+            "xg": 1.32,
+            "xgot": 0.99,
+            "npxg": 1.32,
+            "xa": 1.21,
+            "xgi": 2.53,
+            "clean_sheets": 7,
+            "goals_conceded": 29,
+            "xgc": 26.61
+        },
+        "detailed_actions": {
+            "shots": 8,
+            "shots_on_target": 1,
+            "chances_created": 22,
+            "big_chances_created": 1,
+            "clearances": 33,
+            "blocks": 5,
+            "interceptions": 23,
+            "tackles": 55,
+            "recoveries": 108
+        },
+        "discipline": {
+            "yellow_cards": 5,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 726956,
+        "name": "Cedric Itten",
+        "position": "Striker",
+        "nationality": "Switzerland",
+        "club": "Fortuna Düsseldorf",
+        "league": "2. Bundesliga",
+        "appearances": {
+            "matches_played": 30,
+            "started": 30,
+            "minutes_played": 2625
+        },
+        "core_stats": {
+            "goals": 15,
+            "assists": 3,
+            "xg": 12.28,
+            "xgot": 12.18,
+            "npxg": 12.28,
+            "xa": 1.9,
+            "xgi": 14.18,
+            "clean_sheets": 4,
+            "goals_conceded": 43,
+            "xgc": 45.11
+        },
+        "detailed_actions": {
+            "shots": 93,
+            "shots_on_target": 37,
+            "chances_created": 21,
+            "big_chances_created": 6,
+            "clearances": 20,
+            "blocks": 1,
+            "interceptions": 4,
+            "tackles": 18,
+            "recoveries": 44
+        },
+        "discipline": {
+            "yellow_cards": 5,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1163219,
+        "name": "Ardon Jashari",
+        "position": "Central Midfielder",
+        "nationality": "Switzerland",
+        "club": "Milan",
+        "league": "Serie A",
+        "appearances": {
+            "matches_played": 14,
+            "started": 7,
+            "minutes_played": 700
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 1,
+            "xg": 0.22,
+            "xgot": 0.2,
+            "npxg": 0.22,
+            "xa": 0.6,
+            "xgi": 0.82,
+            "clean_sheets": null,
+            "goals_conceded": 7,
+            "xgc": 7.23
+        },
+        "detailed_actions": {
+            "shots": 7,
+            "shots_on_target": 2,
+            "chances_created": 9,
+            "big_chances_created": 2,
+            "clearances": 7,
+            "blocks": 1,
+            "interceptions": 5,
+            "tackles": 14,
+            "recoveries": 40
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1161211,
+        "name": "Fabian Rieder",
+        "position": "Attacking Midfielder",
+        "nationality": "Switzerland",
+        "club": "Augsburg",
+        "league": "Bundesliga",
+        "appearances": {
+            "matches_played": 32,
+            "started": 28,
+            "minutes_played": 2352
+        },
+        "core_stats": {
+            "goals": 6,
+            "assists": 3,
+            "xg": 4.19,
+            "xgot": 5.01,
+            "npxg": 2.61,
+            "xa": 4.59,
+            "xgi": 8.78,
+            "clean_sheets": 1,
+            "goals_conceded": 52,
+            "xgc": 47.82
+        },
+        "detailed_actions": {
+            "shots": 38,
+            "shots_on_target": 13,
+            "chances_created": 44,
+            "big_chances_created": 9,
+            "clearances": 16,
+            "blocks": 3,
+            "interceptions": 16,
+            "tackles": 37,
+            "recoveries": 109
+        },
+        "discipline": {
+            "yellow_cards": 4,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 707970,
+        "name": "Djibril Sow",
+        "position": "Central Midfielder",
+        "nationality": "Switzerland",
+        "club": "Sevilla",
+        "league": "LaLiga",
+        "appearances": {
+            "matches_played": 33,
+            "started": 27,
+            "minutes_played": 2195
+        },
+        "core_stats": {
+            "goals": 5,
+            "assists": 4,
+            "xg": 1.8,
+            "xgot": 3.1,
+            "npxg": 1.8,
+            "xa": 1.81,
+            "xgi": 3.61,
+            "clean_sheets": 1,
+            "goals_conceded": 43,
+            "xgc": 39.3
+        },
+        "detailed_actions": {
+            "shots": 19,
+            "shots_on_target": 8,
+            "chances_created": 24,
+            "big_chances_created": 2,
+            "clearances": 9,
+            "blocks": 2,
+            "interceptions": 22,
+            "tackles": 45,
+            "recoveries": 86
+        },
+        "discipline": {
+            "yellow_cards": 6,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 207236,
+        "name": "Granit Xhaka",
+        "position": "Defensive Midfielder",
+        "nationality": "Switzerland",
+        "club": "Sunderland",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 34,
+            "started": 32,
+            "minutes_played": 2903
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 6,
+            "xg": 1.02,
+            "xgot": 0.79,
+            "npxg": 1.02,
+            "xa": 3.71,
+            "xgi": 4.73,
+            "clean_sheets": 9,
+            "goals_conceded": 39,
+            "xgc": 45.97
+        },
+        "detailed_actions": {
+            "shots": 21,
+            "shots_on_target": 5,
+            "chances_created": 34,
+            "big_chances_created": 9,
+            "clearances": 85,
+            "blocks": 20,
+            "interceptions": 29,
+            "tackles": 50,
+            "recoveries": 179
+        },
+        "discipline": {
+            "yellow_cards": 8,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 598355,
+        "name": "Denis Zakaria",
+        "position": "Center Back",
+        "nationality": "Switzerland",
+        "club": "Monaco",
+        "league": "Ligue 1",
+        "appearances": {
+            "matches_played": 24,
+            "started": 23,
+            "minutes_played": 2033
+        },
+        "core_stats": {
+            "goals": 2,
+            "assists": 1,
+            "xg": 1.71,
+            "xgot": 1.17,
+            "npxg": 1.71,
+            "xa": 0.91,
+            "xgi": 2.62,
+            "clean_sheets": 3,
+            "goals_conceded": 32,
+            "xgc": 31.39
+        },
+        "detailed_actions": {
+            "shots": 18,
+            "shots_on_target": 3,
+            "chances_created": 6,
+            "big_chances_created": 1,
+            "clearances": 64,
+            "blocks": 15,
+            "interceptions": 40,
+            "tackles": 38,
+            "recoveries": 101
+        },
+        "discipline": {
+            "yellow_cards": 4,
+            "red_cards": 1
+        }
+    },
+    {
+        "id": 1067168,
+        "name": "Zeki Amdouni",
+        "position": "forward",
+        "nationality": "Switzerland",
+        "club": "Burnley",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 4,
+            "started": 0,
+            "minutes_played": 69
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": null,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": null,
+            "shots_on_target": null,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": null,
+            "blocks": null,
+            "interceptions": null,
+            "tackles": null,
+            "recoveries": null
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 765908,
+        "name": "Kwadwo Duah",
+        "position": "Striker",
+        "nationality": "Switzerland",
+        "club": "Ludogorets Razgrad",
+        "league": "First Professional League",
+        "appearances": {
+            "matches_played": 18,
+            "started": 12,
+            "minutes_played": 1044
+        },
+        "core_stats": {
+            "goals": 8,
+            "assists": 2,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": null,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": null,
+            "shots_on_target": null,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": null,
+            "blocks": null,
+            "interceptions": null,
+            "tackles": null,
+            "recoveries": null
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 527103,
+        "name": "Breel Embolo",
+        "position": "Striker",
+        "nationality": "Switzerland",
+        "club": "Rennes",
+        "league": "Ligue 1",
+        "appearances": {
+            "matches_played": 31,
+            "started": 20,
+            "minutes_played": 1872
+        },
+        "core_stats": {
+            "goals": 8,
+            "assists": 3,
+            "xg": 8.95,
+            "xgot": 8.37,
+            "npxg": 8.95,
+            "xa": 1.22,
+            "xgi": 10.17,
+            "clean_sheets": 2,
+            "goals_conceded": 34,
+            "xgc": 32.25
+        },
+        "detailed_actions": {
+            "shots": 41,
+            "shots_on_target": 17,
+            "chances_created": 15,
+            "big_chances_created": 2,
+            "clearances": 19,
+            "blocks": 4,
+            "interceptions": 4,
+            "tackles": 19,
+            "recoveries": 58
+        },
+        "discipline": {
+            "yellow_cards": 3,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1520063,
+        "name": "Johan Manzambi",
+        "position": "Defensive Midfielder",
+        "nationality": "Switzerland",
+        "club": "Freiburg",
+        "league": "Bundesliga",
+        "appearances": {
+            "matches_played": 27,
+            "started": 26,
+            "minutes_played": 2094
+        },
+        "core_stats": {
+            "goals": 5,
+            "assists": 4,
+            "xg": 3.85,
+            "xgot": 2.58,
+            "npxg": 3.85,
+            "xa": 5.13,
+            "xgi": 8.98,
+            "clean_sheets": 2,
+            "goals_conceded": 36,
+            "xgc": 28.91
+        },
+        "detailed_actions": {
+            "shots": 51,
+            "shots_on_target": 12,
+            "chances_created": 20,
+            "big_chances_created": 6,
+            "clearances": 38,
+            "blocks": 2,
+            "interceptions": 27,
+            "tackles": 35,
+            "recoveries": 110
+        },
+        "discipline": {
+            "yellow_cards": 4,
+            "red_cards": 2
+        }
+    },
+    {
+        "id": 1022649,
+        "name": "Dan Ndoye",
+        "position": "Right Winger",
+        "nationality": "Switzerland",
+        "club": "Nottingham Forest",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 24,
+            "started": 14,
+            "minutes_played": 1176
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 1,
+            "xg": 1.06,
+            "xgot": 0.94,
+            "npxg": 1.06,
+            "xa": 1.54,
+            "xgi": 2.6,
+            "clean_sheets": null,
+            "goals_conceded": 17,
+            "xgc": 16.53
+        },
+        "detailed_actions": {
+            "shots": 15,
+            "shots_on_target": 4,
+            "chances_created": 14,
+            "big_chances_created": 2,
+            "clearances": 12,
+            "blocks": 2,
+            "interceptions": 10,
+            "tackles": 23,
+            "recoveries": 50
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 860752,
+        "name": "Rubén Vargas",
+        "position": "Left Winger",
+        "nationality": "Switzerland",
+        "club": "Sevilla",
+        "league": "LaLiga",
+        "appearances": {
+            "matches_played": 24,
+            "started": 20,
+            "minutes_played": 1608
+        },
+        "core_stats": {
+            "goals": 3,
+            "assists": 6,
+            "xg": 3.17,
+            "xgot": 2.8,
+            "npxg": 2.39,
+            "xa": 2.37,
+            "xgi": 5.54,
+            "clean_sheets": null,
+            "goals_conceded": 27,
+            "xgc": 22.9
+        },
+        "detailed_actions": {
+            "shots": 41,
+            "shots_on_target": 8,
+            "chances_created": 28,
+            "big_chances_created": 4,
+            "clearances": 13,
+            "blocks": 1,
+            "interceptions": 7,
+            "tackles": 19,
+            "recoveries": 81
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 0
+        }
+    }
+]

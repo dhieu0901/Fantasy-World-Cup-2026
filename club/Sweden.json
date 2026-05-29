@@ -1,0 +1,1027 @@
+[
+    {
+        "id": 546252,
+        "name": "Viktor Johansson",
+        "position": "Keeper",
+        "nationality": "Sweden",
+        "club": "Stoke City",
+        "league": "Championship",
+        "appearances": {
+            "matches_played": 25,
+            "started": 0,
+            "minutes_played": 2250
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 8,
+            "goals_conceded": 25,
+            "xgc": null
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 0
+        },
+        "goalkeeping_metrics": {
+            "penalties_conceded": 1,
+            "penalties_saved": 0,
+            "saves": 73,
+            "goal_prevented": 4.23
+        }
+    },
+    {
+        "id": 73462,
+        "name": "Kristoffer Nordfeldt",
+        "position": "Keeper",
+        "nationality": "Sweden",
+        "club": "AIK",
+        "league": "Allsvenskan",
+        "appearances": {
+            "matches_played": 9,
+            "started": 0,
+            "minutes_played": 810
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 1,
+            "goals_conceded": 13,
+            "xgc": null
+        },
+        "discipline": {
+            "yellow_cards": 3,
+            "red_cards": 0
+        },
+        "goalkeeping_metrics": {
+            "penalties_conceded": null,
+            "penalties_saved": null,
+            "saves": 30,
+            "goal_prevented": 2.5
+        }
+    },
+    {
+        "id": 1014602,
+        "name": "Jacob Widell Zetterström",
+        "position": "Keeper",
+        "nationality": "Sweden",
+        "club": "Derby County",
+        "league": "Championship",
+        "appearances": {
+            "matches_played": 32,
+            "started": 0,
+            "minutes_played": 2880
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 7,
+            "goals_conceded": 42,
+            "xgc": null
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        },
+        "goalkeeping_metrics": {
+            "penalties_conceded": 4,
+            "penalties_saved": 1,
+            "saves": 105,
+            "goal_prevented": 5.48
+        }
+    },
+    {
+        "id": 831044,
+        "name": "Hjalmar Ekdal",
+        "position": "Center Back",
+        "nationality": "Sweden",
+        "club": "Burnley",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 19,
+            "started": 17,
+            "minutes_played": 1539
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": 0.26,
+            "xgot": 0.12,
+            "npxg": 0.26,
+            "xa": 0.27,
+            "xgi": 0.53,
+            "clean_sheets": 2,
+            "goals_conceded": 34,
+            "xgc": 31.05
+        },
+        "detailed_actions": {
+            "shots": 6,
+            "shots_on_target": 1,
+            "chances_created": 4,
+            "big_chances_created": null,
+            "clearances": 125,
+            "blocks": 13,
+            "interceptions": 12,
+            "tackles": 24,
+            "recoveries": 49
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 744494,
+        "name": "Gabriel Gudmundsson",
+        "position": "Left Wing-Back",
+        "nationality": "Sweden",
+        "club": "Leeds United",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 32,
+            "started": 31,
+            "minutes_played": 2637
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": 1.1,
+            "xgot": 0.12,
+            "npxg": 1.1,
+            "xa": 2.75,
+            "xgi": 3.85,
+            "clean_sheets": 3,
+            "goals_conceded": 45,
+            "xgc": 41.58
+        },
+        "detailed_actions": {
+            "shots": 18,
+            "shots_on_target": 3,
+            "chances_created": 21,
+            "big_chances_created": 4,
+            "clearances": 83,
+            "blocks": 7,
+            "interceptions": 27,
+            "tackles": 65,
+            "recoveries": 112
+        },
+        "discipline": {
+            "yellow_cards": 4,
+            "red_cards": 1
+        }
+    },
+    {
+        "id": 939780,
+        "name": "Isak Hien",
+        "position": "Center Back",
+        "nationality": "Sweden",
+        "club": "Atalanta",
+        "league": "Serie A",
+        "appearances": {
+            "matches_played": 28,
+            "started": 20,
+            "minutes_played": 1965
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 0,
+            "xg": 0.85,
+            "xgot": 0.86,
+            "npxg": 0.85,
+            "xa": 0.31,
+            "xgi": 1.16,
+            "clean_sheets": 2,
+            "goals_conceded": 24,
+            "xgc": 22.39
+        },
+        "detailed_actions": {
+            "shots": 9,
+            "shots_on_target": 3,
+            "chances_created": 2,
+            "big_chances_created": null,
+            "clearances": 102,
+            "blocks": 16,
+            "interceptions": 29,
+            "tackles": 49,
+            "recoveries": 125
+        },
+        "discipline": {
+            "yellow_cards": 5,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1014630,
+        "name": "Emil Holm",
+        "position": "Right Back",
+        "nationality": "Sweden",
+        "club": "Juventus",
+        "league": "Serie A",
+        "appearances": {
+            "matches_played": 18,
+            "started": 10,
+            "minutes_played": 884
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 4,
+            "xg": 1.28,
+            "xgot": 0.89,
+            "npxg": 1.28,
+            "xa": 1.74,
+            "xgi": 3.02,
+            "clean_sheets": 1,
+            "goals_conceded": 12,
+            "xgc": 13.21
+        },
+        "detailed_actions": {
+            "shots": 13,
+            "shots_on_target": 2,
+            "chances_created": 9,
+            "big_chances_created": 3,
+            "clearances": 29,
+            "blocks": 3,
+            "interceptions": 9,
+            "tackles": 30,
+            "recoveries": 57
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 1
+        }
+    },
+    {
+        "id": 919848,
+        "name": "Gustaf Lagerbielke",
+        "position": "Center Back",
+        "nationality": "Sweden",
+        "club": "Braga",
+        "league": "Liga Portugal",
+        "appearances": {
+            "matches_played": 28,
+            "started": 26,
+            "minutes_played": 2391
+        },
+        "core_stats": {
+            "goals": 2,
+            "assists": 0,
+            "xg": 2.45,
+            "xgot": 1.77,
+            "npxg": 2.45,
+            "xa": 1.35,
+            "xgi": 3.8,
+            "clean_sheets": 7,
+            "goals_conceded": 28,
+            "xgc": 27.59
+        },
+        "detailed_actions": {
+            "shots": 18,
+            "shots_on_target": 4,
+            "chances_created": 8,
+            "big_chances_created": null,
+            "clearances": 112,
+            "blocks": 9,
+            "interceptions": 26,
+            "tackles": 27,
+            "recoveries": 80
+        },
+        "discipline": {
+            "yellow_cards": 6,
+            "red_cards": 1
+        }
+    },
+    {
+        "id": 258269,
+        "name": "Victor Lindelöf",
+        "position": "Center Back",
+        "nationality": "Sweden",
+        "club": "Aston Villa",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 17,
+            "started": 11,
+            "minutes_played": 944
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 1,
+            "xg": 0.28,
+            "xgot": null,
+            "npxg": 0.28,
+            "xa": 0.12,
+            "xgi": 0.4,
+            "clean_sheets": 1,
+            "goals_conceded": 15,
+            "xgc": 15.93
+        },
+        "detailed_actions": {
+            "shots": 3,
+            "shots_on_target": null,
+            "chances_created": 2,
+            "big_chances_created": 1,
+            "clearances": 34,
+            "blocks": 5,
+            "interceptions": 8,
+            "tackles": 7,
+            "recoveries": 19
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 531327,
+        "name": "Eric Smith",
+        "position": "Center Back",
+        "nationality": "Sweden",
+        "club": "St. Pauli",
+        "league": "Bundesliga",
+        "appearances": {
+            "matches_played": 27,
+            "started": 26,
+            "minutes_played": 2314
+        },
+        "core_stats": {
+            "goals": 2,
+            "assists": 2,
+            "xg": 0.58,
+            "xgot": 1.18,
+            "npxg": 0.58,
+            "xa": 1.21,
+            "xgi": 1.79,
+            "clean_sheets": 4,
+            "goals_conceded": 43,
+            "xgc": 39.64
+        },
+        "detailed_actions": {
+            "shots": 12,
+            "shots_on_target": 5,
+            "chances_created": 17,
+            "big_chances_created": 1,
+            "clearances": 104,
+            "blocks": 17,
+            "interceptions": 23,
+            "tackles": 34,
+            "recoveries": 132
+        },
+        "discipline": {
+            "yellow_cards": 4,
+            "red_cards": 1
+        }
+    },
+    {
+        "id": 497662,
+        "name": "Carl Starfelt",
+        "position": "Center Back",
+        "nationality": "Sweden",
+        "club": "Celta Vigo",
+        "league": "LaLiga",
+        "appearances": {
+            "matches_played": 19,
+            "started": 17,
+            "minutes_played": 1492
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": 0.55,
+            "xgot": 0.49,
+            "npxg": 0.55,
+            "xa": 0.11,
+            "xgi": 0.66,
+            "clean_sheets": 5,
+            "goals_conceded": 17,
+            "xgc": 18.82
+        },
+        "detailed_actions": {
+            "shots": 4,
+            "shots_on_target": 1,
+            "chances_created": 1,
+            "big_chances_created": null,
+            "clearances": 108,
+            "blocks": 13,
+            "interceptions": 17,
+            "tackles": 23,
+            "recoveries": 50
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 1
+        }
+    },
+    {
+        "id": 1209228,
+        "name": "Daniel Svensson",
+        "position": "Left Wing-Back",
+        "nationality": "Sweden",
+        "club": "Borussia Dortmund",
+        "league": "Bundesliga",
+        "appearances": {
+            "matches_played": 33,
+            "started": 27,
+            "minutes_played": 2452
+        },
+        "core_stats": {
+            "goals": 2,
+            "assists": 2,
+            "xg": 1.79,
+            "xgot": 2.47,
+            "npxg": 1.79,
+            "xa": 5.5,
+            "xgi": 7.29,
+            "clean_sheets": 10,
+            "goals_conceded": 28,
+            "xgc": 32.18
+        },
+        "detailed_actions": {
+            "shots": 12,
+            "shots_on_target": 4,
+            "chances_created": 35,
+            "big_chances_created": 6,
+            "clearances": 78,
+            "blocks": 8,
+            "interceptions": 20,
+            "tackles": 38,
+            "recoveries": 88
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1135782,
+        "name": "Taha Ali",
+        "position": "Right Midfielder",
+        "nationality": "Sweden",
+        "club": "Malmö FF",
+        "league": "Allsvenskan",
+        "appearances": {
+            "matches_played": 6,
+            "started": 5,
+            "minutes_played": 451
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 1,
+            "xg": 0.63,
+            "xgot": 0.87,
+            "npxg": 0.63,
+            "xa": 0.75,
+            "xgi": 1.38,
+            "clean_sheets": 1,
+            "goals_conceded": 6,
+            "xgc": 7.06
+        },
+        "detailed_actions": {
+            "shots": 7,
+            "shots_on_target": 2,
+            "chances_created": 10,
+            "big_chances_created": null,
+            "clearances": 1,
+            "blocks": 1,
+            "interceptions": 3,
+            "tackles": 7,
+            "recoveries": 32
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1168311,
+        "name": "Yasin Ayari",
+        "position": "Defensive Midfielder",
+        "nationality": "Sweden",
+        "club": "Brighton & Hove Albion",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 29,
+            "started": 20,
+            "minutes_played": 1924
+        },
+        "core_stats": {
+            "goals": 3,
+            "assists": 3,
+            "xg": 2.71,
+            "xgot": 1.67,
+            "npxg": 2.71,
+            "xa": 1.14,
+            "xgi": 3.85,
+            "clean_sheets": 6,
+            "goals_conceded": 24,
+            "xgc": 27.02
+        },
+        "detailed_actions": {
+            "shots": 41,
+            "shots_on_target": 10,
+            "chances_created": 15,
+            "big_chances_created": 2,
+            "clearances": 24,
+            "blocks": 4,
+            "interceptions": 26,
+            "tackles": 47,
+            "recoveries": 124
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1386775,
+        "name": "Lucas Bergvall",
+        "position": "Attacking Midfielder",
+        "nationality": "Sweden",
+        "club": "Tottenham Hotspur",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 23,
+            "started": 11,
+            "minutes_played": 966
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 3,
+            "xg": 1.4,
+            "xgot": 0.67,
+            "npxg": 1.4,
+            "xa": 0.43,
+            "xgi": 1.83,
+            "clean_sheets": null,
+            "goals_conceded": 18,
+            "xgc": 13.93
+        },
+        "detailed_actions": {
+            "shots": 12,
+            "shots_on_target": 5,
+            "chances_created": 5,
+            "big_chances_created": null,
+            "clearances": 13,
+            "blocks": 2,
+            "interceptions": 2,
+            "tackles": 22,
+            "recoveries": 39
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1014688,
+        "name": "Alexander Bernhardsson",
+        "position": "Right Midfielder",
+        "nationality": "Sweden",
+        "club": "Holstein Kiel",
+        "league": "2. Bundesliga",
+        "appearances": {
+            "matches_played": 20,
+            "started": 16,
+            "minutes_played": 1401
+        },
+        "core_stats": {
+            "goals": 2,
+            "assists": 9,
+            "xg": 3.23,
+            "xgot": 3.5,
+            "npxg": 1.65,
+            "xa": 2.84,
+            "xgi": 6.07,
+            "clean_sheets": 3,
+            "goals_conceded": 19,
+            "xgc": 19.99
+        },
+        "detailed_actions": {
+            "shots": 39,
+            "shots_on_target": 13,
+            "chances_created": 28,
+            "big_chances_created": 11,
+            "clearances": 36,
+            "blocks": 3,
+            "interceptions": 3,
+            "tackles": 33,
+            "recoveries": 61
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1050166,
+        "name": "Anthony Elanga",
+        "position": "Right Winger",
+        "nationality": "Sweden",
+        "club": "Newcastle United",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 32,
+            "started": 14,
+            "minutes_played": 1313
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 1,
+            "xg": 1.67,
+            "xgot": 0.71,
+            "npxg": 1.67,
+            "xa": 1.76,
+            "xgi": 3.43,
+            "clean_sheets": null,
+            "goals_conceded": 28,
+            "xgc": 20.83
+        },
+        "detailed_actions": {
+            "shots": 17,
+            "shots_on_target": 4,
+            "chances_created": 15,
+            "big_chances_created": 2,
+            "clearances": 6,
+            "blocks": null,
+            "interceptions": 3,
+            "tackles": 14,
+            "recoveries": 32
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 664500,
+        "name": "Viktor Gyökeres",
+        "position": "Striker",
+        "nationality": "Sweden",
+        "club": "Arsenal",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 36,
+            "started": 26,
+            "minutes_played": 2230
+        },
+        "core_stats": {
+            "goals": 14,
+            "assists": 1,
+            "xg": 12.4,
+            "xgot": 9.43,
+            "npxg": 10.03,
+            "xa": 1.94,
+            "xgi": 14.34,
+            "clean_sheets": 4,
+            "goals_conceded": 14,
+            "xgc": 17.68
+        },
+        "detailed_actions": {
+            "shots": 55,
+            "shots_on_target": 22,
+            "chances_created": 20,
+            "big_chances_created": 4,
+            "clearances": 19,
+            "blocks": 3,
+            "interceptions": 1,
+            "tackles": 7,
+            "recoveries": 55
+        },
+        "discipline": {
+            "yellow_cards": 5,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 690107,
+        "name": "Alexander Isak",
+        "position": "Striker",
+        "nationality": "Sweden",
+        "club": "Liverpool",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 14,
+            "started": 8,
+            "minutes_played": 703
+        },
+        "core_stats": {
+            "goals": 3,
+            "assists": 1,
+            "xg": 2.65,
+            "xgot": 2.83,
+            "npxg": 2.65,
+            "xa": 0.1,
+            "xgi": 2.75,
+            "clean_sheets": null,
+            "goals_conceded": 9,
+            "xgc": 8.4
+        },
+        "detailed_actions": {
+            "shots": 17,
+            "shots_on_target": 6,
+            "chances_created": 2,
+            "big_chances_created": 1,
+            "clearances": 9,
+            "blocks": 1,
+            "interceptions": null,
+            "tackles": 7,
+            "recoveries": 13
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 322003,
+        "name": "Jesper Karlström",
+        "position": "Central Midfielder",
+        "nationality": "Sweden",
+        "club": "Udinese",
+        "league": "Serie A",
+        "appearances": {
+            "matches_played": 36,
+            "started": 36,
+            "minutes_played": 3152
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 0,
+            "xg": 0.83,
+            "xgot": 0.3,
+            "npxg": 0.83,
+            "xa": 1.06,
+            "xgi": 1.89,
+            "clean_sheets": 10,
+            "goals_conceded": 45,
+            "xgc": 47.94
+        },
+        "detailed_actions": {
+            "shots": 20,
+            "shots_on_target": 3,
+            "chances_created": 16,
+            "big_chances_created": 1,
+            "clearances": 76,
+            "blocks": 16,
+            "interceptions": 36,
+            "tackles": 54,
+            "recoveries": 144
+        },
+        "discipline": {
+            "yellow_cards": 6,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 931605,
+        "name": "Benjamin Nygren",
+        "position": "Attacking Midfielder",
+        "nationality": "Sweden",
+        "club": "Celtic",
+        "league": "Premiership",
+        "appearances": {
+            "matches_played": 38,
+            "started": 29,
+            "minutes_played": 2541
+        },
+        "core_stats": {
+            "goals": 16,
+            "assists": 5,
+            "xg": 13.17,
+            "xgot": 16.48,
+            "npxg": 13.17,
+            "xa": 7.76,
+            "xgi": 20.93,
+            "clean_sheets": 5,
+            "goals_conceded": 34,
+            "xgc": 25.67
+        },
+        "detailed_actions": {
+            "shots": 92,
+            "shots_on_target": 38,
+            "chances_created": 58,
+            "big_chances_created": 8,
+            "clearances": 18,
+            "blocks": 2,
+            "interceptions": 16,
+            "tackles": 34,
+            "recoveries": 120
+        },
+        "discipline": {
+            "yellow_cards": 4,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 118241,
+        "name": "Gustaf Nilsson",
+        "position": "forward",
+        "nationality": "Sweden",
+        "club": "Club Brugge",
+        "league": "Belgian Pro League",
+        "appearances": {
+            "matches_played": 7,
+            "started": 0,
+            "minutes_played": 40
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": null,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": null,
+            "shots_on_target": null,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": null,
+            "blocks": null,
+            "interceptions": null,
+            "tackles": null,
+            "recoveries": null
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 520670,
+        "name": "Ken Sema",
+        "position": "Left Wing-Back",
+        "nationality": "Sweden",
+        "club": "Pafos FC",
+        "league": "Cyprus League",
+        "appearances": {
+            "matches_played": 23,
+            "started": 12,
+            "minutes_played": 1096
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": null,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": null,
+            "shots_on_target": null,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": null,
+            "blocks": null,
+            "interceptions": null,
+            "tackles": null,
+            "recoveries": null
+        },
+        "discipline": {
+            "yellow_cards": 5,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1272349,
+        "name": "Elliot Stroud",
+        "position": "Left Midfielder",
+        "nationality": "Sweden",
+        "club": "Mjällby",
+        "league": "Allsvenskan",
+        "appearances": {
+            "matches_played": 8,
+            "started": 7,
+            "minutes_played": 630
+        },
+        "core_stats": {
+            "goals": 2,
+            "assists": 1,
+            "xg": 1.18,
+            "xgot": 1.26,
+            "npxg": 1.18,
+            "xa": 1.78,
+            "xgi": 2.96,
+            "clean_sheets": 2,
+            "goals_conceded": 8,
+            "xgc": 10.23
+        },
+        "detailed_actions": {
+            "shots": 16,
+            "shots_on_target": 7,
+            "chances_created": 17,
+            "big_chances_created": 1,
+            "clearances": 15,
+            "blocks": 1,
+            "interceptions": 6,
+            "tackles": 28,
+            "recoveries": 48
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 647900,
+        "name": "Mattias Svanberg",
+        "position": "Central Midfielder",
+        "nationality": "Sweden",
+        "club": "Wolfsburg",
+        "league": "Bundesliga",
+        "appearances": {
+            "matches_played": 24,
+            "started": 8,
+            "minutes_played": 854
+        },
+        "core_stats": {
+            "goals": 3,
+            "assists": 1,
+            "xg": 2.93,
+            "xgot": 3.53,
+            "npxg": 2.93,
+            "xa": 0.65,
+            "xgi": 3.58,
+            "clean_sheets": null,
+            "goals_conceded": 24,
+            "xgc": 18.89
+        },
+        "detailed_actions": {
+            "shots": 21,
+            "shots_on_target": 8,
+            "chances_created": 6,
+            "big_chances_created": 1,
+            "clearances": 21,
+            "blocks": 4,
+            "interceptions": 9,
+            "tackles": 10,
+            "recoveries": 30
+        },
+        "discipline": {
+            "yellow_cards": 4,
+            "red_cards": 1
+        }
+    },
+    {
+        "id": 1338361,
+        "name": "Besfort Zeneli",
+        "position": "Central Midfielder",
+        "nationality": "Sweden",
+        "club": "Union St.Gilloise",
+        "league": "Belgian Pro League",
+        "appearances": {
+            "matches_played": 15,
+            "started": 8,
+            "minutes_played": 765
+        },
+        "core_stats": {
+            "goals": 3,
+            "assists": 6,
+            "xg": 2.06,
+            "xgot": 3.04,
+            "npxg": 2.06,
+            "xa": 3.52,
+            "xgi": 5.58,
+            "clean_sheets": null,
+            "goals_conceded": 6,
+            "xgc": 7.85
+        },
+        "detailed_actions": {
+            "shots": 16,
+            "shots_on_target": 8,
+            "chances_created": 22,
+            "big_chances_created": 8,
+            "clearances": null,
+            "blocks": 2,
+            "interceptions": 3,
+            "tackles": 8,
+            "recoveries": 25
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    }
+]

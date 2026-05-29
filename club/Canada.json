@@ -1,0 +1,632 @@
+[
+    {
+        "id": 464919,
+        "name": "Maxime Crépeau",
+        "position": "Keeper",
+        "nationality": "Canada",
+        "club": "Orlando City",
+        "league": "Major League Soccer",
+        "appearances": {
+            "matches_played": 14,
+            "started": 0,
+            "minutes_played": 1186
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 0,
+            "goals_conceded": 38,
+            "xgc": null
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 1
+        },
+        "goalkeeping_metrics": {
+            "penalties_conceded": 2,
+            "penalties_saved": 0,
+            "saves": 62,
+            "goal_prevented": -0.69
+        }
+    },
+    {
+        "id": 1026105,
+        "name": "Dayne St. Clair",
+        "position": "Keeper",
+        "nationality": "Canada",
+        "club": "Inter Miami CF",
+        "league": "Major League Soccer",
+        "appearances": {
+            "matches_played": 14,
+            "started": 0,
+            "minutes_played": 1260
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 2,
+            "goals_conceded": 28,
+            "xgc": null
+        },
+        "discipline": {
+            "yellow_cards": 3,
+            "red_cards": 0
+        },
+        "goalkeeping_metrics": {
+            "penalties_conceded": 4,
+            "penalties_saved": 0,
+            "saves": 41,
+            "goal_prevented": -1.02
+        }
+    },
+    {
+        "id": 751202,
+        "name": "Alphonso Davies",
+        "position": "Left Back",
+        "nationality": "Canada",
+        "club": "Bayern München",
+        "league": "Bundesliga",
+        "appearances": {
+            "matches_played": 13,
+            "started": 6,
+            "minutes_played": 523
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 3,
+            "xg": 0.35,
+            "xgot": 0.43,
+            "npxg": 0.35,
+            "xa": 1.63,
+            "xgi": 1.98,
+            "clean_sheets": null,
+            "goals_conceded": 8,
+            "xgc": 8.3
+        },
+        "detailed_actions": {
+            "shots": 4,
+            "shots_on_target": 1,
+            "chances_created": 9,
+            "big_chances_created": 2,
+            "clearances": 9,
+            "blocks": 3,
+            "interceptions": 3,
+            "tackles": 9,
+            "recoveries": 51
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1055426,
+        "name": "Alistair Johnston",
+        "position": "Right Back",
+        "nationality": "Canada",
+        "club": "Celtic",
+        "league": "Premiership",
+        "appearances": {
+            "matches_played": 7,
+            "started": 6,
+            "minutes_played": 501
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 1,
+            "xg": 0.18,
+            "xgot": null,
+            "npxg": 0.18,
+            "xa": 1.2,
+            "xgi": 1.38,
+            "clean_sheets": 1,
+            "goals_conceded": 4,
+            "xgc": 2.87
+        },
+        "detailed_actions": {
+            "shots": 4,
+            "shots_on_target": null,
+            "chances_created": 9,
+            "big_chances_created": 3,
+            "clearances": 21,
+            "blocks": 2,
+            "interceptions": 5,
+            "tackles": 14,
+            "recoveries": 21
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1440009,
+        "name": "Moïse Bombito",
+        "position": "Center Back",
+        "nationality": "Canada",
+        "club": "Nice",
+        "league": "Ligue 1",
+        "appearances": {
+            "matches_played": 2,
+            "started": 2,
+            "minutes_played": 146
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": 0.0,
+            "xgi": 0,
+            "clean_sheets": null,
+            "goals_conceded": 2,
+            "xgc": 2.98
+        },
+        "detailed_actions": {
+            "shots": 0,
+            "shots_on_target": null,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": 6,
+            "blocks": 3,
+            "interceptions": 2,
+            "tackles": 2,
+            "recoveries": 4
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 847629,
+        "name": "Derek Cornelius",
+        "position": "Center Back",
+        "nationality": "Canada",
+        "club": "Rangers",
+        "league": "Premiership",
+        "appearances": {
+            "matches_played": 7,
+            "started": 6,
+            "minutes_played": 559
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 1,
+            "xg": 0.48,
+            "xgot": 0.78,
+            "npxg": 0.48,
+            "xa": 0.24,
+            "xgi": 0.72,
+            "clean_sheets": 1,
+            "goals_conceded": 6,
+            "xgc": 7.35
+        },
+        "detailed_actions": {
+            "shots": 5,
+            "shots_on_target": 2,
+            "chances_created": 1,
+            "big_chances_created": 1,
+            "clearances": 45,
+            "blocks": null,
+            "interceptions": 7,
+            "tackles": 15,
+            "recoveries": 32
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1027412,
+        "name": "Kamal Miller",
+        "position": "Center Back",
+        "nationality": "Canada",
+        "club": "Portland Timbers",
+        "league": "Major League Soccer",
+        "appearances": {
+            "matches_played": 10,
+            "started": 7,
+            "minutes_played": 559
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": 0.09,
+            "xgi": 0.09,
+            "clean_sheets": 1,
+            "goals_conceded": 14,
+            "xgc": 11.51
+        },
+        "detailed_actions": {
+            "shots": 0,
+            "shots_on_target": null,
+            "chances_created": 1,
+            "big_chances_created": null,
+            "clearances": 46,
+            "blocks": 6,
+            "interceptions": 7,
+            "tackles": 3,
+            "recoveries": 29
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 1
+        }
+    },
+    {
+        "id": 816223,
+        "name": "Stephen Eustáquio",
+        "position": "Central Midfielder",
+        "nationality": "Canada",
+        "club": "Los Angeles FC",
+        "league": "Major League Soccer",
+        "appearances": {
+            "matches_played": 10,
+            "started": 7,
+            "minutes_played": 602
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 1,
+            "xg": 0.22,
+            "xgot": 0.35,
+            "npxg": 0.22,
+            "xa": 0.41,
+            "xgi": 0.63,
+            "clean_sheets": 3,
+            "goals_conceded": 9,
+            "xgc": 6.69
+        },
+        "detailed_actions": {
+            "shots": 6,
+            "shots_on_target": 2,
+            "chances_created": 2,
+            "big_chances_created": null,
+            "clearances": 11,
+            "blocks": 1,
+            "interceptions": 8,
+            "tackles": 17,
+            "recoveries": 38
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1288119,
+        "name": "Ismaël Koné",
+        "position": "Central Midfielder",
+        "nationality": "Canada",
+        "club": "Sassuolo",
+        "league": "Serie A",
+        "appearances": {
+            "matches_played": 35,
+            "started": 33,
+            "minutes_played": 2756
+        },
+        "core_stats": {
+            "goals": 6,
+            "assists": 0,
+            "xg": 5.24,
+            "xgot": 4.22,
+            "npxg": 5.24,
+            "xa": 1.82,
+            "xgi": 7.06,
+            "clean_sheets": 3,
+            "goals_conceded": 39,
+            "xgc": 43.98
+        },
+        "detailed_actions": {
+            "shots": 23,
+            "shots_on_target": 10,
+            "chances_created": 23,
+            "big_chances_created": 1,
+            "clearances": 32,
+            "blocks": 4,
+            "interceptions": 15,
+            "tackles": 31,
+            "recoveries": 92
+        },
+        "discipline": {
+            "yellow_cards": 3,
+            "red_cards": 1
+        }
+    },
+    {
+        "id": 432605,
+        "name": "Jonathan Osorio",
+        "position": "Defensive Midfielder",
+        "nationality": "Canada",
+        "club": "Toronto FC",
+        "league": "Major League Soccer",
+        "appearances": {
+            "matches_played": 14,
+            "started": 14,
+            "minutes_played": 1260
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 3,
+            "xg": 0.55,
+            "xgot": null,
+            "npxg": 0.55,
+            "xa": 1.41,
+            "xgi": 1.96,
+            "clean_sheets": 1,
+            "goals_conceded": 29,
+            "xgc": 18.82
+        },
+        "detailed_actions": {
+            "shots": 6,
+            "shots_on_target": null,
+            "chances_created": 12,
+            "big_chances_created": 2,
+            "clearances": 18,
+            "blocks": 4,
+            "interceptions": 17,
+            "tackles": 20,
+            "recoveries": 98
+        },
+        "discipline": {
+            "yellow_cards": 5,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 943428,
+        "name": "Mathieu Choinière",
+        "position": "Central Midfielder",
+        "nationality": "Canada",
+        "club": "Los Angeles FC",
+        "league": "Major League Soccer",
+        "appearances": {
+            "matches_played": 15,
+            "started": 8,
+            "minutes_played": 753
+        },
+        "core_stats": {
+            "goals": 2,
+            "assists": 1,
+            "xg": 0.39,
+            "xgot": 0.73,
+            "npxg": 0.39,
+            "xa": 0.48,
+            "xgi": 0.87,
+            "clean_sheets": 2,
+            "goals_conceded": 10,
+            "xgc": 10.61
+        },
+        "detailed_actions": {
+            "shots": 10,
+            "shots_on_target": 3,
+            "chances_created": 8,
+            "big_chances_created": 1,
+            "clearances": 10,
+            "blocks": 1,
+            "interceptions": 13,
+            "tackles": 23,
+            "recoveries": 33
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 939569,
+        "name": "Jonathan David",
+        "position": "Striker",
+        "nationality": "Canada",
+        "club": "Juventus",
+        "league": "Serie A",
+        "appearances": {
+            "matches_played": 35,
+            "started": 20,
+            "minutes_played": 1782
+        },
+        "core_stats": {
+            "goals": 6,
+            "assists": 4,
+            "xg": 8.81,
+            "xgot": 7.07,
+            "npxg": 8.02,
+            "xa": 1.66,
+            "xgi": 10.47,
+            "clean_sheets": 1,
+            "goals_conceded": 14,
+            "xgc": 15.31
+        },
+        "detailed_actions": {
+            "shots": 41,
+            "shots_on_target": 16,
+            "chances_created": 33,
+            "big_chances_created": 5,
+            "clearances": 5,
+            "blocks": null,
+            "interceptions": 5,
+            "tackles": 17,
+            "recoveries": 61
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 544312,
+        "name": "Cyle Larin",
+        "position": "Striker",
+        "nationality": "Canada",
+        "club": "Southampton",
+        "league": "Championship",
+        "appearances": {
+            "matches_played": 16,
+            "started": 9,
+            "minutes_played": 853
+        },
+        "core_stats": {
+            "goals": 8,
+            "assists": 1,
+            "xg": 6.29,
+            "xgot": 7.29,
+            "npxg": 6.29,
+            "xa": 0.52,
+            "xgi": 6.81,
+            "clean_sheets": 2,
+            "goals_conceded": 5,
+            "xgc": 7.77
+        },
+        "detailed_actions": {
+            "shots": 25,
+            "shots_on_target": 14,
+            "chances_created": 6,
+            "big_chances_created": 2,
+            "clearances": 9,
+            "blocks": null,
+            "interceptions": 1,
+            "tackles": 5,
+            "recoveries": 17
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1026135,
+        "name": "Tajon Buchanan",
+        "position": "Right Midfielder",
+        "nationality": "Canada",
+        "club": "Villarreal",
+        "league": "LaLiga",
+        "appearances": {
+            "matches_played": 34,
+            "started": 21,
+            "minutes_played": 1821
+        },
+        "core_stats": {
+            "goals": 7,
+            "assists": 1,
+            "xg": 2.06,
+            "xgot": 3.09,
+            "npxg": 2.06,
+            "xa": 2.03,
+            "xgi": 4.09,
+            "clean_sheets": 1,
+            "goals_conceded": 18,
+            "xgc": 21.07
+        },
+        "detailed_actions": {
+            "shots": 27,
+            "shots_on_target": 11,
+            "chances_created": 16,
+            "big_chances_created": 5,
+            "clearances": 16,
+            "blocks": 2,
+            "interceptions": 21,
+            "tackles": 28,
+            "recoveries": 108
+        },
+        "discipline": {
+            "yellow_cards": 8,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 932308,
+        "name": "Liam Millar",
+        "position": "Left Winger",
+        "nationality": "Canada",
+        "club": "Hull City",
+        "league": "Championship",
+        "appearances": {
+            "matches_played": 33,
+            "started": 22,
+            "minutes_played": 1848
+        },
+        "core_stats": {
+            "goals": 3,
+            "assists": 5,
+            "xg": 3.43,
+            "xgot": 4.09,
+            "npxg": 3.43,
+            "xa": 3.37,
+            "xgi": 6.8,
+            "clean_sheets": null,
+            "goals_conceded": 21,
+            "xgc": 32.46
+        },
+        "detailed_actions": {
+            "shots": 51,
+            "shots_on_target": 11,
+            "chances_created": 31,
+            "big_chances_created": 8,
+            "clearances": 25,
+            "blocks": 2,
+            "interceptions": 16,
+            "tackles": 42,
+            "recoveries": 103
+        },
+        "discipline": {
+            "yellow_cards": 3,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1023943,
+        "name": "Jacob Shaffelburg",
+        "position": "Left Winger",
+        "nationality": "Canada",
+        "club": "Los Angeles FC",
+        "league": "Major League Soccer",
+        "appearances": {
+            "matches_played": 6,
+            "started": 2,
+            "minutes_played": 223
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 2,
+            "xg": 0.32,
+            "xgot": 0.1,
+            "npxg": 0.32,
+            "xa": 0.96,
+            "xgi": 1.28,
+            "clean_sheets": null,
+            "goals_conceded": 6,
+            "xgc": 3.15
+        },
+        "detailed_actions": {
+            "shots": 5,
+            "shots_on_target": 1,
+            "chances_created": 8,
+            "big_chances_created": 5,
+            "clearances": null,
+            "blocks": null,
+            "interceptions": null,
+            "tackles": 2,
+            "recoveries": 5
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    }
+]

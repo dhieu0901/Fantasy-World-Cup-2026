@@ -1,0 +1,1027 @@
+[
+    {
+        "id": 1288857,
+        "name": "Dan Burn",
+        "position": "defender",
+        "nationality": "England",
+        "club": "Merthyr Town",
+        "league": null,
+        "appearances": {
+            "matches_played": 0,
+            "started": 0,
+            "minutes_played": 0
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": null,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": null,
+            "shots_on_target": null,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": null,
+            "blocks": null,
+            "interceptions": null,
+            "tackles": null,
+            "recoveries": null
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 844425,
+        "name": "Marc Guéhi",
+        "position": "Center Back",
+        "nationality": "England",
+        "club": "Manchester City",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 35,
+            "started": 35,
+            "minutes_played": 3150
+        },
+        "core_stats": {
+            "goals": 3,
+            "assists": 3,
+            "xg": 4.12,
+            "xgot": 3.96,
+            "npxg": 4.12,
+            "xa": 2.32,
+            "xgi": 6.44,
+            "clean_sheets": 14,
+            "goals_conceded": 35,
+            "xgc": 44.39
+        },
+        "detailed_actions": {
+            "shots": 32,
+            "shots_on_target": 9,
+            "chances_created": 18,
+            "big_chances_created": 5,
+            "clearances": 164,
+            "blocks": 23,
+            "interceptions": 50,
+            "tackles": 46,
+            "recoveries": 138
+        },
+        "discipline": {
+            "yellow_cards": 6,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 807729,
+        "name": "Reece James",
+        "position": "Right Back",
+        "nationality": "England",
+        "club": "Chelsea",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 29,
+            "started": 20,
+            "minutes_played": 1961
+        },
+        "core_stats": {
+            "goals": 2,
+            "assists": 4,
+            "xg": 1.04,
+            "xgot": 2.12,
+            "npxg": 1.04,
+            "xa": 3.19,
+            "xgi": 4.23,
+            "clean_sheets": 4,
+            "goals_conceded": 20,
+            "xgc": 28.74
+        },
+        "detailed_actions": {
+            "shots": 22,
+            "shots_on_target": 7,
+            "chances_created": 27,
+            "big_chances_created": 8,
+            "clearances": 41,
+            "blocks": 6,
+            "interceptions": 33,
+            "tackles": 48,
+            "recoveries": 102
+        },
+        "discipline": {
+            "yellow_cards": 4,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 710159,
+        "name": "Ezri Konsa",
+        "position": "Center Back",
+        "nationality": "England",
+        "club": "Aston Villa",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 34,
+            "started": 34,
+            "minutes_played": 3036
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": 1.25,
+            "xgot": 0.88,
+            "npxg": 1.25,
+            "xa": 0.58,
+            "xgi": 1.83,
+            "clean_sheets": 8,
+            "goals_conceded": 44,
+            "xgc": 48.85
+        },
+        "detailed_actions": {
+            "shots": 11,
+            "shots_on_target": 2,
+            "chances_created": 5,
+            "big_chances_created": 1,
+            "clearances": 122,
+            "blocks": 29,
+            "interceptions": 23,
+            "tackles": 22,
+            "recoveries": 108
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 1
+        }
+    },
+    {
+        "id": 1107910,
+        "name": "Valentino Livramento",
+        "position": "Right Back",
+        "nationality": "England",
+        "club": "Newcastle United",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 17,
+            "started": 14,
+            "minutes_played": 1328
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 1,
+            "xg": 0.14,
+            "xgot": null,
+            "npxg": 0.14,
+            "xa": 0.95,
+            "xgi": 1.09,
+            "clean_sheets": 5,
+            "goals_conceded": 14,
+            "xgc": 18.5
+        },
+        "detailed_actions": {
+            "shots": 3,
+            "shots_on_target": null,
+            "chances_created": 10,
+            "big_chances_created": 1,
+            "clearances": 39,
+            "blocks": 2,
+            "interceptions": 6,
+            "tackles": 22,
+            "recoveries": 81
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1300526,
+        "name": "Nico O'Reilly",
+        "position": "Left Back",
+        "nationality": "England",
+        "club": "Manchester City",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 34,
+            "started": 29,
+            "minutes_played": 2648
+        },
+        "core_stats": {
+            "goals": 5,
+            "assists": 3,
+            "xg": 6.03,
+            "xgot": 6.2,
+            "npxg": 6.03,
+            "xa": 2.69,
+            "xgi": 8.72,
+            "clean_sheets": 10,
+            "goals_conceded": 25,
+            "xgc": 34.85
+        },
+        "detailed_actions": {
+            "shots": 41,
+            "shots_on_target": 15,
+            "chances_created": 23,
+            "big_chances_created": 6,
+            "clearances": 72,
+            "blocks": 12,
+            "interceptions": 20,
+            "tackles": 68,
+            "recoveries": 109
+        },
+        "discipline": {
+            "yellow_cards": 5,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1107620,
+        "name": "Jarell Quansah",
+        "position": "Center Back",
+        "nationality": "England",
+        "club": "Bayer Leverkusen",
+        "league": "Bundesliga",
+        "appearances": {
+            "matches_played": 28,
+            "started": 25,
+            "minutes_played": 2302
+        },
+        "core_stats": {
+            "goals": 4,
+            "assists": 0,
+            "xg": 2.84,
+            "xgot": 4.26,
+            "npxg": 2.84,
+            "xa": 1.29,
+            "xgi": 4.13,
+            "clean_sheets": 5,
+            "goals_conceded": 34,
+            "xgc": 34.4
+        },
+        "detailed_actions": {
+            "shots": 18,
+            "shots_on_target": 8,
+            "chances_created": 11,
+            "big_chances_created": 1,
+            "clearances": 89,
+            "blocks": 14,
+            "interceptions": 27,
+            "tackles": 28,
+            "recoveries": 98
+        },
+        "discipline": {
+            "yellow_cards": 9,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 894803,
+        "name": "Djed Spence",
+        "position": "Left Back",
+        "nationality": "England",
+        "club": "Tottenham Hotspur",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 30,
+            "started": 23,
+            "minutes_played": 2056
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": 0.9,
+            "xgot": 0.75,
+            "npxg": 0.9,
+            "xa": 1.78,
+            "xgi": 2.68,
+            "clean_sheets": 8,
+            "goals_conceded": 31,
+            "xgc": 31.99
+        },
+        "detailed_actions": {
+            "shots": 13,
+            "shots_on_target": 8,
+            "chances_created": 10,
+            "big_chances_created": 4,
+            "clearances": 52,
+            "blocks": 3,
+            "interceptions": 18,
+            "tackles": 44,
+            "recoveries": 111
+        },
+        "discipline": {
+            "yellow_cards": 4,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 263653,
+        "name": "John Stones",
+        "position": "Center Back",
+        "nationality": "England",
+        "club": "Manchester City",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 9,
+            "started": 5,
+            "minutes_played": 439
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": 0.09,
+            "xgi": 0.09,
+            "clean_sheets": null,
+            "goals_conceded": 10,
+            "xgc": 6.78
+        },
+        "detailed_actions": {
+            "shots": 0,
+            "shots_on_target": null,
+            "chances_created": 1,
+            "big_chances_created": null,
+            "clearances": 21,
+            "blocks": 6,
+            "interceptions": 3,
+            "tackles": 1,
+            "recoveries": 19
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1089691,
+        "name": "Elliot Anderson",
+        "position": "Defensive Midfielder",
+        "nationality": "England",
+        "club": "Nottingham Forest",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 38,
+            "started": 37,
+            "minutes_played": 3334
+        },
+        "core_stats": {
+            "goals": 4,
+            "assists": 4,
+            "xg": 2.9,
+            "xgot": 2.41,
+            "npxg": 2.11,
+            "xa": 4.79,
+            "xgi": 7.69,
+            "clean_sheets": 7,
+            "goals_conceded": 50,
+            "xgc": 54.85
+        },
+        "detailed_actions": {
+            "shots": 44,
+            "shots_on_target": 10,
+            "chances_created": 54,
+            "big_chances_created": 9,
+            "clearances": 49,
+            "blocks": 16,
+            "interceptions": 41,
+            "tackles": 104,
+            "recoveries": 306
+        },
+        "discipline": {
+            "yellow_cards": 8,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1077894,
+        "name": "Jude Bellingham",
+        "position": "Attacking Midfielder",
+        "nationality": "England",
+        "club": "Real Madrid",
+        "league": "LaLiga",
+        "appearances": {
+            "matches_played": 28,
+            "started": 22,
+            "minutes_played": 1917
+        },
+        "core_stats": {
+            "goals": 6,
+            "assists": 4,
+            "xg": 7.26,
+            "xgot": 9.32,
+            "npxg": 7.26,
+            "xa": 2.19,
+            "xgi": 9.45,
+            "clean_sheets": 7,
+            "goals_conceded": 19,
+            "xgc": 20.72
+        },
+        "detailed_actions": {
+            "shots": 51,
+            "shots_on_target": 26,
+            "chances_created": 36,
+            "big_chances_created": 4,
+            "clearances": 18,
+            "blocks": 2,
+            "interceptions": 14,
+            "tackles": 51,
+            "recoveries": 105
+        },
+        "discipline": {
+            "yellow_cards": 3,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 818975,
+        "name": "Eberechi Eze",
+        "position": "Attacking Midfielder",
+        "nationality": "England",
+        "club": "Arsenal",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 33,
+            "started": 22,
+            "minutes_played": 1900
+        },
+        "core_stats": {
+            "goals": 7,
+            "assists": 2,
+            "xg": 5.05,
+            "xgot": 6.84,
+            "npxg": 5.05,
+            "xa": 2.66,
+            "xgi": 7.71,
+            "clean_sheets": 2,
+            "goals_conceded": 14,
+            "xgc": 14.15
+        },
+        "detailed_actions": {
+            "shots": 63,
+            "shots_on_target": 20,
+            "chances_created": 16,
+            "big_chances_created": 4,
+            "clearances": 10,
+            "blocks": 1,
+            "interceptions": 11,
+            "tackles": 19,
+            "recoveries": 79
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 906937,
+        "name": "Anthony Gordon",
+        "position": "Left Winger",
+        "nationality": "England",
+        "club": "Newcastle United",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 26,
+            "started": 24,
+            "minutes_played": 1814
+        },
+        "core_stats": {
+            "goals": 6,
+            "assists": 2,
+            "xg": 8.83,
+            "xgot": 6.19,
+            "npxg": 6.46,
+            "xa": 3.37,
+            "xgi": 12.2,
+            "clean_sheets": 2,
+            "goals_conceded": 28,
+            "xgc": 24.74
+        },
+        "detailed_actions": {
+            "shots": 48,
+            "shots_on_target": 20,
+            "chances_created": 26,
+            "big_chances_created": 5,
+            "clearances": 13,
+            "blocks": null,
+            "interceptions": 3,
+            "tackles": 19,
+            "recoveries": 57
+        },
+        "discipline": {
+            "yellow_cards": 3,
+            "red_cards": 1
+        }
+    },
+    {
+        "id": 156008,
+        "name": "Jordan Henderson",
+        "position": "Defensive Midfielder",
+        "nationality": "England",
+        "club": "Brentford",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 32,
+            "started": 22,
+            "minutes_played": 1922
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 3,
+            "xg": 0.33,
+            "xgot": 0.64,
+            "npxg": 0.33,
+            "xa": 2.45,
+            "xgi": 2.78,
+            "clean_sheets": 3,
+            "goals_conceded": 28,
+            "xgc": 27.99
+        },
+        "detailed_actions": {
+            "shots": 6,
+            "shots_on_target": 1,
+            "chances_created": 19,
+            "big_chances_created": 8,
+            "clearances": 34,
+            "blocks": 7,
+            "interceptions": 17,
+            "tackles": 27,
+            "recoveries": 98
+        },
+        "discipline": {
+            "yellow_cards": 6,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1292810,
+        "name": "Kobbie Mainoo",
+        "position": "Defensive Midfielder",
+        "nationality": "England",
+        "club": "Manchester United",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 28,
+            "started": 16,
+            "minutes_played": 1653
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 2,
+            "xg": 0.48,
+            "xgot": 0.33,
+            "npxg": 0.48,
+            "xa": 1.28,
+            "xgi": 1.76,
+            "clean_sheets": 6,
+            "goals_conceded": 22,
+            "xgc": 22.64
+        },
+        "detailed_actions": {
+            "shots": 13,
+            "shots_on_target": 3,
+            "chances_created": 22,
+            "big_chances_created": 1,
+            "clearances": 25,
+            "blocks": 10,
+            "interceptions": 20,
+            "tackles": 36,
+            "recoveries": 95
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 696365,
+        "name": "Marcus Rashford",
+        "position": "Left Winger",
+        "nationality": "England",
+        "club": "Barcelona",
+        "league": "LaLiga",
+        "appearances": {
+            "matches_played": 32,
+            "started": 18,
+            "minutes_played": 1761
+        },
+        "core_stats": {
+            "goals": 8,
+            "assists": 7,
+            "xg": 7.51,
+            "xgot": 7.48,
+            "npxg": 7.51,
+            "xa": 4.62,
+            "xgi": 12.13,
+            "clean_sheets": null,
+            "goals_conceded": 25,
+            "xgc": 27.4
+        },
+        "detailed_actions": {
+            "shots": 76,
+            "shots_on_target": 29,
+            "chances_created": 46,
+            "big_chances_created": 8,
+            "clearances": 14,
+            "blocks": 3,
+            "interceptions": 2,
+            "tackles": 8,
+            "recoveries": 44
+        },
+        "discipline": {
+            "yellow_cards": 3,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 654096,
+        "name": "Declan Rice",
+        "position": "Defensive Midfielder",
+        "nationality": "England",
+        "club": "Arsenal",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 36,
+            "started": 35,
+            "minutes_played": 3099
+        },
+        "core_stats": {
+            "goals": 4,
+            "assists": 5,
+            "xg": 3.17,
+            "xgot": 4.45,
+            "npxg": 3.17,
+            "xa": 6.96,
+            "xgi": 10.13,
+            "clean_sheets": 13,
+            "goals_conceded": 25,
+            "xgc": 23.8
+        },
+        "detailed_actions": {
+            "shots": 40,
+            "shots_on_target": 13,
+            "chances_created": 63,
+            "big_chances_created": 17,
+            "clearances": 78,
+            "blocks": 12,
+            "interceptions": 37,
+            "tackles": 70,
+            "recoveries": 180
+        },
+        "discipline": {
+            "yellow_cards": 3,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 883080,
+        "name": "Morgan Rogers",
+        "position": "Attacking Midfielder",
+        "nationality": "England",
+        "club": "Aston Villa",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 37,
+            "started": 37,
+            "minutes_played": 3285
+        },
+        "core_stats": {
+            "goals": 10,
+            "assists": 6,
+            "xg": 6.78,
+            "xgot": 8.05,
+            "npxg": 6.78,
+            "xa": 4.3,
+            "xgi": 11.08,
+            "clean_sheets": 7,
+            "goals_conceded": 48,
+            "xgc": 51.47
+        },
+        "detailed_actions": {
+            "shots": 84,
+            "shots_on_target": 32,
+            "chances_created": 47,
+            "big_chances_created": 13,
+            "clearances": 32,
+            "blocks": 3,
+            "interceptions": 13,
+            "tackles": 42,
+            "recoveries": 139
+        },
+        "discipline": {
+            "yellow_cards": 7,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 961995,
+        "name": "Bukayo Saka",
+        "position": "Right Winger",
+        "nationality": "England",
+        "club": "Arsenal",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 31,
+            "started": 25,
+            "minutes_played": 2225
+        },
+        "core_stats": {
+            "goals": 7,
+            "assists": 5,
+            "xg": 7.55,
+            "xgot": 6.13,
+            "npxg": 6.76,
+            "xa": 7.16,
+            "xgi": 14.71,
+            "clean_sheets": 8,
+            "goals_conceded": 16,
+            "xgc": 15.45
+        },
+        "detailed_actions": {
+            "shots": 71,
+            "shots_on_target": 27,
+            "chances_created": 61,
+            "big_chances_created": 12,
+            "clearances": 11,
+            "blocks": 1,
+            "interceptions": 16,
+            "tackles": 41,
+            "recoveries": 117
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 194165,
+        "name": "Harry Kane",
+        "position": "Striker",
+        "nationality": "England",
+        "club": "Bayern München",
+        "league": "Bundesliga",
+        "appearances": {
+            "matches_played": 31,
+            "started": 25,
+            "minutes_played": 2382
+        },
+        "core_stats": {
+            "goals": 36,
+            "assists": 5,
+            "xg": 26.87,
+            "xgot": 31.31,
+            "npxg": 18.2,
+            "xa": 4.27,
+            "xgi": 31.14,
+            "clean_sheets": 4,
+            "goals_conceded": 26,
+            "xgc": 31.43
+        },
+        "detailed_actions": {
+            "shots": 119,
+            "shots_on_target": 67,
+            "chances_created": 40,
+            "big_chances_created": 18,
+            "clearances": 33,
+            "blocks": 6,
+            "interceptions": 8,
+            "tackles": 19,
+            "recoveries": 77
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1084981,
+        "name": "Noni Madueke",
+        "position": "Right Winger",
+        "nationality": "England",
+        "club": "Arsenal",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 26,
+            "started": 16,
+            "minutes_played": 1217
+        },
+        "core_stats": {
+            "goals": 3,
+            "assists": 1,
+            "xg": 1.22,
+            "xgot": 2.11,
+            "npxg": 1.22,
+            "xa": 2.83,
+            "xgi": 4.05,
+            "clean_sheets": null,
+            "goals_conceded": 9,
+            "xgc": 12.63
+        },
+        "detailed_actions": {
+            "shots": 26,
+            "shots_on_target": 10,
+            "chances_created": 22,
+            "big_chances_created": 7,
+            "clearances": 8,
+            "blocks": 1,
+            "interceptions": 5,
+            "tackles": 21,
+            "recoveries": 35
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 408987,
+        "name": "Ivan Toney",
+        "position": "Striker",
+        "nationality": "England",
+        "club": "Al Ahli",
+        "league": "Saudi Pro League",
+        "appearances": {
+            "matches_played": 32,
+            "started": 31,
+            "minutes_played": 2749
+        },
+        "core_stats": {
+            "goals": 32,
+            "assists": 7,
+            "xg": 27.64,
+            "xgot": 29.07,
+            "npxg": 18.97,
+            "xa": 4.89,
+            "xgi": 32.53,
+            "clean_sheets": 11,
+            "goals_conceded": 24,
+            "xgc": 26.36
+        },
+        "detailed_actions": {
+            "shots": 93,
+            "shots_on_target": 49,
+            "chances_created": 25,
+            "big_chances_created": 8,
+            "clearances": 32,
+            "blocks": 6,
+            "interceptions": 7,
+            "tackles": 19,
+            "recoveries": 54
+        },
+        "discipline": {
+            "yellow_cards": 4,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 540088,
+        "name": "Ollie Watkins",
+        "position": "Striker",
+        "nationality": "England",
+        "club": "Aston Villa",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 37,
+            "started": 33,
+            "minutes_played": 2852
+        },
+        "core_stats": {
+            "goals": 16,
+            "assists": 3,
+            "xg": 15.14,
+            "xgot": 15.8,
+            "npxg": 15.14,
+            "xa": 1.3,
+            "xgi": 16.44,
+            "clean_sheets": 3,
+            "goals_conceded": 38,
+            "xgc": 43.32
+        },
+        "detailed_actions": {
+            "shots": 83,
+            "shots_on_target": 38,
+            "chances_created": 23,
+            "big_chances_created": 4,
+            "clearances": 15,
+            "blocks": 2,
+            "interceptions": 6,
+            "tackles": 22,
+            "recoveries": 49
+        },
+        "discipline": {
+            "yellow_cards": 4,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 719330,
+        "name": "Dean Henderson",
+        "position": "Keeper",
+        "nationality": "England",
+        "club": "Crystal Palace",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 37,
+            "started": 0,
+            "minutes_played": 3330
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 11,
+            "goals_conceded": 51,
+            "xgc": null
+        },
+        "discipline": {
+            "yellow_cards": 5,
+            "red_cards": 0
+        },
+        "goalkeeping_metrics": {
+            "penalties_conceded": 5,
+            "penalties_saved": 1,
+            "saves": 106,
+            "goal_prevented": 1.57
+        }
+    },
+    {
+        "id": 303919,
+        "name": "Jordan Pickford",
+        "position": "Keeper",
+        "nationality": "England",
+        "club": "Everton",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 38,
+            "started": 0,
+            "minutes_played": 3420
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 11,
+            "goals_conceded": 50,
+            "xgc": null
+        },
+        "discipline": {
+            "yellow_cards": 4,
+            "red_cards": 0
+        },
+        "goalkeeping_metrics": {
+            "penalties_conceded": 3,
+            "penalties_saved": 1,
+            "saves": 100,
+            "goal_prevented": 2.77
+        }
+    },
+    {
+        "id": 1187213,
+        "name": "James Trafford",
+        "position": "Keeper",
+        "nationality": "England",
+        "club": "Manchester City",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 4,
+            "started": 0,
+            "minutes_played": 360
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 1,
+            "goals_conceded": 6,
+            "xgc": null
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        "goalkeeping_metrics": {
+            "penalties_conceded": 1,
+            "penalties_saved": 0,
+            "saves": 14,
+            "goal_prevented": 2.53
+        }
+    }
+]

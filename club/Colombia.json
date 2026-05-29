@@ -1,0 +1,907 @@
+[
+    {
+        "id": 50207,
+        "name": "Camilo Vargas",
+        "position": "Keeper",
+        "nationality": "Colombia",
+        "club": "Atlas",
+        "league": "Liga MX Clausura",
+        "appearances": {
+            "matches_played": 18,
+            "started": 0,
+            "minutes_played": 1620
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 2,
+            "goals_conceded": 30,
+            "xgc": null
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        "goalkeeping_metrics": {
+            "penalties_conceded": 3,
+            "penalties_saved": 2,
+            "saves": 55,
+            "goal_prevented": -3.67
+        }
+    },
+    {
+        "id": 498457,
+        "name": "Alvaro Montero",
+        "position": "Keeper",
+        "nationality": "Colombia",
+        "club": "Velez Sarsfield",
+        "league": "Liga Profesional Apertura",
+        "appearances": {
+            "matches_played": 17,
+            "started": 0,
+            "minutes_played": 1530
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 7,
+            "goals_conceded": 13,
+            "xgc": null
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        "goalkeeping_metrics": {
+            "penalties_conceded": 1,
+            "penalties_saved": 0,
+            "saves": 67,
+            "goal_prevented": 0.93
+        }
+    },
+    {
+        "id": 50065,
+        "name": "David Ospina",
+        "position": "Keeper",
+        "nationality": "Colombia",
+        "club": "Atletico Nacional",
+        "league": "Primera A Apertura",
+        "appearances": {
+            "matches_played": 12,
+            "started": 0,
+            "minutes_played": 1080
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 7,
+            "goals_conceded": 6,
+            "xgc": null
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        "goalkeeping_metrics": {
+            "penalties_conceded": null,
+            "penalties_saved": null,
+            "saves": 35,
+            "goal_prevented": -1.27
+        }
+    },
+    {
+        "id": 643533,
+        "name": "Davinson Sanchez",
+        "position": "Center Back",
+        "nationality": "Colombia",
+        "club": "Galatasaray",
+        "league": "Super Lig",
+        "appearances": {
+            "matches_played": 30,
+            "started": 29,
+            "minutes_played": 2424
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 0,
+            "xg": 1.26,
+            "xgot": 1.11,
+            "npxg": 1.26,
+            "xa": 0.86,
+            "xgi": 2.12,
+            "clean_sheets": 8,
+            "goals_conceded": 24,
+            "xgc": 26.03
+        },
+        "detailed_actions": {
+            "shots": 15,
+            "shots_on_target": 3,
+            "chances_created": 13,
+            "big_chances_created": 1,
+            "clearances": 127,
+            "blocks": 22,
+            "interceptions": 22,
+            "tackles": 47,
+            "recoveries": 111
+        },
+        "discipline": {
+            "yellow_cards": 6,
+            "red_cards": 1
+        }
+    },
+    {
+        "id": 860913,
+        "name": "Jhon Lucumi",
+        "position": "Center Back",
+        "nationality": "Colombia",
+        "club": "Bologna",
+        "league": "Serie A",
+        "appearances": {
+            "matches_played": 29,
+            "started": 26,
+            "minutes_played": 2287
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 0,
+            "xg": 0.96,
+            "xgot": 0.95,
+            "npxg": 0.96,
+            "xa": 0.4,
+            "xgi": 1.36,
+            "clean_sheets": 8,
+            "goals_conceded": 28,
+            "xgc": 29.64
+        },
+        "detailed_actions": {
+            "shots": 8,
+            "shots_on_target": 2,
+            "chances_created": 7,
+            "big_chances_created": 1,
+            "clearances": 101,
+            "blocks": 14,
+            "interceptions": 32,
+            "tackles": 41,
+            "recoveries": 133
+        },
+        "discipline": {
+            "yellow_cards": 5,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 496042,
+        "name": "Yerry Mina",
+        "position": "Center Back",
+        "nationality": "Colombia",
+        "club": "Cagliari",
+        "league": "Serie A",
+        "appearances": {
+            "matches_played": 26,
+            "started": 26,
+            "minutes_played": 2153
+        },
+        "core_stats": {
+            "goals": 2,
+            "assists": 0,
+            "xg": 1.58,
+            "xgot": 1.85,
+            "npxg": 1.58,
+            "xa": 0.63,
+            "xgi": 2.21,
+            "clean_sheets": 6,
+            "goals_conceded": 29,
+            "xgc": 31.57
+        },
+        "detailed_actions": {
+            "shots": 11,
+            "shots_on_target": 3,
+            "chances_created": 8,
+            "big_chances_created": null,
+            "clearances": 127,
+            "blocks": 23,
+            "interceptions": 26,
+            "tackles": 32,
+            "recoveries": 80
+        },
+        "discipline": {
+            "yellow_cards": 3,
+            "red_cards": 1
+        }
+    },
+    {
+        "id": 965205,
+        "name": "Willer Ditta",
+        "position": "Center Back",
+        "nationality": "Colombia",
+        "club": "Cruz Azul",
+        "league": "Liga MX Clausura",
+        "appearances": {
+            "matches_played": 22,
+            "started": 22,
+            "minutes_played": 1980
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 2,
+            "xg": 0.14,
+            "xgot": null,
+            "npxg": 0.14,
+            "xa": 0.17,
+            "xgi": 0.31,
+            "clean_sheets": 1,
+            "goals_conceded": 5,
+            "xgc": 3.14
+        },
+        "detailed_actions": {
+            "shots": 3,
+            "shots_on_target": null,
+            "chances_created": 4,
+            "big_chances_created": null,
+            "clearances": 12,
+            "blocks": 3,
+            "interceptions": 3,
+            "tackles": 9,
+            "recoveries": 24
+        },
+        "discipline": {
+            "yellow_cards": 6,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 859282,
+        "name": "Daniel Munoz",
+        "position": "Right Wing-Back",
+        "nationality": "Colombia",
+        "club": "Crystal Palace",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 29,
+            "started": 29,
+            "minutes_played": 2403
+        },
+        "core_stats": {
+            "goals": 4,
+            "assists": 3,
+            "xg": 2.44,
+            "xgot": 3.65,
+            "npxg": 2.44,
+            "xa": 3.97,
+            "xgi": 6.41,
+            "clean_sheets": 10,
+            "goals_conceded": 33,
+            "xgc": 34.22
+        },
+        "detailed_actions": {
+            "shots": 27,
+            "shots_on_target": 13,
+            "chances_created": 27,
+            "big_chances_created": 8,
+            "clearances": 97,
+            "blocks": 1,
+            "interceptions": 26,
+            "tackles": 74,
+            "recoveries": 97
+        },
+        "discipline": {
+            "yellow_cards": 7,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 207642,
+        "name": "Santiago Arias",
+        "position": "Right Back",
+        "nationality": "Colombia",
+        "club": "Independiente",
+        "league": "Liga Profesional Apertura",
+        "appearances": {
+            "matches_played": 13,
+            "started": 9,
+            "minutes_played": 914
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 2,
+            "xg": 0.01,
+            "xgot": null,
+            "npxg": 0.01,
+            "xa": 0.81,
+            "xgi": 0.82,
+            "clean_sheets": 1,
+            "goals_conceded": 16,
+            "xgc": 14.7
+        },
+        "detailed_actions": {
+            "shots": 1,
+            "shots_on_target": null,
+            "chances_created": 5,
+            "big_chances_created": null,
+            "clearances": 25,
+            "blocks": 3,
+            "interceptions": 19,
+            "tackles": 22,
+            "recoveries": 50
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 474673,
+        "name": "Johan Mojica",
+        "position": "Left Back",
+        "nationality": "Colombia",
+        "club": "Mallorca",
+        "league": "LaLiga",
+        "appearances": {
+            "matches_played": 35,
+            "started": 30,
+            "minutes_played": 2725
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 4,
+            "xg": 0.54,
+            "xgot": 0.25,
+            "npxg": 0.54,
+            "xa": 3.5,
+            "xgi": 4.04,
+            "clean_sheets": 5,
+            "goals_conceded": 44,
+            "xgc": 48.71
+        },
+        "detailed_actions": {
+            "shots": 17,
+            "shots_on_target": 2,
+            "chances_created": 36,
+            "big_chances_created": 6,
+            "clearances": 84,
+            "blocks": 6,
+            "interceptions": 24,
+            "tackles": 51,
+            "recoveries": 178
+        },
+        "discipline": {
+            "yellow_cards": 6,
+            "red_cards": 1
+        }
+    },
+    {
+        "id": 578756,
+        "name": "Deiver Machado",
+        "position": "Left Back",
+        "nationality": "Colombia",
+        "club": "Nantes",
+        "league": "Ligue 1",
+        "appearances": {
+            "matches_played": 19,
+            "started": 16,
+            "minutes_played": 1186
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 1,
+            "xg": 0.78,
+            "xgot": 0.44,
+            "npxg": 0.78,
+            "xa": 1.01,
+            "xgi": 1.79,
+            "clean_sheets": 2,
+            "goals_conceded": 16,
+            "xgc": 17.31
+        },
+        "detailed_actions": {
+            "shots": 13,
+            "shots_on_target": 2,
+            "chances_created": 7,
+            "big_chances_created": 3,
+            "clearances": 30,
+            "blocks": 1,
+            "interceptions": 10,
+            "tackles": 21,
+            "recoveries": 60
+        },
+        "discipline": {
+            "yellow_cards": 3,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1174630,
+        "name": "Richard Rios",
+        "position": "Defensive Midfielder",
+        "nationality": "Colombia",
+        "club": "Benfica",
+        "league": "Liga Portugal",
+        "appearances": {
+            "matches_played": 27,
+            "started": 26,
+            "minutes_played": 2279
+        },
+        "core_stats": {
+            "goals": 5,
+            "assists": 4,
+            "xg": 7.0,
+            "xgot": 3.69,
+            "npxg": 7.0,
+            "xa": 2.07,
+            "xgi": 9.07,
+            "clean_sheets": 9,
+            "goals_conceded": 17,
+            "xgc": 23.11
+        },
+        "detailed_actions": {
+            "shots": 60,
+            "shots_on_target": 16,
+            "chances_created": 22,
+            "big_chances_created": 6,
+            "clearances": 26,
+            "blocks": 4,
+            "interceptions": 17,
+            "tackles": 51,
+            "recoveries": 107
+        },
+        "discipline": {
+            "yellow_cards": 9,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 466672,
+        "name": "Jefferson Lerma",
+        "position": "Defensive Midfielder",
+        "nationality": "Colombia",
+        "club": "Crystal Palace",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 31,
+            "started": 18,
+            "minutes_played": 1724
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 2,
+            "xg": 1.82,
+            "xgot": 1.05,
+            "npxg": 1.82,
+            "xa": 1.48,
+            "xgi": 3.3,
+            "clean_sheets": 6,
+            "goals_conceded": 25,
+            "xgc": 24.96
+        },
+        "detailed_actions": {
+            "shots": 19,
+            "shots_on_target": 7,
+            "chances_created": 13,
+            "big_chances_created": 3,
+            "clearances": 61,
+            "blocks": 4,
+            "interceptions": 25,
+            "tackles": 29,
+            "recoveries": 102
+        },
+        "discipline": {
+            "yellow_cards": 7,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1434853,
+        "name": "Kevin Castano",
+        "position": "Central Midfielder",
+        "nationality": "Colombia",
+        "club": "River Plate",
+        "league": "Liga Profesional Apertura",
+        "appearances": {
+            "matches_played": 5,
+            "started": 1,
+            "minutes_played": 92
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": 0.11,
+            "xgot": null,
+            "npxg": 0.11,
+            "xa": 0.05,
+            "xgi": 0.16,
+            "clean_sheets": null,
+            "goals_conceded": 1,
+            "xgc": 0.63
+        },
+        "detailed_actions": {
+            "shots": 1,
+            "shots_on_target": null,
+            "chances_created": 3,
+            "big_chances_created": null,
+            "clearances": 1,
+            "blocks": 1,
+            "interceptions": 3,
+            "tackles": 5,
+            "recoveries": 7
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1331597,
+        "name": "Gustavo Puerta",
+        "position": "Defensive Midfielder",
+        "nationality": "Colombia",
+        "club": "Racing Santander",
+        "league": "LaLiga2",
+        "appearances": {
+            "matches_played": 32,
+            "started": 30,
+            "minutes_played": 2669
+        },
+        "core_stats": {
+            "goals": 3,
+            "assists": 1,
+            "xg": 2.73,
+            "xgot": 3.01,
+            "npxg": 2.73,
+            "xa": 2.51,
+            "xgi": 5.24,
+            "clean_sheets": 5,
+            "goals_conceded": 42,
+            "xgc": 46.56
+        },
+        "detailed_actions": {
+            "shots": 33,
+            "shots_on_target": 10,
+            "chances_created": 19,
+            "big_chances_created": 2,
+            "clearances": 28,
+            "blocks": 5,
+            "interceptions": 35,
+            "tackles": 54,
+            "recoveries": 190
+        },
+        "discipline": {
+            "yellow_cards": 13,
+            "red_cards": 1
+        }
+    },
+    {
+        "id": 1023030,
+        "name": "Jhon Arias",
+        "position": "Right Winger",
+        "nationality": "Colombia",
+        "club": "Palmeiras",
+        "league": "Serie A",
+        "appearances": {
+            "matches_played": 13,
+            "started": 12,
+            "minutes_played": 1016
+        },
+        "core_stats": {
+            "goals": 3,
+            "assists": 0,
+            "xg": 1.58,
+            "xgot": 2.42,
+            "npxg": 1.58,
+            "xa": 1.14,
+            "xgi": 2.72,
+            "clean_sheets": 1,
+            "goals_conceded": 8,
+            "xgc": 8.97
+        },
+        "detailed_actions": {
+            "shots": 22,
+            "shots_on_target": 9,
+            "chances_created": 16,
+            "big_chances_created": 2,
+            "clearances": 8,
+            "blocks": 4,
+            "interceptions": 11,
+            "tackles": 20,
+            "recoveries": 60
+        },
+        "discipline": {
+            "yellow_cards": 4,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 784834,
+        "name": "Jorge Carrascal",
+        "position": "Right Winger",
+        "nationality": "Colombia",
+        "club": "Flamengo",
+        "league": "Serie A",
+        "appearances": {
+            "matches_played": 13,
+            "started": 6,
+            "minutes_played": 616
+        },
+        "core_stats": {
+            "goals": 2,
+            "assists": 1,
+            "xg": 1.87,
+            "xgot": 1.88,
+            "npxg": 1.87,
+            "xa": 1.57,
+            "xgi": 3.44,
+            "clean_sheets": null,
+            "goals_conceded": 5,
+            "xgc": 6.78
+        },
+        "detailed_actions": {
+            "shots": 19,
+            "shots_on_target": 6,
+            "chances_created": 18,
+            "big_chances_created": 2,
+            "clearances": null,
+            "blocks": 2,
+            "interceptions": 1,
+            "tackles": 10,
+            "recoveries": 32
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 2
+        }
+    },
+    {
+        "id": 207617,
+        "name": "Juan Fernando Quintero",
+        "position": "Attacking Midfielder",
+        "nationality": "Colombia",
+        "club": "River Plate",
+        "league": "Liga Profesional Apertura",
+        "appearances": {
+            "matches_played": 15,
+            "started": 6,
+            "minutes_played": 639
+        },
+        "core_stats": {
+            "goals": 3,
+            "assists": 3,
+            "xg": 2.17,
+            "xgot": 3.46,
+            "npxg": 1.38,
+            "xa": 3.08,
+            "xgi": 5.25,
+            "clean_sheets": null,
+            "goals_conceded": 7,
+            "xgc": 5.74
+        },
+        "detailed_actions": {
+            "shots": 30,
+            "shots_on_target": 14,
+            "chances_created": 29,
+            "big_chances_created": 7,
+            "clearances": 4,
+            "blocks": null,
+            "interceptions": 3,
+            "tackles": 3,
+            "recoveries": 30
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 164684,
+        "name": "James Rodriguez",
+        "position": "Attacking Midfielder",
+        "nationality": "Colombia",
+        "club": "Minnesota United",
+        "league": "Major League Soccer",
+        "appearances": {
+            "matches_played": 6,
+            "started": 2,
+            "minutes_played": 194
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 2,
+            "xg": 0.22,
+            "xgot": 0.3,
+            "npxg": 0.22,
+            "xa": 1.99,
+            "xgi": 2.21,
+            "clean_sheets": null,
+            "goals_conceded": 4,
+            "xgc": 2.03
+        },
+        "detailed_actions": {
+            "shots": 9,
+            "shots_on_target": 3,
+            "chances_created": 14,
+            "big_chances_created": 6,
+            "clearances": null,
+            "blocks": null,
+            "interceptions": null,
+            "tackles": 3,
+            "recoveries": 10
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 837870,
+        "name": "Jaminton Campaz",
+        "position": "Left Winger",
+        "nationality": "Colombia",
+        "club": "Rosario Central",
+        "league": "Liga Profesional Apertura",
+        "appearances": {
+            "matches_played": 12,
+            "started": 8,
+            "minutes_played": 750
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 4,
+            "xg": 1.3,
+            "xgot": 1.27,
+            "npxg": 1.3,
+            "xa": 2.86,
+            "xgi": 4.16,
+            "clean_sheets": null,
+            "goals_conceded": 9,
+            "xgc": 9.37
+        },
+        "detailed_actions": {
+            "shots": 31,
+            "shots_on_target": 14,
+            "chances_created": 22,
+            "big_chances_created": 6,
+            "clearances": 2,
+            "blocks": null,
+            "interceptions": 1,
+            "tackles": 13,
+            "recoveries": 36
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 860914,
+        "name": "Luis Diaz",
+        "position": "Left Winger",
+        "nationality": "Colombia",
+        "club": "Bayern München",
+        "league": "Bundesliga",
+        "appearances": {
+            "matches_played": 32,
+            "started": 27,
+            "minutes_played": 2450
+        },
+        "core_stats": {
+            "goals": 15,
+            "assists": 14,
+            "xg": 15.1,
+            "xgot": 13.56,
+            "npxg": 15.1,
+            "xa": 7.74,
+            "xgi": 22.84,
+            "clean_sheets": 4,
+            "goals_conceded": 29,
+            "xgc": 30.7
+        },
+        "detailed_actions": {
+            "shots": 88,
+            "shots_on_target": 37,
+            "chances_created": 65,
+            "big_chances_created": 17,
+            "clearances": 2,
+            "blocks": 2,
+            "interceptions": 14,
+            "tackles": 21,
+            "recoveries": 138
+        },
+        "discipline": {
+            "yellow_cards": 5,
+            "red_cards": 1
+        }
+    },
+    {
+        "id": 40636,
+        "name": "Luis Suarez",
+        "position": "Striker",
+        "nationality": "Colombia",
+        "club": "Inter Miami CF",
+        "league": "Major League Soccer",
+        "appearances": {
+            "matches_played": 11,
+            "started": 7,
+            "minutes_played": 614
+        },
+        "core_stats": {
+            "goals": 6,
+            "assists": 1,
+            "xg": 5.11,
+            "xgot": 5.5,
+            "npxg": 5.11,
+            "xa": 1.84,
+            "xgi": 6.95,
+            "clean_sheets": 1,
+            "goals_conceded": 11,
+            "xgc": 10.61
+        },
+        "detailed_actions": {
+            "shots": 23,
+            "shots_on_target": 13,
+            "chances_created": 13,
+            "big_chances_created": 2,
+            "clearances": 4,
+            "blocks": 1,
+            "interceptions": 1,
+            "tackles": 3,
+            "recoveries": 15
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 291425,
+        "name": "Jhon Cordoba",
+        "position": "Striker",
+        "nationality": "Colombia",
+        "club": "FC Krasnodar",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 28,
+            "started": 28,
+            "minutes_played": 2484
+        },
+        "core_stats": {
+            "goals": 17,
+            "assists": 6,
+            "xg": 14.1,
+            "xgot": 18.2,
+            "npxg": 14.1,
+            "xa": 2.97,
+            "xgi": 17.07,
+            "clean_sheets": 13,
+            "goals_conceded": 20,
+            "xgc": 25.45
+        },
+        "detailed_actions": {
+            "shots": 89,
+            "shots_on_target": 42,
+            "chances_created": 31,
+            "big_chances_created": 7,
+            "clearances": 35,
+            "blocks": 4,
+            "interceptions": 2,
+            "tackles": 17,
+            "recoveries": 46
+        },
+        "discipline": {
+            "yellow_cards": 4,
+            "red_cards": 2
+        }
+    }
+]

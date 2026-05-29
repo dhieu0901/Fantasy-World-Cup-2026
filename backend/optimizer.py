@@ -312,6 +312,19 @@ def optimize_lp(players: list[dict], stage: str = "GROUP_MD1",
         prob += pulp.lpSum(
             player_vars[p["id"]] for p in country_players
         ) <= max_per_country, f"Country_{sid}"
+        
+        # Hard constraint: Max 1 LB and Max 1 RB per team
+        # IMPORTANT LIMITATION (Pre-MD1): 
+        # Only ~5% of players (Spain, Portugal, Curacao) have `raw_position` imported from FotMob.
+        # For teams without `raw_position`, these constraints will NOT fire and the optimizer
+        # might still pick 2 LBs if their xPts are high enough. We will import the rest after MD1.
+        team_lbs = [p for p in country_players if p.get("raw_position") in ["Left Back", "Left Wing-Back"]]
+        if team_lbs:
+            prob += pulp.lpSum(player_vars[p["id"]] for p in team_lbs) <= 1, f"MaxLB_{sid}"
+            
+        team_rbs = [p for p in country_players if p.get("raw_position") in ["Right Back", "Right Wing-Back"]]
+        if team_rbs:
+            prob += pulp.lpSum(player_vars[p["id"]] for p in team_rbs) <= 1, f"MaxRB_{sid}"
 
     # Constraint 5: Locked in/out
     for pid in locked_in:
@@ -509,7 +522,7 @@ def optimize_squad(stage: str = "GROUP_MD1",
     # Get all active players with their stats and next match date
     rows = conn.execute("""
         SELECT p.id, p.first_name, p.last_name, p.known_name,
-               p.squad_id, p.position, p.price, p.status,
+               p.squad_id, p.position, p.price, p.status, p.raw_position,
                p.percent_selected, p.total_points, p.avg_points, p.form,
                s.name as team_name, s.abbr as team_abbr, s."group" as team_group,
                MIN(f.match_date) as next_match_date

@@ -1,0 +1,1072 @@
+[
+    {
+        "id": 206088,
+        "name": "Luis Mejía",
+        "position": "Keeper",
+        "nationality": "Panama",
+        "club": "Nacional",
+        "league": "Liga AUF Uruguaya Apertura",
+        "appearances": {
+            "matches_played": 12,
+            "started": 0,
+            "minutes_played": 1080
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": null,
+            "xgc": null
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        "goalkeeping_metrics": {
+            "penalties_conceded": null,
+            "penalties_saved": null,
+            "saves": null,
+            "goal_prevented": null
+        }
+    },
+    {
+        "id": 1330683,
+        "name": "César Samudio",
+        "position": "keeper",
+        "nationality": "Panama",
+        "club": "CD Marathon",
+        "league": null,
+        "appearances": {
+            "matches_played": 0,
+            "started": 0,
+            "minutes_played": 0
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": null,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": null,
+            "shots_on_target": null,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": null,
+            "blocks": null,
+            "interceptions": null,
+            "tackles": null,
+            "recoveries": null
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 531913,
+        "name": "Orlando Mosquera",
+        "position": "Keeper",
+        "nationality": "Panama",
+        "club": "Al-Fayha",
+        "league": "Saudi Pro League",
+        "appearances": {
+            "matches_played": 32,
+            "started": 0,
+            "minutes_played": 2880
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 7,
+            "goals_conceded": 50,
+            "xgc": null
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        },
+        "goalkeeping_metrics": {
+            "penalties_conceded": 2,
+            "penalties_saved": 2,
+            "saves": 97,
+            "goal_prevented": 1.72
+        }
+    },
+    {
+        "id": 643638,
+        "name": "Fidel Escobar",
+        "position": "Center Back",
+        "nationality": "Panama",
+        "club": "Deportivo Saprissa",
+        "league": null,
+        "appearances": {
+            "matches_played": 0,
+            "started": 0,
+            "minutes_played": 0
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": 3,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": 0,
+            "shots_on_target": null,
+            "chances_created": 2,
+            "big_chances_created": null,
+            "clearances": 15,
+            "blocks": null,
+            "interceptions": 4,
+            "tackles": 2,
+            "recoveries": 4
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1223132,
+        "name": "José Córdoba",
+        "position": "Center Back",
+        "nationality": "Panama",
+        "club": "Norwich City",
+        "league": "Championship",
+        "appearances": {
+            "matches_played": 28,
+            "started": 24,
+            "minutes_played": 2250
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 1,
+            "xg": 0.57,
+            "xgot": 0.16,
+            "npxg": 0.57,
+            "xa": 0.78,
+            "xgi": 1.35,
+            "clean_sheets": 5,
+            "goals_conceded": 31,
+            "xgc": 32.12
+        },
+        "detailed_actions": {
+            "shots": 9,
+            "shots_on_target": 2,
+            "chances_created": 6,
+            "big_chances_created": 1,
+            "clearances": 146,
+            "blocks": 23,
+            "interceptions": 28,
+            "tackles": 36,
+            "recoveries": 155
+        },
+        "discipline": {
+            "yellow_cards": 4,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 688449,
+        "name": "Andrés Andrade",
+        "position": "Center Back",
+        "nationality": "Panama",
+        "club": "LASK",
+        "league": "Bundesliga",
+        "appearances": {
+            "matches_played": 30,
+            "started": 30,
+            "minutes_played": 2697
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 2,
+            "xg": 2.43,
+            "xgot": 2.11,
+            "npxg": 2.43,
+            "xa": 3.51,
+            "xgi": 5.94,
+            "clean_sheets": 8,
+            "goals_conceded": 41,
+            "xgc": 42.05
+        },
+        "detailed_actions": {
+            "shots": 25,
+            "shots_on_target": 5,
+            "chances_created": 34,
+            "big_chances_created": 11,
+            "clearances": 177,
+            "blocks": 31,
+            "interceptions": 32,
+            "tackles": 58,
+            "recoveries": 121
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 888966,
+        "name": "César Blackman",
+        "position": "Right Back",
+        "nationality": "Panama",
+        "club": "Slovan Bratislava",
+        "league": "1. Liga",
+        "appearances": {
+            "matches_played": 27,
+            "started": 23,
+            "minutes_played": 2176
+        },
+        "core_stats": {
+            "goals": 2,
+            "assists": 6,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 7,
+            "goals_conceded": 32,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": 17,
+            "shots_on_target": 2,
+            "chances_created": 29,
+            "big_chances_created": 3,
+            "clearances": 48,
+            "blocks": 1,
+            "interceptions": 23,
+            "tackles": 44,
+            "recoveries": 123
+        },
+        "discipline": {
+            "yellow_cards": 4,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 688448,
+        "name": "Jiovany Ramos",
+        "position": "Center Back",
+        "nationality": "Panama",
+        "club": "Academia Puerto Cabello",
+        "league": "Primera Division - Clausura First Stage",
+        "appearances": {
+            "matches_played": 7,
+            "started": 7,
+            "minutes_played": 630
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 1,
+            "goals_conceded": null,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": 0,
+            "shots_on_target": null,
+            "chances_created": 1,
+            "big_chances_created": null,
+            "clearances": 4,
+            "blocks": 1,
+            "interceptions": 1,
+            "tackles": 5,
+            "recoveries": 8
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1454648,
+        "name": "Edgardo Fariña",
+        "position": "Center Back",
+        "nationality": "Panama",
+        "club": "Nizhny Novgorod",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 14,
+            "started": 13,
+            "minutes_played": 1084
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": 0.37,
+            "xgot": 0.19,
+            "npxg": 0.37,
+            "xa": 0.22,
+            "xgi": 0.59,
+            "clean_sheets": 3,
+            "goals_conceded": 15,
+            "xgc": 16.83
+        },
+        "detailed_actions": {
+            "shots": 8,
+            "shots_on_target": 1,
+            "chances_created": 2,
+            "big_chances_created": 1,
+            "clearances": 85,
+            "blocks": 9,
+            "interceptions": 19,
+            "tackles": 31,
+            "recoveries": 49
+        },
+        "discipline": {
+            "yellow_cards": 5,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1648656,
+        "name": "Martín Krug",
+        "position": "Center Back",
+        "nationality": "Panama",
+        "club": "Levante",
+        "league": null,
+        "appearances": {
+            "matches_played": 0,
+            "started": 0,
+            "minutes_played": 0
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": null,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": null,
+            "shots_on_target": null,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": null,
+            "blocks": null,
+            "interceptions": null,
+            "tackles": null,
+            "recoveries": null
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 924235,
+        "name": "Jorge Gutiérrez",
+        "position": "Left Back",
+        "nationality": "Panama",
+        "club": "Deportivo La Guaira",
+        "league": "Primera Division - Clausura First Stage",
+        "appearances": {
+            "matches_played": 9,
+            "started": 9,
+            "minutes_played": 810
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 5,
+            "xg": 0.15,
+            "xgot": 0.06,
+            "npxg": 0.15,
+            "xa": 0.59,
+            "xgi": 0.74,
+            "clean_sheets": null,
+            "goals_conceded": 13,
+            "xgc": 11.55
+        },
+        "detailed_actions": {
+            "shots": 3,
+            "shots_on_target": 1,
+            "chances_created": 4,
+            "big_chances_created": 2,
+            "clearances": 12,
+            "blocks": null,
+            "interceptions": 3,
+            "tackles": 15,
+            "recoveries": 30
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 501847,
+        "name": "Roderick Miller",
+        "position": "defender",
+        "nationality": "Panama",
+        "club": "Turan Tovuz",
+        "league": null,
+        "appearances": {
+            "matches_played": 0,
+            "started": 0,
+            "minutes_played": 0
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": null,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": 0,
+            "shots_on_target": null,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": null,
+            "blocks": 1,
+            "interceptions": null,
+            "tackles": null,
+            "recoveries": null
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 503710,
+        "name": "Éric Davis",
+        "position": "Left Wing-Back",
+        "nationality": "Panama",
+        "club": "CD Plaza Amador",
+        "league": null,
+        "appearances": {
+            "matches_played": 0,
+            "started": 0,
+            "minutes_played": 0
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": null,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": null,
+            "shots_on_target": null,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": null,
+            "blocks": null,
+            "interceptions": null,
+            "tackles": null,
+            "recoveries": null
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 727101,
+        "name": "Cristian Martínez",
+        "position": "Defensive Midfielder",
+        "nationality": "Panama",
+        "club": "Hapoel Ironi Kiryat Shmona",
+        "league": "Ligat ha'Al",
+        "appearances": {
+            "matches_played": 31,
+            "started": 28,
+            "minutes_played": 2437
+        },
+        "core_stats": {
+            "goals": 4,
+            "assists": 1,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 3,
+            "goals_conceded": 43,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": 23,
+            "shots_on_target": 9,
+            "chances_created": 37,
+            "big_chances_created": 5,
+            "clearances": 12,
+            "blocks": 1,
+            "interceptions": 39,
+            "tackles": 31,
+            "recoveries": 165
+        },
+        "discipline": {
+            "yellow_cards": 5,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1017520,
+        "name": "Carlos Harvey",
+        "position": "Center Back",
+        "nationality": "Panama",
+        "club": "Minnesota United",
+        "league": "Major League Soccer",
+        "appearances": {
+            "matches_played": 4,
+            "started": 1,
+            "minutes_played": 97
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": 0.01,
+            "xgi": 0.01,
+            "clean_sheets": null,
+            "goals_conceded": 5,
+            "xgc": 4.08
+        },
+        "detailed_actions": {
+            "shots": 0,
+            "shots_on_target": null,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": 4,
+            "blocks": 2,
+            "interceptions": 1,
+            "tackles": 2,
+            "recoveries": 6
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 643682,
+        "name": "Adalberto Carrasquilla",
+        "position": "Central Midfielder",
+        "nationality": "Panama",
+        "club": "Pumas",
+        "league": "Liga MX Clausura",
+        "appearances": {
+            "matches_played": 21,
+            "started": 18,
+            "minutes_played": 1601
+        },
+        "core_stats": {
+            "goals": 2,
+            "assists": 2,
+            "xg": 0.08,
+            "xgot": 0.11,
+            "npxg": 0.08,
+            "xa": 0.67,
+            "xgi": 0.75,
+            "clean_sheets": null,
+            "goals_conceded": null,
+            "xgc": 0.65
+        },
+        "detailed_actions": {
+            "shots": 1,
+            "shots_on_target": 1,
+            "chances_created": 3,
+            "big_chances_created": null,
+            "clearances": null,
+            "blocks": null,
+            "interceptions": 2,
+            "tackles": 3,
+            "recoveries": 3
+        },
+        "discipline": {
+            "yellow_cards": 6,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 308131,
+        "name": "Aníbal Godoy",
+        "position": "Central Midfielder",
+        "nationality": "Panama",
+        "club": "San Diego FC",
+        "league": "Major League Soccer",
+        "appearances": {
+            "matches_played": 14,
+            "started": 10,
+            "minutes_played": 797
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 1,
+            "xg": 0.07,
+            "xgot": null,
+            "npxg": 0.07,
+            "xa": 0.7,
+            "xgi": 0.77,
+            "clean_sheets": null,
+            "goals_conceded": 16,
+            "xgc": 15.72
+        },
+        "detailed_actions": {
+            "shots": 1,
+            "shots_on_target": null,
+            "chances_created": 3,
+            "big_chances_created": 1,
+            "clearances": 3,
+            "blocks": 1,
+            "interceptions": 8,
+            "tackles": 19,
+            "recoveries": 49
+        },
+        "discipline": {
+            "yellow_cards": 3,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 183088,
+        "name": "Alberto Quintero",
+        "position": "midfielder",
+        "nationality": "Panama",
+        "club": "CD Plaza Amador",
+        "league": null,
+        "appearances": {
+            "matches_played": 0,
+            "started": 0,
+            "minutes_played": 0
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": null,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": null,
+            "shots_on_target": null,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": null,
+            "blocks": null,
+            "interceptions": null,
+            "tackles": null,
+            "recoveries": null
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 526710,
+        "name": "Yoel Bárcenas",
+        "position": "Central Midfielder",
+        "nationality": "Panama",
+        "club": "Mazatlan FC",
+        "league": "Liga MX Clausura",
+        "appearances": {
+            "matches_played": 17,
+            "started": 16,
+            "minutes_played": 1398
+        },
+        "core_stats": {
+            "goals": 3,
+            "assists": 1,
+            "xg": 0.72,
+            "xgot": 0.45,
+            "npxg": 0.72,
+            "xa": 0.98,
+            "xgi": 1.7,
+            "clean_sheets": null,
+            "goals_conceded": 16,
+            "xgc": 19.85
+        },
+        "detailed_actions": {
+            "shots": 11,
+            "shots_on_target": 4,
+            "chances_created": 6,
+            "big_chances_created": 1,
+            "clearances": 12,
+            "blocks": null,
+            "interceptions": 6,
+            "tackles": 12,
+            "recoveries": 43
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1054138,
+        "name": "Tomás Rodríguez",
+        "position": "Striker",
+        "nationality": "Panama",
+        "club": "Deportivo Saprissa",
+        "league": "Primera Division - Clausura First Stage",
+        "appearances": {
+            "matches_played": 7,
+            "started": 7,
+            "minutes_played": 606
+        },
+        "core_stats": {
+            "goals": 2,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": null,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": null,
+            "shots_on_target": null,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": null,
+            "blocks": null,
+            "interceptions": null,
+            "tackles": null,
+            "recoveries": null
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 1
+        }
+    },
+    {
+        "id": 940333,
+        "name": "José Luis Rodríguez",
+        "position": "Left Winger",
+        "nationality": "Panama",
+        "club": "FC Juarez",
+        "league": "Liga MX Clausura",
+        "appearances": {
+            "matches_played": 16,
+            "started": 16,
+            "minutes_played": 1336
+        },
+        "core_stats": {
+            "goals": 2,
+            "assists": 4,
+            "xg": 1.64,
+            "xgot": 1.5,
+            "npxg": 1.64,
+            "xa": 2.05,
+            "xgi": 3.69,
+            "clean_sheets": 2,
+            "goals_conceded": 27,
+            "xgc": 23.01
+        },
+        "detailed_actions": {
+            "shots": 25,
+            "shots_on_target": 8,
+            "chances_created": 24,
+            "big_chances_created": 5,
+            "clearances": 16,
+            "blocks": 1,
+            "interceptions": 8,
+            "tackles": 22,
+            "recoveries": 55
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 940334,
+        "name": "José Fajardo",
+        "position": "Striker",
+        "nationality": "Panama",
+        "club": "Universidad Catolica",
+        "league": "Serie A",
+        "appearances": {
+            "matches_played": 15,
+            "started": 10,
+            "minutes_played": 927
+        },
+        "core_stats": {
+            "goals": 3,
+            "assists": 1,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 1,
+            "goals_conceded": 7,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": 37,
+            "shots_on_target": 11,
+            "chances_created": 11,
+            "big_chances_created": 1,
+            "clearances": 9,
+            "blocks": 1,
+            "interceptions": 3,
+            "tackles": 10,
+            "recoveries": 21
+        },
+        "discipline": {
+            "yellow_cards": 3,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1137803,
+        "name": "César Yanis",
+        "position": "Central Midfielder",
+        "nationality": "Panama",
+        "club": "Cobresal",
+        "league": "Primera Division",
+        "appearances": {
+            "matches_played": 11,
+            "started": 9,
+            "minutes_played": 744
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 2,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 2,
+            "goals_conceded": 11,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": 11,
+            "shots_on_target": 4,
+            "chances_created": 11,
+            "big_chances_created": null,
+            "clearances": 7,
+            "blocks": null,
+            "interceptions": 6,
+            "tackles": 6,
+            "recoveries": 55
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1404414,
+        "name": "Azarias Londoño",
+        "position": "Right Winger",
+        "nationality": "Panama",
+        "club": "Universidad Catolica",
+        "league": "Serie A",
+        "appearances": {
+            "matches_played": 9,
+            "started": 4,
+            "minutes_played": 461
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 1,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": 6,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": 11,
+            "shots_on_target": 5,
+            "chances_created": 8,
+            "big_chances_created": 4,
+            "clearances": 1,
+            "blocks": null,
+            "interceptions": null,
+            "tackles": 5,
+            "recoveries": 29
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1817875,
+        "name": "Kadir Barría",
+        "position": "Striker",
+        "nationality": "Panama",
+        "club": "Botafogo RJ",
+        "league": "Serie A",
+        "appearances": {
+            "matches_played": 8,
+            "started": 2,
+            "minutes_played": 253
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 1,
+            "xg": 1.13,
+            "xgot": 0.5,
+            "npxg": 1.13,
+            "xa": 0.15,
+            "xgi": 1.28,
+            "clean_sheets": null,
+            "goals_conceded": 3,
+            "xgc": 2.64
+        },
+        "detailed_actions": {
+            "shots": 11,
+            "shots_on_target": 3,
+            "chances_created": 4,
+            "big_chances_created": 1,
+            "clearances": 1,
+            "blocks": null,
+            "interceptions": 1,
+            "tackles": 5,
+            "recoveries": 9
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 574077,
+        "name": "Ismael Díaz",
+        "position": "Left Winger",
+        "nationality": "Panama",
+        "club": "Leon",
+        "league": "Liga MX Clausura",
+        "appearances": {
+            "matches_played": 15,
+            "started": 13,
+            "minutes_played": 1161
+        },
+        "core_stats": {
+            "goals": 5,
+            "assists": 5,
+            "xg": 4.76,
+            "xgot": 3.3,
+            "npxg": 3.97,
+            "xa": 0.4,
+            "xgi": 5.16,
+            "clean_sheets": null,
+            "goals_conceded": 14,
+            "xgc": 14.59
+        },
+        "detailed_actions": {
+            "shots": 21,
+            "shots_on_target": 10,
+            "chances_created": 10,
+            "big_chances_created": 1,
+            "clearances": 9,
+            "blocks": 2,
+            "interceptions": 3,
+            "tackles": 8,
+            "recoveries": 27
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 312159,
+        "name": "Cecilio Waterman",
+        "position": "Striker",
+        "nationality": "Panama",
+        "club": "Universidad de Concepcion",
+        "league": "Primera Division",
+        "appearances": {
+            "matches_played": 11,
+            "started": 11,
+            "minutes_played": 964
+        },
+        "core_stats": {
+            "goals": 3,
+            "assists": 1,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 2,
+            "goals_conceded": 20,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": 32,
+            "shots_on_target": 17,
+            "chances_created": 6,
+            "big_chances_created": 1,
+            "clearances": 13,
+            "blocks": 2,
+            "interceptions": 1,
+            "tackles": 3,
+            "recoveries": 15
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 1
+        }
+    }
+]

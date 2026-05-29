@@ -1,0 +1,747 @@
+[
+    {
+        "id": 31047,
+        "name": "Guillermo Ochoa",
+        "position": "Keeper",
+        "nationality": "Mexico",
+        "club": "AEL Limassol",
+        "league": "Cyprus League",
+        "appearances": {
+            "matches_played": 22,
+            "started": 0,
+            "minutes_played": 1980
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": null,
+            "xgc": null
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 0
+        },
+        "goalkeeping_metrics": {
+            "penalties_conceded": null,
+            "penalties_saved": null,
+            "saves": null,
+            "goal_prevented": null
+        }
+    },
+    {
+        "id": 724529,
+        "name": "Luis Malagón",
+        "position": "Keeper",
+        "nationality": "Mexico",
+        "club": "CF America",
+        "league": "Liga MX Clausura",
+        "appearances": {
+            "matches_played": 9,
+            "started": 0,
+            "minutes_played": 810
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 1,
+            "goals_conceded": 1,
+            "xgc": null
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        "goalkeeping_metrics": {
+            "penalties_conceded": null,
+            "penalties_saved": null,
+            "saves": 3,
+            "goal_prevented": 0.13
+        }
+    },
+    {
+        "id": 242197,
+        "name": "Julio González",
+        "position": "Keeper",
+        "nationality": "Mexico",
+        "club": "Puebla",
+        "league": "Liga MX Apertura",
+        "appearances": {
+            "matches_played": 11,
+            "started": 0,
+            "minutes_played": 945
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 1,
+            "goals_conceded": 24,
+            "xgc": null
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        },
+        "goalkeeping_metrics": {
+            "penalties_conceded": 3,
+            "penalties_saved": 1,
+            "saves": 24,
+            "goal_prevented": -6.7
+        }
+    },
+    {
+        "id": 664644,
+        "name": "César Montes",
+        "position": "Center Back",
+        "nationality": "Mexico",
+        "club": "Lokomotiv Moscow",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 26,
+            "started": 26,
+            "minutes_played": 2208
+        },
+        "core_stats": {
+            "goals": 4,
+            "assists": 0,
+            "xg": 1.84,
+            "xgot": 2.94,
+            "npxg": 1.84,
+            "xa": 1.91,
+            "xgi": 3.75,
+            "clean_sheets": 6,
+            "goals_conceded": 29,
+            "xgc": 34.97
+        },
+        "detailed_actions": {
+            "shots": 27,
+            "shots_on_target": 11,
+            "chances_created": 7,
+            "big_chances_created": 1,
+            "clearances": 198,
+            "blocks": 17,
+            "interceptions": 17,
+            "tackles": 35,
+            "recoveries": 66
+        },
+        "discipline": {
+            "yellow_cards": 5,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 914103,
+        "name": "Johan Vásquez",
+        "position": "Center Back",
+        "nationality": "Mexico",
+        "club": "Genoa",
+        "league": "Serie A",
+        "appearances": {
+            "matches_played": 36,
+            "started": 36,
+            "minutes_played": 3217
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 0,
+            "xg": 1.29,
+            "xgot": 1.16,
+            "npxg": 1.29,
+            "xa": 0.71,
+            "xgi": 2.0,
+            "clean_sheets": 8,
+            "goals_conceded": 49,
+            "xgc": 45.55
+        },
+        "detailed_actions": {
+            "shots": 24,
+            "shots_on_target": 6,
+            "chances_created": 9,
+            "big_chances_created": null,
+            "clearances": 154,
+            "blocks": 28,
+            "interceptions": 45,
+            "tackles": 59,
+            "recoveries": 122
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 597976,
+        "name": "Jesús Gallardo",
+        "position": "Left Back",
+        "nationality": "Mexico",
+        "club": "Toluca",
+        "league": "Liga MX Clausura",
+        "appearances": {
+            "matches_played": 13,
+            "started": 10,
+            "minutes_played": 986
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 4,
+            "xg": 1.28,
+            "xgot": 2.79,
+            "npxg": 0.49,
+            "xa": 1.21,
+            "xgi": 2.49,
+            "clean_sheets": 2,
+            "goals_conceded": 7,
+            "xgc": 4.59
+        },
+        "detailed_actions": {
+            "shots": 7,
+            "shots_on_target": 4,
+            "chances_created": 7,
+            "big_chances_created": 2,
+            "clearances": 11,
+            "blocks": 2,
+            "interceptions": 8,
+            "tackles": 11,
+            "recoveries": 16
+        },
+        "discipline": {
+            "yellow_cards": 5,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 727586,
+        "name": "Jorge Sánchez",
+        "position": "Right Back",
+        "nationality": "Mexico",
+        "club": "PAOK Thessaloniki",
+        "league": "Super League",
+        "appearances": {
+            "matches_played": 10,
+            "started": 7,
+            "minutes_played": 633
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": 0.56,
+            "xgot": 0.14,
+            "npxg": 0.56,
+            "xa": 1.2,
+            "xgi": 1.76,
+            "clean_sheets": 4,
+            "goals_conceded": 15,
+            "xgc": 17.64
+        },
+        "detailed_actions": {
+            "shots": 14,
+            "shots_on_target": 1,
+            "chances_created": 20,
+            "big_chances_created": null,
+            "clearances": 24,
+            "blocks": 1,
+            "interceptions": 8,
+            "tackles": 25,
+            "recoveries": 40
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1074586,
+        "name": "Israel Reyes",
+        "position": "Center Back",
+        "nationality": "Mexico",
+        "club": "CF America",
+        "league": "Liga MX Clausura",
+        "appearances": {
+            "matches_played": 15,
+            "started": 15,
+            "minutes_played": 1350
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 1,
+            "xg": 0.68,
+            "xgot": null,
+            "npxg": 0.68,
+            "xa": 0.09,
+            "xgi": 0.77,
+            "clean_sheets": 3,
+            "goals_conceded": 2,
+            "xgc": 4.53
+        },
+        "detailed_actions": {
+            "shots": 2,
+            "shots_on_target": null,
+            "chances_created": 4,
+            "big_chances_created": null,
+            "clearances": 18,
+            "blocks": 3,
+            "interceptions": 10,
+            "tackles": 5,
+            "recoveries": 13
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1027447,
+        "name": "Julián Araujo",
+        "position": "Right Back",
+        "nationality": "Mexico",
+        "club": "Celtic",
+        "league": "Premiership",
+        "appearances": {
+            "matches_played": 10,
+            "started": 9,
+            "minutes_played": 787
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 0,
+            "xg": 0.42,
+            "xgot": 0.96,
+            "npxg": 0.42,
+            "xa": 1.44,
+            "xgi": 1.86,
+            "clean_sheets": 2,
+            "goals_conceded": 11,
+            "xgc": 10.3
+        },
+        "detailed_actions": {
+            "shots": 9,
+            "shots_on_target": 4,
+            "chances_created": 10,
+            "big_chances_created": 1,
+            "clearances": 26,
+            "blocks": 3,
+            "interceptions": 10,
+            "tackles": 17,
+            "recoveries": 35
+        },
+        "discipline": {
+            "yellow_cards": 3,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 783505,
+        "name": "Edson Álvarez",
+        "position": "Defensive Midfielder",
+        "nationality": "Mexico",
+        "club": "Fenerbahçe",
+        "league": "Super Lig",
+        "appearances": {
+            "matches_played": 12,
+            "started": 10,
+            "minutes_played": 768
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 1,
+            "xg": 0.71,
+            "xgot": 0.32,
+            "npxg": 0.71,
+            "xa": 0.3,
+            "xgi": 1.01,
+            "clean_sheets": null,
+            "goals_conceded": 8,
+            "xgc": 8.18
+        },
+        "detailed_actions": {
+            "shots": 10,
+            "shots_on_target": 5,
+            "chances_created": 9,
+            "big_chances_created": 1,
+            "clearances": 10,
+            "blocks": 6,
+            "interceptions": 17,
+            "tackles": 28,
+            "recoveries": 56
+        },
+        "discipline": {
+            "yellow_cards": 4,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 527616,
+        "name": "Luis Chávez",
+        "position": "Central Midfielder",
+        "nationality": "Mexico",
+        "club": "Dinamo Moscow",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 4,
+            "started": 2,
+            "minutes_played": 158
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": 0.09,
+            "xgot": 0.04,
+            "npxg": 0.09,
+            "xa": 0.05,
+            "xgi": 0.14,
+            "clean_sheets": null,
+            "goals_conceded": 1,
+            "xgc": 2.75
+        },
+        "detailed_actions": {
+            "shots": 3,
+            "shots_on_target": 1,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": 3,
+            "blocks": null,
+            "interceptions": 5,
+            "tackles": null,
+            "recoveries": 4
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 559986,
+        "name": "Orbelín Pineda",
+        "position": "Central Midfielder",
+        "nationality": "Mexico",
+        "club": "AEK Athens",
+        "league": "Super League",
+        "appearances": {
+            "matches_played": 31,
+            "started": 29,
+            "minutes_played": 2479
+        },
+        "core_stats": {
+            "goals": 5,
+            "assists": 2,
+            "xg": 4.01,
+            "xgot": 4.5,
+            "npxg": 4.01,
+            "xa": 2.79,
+            "xgi": 6.8,
+            "clean_sheets": 14,
+            "goals_conceded": 16,
+            "xgc": 23.08
+        },
+        "detailed_actions": {
+            "shots": 36,
+            "shots_on_target": 10,
+            "chances_created": 22,
+            "big_chances_created": 4,
+            "clearances": 40,
+            "blocks": 6,
+            "interceptions": 23,
+            "tackles": 67,
+            "recoveries": 170
+        },
+        "discipline": {
+            "yellow_cards": 6,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 921174,
+        "name": "Luis Romo",
+        "position": "Center Back",
+        "nationality": "Mexico",
+        "club": "Chivas",
+        "league": "Liga MX Clausura",
+        "appearances": {
+            "matches_played": 10,
+            "started": 10,
+            "minutes_played": 850
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 1,
+            "xg": 1.18,
+            "xgot": 0.64,
+            "npxg": 1.18,
+            "xa": 1.3,
+            "xgi": 2.48,
+            "clean_sheets": 4,
+            "goals_conceded": 23,
+            "xgc": 20.44
+        },
+        "detailed_actions": {
+            "shots": 18,
+            "shots_on_target": 2,
+            "chances_created": 10,
+            "big_chances_created": 1,
+            "clearances": 70,
+            "blocks": 11,
+            "interceptions": 31,
+            "tackles": 38,
+            "recoveries": 100
+        },
+        "discipline": {
+            "yellow_cards": 5,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 772320,
+        "name": "Erick Sánchez",
+        "position": "Defensive Midfielder",
+        "nationality": "Mexico",
+        "club": "CF America",
+        "league": "Liga MX Clausura",
+        "appearances": {
+            "matches_played": 15,
+            "started": 12,
+            "minutes_played": 998
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 0,
+            "xg": 0.57,
+            "xgot": 0.3,
+            "npxg": 0.57,
+            "xa": 0.35,
+            "xgi": 0.92,
+            "clean_sheets": 2,
+            "goals_conceded": 3,
+            "xgc": 4.6
+        },
+        "detailed_actions": {
+            "shots": 10,
+            "shots_on_target": 2,
+            "chances_created": 3,
+            "big_chances_created": 1,
+            "clearances": 3,
+            "blocks": null,
+            "interceptions": 5,
+            "tackles": 13,
+            "recoveries": 15
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 954092,
+        "name": "Santiago Giménez",
+        "position": "Striker",
+        "nationality": "Mexico",
+        "club": "Milan",
+        "league": "Serie A",
+        "appearances": {
+            "matches_played": 16,
+            "started": 11,
+            "minutes_played": 896
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 1,
+            "xg": 3.38,
+            "xgot": 1.98,
+            "npxg": 3.38,
+            "xa": 0.62,
+            "xgi": 4.0,
+            "clean_sheets": null,
+            "goals_conceded": 11,
+            "xgc": 9.44
+        },
+        "detailed_actions": {
+            "shots": 27,
+            "shots_on_target": 9,
+            "chances_created": 4,
+            "big_chances_created": 1,
+            "clearances": 1,
+            "blocks": 1,
+            "interceptions": 1,
+            "tackles": 8,
+            "recoveries": 14
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 521210,
+        "name": "Hirving Lozano",
+        "position": "Left Winger",
+        "nationality": "Mexico",
+        "club": "San Diego FC",
+        "league": "Major League Soccer",
+        "appearances": {
+            "matches_played": 31,
+            "started": 22,
+            "minutes_played": 1956
+        },
+        "core_stats": {
+            "goals": 11,
+            "assists": 9,
+            "xg": 10.54,
+            "xgot": 11.64,
+            "npxg": 8.96,
+            "xa": 4.96,
+            "xgi": 15.5,
+            "clean_sheets": null,
+            "goals_conceded": 23,
+            "xgc": 28.69
+        },
+        "detailed_actions": {
+            "shots": 96,
+            "shots_on_target": 31,
+            "chances_created": 38,
+            "big_chances_created": 8,
+            "clearances": 3,
+            "blocks": 2,
+            "interceptions": 8,
+            "tackles": 28,
+            "recoveries": 60
+        },
+        "discipline": {
+            "yellow_cards": 7,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 767021,
+        "name": "Uriel Antuna",
+        "position": "Right Winger",
+        "nationality": "Mexico",
+        "club": "Pumas",
+        "league": "Liga MX Clausura",
+        "appearances": {
+            "matches_played": 23,
+            "started": 11,
+            "minutes_played": 1145
+        },
+        "core_stats": {
+            "goals": 3,
+            "assists": 3,
+            "xg": 0.14,
+            "xgot": 0.27,
+            "npxg": 0.14,
+            "xa": 0.11,
+            "xgi": 0.25,
+            "clean_sheets": null,
+            "goals_conceded": 1,
+            "xgc": 1.51
+        },
+        "detailed_actions": {
+            "shots": 1,
+            "shots_on_target": 1,
+            "chances_created": 3,
+            "big_chances_created": null,
+            "clearances": 1,
+            "blocks": null,
+            "interceptions": null,
+            "tackles": null,
+            "recoveries": 1
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 1
+        }
+    },
+    {
+        "id": 720560,
+        "name": "Julián Quiñones",
+        "position": "Striker",
+        "nationality": "Mexico",
+        "club": "Al Qadsiah",
+        "league": "Saudi Pro League",
+        "appearances": {
+            "matches_played": 31,
+            "started": 31,
+            "minutes_played": 2724
+        },
+        "core_stats": {
+            "goals": 33,
+            "assists": 4,
+            "xg": 27.45,
+            "xgot": 31.17,
+            "npxg": 25.87,
+            "xa": 4.97,
+            "xgi": 32.42,
+            "clean_sheets": 8,
+            "goals_conceded": 29,
+            "xgc": 34.58
+        },
+        "detailed_actions": {
+            "shots": 136,
+            "shots_on_target": 59,
+            "chances_created": 22,
+            "big_chances_created": 10,
+            "clearances": 21,
+            "blocks": null,
+            "interceptions": 7,
+            "tackles": 19,
+            "recoveries": 88
+        },
+        "discipline": {
+            "yellow_cards": 4,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 292313,
+        "name": "Raúl Jiménez",
+        "position": "Striker",
+        "nationality": "Mexico",
+        "club": "Fulham",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 36,
+            "started": 27,
+            "minutes_played": 2199
+        },
+        "core_stats": {
+            "goals": 9,
+            "assists": 3,
+            "xg": 11.5,
+            "xgot": 10.6,
+            "npxg": 8.34,
+            "xa": 0.93,
+            "xgi": 12.43,
+            "clean_sheets": 2,
+            "goals_conceded": 28,
+            "xgc": 35.42
+        },
+        "detailed_actions": {
+            "shots": 74,
+            "shots_on_target": 19,
+            "chances_created": 25,
+            "big_chances_created": 2,
+            "clearances": 30,
+            "blocks": 3,
+            "interceptions": 8,
+            "tackles": 35,
+            "recoveries": 55
+        },
+        "discipline": {
+            "yellow_cards": 5,
+            "red_cards": 0
+        }
+    }
+]

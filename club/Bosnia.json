@@ -1,0 +1,1027 @@
+[
+    {
+        "id": 466867,
+        "name": "Nikola Vasilj",
+        "position": "Keeper",
+        "nationality": "Bosnia and Herzegovina",
+        "club": "St. Pauli",
+        "league": "Bundesliga",
+        "appearances": {
+            "matches_played": 34,
+            "started": 0,
+            "minutes_played": 3060
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 5,
+            "goals_conceded": 60,
+            "xgc": null
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        "goalkeeping_metrics": {
+            "penalties_conceded": 3,
+            "penalties_saved": 2,
+            "saves": 125,
+            "goal_prevented": 9.53
+        }
+    },
+    {
+        "id": 857661,
+        "name": "Martin Zlomislić",
+        "position": "Keeper",
+        "nationality": "Bosnia and Herzegovina",
+        "club": "Rijeka",
+        "league": "HNL",
+        "appearances": {
+            "matches_played": 33,
+            "started": 0,
+            "minutes_played": 2970
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 11,
+            "goals_conceded": 36,
+            "xgc": null
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        },
+        "goalkeeping_metrics": {
+            "penalties_conceded": 5,
+            "penalties_saved": 1,
+            "saves": 71,
+            "goal_prevented": null
+        }
+    },
+    {
+        "id": 488207,
+        "name": "Osman Hadžikić",
+        "position": "Keeper",
+        "nationality": "Bosnia and Herzegovina",
+        "club": "Slaven",
+        "league": "HNL",
+        "appearances": {
+            "matches_played": 29,
+            "started": 0,
+            "minutes_played": 2544
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 4,
+            "goals_conceded": 50,
+            "xgc": null
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 0
+        },
+        "goalkeeping_metrics": {
+            "penalties_conceded": 6,
+            "penalties_saved": 1,
+            "saves": 73,
+            "goal_prevented": null
+        }
+    },
+    {
+        "id": 304345,
+        "name": "Sead Kolašinac",
+        "position": "Center Back",
+        "nationality": "Bosnia and Herzegovina",
+        "club": "Atalanta",
+        "league": "Serie A",
+        "appearances": {
+            "matches_played": 19,
+            "started": 15,
+            "minutes_played": 1219
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": 0.19,
+            "xgot": null,
+            "npxg": 0.19,
+            "xa": 0.31,
+            "xgi": 0.5,
+            "clean_sheets": 1,
+            "goals_conceded": 16,
+            "xgc": 14.96
+        },
+        "detailed_actions": {
+            "shots": 3,
+            "shots_on_target": null,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": 32,
+            "blocks": 5,
+            "interceptions": 11,
+            "tackles": 27,
+            "recoveries": 72
+        },
+        "discipline": {
+            "yellow_cards": 3,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 958010,
+        "name": "Amar Dedić",
+        "position": "Right Back",
+        "nationality": "Bosnia and Herzegovina",
+        "club": "Benfica",
+        "league": "Liga Portugal",
+        "appearances": {
+            "matches_played": 24,
+            "started": 21,
+            "minutes_played": 1903
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 4,
+            "xg": 1.02,
+            "xgot": 0.88,
+            "npxg": 1.02,
+            "xa": 3.55,
+            "xgi": 4.57,
+            "clean_sheets": 6,
+            "goals_conceded": 18,
+            "xgc": 18.3
+        },
+        "detailed_actions": {
+            "shots": 15,
+            "shots_on_target": 2,
+            "chances_created": 24,
+            "big_chances_created": 5,
+            "clearances": 35,
+            "blocks": 4,
+            "interceptions": 16,
+            "tackles": 35,
+            "recoveries": 86
+        },
+        "discipline": {
+            "yellow_cards": 3,
+            "red_cards": 2
+        }
+    },
+    {
+        "id": 857436,
+        "name": "Nihad Mujakić",
+        "position": "Center Back",
+        "nationality": "Bosnia and Herzegovina",
+        "club": "Gaziantep FK",
+        "league": "Super Lig",
+        "appearances": {
+            "matches_played": 27,
+            "started": 24,
+            "minutes_played": 2202
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 1,
+            "xg": 0.02,
+            "xgot": 0.3,
+            "npxg": 0.02,
+            "xa": 0.38,
+            "xgi": 0.4,
+            "clean_sheets": 4,
+            "goals_conceded": 36,
+            "xgc": 35.62
+        },
+        "detailed_actions": {
+            "shots": 1,
+            "shots_on_target": 1,
+            "chances_created": 6,
+            "big_chances_created": 1,
+            "clearances": 76,
+            "blocks": 9,
+            "interceptions": 20,
+            "tackles": 25,
+            "recoveries": 93
+        },
+        "discipline": {
+            "yellow_cards": 4,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 725655,
+        "name": "Nikola Katić",
+        "position": "Center Back",
+        "nationality": "Bosnia and Herzegovina",
+        "club": "Schalke 04",
+        "league": "2. Bundesliga",
+        "appearances": {
+            "matches_played": 26,
+            "started": 25,
+            "minutes_played": 2268
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 1,
+            "xg": 1.71,
+            "xgot": 1.51,
+            "npxg": 1.71,
+            "xa": 1.32,
+            "xgi": 3.03,
+            "clean_sheets": 10,
+            "goals_conceded": 23,
+            "xgc": 27.2
+        },
+        "detailed_actions": {
+            "shots": 28,
+            "shots_on_target": 4,
+            "chances_created": 6,
+            "big_chances_created": 2,
+            "clearances": 180,
+            "blocks": 20,
+            "interceptions": 33,
+            "tackles": 41,
+            "recoveries": 71
+        },
+        "discipline": {
+            "yellow_cards": 5,
+            "red_cards": 1
+        }
+    },
+    {
+        "id": 1250485,
+        "name": "Tarik Muharemović",
+        "position": "Center Back",
+        "nationality": "Bosnia and Herzegovina",
+        "club": "Sassuolo",
+        "league": "Serie A",
+        "appearances": {
+            "matches_played": 32,
+            "started": 32,
+            "minutes_played": 2835
+        },
+        "core_stats": {
+            "goals": 2,
+            "assists": 2,
+            "xg": 1.64,
+            "xgot": 1.74,
+            "npxg": 1.64,
+            "xa": 0.44,
+            "xgi": 2.08,
+            "clean_sheets": 6,
+            "goals_conceded": 46,
+            "xgc": 49.29
+        },
+        "detailed_actions": {
+            "shots": 20,
+            "shots_on_target": 6,
+            "chances_created": 5,
+            "big_chances_created": 1,
+            "clearances": 222,
+            "blocks": 31,
+            "interceptions": 45,
+            "tackles": 44,
+            "recoveries": 91
+        },
+        "discipline": {
+            "yellow_cards": 7,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 653982,
+        "name": "Stjepan Radeljić",
+        "position": "Center Back",
+        "nationality": "Bosnia and Herzegovina",
+        "club": "Rijeka",
+        "league": "HNL",
+        "appearances": {
+            "matches_played": 25,
+            "started": 22,
+            "minutes_played": 1978
+        },
+        "core_stats": {
+            "goals": 2,
+            "assists": 1,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 9,
+            "goals_conceded": 15,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": 22,
+            "shots_on_target": 4,
+            "chances_created": 11,
+            "big_chances_created": 1,
+            "clearances": 113,
+            "blocks": 12,
+            "interceptions": 31,
+            "tackles": 33,
+            "recoveries": 95
+        },
+        "discipline": {
+            "yellow_cards": 8,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 797797,
+        "name": "Dennis Hadžikadunic",
+        "position": "Center Back",
+        "nationality": "Bosnia and Herzegovina",
+        "club": "Sampdoria",
+        "league": "Serie B",
+        "appearances": {
+            "matches_played": 28,
+            "started": 25,
+            "minutes_played": 2213
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 1,
+            "xg": 1.07,
+            "xgot": 0.58,
+            "npxg": 1.07,
+            "xa": 0.77,
+            "xgi": 1.84,
+            "clean_sheets": 5,
+            "goals_conceded": 25,
+            "xgc": 23.8
+        },
+        "detailed_actions": {
+            "shots": 13,
+            "shots_on_target": 4,
+            "chances_created": 11,
+            "big_chances_created": 1,
+            "clearances": 151,
+            "blocks": 6,
+            "interceptions": 18,
+            "tackles": 30,
+            "recoveries": 61
+        },
+        "discipline": {
+            "yellow_cards": 4,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1657810,
+        "name": "Nidal Čelik",
+        "position": "Center Back",
+        "nationality": "Bosnia and Herzegovina",
+        "club": "Lens",
+        "league": "Ligue 1",
+        "appearances": {
+            "matches_played": 8,
+            "started": 8,
+            "minutes_played": 618
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": 0.03,
+            "xgot": 0.51,
+            "npxg": 0.03,
+            "xa": 0.07,
+            "xgi": 0.1,
+            "clean_sheets": 2,
+            "goals_conceded": 9,
+            "xgc": 10.87
+        },
+        "detailed_actions": {
+            "shots": 1,
+            "shots_on_target": 1,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": 15,
+            "blocks": 5,
+            "interceptions": 9,
+            "tackles": 20,
+            "recoveries": 23
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 639558,
+        "name": "Amir Hadžiahmetović",
+        "position": "Defensive Midfielder",
+        "nationality": "Bosnia and Herzegovina",
+        "club": "Hull City",
+        "league": "Championship",
+        "appearances": {
+            "matches_played": 37,
+            "started": 26,
+            "minutes_played": 2127
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 2,
+            "xg": 0.43,
+            "xgot": null,
+            "npxg": 0.43,
+            "xa": 2.33,
+            "xgi": 2.76,
+            "clean_sheets": 3,
+            "goals_conceded": 28,
+            "xgc": 35.59
+        },
+        "detailed_actions": {
+            "shots": 12,
+            "shots_on_target": null,
+            "chances_created": 22,
+            "big_chances_created": 3,
+            "clearances": 47,
+            "blocks": 10,
+            "interceptions": 20,
+            "tackles": 52,
+            "recoveries": 125
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 541551,
+        "name": "Ivan Šunjić",
+        "position": "Defensive Midfielder",
+        "nationality": "Bosnia and Herzegovina",
+        "club": "Pafos FC",
+        "league": "Cyprus League",
+        "appearances": {
+            "matches_played": 29,
+            "started": 29,
+            "minutes_played": 2445
+        },
+        "core_stats": {
+            "goals": 4,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": null,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": null,
+            "shots_on_target": null,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": null,
+            "blocks": null,
+            "interceptions": null,
+            "tackles": null,
+            "recoveries": null
+        },
+        "discipline": {
+            "yellow_cards": 10,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1179875,
+        "name": "Ivan Bašić",
+        "position": "Central Midfielder",
+        "nationality": "Bosnia and Herzegovina",
+        "club": "FC Astana",
+        "league": null,
+        "appearances": {
+            "matches_played": 0,
+            "started": 0,
+            "minutes_played": 0
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": 0.31,
+            "xgot": 0.11,
+            "npxg": 0.31,
+            "xa": 0.83,
+            "xgi": 1.14,
+            "clean_sheets": 1,
+            "goals_conceded": 2,
+            "xgc": 2.64
+        },
+        "detailed_actions": {
+            "shots": 6,
+            "shots_on_target": 1,
+            "chances_created": 11,
+            "big_chances_created": null,
+            "clearances": 2,
+            "blocks": 2,
+            "interceptions": 1,
+            "tackles": 6,
+            "recoveries": 15
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 660148,
+        "name": "Dženis Burnić",
+        "position": "Central Midfielder",
+        "nationality": "Bosnia and Herzegovina",
+        "club": "Karlsruher SC",
+        "league": "2. Bundesliga",
+        "appearances": {
+            "matches_played": 32,
+            "started": 24,
+            "minutes_played": 2083
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 1,
+            "xg": 0.84,
+            "xgot": 0.25,
+            "npxg": 0.84,
+            "xa": 1.66,
+            "xgi": 2.5,
+            "clean_sheets": 1,
+            "goals_conceded": 52,
+            "xgc": 45.4
+        },
+        "detailed_actions": {
+            "shots": 18,
+            "shots_on_target": 3,
+            "chances_created": 12,
+            "big_chances_created": 1,
+            "clearances": 29,
+            "blocks": 1,
+            "interceptions": 21,
+            "tackles": 39,
+            "recoveries": 90
+        },
+        "discipline": {
+            "yellow_cards": 9,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1528815,
+        "name": "Ermin Mahmić",
+        "position": "Attacking Midfielder",
+        "nationality": "Bosnia and Herzegovina",
+        "club": "Slovan Liberec",
+        "league": "1. Liga",
+        "appearances": {
+            "matches_played": 28,
+            "started": 20,
+            "minutes_played": 1553
+        },
+        "core_stats": {
+            "goals": 7,
+            "assists": 3,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 1,
+            "goals_conceded": 21,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": 69,
+            "shots_on_target": 22,
+            "chances_created": 35,
+            "big_chances_created": 5,
+            "clearances": 14,
+            "blocks": 2,
+            "interceptions": 2,
+            "tackles": 16,
+            "recoveries": 70
+        },
+        "discipline": {
+            "yellow_cards": 6,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1415104,
+        "name": "Benjamin Tahirović",
+        "position": "Central Midfielder",
+        "nationality": "Bosnia and Herzegovina",
+        "club": "Brøndby IF",
+        "league": "Superligaen",
+        "appearances": {
+            "matches_played": 25,
+            "started": 13,
+            "minutes_played": 1198
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 1,
+            "xg": 1.31,
+            "xgot": 1.54,
+            "npxg": 1.31,
+            "xa": 1.57,
+            "xgi": 2.88,
+            "clean_sheets": null,
+            "goals_conceded": 16,
+            "xgc": 15.0
+        },
+        "detailed_actions": {
+            "shots": 20,
+            "shots_on_target": 4,
+            "chances_created": 19,
+            "big_chances_created": 1,
+            "clearances": 15,
+            "blocks": 10,
+            "interceptions": 13,
+            "tackles": 22,
+            "recoveries": 70
+        },
+        "discipline": {
+            "yellow_cards": 5,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1300385,
+        "name": "Amar Memić",
+        "position": "Right Wing-Back",
+        "nationality": "Bosnia and Herzegovina",
+        "club": "Viktoria Plzen",
+        "league": "1. Liga",
+        "appearances": {
+            "matches_played": 30,
+            "started": 25,
+            "minutes_played": 2344
+        },
+        "core_stats": {
+            "goals": 3,
+            "assists": 8,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 5,
+            "goals_conceded": 28,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": 46,
+            "shots_on_target": 16,
+            "chances_created": 33,
+            "big_chances_created": 13,
+            "clearances": 47,
+            "blocks": 4,
+            "interceptions": 23,
+            "tackles": 30,
+            "recoveries": 96
+        },
+        "discipline": {
+            "yellow_cards": 4,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1057426,
+        "name": "Armin Gigović",
+        "position": "Defensive Midfielder",
+        "nationality": "Bosnia and Herzegovina",
+        "club": "Young Boys",
+        "league": "Super League",
+        "appearances": {
+            "matches_played": 31,
+            "started": 26,
+            "minutes_played": 2116
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 5,
+            "xg": 0.22,
+            "xgot": 0.2,
+            "npxg": 0.22,
+            "xa": 0.01,
+            "xgi": 0.23,
+            "clean_sheets": null,
+            "goals_conceded": 1,
+            "xgc": 0.29
+        },
+        "detailed_actions": {
+            "shots": 2,
+            "shots_on_target": 1,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": null,
+            "blocks": null,
+            "interceptions": null,
+            "tackles": 1,
+            "recoveries": 4
+        },
+        "discipline": {
+            "yellow_cards": 3,
+            "red_cards": 1
+        }
+    },
+    {
+        "id": 1684401,
+        "name": "Kerim Alajbegović",
+        "position": "Left Winger",
+        "nationality": "Bosnia and Herzegovina",
+        "club": "Salzburg",
+        "league": "Bundesliga",
+        "appearances": {
+            "matches_played": 28,
+            "started": 22,
+            "minutes_played": 1912
+        },
+        "core_stats": {
+            "goals": 9,
+            "assists": 3,
+            "xg": 4.67,
+            "xgot": 5.27,
+            "npxg": 4.67,
+            "xa": 4.83,
+            "xgi": 9.5,
+            "clean_sheets": 2,
+            "goals_conceded": 22,
+            "xgc": 27.06
+        },
+        "detailed_actions": {
+            "shots": 88,
+            "shots_on_target": 34,
+            "chances_created": 37,
+            "big_chances_created": 9,
+            "clearances": 6,
+            "blocks": null,
+            "interceptions": 7,
+            "tackles": 35,
+            "recoveries": 104
+        },
+        "discipline": {
+            "yellow_cards": 4,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 15403,
+        "name": "Edin Džeko",
+        "position": "Striker",
+        "nationality": "Bosnia and Herzegovina",
+        "club": "Schalke 04",
+        "league": "2. Bundesliga",
+        "appearances": {
+            "matches_played": 11,
+            "started": 6,
+            "minutes_played": 599
+        },
+        "core_stats": {
+            "goals": 6,
+            "assists": 3,
+            "xg": 4.0,
+            "xgot": 5.7,
+            "npxg": 4.0,
+            "xa": 2.01,
+            "xgi": 6.01,
+            "clean_sheets": null,
+            "goals_conceded": 6,
+            "xgc": 6.04
+        },
+        "detailed_actions": {
+            "shots": 35,
+            "shots_on_target": 16,
+            "chances_created": 16,
+            "big_chances_created": 4,
+            "clearances": 10,
+            "blocks": null,
+            "interceptions": null,
+            "tackles": 2,
+            "recoveries": 15
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 1
+        }
+    },
+    {
+        "id": 840241,
+        "name": "Ermedin Demirović",
+        "position": "Striker",
+        "nationality": "Bosnia and Herzegovina",
+        "club": "VfB Stuttgart",
+        "league": "Bundesliga",
+        "appearances": {
+            "matches_played": 25,
+            "started": 17,
+            "minutes_played": 1498
+        },
+        "core_stats": {
+            "goals": 12,
+            "assists": 3,
+            "xg": 7.55,
+            "xgot": 12.0,
+            "npxg": 6.76,
+            "xa": 2.01,
+            "xgi": 9.56,
+            "clean_sheets": 3,
+            "goals_conceded": 17,
+            "xgc": 21.87
+        },
+        "detailed_actions": {
+            "shots": 41,
+            "shots_on_target": 22,
+            "chances_created": 17,
+            "big_chances_created": 4,
+            "clearances": 12,
+            "blocks": 1,
+            "interceptions": 1,
+            "tackles": 14,
+            "recoveries": 39
+        },
+        "discipline": {
+            "yellow_cards": 5,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 388903,
+        "name": "Haris Tabaković",
+        "position": "Striker",
+        "nationality": "Bosnia and Herzegovina",
+        "club": "Borussia Mönchengladbach",
+        "league": "Bundesliga",
+        "appearances": {
+            "matches_played": 32,
+            "started": 28,
+            "minutes_played": 2394
+        },
+        "core_stats": {
+            "goals": 13,
+            "assists": 2,
+            "xg": 13.0,
+            "xgot": 14.3,
+            "npxg": 11.43,
+            "xa": 0.86,
+            "xgi": 13.86,
+            "clean_sheets": 3,
+            "goals_conceded": 34,
+            "xgc": 38.02
+        },
+        "detailed_actions": {
+            "shots": 67,
+            "shots_on_target": 27,
+            "chances_created": 16,
+            "big_chances_created": 1,
+            "clearances": 60,
+            "blocks": 5,
+            "interceptions": null,
+            "tackles": 10,
+            "recoveries": 43
+        },
+        "discipline": {
+            "yellow_cards": 5,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1346860,
+        "name": "Esmir Bajraktarević",
+        "position": "Right Winger",
+        "nationality": "Bosnia and Herzegovina",
+        "club": "PSV Eindhoven",
+        "league": "Eredivisie",
+        "appearances": {
+            "matches_played": 28,
+            "started": 8,
+            "minutes_played": 1062
+        },
+        "core_stats": {
+            "goals": 4,
+            "assists": 4,
+            "xg": 2.68,
+            "xgot": 3.89,
+            "npxg": 2.68,
+            "xa": 3.26,
+            "xgi": 5.94,
+            "clean_sheets": 2,
+            "goals_conceded": 11,
+            "xgc": 12.5
+        },
+        "detailed_actions": {
+            "shots": 36,
+            "shots_on_target": 14,
+            "chances_created": 22,
+            "big_chances_created": 6,
+            "clearances": 8,
+            "blocks": null,
+            "interceptions": 4,
+            "tackles": 19,
+            "recoveries": 52
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1284492,
+        "name": "Samed Baždar",
+        "position": "Striker",
+        "nationality": "Bosnia and Herzegovina",
+        "club": "Jagiellonia Białystok",
+        "league": "Ekstraklasa",
+        "appearances": {
+            "matches_played": 15,
+            "started": 3,
+            "minutes_played": 396
+        },
+        "core_stats": {
+            "goals": 3,
+            "assists": 0,
+            "xg": 2.36,
+            "xgot": 2.8,
+            "npxg": 2.36,
+            "xa": 0.35,
+            "xgi": 2.71,
+            "clean_sheets": 1,
+            "goals_conceded": 11,
+            "xgc": 8.31
+        },
+        "detailed_actions": {
+            "shots": 14,
+            "shots_on_target": 9,
+            "chances_created": 8,
+            "big_chances_created": null,
+            "clearances": 4,
+            "blocks": null,
+            "interceptions": null,
+            "tackles": 6,
+            "recoveries": 7
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1174844,
+        "name": "Jovo Lukić",
+        "position": "Striker",
+        "nationality": "Bosnia and Herzegovina",
+        "club": "Universitatea Cluj",
+        "league": "Superliga",
+        "appearances": {
+            "matches_played": 32,
+            "started": 28,
+            "minutes_played": 2502
+        },
+        "core_stats": {
+            "goals": 18,
+            "assists": 2,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 9,
+            "goals_conceded": 24,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": 62,
+            "shots_on_target": 29,
+            "chances_created": 28,
+            "big_chances_created": 4,
+            "clearances": 41,
+            "blocks": 3,
+            "interceptions": 9,
+            "tackles": 19,
+            "recoveries": 75
+        },
+        "discipline": {
+            "yellow_cards": 8,
+            "red_cards": 0
+        }
+    }
+]

@@ -1,0 +1,1027 @@
+[
+    {
+        "id": 873566,
+        "name": "Yahia Fofana",
+        "position": "Keeper",
+        "nationality": "Ivory Coast",
+        "club": "Rizespor",
+        "league": "Super Lig",
+        "appearances": {
+            "matches_played": 27,
+            "started": 0,
+            "minutes_played": 2430
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 6,
+            "goals_conceded": 42,
+            "xgc": null
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 0
+        },
+        "goalkeeping_metrics": {
+            "penalties_conceded": 4,
+            "penalties_saved": 1,
+            "saves": 89,
+            "goal_prevented": -2.42
+        }
+    },
+    {
+        "id": 1280201,
+        "name": "Mohamed Koné",
+        "position": "Keeper",
+        "nationality": "Ivory Coast",
+        "club": "Sporting Charleroi",
+        "league": "Belgian Pro League",
+        "appearances": {
+            "matches_played": 19,
+            "started": 0,
+            "minutes_played": 1710
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 6,
+            "goals_conceded": 18,
+            "xgc": null
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 0
+        },
+        "goalkeeping_metrics": {
+            "penalties_conceded": 3,
+            "penalties_saved": 0,
+            "saves": 51,
+            "goal_prevented": 1.32
+        }
+    },
+    {
+        "id": 698273,
+        "name": "Alban Lafont",
+        "position": "Keeper",
+        "nationality": "Ivory Coast",
+        "club": "Panathinaikos",
+        "league": "Super League",
+        "appearances": {
+            "matches_played": 22,
+            "started": 0,
+            "minutes_played": 1935
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 7,
+            "goals_conceded": 20,
+            "xgc": null
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 0
+        },
+        "goalkeeping_metrics": {
+            "penalties_conceded": 1,
+            "penalties_saved": 2,
+            "saves": 42,
+            "goal_prevented": 3.17
+        }
+    },
+    {
+        "id": 1114979,
+        "name": "Emmanuel Agbadou",
+        "position": "Center Back",
+        "nationality": "Ivory Coast",
+        "club": "Beşiktaş",
+        "league": "Super Lig",
+        "appearances": {
+            "matches_played": 13,
+            "started": 12,
+            "minutes_played": 1090
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 1,
+            "xg": 0.56,
+            "xgot": 0.54,
+            "npxg": 0.56,
+            "xa": 0.4,
+            "xgi": 0.96,
+            "clean_sheets": null,
+            "goals_conceded": 27,
+            "xgc": 18.53
+        },
+        "detailed_actions": {
+            "shots": 10,
+            "shots_on_target": 3,
+            "chances_created": 4,
+            "big_chances_created": null,
+            "clearances": 65,
+            "blocks": 15,
+            "interceptions": 13,
+            "tackles": 32,
+            "recoveries": 66
+        },
+        "discipline": {
+            "yellow_cards": 4,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1388678,
+        "name": "Clément Akpa",
+        "position": "Center Back",
+        "nationality": "Ivory Coast",
+        "club": "Auxerre",
+        "league": "Ligue 1",
+        "appearances": {
+            "matches_played": 26,
+            "started": 21,
+            "minutes_played": 1941
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": 0.21,
+            "xgot": null,
+            "npxg": 0.21,
+            "xa": 0.78,
+            "xgi": 0.99,
+            "clean_sheets": 4,
+            "goals_conceded": 29,
+            "xgc": 29.34
+        },
+        "detailed_actions": {
+            "shots": 6,
+            "shots_on_target": null,
+            "chances_created": 9,
+            "big_chances_created": 1,
+            "clearances": 93,
+            "blocks": 9,
+            "interceptions": 21,
+            "tackles": 31,
+            "recoveries": 77
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 1
+        }
+    },
+    {
+        "id": 1425182,
+        "name": "Ousmane Diomandé",
+        "position": "Center Back",
+        "nationality": "Ivory Coast",
+        "club": "Sporting CP",
+        "league": "Liga Portugal",
+        "appearances": {
+            "matches_played": 17,
+            "started": 15,
+            "minutes_played": 1297
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 1,
+            "xg": 0.94,
+            "xgot": 0.38,
+            "npxg": 0.94,
+            "xa": 0.52,
+            "xgi": 1.46,
+            "clean_sheets": 6,
+            "goals_conceded": 10,
+            "xgc": 11.87
+        },
+        "detailed_actions": {
+            "shots": 11,
+            "shots_on_target": 2,
+            "chances_created": 3,
+            "big_chances_created": null,
+            "clearances": 59,
+            "blocks": 7,
+            "interceptions": 13,
+            "tackles": 11,
+            "recoveries": 75
+        },
+        "discipline": {
+            "yellow_cards": 5,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1395704,
+        "name": "Guéla Doué",
+        "position": "Right Back",
+        "nationality": "Ivory Coast",
+        "club": "Strasbourg",
+        "league": "Ligue 1",
+        "appearances": {
+            "matches_played": 24,
+            "started": 23,
+            "minutes_played": 2063
+        },
+        "core_stats": {
+            "goals": 2,
+            "assists": 6,
+            "xg": 2.11,
+            "xgot": 2.14,
+            "npxg": 2.11,
+            "xa": 2.51,
+            "xgi": 4.62,
+            "clean_sheets": 5,
+            "goals_conceded": 32,
+            "xgc": 27.98
+        },
+        "detailed_actions": {
+            "shots": 12,
+            "shots_on_target": 5,
+            "chances_created": 19,
+            "big_chances_created": 6,
+            "clearances": 103,
+            "blocks": 9,
+            "interceptions": 27,
+            "tackles": 50,
+            "recoveries": 99
+        },
+        "discipline": {
+            "yellow_cards": 3,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 740997,
+        "name": "Ghislain Konan",
+        "position": "Left Back",
+        "nationality": "Ivory Coast",
+        "club": "Gil Vicente",
+        "league": "Liga Portugal",
+        "appearances": {
+            "matches_played": 30,
+            "started": 30,
+            "minutes_played": 2661
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": 0.61,
+            "xgot": 0.55,
+            "npxg": 0.61,
+            "xa": 2.13,
+            "xgi": 2.74,
+            "clean_sheets": 10,
+            "goals_conceded": 32,
+            "xgc": 31.85
+        },
+        "detailed_actions": {
+            "shots": 17,
+            "shots_on_target": 6,
+            "chances_created": 20,
+            "big_chances_created": 2,
+            "clearances": 81,
+            "blocks": 8,
+            "interceptions": 26,
+            "tackles": 39,
+            "recoveries": 168
+        },
+        "discipline": {
+            "yellow_cards": 5,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1014496,
+        "name": "Odilon Kossounou",
+        "position": "Center Back",
+        "nationality": "Ivory Coast",
+        "club": "Atalanta",
+        "league": "Serie A",
+        "appearances": {
+            "matches_played": 19,
+            "started": 10,
+            "minutes_played": 985
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 0,
+            "xg": 0.39,
+            "xgot": 0.2,
+            "npxg": 0.39,
+            "xa": 0.19,
+            "xgi": 0.58,
+            "clean_sheets": 2,
+            "goals_conceded": 11,
+            "xgc": 12.28
+        },
+        "detailed_actions": {
+            "shots": 5,
+            "shots_on_target": 1,
+            "chances_created": 4,
+            "big_chances_created": null,
+            "clearances": 29,
+            "blocks": 7,
+            "interceptions": 9,
+            "tackles": 17,
+            "recoveries": 40
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 787242,
+        "name": "Evan Ndicka",
+        "position": "Center Back",
+        "nationality": "Ivory Coast",
+        "club": "Roma",
+        "league": "Serie A",
+        "appearances": {
+            "matches_played": 31,
+            "started": 31,
+            "minutes_played": 2683
+        },
+        "core_stats": {
+            "goals": 3,
+            "assists": 0,
+            "xg": 1.95,
+            "xgot": 2.64,
+            "npxg": 1.95,
+            "xa": 0.84,
+            "xgi": 2.79,
+            "clean_sheets": 13,
+            "goals_conceded": 25,
+            "xgc": 29.89
+        },
+        "detailed_actions": {
+            "shots": 23,
+            "shots_on_target": 6,
+            "chances_created": 6,
+            "big_chances_created": 1,
+            "clearances": 138,
+            "blocks": 12,
+            "interceptions": 49,
+            "tackles": 24,
+            "recoveries": 137
+        },
+        "discipline": {
+            "yellow_cards": 5,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1027472,
+        "name": "Wilfried Singo",
+        "position": "Center Back",
+        "nationality": "Ivory Coast",
+        "club": "Galatasaray",
+        "league": "Super Lig",
+        "appearances": {
+            "matches_played": 19,
+            "started": 11,
+            "minutes_played": 948
+        },
+        "core_stats": {
+            "goals": 2,
+            "assists": 1,
+            "xg": 0.91,
+            "xgot": 1.28,
+            "npxg": 0.91,
+            "xa": 1.0,
+            "xgi": 1.91,
+            "clean_sheets": 1,
+            "goals_conceded": 14,
+            "xgc": 16.2
+        },
+        "detailed_actions": {
+            "shots": 12,
+            "shots_on_target": 3,
+            "chances_created": 3,
+            "big_chances_created": 1,
+            "clearances": 46,
+            "blocks": 3,
+            "interceptions": 14,
+            "tackles": 17,
+            "recoveries": 54
+        },
+        "discipline": {
+            "yellow_cards": 3,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 602211,
+        "name": "Seko Fofana",
+        "position": "Central Midfielder",
+        "nationality": "Ivory Coast",
+        "club": "FC Porto",
+        "league": "Liga Portugal",
+        "appearances": {
+            "matches_played": 12,
+            "started": 1,
+            "minutes_played": 276
+        },
+        "core_stats": {
+            "goals": 3,
+            "assists": 0,
+            "xg": 0.88,
+            "xgot": 1.26,
+            "npxg": 0.88,
+            "xa": 0.09,
+            "xgi": 0.97,
+            "clean_sheets": null,
+            "goals_conceded": 7,
+            "xgc": 4.81
+        },
+        "detailed_actions": {
+            "shots": 10,
+            "shots_on_target": 3,
+            "chances_created": 1,
+            "big_chances_created": null,
+            "clearances": 4,
+            "blocks": 2,
+            "interceptions": null,
+            "tackles": 7,
+            "recoveries": 11
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1186770,
+        "name": "Parfait Guiagon",
+        "position": "Left Winger",
+        "nationality": "Ivory Coast",
+        "club": "Sporting Charleroi",
+        "league": "Belgian Pro League",
+        "appearances": {
+            "matches_played": 33,
+            "started": 29,
+            "minutes_played": 2555
+        },
+        "core_stats": {
+            "goals": 9,
+            "assists": 5,
+            "xg": 7.78,
+            "xgot": 8.98,
+            "npxg": 4.63,
+            "xa": 5.5,
+            "xgi": 13.28,
+            "clean_sheets": 1,
+            "goals_conceded": 33,
+            "xgc": 33.8
+        },
+        "detailed_actions": {
+            "shots": 80,
+            "shots_on_target": 22,
+            "chances_created": 51,
+            "big_chances_created": 5,
+            "clearances": 11,
+            "blocks": 1,
+            "interceptions": 17,
+            "tackles": 30,
+            "recoveries": 159
+        },
+        "discipline": {
+            "yellow_cards": 6,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1666494,
+        "name": "Christ Inao Oulaï",
+        "position": "Defensive Midfielder",
+        "nationality": "Ivory Coast",
+        "club": "Trabzonspor",
+        "league": "Super Lig",
+        "appearances": {
+            "matches_played": 25,
+            "started": 24,
+            "minutes_played": 2077
+        },
+        "core_stats": {
+            "goals": 2,
+            "assists": 4,
+            "xg": 1.07,
+            "xgot": 1.95,
+            "npxg": 1.07,
+            "xa": 2.38,
+            "xgi": 3.45,
+            "clean_sheets": 4,
+            "goals_conceded": 26,
+            "xgc": 28.84
+        },
+        "detailed_actions": {
+            "shots": 23,
+            "shots_on_target": 7,
+            "chances_created": 40,
+            "big_chances_created": 3,
+            "clearances": 9,
+            "blocks": 2,
+            "interceptions": 23,
+            "tackles": 49,
+            "recoveries": 124
+        },
+        "discipline": {
+            "yellow_cards": 9,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 579747,
+        "name": "Franck Kessié",
+        "position": "Defensive Midfielder",
+        "nationality": "Ivory Coast",
+        "club": "Al Ahli",
+        "league": "Saudi Pro League",
+        "appearances": {
+            "matches_played": 26,
+            "started": 26,
+            "minutes_played": 2173
+        },
+        "core_stats": {
+            "goals": 5,
+            "assists": 3,
+            "xg": 5.03,
+            "xgot": 6.99,
+            "npxg": 5.03,
+            "xa": 2.78,
+            "xgi": 7.81,
+            "clean_sheets": 8,
+            "goals_conceded": 17,
+            "xgc": 18.92
+        },
+        "detailed_actions": {
+            "shots": 33,
+            "shots_on_target": 19,
+            "chances_created": 18,
+            "big_chances_created": 4,
+            "clearances": 22,
+            "blocks": 6,
+            "interceptions": 15,
+            "tackles": 21,
+            "recoveries": 95
+        },
+        "discipline": {
+            "yellow_cards": 5,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 795371,
+        "name": "Ibrahim Sangaré",
+        "position": "Defensive Midfielder",
+        "nationality": "Ivory Coast",
+        "club": "Nottingham Forest",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 28,
+            "started": 25,
+            "minutes_played": 2080
+        },
+        "core_stats": {
+            "goals": 2,
+            "assists": 2,
+            "xg": 1.15,
+            "xgot": 1.97,
+            "npxg": 1.15,
+            "xa": 1.8,
+            "xgi": 2.95,
+            "clean_sheets": 7,
+            "goals_conceded": 26,
+            "xgc": 33.77
+        },
+        "detailed_actions": {
+            "shots": 16,
+            "shots_on_target": 5,
+            "chances_created": 12,
+            "big_chances_created": 2,
+            "clearances": 50,
+            "blocks": 19,
+            "interceptions": 25,
+            "tackles": 59,
+            "recoveries": 114
+        },
+        "discipline": {
+            "yellow_cards": 5,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 470539,
+        "name": "Jean-Mickaël Seri",
+        "position": "Central Midfielder",
+        "nationality": "Ivory Coast",
+        "club": "Maribor",
+        "league": null,
+        "appearances": {
+            "matches_played": 0,
+            "started": 0,
+            "minutes_played": 0
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": 0.03,
+            "xgot": null,
+            "npxg": 0.03,
+            "xa": 0.07,
+            "xgi": 0.1,
+            "clean_sheets": null,
+            "goals_conceded": 2,
+            "xgc": 0.97
+        },
+        "detailed_actions": {
+            "shots": 1,
+            "shots_on_target": null,
+            "chances_created": 1,
+            "big_chances_created": null,
+            "clearances": null,
+            "blocks": null,
+            "interceptions": 2,
+            "tackles": 2,
+            "recoveries": 10
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1227012,
+        "name": "Simon Adingra",
+        "position": "Left Winger",
+        "nationality": "Ivory Coast",
+        "club": "Monaco",
+        "league": "Ligue 1",
+        "appearances": {
+            "matches_played": 14,
+            "started": 10,
+            "minutes_played": 861
+        },
+        "core_stats": {
+            "goals": 3,
+            "assists": 2,
+            "xg": 0.35,
+            "xgot": 0.28,
+            "npxg": 0.35,
+            "xa": 0.61,
+            "xgi": 0.96,
+            "clean_sheets": null,
+            "goals_conceded": 8,
+            "xgc": 11.27
+        },
+        "detailed_actions": {
+            "shots": 6,
+            "shots_on_target": 2,
+            "chances_created": 7,
+            "big_chances_created": 2,
+            "clearances": 11,
+            "blocks": null,
+            "interceptions": 2,
+            "tackles": 11,
+            "recoveries": 20
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1199383,
+        "name": "Ange-Yoan Bonny",
+        "position": "Striker",
+        "nationality": "Ivory Coast",
+        "club": "Inter",
+        "league": "Serie A",
+        "appearances": {
+            "matches_played": 33,
+            "started": 10,
+            "minutes_played": 1129
+        },
+        "core_stats": {
+            "goals": 5,
+            "assists": 4,
+            "xg": 3.79,
+            "xgot": 4.07,
+            "npxg": 3.79,
+            "xa": 1.91,
+            "xgi": 5.7,
+            "clean_sheets": null,
+            "goals_conceded": 11,
+            "xgc": 12.43
+        },
+        "detailed_actions": {
+            "shots": 22,
+            "shots_on_target": 9,
+            "chances_created": 17,
+            "big_chances_created": 7,
+            "clearances": 5,
+            "blocks": null,
+            "interceptions": 1,
+            "tackles": 17,
+            "recoveries": 33
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1070052,
+        "name": "Amad Diallo",
+        "position": "Right Winger",
+        "nationality": "Ivory Coast",
+        "club": "Manchester United",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 32,
+            "started": 27,
+            "minutes_played": 2344
+        },
+        "core_stats": {
+            "goals": 2,
+            "assists": 3,
+            "xg": 5.57,
+            "xgot": 4.19,
+            "npxg": 5.57,
+            "xa": 4.78,
+            "xgi": 10.35,
+            "clean_sheets": 4,
+            "goals_conceded": 33,
+            "xgc": 31.89
+        },
+        "detailed_actions": {
+            "shots": 53,
+            "shots_on_target": 23,
+            "chances_created": 41,
+            "big_chances_created": 7,
+            "clearances": 29,
+            "blocks": 3,
+            "interceptions": 17,
+            "tackles": 38,
+            "recoveries": 113
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1328540,
+        "name": "Oumar Diakité",
+        "position": "Striker",
+        "nationality": "Ivory Coast",
+        "club": "Cercle Brugge",
+        "league": "Belgian Pro League",
+        "appearances": {
+            "matches_played": 25,
+            "started": 15,
+            "minutes_played": 1427
+        },
+        "core_stats": {
+            "goals": 7,
+            "assists": 0,
+            "xg": 7.36,
+            "xgot": 8.78,
+            "npxg": 6.57,
+            "xa": 1.43,
+            "xgi": 8.79,
+            "clean_sheets": null,
+            "goals_conceded": 28,
+            "xgc": 21.6
+        },
+        "detailed_actions": {
+            "shots": 39,
+            "shots_on_target": 18,
+            "chances_created": 22,
+            "big_chances_created": 2,
+            "clearances": 4,
+            "blocks": 2,
+            "interceptions": 3,
+            "tackles": 14,
+            "recoveries": 41
+        },
+        "discipline": {
+            "yellow_cards": 4,
+            "red_cards": 1
+        }
+    },
+    {
+        "id": 1735453,
+        "name": "Yan Diomandé",
+        "position": "Right Winger",
+        "nationality": "Ivory Coast",
+        "club": "RB Leipzig",
+        "league": "Bundesliga",
+        "appearances": {
+            "matches_played": 33,
+            "started": 28,
+            "minutes_played": 2476
+        },
+        "core_stats": {
+            "goals": 12,
+            "assists": 8,
+            "xg": 7.14,
+            "xgot": 11.52,
+            "npxg": 7.14,
+            "xa": 10.12,
+            "xgi": 17.26,
+            "clean_sheets": 3,
+            "goals_conceded": 36,
+            "xgc": 41.33
+        },
+        "detailed_actions": {
+            "shots": 53,
+            "shots_on_target": 26,
+            "chances_created": 56,
+            "big_chances_created": 17,
+            "clearances": 9,
+            "blocks": 1,
+            "interceptions": 16,
+            "tackles": 29,
+            "recoveries": 148
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1087966,
+        "name": "Evann Guessand",
+        "position": "Right Winger",
+        "nationality": "Ivory Coast",
+        "club": "Crystal Palace",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 21,
+            "started": 9,
+            "minutes_played": 916
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 2,
+            "xg": 1.56,
+            "xgot": 1.62,
+            "npxg": 1.56,
+            "xa": 1.02,
+            "xgi": 2.58,
+            "clean_sheets": 1,
+            "goals_conceded": 15,
+            "xgc": 13.94
+        },
+        "detailed_actions": {
+            "shots": 11,
+            "shots_on_target": 6,
+            "chances_created": 5,
+            "big_chances_created": 2,
+            "clearances": 10,
+            "blocks": 3,
+            "interceptions": 5,
+            "tackles": 24,
+            "recoveries": 43
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 575735,
+        "name": "Nicolas Pépé",
+        "position": "Right Midfielder",
+        "nationality": "Ivory Coast",
+        "club": "Villarreal",
+        "league": "LaLiga",
+        "appearances": {
+            "matches_played": 36,
+            "started": 26,
+            "minutes_played": 2396
+        },
+        "core_stats": {
+            "goals": 8,
+            "assists": 8,
+            "xg": 8.26,
+            "xgot": 8.46,
+            "npxg": 7.47,
+            "xa": 6.38,
+            "xgi": 14.64,
+            "clean_sheets": 3,
+            "goals_conceded": 35,
+            "xgc": 33.06
+        },
+        "detailed_actions": {
+            "shots": 63,
+            "shots_on_target": 25,
+            "chances_created": 54,
+            "big_chances_created": 13,
+            "clearances": 24,
+            "blocks": 1,
+            "interceptions": 16,
+            "tackles": 31,
+            "recoveries": 110
+        },
+        "discipline": {
+            "yellow_cards": 4,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1624586,
+        "name": "Bazoumana Touré",
+        "position": "Left Winger",
+        "nationality": "Ivory Coast",
+        "club": "Hoffenheim",
+        "league": "Bundesliga",
+        "appearances": {
+            "matches_played": 30,
+            "started": 29,
+            "minutes_played": 2325
+        },
+        "core_stats": {
+            "goals": 5,
+            "assists": 9,
+            "xg": 4.16,
+            "xgot": 4.55,
+            "npxg": 4.16,
+            "xa": 5.75,
+            "xgi": 9.91,
+            "clean_sheets": null,
+            "goals_conceded": 44,
+            "xgc": 39.52
+        },
+        "detailed_actions": {
+            "shots": 48,
+            "shots_on_target": 13,
+            "chances_created": 45,
+            "big_chances_created": 11,
+            "clearances": 20,
+            "blocks": 2,
+            "interceptions": 6,
+            "tackles": 34,
+            "recoveries": 127
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1213430,
+        "name": "Elye Wahi",
+        "position": "Striker",
+        "nationality": "Ivory Coast",
+        "club": "Nice",
+        "league": "Ligue 1",
+        "appearances": {
+            "matches_played": 14,
+            "started": 11,
+            "minutes_played": 926
+        },
+        "core_stats": {
+            "goals": 5,
+            "assists": 1,
+            "xg": 0.8,
+            "xgot": 0.51,
+            "npxg": 0.8,
+            "xa": 0.15,
+            "xgi": 0.95,
+            "clean_sheets": null,
+            "goals_conceded": 13,
+            "xgc": 5.82
+        },
+        "detailed_actions": {
+            "shots": 7,
+            "shots_on_target": 3,
+            "chances_created": 4,
+            "big_chances_created": 1,
+            "clearances": null,
+            "blocks": 1,
+            "interceptions": null,
+            "tackles": 2,
+            "recoveries": 5
+        },
+        "discipline": {
+            "yellow_cards": 5,
+            "red_cards": 0
+        }
+    }
+]

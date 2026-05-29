@@ -1,0 +1,1312 @@
+[
+    {
+        "id": 1132570,
+        "name": "Ahmed Basil",
+        "position": "Keeper",
+        "nationality": "Iraq",
+        "club": "Al Shorta",
+        "league": null,
+        "appearances": {
+            "matches_played": 0,
+            "started": 0,
+            "minutes_played": 0
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 0,
+            "goals_conceded": 13,
+            "xgc": null
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        "goalkeeping_metrics": {
+            "penalties_conceded": null,
+            "penalties_saved": null,
+            "saves": 9,
+            "goal_prevented": null
+        }
+    },
+    {
+        "id": 578761,
+        "name": "Jalal Hassan",
+        "position": "Keeper",
+        "nationality": "Iraq",
+        "club": "Al Zawraa",
+        "league": null,
+        "appearances": {
+            "matches_played": 0,
+            "started": 0,
+            "minutes_played": 0
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 1,
+            "goals_conceded": 17,
+            "xgc": null
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        "goalkeeping_metrics": {
+            "penalties_conceded": 1,
+            "penalties_saved": 0,
+            "saves": 16,
+            "goal_prevented": null
+        }
+    },
+    {
+        "id": 533495,
+        "name": "Fahad Talib",
+        "position": "keeper",
+        "nationality": "Iraq",
+        "club": "Al Talaba",
+        "league": null,
+        "appearances": {
+            "matches_played": 0,
+            "started": 0,
+            "minutes_played": 0
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 0,
+            "goals_conceded": 2,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": null,
+            "shots_on_target": null,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": null,
+            "blocks": null,
+            "interceptions": null,
+            "tackles": null,
+            "recoveries": null
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 877275,
+        "name": "Hussein Ali",
+        "position": "Left Winger",
+        "nationality": "Iraq",
+        "club": "Al Shorta",
+        "league": null,
+        "appearances": {
+            "matches_played": 0,
+            "started": 0,
+            "minutes_played": 0
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": 19,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": 8,
+            "shots_on_target": 2,
+            "chances_created": 9,
+            "big_chances_created": 3,
+            "clearances": 7,
+            "blocks": null,
+            "interceptions": 3,
+            "tackles": 10,
+            "recoveries": 42
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1199113,
+        "name": "Merchas Doski",
+        "position": "Left Back",
+        "nationality": "Iraq",
+        "club": "Viktoria Plzen",
+        "league": "1. Liga",
+        "appearances": {
+            "matches_played": 30,
+            "started": 22,
+            "minutes_played": 2040
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 9,
+            "goals_conceded": 25,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": 11,
+            "shots_on_target": 4,
+            "chances_created": 21,
+            "big_chances_created": 1,
+            "clearances": 49,
+            "blocks": 3,
+            "interceptions": 23,
+            "tackles": 46,
+            "recoveries": 107
+        },
+        "discipline": {
+            "yellow_cards": 6,
+            "red_cards": 1
+        }
+    },
+    {
+        "id": 1606279,
+        "name": "Akam Hashem",
+        "position": "Center Back",
+        "nationality": "Iraq",
+        "club": "Al Zawraa",
+        "league": null,
+        "appearances": {
+            "matches_played": 0,
+            "started": 0,
+            "minutes_played": 0
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 1,
+            "goals_conceded": 17,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": 6,
+            "shots_on_target": 1,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": 50,
+            "blocks": 9,
+            "interceptions": 14,
+            "tackles": 16,
+            "recoveries": 40
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1033086,
+        "name": "Maytham Jabbar",
+        "position": "Center Back",
+        "nationality": "Iraq",
+        "club": "Al Zawraa",
+        "league": null,
+        "appearances": {
+            "matches_played": 0,
+            "started": 0,
+            "minutes_played": 0
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 1,
+            "goals_conceded": 5,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": 3,
+            "shots_on_target": null,
+            "chances_created": 2,
+            "big_chances_created": null,
+            "clearances": 20,
+            "blocks": 3,
+            "interceptions": 4,
+            "tackles": 5,
+            "recoveries": 22
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1642810,
+        "name": "Ahmed Maknzi",
+        "position": "Left Back",
+        "nationality": "Iraq",
+        "club": "Al-Karma",
+        "league": null,
+        "appearances": {
+            "matches_played": 0,
+            "started": 0,
+            "minutes_played": 0
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 1,
+            "goals_conceded": 3,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": 2,
+            "shots_on_target": null,
+            "chances_created": 1,
+            "big_chances_created": null,
+            "clearances": 5,
+            "blocks": 1,
+            "interceptions": 1,
+            "tackles": 5,
+            "recoveries": 5
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1377584,
+        "name": "Dario Naamo",
+        "position": "Left Back",
+        "nationality": "Iraq",
+        "club": "Dundee United",
+        "league": "Premiership",
+        "appearances": {
+            "matches_played": 19,
+            "started": 8,
+            "minutes_played": 856
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": 0.71,
+            "xgot": 0.09,
+            "npxg": 0.71,
+            "xa": 0.87,
+            "xgi": 1.58,
+            "clean_sheets": null,
+            "goals_conceded": 16,
+            "xgc": 14.81
+        },
+        "detailed_actions": {
+            "shots": 6,
+            "shots_on_target": 2,
+            "chances_created": 7,
+            "big_chances_created": 2,
+            "clearances": 23,
+            "blocks": 4,
+            "interceptions": 8,
+            "tackles": 20,
+            "recoveries": 36
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 320139,
+        "name": "Frans Putros",
+        "position": "Central Midfielder",
+        "nationality": "Iraq",
+        "club": "Persib Bandung",
+        "league": "Super League",
+        "appearances": {
+            "matches_played": 28,
+            "started": 23,
+            "minutes_played": 2128
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 1,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": null,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": null,
+            "shots_on_target": null,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": null,
+            "blocks": null,
+            "interceptions": null,
+            "tackles": null,
+            "recoveries": null
+        },
+        "discipline": {
+            "yellow_cards": 7,
+            "red_cards": 1
+        }
+    },
+    {
+        "id": 1554123,
+        "name": "Mustafa Saadoon",
+        "position": "Right Back",
+        "nationality": "Iraq",
+        "club": "Al Shorta",
+        "league": null,
+        "appearances": {
+            "matches_played": 0,
+            "started": 0,
+            "minutes_played": 0
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": 10,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": 4,
+            "shots_on_target": 2,
+            "chances_created": 1,
+            "big_chances_created": 1,
+            "clearances": 10,
+            "blocks": null,
+            "interceptions": 4,
+            "tackles": 10,
+            "recoveries": 21
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 502481,
+        "name": "Rebin Sulaka",
+        "position": "Center Back",
+        "nationality": "Iraq",
+        "club": "Port FC",
+        "league": "Thai League",
+        "appearances": {
+            "matches_played": 24,
+            "started": 22,
+            "minutes_played": 1894
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": 0.24,
+            "xgot": 0.05,
+            "npxg": 0.24,
+            "xa": 0.86,
+            "xgi": 1.1,
+            "clean_sheets": 10,
+            "goals_conceded": 15,
+            "xgc": 15.84
+        },
+        "detailed_actions": {
+            "shots": 4,
+            "shots_on_target": 1,
+            "chances_created": 11,
+            "big_chances_created": null,
+            "clearances": 86,
+            "blocks": 7,
+            "interceptions": 9,
+            "tackles": 28,
+            "recoveries": 73
+        },
+        "discipline": {
+            "yellow_cards": 4,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1420369,
+        "name": "Zaid Tahseen",
+        "position": "Center Back",
+        "nationality": "Iraq",
+        "club": "Al Quwa Al Jawiya",
+        "league": null,
+        "appearances": {
+            "matches_played": 0,
+            "started": 0,
+            "minutes_played": 0
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": null,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": null,
+            "shots_on_target": null,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": null,
+            "blocks": null,
+            "interceptions": null,
+            "tackles": null,
+            "recoveries": null
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1452775,
+        "name": "Ahmed Yahya",
+        "position": "Left Back",
+        "nationality": "Iraq",
+        "club": "Al Shorta",
+        "league": null,
+        "appearances": {
+            "matches_played": 0,
+            "started": 0,
+            "minutes_played": 0
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": 11,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": 8,
+            "shots_on_target": 5,
+            "chances_created": 5,
+            "big_chances_created": 1,
+            "clearances": 17,
+            "blocks": 2,
+            "interceptions": 7,
+            "tackles": 17,
+            "recoveries": 44
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1333336,
+        "name": "Manaf Younis",
+        "position": "Center Back",
+        "nationality": "Iraq",
+        "club": "Al Shorta",
+        "league": null,
+        "appearances": {
+            "matches_played": 0,
+            "started": 0,
+            "minutes_played": 0
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": 16,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": 1,
+            "shots_on_target": null,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": 29,
+            "blocks": 5,
+            "interceptions": 3,
+            "tackles": 3,
+            "recoveries": 23
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1312362,
+        "name": "Hasan Abdulkareem",
+        "position": "Right Winger",
+        "nationality": "Iraq",
+        "club": "Al Zawraa",
+        "league": null,
+        "appearances": {
+            "matches_played": 0,
+            "started": 0,
+            "minutes_played": 0
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": 13,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": 23,
+            "shots_on_target": 10,
+            "chances_created": 12,
+            "big_chances_created": 1,
+            "clearances": 2,
+            "blocks": null,
+            "interceptions": 3,
+            "tackles": 4,
+            "recoveries": 27
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 858340,
+        "name": "Amir Al Ammari",
+        "position": "Central Midfielder",
+        "nationality": "Iraq",
+        "club": "Cracovia",
+        "league": "Ekstraklasa",
+        "appearances": {
+            "matches_played": 33,
+            "started": 29,
+            "minutes_played": 2505
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 4,
+            "xg": 1.43,
+            "xgot": 1.14,
+            "npxg": 1.43,
+            "xa": 3.08,
+            "xgi": 4.51,
+            "clean_sheets": 11,
+            "goals_conceded": 30,
+            "xgc": 31.2
+        },
+        "detailed_actions": {
+            "shots": 21,
+            "shots_on_target": 2,
+            "chances_created": 30,
+            "big_chances_created": 6,
+            "clearances": 59,
+            "blocks": 18,
+            "interceptions": 31,
+            "tackles": 42,
+            "recoveries": 93
+        },
+        "discipline": {
+            "yellow_cards": 3,
+            "red_cards": 1
+        }
+    },
+    {
+        "id": 1235623,
+        "name": "Youssef Amyn",
+        "position": "Right Midfielder",
+        "nationality": "Iraq",
+        "club": "AEK Larnaca",
+        "league": "Cyprus League",
+        "appearances": {
+            "matches_played": 13,
+            "started": 7,
+            "minutes_played": 653
+        },
+        "core_stats": {
+            "goals": 2,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": null,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": null,
+            "shots_on_target": null,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": null,
+            "blocks": null,
+            "interceptions": null,
+            "tackles": null,
+            "recoveries": null
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 942834,
+        "name": "Ibrahim Bayesh",
+        "position": "Left Midfielder",
+        "nationality": "Iraq",
+        "club": "Al-Dhafra",
+        "league": "Saudi Pro League",
+        "appearances": {
+            "matches_played": 12,
+            "started": 11,
+            "minutes_played": 1026
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 0,
+            "xg": 0.7,
+            "xgot": 0.35,
+            "npxg": 0.7,
+            "xa": 0.81,
+            "xgi": 1.51,
+            "clean_sheets": null,
+            "goals_conceded": 23,
+            "xgc": 21.57
+        },
+        "detailed_actions": {
+            "shots": 9,
+            "shots_on_target": 4,
+            "chances_created": 9,
+            "big_chances_created": 1,
+            "clearances": 14,
+            "blocks": 1,
+            "interceptions": 14,
+            "tackles": 17,
+            "recoveries": 61
+        },
+        "discipline": {
+            "yellow_cards": 3,
+            "red_cards": 1
+        }
+    },
+    {
+        "id": 1162514,
+        "name": "Marko Farji",
+        "position": "Left Winger",
+        "nationality": "Iraq",
+        "club": "Venezia",
+        "league": "Serie B",
+        "appearances": {
+            "matches_played": 2,
+            "started": 0,
+            "minutes_played": 21
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": null,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": null,
+            "shots_on_target": null,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": null,
+            "blocks": null,
+            "interceptions": null,
+            "tackles": null,
+            "recoveries": null
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 858342,
+        "name": "Peter Gwargis",
+        "position": "midfielder",
+        "nationality": "Iraq",
+        "club": "Duhok",
+        "league": null,
+        "appearances": {
+            "matches_played": 0,
+            "started": 0,
+            "minutes_played": 0
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": null,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": null,
+            "shots_on_target": null,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": null,
+            "blocks": null,
+            "interceptions": null,
+            "tackles": null,
+            "recoveries": null
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1138592,
+        "name": "Zidane Iqbal",
+        "position": "Defensive Midfielder",
+        "nationality": "Iraq",
+        "club": "Jong FC Utrecht",
+        "league": "Eerste Divisie",
+        "appearances": {
+            "matches_played": 11,
+            "started": 6,
+            "minutes_played": 506
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 1,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": 0.37,
+            "xgi": 0.37,
+            "clean_sheets": null,
+            "goals_conceded": 6,
+            "xgc": 6.74
+        },
+        "detailed_actions": {
+            "shots": 0,
+            "shots_on_target": null,
+            "chances_created": 1,
+            "big_chances_created": null,
+            "clearances": 1,
+            "blocks": 1,
+            "interceptions": 4,
+            "tackles": 9,
+            "recoveries": 15
+        },
+        "discipline": {
+            "yellow_cards": 3,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1642820,
+        "name": "Zaid Ismail",
+        "position": "Central Midfielder",
+        "nationality": "Iraq",
+        "club": "Al Talaba",
+        "league": null,
+        "appearances": {
+            "matches_played": 0,
+            "started": 0,
+            "minutes_played": 0
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": null,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": null,
+            "shots_on_target": null,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": null,
+            "blocks": null,
+            "interceptions": null,
+            "tackles": null,
+            "recoveries": null
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1220489,
+        "name": "Ali Jassim",
+        "position": "midfielder",
+        "nationality": "Iraq",
+        "club": "Al Taee",
+        "league": "Saudi First Division",
+        "appearances": {
+            "matches_played": 12,
+            "started": 3,
+            "minutes_played": 449
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": 8,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": 9,
+            "shots_on_target": 4,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": 1,
+            "blocks": null,
+            "interceptions": null,
+            "tackles": 7,
+            "recoveries": null
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1033091,
+        "name": "Karar Nabeel",
+        "position": "Defensive Midfielder",
+        "nationality": "Iraq",
+        "club": "Al Zawraa",
+        "league": null,
+        "appearances": {
+            "matches_played": 0,
+            "started": 0,
+            "minutes_played": 0
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": 10,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": 4,
+            "shots_on_target": null,
+            "chances_created": 8,
+            "big_chances_created": null,
+            "clearances": 2,
+            "blocks": null,
+            "interceptions": 3,
+            "tackles": 9,
+            "recoveries": 16
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1680584,
+        "name": "Jussef Nasrawe",
+        "position": "Attacking Midfielder",
+        "nationality": "Iraq",
+        "club": "Ried",
+        "league": "Bundesliga",
+        "appearances": {
+            "matches_played": 13,
+            "started": 5,
+            "minutes_played": 541
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": 0.06,
+            "xgot": 0.16,
+            "npxg": 0.06,
+            "xa": 0.83,
+            "xgi": 0.89,
+            "clean_sheets": null,
+            "goals_conceded": 7,
+            "xgc": 12.66
+        },
+        "detailed_actions": {
+            "shots": 3,
+            "shots_on_target": 2,
+            "chances_created": 5,
+            "big_chances_created": 1,
+            "clearances": 5,
+            "blocks": null,
+            "interceptions": 1,
+            "tackles": 11,
+            "recoveries": 30
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1224691,
+        "name": "Ahmed Qasim",
+        "position": "Left Winger",
+        "nationality": "Iraq",
+        "club": "Nashville SC",
+        "league": "Major League Soccer",
+        "appearances": {
+            "matches_played": 14,
+            "started": 9,
+            "minutes_played": 730
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 1,
+            "xg": 0.53,
+            "xgot": 1.43,
+            "npxg": 0.53,
+            "xa": 1.02,
+            "xgi": 1.55,
+            "clean_sheets": 1,
+            "goals_conceded": 7,
+            "xgc": 9.8
+        },
+        "detailed_actions": {
+            "shots": 10,
+            "shots_on_target": 6,
+            "chances_created": 4,
+            "big_chances_created": 2,
+            "clearances": 2,
+            "blocks": null,
+            "interceptions": 2,
+            "tackles": 17,
+            "recoveries": 26
+        },
+        "discipline": {
+            "yellow_cards": 3,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1042511,
+        "name": "Aimar Sher",
+        "position": "Defensive Midfielder",
+        "nationality": "Iraq",
+        "club": "Sarpsborg 08",
+        "league": "Eliteserien",
+        "appearances": {
+            "matches_played": 9,
+            "started": 9,
+            "minutes_played": 807
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 0,
+            "xg": 0.56,
+            "xgot": 1.48,
+            "npxg": 0.56,
+            "xa": 1.42,
+            "xgi": 1.98,
+            "clean_sheets": null,
+            "goals_conceded": 14,
+            "xgc": 13.87
+        },
+        "detailed_actions": {
+            "shots": 11,
+            "shots_on_target": 5,
+            "chances_created": 7,
+            "big_chances_created": 2,
+            "clearances": 20,
+            "blocks": 5,
+            "interceptions": 19,
+            "tackles": 16,
+            "recoveries": 34
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 941579,
+        "name": "Kevin Yakob",
+        "position": "Central Midfielder",
+        "nationality": "Iraq",
+        "club": "AGF",
+        "league": "Superligaen",
+        "appearances": {
+            "matches_played": 26,
+            "started": 17,
+            "minutes_played": 1446
+        },
+        "core_stats": {
+            "goals": 4,
+            "assists": 2,
+            "xg": 3.04,
+            "xgot": 4.8,
+            "npxg": 3.04,
+            "xa": 1.81,
+            "xgi": 4.85,
+            "clean_sheets": 2,
+            "goals_conceded": 14,
+            "xgc": 14.73
+        },
+        "detailed_actions": {
+            "shots": 40,
+            "shots_on_target": 17,
+            "chances_created": 18,
+            "big_chances_created": 1,
+            "clearances": 26,
+            "blocks": 2,
+            "interceptions": 20,
+            "tackles": 28,
+            "recoveries": 97
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 926484,
+        "name": "Mohanad Ali",
+        "position": "Striker",
+        "nationality": "Iraq",
+        "club": "Dibba Al Fujairah",
+        "league": "Pro League",
+        "appearances": {
+            "matches_played": 20,
+            "started": 15,
+            "minutes_played": 1333
+        },
+        "core_stats": {
+            "goals": 6,
+            "assists": 1,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 2,
+            "goals_conceded": 28,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": 62,
+            "shots_on_target": 20,
+            "chances_created": 8,
+            "big_chances_created": 3,
+            "clearances": 14,
+            "blocks": 2,
+            "interceptions": 3,
+            "tackles": 5,
+            "recoveries": 15
+        },
+        "discipline": {
+            "yellow_cards": 3,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 674332,
+        "name": "Aymen Hussein",
+        "position": "Striker",
+        "nationality": "Iraq",
+        "club": "Al-Karma",
+        "league": null,
+        "appearances": {
+            "matches_played": 0,
+            "started": 0,
+            "minutes_played": 0
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": null,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": 1,
+            "shots_on_target": 1,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": 2,
+            "blocks": null,
+            "interceptions": null,
+            "tackles": 2,
+            "recoveries": 1
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1113688,
+        "name": "Ali Al Hamadi",
+        "position": "Striker",
+        "nationality": "Iraq",
+        "club": "Luton Town",
+        "league": "League One",
+        "appearances": {
+            "matches_played": 13,
+            "started": 2,
+            "minutes_played": 413
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 1,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": null,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": null,
+            "shots_on_target": null,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": null,
+            "blocks": null,
+            "interceptions": null,
+            "tackles": null,
+            "recoveries": null
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1303501,
+        "name": "Ali Yousef",
+        "position": "Center Back",
+        "nationality": "Iraq",
+        "club": "Nantes",
+        "league": "Ligue 1",
+        "appearances": {
+            "matches_played": 13,
+            "started": 10,
+            "minutes_played": 968
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": 0.4,
+            "xgot": 0.17,
+            "npxg": 0.4,
+            "xa": 0.22,
+            "xgi": 0.62,
+            "clean_sheets": 2,
+            "goals_conceded": 15,
+            "xgc": 11.53
+        },
+        "detailed_actions": {
+            "shots": 6,
+            "shots_on_target": 1,
+            "chances_created": 3,
+            "big_chances_created": null,
+            "clearances": 63,
+            "blocks": 5,
+            "interceptions": 20,
+            "tackles": 11,
+            "recoveries": 35
+        },
+        "discipline": {
+            "yellow_cards": 4,
+            "red_cards": 0
+        }
+    }
+]

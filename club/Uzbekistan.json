@@ -1,0 +1,1312 @@
+[
+    {
+        "id": 1259187,
+        "name": "Abduvohid Nematov",
+        "position": "Keeper",
+        "nationality": "Uzbekistan",
+        "club": "Nasaf Qarshi",
+        "league": null,
+        "appearances": {
+            "matches_played": 0,
+            "started": 0,
+            "minutes_played": 0
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 0,
+            "goals_conceded": 13,
+            "xgc": null
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        "goalkeeping_metrics": {
+            "penalties_conceded": 1,
+            "penalties_saved": 0,
+            "saves": 32,
+            "goal_prevented": null
+        }
+    },
+    {
+        "id": 643639,
+        "name": "Botirali Ergashev",
+        "position": "keeper",
+        "nationality": "Uzbekistan",
+        "club": "AGMK",
+        "league": null,
+        "appearances": {
+            "matches_played": 0,
+            "started": 0,
+            "minutes_played": 0
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 0,
+            "goals_conceded": 15,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": null,
+            "shots_on_target": null,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": null,
+            "blocks": null,
+            "interceptions": null,
+            "tackles": null,
+            "recoveries": null
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 619700,
+        "name": "Utkir Yusupov",
+        "position": "Keeper",
+        "nationality": "Uzbekistan",
+        "club": "Foolad Khuzestan",
+        "league": null,
+        "appearances": {
+            "matches_played": 0,
+            "started": 0,
+            "minutes_played": 0
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 7,
+            "goals_conceded": 7,
+            "xgc": null
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        "goalkeeping_metrics": {
+            "penalties_conceded": 0,
+            "penalties_saved": 2,
+            "saves": 30,
+            "goal_prevented": null
+        }
+    },
+    {
+        "id": 1543221,
+        "name": "Vladimir Nazarov",
+        "position": "keeper",
+        "nationality": "Uzbekistan",
+        "club": "Pakhtakor Tashkent",
+        "league": null,
+        "appearances": {
+            "matches_played": 0,
+            "started": 0,
+            "minutes_played": 0
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 2,
+            "goals_conceded": 4,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": null,
+            "shots_on_target": null,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": null,
+            "blocks": null,
+            "interceptions": null,
+            "tackles": null,
+            "recoveries": null
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 933051,
+        "name": "Azizbek Amonov",
+        "position": "forward",
+        "nationality": "Uzbekistan",
+        "club": "Dinamo Samarkand",
+        "league": null,
+        "appearances": {
+            "matches_played": 0,
+            "started": 0,
+            "minutes_played": 0
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 1,
+            "goals_conceded": 13,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": 27,
+            "shots_on_target": 8,
+            "chances_created": 25,
+            "big_chances_created": 6,
+            "clearances": null,
+            "blocks": 2,
+            "interceptions": 5,
+            "tackles": 13,
+            "recoveries": 33
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1258316,
+        "name": "Sherzod Nasrullaev",
+        "position": "Left Back",
+        "nationality": "Uzbekistan",
+        "club": "Nasaf Qarshi",
+        "league": null,
+        "appearances": {
+            "matches_played": 0,
+            "started": 0,
+            "minutes_played": 0
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": 15,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": 4,
+            "shots_on_target": null,
+            "chances_created": 1,
+            "big_chances_created": null,
+            "clearances": 12,
+            "blocks": 1,
+            "interceptions": 11,
+            "tackles": 9,
+            "recoveries": 29
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 922298,
+        "name": "Umar Eshmurodov",
+        "position": "Center Back",
+        "nationality": "Uzbekistan",
+        "club": "Nasaf Qarshi",
+        "league": null,
+        "appearances": {
+            "matches_played": 0,
+            "started": 0,
+            "minutes_played": 0
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": 13,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": 2,
+            "shots_on_target": null,
+            "chances_created": 2,
+            "big_chances_created": 1,
+            "clearances": 31,
+            "blocks": 7,
+            "interceptions": 11,
+            "tackles": 6,
+            "recoveries": 20
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1246968,
+        "name": "Ibrokhimkhalil Yuldoshev",
+        "position": "defender",
+        "nationality": "Uzbekistan",
+        "club": "Neftchi Fargona",
+        "league": null,
+        "appearances": {
+            "matches_played": 0,
+            "started": 0,
+            "minutes_played": 0
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": null,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": null,
+            "shots_on_target": null,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": null,
+            "blocks": null,
+            "interceptions": null,
+            "tackles": null,
+            "recoveries": null
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1543256,
+        "name": "Mukhammadkodir Khamraliev",
+        "position": "defender",
+        "nationality": "Uzbekistan",
+        "club": "Pakhtakor Tashkent",
+        "league": null,
+        "appearances": {
+            "matches_played": 0,
+            "started": 0,
+            "minutes_played": 0
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": 2,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": 1,
+            "shots_on_target": null,
+            "chances_created": 3,
+            "big_chances_created": null,
+            "clearances": null,
+            "blocks": 1,
+            "interceptions": null,
+            "tackles": 10,
+            "recoveries": 16
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1362998,
+        "name": "Abdukodir Khusanov",
+        "position": "Center Back",
+        "nationality": "Uzbekistan",
+        "club": "Manchester City",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 21,
+            "started": 15,
+            "minutes_played": 1429
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": 0.68,
+            "xgot": null,
+            "npxg": 0.68,
+            "xa": 0.57,
+            "xgi": 1.25,
+            "clean_sheets": 5,
+            "goals_conceded": 13,
+            "xgc": 20.94
+        },
+        "detailed_actions": {
+            "shots": 7,
+            "shots_on_target": 1,
+            "chances_created": 6,
+            "big_chances_created": null,
+            "clearances": 56,
+            "blocks": 9,
+            "interceptions": 33,
+            "tackles": 27,
+            "recoveries": 75
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1544707,
+        "name": "Mukhammadrasul Abdumazhidov",
+        "position": "defender",
+        "nationality": "Uzbekistan",
+        "club": "Pakhtakor Tashkent",
+        "league": null,
+        "appearances": {
+            "matches_played": 0,
+            "started": 0,
+            "minutes_played": 0
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 1,
+            "goals_conceded": 3,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": 5,
+            "shots_on_target": null,
+            "chances_created": 1,
+            "big_chances_created": null,
+            "clearances": null,
+            "blocks": 3,
+            "interceptions": 8,
+            "tackles": 7,
+            "recoveries": 12
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1477518,
+        "name": "Diyor Ortikboev",
+        "position": "defender",
+        "nationality": "Uzbekistan",
+        "club": "Xorazm",
+        "league": null,
+        "appearances": {
+            "matches_played": 0,
+            "started": 0,
+            "minutes_played": 0
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": null,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": null,
+            "shots_on_target": null,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": null,
+            "blocks": null,
+            "interceptions": null,
+            "tackles": null,
+            "recoveries": null
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 589585,
+        "name": "Farrukh Sayfiev",
+        "position": "Left Wing-Back",
+        "nationality": "Uzbekistan",
+        "club": "Navbahor Namangan",
+        "league": null,
+        "appearances": {
+            "matches_played": 0,
+            "started": 0,
+            "minutes_played": 0
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": 3,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": 3,
+            "shots_on_target": null,
+            "chances_created": 2,
+            "big_chances_created": null,
+            "clearances": null,
+            "blocks": 1,
+            "interceptions": 1,
+            "tackles": 1,
+            "recoveries": 15
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 624405,
+        "name": "Otabek Shukurov",
+        "position": "Defensive Midfielder",
+        "nationality": "Uzbekistan",
+        "club": "Baniyas",
+        "league": "Pro League",
+        "appearances": {
+            "matches_played": 19,
+            "started": 15,
+            "minutes_played": 1178
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 3,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 2,
+            "goals_conceded": 28,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": 9,
+            "shots_on_target": 1,
+            "chances_created": 12,
+            "big_chances_created": 3,
+            "clearances": 28,
+            "blocks": 1,
+            "interceptions": 9,
+            "tackles": 15,
+            "recoveries": 66
+        },
+        "discipline": {
+            "yellow_cards": 4,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1413271,
+        "name": "Aziz Ganiev",
+        "position": "midfielder",
+        "nationality": "Uzbekistan",
+        "club": "Rodina 3",
+        "league": null,
+        "appearances": {
+            "matches_played": 0,
+            "started": 0,
+            "minutes_played": 0
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": null,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": null,
+            "shots_on_target": null,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": null,
+            "blocks": null,
+            "interceptions": null,
+            "tackles": null,
+            "recoveries": null
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 619697,
+        "name": "Odiljon Hamrobekov",
+        "position": "Central Midfielder",
+        "nationality": "Uzbekistan",
+        "club": "Tractor",
+        "league": null,
+        "appearances": {
+            "matches_played": 0,
+            "started": 0,
+            "minutes_played": 0
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 3,
+            "goals_conceded": 5,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": 1,
+            "shots_on_target": null,
+            "chances_created": 6,
+            "big_chances_created": null,
+            "clearances": 2,
+            "blocks": 5,
+            "interceptions": 11,
+            "tackles": 11,
+            "recoveries": 39
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1294120,
+        "name": "Abdulla Abdullaev",
+        "position": "Central Midfielder",
+        "nationality": "Uzbekistan",
+        "club": "Dibba Al Fujairah",
+        "league": "Pro League",
+        "appearances": {
+            "matches_played": 9,
+            "started": 8,
+            "minutes_played": 750
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 2,
+            "goals_conceded": 18,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": 3,
+            "shots_on_target": null,
+            "chances_created": 4,
+            "big_chances_created": null,
+            "clearances": 12,
+            "blocks": 6,
+            "interceptions": 13,
+            "tackles": 14,
+            "recoveries": 32
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1135969,
+        "name": "Jasurbek Jaloliddinov",
+        "position": "midfielder",
+        "nationality": "Uzbekistan",
+        "club": "Sogdiana",
+        "league": null,
+        "appearances": {
+            "matches_played": 0,
+            "started": 0,
+            "minutes_played": 0
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": 3,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": 6,
+            "shots_on_target": 3,
+            "chances_created": 1,
+            "big_chances_created": null,
+            "clearances": null,
+            "blocks": 1,
+            "interceptions": 2,
+            "tackles": 3,
+            "recoveries": 9
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 929168,
+        "name": "Akmal Mozgovoy",
+        "position": "Attacking Midfielder",
+        "nationality": "Uzbekistan",
+        "club": "Pakhtakor Tashkent",
+        "league": "Pro League",
+        "appearances": {
+            "matches_played": 11,
+            "started": 6,
+            "minutes_played": 521
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": 16,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": 5,
+            "shots_on_target": 1,
+            "chances_created": 6,
+            "big_chances_created": null,
+            "clearances": 5,
+            "blocks": null,
+            "interceptions": 5,
+            "tackles": 6,
+            "recoveries": 14
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1249993,
+        "name": "Abbosbek Fayzullaev",
+        "position": "Right Winger",
+        "nationality": "Uzbekistan",
+        "club": "Başakşehir",
+        "league": "Super Lig",
+        "appearances": {
+            "matches_played": 20,
+            "started": 14,
+            "minutes_played": 1108
+        },
+        "core_stats": {
+            "goals": 3,
+            "assists": 3,
+            "xg": 4.01,
+            "xgot": 2.97,
+            "npxg": 4.01,
+            "xa": 3.5,
+            "xgi": 7.51,
+            "clean_sheets": 1,
+            "goals_conceded": 8,
+            "xgc": 11.36
+        },
+        "detailed_actions": {
+            "shots": 29,
+            "shots_on_target": 12,
+            "chances_created": 20,
+            "big_chances_created": 6,
+            "clearances": 4,
+            "blocks": null,
+            "interceptions": 7,
+            "tackles": 28,
+            "recoveries": 54
+        },
+        "discipline": {
+            "yellow_cards": 4,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1220854,
+        "name": "Sherzod Temirov",
+        "position": "forward",
+        "nationality": "Uzbekistan",
+        "club": "Erbil",
+        "league": null,
+        "appearances": {
+            "matches_played": 0,
+            "started": 0,
+            "minutes_played": 0
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": null,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": 4,
+            "shots_on_target": 2,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": null,
+            "blocks": null,
+            "interceptions": 1,
+            "tackles": null,
+            "recoveries": 3
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1477517,
+        "name": "Sherzod Esanov",
+        "position": "midfielder",
+        "nationality": "Uzbekistan",
+        "club": "Buxoro",
+        "league": null,
+        "appearances": {
+            "matches_played": 0,
+            "started": 0,
+            "minutes_played": 0
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": 0.2,
+            "xgot": 0.17,
+            "npxg": 0.2,
+            "xa": null,
+            "xgi": 0.2,
+            "clean_sheets": null,
+            "goals_conceded": 5,
+            "xgc": 2.09
+        },
+        "detailed_actions": {
+            "shots": 2,
+            "shots_on_target": 1,
+            "chances_created": 5,
+            "big_chances_created": null,
+            "clearances": null,
+            "blocks": 2,
+            "interceptions": null,
+            "tackles": 13,
+            "recoveries": 19
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1429286,
+        "name": "Umarali Rakhmonaliev",
+        "position": "midfielder",
+        "nationality": "Uzbekistan",
+        "club": "Sabah FK",
+        "league": null,
+        "appearances": {
+            "matches_played": 0,
+            "started": 0,
+            "minutes_played": 0
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": 1,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": 1,
+            "shots_on_target": null,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": null,
+            "blocks": null,
+            "interceptions": null,
+            "tackles": 1,
+            "recoveries": 1
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1259192,
+        "name": "Jamshid Iskanderov",
+        "position": "midfielder",
+        "nationality": "Uzbekistan",
+        "club": "Neftchi Fargona",
+        "league": null,
+        "appearances": {
+            "matches_played": 0,
+            "started": 0,
+            "minutes_played": 0
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": null,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": null,
+            "shots_on_target": null,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": null,
+            "blocks": null,
+            "interceptions": null,
+            "tackles": null,
+            "recoveries": null
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 619513,
+        "name": "Eldor Shomurodov",
+        "position": "Attacking Midfielder",
+        "nationality": "Uzbekistan",
+        "club": "Başakşehir",
+        "league": "Super Lig",
+        "appearances": {
+            "matches_played": 34,
+            "started": 34,
+            "minutes_played": 2928
+        },
+        "core_stats": {
+            "goals": 22,
+            "assists": 5,
+            "xg": 15.42,
+            "xgot": 18.7,
+            "npxg": 12.27,
+            "xa": 3.35,
+            "xgi": 18.77,
+            "clean_sheets": 8,
+            "goals_conceded": 33,
+            "xgc": 41.35
+        },
+        "detailed_actions": {
+            "shots": 95,
+            "shots_on_target": 48,
+            "chances_created": 42,
+            "big_chances_created": 6,
+            "clearances": 10,
+            "blocks": 5,
+            "interceptions": 4,
+            "tackles": 28,
+            "recoveries": 75
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1057486,
+        "name": "Oston Urunov",
+        "position": "Left Midfielder",
+        "nationality": "Uzbekistan",
+        "club": "Persepolis",
+        "league": null,
+        "appearances": {
+            "matches_played": 0,
+            "started": 0,
+            "minutes_played": 0
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": 2,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": 1,
+            "shots_on_target": 1,
+            "chances_created": 1,
+            "big_chances_created": null,
+            "clearances": null,
+            "blocks": null,
+            "interceptions": 1,
+            "tackles": 1,
+            "recoveries": 7
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1256495,
+        "name": "Khusayin Norchaev",
+        "position": "Striker",
+        "nationality": "Uzbekistan",
+        "club": "Navbahor Namangan",
+        "league": null,
+        "appearances": {
+            "matches_played": 0,
+            "started": 0,
+            "minutes_played": 0
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": 9,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": 5,
+            "shots_on_target": 2,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": null,
+            "blocks": null,
+            "interceptions": 1,
+            "tackles": 3,
+            "recoveries": 6
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1421621,
+        "name": "Ruslanbek Jiyanov",
+        "position": "forward",
+        "nationality": "Uzbekistan",
+        "club": "Navbahor Namangan",
+        "league": null,
+        "appearances": {
+            "matches_played": 0,
+            "started": 0,
+            "minutes_played": 0
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": 1,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": 4,
+            "shots_on_target": null,
+            "chances_created": 1,
+            "big_chances_created": null,
+            "clearances": null,
+            "blocks": null,
+            "interceptions": null,
+            "tackles": 2,
+            "recoveries": 6
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1543319,
+        "name": "Alisher Odilov",
+        "position": "forward",
+        "nationality": "Uzbekistan",
+        "club": "Neftchi Fargona",
+        "league": null,
+        "appearances": {
+            "matches_played": 0,
+            "started": 0,
+            "minutes_played": 0
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": 1,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": 4,
+            "shots_on_target": 2,
+            "chances_created": 2,
+            "big_chances_created": 1,
+            "clearances": null,
+            "blocks": null,
+            "interceptions": null,
+            "tackles": 1,
+            "recoveries": 2
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1768220,
+        "name": "Sardorbek Bakhromov",
+        "position": "Central Midfielder",
+        "nationality": "Uzbekistan",
+        "club": "Nasaf Qarshi",
+        "league": null,
+        "appearances": {
+            "matches_played": 0,
+            "started": 0,
+            "minutes_played": 0
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": null,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": null,
+            "shots_on_target": null,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": null,
+            "blocks": null,
+            "interceptions": null,
+            "tackles": null,
+            "recoveries": null
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 533382,
+        "name": "Jaloliddin Masharipov",
+        "position": "forward",
+        "nationality": "Uzbekistan",
+        "club": "Esteghlal",
+        "league": null,
+        "appearances": {
+            "matches_played": 0,
+            "started": 0,
+            "minutes_played": 0
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 1,
+            "goals_conceded": 8,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": 7,
+            "shots_on_target": 1,
+            "chances_created": 10,
+            "big_chances_created": 2,
+            "clearances": null,
+            "blocks": null,
+            "interceptions": 4,
+            "tackles": 14,
+            "recoveries": 40
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 619508,
+        "name": "Dostonbek Khamdamov",
+        "position": "midfielder",
+        "nationality": "Uzbekistan",
+        "club": "Pakhtakor Tashkent",
+        "league": null,
+        "appearances": {
+            "matches_played": 0,
+            "started": 0,
+            "minutes_played": 0
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": 7,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": 8,
+            "shots_on_target": 1,
+            "chances_created": 14,
+            "big_chances_created": 2,
+            "clearances": null,
+            "blocks": null,
+            "interceptions": 2,
+            "tackles": 12,
+            "recoveries": 30
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 251915,
+        "name": "Igor Sergeev",
+        "position": "forward",
+        "nationality": "Uzbekistan",
+        "club": "Persepolis",
+        "league": null,
+        "appearances": {
+            "matches_played": 0,
+            "started": 0,
+            "minutes_played": 0
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": 3,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": 1,
+            "shots_on_target": null,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": null,
+            "blocks": null,
+            "interceptions": 1,
+            "tackles": null,
+            "recoveries": 1
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    }
+]

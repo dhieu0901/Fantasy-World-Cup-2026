@@ -1,0 +1,1027 @@
+[
+    {
+        "id": 912286,
+        "name": "Lionel Mpasi",
+        "position": "Keeper",
+        "nationality": "DR Congo",
+        "club": "Le Havre",
+        "league": "Ligue 1",
+        "appearances": {
+            "matches_played": 4,
+            "started": 0,
+            "minutes_played": 315
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 1,
+            "goals_conceded": 2,
+            "xgc": null
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 0
+        },
+        "goalkeeping_metrics": {
+            "penalties_conceded": null,
+            "penalties_saved": null,
+            "saves": 15,
+            "goal_prevented": 2.34
+        }
+    },
+    {
+        "id": 1257080,
+        "name": "Matthieu Epolo",
+        "position": "Keeper",
+        "nationality": "DR Congo",
+        "club": "Standard Liege",
+        "league": "Belgian Pro League",
+        "appearances": {
+            "matches_played": 29,
+            "started": 0,
+            "minutes_played": 2610
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 8,
+            "goals_conceded": 35,
+            "xgc": null
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        },
+        "goalkeeping_metrics": {
+            "penalties_conceded": 0,
+            "penalties_saved": 1,
+            "saves": 102,
+            "goal_prevented": 2.81
+        }
+    },
+    {
+        "id": 976996,
+        "name": "Timothy Fayulu",
+        "position": "Keeper",
+        "nationality": "DR Congo",
+        "club": "FC Noah",
+        "league": null,
+        "appearances": {
+            "matches_played": 0,
+            "started": 0,
+            "minutes_played": 0
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 1,
+            "goals_conceded": 5,
+            "xgc": null
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        "goalkeeping_metrics": {
+            "penalties_conceded": null,
+            "penalties_saved": null,
+            "saves": 8,
+            "goal_prevented": 0.03
+        }
+    },
+    {
+        "id": 277761,
+        "name": "Chancel Mbemba",
+        "position": "Center Back",
+        "nationality": "DR Congo",
+        "club": "Lille",
+        "league": "Ligue 1",
+        "appearances": {
+            "matches_played": 13,
+            "started": 9,
+            "minutes_played": 953
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": 0.52,
+            "xgot": 1.03,
+            "npxg": 0.52,
+            "xa": 0.12,
+            "xgi": 0.64,
+            "clean_sheets": 4,
+            "goals_conceded": 15,
+            "xgc": 15.56
+        },
+        "detailed_actions": {
+            "shots": 7,
+            "shots_on_target": 3,
+            "chances_created": 4,
+            "big_chances_created": 1,
+            "clearances": 65,
+            "blocks": 4,
+            "interceptions": 14,
+            "tackles": 14,
+            "recoveries": 38
+        },
+        "discipline": {
+            "yellow_cards": 3,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 690149,
+        "name": "Axel Tuanzebe",
+        "position": "Center Back",
+        "nationality": "DR Congo",
+        "club": "Burnley",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 14,
+            "started": 14,
+            "minutes_played": 1202
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 0,
+            "xg": 0.61,
+            "xgot": 0.89,
+            "npxg": 0.61,
+            "xa": 0.14,
+            "xgi": 0.75,
+            "clean_sheets": 1,
+            "goals_conceded": 26,
+            "xgc": 29.25
+        },
+        "detailed_actions": {
+            "shots": 2,
+            "shots_on_target": 1,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": 83,
+            "blocks": 11,
+            "interceptions": 11,
+            "tackles": 14,
+            "recoveries": 40
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 418137,
+        "name": "Arthur Masuaku",
+        "position": "Left Back",
+        "nationality": "DR Congo",
+        "club": "Lens",
+        "league": "Ligue 1",
+        "appearances": {
+            "matches_played": 4,
+            "started": 3,
+            "minutes_played": 229
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": 0.07,
+            "xgot": null,
+            "npxg": 0.07,
+            "xa": 0.08,
+            "xgi": 0.15,
+            "clean_sheets": null,
+            "goals_conceded": 2,
+            "xgc": 2.16
+        },
+        "detailed_actions": {
+            "shots": 1,
+            "shots_on_target": null,
+            "chances_created": 1,
+            "big_chances_created": null,
+            "clearances": 4,
+            "blocks": null,
+            "interceptions": 2,
+            "tackles": 4,
+            "recoveries": 3
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1022309,
+        "name": "Gédéon Kalulu",
+        "position": "Right Back",
+        "nationality": "DR Congo",
+        "club": "Aris Limassol",
+        "league": "Cyprus League",
+        "appearances": {
+            "matches_played": 17,
+            "started": 13,
+            "minutes_played": 1200
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": null,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": null,
+            "shots_on_target": null,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": null,
+            "blocks": null,
+            "interceptions": null,
+            "tackles": null,
+            "recoveries": null
+        },
+        "discipline": {
+            "yellow_cards": 4,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 500932,
+        "name": "Joris Kayembe",
+        "position": "Left Back",
+        "nationality": "DR Congo",
+        "club": "Genk",
+        "league": "Belgian Pro League",
+        "appearances": {
+            "matches_played": 28,
+            "started": 23,
+            "minutes_played": 2105
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 1,
+            "xg": 0.47,
+            "xgot": 0.72,
+            "npxg": 0.47,
+            "xa": 1.64,
+            "xgi": 2.11,
+            "clean_sheets": 7,
+            "goals_conceded": 32,
+            "xgc": 30.17
+        },
+        "detailed_actions": {
+            "shots": 13,
+            "shots_on_target": 2,
+            "chances_created": 20,
+            "big_chances_created": 1,
+            "clearances": 81,
+            "blocks": 8,
+            "interceptions": 28,
+            "tackles": 48,
+            "recoveries": 136
+        },
+        "discipline": {
+            "yellow_cards": 5,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 760320,
+        "name": "Aaron Wan-Bissaka",
+        "position": "Right Back",
+        "nationality": "DR Congo",
+        "club": "West Ham United",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 25,
+            "started": 23,
+            "minutes_played": 2084
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 2,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": 1.0,
+            "xgi": 1.0,
+            "clean_sheets": 3,
+            "goals_conceded": 43,
+            "xgc": 35.87
+        },
+        "detailed_actions": {
+            "shots": 0,
+            "shots_on_target": null,
+            "chances_created": 18,
+            "big_chances_created": 2,
+            "clearances": 94,
+            "blocks": 7,
+            "interceptions": 40,
+            "tackles": 33,
+            "recoveries": 75
+        },
+        "discipline": {
+            "yellow_cards": 4,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 862635,
+        "name": "Rocky Bushiri",
+        "position": "Center Back",
+        "nationality": "DR Congo",
+        "club": "Hibernian",
+        "league": "Premiership",
+        "appearances": {
+            "matches_played": 26,
+            "started": 24,
+            "minutes_played": 2178
+        },
+        "core_stats": {
+            "goals": 3,
+            "assists": 0,
+            "xg": 2.75,
+            "xgot": 2.72,
+            "npxg": 2.75,
+            "xa": 0.27,
+            "xgi": 3.02,
+            "clean_sheets": 7,
+            "goals_conceded": 33,
+            "xgc": 29.33
+        },
+        "detailed_actions": {
+            "shots": 13,
+            "shots_on_target": 4,
+            "chances_created": 5,
+            "big_chances_created": null,
+            "clearances": 166,
+            "blocks": 15,
+            "interceptions": 30,
+            "tackles": 22,
+            "recoveries": 67
+        },
+        "discipline": {
+            "yellow_cards": 6,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1132814,
+        "name": "Steve Kapuadi",
+        "position": "Center Back",
+        "nationality": "DR Congo",
+        "club": "Widzew Łódź",
+        "league": "Ekstraklasa",
+        "appearances": {
+            "matches_played": 27,
+            "started": 25,
+            "minutes_played": 2310
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 0,
+            "xg": 1.94,
+            "xgot": 1.61,
+            "npxg": 1.94,
+            "xa": 0.52,
+            "xgi": 2.46,
+            "clean_sheets": 7,
+            "goals_conceded": 28,
+            "xgc": 26.76
+        },
+        "detailed_actions": {
+            "shots": 12,
+            "shots_on_target": 4,
+            "chances_created": 8,
+            "big_chances_created": null,
+            "clearances": 112,
+            "blocks": 19,
+            "interceptions": 13,
+            "tackles": 28,
+            "recoveries": 75
+        },
+        "discipline": {
+            "yellow_cards": 3,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 751762,
+        "name": "Dylan Batubinsika",
+        "position": "Center Back",
+        "nationality": "DR Congo",
+        "club": "AE Larissa",
+        "league": "Super League",
+        "appearances": {
+            "matches_played": 16,
+            "started": 16,
+            "minutes_played": 1412
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": 0.25,
+            "xgot": 0.15,
+            "npxg": 0.25,
+            "xa": 0.1,
+            "xgi": 0.35,
+            "clean_sheets": 2,
+            "goals_conceded": 22,
+            "xgc": 21.73
+        },
+        "detailed_actions": {
+            "shots": 4,
+            "shots_on_target": 1,
+            "chances_created": 1,
+            "big_chances_created": null,
+            "clearances": 108,
+            "blocks": 13,
+            "interceptions": 28,
+            "tackles": 12,
+            "recoveries": 38
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1359649,
+        "name": "Noah Sadiki",
+        "position": "Central Midfielder",
+        "nationality": "DR Congo",
+        "club": "Sunderland",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 33,
+            "started": 33,
+            "minutes_played": 2894
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 1,
+            "xg": 1.46,
+            "xgot": 0.75,
+            "npxg": 1.46,
+            "xa": 1.44,
+            "xgi": 2.9,
+            "clean_sheets": 8,
+            "goals_conceded": 42,
+            "xgc": 41.6
+        },
+        "detailed_actions": {
+            "shots": 18,
+            "shots_on_target": 5,
+            "chances_created": 19,
+            "big_chances_created": null,
+            "clearances": 44,
+            "blocks": 11,
+            "interceptions": 34,
+            "tackles": 46,
+            "recoveries": 114
+        },
+        "discipline": {
+            "yellow_cards": 9,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 743720,
+        "name": "Charles Pickel",
+        "position": "Central Midfielder",
+        "nationality": "DR Congo",
+        "club": "Espanyol",
+        "league": "LaLiga",
+        "appearances": {
+            "matches_played": 24,
+            "started": 4,
+            "minutes_played": 693
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 0,
+            "xg": 0.82,
+            "xgot": 1.57,
+            "npxg": 0.82,
+            "xa": 0.1,
+            "xgi": 0.92,
+            "clean_sheets": 1,
+            "goals_conceded": 12,
+            "xgc": 13.97
+        },
+        "detailed_actions": {
+            "shots": 10,
+            "shots_on_target": 4,
+            "chances_created": 2,
+            "big_chances_created": null,
+            "clearances": 12,
+            "blocks": 3,
+            "interceptions": 6,
+            "tackles": 13,
+            "recoveries": 29
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 2
+        }
+    },
+    {
+        "id": 909803,
+        "name": "Edo Kayembe",
+        "position": "Central Midfielder",
+        "nationality": "DR Congo",
+        "club": "Watford",
+        "league": "Championship",
+        "appearances": {
+            "matches_played": 37,
+            "started": 28,
+            "minutes_played": 2496
+        },
+        "core_stats": {
+            "goals": 4,
+            "assists": 1,
+            "xg": 4.18,
+            "xgot": 4.49,
+            "npxg": 3.39,
+            "xa": 2.9,
+            "xgi": 7.08,
+            "clean_sheets": 3,
+            "goals_conceded": 44,
+            "xgc": 35.5
+        },
+        "detailed_actions": {
+            "shots": 56,
+            "shots_on_target": 12,
+            "chances_created": 48,
+            "big_chances_created": 6,
+            "clearances": 34,
+            "blocks": 5,
+            "interceptions": 11,
+            "tackles": 26,
+            "recoveries": 164
+        },
+        "discipline": {
+            "yellow_cards": 4,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 866108,
+        "name": "Samuel Moutoussamy",
+        "position": "Defensive Midfielder",
+        "nationality": "DR Congo",
+        "club": "Atromitos",
+        "league": "Super League",
+        "appearances": {
+            "matches_played": 28,
+            "started": 27,
+            "minutes_played": 2337
+        },
+        "core_stats": {
+            "goals": 3,
+            "assists": 0,
+            "xg": 1.1,
+            "xgot": 2.33,
+            "npxg": 1.1,
+            "xa": 1.37,
+            "xgi": 2.47,
+            "clean_sheets": 7,
+            "goals_conceded": 33,
+            "xgc": 35.37
+        },
+        "detailed_actions": {
+            "shots": 20,
+            "shots_on_target": 7,
+            "chances_created": 22,
+            "big_chances_created": 3,
+            "clearances": 38,
+            "blocks": 7,
+            "interceptions": 16,
+            "tackles": 39,
+            "recoveries": 114
+        },
+        "discipline": {
+            "yellow_cards": 4,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1428153,
+        "name": "Ngal'ayel Mukau",
+        "position": "Right Winger",
+        "nationality": "DR Congo",
+        "club": "Lille",
+        "league": "Ligue 1",
+        "appearances": {
+            "matches_played": 30,
+            "started": 19,
+            "minutes_played": 1539
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 0,
+            "xg": 2.14,
+            "xgot": 1.01,
+            "npxg": 2.14,
+            "xa": 0.98,
+            "xgi": 3.12,
+            "clean_sheets": 1,
+            "goals_conceded": 21,
+            "xgc": 18.43
+        },
+        "detailed_actions": {
+            "shots": 20,
+            "shots_on_target": 5,
+            "chances_created": 13,
+            "big_chances_created": null,
+            "clearances": 8,
+            "blocks": 1,
+            "interceptions": 14,
+            "tackles": 29,
+            "recoveries": 67
+        },
+        "discipline": {
+            "yellow_cards": 3,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1049799,
+        "name": "Nathanaël Mbuku",
+        "position": "Left Winger",
+        "nationality": "DR Congo",
+        "club": "Montpellier",
+        "league": "Ligue 2",
+        "appearances": {
+            "matches_played": 30,
+            "started": 26,
+            "minutes_played": 2191
+        },
+        "core_stats": {
+            "goals": 4,
+            "assists": 5,
+            "xg": 4.44,
+            "xgot": 3.0,
+            "npxg": 4.44,
+            "xa": 4.8,
+            "xgi": 9.24,
+            "clean_sheets": 3,
+            "goals_conceded": 19,
+            "xgc": 25.03
+        },
+        "detailed_actions": {
+            "shots": 41,
+            "shots_on_target": 14,
+            "chances_created": 38,
+            "big_chances_created": 8,
+            "clearances": 6,
+            "blocks": 2,
+            "interceptions": 15,
+            "tackles": 48,
+            "recoveries": 103
+        },
+        "discipline": {
+            "yellow_cards": 5,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 694060,
+        "name": "Meschak Elia",
+        "position": "Right Winger",
+        "nationality": "DR Congo",
+        "club": "Alanyaspor",
+        "league": "Super Lig",
+        "appearances": {
+            "matches_played": 22,
+            "started": 8,
+            "minutes_played": 812
+        },
+        "core_stats": {
+            "goals": 3,
+            "assists": 0,
+            "xg": 0.84,
+            "xgot": 1.09,
+            "npxg": 0.84,
+            "xa": 1.47,
+            "xgi": 2.31,
+            "clean_sheets": null,
+            "goals_conceded": 14,
+            "xgc": 12.06
+        },
+        "detailed_actions": {
+            "shots": 14,
+            "shots_on_target": 9,
+            "chances_created": 12,
+            "big_chances_created": 2,
+            "clearances": 1,
+            "blocks": null,
+            "interceptions": 4,
+            "tackles": 8,
+            "recoveries": 30
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1302121,
+        "name": "Brian Cipenga",
+        "position": "Left Winger",
+        "nationality": "DR Congo",
+        "club": "Castellon",
+        "league": "LaLiga2",
+        "appearances": {
+            "matches_played": 29,
+            "started": 23,
+            "minutes_played": 2169
+        },
+        "core_stats": {
+            "goals": 6,
+            "assists": 9,
+            "xg": 6.05,
+            "xgot": 9.05,
+            "npxg": 6.05,
+            "xa": 7.89,
+            "xgi": 13.94,
+            "clean_sheets": 4,
+            "goals_conceded": 29,
+            "xgc": 34.33
+        },
+        "detailed_actions": {
+            "shots": 50,
+            "shots_on_target": 22,
+            "chances_created": 46,
+            "big_chances_created": 10,
+            "clearances": 12,
+            "blocks": null,
+            "interceptions": 10,
+            "tackles": 44,
+            "recoveries": 104
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 163205,
+        "name": "Gaël Kakuta",
+        "position": "Striker",
+        "nationality": "DR Congo",
+        "club": "AE Larissa",
+        "league": "Super League",
+        "appearances": {
+            "matches_played": 12,
+            "started": 4,
+            "minutes_played": 474
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 2,
+            "xg": 0.95,
+            "xgot": 0.19,
+            "npxg": 0.95,
+            "xa": 0.93,
+            "xgi": 1.88,
+            "clean_sheets": null,
+            "goals_conceded": 5,
+            "xgc": 6.95
+        },
+        "detailed_actions": {
+            "shots": 10,
+            "shots_on_target": 2,
+            "chances_created": 10,
+            "big_chances_created": 1,
+            "clearances": 2,
+            "blocks": 1,
+            "interceptions": 2,
+            "tackles": 9,
+            "recoveries": 24
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 466132,
+        "name": "Théo Bongonda",
+        "position": "Right Winger",
+        "nationality": "DR Congo",
+        "club": "Spartak Moscow",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 4,
+            "started": 0,
+            "minutes_played": 47
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": null,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": null,
+            "shots_on_target": null,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": null,
+            "blocks": null,
+            "interceptions": null,
+            "tackles": null,
+            "recoveries": null
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 696932,
+        "name": "Simon Banza",
+        "position": "Striker",
+        "nationality": "DR Congo",
+        "club": "Al-Jazira",
+        "league": "Pro League",
+        "appearances": {
+            "matches_played": 16,
+            "started": 12,
+            "minutes_played": 1142
+        },
+        "core_stats": {
+            "goals": 9,
+            "assists": 1,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 2,
+            "goals_conceded": 12,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": 35,
+            "shots_on_target": 17,
+            "chances_created": 6,
+            "big_chances_created": 3,
+            "clearances": 12,
+            "blocks": 1,
+            "interceptions": 3,
+            "tackles": 8,
+            "recoveries": 19
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 666857,
+        "name": "Yoane Wissa",
+        "position": "Striker",
+        "nationality": "DR Congo",
+        "club": "Newcastle United",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 19,
+            "started": 4,
+            "minutes_played": 521
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 1,
+            "xg": 3.12,
+            "xgot": 1.33,
+            "npxg": 3.12,
+            "xa": 0.56,
+            "xgi": 3.68,
+            "clean_sheets": null,
+            "goals_conceded": 11,
+            "xgc": 9.98
+        },
+        "detailed_actions": {
+            "shots": 13,
+            "shots_on_target": 5,
+            "chances_created": 4,
+            "big_chances_created": 1,
+            "clearances": 2,
+            "blocks": 1,
+            "interceptions": null,
+            "tackles": 5,
+            "recoveries": 14
+        },
+        "discipline": {
+            "yellow_cards": 3,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1116042,
+        "name": "Fiston Mayele",
+        "position": "Striker",
+        "nationality": "DR Congo",
+        "club": "Pyramids FC",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 24,
+            "started": 18,
+            "minutes_played": 1597
+        },
+        "core_stats": {
+            "goals": 5,
+            "assists": 2,
+            "xg": 5.7,
+            "xgot": 5.21,
+            "npxg": 5.7,
+            "xa": 1.96,
+            "xgi": 7.66,
+            "clean_sheets": 2,
+            "goals_conceded": 14,
+            "xgc": 15.96
+        },
+        "detailed_actions": {
+            "shots": 46,
+            "shots_on_target": 20,
+            "chances_created": 18,
+            "big_chances_created": 3,
+            "clearances": 7,
+            "blocks": null,
+            "interceptions": null,
+            "tackles": 7,
+            "recoveries": 25
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 201939,
+        "name": "Cédric Bakambu",
+        "position": "Striker",
+        "nationality": "DR Congo",
+        "club": "Real Betis",
+        "league": "LaLiga",
+        "appearances": {
+            "matches_played": 18,
+            "started": 5,
+            "minutes_played": 562
+        },
+        "core_stats": {
+            "goals": 3,
+            "assists": 1,
+            "xg": 3.38,
+            "xgot": 3.73,
+            "npxg": 3.38,
+            "xa": 0.47,
+            "xgi": 3.85,
+            "clean_sheets": null,
+            "goals_conceded": 10,
+            "xgc": 8.31
+        },
+        "detailed_actions": {
+            "shots": 21,
+            "shots_on_target": 9,
+            "chances_created": 4,
+            "big_chances_created": 2,
+            "clearances": 9,
+            "blocks": null,
+            "interceptions": 2,
+            "tackles": 2,
+            "recoveries": 8
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        }
+    }
+]

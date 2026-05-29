@@ -1,0 +1,757 @@
+[
+    {
+        "id": 422149,
+        "name": "Vozinha",
+        "position": "Keeper",
+        "nationality": "Cape Verde",
+        "club": "Chaves",
+        "league": "Liga Portugal 2",
+        "appearances": {
+            "matches_played": 19,
+            "started": 0,
+            "minutes_played": 1710
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": null,
+            "xgc": null
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        "goalkeeping_metrics": {
+            "penalties_conceded": null,
+            "penalties_saved": null,
+            "saves": null,
+            "goal_prevented": null
+        }
+    },
+    {
+        "id": 1441786,
+        "name": "Sidny Cabral",
+        "position": "Right Midfielder",
+        "nationality": "Cape Verde",
+        "club": "Benfica",
+        "league": "Liga Portugal",
+        "appearances": {
+            "matches_played": 23,
+            "started": 18,
+            "minutes_played": 1680
+        },
+        "core_stats": {
+            "goals": 6,
+            "assists": 5,
+            "xg": 4.53,
+            "xgot": 5.49,
+            "npxg": 2.16,
+            "xa": 5.76,
+            "xgi": 10.29,
+            "clean_sheets": 3,
+            "goals_conceded": 23,
+            "xgc": 21.94
+        },
+        "detailed_actions": {
+            "shots": 49,
+            "shots_on_target": 16,
+            "chances_created": 39,
+            "big_chances_created": 9,
+            "clearances": 18,
+            "blocks": 3,
+            "interceptions": 11,
+            "tackles": 26,
+            "recoveries": 64
+        },
+        "discipline": {
+            "yellow_cards": 4,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 922877,
+        "name": "Logan Costa",
+        "position": "defender",
+        "nationality": "Cape Verde",
+        "club": "Villarreal",
+        "league": "LaLiga",
+        "appearances": {
+            "matches_played": 2,
+            "started": 0,
+            "minutes_played": 28
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": null,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": null,
+            "shots_on_target": null,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": null,
+            "blocks": null,
+            "interceptions": null,
+            "tackles": null,
+            "recoveries": null
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 444000,
+        "name": "Steven Moreira",
+        "position": "Center Back",
+        "nationality": "Cape Verde",
+        "club": "Columbus Crew",
+        "league": "Major League Soccer",
+        "appearances": {
+            "matches_played": 14,
+            "started": 13,
+            "minutes_played": 1136
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": 0.31,
+            "xgot": 0.31,
+            "npxg": 0.31,
+            "xa": 0.75,
+            "xgi": 1.06,
+            "clean_sheets": 1,
+            "goals_conceded": 20,
+            "xgc": 14.84
+        },
+        "detailed_actions": {
+            "shots": 9,
+            "shots_on_target": 2,
+            "chances_created": 9,
+            "big_chances_created": 1,
+            "clearances": 17,
+            "blocks": 1,
+            "interceptions": 12,
+            "tackles": 9,
+            "recoveries": 46
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1460591,
+        "name": "Wagner Pina",
+        "position": "Right Back",
+        "nationality": "Cape Verde",
+        "club": "Trabzonspor",
+        "league": "Super Lig",
+        "appearances": {
+            "matches_played": 31,
+            "started": 28,
+            "minutes_played": 2444
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 7,
+            "xg": 0.43,
+            "xgot": 0.41,
+            "npxg": 0.43,
+            "xa": 4.86,
+            "xgi": 5.29,
+            "clean_sheets": 6,
+            "goals_conceded": 26,
+            "xgc": 32.56
+        },
+        "detailed_actions": {
+            "shots": 11,
+            "shots_on_target": 4,
+            "chances_created": 33,
+            "big_chances_created": 8,
+            "clearances": 54,
+            "blocks": 13,
+            "interceptions": 25,
+            "tackles": 64,
+            "recoveries": 124
+        },
+        "discipline": {
+            "yellow_cards": 4,
+            "red_cards": 1
+        }
+    },
+    {
+        "id": 1175733,
+        "name": "Kelvin Pires",
+        "position": "Center Back",
+        "nationality": "Cape Verde",
+        "club": "SJK",
+        "league": "Veikkausliiga",
+        "appearances": {
+            "matches_played": 7,
+            "started": 7,
+            "minutes_played": 630
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 2,
+            "goals_conceded": 8,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": 10,
+            "shots_on_target": 3,
+            "chances_created": 2,
+            "big_chances_created": 1,
+            "clearances": 30,
+            "blocks": 8,
+            "interceptions": 7,
+            "tackles": 6,
+            "recoveries": 35
+        },
+        "discipline": {
+            "yellow_cards": 4,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1165477,
+        "name": "Telmo Arcanjo",
+        "position": "Right Winger",
+        "nationality": "Cape Verde",
+        "club": "Vitoria de Guimaraes",
+        "league": "Liga Portugal",
+        "appearances": {
+            "matches_played": 29,
+            "started": 12,
+            "minutes_played": 1243
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 0,
+            "xg": 1.05,
+            "xgot": 1.37,
+            "npxg": 1.05,
+            "xa": 2.92,
+            "xgi": 3.97,
+            "clean_sheets": 1,
+            "goals_conceded": 14,
+            "xgc": 17.6
+        },
+        "detailed_actions": {
+            "shots": 27,
+            "shots_on_target": 9,
+            "chances_created": 29,
+            "big_chances_created": 3,
+            "clearances": 5,
+            "blocks": null,
+            "interceptions": 9,
+            "tackles": 19,
+            "recoveries": 54
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 1
+        }
+    },
+    {
+        "id": 798069,
+        "name": "Deroy Duarte",
+        "position": "Defensive Midfielder",
+        "nationality": "Cape Verde",
+        "club": "Ludogorets Razgrad",
+        "league": "First Professional League",
+        "appearances": {
+            "matches_played": 33,
+            "started": 27,
+            "minutes_played": 2342
+        },
+        "core_stats": {
+            "goals": 2,
+            "assists": 1,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": null,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": null,
+            "shots_on_target": null,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": null,
+            "blocks": null,
+            "interceptions": null,
+            "tackles": null,
+            "recoveries": null
+        },
+        "discipline": {
+            "yellow_cards": 3,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 665167,
+        "name": "Laros Duarte",
+        "position": "Defensive Midfielder",
+        "nationality": "Cape Verde",
+        "club": "Puskas FC Academy",
+        "league": "NB I",
+        "appearances": {
+            "matches_played": 30,
+            "started": 28,
+            "minutes_played": 2470
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 6,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": null,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": null,
+            "shots_on_target": null,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": null,
+            "blocks": null,
+            "interceptions": null,
+            "tackles": null,
+            "recoveries": null
+        },
+        "discipline": {
+            "yellow_cards": 5,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 680905,
+        "name": "Jamiro Monteiro",
+        "position": "Central Midfielder",
+        "nationality": "Cape Verde",
+        "club": "PEC Zwolle",
+        "league": "Eredivisie",
+        "appearances": {
+            "matches_played": 21,
+            "started": 17,
+            "minutes_played": 1276
+        },
+        "core_stats": {
+            "goals": 2,
+            "assists": 3,
+            "xg": 2.49,
+            "xgot": 0.92,
+            "npxg": 2.49,
+            "xa": 2.15,
+            "xgi": 4.64,
+            "clean_sheets": 1,
+            "goals_conceded": 29,
+            "xgc": 26.13
+        },
+        "detailed_actions": {
+            "shots": 20,
+            "shots_on_target": 3,
+            "chances_created": 14,
+            "big_chances_created": 3,
+            "clearances": 8,
+            "blocks": 3,
+            "interceptions": 12,
+            "tackles": 43,
+            "recoveries": 102
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 1
+        }
+    },
+    {
+        "id": 890503,
+        "name": "Kevin Pina",
+        "position": "Defensive Midfielder",
+        "nationality": "Cape Verde",
+        "club": "FC Krasnodar",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 27,
+            "started": 11,
+            "minutes_played": 1195
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 0,
+            "xg": 2.66,
+            "xgot": 2.24,
+            "npxg": 2.66,
+            "xa": 1.68,
+            "xgi": 4.34,
+            "clean_sheets": 3,
+            "goals_conceded": 10,
+            "xgc": 14.29
+        },
+        "detailed_actions": {
+            "shots": 30,
+            "shots_on_target": 7,
+            "chances_created": 9,
+            "big_chances_created": null,
+            "clearances": 38,
+            "blocks": 5,
+            "interceptions": 12,
+            "tackles": 33,
+            "recoveries": 75
+        },
+        "discipline": {
+            "yellow_cards": 5,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1205410,
+        "name": "Yannick Semedo",
+        "position": "Central Midfielder",
+        "nationality": "Cape Verde",
+        "club": "Farense",
+        "league": "Liga Portugal 2",
+        "appearances": {
+            "matches_played": 29,
+            "started": 23,
+            "minutes_played": 2004
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": null,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": null,
+            "shots_on_target": null,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": null,
+            "blocks": null,
+            "interceptions": null,
+            "tackles": null,
+            "recoveries": null
+        },
+        "discipline": {
+            "yellow_cards": 5,
+            "red_cards": 1
+        }
+    },
+    {
+        "id": 785716,
+        "name": "Jovane Cabral",
+        "position": "Left Winger",
+        "nationality": "Cape Verde",
+        "club": "Estrela da Amadora",
+        "league": "Liga Portugal",
+        "appearances": {
+            "matches_played": 27,
+            "started": 17,
+            "minutes_played": 1678
+        },
+        "core_stats": {
+            "goals": 7,
+            "assists": 1,
+            "xg": 4.24,
+            "xgot": 6.92,
+            "npxg": 3.45,
+            "xa": 1.47,
+            "xgi": 5.71,
+            "clean_sheets": null,
+            "goals_conceded": 31,
+            "xgc": 29.41
+        },
+        "detailed_actions": {
+            "shots": 55,
+            "shots_on_target": 23,
+            "chances_created": 20,
+            "big_chances_created": 4,
+            "clearances": 10,
+            "blocks": 1,
+            "interceptions": 9,
+            "tackles": 35,
+            "recoveries": 108
+        },
+        "discipline": {
+            "yellow_cards": 5,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 671326,
+        "name": "Nuno da Costa",
+        "position": "Striker",
+        "nationality": "Cape Verde",
+        "club": "Başakşehir",
+        "league": "Super Lig",
+        "appearances": {
+            "matches_played": 26,
+            "started": 8,
+            "minutes_played": 899
+        },
+        "core_stats": {
+            "goals": 3,
+            "assists": 1,
+            "xg": 3.69,
+            "xgot": 2.57,
+            "npxg": 3.69,
+            "xa": 1.12,
+            "xgi": 4.81,
+            "clean_sheets": null,
+            "goals_conceded": 14,
+            "xgc": 13.08
+        },
+        "detailed_actions": {
+            "shots": 28,
+            "shots_on_target": 6,
+            "chances_created": 13,
+            "big_chances_created": 5,
+            "clearances": 12,
+            "blocks": 1,
+            "interceptions": 9,
+            "tackles": 15,
+            "recoveries": 28
+        },
+        "discipline": {
+            "yellow_cards": 3,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1309634,
+        "name": "Dailon Livramento",
+        "position": "Striker",
+        "nationality": "Cape Verde",
+        "club": "Casa Pia AC",
+        "league": "Liga Portugal",
+        "appearances": {
+            "matches_played": 24,
+            "started": 10,
+            "minutes_played": 940
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 1,
+            "xg": 1.89,
+            "xgot": 0.89,
+            "npxg": 1.89,
+            "xa": 0.94,
+            "xgi": 2.83,
+            "clean_sheets": null,
+            "goals_conceded": 19,
+            "xgc": 16.13
+        },
+        "detailed_actions": {
+            "shots": 22,
+            "shots_on_target": 7,
+            "chances_created": 10,
+            "big_chances_created": 2,
+            "clearances": 10,
+            "blocks": null,
+            "interceptions": 2,
+            "tackles": 5,
+            "recoveries": 29
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 172615,
+        "name": "Ryan Mendes",
+        "position": "Right Winger",
+        "nationality": "Cape Verde",
+        "club": "Igdir FK",
+        "league": "1. Lig",
+        "appearances": {
+            "matches_played": 29,
+            "started": 21,
+            "minutes_played": 1871
+        },
+        "core_stats": {
+            "goals": 5,
+            "assists": 2,
+            "xg": 0.26,
+            "xgot": 0.18,
+            "npxg": 0.26,
+            "xa": 0.09,
+            "xgi": 0.35,
+            "clean_sheets": null,
+            "goals_conceded": 5,
+            "xgc": 3.3
+        },
+        "detailed_actions": {
+            "shots": 7,
+            "shots_on_target": 1,
+            "chances_created": 2,
+            "big_chances_created": null,
+            "clearances": 4,
+            "blocks": null,
+            "interceptions": 2,
+            "tackles": 3,
+            "recoveries": 8
+        },
+        "discipline": {
+            "yellow_cards": 3,
+            "red_cards": 1
+        }
+    },
+    {
+        "id": 302912,
+        "name": "Garry Rodrigues",
+        "position": "Right Winger",
+        "nationality": "Cape Verde",
+        "club": "Apollon Limassol",
+        "league": "Cyprus League",
+        "appearances": {
+            "matches_played": 31,
+            "started": 24,
+            "minutes_played": 1911
+        },
+        "core_stats": {
+            "goals": 6,
+            "assists": 1,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": null,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": null,
+            "shots_on_target": null,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": null,
+            "blocks": null,
+            "interceptions": null,
+            "tackles": null,
+            "recoveries": null
+        },
+        "discipline": {
+            "yellow_cards": 4,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 873832,
+        "name": "Willy Semedo",
+        "position": "Left Winger",
+        "nationality": "Cape Verde",
+        "club": "Omonia Nicosia",
+        "league": "Cyprus League",
+        "appearances": {
+            "matches_played": 27,
+            "started": 27,
+            "minutes_played": 2161
+        },
+        "core_stats": {
+            "goals": 17,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": null,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": null,
+            "shots_on_target": null,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": null,
+            "blocks": null,
+            "interceptions": null,
+            "tackles": null,
+            "recoveries": null
+        },
+        "discipline": {
+            "yellow_cards": 5,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1524518,
+        "name": "Hélio Varela",
+        "position": "Left Winger",
+        "nationality": "Cape Verde",
+        "club": "Maccabi Tel Aviv",
+        "league": "Ligat ha'Al",
+        "appearances": {
+            "matches_played": 30,
+            "started": 22,
+            "minutes_played": 1978
+        },
+        "core_stats": {
+            "goals": 3,
+            "assists": 2,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 2,
+            "goals_conceded": 31,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": 44,
+            "shots_on_target": 18,
+            "chances_created": 38,
+            "big_chances_created": 2,
+            "clearances": 12,
+            "blocks": 1,
+            "interceptions": 10,
+            "tackles": 18,
+            "recoveries": 81
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 0
+        }
+    }
+]

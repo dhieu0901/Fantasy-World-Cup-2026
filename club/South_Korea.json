@@ -1,0 +1,717 @@
+[
+    {
+        "id": 1636117,
+        "name": "Hyeon-woo Jo",
+        "position": "forward",
+        "nationality": "South Korea",
+        "club": "Siheung Citizen",
+        "league": null,
+        "appearances": {
+            "matches_played": 0,
+            "started": 0,
+            "minutes_played": 0
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": null,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": null,
+            "shots_on_target": null,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": null,
+            "blocks": null,
+            "interceptions": null,
+            "tackles": null,
+            "recoveries": null
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 167247,
+        "name": "Seung-gyu Kim",
+        "position": "Keeper",
+        "nationality": "South Korea",
+        "club": "FC Tokyo",
+        "league": "J. League 100 Year Vision League East",
+        "appearances": {
+            "matches_played": 16,
+            "started": 0,
+            "minutes_played": 1440
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 5,
+            "goals_conceded": 15,
+            "xgc": null
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        "goalkeeping_metrics": {
+            "penalties_conceded": null,
+            "penalties_saved": null,
+            "saves": 32,
+            "goal_prevented": -1.97
+        }
+    },
+    {
+        "id": 1185902,
+        "name": "Jens Castrop",
+        "position": "Left Wing-Back",
+        "nationality": "South Korea",
+        "club": "Borussia Mönchengladbach",
+        "league": "Bundesliga",
+        "appearances": {
+            "matches_played": 26,
+            "started": 20,
+            "minutes_played": 1592
+        },
+        "core_stats": {
+            "goals": 3,
+            "assists": 1,
+            "xg": 3.73,
+            "xgot": 3.2,
+            "npxg": 3.73,
+            "xa": 1.69,
+            "xgi": 5.42,
+            "clean_sheets": 5,
+            "goals_conceded": 31,
+            "xgc": 26.13
+        },
+        "detailed_actions": {
+            "shots": 30,
+            "shots_on_target": 12,
+            "chances_created": 18,
+            "big_chances_created": null,
+            "clearances": 30,
+            "blocks": 1,
+            "interceptions": 18,
+            "tackles": 58,
+            "recoveries": 84
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 2
+        }
+    },
+    {
+        "id": 1232253,
+        "name": "Han-beom Lee",
+        "position": "Center Back",
+        "nationality": "South Korea",
+        "club": "FC Midtjylland",
+        "league": "Superligaen",
+        "appearances": {
+            "matches_played": 29,
+            "started": 25,
+            "minutes_played": 2339
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 1,
+            "xg": 0.56,
+            "xgot": 0.09,
+            "npxg": 0.56,
+            "xa": 2.35,
+            "xgi": 2.91,
+            "clean_sheets": 9,
+            "goals_conceded": 32,
+            "xgc": 39.49
+        },
+        "detailed_actions": {
+            "shots": 11,
+            "shots_on_target": 1,
+            "chances_created": 11,
+            "big_chances_created": 3,
+            "clearances": 116,
+            "blocks": 22,
+            "interceptions": 31,
+            "tackles": 42,
+            "recoveries": 104
+        },
+        "discipline": {
+            "yellow_cards": 3,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 925647,
+        "name": "Jin-seop Park",
+        "position": "Defensive Midfielder",
+        "nationality": "South Korea",
+        "club": "Zhejiang Professional",
+        "league": "Super League",
+        "appearances": {
+            "matches_played": 13,
+            "started": 13,
+            "minutes_played": 1124
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 2,
+            "goals_conceded": 19,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": 15,
+            "shots_on_target": 6,
+            "chances_created": 5,
+            "big_chances_created": null,
+            "clearances": 39,
+            "blocks": 5,
+            "interceptions": 13,
+            "tackles": 12,
+            "recoveries": 58
+        },
+        "discipline": {
+            "yellow_cards": 4,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 828159,
+        "name": "Min-jae Kim",
+        "position": "Center Back",
+        "nationality": "South Korea",
+        "club": "Bayern München",
+        "league": "Bundesliga",
+        "appearances": {
+            "matches_played": 25,
+            "started": 19,
+            "minutes_played": 1605
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 1,
+            "xg": 0.62,
+            "xgot": 1.03,
+            "npxg": 0.62,
+            "xa": 1.41,
+            "xgi": 2.03,
+            "clean_sheets": 5,
+            "goals_conceded": 21,
+            "xgc": 24.04
+        },
+        "detailed_actions": {
+            "shots": 5,
+            "shots_on_target": 3,
+            "chances_created": 4,
+            "big_chances_created": 1,
+            "clearances": 80,
+            "blocks": 18,
+            "interceptions": 39,
+            "tackles": 22,
+            "recoveries": 87
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1053477,
+        "name": "Tae-hyeon Kim",
+        "position": "Center Back",
+        "nationality": "South Korea",
+        "club": "Kashima Antlers",
+        "league": "J. League 100 Year Vision League East",
+        "appearances": {
+            "matches_played": 15,
+            "started": 15,
+            "minutes_played": 1350
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 1,
+            "xg": 0.2,
+            "xgot": 0.59,
+            "npxg": 0.2,
+            "xa": 0.7,
+            "xgi": 0.9,
+            "clean_sheets": 10,
+            "goals_conceded": 7,
+            "xgc": 16.08
+        },
+        "detailed_actions": {
+            "shots": 3,
+            "shots_on_target": 1,
+            "chances_created": 4,
+            "big_chances_created": 2,
+            "clearances": 86,
+            "blocks": 10,
+            "interceptions": 15,
+            "tackles": 5,
+            "recoveries": 32
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1107251,
+        "name": "Tae-seok Lee",
+        "position": "Left Wing-Back",
+        "nationality": "South Korea",
+        "club": "Austria Wien",
+        "league": "Bundesliga",
+        "appearances": {
+            "matches_played": 30,
+            "started": 29,
+            "minutes_played": 2577
+        },
+        "core_stats": {
+            "goals": 3,
+            "assists": 4,
+            "xg": 2.17,
+            "xgot": 2.05,
+            "npxg": 2.17,
+            "xa": 3.37,
+            "xgi": 5.54,
+            "clean_sheets": 8,
+            "goals_conceded": 40,
+            "xgc": 37.16
+        },
+        "detailed_actions": {
+            "shots": 34,
+            "shots_on_target": 10,
+            "chances_created": 39,
+            "big_chances_created": 8,
+            "clearances": 90,
+            "blocks": 9,
+            "interceptions": 33,
+            "tackles": 67,
+            "recoveries": 132
+        },
+        "discipline": {
+            "yellow_cards": 6,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 620026,
+        "name": "Hee-chan Hwang",
+        "position": "Striker",
+        "nationality": "South Korea",
+        "club": "Wolverhampton Wanderers",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 26,
+            "started": 18,
+            "minutes_played": 1452
+        },
+        "core_stats": {
+            "goals": 2,
+            "assists": 2,
+            "xg": 2.39,
+            "xgot": 2.71,
+            "npxg": 1.6,
+            "xa": 1.58,
+            "xgi": 3.97,
+            "clean_sheets": null,
+            "goals_conceded": 29,
+            "xgc": 23.47
+        },
+        "detailed_actions": {
+            "shots": 19,
+            "shots_on_target": 6,
+            "chances_created": 15,
+            "big_chances_created": 3,
+            "clearances": 16,
+            "blocks": null,
+            "interceptions": 13,
+            "tackles": 10,
+            "recoveries": 57
+        },
+        "discipline": {
+            "yellow_cards": 5,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1232560,
+        "name": "Hyun-jun Yang",
+        "position": "Right Winger",
+        "nationality": "South Korea",
+        "club": "Celtic",
+        "league": "Premiership",
+        "appearances": {
+            "matches_played": 31,
+            "started": 28,
+            "minutes_played": 2070
+        },
+        "core_stats": {
+            "goals": 8,
+            "assists": 1,
+            "xg": 7.34,
+            "xgot": 8.63,
+            "npxg": 7.34,
+            "xa": 3.84,
+            "xgi": 11.18,
+            "clean_sheets": 1,
+            "goals_conceded": 30,
+            "xgc": 22.54
+        },
+        "detailed_actions": {
+            "shots": 43,
+            "shots_on_target": 17,
+            "chances_created": 23,
+            "big_chances_created": 6,
+            "clearances": 22,
+            "blocks": 1,
+            "interceptions": 21,
+            "tackles": 45,
+            "recoveries": 98
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 623698,
+        "name": "In-beom Hwang",
+        "position": "Defensive Midfielder",
+        "nationality": "South Korea",
+        "club": "Feyenoord",
+        "league": "Eredivisie",
+        "appearances": {
+            "matches_played": 17,
+            "started": 12,
+            "minutes_played": 983
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 3,
+            "xg": 1.28,
+            "xgot": 1.09,
+            "npxg": 1.28,
+            "xa": 3.05,
+            "xgi": 4.33,
+            "clean_sheets": 1,
+            "goals_conceded": 22,
+            "xgc": 14.5
+        },
+        "detailed_actions": {
+            "shots": 16,
+            "shots_on_target": 5,
+            "chances_created": 24,
+            "big_chances_created": 5,
+            "clearances": 19,
+            "blocks": 3,
+            "interceptions": 12,
+            "tackles": 19,
+            "recoveries": 59
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 523749,
+        "name": "Jae-sung Lee",
+        "position": "Central Midfielder",
+        "nationality": "South Korea",
+        "club": "Mainz 05",
+        "league": "Bundesliga",
+        "appearances": {
+            "matches_played": 28,
+            "started": 26,
+            "minutes_played": 2198
+        },
+        "core_stats": {
+            "goals": 4,
+            "assists": 2,
+            "xg": 3.25,
+            "xgot": 4.18,
+            "npxg": 3.25,
+            "xa": 3.21,
+            "xgi": 6.46,
+            "clean_sheets": 1,
+            "goals_conceded": 39,
+            "xgc": 40.46
+        },
+        "detailed_actions": {
+            "shots": 30,
+            "shots_on_target": 9,
+            "chances_created": 22,
+            "big_chances_created": 7,
+            "clearances": 35,
+            "blocks": 1,
+            "interceptions": 25,
+            "tackles": 38,
+            "recoveries": 87
+        },
+        "discipline": {
+            "yellow_cards": 4,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1107283,
+        "name": "Ji-sung Eom",
+        "position": "Left Winger",
+        "nationality": "South Korea",
+        "club": "Swansea City",
+        "league": "Championship",
+        "appearances": {
+            "matches_played": 44,
+            "started": 31,
+            "minutes_played": 2458
+        },
+        "core_stats": {
+            "goals": 2,
+            "assists": 2,
+            "xg": 3.45,
+            "xgot": 3.0,
+            "npxg": 3.45,
+            "xa": 5.95,
+            "xgi": 9.4,
+            "clean_sheets": 1,
+            "goals_conceded": 38,
+            "xgc": 36.59
+        },
+        "detailed_actions": {
+            "shots": 54,
+            "shots_on_target": 14,
+            "chances_created": 54,
+            "big_chances_created": 10,
+            "clearances": 45,
+            "blocks": 5,
+            "interceptions": 20,
+            "tackles": 48,
+            "recoveries": 95
+        },
+        "discipline": {
+            "yellow_cards": 3,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1386482,
+        "name": "Jun-ho Bae",
+        "position": "Attacking Midfielder",
+        "nationality": "South Korea",
+        "club": "Stoke City",
+        "league": "Championship",
+        "appearances": {
+            "matches_played": 42,
+            "started": 32,
+            "minutes_played": 2930
+        },
+        "core_stats": {
+            "goals": 2,
+            "assists": 3,
+            "xg": 4.63,
+            "xgot": 4.03,
+            "npxg": 4.63,
+            "xa": 2.79,
+            "xgi": 7.42,
+            "clean_sheets": 5,
+            "goals_conceded": 37,
+            "xgc": 44.1
+        },
+        "detailed_actions": {
+            "shots": 48,
+            "shots_on_target": 14,
+            "chances_created": 35,
+            "big_chances_created": null,
+            "clearances": 22,
+            "blocks": 1,
+            "interceptions": 19,
+            "tackles": 46,
+            "recoveries": 126
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 940976,
+        "name": "Kang-in Lee",
+        "position": "Right Winger",
+        "nationality": "South Korea",
+        "club": "Paris Saint-Germain",
+        "league": "Ligue 1",
+        "appearances": {
+            "matches_played": 27,
+            "started": 18,
+            "minutes_played": 1522
+        },
+        "core_stats": {
+            "goals": 3,
+            "assists": 4,
+            "xg": 2.66,
+            "xgot": 2.89,
+            "npxg": 2.66,
+            "xa": 5.5,
+            "xgi": 8.16,
+            "clean_sheets": 1,
+            "goals_conceded": 16,
+            "xgc": 15.69
+        },
+        "detailed_actions": {
+            "shots": 37,
+            "shots_on_target": 15,
+            "chances_created": 58,
+            "big_chances_created": 12,
+            "clearances": 7,
+            "blocks": 1,
+            "interceptions": 3,
+            "tackles": 17,
+            "recoveries": 63
+        },
+        "discipline": {
+            "yellow_cards": 3,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 848102,
+        "name": "Seung-ho Paik",
+        "position": "Defensive Midfielder",
+        "nationality": "South Korea",
+        "club": "Birmingham City",
+        "league": "Championship",
+        "appearances": {
+            "matches_played": 43,
+            "started": 38,
+            "minutes_played": 3374
+        },
+        "core_stats": {
+            "goals": 4,
+            "assists": 1,
+            "xg": 1.92,
+            "xgot": 2.22,
+            "npxg": 1.92,
+            "xa": 3.29,
+            "xgi": 5.21,
+            "clean_sheets": 7,
+            "goals_conceded": 42,
+            "xgc": 40.42
+        },
+        "detailed_actions": {
+            "shots": 40,
+            "shots_on_target": 10,
+            "chances_created": 37,
+            "big_chances_created": 5,
+            "clearances": 56,
+            "blocks": 11,
+            "interceptions": 36,
+            "tackles": 59,
+            "recoveries": 176
+        },
+        "discipline": {
+            "yellow_cards": 6,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1026781,
+        "name": "Gue-sung Cho",
+        "position": "Striker",
+        "nationality": "South Korea",
+        "club": "FC Midtjylland",
+        "league": "Superligaen",
+        "appearances": {
+            "matches_played": 26,
+            "started": 15,
+            "minutes_played": 1350
+        },
+        "core_stats": {
+            "goals": 3,
+            "assists": 1,
+            "xg": 6.66,
+            "xgot": 5.12,
+            "npxg": 6.66,
+            "xa": 1.01,
+            "xgi": 7.67,
+            "clean_sheets": 2,
+            "goals_conceded": 15,
+            "xgc": 20.83
+        },
+        "detailed_actions": {
+            "shots": 38,
+            "shots_on_target": 15,
+            "chances_created": 7,
+            "big_chances_created": 1,
+            "clearances": 16,
+            "blocks": 1,
+            "interceptions": 3,
+            "tackles": 18,
+            "recoveries": 34
+        },
+        "discipline": {
+            "yellow_cards": 4,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 212867,
+        "name": "Heung-Min Son",
+        "position": "Striker",
+        "nationality": "South Korea",
+        "club": "Los Angeles FC",
+        "league": "Major League Soccer",
+        "appearances": {
+            "matches_played": 13,
+            "started": 12,
+            "minutes_played": 1045
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 8,
+            "xg": 3.72,
+            "xgot": 2.67,
+            "npxg": 3.72,
+            "xa": 2.87,
+            "xgi": 6.59,
+            "clean_sheets": 4,
+            "goals_conceded": 14,
+            "xgc": 12.01
+        },
+        "detailed_actions": {
+            "shots": 39,
+            "shots_on_target": 10,
+            "chances_created": 29,
+            "big_chances_created": 8,
+            "clearances": 3,
+            "blocks": 1,
+            "interceptions": 2,
+            "tackles": 6,
+            "recoveries": 25
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        }
+    }
+]

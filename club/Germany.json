@@ -1,0 +1,1027 @@
+[
+    {
+        "id": 178778,
+        "name": "Oliver Baumann",
+        "position": "Keeper",
+        "nationality": "Germany",
+        "club": "Hoffenheim",
+        "league": "Bundesliga",
+        "appearances": {
+            "matches_played": 34,
+            "started": 0,
+            "minutes_played": 3060
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 7,
+            "goals_conceded": 52,
+            "xgc": null
+        },
+        "discipline": {
+            "yellow_cards": 3,
+            "red_cards": 0
+        },
+        "goalkeeping_metrics": {
+            "penalties_conceded": 5,
+            "penalties_saved": 0,
+            "saves": 97,
+            "goal_prevented": -4.27
+        }
+    },
+    {
+        "id": 27299,
+        "name": "Manuel Neuer",
+        "position": "Keeper",
+        "nationality": "Germany",
+        "club": "Bayern München",
+        "league": "Bundesliga",
+        "appearances": {
+            "matches_played": 22,
+            "started": 0,
+            "minutes_played": 1860
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 6,
+            "goals_conceded": 20,
+            "xgc": null
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        "goalkeeping_metrics": {
+            "penalties_conceded": 1,
+            "penalties_saved": 0,
+            "saves": 31,
+            "goal_prevented": -0.23
+        }
+    },
+    {
+        "id": 554534,
+        "name": "Alexander Nübel",
+        "position": "Keeper",
+        "nationality": "Germany",
+        "club": "VfB Stuttgart",
+        "league": "Bundesliga",
+        "appearances": {
+            "matches_played": 34,
+            "started": 0,
+            "minutes_played": 3060
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 11,
+            "goals_conceded": 49,
+            "xgc": null
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        "goalkeeping_metrics": {
+            "penalties_conceded": 9,
+            "penalties_saved": 1,
+            "saves": 110,
+            "goal_prevented": 11.29
+        }
+    },
+    {
+        "id": 664970,
+        "name": "Waldemar Anton",
+        "position": "Center Back",
+        "nationality": "Germany",
+        "club": "Borussia Dortmund",
+        "league": "Bundesliga",
+        "appearances": {
+            "matches_played": 32,
+            "started": 32,
+            "minutes_played": 2880
+        },
+        "core_stats": {
+            "goals": 2,
+            "assists": 0,
+            "xg": 1.74,
+            "xgot": 2.41,
+            "npxg": 1.74,
+            "xa": 1.26,
+            "xgi": 3.0,
+            "clean_sheets": 14,
+            "goals_conceded": 33,
+            "xgc": 37.91
+        },
+        "detailed_actions": {
+            "shots": 16,
+            "shots_on_target": 6,
+            "chances_created": 8,
+            "big_chances_created": null,
+            "clearances": 165,
+            "blocks": 17,
+            "interceptions": 30,
+            "tackles": 73,
+            "recoveries": 149
+        },
+        "discipline": {
+            "yellow_cards": 3,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1395447,
+        "name": "Nathaniel Brown",
+        "position": "Left Back",
+        "nationality": "Germany",
+        "club": "Eintracht Frankfurt",
+        "league": "Bundesliga",
+        "appearances": {
+            "matches_played": 33,
+            "started": 29,
+            "minutes_played": 2657
+        },
+        "core_stats": {
+            "goals": 4,
+            "assists": 4,
+            "xg": 2.52,
+            "xgot": 2.73,
+            "npxg": 2.52,
+            "xa": 2.89,
+            "xgi": 5.41,
+            "clean_sheets": 6,
+            "goals_conceded": 55,
+            "xgc": 44.39
+        },
+        "detailed_actions": {
+            "shots": 18,
+            "shots_on_target": 9,
+            "chances_created": 34,
+            "big_chances_created": 7,
+            "clearances": 44,
+            "blocks": 7,
+            "interceptions": 26,
+            "tackles": 81,
+            "recoveries": 118
+        },
+        "discipline": {
+            "yellow_cards": 3,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 460632,
+        "name": "Joshua Kimmich",
+        "position": "Defensive Midfielder",
+        "nationality": "Germany",
+        "club": "Bayern München",
+        "league": "Bundesliga",
+        "appearances": {
+            "matches_played": 29,
+            "started": 24,
+            "minutes_played": 2280
+        },
+        "core_stats": {
+            "goals": 2,
+            "assists": 8,
+            "xg": 2.65,
+            "xgot": 2.32,
+            "npxg": 2.65,
+            "xa": 10.24,
+            "xgi": 12.89,
+            "clean_sheets": 8,
+            "goals_conceded": 25,
+            "xgc": 29.67
+        },
+        "detailed_actions": {
+            "shots": 28,
+            "shots_on_target": 10,
+            "chances_created": 56,
+            "big_chances_created": 16,
+            "clearances": 18,
+            "blocks": 6,
+            "interceptions": 25,
+            "tackles": 32,
+            "recoveries": 117
+        },
+        "discipline": {
+            "yellow_cards": 4,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 806669,
+        "name": "David Raum",
+        "position": "Left Back",
+        "nationality": "Germany",
+        "club": "RB Leipzig",
+        "league": "Bundesliga",
+        "appearances": {
+            "matches_played": 30,
+            "started": 29,
+            "minutes_played": 2556
+        },
+        "core_stats": {
+            "goals": 3,
+            "assists": 7,
+            "xg": 2.2,
+            "xgot": 2.6,
+            "npxg": 1.41,
+            "xa": 12.39,
+            "xgi": 14.59,
+            "clean_sheets": 8,
+            "goals_conceded": 34,
+            "xgc": 42.71
+        },
+        "detailed_actions": {
+            "shots": 24,
+            "shots_on_target": 8,
+            "chances_created": 96,
+            "big_chances_created": 22,
+            "clearances": 104,
+            "blocks": 9,
+            "interceptions": 30,
+            "tackles": 48,
+            "recoveries": 153
+        },
+        "discipline": {
+            "yellow_cards": 6,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 276738,
+        "name": "Antonio Rüdiger",
+        "position": "Center Back",
+        "nationality": "Germany",
+        "club": "Real Madrid",
+        "league": "LaLiga",
+        "appearances": {
+            "matches_played": 18,
+            "started": 16,
+            "minutes_played": 1492
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 0,
+            "xg": 0.92,
+            "xgot": 0.59,
+            "npxg": 0.92,
+            "xa": 0.61,
+            "xgi": 1.53,
+            "clean_sheets": 5,
+            "goals_conceded": 16,
+            "xgc": 18.04
+        },
+        "detailed_actions": {
+            "shots": 13,
+            "shots_on_target": 1,
+            "chances_created": 2,
+            "big_chances_created": 1,
+            "clearances": 52,
+            "blocks": 4,
+            "interceptions": 4,
+            "tackles": 14,
+            "recoveries": 57
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1002058,
+        "name": "Nico Schlotterbeck",
+        "position": "Center Back",
+        "nationality": "Germany",
+        "club": "Borussia Dortmund",
+        "league": "Bundesliga",
+        "appearances": {
+            "matches_played": 28,
+            "started": 28,
+            "minutes_played": 2520
+        },
+        "core_stats": {
+            "goals": 5,
+            "assists": 1,
+            "xg": 3.72,
+            "xgot": 4.21,
+            "npxg": 3.72,
+            "xa": 2.69,
+            "xgi": 6.41,
+            "clean_sheets": 11,
+            "goals_conceded": 29,
+            "xgc": 32.62
+        },
+        "detailed_actions": {
+            "shots": 32,
+            "shots_on_target": 9,
+            "chances_created": 12,
+            "big_chances_created": 1,
+            "clearances": 127,
+            "blocks": 12,
+            "interceptions": 27,
+            "tackles": 50,
+            "recoveries": 142
+        },
+        "discipline": {
+            "yellow_cards": 8,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 469700,
+        "name": "Jonathan Tah",
+        "position": "Center Back",
+        "nationality": "Germany",
+        "club": "Bayern München",
+        "league": "Bundesliga",
+        "appearances": {
+            "matches_played": 28,
+            "started": 23,
+            "minutes_played": 2019
+        },
+        "core_stats": {
+            "goals": 2,
+            "assists": 1,
+            "xg": 0.71,
+            "xgot": 2.4,
+            "npxg": 0.71,
+            "xa": 1.73,
+            "xgi": 2.44,
+            "clean_sheets": 6,
+            "goals_conceded": 23,
+            "xgc": 26.52
+        },
+        "detailed_actions": {
+            "shots": 8,
+            "shots_on_target": 5,
+            "chances_created": 5,
+            "big_chances_created": 1,
+            "clearances": 124,
+            "blocks": 21,
+            "interceptions": 26,
+            "tackles": 24,
+            "recoveries": 90
+        },
+        "discipline": {
+            "yellow_cards": 7,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1137407,
+        "name": "Malick Thiaw",
+        "position": "Center Back",
+        "nationality": "Germany",
+        "club": "Newcastle United",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 35,
+            "started": 33,
+            "minutes_played": 2964
+        },
+        "core_stats": {
+            "goals": 4,
+            "assists": 0,
+            "xg": 4.72,
+            "xgot": 5.29,
+            "npxg": 4.72,
+            "xa": 0.97,
+            "xgi": 5.69,
+            "clean_sheets": 4,
+            "goals_conceded": 52,
+            "xgc": 48.8
+        },
+        "detailed_actions": {
+            "shots": 28,
+            "shots_on_target": 14,
+            "chances_created": 6,
+            "big_chances_created": 1,
+            "clearances": 184,
+            "blocks": 33,
+            "interceptions": 31,
+            "tackles": 44,
+            "recoveries": 118
+        },
+        "discipline": {
+            "yellow_cards": 4,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 614449,
+        "name": "Nadiem Amiri",
+        "position": "Central Midfielder",
+        "nationality": "Germany",
+        "club": "Mainz 05",
+        "league": "Bundesliga",
+        "appearances": {
+            "matches_played": 26,
+            "started": 24,
+            "minutes_played": 2090
+        },
+        "core_stats": {
+            "goals": 12,
+            "assists": 2,
+            "xg": 10.4,
+            "xgot": 12.66,
+            "npxg": 4.09,
+            "xa": 7.69,
+            "xgi": 18.09,
+            "clean_sheets": 1,
+            "goals_conceded": 33,
+            "xgc": 32.49
+        },
+        "detailed_actions": {
+            "shots": 55,
+            "shots_on_target": 23,
+            "chances_created": 63,
+            "big_chances_created": 16,
+            "clearances": 9,
+            "blocks": 3,
+            "interceptions": 22,
+            "tackles": 31,
+            "recoveries": 110
+        },
+        "discipline": {
+            "yellow_cards": 6,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 343748,
+        "name": "Leon Goretzka",
+        "position": "Defensive Midfielder",
+        "nationality": "Germany",
+        "club": "Bayern München",
+        "league": "Bundesliga",
+        "appearances": {
+            "matches_played": 31,
+            "started": 25,
+            "minutes_played": 1954
+        },
+        "core_stats": {
+            "goals": 5,
+            "assists": 3,
+            "xg": 4.8,
+            "xgot": 4.47,
+            "npxg": 4.8,
+            "xa": 3.81,
+            "xgi": 8.61,
+            "clean_sheets": 5,
+            "goals_conceded": 20,
+            "xgc": 27.54
+        },
+        "detailed_actions": {
+            "shots": 35,
+            "shots_on_target": 11,
+            "chances_created": 21,
+            "big_chances_created": 3,
+            "clearances": 42,
+            "blocks": 8,
+            "interceptions": 26,
+            "tackles": 29,
+            "recoveries": 100
+        },
+        "discipline": {
+            "yellow_cards": 4,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 167008,
+        "name": "Pascal Groß",
+        "position": "Defensive Midfielder",
+        "nationality": "Germany",
+        "club": "Brighton & Hove Albion",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 19,
+            "started": 18,
+            "minutes_played": 1636
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 3,
+            "xg": 1.45,
+            "xgot": 2.63,
+            "npxg": 1.45,
+            "xa": 3.83,
+            "xgi": 5.28,
+            "clean_sheets": 5,
+            "goals_conceded": 17,
+            "xgc": 20.26
+        },
+        "detailed_actions": {
+            "shots": 18,
+            "shots_on_target": 9,
+            "chances_created": 39,
+            "big_chances_created": 5,
+            "clearances": 24,
+            "blocks": 4,
+            "interceptions": 12,
+            "tackles": 29,
+            "recoveries": 76
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1737700,
+        "name": "Lennart Karl",
+        "position": "Right Winger",
+        "nationality": "Germany",
+        "club": "Bayern München",
+        "league": "Bundesliga",
+        "appearances": {
+            "matches_played": 26,
+            "started": 16,
+            "minutes_played": 1282
+        },
+        "core_stats": {
+            "goals": 5,
+            "assists": 5,
+            "xg": 7.59,
+            "xgot": 5.43,
+            "npxg": 7.59,
+            "xa": 4.96,
+            "xgi": 12.55,
+            "clean_sheets": 1,
+            "goals_conceded": 14,
+            "xgc": 15.14
+        },
+        "detailed_actions": {
+            "shots": 42,
+            "shots_on_target": 21,
+            "chances_created": 23,
+            "big_chances_created": 5,
+            "clearances": 2,
+            "blocks": 2,
+            "interceptions": 14,
+            "tackles": 25,
+            "recoveries": 54
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1074968,
+        "name": "Jamie Leweling",
+        "position": "Left Winger",
+        "nationality": "Germany",
+        "club": "VfB Stuttgart",
+        "league": "Bundesliga",
+        "appearances": {
+            "matches_played": 32,
+            "started": 26,
+            "minutes_played": 2375
+        },
+        "core_stats": {
+            "goals": 7,
+            "assists": 9,
+            "xg": 4.31,
+            "xgot": 5.06,
+            "npxg": 4.31,
+            "xa": 5.22,
+            "xgi": 9.53,
+            "clean_sheets": 6,
+            "goals_conceded": 40,
+            "xgc": 42.82
+        },
+        "detailed_actions": {
+            "shots": 49,
+            "shots_on_target": 18,
+            "chances_created": 40,
+            "big_chances_created": 10,
+            "clearances": 30,
+            "blocks": 2,
+            "interceptions": 14,
+            "tackles": 22,
+            "recoveries": 97
+        },
+        "discipline": {
+            "yellow_cards": 4,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1156141,
+        "name": "Jamal Musiala",
+        "position": "Attacking Midfielder",
+        "nationality": "Germany",
+        "club": "Bayern München",
+        "league": "Bundesliga",
+        "appearances": {
+            "matches_played": 15,
+            "started": 7,
+            "minutes_played": 679
+        },
+        "core_stats": {
+            "goals": 3,
+            "assists": 4,
+            "xg": 4.81,
+            "xgot": 3.99,
+            "npxg": 4.02,
+            "xa": 1.92,
+            "xgi": 6.73,
+            "clean_sheets": null,
+            "goals_conceded": 10,
+            "xgc": 11.51
+        },
+        "detailed_actions": {
+            "shots": 30,
+            "shots_on_target": 9,
+            "chances_created": 17,
+            "big_chances_created": 3,
+            "clearances": 1,
+            "blocks": null,
+            "interceptions": 2,
+            "tackles": 11,
+            "recoveries": 28
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 966019,
+        "name": "Felix Nmecha",
+        "position": "Defensive Midfielder",
+        "nationality": "Germany",
+        "club": "Borussia Dortmund",
+        "league": "Bundesliga",
+        "appearances": {
+            "matches_played": 29,
+            "started": 25,
+            "minutes_played": 2184
+        },
+        "core_stats": {
+            "goals": 2,
+            "assists": 3,
+            "xg": 3.62,
+            "xgot": 2.4,
+            "npxg": 2.83,
+            "xa": 4.24,
+            "xgi": 7.86,
+            "clean_sheets": 6,
+            "goals_conceded": 28,
+            "xgc": 28.35
+        },
+        "detailed_actions": {
+            "shots": 33,
+            "shots_on_target": 7,
+            "chances_created": 20,
+            "big_chances_created": 3,
+            "clearances": 29,
+            "blocks": 4,
+            "interceptions": 27,
+            "tackles": 37,
+            "recoveries": 109
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1473580,
+        "name": "Aleksandar Pavlović",
+        "position": "Defensive Midfielder",
+        "nationality": "Germany",
+        "club": "Bayern München",
+        "league": "Bundesliga",
+        "appearances": {
+            "matches_played": 24,
+            "started": 16,
+            "minutes_played": 1460
+        },
+        "core_stats": {
+            "goals": 3,
+            "assists": 1,
+            "xg": 1.6,
+            "xgot": 1.48,
+            "npxg": 1.6,
+            "xa": 2.34,
+            "xgi": 3.94,
+            "clean_sheets": 1,
+            "goals_conceded": 26,
+            "xgc": 23.01
+        },
+        "detailed_actions": {
+            "shots": 10,
+            "shots_on_target": 5,
+            "chances_created": 21,
+            "big_chances_created": 3,
+            "clearances": 17,
+            "blocks": 8,
+            "interceptions": 14,
+            "tackles": 26,
+            "recoveries": 79
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1071186,
+        "name": "Angelo Stiller",
+        "position": "Defensive Midfielder",
+        "nationality": "Germany",
+        "club": "VfB Stuttgart",
+        "league": "Bundesliga",
+        "appearances": {
+            "matches_played": 34,
+            "started": 30,
+            "minutes_played": 2744
+        },
+        "core_stats": {
+            "goals": 2,
+            "assists": 5,
+            "xg": 3.08,
+            "xgot": 3.78,
+            "npxg": 2.3,
+            "xa": 7.46,
+            "xgi": 10.54,
+            "clean_sheets": 8,
+            "goals_conceded": 43,
+            "xgc": 45.01
+        },
+        "detailed_actions": {
+            "shots": 17,
+            "shots_on_target": 8,
+            "chances_created": 55,
+            "big_chances_created": 10,
+            "clearances": 48,
+            "blocks": 7,
+            "interceptions": 30,
+            "tackles": 49,
+            "recoveries": 160
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1152455,
+        "name": "Florian Wirtz",
+        "position": "Attacking Midfielder",
+        "nationality": "Germany",
+        "club": "Liverpool",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 33,
+            "started": 27,
+            "minutes_played": 2388
+        },
+        "core_stats": {
+            "goals": 5,
+            "assists": 3,
+            "xg": 7.03,
+            "xgot": 6.52,
+            "npxg": 7.03,
+            "xa": 5.17,
+            "xgi": 12.2,
+            "clean_sheets": 2,
+            "goals_conceded": 32,
+            "xgc": 33.82
+        },
+        "detailed_actions": {
+            "shots": 51,
+            "shots_on_target": 18,
+            "chances_created": 60,
+            "big_chances_created": 5,
+            "clearances": 13,
+            "blocks": 2,
+            "interceptions": 11,
+            "tackles": 34,
+            "recoveries": 115
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1047667,
+        "name": "Maximilian Beier",
+        "position": "Attacking Midfielder",
+        "nationality": "Germany",
+        "club": "Borussia Dortmund",
+        "league": "Bundesliga",
+        "appearances": {
+            "matches_played": 32,
+            "started": 24,
+            "minutes_played": 2036
+        },
+        "core_stats": {
+            "goals": 9,
+            "assists": 6,
+            "xg": 7.35,
+            "xgot": 8.91,
+            "npxg": 7.35,
+            "xa": 4.97,
+            "xgi": 12.32,
+            "clean_sheets": 1,
+            "goals_conceded": 19,
+            "xgc": 26.23
+        },
+        "detailed_actions": {
+            "shots": 50,
+            "shots_on_target": 20,
+            "chances_created": 25,
+            "big_chances_created": 9,
+            "clearances": 21,
+            "blocks": 3,
+            "interceptions": 14,
+            "tackles": 26,
+            "recoveries": 69
+        },
+        "discipline": {
+            "yellow_cards": 3,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 749736,
+        "name": "Kai Havertz",
+        "position": "Striker",
+        "nationality": "Germany",
+        "club": "Arsenal",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 12,
+            "started": 7,
+            "minutes_played": 583
+        },
+        "core_stats": {
+            "goals": 2,
+            "assists": 3,
+            "xg": 3.31,
+            "xgot": 2.34,
+            "npxg": 3.31,
+            "xa": 0.66,
+            "xgi": 3.97,
+            "clean_sheets": null,
+            "goals_conceded": 4,
+            "xgc": 6.69
+        },
+        "detailed_actions": {
+            "shots": 18,
+            "shots_on_target": 4,
+            "chances_created": 11,
+            "big_chances_created": 2,
+            "clearances": 8,
+            "blocks": 1,
+            "interceptions": 1,
+            "tackles": 8,
+            "recoveries": 14
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 530859,
+        "name": "Leroy Sané",
+        "position": "Right Winger",
+        "nationality": "Germany",
+        "club": "Galatasaray",
+        "league": "Super Lig",
+        "appearances": {
+            "matches_played": 28,
+            "started": 27,
+            "minutes_played": 2286
+        },
+        "core_stats": {
+            "goals": 7,
+            "assists": 5,
+            "xg": 6.18,
+            "xgot": 5.37,
+            "npxg": 6.18,
+            "xa": 6.82,
+            "xgi": 13.0,
+            "clean_sheets": 6,
+            "goals_conceded": 22,
+            "xgc": 24.88
+        },
+        "detailed_actions": {
+            "shots": 50,
+            "shots_on_target": 15,
+            "chances_created": 47,
+            "big_chances_created": 15,
+            "clearances": 3,
+            "blocks": null,
+            "interceptions": 12,
+            "tackles": 32,
+            "recoveries": 123
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 1
+        }
+    },
+    {
+        "id": 661519,
+        "name": "Deniz Undav",
+        "position": "Striker",
+        "nationality": "Germany",
+        "club": "VfB Stuttgart",
+        "league": "Bundesliga",
+        "appearances": {
+            "matches_played": 29,
+            "started": 25,
+            "minutes_played": 2247
+        },
+        "core_stats": {
+            "goals": 19,
+            "assists": 6,
+            "xg": 16.4,
+            "xgot": 17.96,
+            "npxg": 15.61,
+            "xa": 4.03,
+            "xgi": 20.43,
+            "clean_sheets": 3,
+            "goals_conceded": 36,
+            "xgc": 35.56
+        },
+        "detailed_actions": {
+            "shots": 122,
+            "shots_on_target": 46,
+            "chances_created": 38,
+            "big_chances_created": 8,
+            "clearances": 7,
+            "blocks": 2,
+            "interceptions": 4,
+            "tackles": 18,
+            "recoveries": 54
+        },
+        "discipline": {
+            "yellow_cards": 5,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1106563,
+        "name": "Nick Woltemade",
+        "position": "Striker",
+        "nationality": "Germany",
+        "club": "Newcastle United",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 33,
+            "started": 24,
+            "minutes_played": 1912
+        },
+        "core_stats": {
+            "goals": 8,
+            "assists": 3,
+            "xg": 6.59,
+            "xgot": 7.88,
+            "npxg": 5.81,
+            "xa": 1.53,
+            "xgi": 8.12,
+            "clean_sheets": 1,
+            "goals_conceded": 29,
+            "xgc": 25.28
+        },
+        "detailed_actions": {
+            "shots": 32,
+            "shots_on_target": 13,
+            "chances_created": 22,
+            "big_chances_created": 5,
+            "clearances": 21,
+            "blocks": 2,
+            "interceptions": 5,
+            "tackles": 24,
+            "recoveries": 53
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    }
+]

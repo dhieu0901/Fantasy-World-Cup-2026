@@ -1,0 +1,1027 @@
+[
+    {
+        "id": 383971,
+        "name": "Dominik Livaković",
+        "position": "Keeper",
+        "nationality": "Croatia",
+        "club": "Dinamo Zagreb",
+        "league": "HNL",
+        "appearances": {
+            "matches_played": 14,
+            "started": 0,
+            "minutes_played": 1260
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 7,
+            "goals_conceded": 10,
+            "xgc": null
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        "goalkeeping_metrics": {
+            "penalties_conceded": 3,
+            "penalties_saved": 0,
+            "saves": 21,
+            "goal_prevented": null
+        }
+    },
+    {
+        "id": 873557,
+        "name": "Dominik Kotarski",
+        "position": "Keeper",
+        "nationality": "Croatia",
+        "club": "FC København",
+        "league": "Superligaen",
+        "appearances": {
+            "matches_played": 30,
+            "started": 0,
+            "minutes_played": 2700
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 8,
+            "goals_conceded": 40,
+            "xgc": null
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        },
+        "goalkeeping_metrics": {
+            "penalties_conceded": 6,
+            "penalties_saved": 0,
+            "saves": 79,
+            "goal_prevented": 1.07
+        }
+    },
+    {
+        "id": 1077684,
+        "name": "Ivor Pandur",
+        "position": "Keeper",
+        "nationality": "Croatia",
+        "club": "Hull City",
+        "league": "Championship",
+        "appearances": {
+            "matches_played": 45,
+            "started": 0,
+            "minutes_played": 4050
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 11,
+            "goals_conceded": 65,
+            "xgc": null
+        },
+        "discipline": {
+            "yellow_cards": 8,
+            "red_cards": 0
+        },
+        "goalkeeping_metrics": {
+            "penalties_conceded": 3,
+            "penalties_saved": 2,
+            "saves": 144,
+            "goal_prevented": 3.74
+        }
+    },
+    {
+        "id": 1070712,
+        "name": "Joško Gvardiol",
+        "position": "Center Back",
+        "nationality": "Croatia",
+        "club": "Manchester City",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 18,
+            "started": 16,
+            "minutes_played": 1374
+        },
+        "core_stats": {
+            "goals": 2,
+            "assists": 2,
+            "xg": 2.4,
+            "xgot": 2.52,
+            "npxg": 2.4,
+            "xa": 0.71,
+            "xgi": 3.11,
+            "clean_sheets": 5,
+            "goals_conceded": 13,
+            "xgc": 15.8
+        },
+        "detailed_actions": {
+            "shots": 17,
+            "shots_on_target": 6,
+            "chances_created": 4,
+            "big_chances_created": 1,
+            "clearances": 61,
+            "blocks": 10,
+            "interceptions": 15,
+            "tackles": 18,
+            "recoveries": 50
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 557799,
+        "name": "Duje Ćaleta-Car",
+        "position": "Center Back",
+        "nationality": "Croatia",
+        "club": "Real Sociedad",
+        "league": "LaLiga",
+        "appearances": {
+            "matches_played": 27,
+            "started": 24,
+            "minutes_played": 2150
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 0,
+            "xg": 1.16,
+            "xgot": 0.28,
+            "npxg": 1.16,
+            "xa": 0.61,
+            "xgi": 1.77,
+            "clean_sheets": 2,
+            "goals_conceded": 33,
+            "xgc": 32.79
+        },
+        "detailed_actions": {
+            "shots": 13,
+            "shots_on_target": 3,
+            "chances_created": 3,
+            "big_chances_created": null,
+            "clearances": 129,
+            "blocks": 26,
+            "interceptions": 28,
+            "tackles": 24,
+            "recoveries": 79
+        },
+        "discipline": {
+            "yellow_cards": 6,
+            "red_cards": 1
+        }
+    },
+    {
+        "id": 1186228,
+        "name": "Josip Šutalo",
+        "position": "Center Back",
+        "nationality": "Croatia",
+        "club": "Ajax",
+        "league": "Eredivisie",
+        "appearances": {
+            "matches_played": 24,
+            "started": 19,
+            "minutes_played": 1797
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": 0.17,
+            "xgot": null,
+            "npxg": 0.17,
+            "xa": 0.55,
+            "xgi": 0.72,
+            "clean_sheets": 4,
+            "goals_conceded": 29,
+            "xgc": 29.14
+        },
+        "detailed_actions": {
+            "shots": 3,
+            "shots_on_target": null,
+            "chances_created": 1,
+            "big_chances_created": null,
+            "clearances": 102,
+            "blocks": 12,
+            "interceptions": 37,
+            "tackles": 12,
+            "recoveries": 93
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 950824,
+        "name": "Josip Stanišić",
+        "position": "Right Back",
+        "nationality": "Croatia",
+        "club": "Bayern München",
+        "league": "Bundesliga",
+        "appearances": {
+            "matches_played": 26,
+            "started": 19,
+            "minutes_played": 1855
+        },
+        "core_stats": {
+            "goals": 2,
+            "assists": 3,
+            "xg": 1.36,
+            "xgot": 1.27,
+            "npxg": 1.36,
+            "xa": 5.03,
+            "xgi": 6.39,
+            "clean_sheets": 5,
+            "goals_conceded": 23,
+            "xgc": 27.25
+        },
+        "detailed_actions": {
+            "shots": 7,
+            "shots_on_target": 4,
+            "chances_created": 24,
+            "big_chances_created": 4,
+            "clearances": 61,
+            "blocks": 8,
+            "interceptions": 18,
+            "tackles": 28,
+            "recoveries": 84
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 831474,
+        "name": "Marin Pongračić",
+        "position": "Center Back",
+        "nationality": "Croatia",
+        "club": "Fiorentina",
+        "league": "Serie A",
+        "appearances": {
+            "matches_played": 35,
+            "started": 33,
+            "minutes_played": 2917
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": 0.7,
+            "xgot": 0.26,
+            "npxg": 0.7,
+            "xa": 0.52,
+            "xgi": 1.22,
+            "clean_sheets": 7,
+            "goals_conceded": 41,
+            "xgc": 41.45
+        },
+        "detailed_actions": {
+            "shots": 8,
+            "shots_on_target": 1,
+            "chances_created": 8,
+            "big_chances_created": 1,
+            "clearances": 130,
+            "blocks": 27,
+            "interceptions": 35,
+            "tackles": 31,
+            "recoveries": 158
+        },
+        "discipline": {
+            "yellow_cards": 12,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 616170,
+        "name": "Martin Erlić",
+        "position": "Center Back",
+        "nationality": "Croatia",
+        "club": "FC Midtjylland",
+        "league": "Superligaen",
+        "appearances": {
+            "matches_played": 18,
+            "started": 16,
+            "minutes_played": 1422
+        },
+        "core_stats": {
+            "goals": 2,
+            "assists": 0,
+            "xg": 1.44,
+            "xgot": 2.0,
+            "npxg": 1.44,
+            "xa": 0.17,
+            "xgi": 1.61,
+            "clean_sheets": null,
+            "goals_conceded": 21,
+            "xgc": 21.76
+        },
+        "detailed_actions": {
+            "shots": 11,
+            "shots_on_target": 4,
+            "chances_created": 3,
+            "big_chances_created": null,
+            "clearances": 97,
+            "blocks": 12,
+            "interceptions": 20,
+            "tackles": 20,
+            "recoveries": 60
+        },
+        "discipline": {
+            "yellow_cards": 4,
+            "red_cards": 1
+        }
+    },
+    {
+        "id": 1413996,
+        "name": "Luka Vušković",
+        "position": "Center Back",
+        "nationality": "Croatia",
+        "club": "Hamburger SV",
+        "league": "Bundesliga",
+        "appearances": {
+            "matches_played": 28,
+            "started": 27,
+            "minutes_played": 2441
+        },
+        "core_stats": {
+            "goals": 6,
+            "assists": 0,
+            "xg": 4.22,
+            "xgot": 4.95,
+            "npxg": 3.43,
+            "xa": 1.46,
+            "xgi": 5.68,
+            "clean_sheets": 5,
+            "goals_conceded": 41,
+            "xgc": 50.11
+        },
+        "detailed_actions": {
+            "shots": 32,
+            "shots_on_target": 10,
+            "chances_created": 11,
+            "big_chances_created": null,
+            "clearances": 251,
+            "blocks": 26,
+            "interceptions": 40,
+            "tackles": 22,
+            "recoveries": 126
+        },
+        "discipline": {
+            "yellow_cards": 6,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 31097,
+        "name": "Luka Modrić",
+        "position": "Central Midfielder",
+        "nationality": "Croatia",
+        "club": "Milan",
+        "league": "Serie A",
+        "appearances": {
+            "matches_played": 34,
+            "started": 32,
+            "minutes_played": 2816
+        },
+        "core_stats": {
+            "goals": 2,
+            "assists": 3,
+            "xg": 1.56,
+            "xgot": 2.65,
+            "npxg": 1.56,
+            "xa": 4.76,
+            "xgi": 6.32,
+            "clean_sheets": 10,
+            "goals_conceded": 26,
+            "xgc": 36.08
+        },
+        "detailed_actions": {
+            "shots": 20,
+            "shots_on_target": 8,
+            "chances_created": 51,
+            "big_chances_created": 6,
+            "clearances": 33,
+            "blocks": 12,
+            "interceptions": 39,
+            "tackles": 51,
+            "recoveries": 188
+        },
+        "discipline": {
+            "yellow_cards": 4,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 239219,
+        "name": "Mateo Kovačić",
+        "position": "Defensive Midfielder",
+        "nationality": "Croatia",
+        "club": "Manchester City",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 6,
+            "started": 1,
+            "minutes_played": 126
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 1,
+            "xg": 0.16,
+            "xgot": null,
+            "npxg": 0.16,
+            "xa": 0.44,
+            "xgi": 0.6,
+            "clean_sheets": null,
+            "goals_conceded": 3,
+            "xgc": 3.95
+        },
+        "detailed_actions": {
+            "shots": 2,
+            "shots_on_target": null,
+            "chances_created": 4,
+            "big_chances_created": 1,
+            "clearances": 4,
+            "blocks": null,
+            "interceptions": 2,
+            "tackles": 2,
+            "recoveries": 10
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 446266,
+        "name": "Mario Pašalić",
+        "position": "Defensive Midfielder",
+        "nationality": "Croatia",
+        "club": "Atalanta",
+        "league": "Serie A",
+        "appearances": {
+            "matches_played": 33,
+            "started": 21,
+            "minutes_played": 1932
+        },
+        "core_stats": {
+            "goals": 3,
+            "assists": 4,
+            "xg": 2.66,
+            "xgot": 2.46,
+            "npxg": 2.66,
+            "xa": 2.89,
+            "xgi": 5.55,
+            "clean_sheets": 1,
+            "goals_conceded": 28,
+            "xgc": 23.73
+        },
+        "detailed_actions": {
+            "shots": 24,
+            "shots_on_target": 6,
+            "chances_created": 40,
+            "big_chances_created": 8,
+            "clearances": 25,
+            "blocks": 3,
+            "interceptions": 13,
+            "tackles": 25,
+            "recoveries": 109
+        },
+        "discipline": {
+            "yellow_cards": 3,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 557677,
+        "name": "Nikola Vlašić",
+        "position": "Attacking Midfielder",
+        "nationality": "Croatia",
+        "club": "Torino",
+        "league": "Serie A",
+        "appearances": {
+            "matches_played": 37,
+            "started": 36,
+            "minutes_played": 3053
+        },
+        "core_stats": {
+            "goals": 8,
+            "assists": 3,
+            "xg": 6.96,
+            "xgot": 8.63,
+            "npxg": 3.02,
+            "xa": 3.31,
+            "xgi": 10.27,
+            "clean_sheets": 7,
+            "goals_conceded": 57,
+            "xgc": 47.99
+        },
+        "detailed_actions": {
+            "shots": 49,
+            "shots_on_target": 17,
+            "chances_created": 54,
+            "big_chances_created": 5,
+            "clearances": 28,
+            "blocks": 4,
+            "interceptions": 21,
+            "tackles": 67,
+            "recoveries": 181
+        },
+        "discipline": {
+            "yellow_cards": 7,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 959597,
+        "name": "Luka Sučić",
+        "position": "Attacking Midfielder",
+        "nationality": "Croatia",
+        "club": "Real Sociedad",
+        "league": "LaLiga",
+        "appearances": {
+            "matches_played": 22,
+            "started": 10,
+            "minutes_played": 1018
+        },
+        "core_stats": {
+            "goals": 3,
+            "assists": 1,
+            "xg": 1.98,
+            "xgot": 2.99,
+            "npxg": 1.98,
+            "xa": 0.61,
+            "xgi": 2.59,
+            "clean_sheets": null,
+            "goals_conceded": 17,
+            "xgc": 19.35
+        },
+        "detailed_actions": {
+            "shots": 23,
+            "shots_on_target": 7,
+            "chances_created": 9,
+            "big_chances_created": null,
+            "clearances": 15,
+            "blocks": 1,
+            "interceptions": 5,
+            "tackles": 19,
+            "recoveries": 43
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1215064,
+        "name": "Martin Baturina",
+        "position": "Left Winger",
+        "nationality": "Croatia",
+        "club": "Como",
+        "league": "Serie A",
+        "appearances": {
+            "matches_played": 29,
+            "started": 17,
+            "minutes_played": 1569
+        },
+        "core_stats": {
+            "goals": 6,
+            "assists": 3,
+            "xg": 1.83,
+            "xgot": 3.37,
+            "npxg": 1.83,
+            "xa": 4.76,
+            "xgi": 6.59,
+            "clean_sheets": 1,
+            "goals_conceded": 17,
+            "xgc": 15.9
+        },
+        "detailed_actions": {
+            "shots": 28,
+            "shots_on_target": 9,
+            "chances_created": 62,
+            "big_chances_created": 8,
+            "clearances": 2,
+            "blocks": 2,
+            "interceptions": 5,
+            "tackles": 21,
+            "recoveries": 86
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 643448,
+        "name": "Kristijan Jakić",
+        "position": "Defensive Midfielder",
+        "nationality": "Croatia",
+        "club": "Augsburg",
+        "league": "Bundesliga",
+        "appearances": {
+            "matches_played": 26,
+            "started": 18,
+            "minutes_played": 1653
+        },
+        "core_stats": {
+            "goals": 2,
+            "assists": 1,
+            "xg": 1.52,
+            "xgot": 2.45,
+            "npxg": 1.52,
+            "xa": 1.49,
+            "xgi": 3.01,
+            "clean_sheets": 1,
+            "goals_conceded": 27,
+            "xgc": 29.78
+        },
+        "detailed_actions": {
+            "shots": 18,
+            "shots_on_target": 6,
+            "chances_created": 13,
+            "big_chances_created": 2,
+            "clearances": 54,
+            "blocks": 7,
+            "interceptions": 16,
+            "tackles": 34,
+            "recoveries": 95
+        },
+        "discipline": {
+            "yellow_cards": 5,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1382000,
+        "name": "Petar Sučić",
+        "position": "Central Midfielder",
+        "nationality": "Croatia",
+        "club": "Inter",
+        "league": "Serie A",
+        "appearances": {
+            "matches_played": 34,
+            "started": 21,
+            "minutes_played": 1765
+        },
+        "core_stats": {
+            "goals": 2,
+            "assists": 2,
+            "xg": 1.66,
+            "xgot": 1.6,
+            "npxg": 1.66,
+            "xa": 3.18,
+            "xgi": 4.84,
+            "clean_sheets": 4,
+            "goals_conceded": 21,
+            "xgc": 18.7
+        },
+        "detailed_actions": {
+            "shots": 22,
+            "shots_on_target": 6,
+            "chances_created": 29,
+            "big_chances_created": 6,
+            "clearances": 19,
+            "blocks": 1,
+            "interceptions": 9,
+            "tackles": 46,
+            "recoveries": 76
+        },
+        "discipline": {
+            "yellow_cards": 5,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 641595,
+        "name": "Nikola Moro",
+        "position": "Defensive Midfielder",
+        "nationality": "Croatia",
+        "club": "Bologna",
+        "league": "Serie A",
+        "appearances": {
+            "matches_played": 30,
+            "started": 19,
+            "minutes_played": 1797
+        },
+        "core_stats": {
+            "goals": 2,
+            "assists": 0,
+            "xg": 0.93,
+            "xgot": 0.72,
+            "npxg": 0.93,
+            "xa": 2.2,
+            "xgi": 3.13,
+            "clean_sheets": 4,
+            "goals_conceded": 17,
+            "xgc": 21.11
+        },
+        "detailed_actions": {
+            "shots": 22,
+            "shots_on_target": 3,
+            "chances_created": 26,
+            "big_chances_created": 2,
+            "clearances": 34,
+            "blocks": 7,
+            "interceptions": 17,
+            "tackles": 32,
+            "recoveries": 86
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1300358,
+        "name": "Toni Fruk",
+        "position": "Attacking Midfielder",
+        "nationality": "Croatia",
+        "club": "Rijeka",
+        "league": "HNL",
+        "appearances": {
+            "matches_played": 31,
+            "started": 27,
+            "minutes_played": 2130
+        },
+        "core_stats": {
+            "goals": 12,
+            "assists": 3,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 4,
+            "goals_conceded": 22,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": 74,
+            "shots_on_target": 25,
+            "chances_created": 45,
+            "big_chances_created": 15,
+            "clearances": 8,
+            "blocks": 1,
+            "interceptions": 10,
+            "tackles": 37,
+            "recoveries": 116
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 163670,
+        "name": "Ivan Perišić",
+        "position": "Left Winger",
+        "nationality": "Croatia",
+        "club": "PSV Eindhoven",
+        "league": "Eredivisie",
+        "appearances": {
+            "matches_played": 30,
+            "started": 27,
+            "minutes_played": 2218
+        },
+        "core_stats": {
+            "goals": 7,
+            "assists": 12,
+            "xg": 4.97,
+            "xgot": 5.82,
+            "npxg": 4.18,
+            "xa": 7.87,
+            "xgi": 12.84,
+            "clean_sheets": 1,
+            "goals_conceded": 30,
+            "xgc": 30.9
+        },
+        "detailed_actions": {
+            "shots": 54,
+            "shots_on_target": 19,
+            "chances_created": 52,
+            "big_chances_created": 18,
+            "clearances": 45,
+            "blocks": 4,
+            "interceptions": 26,
+            "tackles": 36,
+            "recoveries": 80
+        },
+        "discipline": {
+            "yellow_cards": 5,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 173461,
+        "name": "Andrej Kramarić",
+        "position": "Attacking Midfielder",
+        "nationality": "Croatia",
+        "club": "Hoffenheim",
+        "league": "Bundesliga",
+        "appearances": {
+            "matches_played": 34,
+            "started": 26,
+            "minutes_played": 2222
+        },
+        "core_stats": {
+            "goals": 14,
+            "assists": 6,
+            "xg": 11.89,
+            "xgot": 16.72,
+            "npxg": 7.95,
+            "xa": 5.02,
+            "xgi": 16.91,
+            "clean_sheets": null,
+            "goals_conceded": 33,
+            "xgc": 32.02
+        },
+        "detailed_actions": {
+            "shots": 64,
+            "shots_on_target": 33,
+            "chances_created": 36,
+            "big_chances_created": 7,
+            "clearances": 9,
+            "blocks": 2,
+            "interceptions": 8,
+            "tackles": 8,
+            "recoveries": 105
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 251269,
+        "name": "Ante Budimir",
+        "position": "Striker",
+        "nationality": "Croatia",
+        "club": "Osasuna",
+        "league": "LaLiga",
+        "appearances": {
+            "matches_played": 37,
+            "started": 35,
+            "minutes_played": 2953
+        },
+        "core_stats": {
+            "goals": 17,
+            "assists": 0,
+            "xg": 17.13,
+            "xgot": 17.98,
+            "npxg": 10.82,
+            "xa": 1.66,
+            "xgi": 18.79,
+            "clean_sheets": 2,
+            "goals_conceded": 38,
+            "xgc": 38.19
+        },
+        "detailed_actions": {
+            "shots": 103,
+            "shots_on_target": 41,
+            "chances_created": 16,
+            "big_chances_created": 3,
+            "clearances": 46,
+            "blocks": 6,
+            "interceptions": 6,
+            "tackles": 21,
+            "recoveries": 45
+        },
+        "discipline": {
+            "yellow_cards": 4,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1199714,
+        "name": "Marco Pašalić",
+        "position": "Right Midfielder",
+        "nationality": "Croatia",
+        "club": "Orlando City",
+        "league": "Major League Soccer",
+        "appearances": {
+            "matches_played": 10,
+            "started": 8,
+            "minutes_played": 644
+        },
+        "core_stats": {
+            "goals": 2,
+            "assists": 0,
+            "xg": 1.01,
+            "xgot": 1.05,
+            "npxg": 1.01,
+            "xa": 0.8,
+            "xgi": 1.81,
+            "clean_sheets": null,
+            "goals_conceded": 25,
+            "xgc": 18.59
+        },
+        "detailed_actions": {
+            "shots": 12,
+            "shots_on_target": 4,
+            "chances_created": 5,
+            "big_chances_created": null,
+            "clearances": 6,
+            "blocks": null,
+            "interceptions": 5,
+            "tackles": 2,
+            "recoveries": 15
+        },
+        "discipline": {
+            "yellow_cards": 3,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 709796,
+        "name": "Petar Musa",
+        "position": "Striker",
+        "nationality": "Croatia",
+        "club": "FC Dallas",
+        "league": "Major League Soccer",
+        "appearances": {
+            "matches_played": 13,
+            "started": 12,
+            "minutes_played": 1044
+        },
+        "core_stats": {
+            "goals": 12,
+            "assists": 2,
+            "xg": 8.02,
+            "xgot": 9.09,
+            "npxg": 6.45,
+            "xa": 1.25,
+            "xgi": 9.27,
+            "clean_sheets": 2,
+            "goals_conceded": 14,
+            "xgc": 11.48
+        },
+        "detailed_actions": {
+            "shots": 50,
+            "shots_on_target": 22,
+            "chances_created": 16,
+            "big_chances_created": 3,
+            "clearances": 18,
+            "blocks": 1,
+            "interceptions": 7,
+            "tackles": 13,
+            "recoveries": 31
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1210893,
+        "name": "Igor Matanović",
+        "position": "Striker",
+        "nationality": "Croatia",
+        "club": "Freiburg",
+        "league": "Bundesliga",
+        "appearances": {
+            "matches_played": 31,
+            "started": 14,
+            "minutes_played": 1561
+        },
+        "core_stats": {
+            "goals": 11,
+            "assists": 2,
+            "xg": 9.24,
+            "xgot": 9.64,
+            "npxg": 7.66,
+            "xa": 1.33,
+            "xgi": 10.57,
+            "clean_sheets": 1,
+            "goals_conceded": 27,
+            "xgc": 24.67
+        },
+        "detailed_actions": {
+            "shots": 52,
+            "shots_on_target": 20,
+            "chances_created": 22,
+            "big_chances_created": 4,
+            "clearances": 35,
+            "blocks": 2,
+            "interceptions": 9,
+            "tackles": 23,
+            "recoveries": 51
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    }
+]

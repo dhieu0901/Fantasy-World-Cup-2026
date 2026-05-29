@@ -454,7 +454,7 @@ def startup():
     conn = get_connection()
     init_db(conn)
     conn.close()
-    print("✅ WC2026 Fantasy API ready")
+    print("[OK] WC2026 Fantasy API ready")
     print("   Docs: http://localhost:8000/docs")
 
 # ──────────────────────────────────────────────

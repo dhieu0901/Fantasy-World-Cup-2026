@@ -1,0 +1,667 @@
+[
+    {
+        "id": 603669,
+        "name": "Uğurcan Çakır",
+        "position": "Keeper",
+        "nationality": "Turkey",
+        "club": "Galatasaray",
+        "league": "Super Lig",
+        "appearances": {
+            "matches_played": 29,
+            "started": 0,
+            "minutes_played": 2610
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 11,
+            "goals_conceded": 22,
+            "xgc": null
+        },
+        "discipline": {
+            "yellow_cards": 4,
+            "red_cards": 0
+        },
+        "goalkeeping_metrics": {
+            "penalties_conceded": 0,
+            "penalties_saved": 0,
+            "saves": 76,
+            "goal_prevented": 7.69
+        }
+    },
+    {
+        "id": 150372,
+        "name": "Mert Günok",
+        "position": "Keeper",
+        "nationality": "Turkey",
+        "club": "Fenerbahçe",
+        "league": "Super Lig",
+        "appearances": {
+            "matches_played": 13,
+            "started": 0,
+            "minutes_played": 1105
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 2,
+            "goals_conceded": 19,
+            "xgc": null
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        },
+        "goalkeeping_metrics": {
+            "penalties_conceded": 2,
+            "penalties_saved": 0,
+            "saves": 24,
+            "goal_prevented": -4.51
+        }
+    },
+    {
+        "id": 866967,
+        "name": "Altay Bayındır",
+        "position": "Keeper",
+        "nationality": "Turkey",
+        "club": "Manchester United",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 6,
+            "started": 0,
+            "minutes_played": 540
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 0,
+            "goals_conceded": 11,
+            "xgc": null
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        "goalkeeping_metrics": {
+            "penalties_conceded": null,
+            "penalties_saved": null,
+            "saves": 13,
+            "goal_prevented": -0.84
+        }
+    },
+    {
+        "id": 823078,
+        "name": "Merih Demiral",
+        "position": "Center Back",
+        "nationality": "Turkey",
+        "club": "Al Ahli",
+        "league": "Saudi Pro League",
+        "appearances": {
+            "matches_played": 20,
+            "started": 20,
+            "minutes_played": 1646
+        },
+        "core_stats": {
+            "goals": 2,
+            "assists": 0,
+            "xg": 1.3,
+            "xgot": 1.67,
+            "npxg": 1.3,
+            "xa": 0.72,
+            "xgi": 2.02,
+            "clean_sheets": 7,
+            "goals_conceded": 15,
+            "xgc": 16.74
+        },
+        "detailed_actions": {
+            "shots": 14,
+            "shots_on_target": 5,
+            "chances_created": 4,
+            "big_chances_created": 1,
+            "clearances": 77,
+            "blocks": 8,
+            "interceptions": 13,
+            "tackles": 25,
+            "recoveries": 50
+        },
+        "discipline": {
+            "yellow_cards": 5,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 602261,
+        "name": "Çağlar Söyüncü",
+        "position": "Center Back",
+        "nationality": "Turkey",
+        "club": "Fenerbahçe",
+        "league": "Super Lig",
+        "appearances": {
+            "matches_played": 11,
+            "started": 10,
+            "minutes_played": 772
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 1,
+            "xg": 0.16,
+            "xgot": null,
+            "npxg": 0.16,
+            "xa": 0.3,
+            "xgi": 0.46,
+            "clean_sheets": null,
+            "goals_conceded": 10,
+            "xgc": 8.24
+        },
+        "detailed_actions": {
+            "shots": 2,
+            "shots_on_target": null,
+            "chances_created": 6,
+            "big_chances_created": null,
+            "clearances": 27,
+            "blocks": 8,
+            "interceptions": 6,
+            "tackles": 19,
+            "recoveries": 29
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 774448,
+        "name": "Ferdi Kadıoğlu",
+        "position": "Left Back",
+        "nationality": "Turkey",
+        "club": "Brighton & Hove Albion",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 37,
+            "started": 34,
+            "minutes_played": 3134
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 0,
+            "xg": 2.03,
+            "xgot": 3.14,
+            "npxg": 2.03,
+            "xa": 3.33,
+            "xgi": 5.36,
+            "clean_sheets": 10,
+            "goals_conceded": 41,
+            "xgc": 44.67
+        },
+        "detailed_actions": {
+            "shots": 28,
+            "shots_on_target": 13,
+            "chances_created": 21,
+            "big_chances_created": 2,
+            "clearances": 81,
+            "blocks": 7,
+            "interceptions": 26,
+            "tackles": 57,
+            "recoveries": 130
+        },
+        "discipline": {
+            "yellow_cards": 6,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 867225,
+        "name": "Zeki Çelik",
+        "position": "Right Wing-Back",
+        "nationality": "Turkey",
+        "club": "Roma",
+        "league": "Serie A",
+        "appearances": {
+            "matches_played": 34,
+            "started": 32,
+            "minutes_played": 2730
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 2,
+            "xg": 1.54,
+            "xgot": 0.94,
+            "npxg": 1.54,
+            "xa": 2.01,
+            "xgi": 3.55,
+            "clean_sheets": 9,
+            "goals_conceded": 27,
+            "xgc": 32.13
+        },
+        "detailed_actions": {
+            "shots": 22,
+            "shots_on_target": 4,
+            "chances_created": 27,
+            "big_chances_created": 2,
+            "clearances": 68,
+            "blocks": 6,
+            "interceptions": 22,
+            "tackles": 64,
+            "recoveries": 116
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 1
+        }
+    },
+    {
+        "id": 845990,
+        "name": "Ozan Kabak",
+        "position": "Center Back",
+        "nationality": "Turkey",
+        "club": "Hoffenheim",
+        "league": "Bundesliga",
+        "appearances": {
+            "matches_played": 25,
+            "started": 18,
+            "minutes_played": 1745
+        },
+        "core_stats": {
+            "goals": 4,
+            "assists": 0,
+            "xg": 4.33,
+            "xgot": 4.31,
+            "npxg": 4.33,
+            "xa": 0.84,
+            "xgi": 5.17,
+            "clean_sheets": 2,
+            "goals_conceded": 34,
+            "xgc": 29.75
+        },
+        "detailed_actions": {
+            "shots": 36,
+            "shots_on_target": 12,
+            "chances_created": 8,
+            "big_chances_created": null,
+            "clearances": 140,
+            "blocks": 14,
+            "interceptions": 25,
+            "tackles": 20,
+            "recoveries": 63
+        },
+        "discipline": {
+            "yellow_cards": 5,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 291399,
+        "name": "Abdülkerim Bardakçı",
+        "position": "Center Back",
+        "nationality": "Turkey",
+        "club": "Galatasaray",
+        "league": "Super Lig",
+        "appearances": {
+            "matches_played": 30,
+            "started": 30,
+            "minutes_played": 2546
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 1,
+            "xg": 1.9,
+            "xgot": 0.68,
+            "npxg": 1.9,
+            "xa": 1.93,
+            "xgi": 3.83,
+            "clean_sheets": 8,
+            "goals_conceded": 23,
+            "xgc": 25.52
+        },
+        "detailed_actions": {
+            "shots": 24,
+            "shots_on_target": 5,
+            "chances_created": 16,
+            "big_chances_created": 6,
+            "clearances": 89,
+            "blocks": 17,
+            "interceptions": 32,
+            "tackles": 40,
+            "recoveries": 109
+        },
+        "discipline": {
+            "yellow_cards": 5,
+            "red_cards": 1
+        }
+    },
+    {
+        "id": 304733,
+        "name": "Hakan Çalhanoğlu",
+        "position": "Central Midfielder",
+        "nationality": "Turkey",
+        "club": "Inter",
+        "league": "Serie A",
+        "appearances": {
+            "matches_played": 22,
+            "started": 20,
+            "minutes_played": 1649
+        },
+        "core_stats": {
+            "goals": 9,
+            "assists": 4,
+            "xg": 5.65,
+            "xgot": 7.44,
+            "npxg": 1.71,
+            "xa": 3.5,
+            "xgi": 9.15,
+            "clean_sheets": 5,
+            "goals_conceded": 16,
+            "xgc": 16.74
+        },
+        "detailed_actions": {
+            "shots": 50,
+            "shots_on_target": 17,
+            "chances_created": 41,
+            "big_chances_created": 7,
+            "clearances": 16,
+            "blocks": 6,
+            "interceptions": 16,
+            "tackles": 34,
+            "recoveries": 102
+        },
+        "discipline": {
+            "yellow_cards": 7,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 935409,
+        "name": "Orkun Kökçü",
+        "position": "Defensive Midfielder",
+        "nationality": "Turkey",
+        "club": "Beşiktaş",
+        "league": "Super Lig",
+        "appearances": {
+            "matches_played": 30,
+            "started": 29,
+            "minutes_played": 2481
+        },
+        "core_stats": {
+            "goals": 8,
+            "assists": 8,
+            "xg": 7.42,
+            "xgot": 7.93,
+            "npxg": 5.84,
+            "xa": 9.03,
+            "xgi": 16.45,
+            "clean_sheets": 6,
+            "goals_conceded": 30,
+            "xgc": 27.64
+        },
+        "detailed_actions": {
+            "shots": 89,
+            "shots_on_target": 32,
+            "chances_created": 90,
+            "big_chances_created": 16,
+            "clearances": 18,
+            "blocks": 3,
+            "interceptions": 9,
+            "tackles": 33,
+            "recoveries": 118
+        },
+        "discipline": {
+            "yellow_cards": 5,
+            "red_cards": 2
+        }
+    },
+    {
+        "id": 738064,
+        "name": "Salih Özcan",
+        "position": "midfielder",
+        "nationality": "Turkey",
+        "club": "Borussia Dortmund",
+        "league": "Bundesliga",
+        "appearances": {
+            "matches_played": 11,
+            "started": 0,
+            "minutes_played": 73
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": null,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": null,
+            "shots_on_target": null,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": null,
+            "blocks": null,
+            "interceptions": null,
+            "tackles": null,
+            "recoveries": null
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1253890,
+        "name": "Arda Güler",
+        "position": "Attacking Midfielder",
+        "nationality": "Turkey",
+        "club": "Real Madrid",
+        "league": "LaLiga",
+        "appearances": {
+            "matches_played": 33,
+            "started": 25,
+            "minutes_played": 2026
+        },
+        "core_stats": {
+            "goals": 4,
+            "assists": 9,
+            "xg": 4.57,
+            "xgot": 4.81,
+            "npxg": 4.57,
+            "xa": 7.18,
+            "xgi": 11.75,
+            "clean_sheets": 2,
+            "goals_conceded": 21,
+            "xgc": 25.23
+        },
+        "detailed_actions": {
+            "shots": 49,
+            "shots_on_target": 19,
+            "chances_created": 70,
+            "big_chances_created": 14,
+            "clearances": 9,
+            "blocks": 2,
+            "interceptions": 9,
+            "tackles": 46,
+            "recoveries": 101
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1183589,
+        "name": "İsmail Yüksek",
+        "position": "Defensive Midfielder",
+        "nationality": "Turkey",
+        "club": "Fenerbahçe",
+        "league": "Super Lig",
+        "appearances": {
+            "matches_played": 30,
+            "started": 19,
+            "minutes_played": 1764
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 2,
+            "xg": 1.9,
+            "xgot": 1.91,
+            "npxg": 1.9,
+            "xa": 1.58,
+            "xgi": 3.48,
+            "clean_sheets": 1,
+            "goals_conceded": 28,
+            "xgc": 18.2
+        },
+        "detailed_actions": {
+            "shots": 32,
+            "shots_on_target": 8,
+            "chances_created": 17,
+            "big_chances_created": 5,
+            "clearances": 17,
+            "blocks": 5,
+            "interceptions": 21,
+            "tackles": 76,
+            "recoveries": 126
+        },
+        "discipline": {
+            "yellow_cards": 5,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1117570,
+        "name": "Kerem Aktürkoğlu",
+        "position": "Left Winger",
+        "nationality": "Turkey",
+        "club": "Fenerbahçe",
+        "league": "Super Lig",
+        "appearances": {
+            "matches_played": 29,
+            "started": 24,
+            "minutes_played": 1959
+        },
+        "core_stats": {
+            "goals": 8,
+            "assists": 7,
+            "xg": 6.36,
+            "xgot": 7.13,
+            "npxg": 5.58,
+            "xa": 4.87,
+            "xgi": 11.23,
+            "clean_sheets": 2,
+            "goals_conceded": 28,
+            "xgc": 19.29
+        },
+        "detailed_actions": {
+            "shots": 44,
+            "shots_on_target": 22,
+            "chances_created": 58,
+            "big_chances_created": 11,
+            "clearances": 5,
+            "blocks": null,
+            "interceptions": 9,
+            "tackles": 21,
+            "recoveries": 71
+        },
+        "discipline": {
+            "yellow_cards": 3,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 890232,
+        "name": "Barış Alper Yılmaz",
+        "position": "Left Winger",
+        "nationality": "Turkey",
+        "club": "Galatasaray",
+        "league": "Super Lig",
+        "appearances": {
+            "matches_played": 30,
+            "started": 27,
+            "minutes_played": 2318
+        },
+        "core_stats": {
+            "goals": 8,
+            "assists": 11,
+            "xg": 8.13,
+            "xgot": 7.76,
+            "npxg": 5.76,
+            "xa": 5.65,
+            "xgi": 13.78,
+            "clean_sheets": 2,
+            "goals_conceded": 26,
+            "xgc": 26.94
+        },
+        "detailed_actions": {
+            "shots": 55,
+            "shots_on_target": 24,
+            "chances_created": 59,
+            "big_chances_created": 11,
+            "clearances": 9,
+            "blocks": null,
+            "interceptions": 3,
+            "tackles": 23,
+            "recoveries": 78
+        },
+        "discipline": {
+            "yellow_cards": 7,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1412132,
+        "name": "Kenan Yıldız",
+        "position": "Attacking Midfielder",
+        "nationality": "Turkey",
+        "club": "Juventus",
+        "league": "Serie A",
+        "appearances": {
+            "matches_played": 36,
+            "started": 33,
+            "minutes_played": 2838
+        },
+        "core_stats": {
+            "goals": 10,
+            "assists": 6,
+            "xg": 8.17,
+            "xgot": 9.57,
+            "npxg": 6.59,
+            "xa": 9.63,
+            "xgi": 17.8,
+            "clean_sheets": 3,
+            "goals_conceded": 26,
+            "xgc": 25.98
+        },
+        "detailed_actions": {
+            "shots": 97,
+            "shots_on_target": 40,
+            "chances_created": 76,
+            "big_chances_created": 15,
+            "clearances": 7,
+            "blocks": null,
+            "interceptions": 7,
+            "tackles": 26,
+            "recoveries": 121
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 0
+        }
+    }
+]

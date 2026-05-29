@@ -1,0 +1,1027 @@
+[
+    {
+        "id": 268375,
+        "name": "Emiliano Martinez",
+        "position": "Keeper",
+        "nationality": "Argentina",
+        "club": "Aston Villa",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 32,
+            "started": 0,
+            "minutes_played": 2835
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 7,
+            "goals_conceded": 39,
+            "xgc": null
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 0
+        },
+        "goalkeeping_metrics": {
+            "penalties_conceded": 0,
+            "penalties_saved": 1,
+            "saves": 95,
+            "goal_prevented": 3.52
+        }
+    },
+    {
+        "id": 245555,
+        "name": "Geronimo Rulli",
+        "position": "Keeper",
+        "nationality": "Argentina",
+        "club": "Marseille",
+        "league": "Ligue 1",
+        "appearances": {
+            "matches_played": 29,
+            "started": 0,
+            "minutes_played": 2610
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 8,
+            "goals_conceded": 34,
+            "xgc": null
+        },
+        "discipline": {
+            "yellow_cards": 3,
+            "red_cards": 0
+        },
+        "goalkeeping_metrics": {
+            "penalties_conceded": 5,
+            "penalties_saved": 0,
+            "saves": 76,
+            "goal_prevented": 1.1
+        }
+    },
+    {
+        "id": 389050,
+        "name": "Juan Musso",
+        "position": "Keeper",
+        "nationality": "Argentina",
+        "club": "Atletico Madrid",
+        "league": "LaLiga",
+        "appearances": {
+            "matches_played": 8,
+            "started": 0,
+            "minutes_played": 720
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 3,
+            "goals_conceded": 13,
+            "xgc": null
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 0
+        },
+        "goalkeeping_metrics": {
+            "penalties_conceded": 3,
+            "penalties_saved": 0,
+            "saves": 22,
+            "goal_prevented": -1.88
+        }
+    },
+    {
+        "id": 687008,
+        "name": "Gonzalo Montiel",
+        "position": "Right Back",
+        "nationality": "Argentina",
+        "club": "River Plate",
+        "league": "Liga Profesional Apertura",
+        "appearances": {
+            "matches_played": 16,
+            "started": 16,
+            "minutes_played": 1424
+        },
+        "core_stats": {
+            "goals": 4,
+            "assists": 1,
+            "xg": 4.29,
+            "xgot": 3.77,
+            "npxg": 1.92,
+            "xa": 1.94,
+            "xgi": 6.23,
+            "clean_sheets": 5,
+            "goals_conceded": 13,
+            "xgc": 12.49
+        },
+        "detailed_actions": {
+            "shots": 17,
+            "shots_on_target": 7,
+            "chances_created": 27,
+            "big_chances_created": 2,
+            "clearances": 30,
+            "blocks": 4,
+            "interceptions": 13,
+            "tackles": 22,
+            "recoveries": 62
+        },
+        "discipline": {
+            "yellow_cards": 4,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 726345,
+        "name": "Nahuel Molina",
+        "position": "Right Back",
+        "nationality": "Argentina",
+        "club": "Atletico Madrid",
+        "league": "LaLiga",
+        "appearances": {
+            "matches_played": 26,
+            "started": 13,
+            "minutes_played": 1321
+        },
+        "core_stats": {
+            "goals": 2,
+            "assists": 2,
+            "xg": 0.48,
+            "xgot": 1.05,
+            "npxg": 0.48,
+            "xa": 1.57,
+            "xgi": 2.05,
+            "clean_sheets": 6,
+            "goals_conceded": 18,
+            "xgc": 21.22
+        },
+        "detailed_actions": {
+            "shots": 14,
+            "shots_on_target": 4,
+            "chances_created": 21,
+            "big_chances_created": 6,
+            "clearances": 32,
+            "blocks": 5,
+            "interceptions": 13,
+            "tackles": 40,
+            "recoveries": 80
+        },
+        "discipline": {
+            "yellow_cards": 4,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 847983,
+        "name": "Lisandro Martinez",
+        "position": "Center Back",
+        "nationality": "Argentina",
+        "club": "Manchester United",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 18,
+            "started": 13,
+            "minutes_played": 1231
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": 0.15,
+            "xgot": null,
+            "npxg": 0.15,
+            "xa": 0.6,
+            "xgi": 0.75,
+            "clean_sheets": 4,
+            "goals_conceded": 15,
+            "xgc": 15.39
+        },
+        "detailed_actions": {
+            "shots": 5,
+            "shots_on_target": null,
+            "chances_created": 5,
+            "big_chances_created": 1,
+            "clearances": 62,
+            "blocks": 12,
+            "interceptions": 12,
+            "tackles": 19,
+            "recoveries": 67
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 1
+        }
+    },
+    {
+        "id": 174321,
+        "name": "Nicolas Otamendi",
+        "position": "Center Back",
+        "nationality": "Argentina",
+        "club": "Benfica",
+        "league": "Liga Portugal",
+        "appearances": {
+            "matches_played": 30,
+            "started": 30,
+            "minutes_played": 2605
+        },
+        "core_stats": {
+            "goals": 2,
+            "assists": 0,
+            "xg": 1.25,
+            "xgot": 2.16,
+            "npxg": 1.25,
+            "xa": 0.74,
+            "xgi": 1.99,
+            "clean_sheets": 12,
+            "goals_conceded": 18,
+            "xgc": 21.76
+        },
+        "detailed_actions": {
+            "shots": 24,
+            "shots_on_target": 6,
+            "chances_created": 9,
+            "big_chances_created": null,
+            "clearances": 130,
+            "blocks": 19,
+            "interceptions": 40,
+            "tackles": 45,
+            "recoveries": 105
+        },
+        "discipline": {
+            "yellow_cards": 7,
+            "red_cards": 1
+        }
+    },
+    {
+        "id": 958464,
+        "name": "Leonardo Balerdi",
+        "position": "Center Back",
+        "nationality": "Argentina",
+        "club": "Marseille",
+        "league": "Ligue 1",
+        "appearances": {
+            "matches_played": 26,
+            "started": 21,
+            "minutes_played": 1998
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 1,
+            "xg": 2.26,
+            "xgot": 1.29,
+            "npxg": 2.26,
+            "xa": 0.34,
+            "xgi": 2.6,
+            "clean_sheets": 3,
+            "goals_conceded": 33,
+            "xgc": 33.56
+        },
+        "detailed_actions": {
+            "shots": 20,
+            "shots_on_target": 5,
+            "chances_created": 5,
+            "big_chances_created": null,
+            "clearances": 101,
+            "blocks": 11,
+            "interceptions": 27,
+            "tackles": 49,
+            "recoveries": 119
+        },
+        "discipline": {
+            "yellow_cards": 5,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 789066,
+        "name": "Cristian Romero",
+        "position": "Center Back",
+        "nationality": "Argentina",
+        "club": "Tottenham Hotspur",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 23,
+            "started": 22,
+            "minutes_played": 1872
+        },
+        "core_stats": {
+            "goals": 4,
+            "assists": 1,
+            "xg": 1.31,
+            "xgot": 2.6,
+            "npxg": 1.31,
+            "xa": 1.26,
+            "xgi": 2.57,
+            "clean_sheets": 4,
+            "goals_conceded": 31,
+            "xgc": 28.37
+        },
+        "detailed_actions": {
+            "shots": 17,
+            "shots_on_target": 6,
+            "chances_created": 11,
+            "big_chances_created": 4,
+            "clearances": 94,
+            "blocks": 14,
+            "interceptions": 30,
+            "tackles": 58,
+            "recoveries": 88
+        },
+        "discipline": {
+            "yellow_cards": 9,
+            "red_cards": 2
+        }
+    },
+    {
+        "id": 812652,
+        "name": "Facundo Medina",
+        "position": "Center Back",
+        "nationality": "Argentina",
+        "club": "Marseille",
+        "league": "Ligue 1",
+        "appearances": {
+            "matches_played": 17,
+            "started": 16,
+            "minutes_played": 1366
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 1,
+            "xg": 0.3,
+            "xgot": 0.16,
+            "npxg": 0.3,
+            "xa": 0.72,
+            "xgi": 1.02,
+            "clean_sheets": 3,
+            "goals_conceded": 23,
+            "xgc": 24.26
+        },
+        "detailed_actions": {
+            "shots": 4,
+            "shots_on_target": 1,
+            "chances_created": 7,
+            "big_chances_created": 2,
+            "clearances": 54,
+            "blocks": 13,
+            "interceptions": 23,
+            "tackles": 19,
+            "recoveries": 76
+        },
+        "discipline": {
+            "yellow_cards": 7,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 195750,
+        "name": "Nicolas Tagliafico",
+        "position": "Left Back",
+        "nationality": "Argentina",
+        "club": "Lyon",
+        "league": "Ligue 1",
+        "appearances": {
+            "matches_played": 20,
+            "started": 14,
+            "minutes_played": 1310
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 3,
+            "xg": 1.51,
+            "xgot": 0.5,
+            "npxg": 1.51,
+            "xa": 1.05,
+            "xgi": 2.56,
+            "clean_sheets": 4,
+            "goals_conceded": 15,
+            "xgc": 18.47
+        },
+        "detailed_actions": {
+            "shots": 15,
+            "shots_on_target": 1,
+            "chances_created": 13,
+            "big_chances_created": 3,
+            "clearances": 35,
+            "blocks": 5,
+            "interceptions": 20,
+            "tackles": 29,
+            "recoveries": 58
+        },
+        "discipline": {
+            "yellow_cards": 4,
+            "red_cards": 2
+        }
+    },
+    {
+        "id": 237606,
+        "name": "Leandro Paredes",
+        "position": "Central Midfielder",
+        "nationality": "Argentina",
+        "club": "Boca Juniors",
+        "league": "Liga Profesional Apertura",
+        "appearances": {
+            "matches_played": 15,
+            "started": 11,
+            "minutes_played": 1097
+        },
+        "core_stats": {
+            "goals": 2,
+            "assists": 3,
+            "xg": 2.1,
+            "xgot": 2.93,
+            "npxg": 0.52,
+            "xa": 3.18,
+            "xgi": 5.28,
+            "clean_sheets": 1,
+            "goals_conceded": 9,
+            "xgc": 10.22
+        },
+        "detailed_actions": {
+            "shots": 21,
+            "shots_on_target": 7,
+            "chances_created": 28,
+            "big_chances_created": 8,
+            "clearances": 20,
+            "blocks": 3,
+            "interceptions": 10,
+            "tackles": 22,
+            "recoveries": 72
+        },
+        "discipline": {
+            "yellow_cards": 7,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 324578,
+        "name": "Rodrigo De Paul",
+        "position": "Central Midfielder",
+        "nationality": "Argentina",
+        "club": "Inter Miami CF",
+        "league": "Major League Soccer",
+        "appearances": {
+            "matches_played": 13,
+            "started": 13,
+            "minutes_played": 1170
+        },
+        "core_stats": {
+            "goals": 4,
+            "assists": 4,
+            "xg": 2.42,
+            "xgot": 2.5,
+            "npxg": 2.42,
+            "xa": 4.85,
+            "xgi": 7.27,
+            "clean_sheets": 2,
+            "goals_conceded": 26,
+            "xgc": 22.6
+        },
+        "detailed_actions": {
+            "shots": 24,
+            "shots_on_target": 10,
+            "chances_created": 31,
+            "big_chances_created": 12,
+            "clearances": 4,
+            "blocks": 2,
+            "interceptions": 14,
+            "tackles": 9,
+            "recoveries": 94
+        },
+        "discipline": {
+            "yellow_cards": 4,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 693599,
+        "name": "Exequiel Palacios",
+        "position": "Defensive Midfielder",
+        "nationality": "Argentina",
+        "club": "Bayer Leverkusen",
+        "league": "Bundesliga",
+        "appearances": {
+            "matches_played": 18,
+            "started": 12,
+            "minutes_played": 1097
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 1,
+            "xg": 0.6,
+            "xgot": 0.42,
+            "npxg": 0.6,
+            "xa": 1.93,
+            "xgi": 2.53,
+            "clean_sheets": 2,
+            "goals_conceded": 17,
+            "xgc": 19.66
+        },
+        "detailed_actions": {
+            "shots": 10,
+            "shots_on_target": 2,
+            "chances_created": 13,
+            "big_chances_created": 2,
+            "clearances": 20,
+            "blocks": 3,
+            "interceptions": 8,
+            "tackles": 21,
+            "recoveries": 98
+        },
+        "discipline": {
+            "yellow_cards": 3,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1137705,
+        "name": "Enzo Fernandez",
+        "position": "Attacking Midfielder",
+        "nationality": "Argentina",
+        "club": "Chelsea",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 36,
+            "started": 35,
+            "minutes_played": 3121
+        },
+        "core_stats": {
+            "goals": 10,
+            "assists": 4,
+            "xg": 11.29,
+            "xgot": 12.4,
+            "npxg": 9.71,
+            "xa": 7.25,
+            "xgi": 18.54,
+            "clean_sheets": 5,
+            "goals_conceded": 46,
+            "xgc": 44.42
+        },
+        "detailed_actions": {
+            "shots": 72,
+            "shots_on_target": 31,
+            "chances_created": 68,
+            "big_chances_created": 11,
+            "clearances": 28,
+            "blocks": 2,
+            "interceptions": 21,
+            "tackles": 53,
+            "recoveries": 140
+        },
+        "discipline": {
+            "yellow_cards": 10,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 831489,
+        "name": "Alexis Mac Allister",
+        "position": "Defensive Midfielder",
+        "nationality": "Argentina",
+        "club": "Liverpool",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 37,
+            "started": 31,
+            "minutes_played": 2662
+        },
+        "core_stats": {
+            "goals": 2,
+            "assists": 4,
+            "xg": 3.89,
+            "xgot": 2.66,
+            "npxg": 3.89,
+            "xa": 1.68,
+            "xgi": 5.57,
+            "clean_sheets": 6,
+            "goals_conceded": 41,
+            "xgc": 36.77
+        },
+        "detailed_actions": {
+            "shots": 52,
+            "shots_on_target": 12,
+            "chances_created": 35,
+            "big_chances_created": 4,
+            "clearances": 35,
+            "blocks": 9,
+            "interceptions": 21,
+            "tackles": 53,
+            "recoveries": 112
+        },
+        "discipline": {
+            "yellow_cards": 7,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 604126,
+        "name": "Giovani Lo Celso",
+        "position": "Attacking Midfielder",
+        "nationality": "Argentina",
+        "club": "Real Betis",
+        "league": "LaLiga",
+        "appearances": {
+            "matches_played": 24,
+            "started": 15,
+            "minutes_played": 1396
+        },
+        "core_stats": {
+            "goals": 2,
+            "assists": 3,
+            "xg": 2.47,
+            "xgot": 3.47,
+            "npxg": 2.47,
+            "xa": 2.39,
+            "xgi": 4.86,
+            "clean_sheets": null,
+            "goals_conceded": 16,
+            "xgc": 18.95
+        },
+        "detailed_actions": {
+            "shots": 30,
+            "shots_on_target": 11,
+            "chances_created": 33,
+            "big_chances_created": 6,
+            "clearances": 7,
+            "blocks": null,
+            "interceptions": 6,
+            "tackles": 19,
+            "recoveries": 74
+        },
+        "discipline": {
+            "yellow_cards": 4,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1272440,
+        "name": "Valentin Barco",
+        "position": "Defensive Midfielder",
+        "nationality": "Argentina",
+        "club": "Strasbourg",
+        "league": "Ligue 1",
+        "appearances": {
+            "matches_played": 27,
+            "started": 24,
+            "minutes_played": 2170
+        },
+        "core_stats": {
+            "goals": 2,
+            "assists": 4,
+            "xg": 3.27,
+            "xgot": 2.69,
+            "npxg": 3.27,
+            "xa": 6.42,
+            "xgi": 9.69,
+            "clean_sheets": 5,
+            "goals_conceded": 33,
+            "xgc": 32.58
+        },
+        "detailed_actions": {
+            "shots": 27,
+            "shots_on_target": 10,
+            "chances_created": 38,
+            "big_chances_created": 13,
+            "clearances": 11,
+            "blocks": 2,
+            "interceptions": 14,
+            "tackles": 54,
+            "recoveries": 128
+        },
+        "discipline": {
+            "yellow_cards": 5,
+            "red_cards": 1
+        }
+    },
+    {
+        "id": 30981,
+        "name": "Lionel Messi",
+        "position": "Striker",
+        "nationality": "Argentina",
+        "club": "Inter Miami CF",
+        "league": "Major League Soccer",
+        "appearances": {
+            "matches_played": 14,
+            "started": 14,
+            "minutes_played": 1243
+        },
+        "core_stats": {
+            "goals": 12,
+            "assists": 7,
+            "xg": 10.44,
+            "xgot": 12.51,
+            "npxg": 9.65,
+            "xa": 7.58,
+            "xgi": 18.02,
+            "clean_sheets": 2,
+            "goals_conceded": 28,
+            "xgc": 23.64
+        },
+        "detailed_actions": {
+            "shots": 84,
+            "shots_on_target": 34,
+            "chances_created": 42,
+            "big_chances_created": 13,
+            "clearances": null,
+            "blocks": null,
+            "interceptions": 2,
+            "tackles": 9,
+            "recoveries": 28
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1342537,
+        "name": "Nicolas Paz",
+        "position": "defender",
+        "nationality": "Argentina",
+        "club": "Union",
+        "league": "Liga Profesional Apertura",
+        "appearances": {
+            "matches_played": 1,
+            "started": 1,
+            "minutes_played": 66
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": 0.04,
+            "xgi": 0.04,
+            "clean_sheets": null,
+            "goals_conceded": 1,
+            "xgc": 0.2
+        },
+        "detailed_actions": {
+            "shots": 0,
+            "shots_on_target": null,
+            "chances_created": 1,
+            "big_chances_created": null,
+            "clearances": 3,
+            "blocks": null,
+            "interceptions": 1,
+            "tackles": 3,
+            "recoveries": null
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 955271,
+        "name": "Thiago Almada",
+        "position": "Left Midfielder",
+        "nationality": "Argentina",
+        "club": "Atletico Madrid",
+        "league": "LaLiga",
+        "appearances": {
+            "matches_played": 27,
+            "started": 16,
+            "minutes_played": 1312
+        },
+        "core_stats": {
+            "goals": 3,
+            "assists": 1,
+            "xg": 3.72,
+            "xgot": 3.8,
+            "npxg": 3.72,
+            "xa": 2.75,
+            "xgi": 6.47,
+            "clean_sheets": null,
+            "goals_conceded": 17,
+            "xgc": 17.27
+        },
+        "detailed_actions": {
+            "shots": 21,
+            "shots_on_target": 10,
+            "chances_created": 28,
+            "big_chances_created": 4,
+            "clearances": 6,
+            "blocks": 2,
+            "interceptions": 8,
+            "tackles": 29,
+            "recoveries": 72
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 1
+        }
+    },
+    {
+        "id": 841672,
+        "name": "Nicolas Gonzalez",
+        "position": "Left Midfielder",
+        "nationality": "Argentina",
+        "club": "Atletico Madrid",
+        "league": "LaLiga",
+        "appearances": {
+            "matches_played": 24,
+            "started": 18,
+            "minutes_played": 1453
+        },
+        "core_stats": {
+            "goals": 5,
+            "assists": 0,
+            "xg": 4.21,
+            "xgot": 6.42,
+            "npxg": 4.21,
+            "xa": 2.0,
+            "xgi": 6.21,
+            "clean_sheets": 2,
+            "goals_conceded": 15,
+            "xgc": 20.51
+        },
+        "detailed_actions": {
+            "shots": 43,
+            "shots_on_target": 20,
+            "chances_created": 12,
+            "big_chances_created": 3,
+            "clearances": 27,
+            "blocks": 3,
+            "interceptions": 12,
+            "tackles": 24,
+            "recoveries": 61
+        },
+        "discipline": {
+            "yellow_cards": 4,
+            "red_cards": 1
+        }
+    },
+    {
+        "id": 1226147,
+        "name": "Giuliano Simeone",
+        "position": "Right Midfielder",
+        "nationality": "Argentina",
+        "club": "Atletico Madrid",
+        "league": "LaLiga",
+        "appearances": {
+            "matches_played": 31,
+            "started": 25,
+            "minutes_played": 2109
+        },
+        "core_stats": {
+            "goals": 4,
+            "assists": 6,
+            "xg": 5.17,
+            "xgot": 4.64,
+            "npxg": 5.17,
+            "xa": 4.99,
+            "xgi": 10.16,
+            "clean_sheets": 2,
+            "goals_conceded": 26,
+            "xgc": 30.58
+        },
+        "detailed_actions": {
+            "shots": 36,
+            "shots_on_target": 14,
+            "chances_created": 29,
+            "big_chances_created": 9,
+            "clearances": 11,
+            "blocks": 3,
+            "interceptions": 18,
+            "tackles": 45,
+            "recoveries": 111
+        },
+        "discipline": {
+            "yellow_cards": 3,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 690230,
+        "name": "Lautaro Martinez",
+        "position": "Striker",
+        "nationality": "Argentina",
+        "club": "Inter",
+        "league": "Serie A",
+        "appearances": {
+            "matches_played": 30,
+            "started": 27,
+            "minutes_played": 2178
+        },
+        "core_stats": {
+            "goals": 17,
+            "assists": 6,
+            "xg": 13.5,
+            "xgot": 13.1,
+            "npxg": 13.5,
+            "xa": 2.71,
+            "xgi": 16.21,
+            "clean_sheets": null,
+            "goals_conceded": 21,
+            "xgc": 19.19
+        },
+        "detailed_actions": {
+            "shots": 92,
+            "shots_on_target": 39,
+            "chances_created": 37,
+            "big_chances_created": 12,
+            "clearances": 18,
+            "blocks": null,
+            "interceptions": 7,
+            "tackles": 24,
+            "recoveries": 54
+        },
+        "discipline": {
+            "yellow_cards": 4,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1216079,
+        "name": "Jose Manuel Lopez",
+        "position": "Striker",
+        "nationality": "Argentina",
+        "club": "Palmeiras",
+        "league": "Serie A",
+        "appearances": {
+            "matches_played": 17,
+            "started": 17,
+            "minutes_played": 1312
+        },
+        "core_stats": {
+            "goals": 6,
+            "assists": 3,
+            "xg": 2.82,
+            "xgot": 4.3,
+            "npxg": 2.82,
+            "xa": 1.77,
+            "xgi": 4.59,
+            "clean_sheets": 2,
+            "goals_conceded": 12,
+            "xgc": 12.31
+        },
+        "detailed_actions": {
+            "shots": 35,
+            "shots_on_target": 14,
+            "chances_created": 21,
+            "big_chances_created": 3,
+            "clearances": 21,
+            "blocks": 3,
+            "interceptions": 6,
+            "tackles": 14,
+            "recoveries": 38
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 974753,
+        "name": "Julian Alvarez",
+        "position": "Striker",
+        "nationality": "Argentina",
+        "club": "Atletico Madrid",
+        "league": "LaLiga",
+        "appearances": {
+            "matches_played": 29,
+            "started": 22,
+            "minutes_played": 1902
+        },
+        "core_stats": {
+            "goals": 8,
+            "assists": 4,
+            "xg": 7.7,
+            "xgot": 9.71,
+            "npxg": 5.33,
+            "xa": 5.13,
+            "xgi": 12.83,
+            "clean_sheets": 1,
+            "goals_conceded": 20,
+            "xgc": 23.63
+        },
+        "detailed_actions": {
+            "shots": 54,
+            "shots_on_target": 26,
+            "chances_created": 47,
+            "big_chances_created": 10,
+            "clearances": 5,
+            "blocks": null,
+            "interceptions": 3,
+            "tackles": 21,
+            "recoveries": 51
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 0
+        }
+    }
+]

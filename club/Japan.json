@@ -1,0 +1,1027 @@
+[
+    {
+        "id": 1053679,
+        "name": "Zion Suzuki",
+        "position": "Keeper",
+        "nationality": "Japan",
+        "club": "Parma",
+        "league": "Serie A",
+        "appearances": {
+            "matches_played": 20,
+            "started": 0,
+            "minutes_played": 1800
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 5,
+            "goals_conceded": 28,
+            "xgc": null
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        },
+        "goalkeeping_metrics": {
+            "penalties_conceded": 2,
+            "penalties_saved": 1,
+            "saves": 66,
+            "goal_prevented": -1.36
+        }
+    },
+    {
+        "id": 922808,
+        "name": "Keisuke Osako",
+        "position": "Keeper",
+        "nationality": "Japan",
+        "club": "Sanfrecce Hiroshima",
+        "league": "J. League 100 Year Vision League West",
+        "appearances": {
+            "matches_played": 16,
+            "started": 0,
+            "minutes_played": 1440
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 4,
+            "goals_conceded": 17,
+            "xgc": null
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        "goalkeeping_metrics": {
+            "penalties_conceded": null,
+            "penalties_saved": null,
+            "saves": 32,
+            "goal_prevented": -3.89
+        }
+    },
+    {
+        "id": 1232143,
+        "name": "Tomoki Hayakawa",
+        "position": "Keeper",
+        "nationality": "Japan",
+        "club": "Kashima Antlers",
+        "league": "J. League 100 Year Vision League East",
+        "appearances": {
+            "matches_played": 17,
+            "started": 0,
+            "minutes_played": 1530
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 10,
+            "goals_conceded": 9,
+            "xgc": null
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        "goalkeeping_metrics": {
+            "penalties_conceded": 0,
+            "penalties_saved": 1,
+            "saves": 41,
+            "goal_prevented": 6.59
+        }
+    },
+    {
+        "id": 98254,
+        "name": "Yuto Nagatomo",
+        "position": "Right Back",
+        "nationality": "Japan",
+        "club": "FC Tokyo",
+        "league": "J. League 100 Year Vision League East",
+        "appearances": {
+            "matches_played": 8,
+            "started": 7,
+            "minutes_played": 502
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": 0.11,
+            "xgot": 0.26,
+            "npxg": 0.11,
+            "xa": 0.78,
+            "xgi": 0.89,
+            "clean_sheets": null,
+            "goals_conceded": 7,
+            "xgc": 4.55
+        },
+        "detailed_actions": {
+            "shots": 5,
+            "shots_on_target": 1,
+            "chances_created": 4,
+            "big_chances_created": null,
+            "clearances": 11,
+            "blocks": 1,
+            "interceptions": 5,
+            "tackles": 4,
+            "recoveries": 12
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 664444,
+        "name": "Takehiro Tomiyasu",
+        "position": "Left Back",
+        "nationality": "Japan",
+        "club": "Ajax",
+        "league": "Eredivisie",
+        "appearances": {
+            "matches_played": 7,
+            "started": 2,
+            "minutes_played": 205
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": 0.06,
+            "xgot": null,
+            "npxg": 0.06,
+            "xa": 0.05,
+            "xgi": 0.11,
+            "clean_sheets": null,
+            "goals_conceded": null,
+            "xgc": 1.26
+        },
+        "detailed_actions": {
+            "shots": 1,
+            "shots_on_target": null,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": 9,
+            "blocks": null,
+            "interceptions": 7,
+            "tackles": 4,
+            "recoveries": 13
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 1
+        }
+    },
+    {
+        "id": 620917,
+        "name": "Ko Itakura",
+        "position": "Center Back",
+        "nationality": "Japan",
+        "club": "Ajax",
+        "league": "Eredivisie",
+        "appearances": {
+            "matches_played": 18,
+            "started": 16,
+            "minutes_played": 1344
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 0,
+            "xg": 0.7,
+            "xgot": 0.4,
+            "npxg": 0.7,
+            "xa": 0.72,
+            "xgi": 1.42,
+            "clean_sheets": 3,
+            "goals_conceded": 17,
+            "xgc": 23.94
+        },
+        "detailed_actions": {
+            "shots": 7,
+            "shots_on_target": 3,
+            "chances_created": 3,
+            "big_chances_created": 1,
+            "clearances": 101,
+            "blocks": 14,
+            "interceptions": 14,
+            "tackles": 17,
+            "recoveries": 48
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 523731,
+        "name": "Shogo Taniguchi",
+        "position": "Center Back",
+        "nationality": "Japan",
+        "club": "St.Truiden",
+        "league": "Belgian Pro League",
+        "appearances": {
+            "matches_played": 38,
+            "started": 32,
+            "minutes_played": 2955
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 1,
+            "xg": 1.07,
+            "xgot": 0.54,
+            "npxg": 1.07,
+            "xa": 1.31,
+            "xgi": 2.38,
+            "clean_sheets": 7,
+            "goals_conceded": 39,
+            "xgc": 43.1
+        },
+        "detailed_actions": {
+            "shots": 14,
+            "shots_on_target": 2,
+            "chances_created": 10,
+            "big_chances_created": 2,
+            "clearances": 224,
+            "blocks": 32,
+            "interceptions": 39,
+            "tackles": 43,
+            "recoveries": 129
+        },
+        "discipline": {
+            "yellow_cards": 4,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 851626,
+        "name": "Hiroki Ito",
+        "position": "Center Back",
+        "nationality": "Japan",
+        "club": "Bayern München",
+        "league": "Bundesliga",
+        "appearances": {
+            "matches_played": 16,
+            "started": 10,
+            "minutes_played": 921
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 2,
+            "xg": 0.85,
+            "xgot": 1.03,
+            "npxg": 0.85,
+            "xa": 1.07,
+            "xgi": 1.92,
+            "clean_sheets": null,
+            "goals_conceded": 14,
+            "xgc": 17.11
+        },
+        "detailed_actions": {
+            "shots": 10,
+            "shots_on_target": 3,
+            "chances_created": 6,
+            "big_chances_created": 2,
+            "clearances": 37,
+            "blocks": 3,
+            "interceptions": 14,
+            "tackles": 4,
+            "recoveries": 37
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 924610,
+        "name": "Yukinari Sugawara",
+        "position": "Right Back",
+        "nationality": "Japan",
+        "club": "Werder Bremen",
+        "league": "Bundesliga",
+        "appearances": {
+            "matches_played": 31,
+            "started": 29,
+            "minutes_played": 2432
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 6,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": 0.27,
+            "xgi": 0.27,
+            "clean_sheets": null,
+            "goals_conceded": 1,
+            "xgc": 2.05
+        },
+        "detailed_actions": {
+            "shots": 0,
+            "shots_on_target": null,
+            "chances_created": 2,
+            "big_chances_created": null,
+            "clearances": 1,
+            "blocks": null,
+            "interceptions": null,
+            "tackles": null,
+            "recoveries": 5
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 1
+        }
+    },
+    {
+        "id": 857120,
+        "name": "Ayumu Seko",
+        "position": "Center Back",
+        "nationality": "Japan",
+        "club": "Le Havre",
+        "league": "Ligue 1",
+        "appearances": {
+            "matches_played": 30,
+            "started": 29,
+            "minutes_played": 2625
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": 1.04,
+            "xgot": 0.71,
+            "npxg": 1.04,
+            "xa": 1.15,
+            "xgi": 2.19,
+            "clean_sheets": 7,
+            "goals_conceded": 38,
+            "xgc": 44.44
+        },
+        "detailed_actions": {
+            "shots": 17,
+            "shots_on_target": 6,
+            "chances_created": 10,
+            "big_chances_created": 1,
+            "clearances": 116,
+            "blocks": 7,
+            "interceptions": 37,
+            "tackles": 42,
+            "recoveries": 90
+        },
+        "discipline": {
+            "yellow_cards": 6,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1023887,
+        "name": "Tsuyoshi Watanabe",
+        "position": "Center Back",
+        "nationality": "Japan",
+        "club": "Feyenoord",
+        "league": "Eredivisie",
+        "appearances": {
+            "matches_played": 30,
+            "started": 30,
+            "minutes_played": 2637
+        },
+        "core_stats": {
+            "goals": 2,
+            "assists": 0,
+            "xg": 2.98,
+            "xgot": 3.32,
+            "npxg": 2.98,
+            "xa": 1.92,
+            "xgi": 4.9,
+            "clean_sheets": 7,
+            "goals_conceded": 37,
+            "xgc": 33.46
+        },
+        "detailed_actions": {
+            "shots": 23,
+            "shots_on_target": 10,
+            "chances_created": 13,
+            "big_chances_created": 2,
+            "clearances": 148,
+            "blocks": 22,
+            "interceptions": 27,
+            "tackles": 33,
+            "recoveries": 120
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1337765,
+        "name": "Junnosuke Suzuki",
+        "position": "Center Back",
+        "nationality": "Japan",
+        "club": "FC København",
+        "league": "Superligaen",
+        "appearances": {
+            "matches_played": 21,
+            "started": 20,
+            "minutes_played": 1771
+        },
+        "core_stats": {
+            "goals": 2,
+            "assists": 0,
+            "xg": 1.68,
+            "xgot": 0.92,
+            "npxg": 1.68,
+            "xa": 2.74,
+            "xgi": 4.42,
+            "clean_sheets": 4,
+            "goals_conceded": 26,
+            "xgc": 24.5
+        },
+        "detailed_actions": {
+            "shots": 31,
+            "shots_on_target": 7,
+            "chances_created": 25,
+            "big_chances_created": 3,
+            "clearances": 54,
+            "blocks": 6,
+            "interceptions": 20,
+            "tackles": 36,
+            "recoveries": 93
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 202643,
+        "name": "Wataru Endo",
+        "position": "Defensive Midfielder",
+        "nationality": "Japan",
+        "club": "Liverpool",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 8,
+            "started": 1,
+            "minutes_played": 171
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 1,
+            "xg": 0.04,
+            "xgot": null,
+            "npxg": 0.04,
+            "xa": 0.05,
+            "xgi": 0.09,
+            "clean_sheets": null,
+            "goals_conceded": 5,
+            "xgc": 4.11
+        },
+        "detailed_actions": {
+            "shots": 1,
+            "shots_on_target": null,
+            "chances_created": 1,
+            "big_chances_created": null,
+            "clearances": 13,
+            "blocks": null,
+            "interceptions": null,
+            "tackles": 7,
+            "recoveries": 3
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 848289,
+        "name": "Takefusa Kubo",
+        "position": "Right Winger",
+        "nationality": "Japan",
+        "club": "Real Sociedad",
+        "league": "LaLiga",
+        "appearances": {
+            "matches_played": 24,
+            "started": 17,
+            "minutes_played": 1508
+        },
+        "core_stats": {
+            "goals": 2,
+            "assists": 4,
+            "xg": 2.39,
+            "xgot": 1.77,
+            "npxg": 2.39,
+            "xa": 3.52,
+            "xgi": 5.91,
+            "clean_sheets": null,
+            "goals_conceded": 22,
+            "xgc": 23.75
+        },
+        "detailed_actions": {
+            "shots": 28,
+            "shots_on_target": 12,
+            "chances_created": 32,
+            "big_chances_created": 7,
+            "clearances": 10,
+            "blocks": null,
+            "interceptions": 11,
+            "tackles": 29,
+            "recoveries": 53
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 629805,
+        "name": "Ritsu Doan",
+        "position": "Right Winger",
+        "nationality": "Japan",
+        "club": "Eintracht Frankfurt",
+        "league": "Bundesliga",
+        "appearances": {
+            "matches_played": 31,
+            "started": 28,
+            "minutes_played": 2379
+        },
+        "core_stats": {
+            "goals": 5,
+            "assists": 5,
+            "xg": 3.36,
+            "xgot": 5.62,
+            "npxg": 3.36,
+            "xa": 5.62,
+            "xgi": 8.98,
+            "clean_sheets": 3,
+            "goals_conceded": 44,
+            "xgc": 34.4
+        },
+        "detailed_actions": {
+            "shots": 41,
+            "shots_on_target": 15,
+            "chances_created": 39,
+            "big_chances_created": 12,
+            "clearances": 16,
+            "blocks": 1,
+            "interceptions": 17,
+            "tackles": 43,
+            "recoveries": 75
+        },
+        "discipline": {
+            "yellow_cards": 5,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 621515,
+        "name": "Daichi Kamada",
+        "position": "Defensive Midfielder",
+        "nationality": "Japan",
+        "club": "Crystal Palace",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 28,
+            "started": 22,
+            "minutes_played": 1908
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": 1.65,
+            "xgot": 1.07,
+            "npxg": 1.65,
+            "xa": 3.24,
+            "xgi": 4.89,
+            "clean_sheets": 1,
+            "goals_conceded": 28,
+            "xgc": 25.6
+        },
+        "detailed_actions": {
+            "shots": 19,
+            "shots_on_target": 4,
+            "chances_created": 20,
+            "big_chances_created": 5,
+            "clearances": 23,
+            "blocks": 1,
+            "interceptions": 14,
+            "tackles": 63,
+            "recoveries": 108
+        },
+        "discipline": {
+            "yellow_cards": 3,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 604044,
+        "name": "Junya Ito",
+        "position": "Right Winger",
+        "nationality": "Japan",
+        "club": "Genk",
+        "league": "Belgian Pro League",
+        "appearances": {
+            "matches_played": 28,
+            "started": 22,
+            "minutes_played": 1785
+        },
+        "core_stats": {
+            "goals": 6,
+            "assists": 5,
+            "xg": 3.79,
+            "xgot": 4.33,
+            "npxg": 3.79,
+            "xa": 5.63,
+            "xgi": 9.42,
+            "clean_sheets": null,
+            "goals_conceded": 26,
+            "xgc": 22.51
+        },
+        "detailed_actions": {
+            "shots": 36,
+            "shots_on_target": 16,
+            "chances_created": 51,
+            "big_chances_created": 12,
+            "clearances": 13,
+            "blocks": 1,
+            "interceptions": 16,
+            "tackles": 37,
+            "recoveries": 80
+        },
+        "discipline": {
+            "yellow_cards": 4,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 935728,
+        "name": "Ao Tanaka",
+        "position": "Central Midfielder",
+        "nationality": "Japan",
+        "club": "Leeds United",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 28,
+            "started": 14,
+            "minutes_played": 1314
+        },
+        "core_stats": {
+            "goals": 2,
+            "assists": 0,
+            "xg": 1.61,
+            "xgot": 1.35,
+            "npxg": 1.61,
+            "xa": 1.47,
+            "xgi": 3.08,
+            "clean_sheets": 1,
+            "goals_conceded": 22,
+            "xgc": 21.9
+        },
+        "detailed_actions": {
+            "shots": 17,
+            "shots_on_target": 5,
+            "chances_created": 18,
+            "big_chances_created": 1,
+            "clearances": 15,
+            "blocks": 2,
+            "interceptions": 21,
+            "tackles": 27,
+            "recoveries": 81
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 887704,
+        "name": "Keito Nakamura",
+        "position": "Left Winger",
+        "nationality": "Japan",
+        "club": "Reims",
+        "league": "Ligue 2",
+        "appearances": {
+            "matches_played": 29,
+            "started": 28,
+            "minutes_played": 2357
+        },
+        "core_stats": {
+            "goals": 14,
+            "assists": 2,
+            "xg": 11.02,
+            "xgot": 13.22,
+            "npxg": 10.23,
+            "xa": 4.86,
+            "xgi": 15.88,
+            "clean_sheets": 8,
+            "goals_conceded": 24,
+            "xgc": 29.17
+        },
+        "detailed_actions": {
+            "shots": 88,
+            "shots_on_target": 43,
+            "chances_created": 39,
+            "big_chances_created": 6,
+            "clearances": 15,
+            "blocks": null,
+            "interceptions": 10,
+            "tackles": 29,
+            "recoveries": 99
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1033111,
+        "name": "Kaishu Sano",
+        "position": "Central Midfielder",
+        "nationality": "Japan",
+        "club": "Mainz 05",
+        "league": "Bundesliga",
+        "appearances": {
+            "matches_played": 34,
+            "started": 34,
+            "minutes_played": 3059
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 2,
+            "xg": 1.36,
+            "xgot": 1.39,
+            "npxg": 1.36,
+            "xa": 3.4,
+            "xgi": 4.76,
+            "clean_sheets": 4,
+            "goals_conceded": 53,
+            "xgc": 56.41
+        },
+        "detailed_actions": {
+            "shots": 24,
+            "shots_on_target": 6,
+            "chances_created": 25,
+            "big_chances_created": 6,
+            "clearances": 46,
+            "blocks": 14,
+            "interceptions": 66,
+            "tackles": 52,
+            "recoveries": 203
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1134467,
+        "name": "Yuito Suzuki",
+        "position": "Attacking Midfielder",
+        "nationality": "Japan",
+        "club": "Freiburg",
+        "league": "Bundesliga",
+        "appearances": {
+            "matches_played": 25,
+            "started": 18,
+            "minutes_played": 1636
+        },
+        "core_stats": {
+            "goals": 4,
+            "assists": 2,
+            "xg": 3.86,
+            "xgot": 4.16,
+            "npxg": 3.86,
+            "xa": 2.59,
+            "xgi": 6.45,
+            "clean_sheets": null,
+            "goals_conceded": 31,
+            "xgc": 25.27
+        },
+        "detailed_actions": {
+            "shots": 38,
+            "shots_on_target": 14,
+            "chances_created": 25,
+            "big_chances_created": 2,
+            "clearances": 10,
+            "blocks": 1,
+            "interceptions": 10,
+            "tackles": 20,
+            "recoveries": 72
+        },
+        "discipline": {
+            "yellow_cards": 3,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 942393,
+        "name": "Ayase Ueda",
+        "position": "Striker",
+        "nationality": "Japan",
+        "club": "Feyenoord",
+        "league": "Eredivisie",
+        "appearances": {
+            "matches_played": 31,
+            "started": 31,
+            "minutes_played": 2533
+        },
+        "core_stats": {
+            "goals": 25,
+            "assists": 1,
+            "xg": 18.91,
+            "xgot": 20.92,
+            "npxg": 18.12,
+            "xa": 1.67,
+            "xgi": 20.58,
+            "clean_sheets": 3,
+            "goals_conceded": 35,
+            "xgc": 29.86
+        },
+        "detailed_actions": {
+            "shots": 102,
+            "shots_on_target": 46,
+            "chances_created": 21,
+            "big_chances_created": 2,
+            "clearances": 25,
+            "blocks": 1,
+            "interceptions": 3,
+            "tackles": 12,
+            "recoveries": 41
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 728765,
+        "name": "Daizen Maeda",
+        "position": "Left Winger",
+        "nationality": "Japan",
+        "club": "Celtic",
+        "league": "Premiership",
+        "appearances": {
+            "matches_played": 36,
+            "started": 32,
+            "minutes_played": 2836
+        },
+        "core_stats": {
+            "goals": 14,
+            "assists": 6,
+            "xg": 15.49,
+            "xgot": 14.59,
+            "npxg": 15.49,
+            "xa": 4.14,
+            "xgi": 19.63,
+            "clean_sheets": 8,
+            "goals_conceded": 32,
+            "xgc": 28.67
+        },
+        "detailed_actions": {
+            "shots": 71,
+            "shots_on_target": 33,
+            "chances_created": 34,
+            "big_chances_created": 14,
+            "clearances": 17,
+            "blocks": null,
+            "interceptions": 19,
+            "tackles": 35,
+            "recoveries": 97
+        },
+        "discipline": {
+            "yellow_cards": 6,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 727837,
+        "name": "Koki Ogawa",
+        "position": "Striker",
+        "nationality": "Japan",
+        "club": "NEC Nijmegen",
+        "league": "Eredivisie",
+        "appearances": {
+            "matches_played": 26,
+            "started": 17,
+            "minutes_played": 1272
+        },
+        "core_stats": {
+            "goals": 8,
+            "assists": 3,
+            "xg": 7.6,
+            "xgot": 8.89,
+            "npxg": 6.82,
+            "xa": 1.5,
+            "xgi": 9.1,
+            "clean_sheets": null,
+            "goals_conceded": 20,
+            "xgc": 20.96
+        },
+        "detailed_actions": {
+            "shots": 43,
+            "shots_on_target": 18,
+            "chances_created": 17,
+            "big_chances_created": 1,
+            "clearances": 8,
+            "blocks": 1,
+            "interceptions": 4,
+            "tackles": 12,
+            "recoveries": 18
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1436730,
+        "name": "Keisuke Goto",
+        "position": "Striker",
+        "nationality": "Japan",
+        "club": "St.Truiden",
+        "league": "Belgian Pro League",
+        "appearances": {
+            "matches_played": 38,
+            "started": 32,
+            "minutes_played": 2885
+        },
+        "core_stats": {
+            "goals": 11,
+            "assists": 7,
+            "xg": 13.43,
+            "xgot": 8.68,
+            "npxg": 11.85,
+            "xa": 4.3,
+            "xgi": 17.73,
+            "clean_sheets": 3,
+            "goals_conceded": 36,
+            "xgc": 39.13
+        },
+        "detailed_actions": {
+            "shots": 62,
+            "shots_on_target": 25,
+            "chances_created": 30,
+            "big_chances_created": 9,
+            "clearances": 29,
+            "blocks": 3,
+            "interceptions": 11,
+            "tackles": 41,
+            "recoveries": 38
+        },
+        "discipline": {
+            "yellow_cards": 5,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1611223,
+        "name": "Kento Shiogai",
+        "position": "Striker",
+        "nationality": "Japan",
+        "club": "Wolfsburg",
+        "league": "Bundesliga",
+        "appearances": {
+            "matches_played": 12,
+            "started": 2,
+            "minutes_played": 313
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 0,
+            "xg": 1.52,
+            "xgot": 1.84,
+            "npxg": 1.52,
+            "xa": 0.29,
+            "xgi": 1.81,
+            "clean_sheets": null,
+            "goals_conceded": 4,
+            "xgc": 6.39
+        },
+        "detailed_actions": {
+            "shots": 9,
+            "shots_on_target": 6,
+            "chances_created": 2,
+            "big_chances_created": 1,
+            "clearances": 4,
+            "blocks": null,
+            "interceptions": 3,
+            "tackles": 7,
+            "recoveries": 18
+        },
+        "discipline": {
+            "yellow_cards": 3,
+            "red_cards": 0
+        }
+    }
+]

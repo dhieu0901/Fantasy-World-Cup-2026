@@ -1,0 +1,1027 @@
+[
+    {
+        "id": 330643,
+        "name": "Mark Flekken",
+        "position": "Keeper",
+        "nationality": "Netherlands",
+        "club": "Bayer Leverkusen",
+        "league": "Bundesliga",
+        "appearances": {
+            "matches_played": 24,
+            "started": 0,
+            "minutes_played": 2130
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 5,
+            "goals_conceded": 38,
+            "xgc": null
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        },
+        "goalkeeping_metrics": {
+            "penalties_conceded": 7,
+            "penalties_saved": 0,
+            "saves": 79,
+            "goal_prevented": -3.03
+        }
+    },
+    {
+        "id": 1125720,
+        "name": "Robin Roefs",
+        "position": "Keeper",
+        "nationality": "Netherlands",
+        "club": "Sunderland",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 35,
+            "started": 0,
+            "minutes_played": 3150
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 10,
+            "goals_conceded": 46,
+            "xgc": null
+        },
+        "discipline": {
+            "yellow_cards": 4,
+            "red_cards": 0
+        },
+        "goalkeeping_metrics": {
+            "penalties_conceded": 2,
+            "penalties_saved": 1,
+            "saves": 109,
+            "goal_prevented": -1.77
+        }
+    },
+    {
+        "id": 1131987,
+        "name": "Bart Verbruggen",
+        "position": "Keeper",
+        "nationality": "Netherlands",
+        "club": "Brighton & Hove Albion",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 38,
+            "started": 0,
+            "minutes_played": 3420
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 10,
+            "goals_conceded": 46,
+            "xgc": null
+        },
+        "discipline": {
+            "yellow_cards": 3,
+            "red_cards": 0
+        },
+        "goalkeeping_metrics": {
+            "penalties_conceded": 5,
+            "penalties_saved": 1,
+            "saves": 106,
+            "goal_prevented": 2.03
+        }
+    },
+    {
+        "id": 417068,
+        "name": "Nathan Ake",
+        "position": "Center Back",
+        "nationality": "Netherlands",
+        "club": "Manchester City",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 18,
+            "started": 6,
+            "minutes_played": 688
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": 0.72,
+            "xgot": 0.31,
+            "npxg": 0.72,
+            "xa": 0.53,
+            "xgi": 1.25,
+            "clean_sheets": 3,
+            "goals_conceded": 9,
+            "xgc": 10.11
+        },
+        "detailed_actions": {
+            "shots": 6,
+            "shots_on_target": 1,
+            "chances_created": 7,
+            "big_chances_created": 2,
+            "clearances": 31,
+            "blocks": 1,
+            "interceptions": 5,
+            "tackles": 8,
+            "recoveries": 17
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 593118,
+        "name": "Denzel Dumfries",
+        "position": "Right Midfielder",
+        "nationality": "Netherlands",
+        "club": "Inter",
+        "league": "Serie A",
+        "appearances": {
+            "matches_played": 20,
+            "started": 15,
+            "minutes_played": 1327
+        },
+        "core_stats": {
+            "goals": 3,
+            "assists": 1,
+            "xg": 3.44,
+            "xgot": 2.42,
+            "npxg": 3.44,
+            "xa": 0.92,
+            "xgi": 4.36,
+            "clean_sheets": 4,
+            "goals_conceded": 14,
+            "xgc": 14.64
+        },
+        "detailed_actions": {
+            "shots": 23,
+            "shots_on_target": 5,
+            "chances_created": 13,
+            "big_chances_created": 1,
+            "clearances": 21,
+            "blocks": null,
+            "interceptions": 7,
+            "tackles": 16,
+            "recoveries": 35
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1413846,
+        "name": "Jorrel Hato",
+        "position": "Center Back",
+        "nationality": "Netherlands",
+        "club": "Chelsea",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 22,
+            "started": 12,
+            "minutes_played": 1142
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": 0.31,
+            "xgot": null,
+            "npxg": 0.31,
+            "xa": 0.63,
+            "xgi": 0.94,
+            "clean_sheets": null,
+            "goals_conceded": 27,
+            "xgc": 18.06
+        },
+        "detailed_actions": {
+            "shots": 4,
+            "shots_on_target": null,
+            "chances_created": 8,
+            "big_chances_created": 1,
+            "clearances": 39,
+            "blocks": 7,
+            "interceptions": 18,
+            "tackles": 36,
+            "recoveries": 50
+        },
+        "discipline": {
+            "yellow_cards": 7,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 942381,
+        "name": "Jurrien Timber",
+        "position": "Right Back",
+        "nationality": "Netherlands",
+        "club": "Arsenal",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 30,
+            "started": 28,
+            "minutes_played": 2457
+        },
+        "core_stats": {
+            "goals": 3,
+            "assists": 5,
+            "xg": 4.77,
+            "xgot": 4.17,
+            "npxg": 4.77,
+            "xa": 1.61,
+            "xgi": 6.38,
+            "clean_sheets": 11,
+            "goals_conceded": 20,
+            "xgc": 17.28
+        },
+        "detailed_actions": {
+            "shots": 25,
+            "shots_on_target": 7,
+            "chances_created": 27,
+            "big_chances_created": 4,
+            "clearances": 53,
+            "blocks": 6,
+            "interceptions": 24,
+            "tackles": 66,
+            "recoveries": 97
+        },
+        "discipline": {
+            "yellow_cards": 5,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 974618,
+        "name": "Jan Paul van Hecke",
+        "position": "Center Back",
+        "nationality": "Netherlands",
+        "club": "Brighton & Hove Albion",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 36,
+            "started": 36,
+            "minutes_played": 3211
+        },
+        "core_stats": {
+            "goals": 3,
+            "assists": 3,
+            "xg": 3.3,
+            "xgot": 3.83,
+            "npxg": 3.3,
+            "xa": 1.62,
+            "xgi": 4.92,
+            "clean_sheets": 9,
+            "goals_conceded": 44,
+            "xgc": 46.3
+        },
+        "detailed_actions": {
+            "shots": 23,
+            "shots_on_target": 10,
+            "chances_created": 13,
+            "big_chances_created": 2,
+            "clearances": 189,
+            "blocks": 28,
+            "interceptions": 47,
+            "tackles": 53,
+            "recoveries": 113
+        },
+        "discipline": {
+            "yellow_cards": 9,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 209405,
+        "name": "Virgil van Dijk",
+        "position": "Center Back",
+        "nationality": "Netherlands",
+        "club": "Liverpool",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 38,
+            "started": 38,
+            "minutes_played": 3420
+        },
+        "core_stats": {
+            "goals": 6,
+            "assists": 0,
+            "xg": 3.77,
+            "xgot": 4.87,
+            "npxg": 3.77,
+            "xa": 1.35,
+            "xgi": 5.12,
+            "clean_sheets": 10,
+            "goals_conceded": 53,
+            "xgc": 47.43
+        },
+        "detailed_actions": {
+            "shots": 30,
+            "shots_on_target": 14,
+            "chances_created": 12,
+            "big_chances_created": null,
+            "clearances": 275,
+            "blocks": 26,
+            "interceptions": 28,
+            "tackles": 22,
+            "recoveries": 87
+        },
+        "discipline": {
+            "yellow_cards": 4,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1097466,
+        "name": "Micky van de Ven",
+        "position": "Center Back",
+        "nationality": "Netherlands",
+        "club": "Tottenham Hotspur",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 35,
+            "started": 35,
+            "minutes_played": 3043
+        },
+        "core_stats": {
+            "goals": 4,
+            "assists": 1,
+            "xg": 2.53,
+            "xgot": 4.14,
+            "npxg": 2.53,
+            "xa": 0.37,
+            "xgi": 2.9,
+            "clean_sheets": 8,
+            "goals_conceded": 47,
+            "xgc": 43.65
+        },
+        "detailed_actions": {
+            "shots": 16,
+            "shots_on_target": 6,
+            "chances_created": 6,
+            "big_chances_created": 1,
+            "clearances": 131,
+            "blocks": 22,
+            "interceptions": 22,
+            "tackles": 39,
+            "recoveries": 122
+        },
+        "discipline": {
+            "yellow_cards": 9,
+            "red_cards": 1
+        }
+    },
+    {
+        "id": 638622,
+        "name": "Frenkie de Jong",
+        "position": "Defensive Midfielder",
+        "nationality": "Netherlands",
+        "club": "Barcelona",
+        "league": "LaLiga",
+        "appearances": {
+            "matches_played": 25,
+            "started": 16,
+            "minutes_played": 1631
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 5,
+            "xg": 1.17,
+            "xgot": 0.89,
+            "npxg": 1.17,
+            "xa": 3.72,
+            "xgi": 4.89,
+            "clean_sheets": 5,
+            "goals_conceded": 21,
+            "xgc": 25.32
+        },
+        "detailed_actions": {
+            "shots": 7,
+            "shots_on_target": 2,
+            "chances_created": 35,
+            "big_chances_created": 9,
+            "clearances": 15,
+            "blocks": 4,
+            "interceptions": 17,
+            "tackles": 45,
+            "recoveries": 86
+        },
+        "discipline": {
+            "yellow_cards": 4,
+            "red_cards": 1
+        }
+    },
+    {
+        "id": 198559,
+        "name": "Marten de Roon",
+        "position": "Defensive Midfielder",
+        "nationality": "Netherlands",
+        "club": "Atalanta",
+        "league": "Serie A",
+        "appearances": {
+            "matches_played": 34,
+            "started": 32,
+            "minutes_played": 2704
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 2,
+            "xg": 0.84,
+            "xgot": 1.46,
+            "npxg": 0.84,
+            "xa": 1.96,
+            "xgi": 2.8,
+            "clean_sheets": 7,
+            "goals_conceded": 27,
+            "xgc": 35.46
+        },
+        "detailed_actions": {
+            "shots": 16,
+            "shots_on_target": 4,
+            "chances_created": 23,
+            "big_chances_created": 1,
+            "clearances": 67,
+            "blocks": 5,
+            "interceptions": 27,
+            "tackles": 81,
+            "recoveries": 114
+        },
+        "discipline": {
+            "yellow_cards": 6,
+            "red_cards": 1
+        }
+    },
+    {
+        "id": 956683,
+        "name": "Ryan Gravenberch",
+        "position": "Defensive Midfielder",
+        "nationality": "Netherlands",
+        "club": "Liverpool",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 36,
+            "started": 34,
+            "minutes_played": 2996
+        },
+        "core_stats": {
+            "goals": 5,
+            "assists": 3,
+            "xg": 1.9,
+            "xgot": 3.09,
+            "npxg": 1.9,
+            "xa": 2.26,
+            "xgi": 4.16,
+            "clean_sheets": 9,
+            "goals_conceded": 42,
+            "xgc": 38.22
+        },
+        "detailed_actions": {
+            "shots": 38,
+            "shots_on_target": 13,
+            "chances_created": 29,
+            "big_chances_created": 4,
+            "clearances": 53,
+            "blocks": 12,
+            "interceptions": 48,
+            "tackles": 59,
+            "recoveries": 128
+        },
+        "discipline": {
+            "yellow_cards": 5,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 866516,
+        "name": "Teun Koopmeiners",
+        "position": "Center Back",
+        "nationality": "Netherlands",
+        "club": "Juventus",
+        "league": "Serie A",
+        "appearances": {
+            "matches_played": 33,
+            "started": 18,
+            "minutes_played": 1819
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": 1.5,
+            "xgot": 0.99,
+            "npxg": 1.5,
+            "xa": 1.35,
+            "xgi": 2.85,
+            "clean_sheets": 3,
+            "goals_conceded": 22,
+            "xgc": 18.51
+        },
+        "detailed_actions": {
+            "shots": 28,
+            "shots_on_target": 7,
+            "chances_created": 17,
+            "big_chances_created": null,
+            "clearances": 39,
+            "blocks": 7,
+            "interceptions": 18,
+            "tackles": 33,
+            "recoveries": 78
+        },
+        "discipline": {
+            "yellow_cards": 5,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 868344,
+        "name": "Tijjani Reijnders",
+        "position": "Attacking Midfielder",
+        "nationality": "Netherlands",
+        "club": "Manchester City",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 28,
+            "started": 19,
+            "minutes_played": 1636
+        },
+        "core_stats": {
+            "goals": 5,
+            "assists": 2,
+            "xg": 4.45,
+            "xgot": 4.36,
+            "npxg": 4.45,
+            "xa": 2.34,
+            "xgi": 6.79,
+            "clean_sheets": 2,
+            "goals_conceded": 18,
+            "xgc": 18.71
+        },
+        "detailed_actions": {
+            "shots": 49,
+            "shots_on_target": 16,
+            "chances_created": 17,
+            "big_chances_created": 4,
+            "clearances": 20,
+            "blocks": 1,
+            "interceptions": 10,
+            "tackles": 10,
+            "recoveries": 58
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 774947,
+        "name": "Guus Til",
+        "position": "Attacking Midfielder",
+        "nationality": "Netherlands",
+        "club": "PSV Eindhoven",
+        "league": "Eredivisie",
+        "appearances": {
+            "matches_played": 29,
+            "started": 25,
+            "minutes_played": 2248
+        },
+        "core_stats": {
+            "goals": 14,
+            "assists": 4,
+            "xg": 9.84,
+            "xgot": 12.45,
+            "npxg": 9.84,
+            "xa": 4.83,
+            "xgi": 14.67,
+            "clean_sheets": 3,
+            "goals_conceded": 31,
+            "xgc": 25.5
+        },
+        "detailed_actions": {
+            "shots": 61,
+            "shots_on_target": 27,
+            "chances_created": 43,
+            "big_chances_created": 6,
+            "clearances": 22,
+            "blocks": 1,
+            "interceptions": 2,
+            "tackles": 29,
+            "recoveries": 58
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 970563,
+        "name": "Quinten Timber",
+        "position": "Defensive Midfielder",
+        "nationality": "Netherlands",
+        "club": "Marseille",
+        "league": "Ligue 1",
+        "appearances": {
+            "matches_played": 15,
+            "started": 14,
+            "minutes_played": 1111
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": 3.0,
+            "xgot": 2.27,
+            "npxg": 2.22,
+            "xa": 3.92,
+            "xgi": 6.92,
+            "clean_sheets": 4,
+            "goals_conceded": 19,
+            "xgc": 16.72
+        },
+        "detailed_actions": {
+            "shots": 23,
+            "shots_on_target": 8,
+            "chances_created": 29,
+            "big_chances_created": 7,
+            "clearances": 13,
+            "blocks": 4,
+            "interceptions": 17,
+            "tackles": 33,
+            "recoveries": 69
+        },
+        "discipline": {
+            "yellow_cards": 5,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 970243,
+        "name": "Mats Wieffer",
+        "position": "Right Back",
+        "nationality": "Netherlands",
+        "club": "Brighton & Hove Albion",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 26,
+            "started": 23,
+            "minutes_played": 1908
+        },
+        "core_stats": {
+            "goals": 2,
+            "assists": 3,
+            "xg": 1.93,
+            "xgot": 1.91,
+            "npxg": 1.93,
+            "xa": 1.87,
+            "xgi": 3.8,
+            "clean_sheets": 5,
+            "goals_conceded": 26,
+            "xgc": 24.1
+        },
+        "detailed_actions": {
+            "shots": 18,
+            "shots_on_target": 6,
+            "chances_created": 20,
+            "big_chances_created": 4,
+            "clearances": 71,
+            "blocks": 7,
+            "interceptions": 25,
+            "tackles": 66,
+            "recoveries": 103
+        },
+        "discipline": {
+            "yellow_cards": 8,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 940446,
+        "name": "Brian Brobbey",
+        "position": "Striker",
+        "nationality": "Netherlands",
+        "club": "Sunderland",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 31,
+            "started": 22,
+            "minutes_played": 1931
+        },
+        "core_stats": {
+            "goals": 7,
+            "assists": 1,
+            "xg": 5.94,
+            "xgot": 7.15,
+            "npxg": 5.94,
+            "xa": 0.68,
+            "xgi": 6.62,
+            "clean_sheets": 1,
+            "goals_conceded": 30,
+            "xgc": 31.32
+        },
+        "detailed_actions": {
+            "shots": 36,
+            "shots_on_target": 18,
+            "chances_created": 15,
+            "big_chances_created": 2,
+            "clearances": 15,
+            "blocks": 6,
+            "interceptions": null,
+            "tackles": 9,
+            "recoveries": 44
+        },
+        "discipline": {
+            "yellow_cards": 6,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 303824,
+        "name": "Memphis Depay",
+        "position": "Striker",
+        "nationality": "Netherlands",
+        "club": "Corinthians",
+        "league": "Serie A",
+        "appearances": {
+            "matches_played": 8,
+            "started": 6,
+            "minutes_played": 465
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 0,
+            "xg": 0.8,
+            "xgot": 1.39,
+            "npxg": 0.8,
+            "xa": 1.15,
+            "xgi": 1.95,
+            "clean_sheets": null,
+            "goals_conceded": 6,
+            "xgc": 7.22
+        },
+        "detailed_actions": {
+            "shots": 6,
+            "shots_on_target": 2,
+            "chances_created": 8,
+            "big_chances_created": 2,
+            "clearances": 1,
+            "blocks": null,
+            "interceptions": null,
+            "tackles": null,
+            "recoveries": 14
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 806552,
+        "name": "Cody Gakpo",
+        "position": "Left Winger",
+        "nationality": "Netherlands",
+        "club": "Liverpool",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 36,
+            "started": 32,
+            "minutes_played": 2747
+        },
+        "core_stats": {
+            "goals": 7,
+            "assists": 5,
+            "xg": 8.46,
+            "xgot": 5.57,
+            "npxg": 8.46,
+            "xa": 4.69,
+            "xgi": 13.15,
+            "clean_sheets": 6,
+            "goals_conceded": 39,
+            "xgc": 34.85
+        },
+        "detailed_actions": {
+            "shots": 87,
+            "shots_on_target": 21,
+            "chances_created": 54,
+            "big_chances_created": 10,
+            "clearances": 21,
+            "blocks": 4,
+            "interceptions": 13,
+            "tackles": 28,
+            "recoveries": 87
+        },
+        "discipline": {
+            "yellow_cards": 3,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 794253,
+        "name": "Justin Kluivert",
+        "position": "Attacking Midfielder",
+        "nationality": "Netherlands",
+        "club": "AFC Bournemouth",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 20,
+            "started": 10,
+            "minutes_played": 951
+        },
+        "core_stats": {
+            "goals": 2,
+            "assists": 0,
+            "xg": 2.32,
+            "xgot": 0.7,
+            "npxg": 2.32,
+            "xa": 1.53,
+            "xgi": 3.85,
+            "clean_sheets": null,
+            "goals_conceded": 19,
+            "xgc": 18.01
+        },
+        "detailed_actions": {
+            "shots": 17,
+            "shots_on_target": 4,
+            "chances_created": 21,
+            "big_chances_created": 3,
+            "clearances": 2,
+            "blocks": 2,
+            "interceptions": 4,
+            "tackles": 10,
+            "recoveries": 46
+        },
+        "discipline": {
+            "yellow_cards": 5,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 837341,
+        "name": "Noa Lang",
+        "position": "Left Winger",
+        "nationality": "Netherlands",
+        "club": "Galatasaray",
+        "league": "Super Lig",
+        "appearances": {
+            "matches_played": 13,
+            "started": 7,
+            "minutes_played": 704
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 3,
+            "xg": 0.93,
+            "xgot": 1.27,
+            "npxg": 0.93,
+            "xa": 2.88,
+            "xgi": 3.81,
+            "clean_sheets": 1,
+            "goals_conceded": 9,
+            "xgc": 8.29
+        },
+        "detailed_actions": {
+            "shots": 16,
+            "shots_on_target": 7,
+            "chances_created": 16,
+            "big_chances_created": 6,
+            "clearances": 3,
+            "blocks": 1,
+            "interceptions": 2,
+            "tackles": 6,
+            "recoveries": 25
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 660301,
+        "name": "Donyell Malen",
+        "position": "Striker",
+        "nationality": "Netherlands",
+        "club": "Roma",
+        "league": "Serie A",
+        "appearances": {
+            "matches_played": 18,
+            "started": 18,
+            "minutes_played": 1478
+        },
+        "core_stats": {
+            "goals": 14,
+            "assists": 2,
+            "xg": 4.07,
+            "xgot": 2.93,
+            "npxg": 4.07,
+            "xa": 0.34,
+            "xgi": 4.41,
+            "clean_sheets": null,
+            "goals_conceded": 10,
+            "xgc": 10.56
+        },
+        "detailed_actions": {
+            "shots": 27,
+            "shots_on_target": 9,
+            "chances_created": 7,
+            "big_chances_created": null,
+            "clearances": 2,
+            "blocks": null,
+            "interceptions": null,
+            "tackles": 4,
+            "recoveries": 10
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 941213,
+        "name": "Crysencio Summerville",
+        "position": "Left Winger",
+        "nationality": "Netherlands",
+        "club": "West Ham United",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 31,
+            "started": 29,
+            "minutes_played": 2480
+        },
+        "core_stats": {
+            "goals": 5,
+            "assists": 2,
+            "xg": 5.17,
+            "xgot": 4.49,
+            "npxg": 5.17,
+            "xa": 3.42,
+            "xgi": 8.59,
+            "clean_sheets": 5,
+            "goals_conceded": 42,
+            "xgc": 37.63
+        },
+        "detailed_actions": {
+            "shots": 54,
+            "shots_on_target": 15,
+            "chances_created": 28,
+            "big_chances_created": 4,
+            "clearances": 30,
+            "blocks": 4,
+            "interceptions": 16,
+            "tackles": 45,
+            "recoveries": 120
+        },
+        "discipline": {
+            "yellow_cards": 6,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 351999,
+        "name": "Wout Weghorst",
+        "position": "Striker",
+        "nationality": "Netherlands",
+        "club": "Ajax",
+        "league": "Eredivisie",
+        "appearances": {
+            "matches_played": 27,
+            "started": 20,
+            "minutes_played": 1782
+        },
+        "core_stats": {
+            "goals": 8,
+            "assists": 4,
+            "xg": 6.29,
+            "xgot": 8.77,
+            "npxg": 6.29,
+            "xa": 3.11,
+            "xgi": 9.4,
+            "clean_sheets": 5,
+            "goals_conceded": 25,
+            "xgc": 27.76
+        },
+        "detailed_actions": {
+            "shots": 51,
+            "shots_on_target": 17,
+            "chances_created": 47,
+            "big_chances_created": 7,
+            "clearances": 23,
+            "blocks": 3,
+            "interceptions": 3,
+            "tackles": 11,
+            "recoveries": 32
+        },
+        "discipline": {
+            "yellow_cards": 6,
+            "red_cards": 0
+        }
+    }
+]

@@ -1,0 +1,832 @@
+[
+    {
+        "id": 915790,
+        "name": "Abdallah Al Fakhouri",
+        "position": "Keeper",
+        "nationality": "Jordan",
+        "club": "Al-Wehdat",
+        "league": null,
+        "appearances": {
+            "matches_played": 0,
+            "started": 0,
+            "minutes_played": 0
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 0,
+            "goals_conceded": 9,
+            "xgc": null
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        "goalkeeping_metrics": {
+            "penalties_conceded": null,
+            "penalties_saved": null,
+            "saves": 17,
+            "goal_prevented": null
+        }
+    },
+    {
+        "id": 1554110,
+        "name": "Nour Bani Attiah",
+        "position": "Keeper",
+        "nationality": "Jordan",
+        "club": "Al-Faisaly",
+        "league": null,
+        "appearances": {
+            "matches_played": 0,
+            "started": 0,
+            "minutes_played": 0
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 1,
+            "goals_conceded": 0,
+            "xgc": null
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        "goalkeeping_metrics": {
+            "penalties_conceded": null,
+            "penalties_saved": null,
+            "saves": 7,
+            "goal_prevented": null
+        }
+    },
+    {
+        "id": 1554109,
+        "name": "Husam Abu Dahab",
+        "position": "Center Back",
+        "nationality": "Jordan",
+        "club": "Al-Faisaly",
+        "league": null,
+        "appearances": {
+            "matches_played": 0,
+            "started": 0,
+            "minutes_played": 0
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 1,
+            "goals_conceded": 4,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": 3,
+            "shots_on_target": 1,
+            "chances_created": 2,
+            "big_chances_created": null,
+            "clearances": 19,
+            "blocks": 2,
+            "interceptions": 7,
+            "tackles": 7,
+            "recoveries": 9
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1247001,
+        "name": "Mohannad Abu Taha",
+        "position": "Left Midfielder",
+        "nationality": "Jordan",
+        "club": "Al Quwa Al Jawiya",
+        "league": null,
+        "appearances": {
+            "matches_played": 0,
+            "started": 0,
+            "minutes_played": 0
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 1,
+            "goals_conceded": 5,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": 3,
+            "shots_on_target": 2,
+            "chances_created": 7,
+            "big_chances_created": 1,
+            "clearances": 18,
+            "blocks": 2,
+            "interceptions": 7,
+            "tackles": 13,
+            "recoveries": 29
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 852168,
+        "name": "Yazan Al Arab",
+        "position": "Center Back",
+        "nationality": "Jordan",
+        "club": "FC Seoul",
+        "league": "K-League 1",
+        "appearances": {
+            "matches_played": 12,
+            "started": 10,
+            "minutes_played": 854
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 1,
+            "xg": 1.27,
+            "xgot": 1.52,
+            "npxg": 1.27,
+            "xa": 0.85,
+            "xgi": 2.12,
+            "clean_sheets": 2,
+            "goals_conceded": 8,
+            "xgc": 11.75
+        },
+        "detailed_actions": {
+            "shots": 11,
+            "shots_on_target": 5,
+            "chances_created": 1,
+            "big_chances_created": 1,
+            "clearances": 42,
+            "blocks": 5,
+            "interceptions": 17,
+            "tackles": 17,
+            "recoveries": 38
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 1
+        }
+    },
+    {
+        "id": 1179369,
+        "name": "Saed Al Rosan",
+        "position": "Center Back",
+        "nationality": "Jordan",
+        "club": "Ethad All Ramtha",
+        "league": null,
+        "appearances": {
+            "matches_played": 0,
+            "started": 0,
+            "minutes_played": 0
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 2,
+            "goals_conceded": 9,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": 1,
+            "shots_on_target": null,
+            "chances_created": 2,
+            "big_chances_created": null,
+            "clearances": 27,
+            "blocks": 2,
+            "interceptions": 4,
+            "tackles": 17,
+            "recoveries": 41
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1621136,
+        "name": "Ahmad Assaf",
+        "position": "Right Midfielder",
+        "nationality": "Jordan",
+        "club": "FC Nitro",
+        "league": null,
+        "appearances": {
+            "matches_played": 0,
+            "started": 0,
+            "minutes_played": 0
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": 3,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": 0,
+            "shots_on_target": null,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": 1,
+            "blocks": 1,
+            "interceptions": 3,
+            "tackles": 21,
+            "recoveries": 15
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1312681,
+        "name": "Abdallah Nasib",
+        "position": "Center Back",
+        "nationality": "Jordan",
+        "club": "Al Zawraa",
+        "league": null,
+        "appearances": {
+            "matches_played": 0,
+            "started": 0,
+            "minutes_played": 0
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": 14,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": 2,
+            "shots_on_target": 1,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": 37,
+            "blocks": 4,
+            "interceptions": 5,
+            "tackles": 13,
+            "recoveries": 14
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 546201,
+        "name": "Ehsan Haddad",
+        "position": "defender",
+        "nationality": "Jordan",
+        "club": "Al-Hussein SC",
+        "league": null,
+        "appearances": {
+            "matches_played": 0,
+            "started": 0,
+            "minutes_played": 0
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": 2,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": 0,
+            "shots_on_target": null,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": null,
+            "blocks": null,
+            "interceptions": null,
+            "tackles": null,
+            "recoveries": null
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 847766,
+        "name": "Saleem Obaid",
+        "position": "Center Back",
+        "nationality": "Jordan",
+        "club": "Al-Hussein SC",
+        "league": null,
+        "appearances": {
+            "matches_played": 0,
+            "started": 0,
+            "minutes_played": 0
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 2,
+            "goals_conceded": 6,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": 2,
+            "shots_on_target": null,
+            "chances_created": 1,
+            "big_chances_created": null,
+            "clearances": 18,
+            "blocks": 5,
+            "interceptions": 9,
+            "tackles": 11,
+            "recoveries": 23
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1902793,
+        "name": "Mohammad Taha",
+        "position": "defender",
+        "nationality": "Jordan",
+        "club": "Al-Hussein SC",
+        "league": null,
+        "appearances": {
+            "matches_played": 0,
+            "started": 0,
+            "minutes_played": 0
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": null,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": null,
+            "shots_on_target": null,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": null,
+            "blocks": null,
+            "interceptions": null,
+            "tackles": null,
+            "recoveries": null
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 600844,
+        "name": "Mohammad Al Dawoud",
+        "position": "midfielder",
+        "nationality": "Jordan",
+        "club": "Al-Salt",
+        "league": null,
+        "appearances": {
+            "matches_played": 0,
+            "started": 0,
+            "minutes_played": 0
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": null,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": null,
+            "shots_on_target": null,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": null,
+            "blocks": null,
+            "interceptions": null,
+            "tackles": null,
+            "recoveries": null
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1195369,
+        "name": "Nizar Al Rashdan",
+        "position": "Central Midfielder",
+        "nationality": "Jordan",
+        "club": "Qatar SC",
+        "league": "Qatar Stars League",
+        "appearances": {
+            "matches_played": 11,
+            "started": 11,
+            "minutes_played": 965
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 2,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": null,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": null,
+            "shots_on_target": null,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": null,
+            "blocks": null,
+            "interceptions": null,
+            "tackles": null,
+            "recoveries": null
+        },
+        "discipline": {
+            "yellow_cards": 3,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1036253,
+        "name": "Noor Al Rawabdeh",
+        "position": "Central Midfielder",
+        "nationality": "Jordan",
+        "club": "Selangor",
+        "league": null,
+        "appearances": {
+            "matches_played": 0,
+            "started": 0,
+            "minutes_played": 0
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": null,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": null,
+            "shots_on_target": null,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": null,
+            "blocks": null,
+            "interceptions": null,
+            "tackles": null,
+            "recoveries": null
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 546203,
+        "name": "Rajaei Ayed",
+        "position": "Central Midfielder",
+        "nationality": "Jordan",
+        "club": "Al-Hussein SC",
+        "league": null,
+        "appearances": {
+            "matches_played": 0,
+            "started": 0,
+            "minutes_played": 0
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 1,
+            "goals_conceded": 9,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": 5,
+            "shots_on_target": null,
+            "chances_created": 2,
+            "big_chances_created": null,
+            "clearances": 9,
+            "blocks": 2,
+            "interceptions": 6,
+            "tackles": 13,
+            "recoveries": 33
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1213678,
+        "name": "Amer Jamous",
+        "position": "Central Midfielder",
+        "nationality": "Jordan",
+        "club": "Al Zawraa",
+        "league": null,
+        "appearances": {
+            "matches_played": 0,
+            "started": 0,
+            "minutes_played": 0
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": 14,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": 7,
+            "shots_on_target": 2,
+            "chances_created": 3,
+            "big_chances_created": 1,
+            "clearances": 5,
+            "blocks": 2,
+            "interceptions": 5,
+            "tackles": 16,
+            "recoveries": 32
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1418647,
+        "name": "Yousef Qashi",
+        "position": "midfielder",
+        "nationality": "Jordan",
+        "club": "Al-Hussein SC",
+        "league": null,
+        "appearances": {
+            "matches_played": 0,
+            "started": 0,
+            "minutes_played": 0
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": null,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": null,
+            "shots_on_target": null,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": null,
+            "blocks": null,
+            "interceptions": null,
+            "tackles": null,
+            "recoveries": null
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1244371,
+        "name": "Ibrahim Sadeh",
+        "position": "defender",
+        "nationality": "Jordan",
+        "club": "Al Markhiya",
+        "league": "Second Division",
+        "appearances": {
+            "matches_played": 14,
+            "started": 13,
+            "minutes_played": 1115
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": null,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": null,
+            "shots_on_target": null,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": null,
+            "blocks": null,
+            "interceptions": null,
+            "tackles": null,
+            "recoveries": null
+        },
+        "discipline": {
+            "yellow_cards": 3,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1642793,
+        "name": "Ali Azaizeh",
+        "position": "Right Midfielder",
+        "nationality": "Jordan",
+        "club": "Al Shabab",
+        "league": "Saudi Pro League",
+        "appearances": {
+            "matches_played": 15,
+            "started": 8,
+            "minutes_played": 627
+        },
+        "core_stats": {
+            "goals": 2,
+            "assists": 1,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": null,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": null,
+            "shots_on_target": null,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": null,
+            "blocks": null,
+            "interceptions": null,
+            "tackles": null,
+            "recoveries": null
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1028896,
+        "name": "Ali Olwan",
+        "position": "Right Winger",
+        "nationality": "Jordan",
+        "club": "Al-Sailiya",
+        "league": "Qatar Stars League",
+        "appearances": {
+            "matches_played": 2,
+            "started": 2,
+            "minutes_played": 126
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": null,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": null,
+            "shots_on_target": null,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": null,
+            "blocks": null,
+            "interceptions": null,
+            "tackles": null,
+            "recoveries": null
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1642791,
+        "name": "Ibrahim Sabra",
+        "position": "Striker",
+        "nationality": "Jordan",
+        "club": "NK Lokomotiva",
+        "league": "HNL",
+        "appearances": {
+            "matches_played": 13,
+            "started": 8,
+            "minutes_played": 708
+        },
+        "core_stats": {
+            "goals": 2,
+            "assists": 1,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": 13,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": 16,
+            "shots_on_target": 3,
+            "chances_created": 7,
+            "big_chances_created": 3,
+            "clearances": 2,
+            "blocks": null,
+            "interceptions": null,
+            "tackles": 3,
+            "recoveries": 12
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        }
+    }
+]

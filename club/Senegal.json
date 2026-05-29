@@ -1,0 +1,947 @@
+[
+    {
+        "id": 466436,
+        "name": "Mory Diaw",
+        "position": "Keeper",
+        "nationality": "Senegal",
+        "club": "Le Havre",
+        "league": "Ligue 1",
+        "appearances": {
+            "matches_played": 30,
+            "started": 0,
+            "minutes_played": 2655
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 7,
+            "goals_conceded": 41,
+            "xgc": null
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        },
+        "goalkeeping_metrics": {
+            "penalties_conceded": 6,
+            "penalties_saved": 2,
+            "saves": 82,
+            "goal_prevented": -1.37
+        }
+    },
+    {
+        "id": 766574,
+        "name": "Yehvann Diouf",
+        "position": "Keeper",
+        "nationality": "Senegal",
+        "club": "Nice",
+        "league": "Ligue 1",
+        "appearances": {
+            "matches_played": 26,
+            "started": 0,
+            "minutes_played": 2340
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 5,
+            "goals_conceded": 45,
+            "xgc": null
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        },
+        "goalkeeping_metrics": {
+            "penalties_conceded": 5,
+            "penalties_saved": 2,
+            "saves": 93,
+            "goal_prevented": 1.8
+        }
+    },
+    {
+        "id": 773229,
+        "name": "Edouard Mendy",
+        "position": "Keeper",
+        "nationality": "Senegal",
+        "club": "Al Ahli",
+        "league": "Saudi Pro League",
+        "appearances": {
+            "matches_played": 26,
+            "started": 0,
+            "minutes_played": 2340
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 14,
+            "goals_conceded": 18,
+            "xgc": null
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 0
+        },
+        "goalkeeping_metrics": {
+            "penalties_conceded": 3,
+            "penalties_saved": 1,
+            "saves": 46,
+            "goal_prevented": 2.01
+        }
+    },
+    {
+        "id": 1473998,
+        "name": "Ilay Camara",
+        "position": "Right Back",
+        "nationality": "Senegal",
+        "club": "Anderlecht",
+        "league": "Belgian Pro League",
+        "appearances": {
+            "matches_played": 25,
+            "started": 17,
+            "minutes_played": 1310
+        },
+        "core_stats": {
+            "goals": 2,
+            "assists": 1,
+            "xg": 1.17,
+            "xgot": 1.25,
+            "npxg": 1.17,
+            "xa": 2.75,
+            "xgi": 3.92,
+            "clean_sheets": 1,
+            "goals_conceded": 22,
+            "xgc": 21.46
+        },
+        "detailed_actions": {
+            "shots": 15,
+            "shots_on_target": 7,
+            "chances_created": 23,
+            "big_chances_created": 5,
+            "clearances": 18,
+            "blocks": 2,
+            "interceptions": 31,
+            "tackles": 19,
+            "recoveries": 72
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 837061,
+        "name": "Krepin Diatta",
+        "position": "Right Back",
+        "nationality": "Senegal",
+        "club": "Monaco",
+        "league": "Ligue 1",
+        "appearances": {
+            "matches_played": 18,
+            "started": 10,
+            "minutes_played": 1011
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 1,
+            "xg": 1.2,
+            "xgot": 0.64,
+            "npxg": 1.2,
+            "xa": 2.31,
+            "xgi": 3.51,
+            "clean_sheets": 1,
+            "goals_conceded": 17,
+            "xgc": 15.77
+        },
+        "detailed_actions": {
+            "shots": 7,
+            "shots_on_target": 1,
+            "chances_created": 13,
+            "big_chances_created": 4,
+            "clearances": 30,
+            "blocks": 3,
+            "interceptions": 16,
+            "tackles": 31,
+            "recoveries": 57
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 906945,
+        "name": "Ismail Jakobs",
+        "position": "Left Back",
+        "nationality": "Senegal",
+        "club": "Galatasaray",
+        "league": "Super Lig",
+        "appearances": {
+            "matches_played": 25,
+            "started": 15,
+            "minutes_played": 1299
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 1,
+            "xg": 0.39,
+            "xgot": null,
+            "npxg": 0.39,
+            "xa": 1.43,
+            "xgi": 1.82,
+            "clean_sheets": 2,
+            "goals_conceded": 14,
+            "xgc": 14.84
+        },
+        "detailed_actions": {
+            "shots": 7,
+            "shots_on_target": null,
+            "chances_created": 12,
+            "big_chances_created": 2,
+            "clearances": 54,
+            "blocks": 1,
+            "interceptions": 10,
+            "tackles": 27,
+            "recoveries": 59
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 210428,
+        "name": "Kalidou Koulibaly",
+        "position": "Center Back",
+        "nationality": "Senegal",
+        "club": "Al Hilal",
+        "league": "Saudi Pro League",
+        "appearances": {
+            "matches_played": 18,
+            "started": 18,
+            "minutes_played": 1596
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 2,
+            "xg": 1.68,
+            "xgot": 0.64,
+            "npxg": 1.68,
+            "xa": 1.16,
+            "xgi": 2.84,
+            "clean_sheets": 7,
+            "goals_conceded": 14,
+            "xgc": 12.42
+        },
+        "detailed_actions": {
+            "shots": 11,
+            "shots_on_target": 3,
+            "chances_created": 10,
+            "big_chances_created": 3,
+            "clearances": 59,
+            "blocks": 14,
+            "interceptions": 24,
+            "tackles": 36,
+            "recoveries": 101
+        },
+        "discipline": {
+            "yellow_cards": 6,
+            "red_cards": 1
+        }
+    },
+    {
+        "id": 1254147,
+        "name": "Antoine Mendy",
+        "position": "Center Back",
+        "nationality": "Senegal",
+        "club": "Nice",
+        "league": "Ligue 1",
+        "appearances": {
+            "matches_played": 25,
+            "started": 24,
+            "minutes_played": 2098
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 0,
+            "xg": 2.21,
+            "xgot": 2.36,
+            "npxg": 2.21,
+            "xa": 0.46,
+            "xgi": 2.67,
+            "clean_sheets": 4,
+            "goals_conceded": 38,
+            "xgc": 42.74
+        },
+        "detailed_actions": {
+            "shots": 17,
+            "shots_on_target": 7,
+            "chances_created": 1,
+            "big_chances_created": null,
+            "clearances": 120,
+            "blocks": 18,
+            "interceptions": 18,
+            "tackles": 54,
+            "recoveries": 112
+        },
+        "discipline": {
+            "yellow_cards": 5,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 592102,
+        "name": "Moussa Niakhate",
+        "position": "Center Back",
+        "nationality": "Senegal",
+        "club": "Lyon",
+        "league": "Ligue 1",
+        "appearances": {
+            "matches_played": 32,
+            "started": 30,
+            "minutes_played": 2758
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 2,
+            "xg": 0.3,
+            "xgot": null,
+            "npxg": 0.3,
+            "xa": 2.03,
+            "xgi": 2.33,
+            "clean_sheets": 15,
+            "goals_conceded": 34,
+            "xgc": 42.91
+        },
+        "detailed_actions": {
+            "shots": 4,
+            "shots_on_target": null,
+            "chances_created": 14,
+            "big_chances_created": 3,
+            "clearances": 184,
+            "blocks": 21,
+            "interceptions": 29,
+            "tackles": 36,
+            "recoveries": 134
+        },
+        "discipline": {
+            "yellow_cards": 3,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1426170,
+        "name": "Mamadou Sarr",
+        "position": "Center Back",
+        "nationality": "Senegal",
+        "club": "Chelsea",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 3,
+            "started": 1,
+            "minutes_played": 100
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": 0.44,
+            "xgot": null,
+            "npxg": 0.44,
+            "xa": 0.0,
+            "xgi": 0.44,
+            "clean_sheets": null,
+            "goals_conceded": 3,
+            "xgc": 1.58
+        },
+        "detailed_actions": {
+            "shots": 1,
+            "shots_on_target": null,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": 5,
+            "blocks": 1,
+            "interceptions": 1,
+            "tackles": 1,
+            "recoveries": 2
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 588626,
+        "name": "Abdoulaye Seck",
+        "position": "Center Back",
+        "nationality": "Senegal",
+        "club": "Maccabi Haifa",
+        "league": "Ligat ha'Al",
+        "appearances": {
+            "matches_played": 26,
+            "started": 24,
+            "minutes_played": 2173
+        },
+        "core_stats": {
+            "goals": 2,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 4,
+            "goals_conceded": 30,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": 28,
+            "shots_on_target": 4,
+            "chances_created": 10,
+            "big_chances_created": 2,
+            "clearances": 95,
+            "blocks": 15,
+            "interceptions": 28,
+            "tackles": 27,
+            "recoveries": 83
+        },
+        "discipline": {
+            "yellow_cards": 3,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1436305,
+        "name": "Lamine Camara",
+        "position": "Defensive Midfielder",
+        "nationality": "Senegal",
+        "club": "Monaco",
+        "league": "Ligue 1",
+        "appearances": {
+            "matches_played": 24,
+            "started": 22,
+            "minutes_played": 1851
+        },
+        "core_stats": {
+            "goals": 3,
+            "assists": 4,
+            "xg": 2.06,
+            "xgot": 0.9,
+            "npxg": 2.06,
+            "xa": 4.33,
+            "xgi": 6.39,
+            "clean_sheets": 6,
+            "goals_conceded": 27,
+            "xgc": 30.23
+        },
+        "detailed_actions": {
+            "shots": 25,
+            "shots_on_target": 4,
+            "chances_created": 35,
+            "big_chances_created": 8,
+            "clearances": 18,
+            "blocks": 7,
+            "interceptions": 37,
+            "tackles": 55,
+            "recoveries": 158
+        },
+        "discipline": {
+            "yellow_cards": 6,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 872396,
+        "name": "Pathe Ciss",
+        "position": "Defensive Midfielder",
+        "nationality": "Senegal",
+        "club": "Rayo Vallecano",
+        "league": "LaLiga",
+        "appearances": {
+            "matches_played": 29,
+            "started": 20,
+            "minutes_played": 1995
+        },
+        "core_stats": {
+            "goals": 2,
+            "assists": 1,
+            "xg": 3.31,
+            "xgot": 2.1,
+            "npxg": 3.31,
+            "xa": 0.36,
+            "xgi": 3.67,
+            "clean_sheets": 5,
+            "goals_conceded": 24,
+            "xgc": 30.06
+        },
+        "detailed_actions": {
+            "shots": 20,
+            "shots_on_target": 8,
+            "chances_created": 12,
+            "big_chances_created": 1,
+            "clearances": 78,
+            "blocks": 16,
+            "interceptions": 36,
+            "tackles": 54,
+            "recoveries": 115
+        },
+        "discipline": {
+            "yellow_cards": 9,
+            "red_cards": 2
+        }
+    },
+    {
+        "id": 1285866,
+        "name": "Habib Diarra",
+        "position": "Central Midfielder",
+        "nationality": "Senegal",
+        "club": "Sunderland",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 20,
+            "started": 15,
+            "minutes_played": 1407
+        },
+        "core_stats": {
+            "goals": 2,
+            "assists": 2,
+            "xg": 3.41,
+            "xgot": 2.49,
+            "npxg": 2.63,
+            "xa": 0.83,
+            "xgi": 4.24,
+            "clean_sheets": 4,
+            "goals_conceded": 19,
+            "xgc": 21.52
+        },
+        "detailed_actions": {
+            "shots": 26,
+            "shots_on_target": 8,
+            "chances_created": 7,
+            "big_chances_created": 1,
+            "clearances": 13,
+            "blocks": null,
+            "interceptions": 4,
+            "tackles": 14,
+            "recoveries": 48
+        },
+        "discipline": {
+            "yellow_cards": 6,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 179410,
+        "name": "Idrissa Gana Gueye",
+        "position": "Defensive Midfielder",
+        "nationality": "Senegal",
+        "club": "Everton",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 25,
+            "started": 25,
+            "minutes_played": 2101
+        },
+        "core_stats": {
+            "goals": 2,
+            "assists": 3,
+            "xg": 2.0,
+            "xgot": 1.37,
+            "npxg": 2.0,
+            "xa": 1.77,
+            "xgi": 3.77,
+            "clean_sheets": 4,
+            "goals_conceded": 26,
+            "xgc": 31.14
+        },
+        "detailed_actions": {
+            "shots": 29,
+            "shots_on_target": 7,
+            "chances_created": 13,
+            "big_chances_created": 2,
+            "clearances": 24,
+            "blocks": 7,
+            "interceptions": 28,
+            "tackles": 43,
+            "recoveries": 114
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 1
+        }
+    },
+    {
+        "id": 844544,
+        "name": "Pape Gueye",
+        "position": "Central Midfielder",
+        "nationality": "Senegal",
+        "club": "Villarreal",
+        "league": "LaLiga",
+        "appearances": {
+            "matches_played": 30,
+            "started": 26,
+            "minutes_played": 2143
+        },
+        "core_stats": {
+            "goals": 5,
+            "assists": 2,
+            "xg": 3.96,
+            "xgot": 3.34,
+            "npxg": 3.17,
+            "xa": 2.81,
+            "xgi": 6.77,
+            "clean_sheets": 1,
+            "goals_conceded": 28,
+            "xgc": 26.93
+        },
+        "detailed_actions": {
+            "shots": 47,
+            "shots_on_target": 13,
+            "chances_created": 23,
+            "big_chances_created": 3,
+            "clearances": 59,
+            "blocks": 9,
+            "interceptions": 34,
+            "tackles": 40,
+            "recoveries": 111
+        },
+        "discipline": {
+            "yellow_cards": 8,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1434889,
+        "name": "Assane Diao",
+        "position": "Right Winger",
+        "nationality": "Senegal",
+        "club": "Como",
+        "league": "Serie A",
+        "appearances": {
+            "matches_played": 17,
+            "started": 13,
+            "minutes_played": 1084
+        },
+        "core_stats": {
+            "goals": 2,
+            "assists": 1,
+            "xg": 2.65,
+            "xgot": 2.03,
+            "npxg": 2.65,
+            "xa": 1.17,
+            "xgi": 3.82,
+            "clean_sheets": 2,
+            "goals_conceded": 11,
+            "xgc": 10.98
+        },
+        "detailed_actions": {
+            "shots": 30,
+            "shots_on_target": 10,
+            "chances_created": 9,
+            "big_chances_created": 3,
+            "clearances": 7,
+            "blocks": 1,
+            "interceptions": 4,
+            "tackles": 16,
+            "recoveries": 35
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1230848,
+        "name": "Bamba Dieng",
+        "position": "Striker",
+        "nationality": "Senegal",
+        "club": "Lorient",
+        "league": "Ligue 1",
+        "appearances": {
+            "matches_played": 22,
+            "started": 15,
+            "minutes_played": 1220
+        },
+        "core_stats": {
+            "goals": 10,
+            "assists": 1,
+            "xg": 8.81,
+            "xgot": 7.76,
+            "npxg": 7.24,
+            "xa": 0.18,
+            "xgi": 8.99,
+            "clean_sheets": null,
+            "goals_conceded": 15,
+            "xgc": 17.65
+        },
+        "detailed_actions": {
+            "shots": 46,
+            "shots_on_target": 24,
+            "chances_created": 11,
+            "big_chances_created": 2,
+            "clearances": 14,
+            "blocks": 1,
+            "interceptions": 3,
+            "tackles": 7,
+            "recoveries": 29
+        },
+        "discipline": {
+            "yellow_cards": 3,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1197347,
+        "name": "Nicolas Jackson",
+        "position": "Striker",
+        "nationality": "Senegal",
+        "club": "Bayern München",
+        "league": "Bundesliga",
+        "appearances": {
+            "matches_played": 23,
+            "started": 12,
+            "minutes_played": 1004
+        },
+        "core_stats": {
+            "goals": 8,
+            "assists": 1,
+            "xg": 7.26,
+            "xgot": 7.85,
+            "npxg": 7.26,
+            "xa": 1.58,
+            "xgi": 8.84,
+            "clean_sheets": 1,
+            "goals_conceded": 11,
+            "xgc": 14.13
+        },
+        "detailed_actions": {
+            "shots": 38,
+            "shots_on_target": 21,
+            "chances_created": 18,
+            "big_chances_created": 4,
+            "clearances": 4,
+            "blocks": null,
+            "interceptions": 4,
+            "tackles": 8,
+            "recoveries": 25
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 1
+        }
+    },
+    {
+        "id": 303339,
+        "name": "Sadio Mane",
+        "position": "Left Midfielder",
+        "nationality": "Senegal",
+        "club": "Al Nassr FC",
+        "league": "Saudi Pro League",
+        "appearances": {
+            "matches_played": 25,
+            "started": 25,
+            "minutes_played": 2132
+        },
+        "core_stats": {
+            "goals": 10,
+            "assists": 6,
+            "xg": 11.1,
+            "xgot": 11.94,
+            "npxg": 10.31,
+            "xa": 5.58,
+            "xgi": 16.68,
+            "clean_sheets": 9,
+            "goals_conceded": 12,
+            "xgc": 15.6
+        },
+        "detailed_actions": {
+            "shots": 61,
+            "shots_on_target": 30,
+            "chances_created": 51,
+            "big_chances_created": 10,
+            "clearances": 9,
+            "blocks": 2,
+            "interceptions": 7,
+            "tackles": 26,
+            "recoveries": 109
+        },
+        "discipline": {
+            "yellow_cards": 6,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1593857,
+        "name": "Ibrahim Mbaye",
+        "position": "Right Winger",
+        "nationality": "Senegal",
+        "club": "Paris Saint-Germain",
+        "league": "Ligue 1",
+        "appearances": {
+            "matches_played": 24,
+            "started": 10,
+            "minutes_played": 997
+        },
+        "core_stats": {
+            "goals": 3,
+            "assists": 2,
+            "xg": 3.28,
+            "xgot": 3.19,
+            "npxg": 3.28,
+            "xa": 2.13,
+            "xgi": 5.41,
+            "clean_sheets": 2,
+            "goals_conceded": 11,
+            "xgc": 12.37
+        },
+        "detailed_actions": {
+            "shots": 24,
+            "shots_on_target": 10,
+            "chances_created": 20,
+            "big_chances_created": 2,
+            "clearances": 4,
+            "blocks": null,
+            "interceptions": 5,
+            "tackles": 14,
+            "recoveries": 41
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 819972,
+        "name": "Cherif Ndiaye",
+        "position": "Striker",
+        "nationality": "Senegal",
+        "club": "Samsunspor",
+        "league": "Super Lig",
+        "appearances": {
+            "matches_played": 23,
+            "started": 16,
+            "minutes_played": 1421
+        },
+        "core_stats": {
+            "goals": 7,
+            "assists": 1,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": null,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": 8,
+            "shots_on_target": 4,
+            "chances_created": 3,
+            "big_chances_created": 1,
+            "clearances": null,
+            "blocks": null,
+            "interceptions": null,
+            "tackles": null,
+            "recoveries": 2
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 1
+        }
+    },
+    {
+        "id": 965764,
+        "name": "Iliman Ndiaye",
+        "position": "Right Winger",
+        "nationality": "Senegal",
+        "club": "Everton",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 32,
+            "started": 32,
+            "minutes_played": 2786
+        },
+        "core_stats": {
+            "goals": 6,
+            "assists": 3,
+            "xg": 6.71,
+            "xgot": 9.11,
+            "npxg": 5.13,
+            "xa": 4.41,
+            "xgi": 11.12,
+            "clean_sheets": 5,
+            "goals_conceded": 44,
+            "xgc": 42.58
+        },
+        "detailed_actions": {
+            "shots": 43,
+            "shots_on_target": 22,
+            "chances_created": 30,
+            "big_chances_created": 7,
+            "clearances": 19,
+            "blocks": 2,
+            "interceptions": 16,
+            "tackles": 70,
+            "recoveries": 178
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 771294,
+        "name": "Ismaila Sarr",
+        "position": "Attacking Midfielder",
+        "nationality": "Senegal",
+        "club": "Crystal Palace",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 28,
+            "started": 24,
+            "minutes_played": 2176
+        },
+        "core_stats": {
+            "goals": 9,
+            "assists": 1,
+            "xg": 10.91,
+            "xgot": 9.63,
+            "npxg": 8.54,
+            "xa": 1.13,
+            "xgi": 12.04,
+            "clean_sheets": 7,
+            "goals_conceded": 29,
+            "xgc": 30.73
+        },
+        "detailed_actions": {
+            "shots": 48,
+            "shots_on_target": 21,
+            "chances_created": 19,
+            "big_chances_created": 3,
+            "clearances": 28,
+            "blocks": 4,
+            "interceptions": 8,
+            "tackles": 18,
+            "recoveries": 80
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 0
+        }
+    }
+]

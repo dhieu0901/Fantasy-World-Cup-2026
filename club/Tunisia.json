@@ -1,0 +1,957 @@
+[
+    {
+        "id": 543363,
+        "name": "Sabri Ben Hessen",
+        "position": "keeper",
+        "nationality": "Tunisia",
+        "club": "CS Sfaxien",
+        "league": null,
+        "appearances": {
+            "matches_played": 0,
+            "started": 0,
+            "minutes_played": 0
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": null,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": null,
+            "shots_on_target": null,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": null,
+            "blocks": null,
+            "interceptions": null,
+            "tackles": null,
+            "recoveries": null
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1718458,
+        "name": "Abdelmouhib Chamakh",
+        "position": "keeper",
+        "nationality": "Tunisia",
+        "club": "Etoile Metlaoui",
+        "league": null,
+        "appearances": {
+            "matches_played": 0,
+            "started": 0,
+            "minutes_played": 0
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": null,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": null,
+            "shots_on_target": null,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": null,
+            "blocks": null,
+            "interceptions": null,
+            "tackles": null,
+            "recoveries": null
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 982855,
+        "name": "Aymen Dahman",
+        "position": "Keeper",
+        "nationality": "Tunisia",
+        "club": "CS Sfaxien",
+        "league": null,
+        "appearances": {
+            "matches_played": 0,
+            "started": 0,
+            "minutes_played": 0
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 1,
+            "goals_conceded": 3,
+            "xgc": null
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        "goalkeeping_metrics": {
+            "penalties_conceded": null,
+            "penalties_saved": null,
+            "saves": 7,
+            "goal_prevented": null
+        }
+    },
+    {
+        "id": 566187,
+        "name": "Ali Abdi",
+        "position": "Left Back",
+        "nationality": "Tunisia",
+        "club": "Nice",
+        "league": "Ligue 1",
+        "appearances": {
+            "matches_played": 22,
+            "started": 13,
+            "minutes_played": 1165
+        },
+        "core_stats": {
+            "goals": 3,
+            "assists": 0,
+            "xg": 2.4,
+            "xgot": 1.47,
+            "npxg": 2.4,
+            "xa": 0.81,
+            "xgi": 3.21,
+            "clean_sheets": 2,
+            "goals_conceded": 16,
+            "xgc": 19.62
+        },
+        "detailed_actions": {
+            "shots": 16,
+            "shots_on_target": 4,
+            "chances_created": 17,
+            "big_chances_created": 3,
+            "clearances": 27,
+            "blocks": 4,
+            "interceptions": 10,
+            "tackles": 22,
+            "recoveries": 60
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 1
+        }
+    },
+    {
+        "id": 1797902,
+        "name": "Adem Arous",
+        "position": "Center Back",
+        "nationality": "Tunisia",
+        "club": "Kasımpaşa",
+        "league": "Super Lig",
+        "appearances": {
+            "matches_played": 21,
+            "started": 19,
+            "minutes_played": 1672
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 0,
+            "xg": 0.33,
+            "xgot": 0.6,
+            "npxg": 0.33,
+            "xa": 0.09,
+            "xgi": 0.42,
+            "clean_sheets": 7,
+            "goals_conceded": 26,
+            "xgc": 20.64
+        },
+        "detailed_actions": {
+            "shots": 4,
+            "shots_on_target": 1,
+            "chances_created": 3,
+            "big_chances_created": 2,
+            "clearances": 118,
+            "blocks": 7,
+            "interceptions": 24,
+            "tackles": 32,
+            "recoveries": 48
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 771686,
+        "name": "Dylan Bronn",
+        "position": "Center Back",
+        "nationality": "Tunisia",
+        "club": "Servette",
+        "league": "Super League",
+        "appearances": {
+            "matches_played": 14,
+            "started": 14,
+            "minutes_played": 1215
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 1,
+            "xg": 0.6,
+            "xgot": 0.03,
+            "npxg": 0.6,
+            "xa": 0.19,
+            "xgi": 0.79,
+            "clean_sheets": 3,
+            "goals_conceded": 27,
+            "xgc": 19.04
+        },
+        "detailed_actions": {
+            "shots": 5,
+            "shots_on_target": 1,
+            "chances_created": 1,
+            "big_chances_created": 1,
+            "clearances": 71,
+            "blocks": 11,
+            "interceptions": 21,
+            "tackles": 19,
+            "recoveries": 42
+        },
+        "discipline": {
+            "yellow_cards": 4,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1721242,
+        "name": "Raed Chikhaoui",
+        "position": "defender",
+        "nationality": "Tunisia",
+        "club": "US Monastir",
+        "league": null,
+        "appearances": {
+            "matches_played": 0,
+            "started": 0,
+            "minutes_played": 0
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": null,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": null,
+            "shots_on_target": null,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": null,
+            "blocks": null,
+            "interceptions": null,
+            "tackles": null,
+            "recoveries": null
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1413151,
+        "name": "Moutaz Neffati",
+        "position": "Right Back",
+        "nationality": "Tunisia",
+        "club": "IFK Norrköping",
+        "league": "Superettan",
+        "appearances": {
+            "matches_played": 7,
+            "started": 7,
+            "minutes_played": 608
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": null,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": null,
+            "shots_on_target": null,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": null,
+            "blocks": null,
+            "interceptions": null,
+            "tackles": null,
+            "recoveries": null
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1160097,
+        "name": "Omar Rekik",
+        "position": "Center Back",
+        "nationality": "Tunisia",
+        "club": "Maribor",
+        "league": null,
+        "appearances": {
+            "matches_played": 0,
+            "started": 0,
+            "minutes_played": 0
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": 0.11,
+            "xgot": null,
+            "npxg": 0.11,
+            "xa": 0.07,
+            "xgi": 0.18,
+            "clean_sheets": 1,
+            "goals_conceded": 11,
+            "xgc": 13.18
+        },
+        "detailed_actions": {
+            "shots": 4,
+            "shots_on_target": null,
+            "chances_created": 1,
+            "big_chances_created": null,
+            "clearances": null,
+            "blocks": 3,
+            "interceptions": 8,
+            "tackles": 4,
+            "recoveries": 33
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 846392,
+        "name": "Montassar Talbi",
+        "position": "Center Back",
+        "nationality": "Tunisia",
+        "club": "Lorient",
+        "league": "Ligue 1",
+        "appearances": {
+            "matches_played": 29,
+            "started": 29,
+            "minutes_played": 2610
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 1,
+            "xg": 0.72,
+            "xgot": 0.07,
+            "npxg": 0.72,
+            "xa": 0.5,
+            "xgi": 1.22,
+            "clean_sheets": 6,
+            "goals_conceded": 44,
+            "xgc": 40.31
+        },
+        "detailed_actions": {
+            "shots": 14,
+            "shots_on_target": 2,
+            "chances_created": 7,
+            "big_chances_created": 1,
+            "clearances": 186,
+            "blocks": 24,
+            "interceptions": 26,
+            "tackles": 22,
+            "recoveries": 89
+        },
+        "discipline": {
+            "yellow_cards": 3,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 789596,
+        "name": "Yan Valery",
+        "position": "Right Back",
+        "nationality": "Tunisia",
+        "club": "Young Boys",
+        "league": "Super League",
+        "appearances": {
+            "matches_played": 14,
+            "started": 11,
+            "minutes_played": 942
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 3,
+            "xg": 1.11,
+            "xgot": 1.13,
+            "npxg": 1.11,
+            "xa": 2.06,
+            "xgi": 3.17,
+            "clean_sheets": 2,
+            "goals_conceded": 41,
+            "xgc": 41.91
+        },
+        "detailed_actions": {
+            "shots": 23,
+            "shots_on_target": 7,
+            "chances_created": 16,
+            "big_chances_created": 1,
+            "clearances": 47,
+            "blocks": 7,
+            "interceptions": 13,
+            "tackles": 41,
+            "recoveries": 107
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 712132,
+        "name": "Mortadha Ben Ouanes",
+        "position": "Left Winger",
+        "nationality": "Tunisia",
+        "club": "Kasımpaşa",
+        "league": "Super Lig",
+        "appearances": {
+            "matches_played": 28,
+            "started": 26,
+            "minutes_played": 2277
+        },
+        "core_stats": {
+            "goals": 2,
+            "assists": 6,
+            "xg": 2.07,
+            "xgot": 0.69,
+            "npxg": 2.07,
+            "xa": 3.31,
+            "xgi": 5.38,
+            "clean_sheets": 3,
+            "goals_conceded": 30,
+            "xgc": 28.55
+        },
+        "detailed_actions": {
+            "shots": 24,
+            "shots_on_target": 4,
+            "chances_created": 31,
+            "big_chances_created": 7,
+            "clearances": 35,
+            "blocks": 5,
+            "interceptions": 23,
+            "tackles": 18,
+            "recoveries": 117
+        },
+        "discipline": {
+            "yellow_cards": 6,
+            "red_cards": 1
+        }
+    },
+    {
+        "id": 1055316,
+        "name": "Anis Ben Slimane",
+        "position": "Attacking Midfielder",
+        "nationality": "Tunisia",
+        "club": "Norwich City",
+        "league": "Championship",
+        "appearances": {
+            "matches_played": 22,
+            "started": 15,
+            "minutes_played": 1235
+        },
+        "core_stats": {
+            "goals": 5,
+            "assists": 2,
+            "xg": 2.19,
+            "xgot": 5.54,
+            "npxg": 2.19,
+            "xa": 2.26,
+            "xgi": 4.45,
+            "clean_sheets": null,
+            "goals_conceded": 15,
+            "xgc": 14.79
+        },
+        "detailed_actions": {
+            "shots": 25,
+            "shots_on_target": 18,
+            "chances_created": 19,
+            "big_chances_created": 3,
+            "clearances": 5,
+            "blocks": 1,
+            "interceptions": 10,
+            "tackles": 22,
+            "recoveries": 54
+        },
+        "discipline": {
+            "yellow_cards": 4,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1244924,
+        "name": "Ismael Gharbi",
+        "position": "Attacking Midfielder",
+        "nationality": "Tunisia",
+        "club": "Augsburg",
+        "league": "Bundesliga",
+        "appearances": {
+            "matches_played": 6,
+            "started": 0,
+            "minutes_played": 88
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": null,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": null,
+            "shots_on_target": null,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": null,
+            "blocks": null,
+            "interceptions": null,
+            "tackles": null,
+            "recoveries": null
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 304348,
+        "name": "Rani Khedira",
+        "position": "Defensive Midfielder",
+        "nationality": "Tunisia",
+        "club": "Union Berlin",
+        "league": "Bundesliga",
+        "appearances": {
+            "matches_played": 32,
+            "started": 32,
+            "minutes_played": 2835
+        },
+        "core_stats": {
+            "goals": 5,
+            "assists": 1,
+            "xg": 2.04,
+            "xgot": 3.64,
+            "npxg": 2.04,
+            "xa": 1.35,
+            "xgi": 3.39,
+            "clean_sheets": 6,
+            "goals_conceded": 53,
+            "xgc": 49.85
+        },
+        "detailed_actions": {
+            "shots": 23,
+            "shots_on_target": 10,
+            "chances_created": 16,
+            "big_chances_created": 4,
+            "clearances": 67,
+            "blocks": 5,
+            "interceptions": 37,
+            "tackles": 59,
+            "recoveries": 96
+        },
+        "discipline": {
+            "yellow_cards": 7,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1113785,
+        "name": "Hannibal Mejbri",
+        "position": "Attacking Midfielder",
+        "nationality": "Tunisia",
+        "club": "Burnley",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 27,
+            "started": 15,
+            "minutes_played": 1231
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 4,
+            "xg": 0.89,
+            "xgot": 0.73,
+            "npxg": 0.89,
+            "xa": 2.06,
+            "xgi": 2.95,
+            "clean_sheets": 1,
+            "goals_conceded": 27,
+            "xgc": 28.04
+        },
+        "detailed_actions": {
+            "shots": 19,
+            "shots_on_target": 5,
+            "chances_created": 21,
+            "big_chances_created": 5,
+            "clearances": 7,
+            "blocks": 3,
+            "interceptions": 8,
+            "tackles": 29,
+            "recoveries": 65
+        },
+        "discipline": {
+            "yellow_cards": 10,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 574642,
+        "name": "Ellyes Skhiri",
+        "position": "Defensive Midfielder",
+        "nationality": "Tunisia",
+        "club": "Eintracht Frankfurt",
+        "league": "Bundesliga",
+        "appearances": {
+            "matches_played": 25,
+            "started": 16,
+            "minutes_played": 1442
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": 0.64,
+            "xgot": null,
+            "npxg": 0.64,
+            "xa": 0.73,
+            "xgi": 1.37,
+            "clean_sheets": 2,
+            "goals_conceded": 36,
+            "xgc": 24.0
+        },
+        "detailed_actions": {
+            "shots": 8,
+            "shots_on_target": null,
+            "chances_created": 7,
+            "big_chances_created": null,
+            "clearances": 32,
+            "blocks": 6,
+            "interceptions": 26,
+            "tackles": 20,
+            "recoveries": 75
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 1
+        }
+    },
+    {
+        "id": 1015128,
+        "name": "Elias Achouri",
+        "position": "Left Midfielder",
+        "nationality": "Tunisia",
+        "club": "FC København",
+        "league": "Superligaen",
+        "appearances": {
+            "matches_played": 20,
+            "started": 15,
+            "minutes_played": 1303
+        },
+        "core_stats": {
+            "goals": 3,
+            "assists": 3,
+            "xg": 3.53,
+            "xgot": 3.16,
+            "npxg": 3.53,
+            "xa": 3.31,
+            "xgi": 6.84,
+            "clean_sheets": 2,
+            "goals_conceded": 17,
+            "xgc": 18.21
+        },
+        "detailed_actions": {
+            "shots": 31,
+            "shots_on_target": 9,
+            "chances_created": 26,
+            "big_chances_created": 3,
+            "clearances": 5,
+            "blocks": null,
+            "interceptions": 5,
+            "tackles": 19,
+            "recoveries": 74
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1715492,
+        "name": "Khalil Ayari",
+        "position": "forward",
+        "nationality": "Tunisia",
+        "club": "Paris Saint Germain B",
+        "league": null,
+        "appearances": {
+            "matches_played": 0,
+            "started": 0,
+            "minutes_played": 0
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": null,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": null,
+            "shots_on_target": null,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": null,
+            "blocks": null,
+            "interceptions": null,
+            "tackles": null,
+            "recoveries": null
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 845336,
+        "name": "Firas Chaouat",
+        "position": "Striker",
+        "nationality": "Tunisia",
+        "club": "Club Africain",
+        "league": null,
+        "appearances": {
+            "matches_played": 0,
+            "started": 0,
+            "minutes_played": 0
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": 2,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": 8,
+            "shots_on_target": 6,
+            "chances_created": 2,
+            "big_chances_created": null,
+            "clearances": 1,
+            "blocks": 1,
+            "interceptions": null,
+            "tackles": 1,
+            "recoveries": 7
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1685596,
+        "name": "Rayan Elloumi",
+        "position": "Striker",
+        "nationality": "Tunisia",
+        "club": "Vancouver Whitecaps",
+        "league": "Major League Soccer",
+        "appearances": {
+            "matches_played": 10,
+            "started": 0,
+            "minutes_played": 75
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": null,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": null,
+            "shots_on_target": null,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": null,
+            "blocks": null,
+            "interceptions": null,
+            "tackles": null,
+            "recoveries": null
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1311408,
+        "name": "Hazem Mastouri",
+        "position": "Striker",
+        "nationality": "Tunisia",
+        "club": "Dynamo Makhachkala",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 21,
+            "started": 9,
+            "minutes_played": 1091
+        },
+        "core_stats": {
+            "goals": 2,
+            "assists": 0,
+            "xg": 4.1,
+            "xgot": 3.68,
+            "npxg": 2.52,
+            "xa": 0.83,
+            "xgi": 4.93,
+            "clean_sheets": 2,
+            "goals_conceded": 14,
+            "xgc": 14.32
+        },
+        "detailed_actions": {
+            "shots": 37,
+            "shots_on_target": 14,
+            "chances_created": 11,
+            "big_chances_created": 1,
+            "clearances": 20,
+            "blocks": 2,
+            "interceptions": 5,
+            "tackles": 6,
+            "recoveries": 26
+        },
+        "discipline": {
+            "yellow_cards": 6,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1285773,
+        "name": "Elias Saad",
+        "position": "Left Winger",
+        "nationality": "Tunisia",
+        "club": "Hannover 96",
+        "league": "2. Bundesliga",
+        "appearances": {
+            "matches_played": 13,
+            "started": 8,
+            "minutes_played": 707
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 3,
+            "xg": 0.53,
+            "xgot": 0.43,
+            "npxg": 0.53,
+            "xa": 0.4,
+            "xgi": 0.93,
+            "clean_sheets": null,
+            "goals_conceded": 13,
+            "xgc": 11.72
+        },
+        "detailed_actions": {
+            "shots": 7,
+            "shots_on_target": 3,
+            "chances_created": 12,
+            "big_chances_created": null,
+            "clearances": 2,
+            "blocks": 1,
+            "interceptions": 1,
+            "tackles": 15,
+            "recoveries": 27
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 921919,
+        "name": "Sebastian Tounekti",
+        "position": "Left Winger",
+        "nationality": "Tunisia",
+        "club": "Celtic",
+        "league": "Premiership",
+        "appearances": {
+            "matches_played": 27,
+            "started": 18,
+            "minutes_played": 1510
+        },
+        "core_stats": {
+            "goals": 2,
+            "assists": 2,
+            "xg": 2.39,
+            "xgot": 2.58,
+            "npxg": 2.39,
+            "xa": 4.5,
+            "xgi": 6.89,
+            "clean_sheets": null,
+            "goals_conceded": 19,
+            "xgc": 16.93
+        },
+        "detailed_actions": {
+            "shots": 34,
+            "shots_on_target": 8,
+            "chances_created": 37,
+            "big_chances_created": 3,
+            "clearances": 9,
+            "blocks": null,
+            "interceptions": 6,
+            "tackles": 22,
+            "recoveries": 66
+        },
+        "discipline": {
+            "yellow_cards": 3,
+            "red_cards": 0
+        }
+    }
+]

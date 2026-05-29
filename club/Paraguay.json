@@ -1,0 +1,597 @@
+[
+    {
+        "id": 658563,
+        "name": "Carlos Coronel",
+        "position": "Keeper",
+        "nationality": "Paraguay",
+        "club": "Sao Paulo",
+        "league": "Major League Soccer",
+        "appearances": {
+            "matches_played": 31,
+            "started": 0,
+            "minutes_played": 2790
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 2,
+            "goals_conceded": 0,
+            "xgc": null
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        "goalkeeping_metrics": {
+            "penalties_conceded": null,
+            "penalties_saved": null,
+            "saves": 6,
+            "goal_prevented": null
+        }
+    },
+    {
+        "id": 274392,
+        "name": "Gustavo Gómez",
+        "position": "Center Back",
+        "nationality": "Paraguay",
+        "club": "Palmeiras",
+        "league": "Serie A",
+        "appearances": {
+            "matches_played": 16,
+            "started": 16,
+            "minutes_played": 1430
+        },
+        "core_stats": {
+            "goals": 3,
+            "assists": 0,
+            "xg": 0.99,
+            "xgot": 3.06,
+            "npxg": 0.99,
+            "xa": 0.94,
+            "xgi": 1.93,
+            "clean_sheets": 6,
+            "goals_conceded": 12,
+            "xgc": 14.45
+        },
+        "detailed_actions": {
+            "shots": 13,
+            "shots_on_target": 4,
+            "chances_created": 6,
+            "big_chances_created": 2,
+            "clearances": 87,
+            "blocks": 19,
+            "interceptions": 10,
+            "tackles": 13,
+            "recoveries": 33
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 307438,
+        "name": "Fabián Balbuena",
+        "position": "Center Back",
+        "nationality": "Paraguay",
+        "club": "Gremio",
+        "league": "Serie A",
+        "appearances": {
+            "matches_played": 7,
+            "started": 7,
+            "minutes_played": 585
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": 0.05,
+            "xgot": null,
+            "npxg": 0.05,
+            "xa": 0.1,
+            "xgi": 0.15,
+            "clean_sheets": 2,
+            "goals_conceded": 9,
+            "xgc": 11.94
+        },
+        "detailed_actions": {
+            "shots": 1,
+            "shots_on_target": null,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": 29,
+            "blocks": 1,
+            "interceptions": 10,
+            "tackles": 8,
+            "recoveries": 17
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 751998,
+        "name": "Omar Alderete",
+        "position": "Center Back",
+        "nationality": "Paraguay",
+        "club": "Sunderland",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 33,
+            "started": 32,
+            "minutes_played": 2802
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 1,
+            "xg": 1.64,
+            "xgot": 1.49,
+            "npxg": 1.64,
+            "xa": 0.92,
+            "xgi": 2.56,
+            "clean_sheets": 9,
+            "goals_conceded": 40,
+            "xgc": 44.79
+        },
+        "detailed_actions": {
+            "shots": 24,
+            "shots_on_target": 9,
+            "chances_created": 9,
+            "big_chances_created": 1,
+            "clearances": 217,
+            "blocks": 29,
+            "interceptions": 36,
+            "tackles": 32,
+            "recoveries": 103
+        },
+        "discipline": {
+            "yellow_cards": 6,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 466214,
+        "name": "Junior Alonso",
+        "position": "Center Back",
+        "nationality": "Paraguay",
+        "club": "Atletico MG",
+        "league": "Serie A",
+        "appearances": {
+            "matches_played": 10,
+            "started": 10,
+            "minutes_played": 900
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": 0.25,
+            "xgot": 0.08,
+            "npxg": 0.25,
+            "xa": 0.08,
+            "xgi": 0.33,
+            "clean_sheets": 1,
+            "goals_conceded": 13,
+            "xgc": 10.85
+        },
+        "detailed_actions": {
+            "shots": 5,
+            "shots_on_target": 1,
+            "chances_created": 3,
+            "big_chances_created": null,
+            "clearances": 45,
+            "blocks": 5,
+            "interceptions": 12,
+            "tackles": 14,
+            "recoveries": 30
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 741142,
+        "name": "Matías Espinoza",
+        "position": "Left Back",
+        "nationality": "Paraguay",
+        "club": "Libertad",
+        "league": "Division Profesional",
+        "appearances": {
+            "matches_played": 17,
+            "started": 17,
+            "minutes_played": 1381
+        },
+        "core_stats": {
+            "goals": 2,
+            "assists": 1,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 1,
+            "goals_conceded": 14,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": 17,
+            "shots_on_target": 3,
+            "chances_created": 15,
+            "big_chances_created": 2,
+            "clearances": 72,
+            "blocks": 5,
+            "interceptions": 12,
+            "tackles": 17,
+            "recoveries": 49
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 802174,
+        "name": "Mathías Villasanti",
+        "position": "Defensive Midfielder",
+        "nationality": "Paraguay",
+        "club": "Gremio",
+        "league": "Serie A",
+        "appearances": {
+            "matches_played": 16,
+            "started": 14,
+            "minutes_played": 1153
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": 0.13,
+            "xgot": null,
+            "npxg": 0.13,
+            "xa": 0.36,
+            "xgi": 0.49,
+            "clean_sheets": 2,
+            "goals_conceded": 19,
+            "xgc": 19.64
+        },
+        "detailed_actions": {
+            "shots": 6,
+            "shots_on_target": null,
+            "chances_created": 8,
+            "big_chances_created": null,
+            "clearances": 29,
+            "blocks": 2,
+            "interceptions": 25,
+            "tackles": 40,
+            "recoveries": 75
+        },
+        "discipline": {
+            "yellow_cards": 5,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 529625,
+        "name": "Andrés Cubas",
+        "position": "Defensive Midfielder",
+        "nationality": "Paraguay",
+        "club": "Vancouver Whitecaps",
+        "league": "Major League Soccer",
+        "appearances": {
+            "matches_played": 11,
+            "started": 10,
+            "minutes_played": 864
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 1,
+            "xg": 0.25,
+            "xgot": 0.09,
+            "npxg": 0.25,
+            "xa": 0.56,
+            "xgi": 0.81,
+            "clean_sheets": 3,
+            "goals_conceded": 6,
+            "xgc": 8.76
+        },
+        "detailed_actions": {
+            "shots": 5,
+            "shots_on_target": 1,
+            "chances_created": 7,
+            "big_chances_created": null,
+            "clearances": 7,
+            "blocks": 2,
+            "interceptions": 23,
+            "tackles": 52,
+            "recoveries": 69
+        },
+        "discipline": {
+            "yellow_cards": 5,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1354561,
+        "name": "Diego Gómez",
+        "position": "Right Winger",
+        "nationality": "Paraguay",
+        "club": "Brighton & Hove Albion",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 32,
+            "started": 26,
+            "minutes_played": 2136
+        },
+        "core_stats": {
+            "goals": 5,
+            "assists": 1,
+            "xg": 6.29,
+            "xgot": 4.34,
+            "npxg": 6.29,
+            "xa": 1.71,
+            "xgi": 8.0,
+            "clean_sheets": null,
+            "goals_conceded": 29,
+            "xgc": 29.37
+        },
+        "detailed_actions": {
+            "shots": 42,
+            "shots_on_target": 14,
+            "chances_created": 21,
+            "big_chances_created": 4,
+            "clearances": 28,
+            "blocks": 3,
+            "interceptions": 18,
+            "tackles": 78,
+            "recoveries": 112
+        },
+        "discipline": {
+            "yellow_cards": 9,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 745210,
+        "name": "Richard Sánchez",
+        "position": "Attacking Midfielder",
+        "nationality": "Paraguay",
+        "club": "Olimpia",
+        "league": "Division Profesional",
+        "appearances": {
+            "matches_played": 9,
+            "started": 7,
+            "minutes_played": 569
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 2,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 2,
+            "goals_conceded": 5,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": 15,
+            "shots_on_target": 2,
+            "chances_created": 19,
+            "big_chances_created": 3,
+            "clearances": 4,
+            "blocks": 1,
+            "interceptions": 4,
+            "tackles": 17,
+            "recoveries": 33
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 442277,
+        "name": "Miguel Almirón",
+        "position": "Left Winger",
+        "nationality": "Paraguay",
+        "club": "Atlanta United",
+        "league": "Major League Soccer",
+        "appearances": {
+            "matches_played": 8,
+            "started": 7,
+            "minutes_played": 658
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 3,
+            "xg": 1.88,
+            "xgot": 1.71,
+            "npxg": 1.88,
+            "xa": 1.54,
+            "xgi": 3.42,
+            "clean_sheets": 1,
+            "goals_conceded": 12,
+            "xgc": 12.76
+        },
+        "detailed_actions": {
+            "shots": 19,
+            "shots_on_target": 5,
+            "chances_created": 12,
+            "big_chances_created": 3,
+            "clearances": 1,
+            "blocks": 1,
+            "interceptions": 5,
+            "tackles": 10,
+            "recoveries": 31
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1073742,
+        "name": "Julio Enciso",
+        "position": "Attacking Midfielder",
+        "nationality": "Paraguay",
+        "club": "Strasbourg",
+        "league": "Ligue 1",
+        "appearances": {
+            "matches_played": 27,
+            "started": 22,
+            "minutes_played": 1892
+        },
+        "core_stats": {
+            "goals": 3,
+            "assists": 6,
+            "xg": 7.6,
+            "xgot": 6.41,
+            "npxg": 6.81,
+            "xa": 5.28,
+            "xgi": 12.88,
+            "clean_sheets": 1,
+            "goals_conceded": 30,
+            "xgc": 28.09
+        },
+        "detailed_actions": {
+            "shots": 61,
+            "shots_on_target": 22,
+            "chances_created": 28,
+            "big_chances_created": 9,
+            "clearances": 8,
+            "blocks": 1,
+            "interceptions": 7,
+            "tackles": 21,
+            "recoveries": 69
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1132960,
+        "name": "Ramón Sosa",
+        "position": "Left Winger",
+        "nationality": "Paraguay",
+        "club": "Palmeiras",
+        "league": "Serie A",
+        "appearances": {
+            "matches_played": 15,
+            "started": 7,
+            "minutes_played": 686
+        },
+        "core_stats": {
+            "goals": 2,
+            "assists": 1,
+            "xg": 0.78,
+            "xgot": 0.99,
+            "npxg": 0.78,
+            "xa": 0.5,
+            "xgi": 1.28,
+            "clean_sheets": 1,
+            "goals_conceded": 5,
+            "xgc": 6.76
+        },
+        "detailed_actions": {
+            "shots": 13,
+            "shots_on_target": 4,
+            "chances_created": 12,
+            "big_chances_created": 1,
+            "clearances": 10,
+            "blocks": 1,
+            "interceptions": 4,
+            "tackles": 3,
+            "recoveries": 27
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 845370,
+        "name": "Adam Bareiro",
+        "position": "Striker",
+        "nationality": "Paraguay",
+        "club": "Boca Juniors",
+        "league": "Liga Profesional Apertura",
+        "appearances": {
+            "matches_played": 10,
+            "started": 8,
+            "minutes_played": 701
+        },
+        "core_stats": {
+            "goals": 3,
+            "assists": 1,
+            "xg": 4.15,
+            "xgot": 4.1,
+            "npxg": 4.15,
+            "xa": 0.62,
+            "xgi": 4.77,
+            "clean_sheets": 1,
+            "goals_conceded": 4,
+            "xgc": 4.76
+        },
+        "detailed_actions": {
+            "shots": 19,
+            "shots_on_target": 10,
+            "chances_created": 7,
+            "big_chances_created": null,
+            "clearances": 16,
+            "blocks": 1,
+            "interceptions": 1,
+            "tackles": 12,
+            "recoveries": 11
+        },
+        "discipline": {
+            "yellow_cards": 4,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 474448,
+        "name": "Antonio Sanabria",
+        "position": "Striker",
+        "nationality": "Paraguay",
+        "club": "Cremonese",
+        "league": "Serie A",
+        "appearances": {
+            "matches_played": 25,
+            "started": 10,
+            "minutes_played": 941
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 1,
+            "xg": 2.92,
+            "xgot": 1.91,
+            "npxg": 2.92,
+            "xa": 0.23,
+            "xgi": 3.15,
+            "clean_sheets": null,
+            "goals_conceded": 12,
+            "xgc": 14.73
+        },
+        "detailed_actions": {
+            "shots": 12,
+            "shots_on_target": 4,
+            "chances_created": 6,
+            "big_chances_created": 3,
+            "clearances": 15,
+            "blocks": null,
+            "interceptions": 1,
+            "tackles": 2,
+            "recoveries": 11
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 0
+        }
+    }
+]

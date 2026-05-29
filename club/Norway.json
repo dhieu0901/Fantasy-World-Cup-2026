@@ -1,0 +1,1027 @@
+[
+    {
+        "id": 73409,
+        "name": "Ørjan Nyland",
+        "position": "Keeper",
+        "nationality": "Norway",
+        "club": "Sevilla",
+        "league": "LaLiga",
+        "appearances": {
+            "matches_played": 5,
+            "started": 0,
+            "minutes_played": 450
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 1,
+            "goals_conceded": 8,
+            "xgc": null
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        },
+        "goalkeeping_metrics": {
+            "penalties_conceded": 1,
+            "penalties_saved": 0,
+            "saves": 11,
+            "goal_prevented": -1.52
+        }
+    },
+    {
+        "id": 631757,
+        "name": "Egil Selvik",
+        "position": "Keeper",
+        "nationality": "Norway",
+        "club": "Watford",
+        "league": "Championship",
+        "appearances": {
+            "matches_played": 40,
+            "started": 0,
+            "minutes_played": 3555
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 7,
+            "goals_conceded": 56,
+            "xgc": null
+        },
+        "discipline": {
+            "yellow_cards": 4,
+            "red_cards": 0
+        },
+        "goalkeeping_metrics": {
+            "penalties_conceded": 1,
+            "penalties_saved": 1,
+            "saves": 114,
+            "goal_prevented": 2.46
+        }
+    },
+    {
+        "id": 1145714,
+        "name": "Sander Tangvik",
+        "position": "Keeper",
+        "nationality": "Norway",
+        "club": "Hamburger SV",
+        "league": "Bundesliga",
+        "appearances": {
+            "matches_played": 1,
+            "started": 0,
+            "minutes_played": 90
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 0,
+            "goals_conceded": 1,
+            "xgc": null
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        "goalkeeping_metrics": {
+            "penalties_conceded": 0,
+            "penalties_saved": 1,
+            "saves": 7,
+            "goal_prevented": 1.44
+        }
+    },
+    {
+        "id": 552718,
+        "name": "Kristoffer Ajer",
+        "position": "Center Back",
+        "nationality": "Norway",
+        "club": "Brentford",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 27,
+            "started": 20,
+            "minutes_played": 1807
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 1,
+            "xg": 0.78,
+            "xgot": 0.51,
+            "npxg": 0.78,
+            "xa": 0.72,
+            "xgi": 1.5,
+            "clean_sheets": 4,
+            "goals_conceded": 32,
+            "xgc": 31.41
+        },
+        "detailed_actions": {
+            "shots": 10,
+            "shots_on_target": 3,
+            "chances_created": 4,
+            "big_chances_created": 1,
+            "clearances": 119,
+            "blocks": 16,
+            "interceptions": 18,
+            "tackles": 37,
+            "recoveries": 59
+        },
+        "discipline": {
+            "yellow_cards": 4,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 630228,
+        "name": "Fredrik Bjørkan",
+        "position": "Left Back",
+        "nationality": "Norway",
+        "club": "Bodø/Glimt",
+        "league": "Eliteserien",
+        "appearances": {
+            "matches_played": 10,
+            "started": 7,
+            "minutes_played": 635
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 0,
+            "xg": 1.17,
+            "xgot": 0.99,
+            "npxg": 1.17,
+            "xa": 2.96,
+            "xgi": 4.13,
+            "clean_sheets": 1,
+            "goals_conceded": 7,
+            "xgc": 7.97
+        },
+        "detailed_actions": {
+            "shots": 7,
+            "shots_on_target": 1,
+            "chances_created": 9,
+            "big_chances_created": null,
+            "clearances": 6,
+            "blocks": 3,
+            "interceptions": 5,
+            "tackles": 9,
+            "recoveries": 28
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1110550,
+        "name": "Henrik Falchener",
+        "position": "Center Back",
+        "nationality": "Norway",
+        "club": "Viking",
+        "league": "Eliteserien",
+        "appearances": {
+            "matches_played": 10,
+            "started": 10,
+            "minutes_played": 855
+        },
+        "core_stats": {
+            "goals": 2,
+            "assists": 1,
+            "xg": 1.24,
+            "xgot": 1.19,
+            "npxg": 1.24,
+            "xa": 0.34,
+            "xgi": 1.58,
+            "clean_sheets": 3,
+            "goals_conceded": 10,
+            "xgc": 9.78
+        },
+        "detailed_actions": {
+            "shots": 8,
+            "shots_on_target": 3,
+            "chances_created": 3,
+            "big_chances_created": 2,
+            "clearances": 74,
+            "blocks": 7,
+            "interceptions": 10,
+            "tackles": 18,
+            "recoveries": 38
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 935550,
+        "name": "Torbjørn Heggem",
+        "position": "Center Back",
+        "nationality": "Norway",
+        "club": "Bologna",
+        "league": "Serie A",
+        "appearances": {
+            "matches_played": 27,
+            "started": 23,
+            "minutes_played": 2113
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": 0.0,
+            "xgi": 0,
+            "clean_sheets": 1,
+            "goals_conceded": null,
+            "xgc": 0.71
+        },
+        "detailed_actions": {
+            "shots": 0,
+            "shots_on_target": null,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": 12,
+            "blocks": null,
+            "interceptions": 2,
+            "tackles": null,
+            "recoveries": 1
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 1
+        }
+    },
+    {
+        "id": 935622,
+        "name": "Marcus Holmgren Pedersen",
+        "position": "Right Midfielder",
+        "nationality": "Norway",
+        "club": "Torino",
+        "league": "Serie A",
+        "appearances": {
+            "matches_played": 29,
+            "started": 23,
+            "minutes_played": 2135
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 2,
+            "xg": 1.74,
+            "xgot": 1.13,
+            "npxg": 1.74,
+            "xa": 1.96,
+            "xgi": 3.7,
+            "clean_sheets": 8,
+            "goals_conceded": 36,
+            "xgc": 29.96
+        },
+        "detailed_actions": {
+            "shots": 15,
+            "shots_on_target": 3,
+            "chances_created": 20,
+            "big_chances_created": 4,
+            "clearances": 23,
+            "blocks": 4,
+            "interceptions": 10,
+            "tackles": 23,
+            "recoveries": 55
+        },
+        "discipline": {
+            "yellow_cards": 3,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1127585,
+        "name": "Sondre Langås",
+        "position": "Center Back",
+        "nationality": "Norway",
+        "club": "Derby County",
+        "league": "Championship",
+        "appearances": {
+            "matches_played": 24,
+            "started": 21,
+            "minutes_played": 1968
+        },
+        "core_stats": {
+            "goals": 3,
+            "assists": 1,
+            "xg": 2.41,
+            "xgot": 2.16,
+            "npxg": 2.41,
+            "xa": 0.27,
+            "xgi": 2.68,
+            "clean_sheets": 4,
+            "goals_conceded": 28,
+            "xgc": 26.51
+        },
+        "detailed_actions": {
+            "shots": 18,
+            "shots_on_target": 7,
+            "chances_created": 7,
+            "big_chances_created": 1,
+            "clearances": 135,
+            "blocks": 12,
+            "interceptions": 31,
+            "tackles": 35,
+            "recoveries": 63
+        },
+        "discipline": {
+            "yellow_cards": 4,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 659272,
+        "name": "Julian Ryerson",
+        "position": "Right Wing-Back",
+        "nationality": "Norway",
+        "club": "Borussia Dortmund",
+        "league": "Bundesliga",
+        "appearances": {
+            "matches_played": 31,
+            "started": 26,
+            "minutes_played": 2272
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 15,
+            "xg": 0.93,
+            "xgot": 0.08,
+            "npxg": 0.93,
+            "xa": 10.04,
+            "xgi": 10.97,
+            "clean_sheets": 7,
+            "goals_conceded": 21,
+            "xgc": 28.62
+        },
+        "detailed_actions": {
+            "shots": 12,
+            "shots_on_target": 1,
+            "chances_created": 56,
+            "big_chances_created": 22,
+            "clearances": 41,
+            "blocks": 4,
+            "interceptions": 14,
+            "tackles": 34,
+            "recoveries": 121
+        },
+        "discipline": {
+            "yellow_cards": 8,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1049679,
+        "name": "David Møller Wolfe",
+        "position": "Left Back",
+        "nationality": "Norway",
+        "club": "Wolverhampton Wanderers",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 22,
+            "started": 11,
+            "minutes_played": 1049
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 2,
+            "xg": 0.12,
+            "xgot": null,
+            "npxg": 0.12,
+            "xa": 1.08,
+            "xgi": 1.2,
+            "clean_sheets": null,
+            "goals_conceded": 23,
+            "xgc": 21.46
+        },
+        "detailed_actions": {
+            "shots": 3,
+            "shots_on_target": null,
+            "chances_created": 8,
+            "big_chances_created": 3,
+            "clearances": 31,
+            "blocks": 2,
+            "interceptions": 7,
+            "tackles": 10,
+            "recoveries": 27
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 740944,
+        "name": "Leo Østigård",
+        "position": "Center Back",
+        "nationality": "Norway",
+        "club": "Genoa",
+        "league": "Serie A",
+        "appearances": {
+            "matches_played": 30,
+            "started": 30,
+            "minutes_played": 2623
+        },
+        "core_stats": {
+            "goals": 5,
+            "assists": 1,
+            "xg": 3.39,
+            "xgot": 5.87,
+            "npxg": 3.39,
+            "xa": 0.76,
+            "xgi": 4.15,
+            "clean_sheets": 8,
+            "goals_conceded": 38,
+            "xgc": 37.8
+        },
+        "detailed_actions": {
+            "shots": 22,
+            "shots_on_target": 12,
+            "chances_created": 10,
+            "big_chances_created": 1,
+            "clearances": 215,
+            "blocks": 27,
+            "interceptions": 30,
+            "tackles": 36,
+            "recoveries": 80
+        },
+        "discipline": {
+            "yellow_cards": 7,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1184468,
+        "name": "Thelo Aasgaard",
+        "position": "Attacking Midfielder",
+        "nationality": "Norway",
+        "club": "Rangers",
+        "league": "Premiership",
+        "appearances": {
+            "matches_played": 33,
+            "started": 21,
+            "minutes_played": 1807
+        },
+        "core_stats": {
+            "goals": 7,
+            "assists": 4,
+            "xg": 6.95,
+            "xgot": 9.77,
+            "npxg": 6.16,
+            "xa": 2.45,
+            "xgi": 9.4,
+            "clean_sheets": 1,
+            "goals_conceded": 21,
+            "xgc": 20.48
+        },
+        "detailed_actions": {
+            "shots": 52,
+            "shots_on_target": 22,
+            "chances_created": 31,
+            "big_chances_created": 5,
+            "clearances": 19,
+            "blocks": 4,
+            "interceptions": 8,
+            "tackles": 38,
+            "recoveries": 68
+        },
+        "discipline": {
+            "yellow_cards": 4,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 310768,
+        "name": "Fredrik Aursnes",
+        "position": "Defensive Midfielder",
+        "nationality": "Norway",
+        "club": "Benfica",
+        "league": "Liga Portugal",
+        "appearances": {
+            "matches_played": 28,
+            "started": 26,
+            "minutes_played": 2294
+        },
+        "core_stats": {
+            "goals": 3,
+            "assists": 3,
+            "xg": 2.55,
+            "xgot": 1.92,
+            "npxg": 2.55,
+            "xa": 4.28,
+            "xgi": 6.83,
+            "clean_sheets": 9,
+            "goals_conceded": 17,
+            "xgc": 20.02
+        },
+        "detailed_actions": {
+            "shots": 29,
+            "shots_on_target": 8,
+            "chances_created": 56,
+            "big_chances_created": 6,
+            "clearances": 22,
+            "blocks": 7,
+            "interceptions": 22,
+            "tackles": 50,
+            "recoveries": 121
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 530635,
+        "name": "Patrick Berg",
+        "position": "Central Midfielder",
+        "nationality": "Norway",
+        "club": "Bodø/Glimt",
+        "league": "Eliteserien",
+        "appearances": {
+            "matches_played": 10,
+            "started": 10,
+            "minutes_played": 900
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 0,
+            "xg": 2.02,
+            "xgot": 0.8,
+            "npxg": 2.02,
+            "xa": 3.15,
+            "xgi": 5.17,
+            "clean_sheets": 5,
+            "goals_conceded": 9,
+            "xgc": 11.21
+        },
+        "detailed_actions": {
+            "shots": 28,
+            "shots_on_target": 8,
+            "chances_created": 17,
+            "big_chances_created": 1,
+            "clearances": 8,
+            "blocks": 1,
+            "interceptions": 12,
+            "tackles": 28,
+            "recoveries": 57
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 540963,
+        "name": "Sander Berge",
+        "position": "Defensive Midfielder",
+        "nationality": "Norway",
+        "club": "Fulham",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 35,
+            "started": 34,
+            "minutes_played": 2911
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 1,
+            "xg": 1.54,
+            "xgot": 0.21,
+            "npxg": 1.54,
+            "xa": 1.5,
+            "xgi": 3.04,
+            "clean_sheets": 5,
+            "goals_conceded": 45,
+            "xgc": 43.76
+        },
+        "detailed_actions": {
+            "shots": 15,
+            "shots_on_target": 3,
+            "chances_created": 21,
+            "big_chances_created": 3,
+            "clearances": 50,
+            "blocks": 16,
+            "interceptions": 25,
+            "tackles": 57,
+            "recoveries": 133
+        },
+        "discipline": {
+            "yellow_cards": 5,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1113790,
+        "name": "Oscar Bobb",
+        "position": "Right Winger",
+        "nationality": "Norway",
+        "club": "Fulham",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 23,
+            "started": 11,
+            "minutes_played": 1037
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 1,
+            "xg": 1.48,
+            "xgot": 1.32,
+            "npxg": 1.48,
+            "xa": 2.11,
+            "xgi": 3.59,
+            "clean_sheets": 1,
+            "goals_conceded": 13,
+            "xgc": 12.55
+        },
+        "detailed_actions": {
+            "shots": 12,
+            "shots_on_target": 3,
+            "chances_created": 22,
+            "big_chances_created": 1,
+            "clearances": 3,
+            "blocks": null,
+            "interceptions": 9,
+            "tackles": 21,
+            "recoveries": 42
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 741397,
+        "name": "Jens Petter Hauge",
+        "position": "Left Winger",
+        "nationality": "Norway",
+        "club": "Bodø/Glimt",
+        "league": "Eliteserien",
+        "appearances": {
+            "matches_played": 10,
+            "started": 10,
+            "minutes_played": 786
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 1,
+            "xg": 1.35,
+            "xgot": 0.68,
+            "npxg": 1.35,
+            "xa": 4.61,
+            "xgi": 5.96,
+            "clean_sheets": null,
+            "goals_conceded": 6,
+            "xgc": 8.87
+        },
+        "detailed_actions": {
+            "shots": 13,
+            "shots_on_target": 4,
+            "chances_created": 20,
+            "big_chances_created": 3,
+            "clearances": 4,
+            "blocks": null,
+            "interceptions": 1,
+            "tackles": 20,
+            "recoveries": 46
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1248482,
+        "name": "Antonio Nusa",
+        "position": "Left Winger",
+        "nationality": "Norway",
+        "club": "RB Leipzig",
+        "league": "Bundesliga",
+        "appearances": {
+            "matches_played": 31,
+            "started": 24,
+            "minutes_played": 2035
+        },
+        "core_stats": {
+            "goals": 4,
+            "assists": 3,
+            "xg": 4.41,
+            "xgot": 2.99,
+            "npxg": 4.41,
+            "xa": 5.16,
+            "xgi": 9.57,
+            "clean_sheets": 3,
+            "goals_conceded": 29,
+            "xgc": 30.46
+        },
+        "detailed_actions": {
+            "shots": 61,
+            "shots_on_target": 20,
+            "chances_created": 33,
+            "big_chances_created": 9,
+            "clearances": 7,
+            "blocks": null,
+            "interceptions": 10,
+            "tackles": 26,
+            "recoveries": 98
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1228558,
+        "name": "Andreas Schjelderup",
+        "position": "Left Winger",
+        "nationality": "Norway",
+        "club": "Benfica",
+        "league": "Liga Portugal",
+        "appearances": {
+            "matches_played": 28,
+            "started": 20,
+            "minutes_played": 1733
+        },
+        "core_stats": {
+            "goals": 7,
+            "assists": 5,
+            "xg": 6.35,
+            "xgot": 5.36,
+            "npxg": 4.77,
+            "xa": 7.21,
+            "xgi": 13.56,
+            "clean_sheets": null,
+            "goals_conceded": 13,
+            "xgc": 17.67
+        },
+        "detailed_actions": {
+            "shots": 47,
+            "shots_on_target": 14,
+            "chances_created": 41,
+            "big_chances_created": 9,
+            "clearances": 7,
+            "blocks": null,
+            "interceptions": 3,
+            "tackles": 31,
+            "recoveries": 70
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 439148,
+        "name": "Morten Thorsby",
+        "position": "Central Midfielder",
+        "nationality": "Norway",
+        "club": "Cremonese",
+        "league": "Serie A",
+        "appearances": {
+            "matches_played": 24,
+            "started": 16,
+            "minutes_played": 1375
+        },
+        "core_stats": {
+            "goals": 3,
+            "assists": 1,
+            "xg": 2.25,
+            "xgot": 2.95,
+            "npxg": 2.25,
+            "xa": 0.52,
+            "xgi": 2.77,
+            "clean_sheets": 1,
+            "goals_conceded": 25,
+            "xgc": 23.71
+        },
+        "detailed_actions": {
+            "shots": 21,
+            "shots_on_target": 8,
+            "chances_created": 9,
+            "big_chances_created": 3,
+            "clearances": 30,
+            "blocks": 7,
+            "interceptions": 5,
+            "tackles": 22,
+            "recoveries": 49
+        },
+        "discipline": {
+            "yellow_cards": 4,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 921921,
+        "name": "Kristian Thorstvedt",
+        "position": "Central Midfielder",
+        "nationality": "Norway",
+        "club": "Sassuolo",
+        "league": "Serie A",
+        "appearances": {
+            "matches_played": 32,
+            "started": 27,
+            "minutes_played": 2458
+        },
+        "core_stats": {
+            "goals": 4,
+            "assists": 4,
+            "xg": 6.35,
+            "xgot": 6.42,
+            "npxg": 6.35,
+            "xa": 2.02,
+            "xgi": 8.37,
+            "clean_sheets": 5,
+            "goals_conceded": 36,
+            "xgc": 37.5
+        },
+        "detailed_actions": {
+            "shots": 43,
+            "shots_on_target": 13,
+            "chances_created": 32,
+            "big_chances_created": 4,
+            "clearances": 43,
+            "blocks": 13,
+            "interceptions": 32,
+            "tackles": 44,
+            "recoveries": 103
+        },
+        "discipline": {
+            "yellow_cards": 9,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 534670,
+        "name": "Martin Ødegaard",
+        "position": "Central Midfielder",
+        "nationality": "Norway",
+        "club": "Arsenal",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 24,
+            "started": 16,
+            "minutes_played": 1370
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 6,
+            "xg": 1.23,
+            "xgot": 1.33,
+            "npxg": 1.23,
+            "xa": 3.67,
+            "xgi": 4.9,
+            "clean_sheets": 3,
+            "goals_conceded": 13,
+            "xgc": 15.96
+        },
+        "detailed_actions": {
+            "shots": 22,
+            "shots_on_target": 8,
+            "chances_created": 39,
+            "big_chances_created": 6,
+            "clearances": 6,
+            "blocks": null,
+            "interceptions": 7,
+            "tackles": 19,
+            "recoveries": 70
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 737066,
+        "name": "Erling Haaland",
+        "position": "Striker",
+        "nationality": "Norway",
+        "club": "Manchester City",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 35,
+            "started": 34,
+            "minutes_played": 2958
+        },
+        "core_stats": {
+            "goals": 27,
+            "assists": 8,
+            "xg": 25.43,
+            "xgot": 23.05,
+            "npxg": 22.28,
+            "xa": 2.85,
+            "xgi": 28.28,
+            "clean_sheets": 9,
+            "goals_conceded": 32,
+            "xgc": 38.47
+        },
+        "detailed_actions": {
+            "shots": 126,
+            "shots_on_target": 59,
+            "chances_created": 25,
+            "big_chances_created": 9,
+            "clearances": 42,
+            "blocks": 1,
+            "interceptions": 5,
+            "tackles": 15,
+            "recoveries": 41
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 821100,
+        "name": "Jørgen Strand Larsen",
+        "position": "Striker",
+        "nationality": "Norway",
+        "club": "Crystal Palace",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 36,
+            "started": 26,
+            "minutes_played": 2316
+        },
+        "core_stats": {
+            "goals": 4,
+            "assists": 1,
+            "xg": 5.32,
+            "xgot": 3.97,
+            "npxg": 3.75,
+            "xa": 1.11,
+            "xgi": 6.43,
+            "clean_sheets": 2,
+            "goals_conceded": 41,
+            "xgc": 35.6
+        },
+        "detailed_actions": {
+            "shots": 44,
+            "shots_on_target": 14,
+            "chances_created": 10,
+            "big_chances_created": 1,
+            "clearances": 38,
+            "blocks": 7,
+            "interceptions": 4,
+            "tackles": 9,
+            "recoveries": 37
+        },
+        "discipline": {
+            "yellow_cards": 4,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 440330,
+        "name": "Alexander Sørloth",
+        "position": "Striker",
+        "nationality": "Norway",
+        "club": "Atletico Madrid",
+        "league": "LaLiga",
+        "appearances": {
+            "matches_played": 35,
+            "started": 20,
+            "minutes_played": 1981
+        },
+        "core_stats": {
+            "goals": 13,
+            "assists": 0,
+            "xg": 10.16,
+            "xgot": 14.22,
+            "npxg": 10.16,
+            "xa": 1.13,
+            "xgi": 11.29,
+            "clean_sheets": null,
+            "goals_conceded": 27,
+            "xgc": 21.48
+        },
+        "detailed_actions": {
+            "shots": 68,
+            "shots_on_target": 35,
+            "chances_created": 10,
+            "big_chances_created": 2,
+            "clearances": 25,
+            "blocks": 2,
+            "interceptions": null,
+            "tackles": 14,
+            "recoveries": 34
+        },
+        "discipline": {
+            "yellow_cards": 4,
+            "red_cards": 1
+        }
+    }
+]

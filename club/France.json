@@ -1,0 +1,987 @@
+[
+    {
+        "id": 466439,
+        "name": "Mike Maignan",
+        "position": "Keeper",
+        "nationality": "France",
+        "club": "Milan",
+        "league": "Serie A",
+        "appearances": {
+            "matches_played": 37,
+            "started": 0,
+            "minutes_played": 3296
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 13,
+            "goals_conceded": 35,
+            "xgc": null
+        },
+        "discipline": {
+            "yellow_cards": 4,
+            "red_cards": 0
+        },
+        "goalkeeping_metrics": {
+            "penalties_conceded": 5,
+            "penalties_saved": 2,
+            "saves": 108,
+            "goal_prevented": 10.53
+        }
+    },
+    {
+        "id": 279714,
+        "name": "Brice Samba",
+        "position": "Keeper",
+        "nationality": "France",
+        "club": "Rennes",
+        "league": "Ligue 1",
+        "appearances": {
+            "matches_played": 32,
+            "started": 0,
+            "minutes_played": 2880
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 10,
+            "goals_conceded": 44,
+            "xgc": null
+        },
+        "discipline": {
+            "yellow_cards": 5,
+            "red_cards": 0
+        },
+        "goalkeeping_metrics": {
+            "penalties_conceded": 4,
+            "penalties_saved": 2,
+            "saves": 87,
+            "goal_prevented": -0.69
+        }
+    },
+    {
+        "id": 1390336,
+        "name": "Robin Risser",
+        "position": "Keeper",
+        "nationality": "France",
+        "club": "Lens",
+        "league": "Ligue 1",
+        "appearances": {
+            "matches_played": 33,
+            "started": 0,
+            "minutes_played": 2970
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 11,
+            "goals_conceded": 35,
+            "xgc": null
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 0
+        },
+        "goalkeeping_metrics": {
+            "penalties_conceded": 3,
+            "penalties_saved": 2,
+            "saves": 78,
+            "goal_prevented": 4.6
+        }
+    },
+    {
+        "id": 210111,
+        "name": "Lucas Digne",
+        "position": "Left Back",
+        "nationality": "France",
+        "club": "Aston Villa",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 31,
+            "started": 21,
+            "minutes_played": 1852
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 6,
+            "xg": 0.72,
+            "xgot": 0.74,
+            "npxg": 0.72,
+            "xa": 3.26,
+            "xgi": 3.98,
+            "clean_sheets": 5,
+            "goals_conceded": 23,
+            "xgc": 27.66
+        },
+        "detailed_actions": {
+            "shots": 14,
+            "shots_on_target": 5,
+            "chances_created": 26,
+            "big_chances_created": 4,
+            "clearances": 61,
+            "blocks": 4,
+            "interceptions": 15,
+            "tackles": 36,
+            "recoveries": 63
+        },
+        "discipline": {
+            "yellow_cards": 3,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1197250,
+        "name": "Malo Gusto",
+        "position": "Right Back",
+        "nationality": "France",
+        "club": "Chelsea",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 34,
+            "started": 26,
+            "minutes_played": 2267
+        },
+        "core_stats": {
+            "goals": 2,
+            "assists": 3,
+            "xg": 1.56,
+            "xgot": 1.51,
+            "npxg": 1.56,
+            "xa": 2.99,
+            "xgi": 4.55,
+            "clean_sheets": 3,
+            "goals_conceded": 36,
+            "xgc": 37.13
+        },
+        "detailed_actions": {
+            "shots": 12,
+            "shots_on_target": 6,
+            "chances_created": 27,
+            "big_chances_created": 4,
+            "clearances": 39,
+            "blocks": 5,
+            "interceptions": 31,
+            "tackles": 53,
+            "recoveries": 122
+        },
+        "discipline": {
+            "yellow_cards": 3,
+            "red_cards": 1
+        }
+    },
+    {
+        "id": 504606,
+        "name": "Lucas Hernández",
+        "position": "Left Back",
+        "nationality": "France",
+        "club": "Paris Saint-Germain",
+        "league": "Ligue 1",
+        "appearances": {
+            "matches_played": 25,
+            "started": 20,
+            "minutes_played": 1746
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 3,
+            "xg": 0.52,
+            "xgot": 0.36,
+            "npxg": 0.52,
+            "xa": 0.75,
+            "xgi": 1.27,
+            "clean_sheets": 9,
+            "goals_conceded": 13,
+            "xgc": 14.98
+        },
+        "detailed_actions": {
+            "shots": 11,
+            "shots_on_target": 3,
+            "chances_created": 15,
+            "big_chances_created": 1,
+            "clearances": 44,
+            "blocks": 7,
+            "interceptions": 19,
+            "tackles": 25,
+            "recoveries": 82
+        },
+        "discipline": {
+            "yellow_cards": 4,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 724371,
+        "name": "Theo Hernández",
+        "position": "Left Back",
+        "nationality": "France",
+        "club": "Al Hilal",
+        "league": "Saudi Pro League",
+        "appearances": {
+            "matches_played": 31,
+            "started": 31,
+            "minutes_played": 2743
+        },
+        "core_stats": {
+            "goals": 5,
+            "assists": 1,
+            "xg": 3.13,
+            "xgot": 4.41,
+            "npxg": 3.13,
+            "xa": 3.56,
+            "xgi": 6.69,
+            "clean_sheets": 12,
+            "goals_conceded": 24,
+            "xgc": 22.56
+        },
+        "detailed_actions": {
+            "shots": 52,
+            "shots_on_target": 16,
+            "chances_created": 26,
+            "big_chances_created": 10,
+            "clearances": 29,
+            "blocks": 8,
+            "interceptions": 26,
+            "tackles": 37,
+            "recoveries": 144
+        },
+        "discipline": {
+            "yellow_cards": 7,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 820140,
+        "name": "Ibrahima Konaté",
+        "position": "Center Back",
+        "nationality": "France",
+        "club": "Liverpool",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 36,
+            "started": 36,
+            "minutes_played": 3100
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 0,
+            "xg": 1.21,
+            "xgot": 1.18,
+            "npxg": 1.21,
+            "xa": 0.98,
+            "xgi": 2.19,
+            "clean_sheets": 8,
+            "goals_conceded": 45,
+            "xgc": 40.46
+        },
+        "detailed_actions": {
+            "shots": 12,
+            "shots_on_target": 4,
+            "chances_created": 8,
+            "big_chances_created": 2,
+            "clearances": 190,
+            "blocks": 24,
+            "interceptions": 29,
+            "tackles": 53,
+            "recoveries": 117
+        },
+        "discipline": {
+            "yellow_cards": 7,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 705450,
+        "name": "Jules Koundé",
+        "position": "Right Back",
+        "nationality": "France",
+        "club": "Barcelona",
+        "league": "LaLiga",
+        "appearances": {
+            "matches_played": 30,
+            "started": 24,
+            "minutes_played": 2261
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 3,
+            "xg": 1.66,
+            "xgot": 2.05,
+            "npxg": 1.66,
+            "xa": 3.39,
+            "xgi": 5.05,
+            "clean_sheets": 8,
+            "goals_conceded": 22,
+            "xgc": 31.06
+        },
+        "detailed_actions": {
+            "shots": 14,
+            "shots_on_target": 4,
+            "chances_created": 23,
+            "big_chances_created": 6,
+            "clearances": 55,
+            "blocks": 13,
+            "interceptions": 30,
+            "tackles": 47,
+            "recoveries": 91
+        },
+        "discipline": {
+            "yellow_cards": 6,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 950485,
+        "name": "Maxence Lacroix",
+        "position": "Center Back",
+        "nationality": "France",
+        "club": "Crystal Palace",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 35,
+            "started": 35,
+            "minutes_played": 3087
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 2,
+            "xg": 2.38,
+            "xgot": 1.47,
+            "npxg": 2.38,
+            "xa": 0.89,
+            "xgi": 3.27,
+            "clean_sheets": 11,
+            "goals_conceded": 45,
+            "xgc": 43.83
+        },
+        "detailed_actions": {
+            "shots": 24,
+            "shots_on_target": 7,
+            "chances_created": 7,
+            "big_chances_created": 3,
+            "clearances": 252,
+            "blocks": 18,
+            "interceptions": 45,
+            "tackles": 60,
+            "recoveries": 94
+        },
+        "discipline": {
+            "yellow_cards": 4,
+            "red_cards": 1
+        }
+    },
+    {
+        "id": 955406,
+        "name": "William Saliba",
+        "position": "Center Back",
+        "nationality": "France",
+        "club": "Arsenal",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 31,
+            "started": 30,
+            "minutes_played": 2615
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 0,
+            "xg": 0.86,
+            "xgot": 0.86,
+            "npxg": 0.86,
+            "xa": 1.42,
+            "xgi": 2.28,
+            "clean_sheets": 15,
+            "goals_conceded": 20,
+            "xgc": 20.2
+        },
+        "detailed_actions": {
+            "shots": 5,
+            "shots_on_target": 1,
+            "chances_created": 10,
+            "big_chances_created": 1,
+            "clearances": 133,
+            "blocks": 7,
+            "interceptions": 17,
+            "tackles": 35,
+            "recoveries": 113
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 658554,
+        "name": "Dayot Upamecano",
+        "position": "Center Back",
+        "nationality": "France",
+        "club": "Bayern München",
+        "league": "Bundesliga",
+        "appearances": {
+            "matches_played": 24,
+            "started": 21,
+            "minutes_played": 1797
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 1,
+            "xg": 1.03,
+            "xgot": 1.15,
+            "npxg": 1.03,
+            "xa": 1.62,
+            "xgi": 2.65,
+            "clean_sheets": 4,
+            "goals_conceded": 19,
+            "xgc": 23.85
+        },
+        "detailed_actions": {
+            "shots": 8,
+            "shots_on_target": 2,
+            "chances_created": 11,
+            "big_chances_created": 4,
+            "clearances": 52,
+            "blocks": 5,
+            "interceptions": 19,
+            "tackles": 44,
+            "recoveries": 121
+        },
+        "discipline": {
+            "yellow_cards": 4,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 319300,
+        "name": "N'Golo Kanté",
+        "position": "Defensive Midfielder",
+        "nationality": "France",
+        "club": "Fenerbahçe",
+        "league": "Super Lig",
+        "appearances": {
+            "matches_played": 14,
+            "started": 13,
+            "minutes_played": 1144
+        },
+        "core_stats": {
+            "goals": 2,
+            "assists": 0,
+            "xg": 0.36,
+            "xgot": 0.3,
+            "npxg": 0.36,
+            "xa": 0.96,
+            "xgi": 1.32,
+            "clean_sheets": 2,
+            "goals_conceded": 20,
+            "xgc": 12.92
+        },
+        "detailed_actions": {
+            "shots": 8,
+            "shots_on_target": 2,
+            "chances_created": 14,
+            "big_chances_created": 1,
+            "clearances": 11,
+            "blocks": 4,
+            "interceptions": 20,
+            "tackles": 37,
+            "recoveries": 79
+        },
+        "discipline": {
+            "yellow_cards": 3,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 352879,
+        "name": "Adrien Rabiot",
+        "position": "Central Midfielder",
+        "nationality": "France",
+        "club": "Milan",
+        "league": "Serie A",
+        "appearances": {
+            "matches_played": 29,
+            "started": 28,
+            "minutes_played": 2550
+        },
+        "core_stats": {
+            "goals": 6,
+            "assists": 4,
+            "xg": 0.04,
+            "xgot": null,
+            "npxg": 0.04,
+            "xa": 0.51,
+            "xgi": 0.55,
+            "clean_sheets": null,
+            "goals_conceded": 1,
+            "xgc": 1.47
+        },
+        "detailed_actions": {
+            "shots": 1,
+            "shots_on_target": null,
+            "chances_created": 4,
+            "big_chances_created": null,
+            "clearances": 1,
+            "blocks": null,
+            "interceptions": null,
+            "tackles": null,
+            "recoveries": 2
+        },
+        "discipline": {
+            "yellow_cards": 4,
+            "red_cards": 1
+        }
+    },
+    {
+        "id": 914458,
+        "name": "Aurélien Tchouaméni",
+        "position": "Central Midfielder",
+        "nationality": "France",
+        "club": "Real Madrid",
+        "league": "LaLiga",
+        "appearances": {
+            "matches_played": 33,
+            "started": 31,
+            "minutes_played": 2622
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 0,
+            "xg": 2.66,
+            "xgot": 1.78,
+            "npxg": 2.66,
+            "xa": 2.95,
+            "xgi": 5.61,
+            "clean_sheets": 8,
+            "goals_conceded": 26,
+            "xgc": 30.71
+        },
+        "detailed_actions": {
+            "shots": 45,
+            "shots_on_target": 7,
+            "chances_created": 25,
+            "big_chances_created": 4,
+            "clearances": 55,
+            "blocks": 13,
+            "interceptions": 47,
+            "tackles": 68,
+            "recoveries": 144
+        },
+        "discipline": {
+            "yellow_cards": 8,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1367615,
+        "name": "Warren Zaïre-Emery",
+        "position": "Central Midfielder",
+        "nationality": "France",
+        "club": "Paris Saint-Germain",
+        "league": "Ligue 1",
+        "appearances": {
+            "matches_played": 32,
+            "started": 27,
+            "minutes_played": 2453
+        },
+        "core_stats": {
+            "goals": 3,
+            "assists": 4,
+            "xg": 1.22,
+            "xgot": 1.44,
+            "npxg": 1.22,
+            "xa": 3.5,
+            "xgi": 4.72,
+            "clean_sheets": 9,
+            "goals_conceded": 23,
+            "xgc": 23.22
+        },
+        "detailed_actions": {
+            "shots": 19,
+            "shots_on_target": 7,
+            "chances_created": 42,
+            "big_chances_created": 8,
+            "clearances": 22,
+            "blocks": 7,
+            "interceptions": 12,
+            "tackles": 48,
+            "recoveries": 149
+        },
+        "discipline": {
+            "yellow_cards": 3,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1305618,
+        "name": "Maghnes Akliouche",
+        "position": "Right Winger",
+        "nationality": "France",
+        "club": "Monaco",
+        "league": "Ligue 1",
+        "appearances": {
+            "matches_played": 31,
+            "started": 28,
+            "minutes_played": 2410
+        },
+        "core_stats": {
+            "goals": 6,
+            "assists": 6,
+            "xg": 7.22,
+            "xgot": 6.8,
+            "npxg": 7.22,
+            "xa": 5.37,
+            "xgi": 12.59,
+            "clean_sheets": 3,
+            "goals_conceded": 38,
+            "xgc": 35.77
+        },
+        "detailed_actions": {
+            "shots": 48,
+            "shots_on_target": 19,
+            "chances_created": 44,
+            "big_chances_created": 8,
+            "clearances": 13,
+            "blocks": 3,
+            "interceptions": 19,
+            "tackles": 39,
+            "recoveries": 141
+        },
+        "discipline": {
+            "yellow_cards": 3,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1297165,
+        "name": "Bradley Barcola",
+        "position": "Left Winger",
+        "nationality": "France",
+        "club": "Paris Saint-Germain",
+        "league": "Ligue 1",
+        "appearances": {
+            "matches_played": 29,
+            "started": 21,
+            "minutes_played": 1750
+        },
+        "core_stats": {
+            "goals": 11,
+            "assists": 1,
+            "xg": 10.83,
+            "xgot": 10.09,
+            "npxg": 10.83,
+            "xa": 4.5,
+            "xgi": 15.33,
+            "clean_sheets": 4,
+            "goals_conceded": 15,
+            "xgc": 18.92
+        },
+        "detailed_actions": {
+            "shots": 67,
+            "shots_on_target": 31,
+            "chances_created": 38,
+            "big_chances_created": 11,
+            "clearances": 6,
+            "blocks": 1,
+            "interceptions": 12,
+            "tackles": 30,
+            "recoveries": 59
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1104053,
+        "name": "Rayan Cherki",
+        "position": "Attacking Midfielder",
+        "nationality": "France",
+        "club": "Manchester City",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 33,
+            "started": 19,
+            "minutes_played": 1786
+        },
+        "core_stats": {
+            "goals": 4,
+            "assists": 12,
+            "xg": 4.13,
+            "xgot": 4.56,
+            "npxg": 4.13,
+            "xa": 8.65,
+            "xgi": 12.78,
+            "clean_sheets": 3,
+            "goals_conceded": 18,
+            "xgc": 25.78
+        },
+        "detailed_actions": {
+            "shots": 55,
+            "shots_on_target": 13,
+            "chances_created": 60,
+            "big_chances_created": 19,
+            "clearances": 7,
+            "blocks": 1,
+            "interceptions": 7,
+            "tackles": 26,
+            "recoveries": 91
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 692984,
+        "name": "Ousmane Dembélé",
+        "position": "Striker",
+        "nationality": "France",
+        "club": "Paris Saint-Germain",
+        "league": "Ligue 1",
+        "appearances": {
+            "matches_played": 22,
+            "started": 11,
+            "minutes_played": 1062
+        },
+        "core_stats": {
+            "goals": 10,
+            "assists": 7,
+            "xg": 6.6,
+            "xgot": 7.66,
+            "npxg": 4.23,
+            "xa": 4.5,
+            "xgi": 11.1,
+            "clean_sheets": null,
+            "goals_conceded": 8,
+            "xgc": 10.01
+        },
+        "detailed_actions": {
+            "shots": 45,
+            "shots_on_target": 18,
+            "chances_created": 41,
+            "big_chances_created": 9,
+            "clearances": 3,
+            "blocks": null,
+            "interceptions": null,
+            "tackles": 6,
+            "recoveries": 25
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1339208,
+        "name": "Désiré Doué",
+        "position": "Right Winger",
+        "nationality": "France",
+        "club": "Paris Saint-Germain",
+        "league": "Ligue 1",
+        "appearances": {
+            "matches_played": 23,
+            "started": 16,
+            "minutes_played": 1356
+        },
+        "core_stats": {
+            "goals": 7,
+            "assists": 4,
+            "xg": 7.91,
+            "xgot": 8.06,
+            "npxg": 7.13,
+            "xa": 3.04,
+            "xgi": 10.95,
+            "clean_sheets": 2,
+            "goals_conceded": 14,
+            "xgc": 14.08
+        },
+        "detailed_actions": {
+            "shots": 55,
+            "shots_on_target": 19,
+            "chances_created": 29,
+            "big_chances_created": 5,
+            "clearances": 5,
+            "blocks": 2,
+            "interceptions": 12,
+            "tackles": 32,
+            "recoveries": 65
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 706297,
+        "name": "Jean-Philippe Mateta",
+        "position": "Striker",
+        "nationality": "France",
+        "club": "Crystal Palace",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 32,
+            "started": 25,
+            "minutes_played": 2222
+        },
+        "core_stats": {
+            "goals": 12,
+            "assists": 0,
+            "xg": 14.51,
+            "xgot": 13.24,
+            "npxg": 11.36,
+            "xa": 1.31,
+            "xgi": 15.82,
+            "clean_sheets": 5,
+            "goals_conceded": 29,
+            "xgc": 31.6
+        },
+        "detailed_actions": {
+            "shots": 63,
+            "shots_on_target": 32,
+            "chances_created": 9,
+            "big_chances_created": 2,
+            "clearances": 46,
+            "blocks": 6,
+            "interceptions": 6,
+            "tackles": 10,
+            "recoveries": 57
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 701154,
+        "name": "Kylian Mbappé",
+        "position": "Striker",
+        "nationality": "France",
+        "club": "Real Madrid",
+        "league": "LaLiga",
+        "appearances": {
+            "matches_played": 31,
+            "started": 29,
+            "minutes_played": 2604
+        },
+        "core_stats": {
+            "goals": 25,
+            "assists": 5,
+            "xg": 23.95,
+            "xgot": 21.99,
+            "npxg": 16.85,
+            "xa": 6.2,
+            "xgi": 30.15,
+            "clean_sheets": 8,
+            "goals_conceded": 26,
+            "xgc": 31.15
+        },
+        "detailed_actions": {
+            "shots": 146,
+            "shots_on_target": 63,
+            "chances_created": 65,
+            "big_chances_created": 8,
+            "clearances": null,
+            "blocks": null,
+            "interceptions": 2,
+            "tackles": 4,
+            "recoveries": 44
+        },
+        "discipline": {
+            "yellow_cards": 4,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1029063,
+        "name": "Michael Olise",
+        "position": "Right Winger",
+        "nationality": "France",
+        "club": "Bayern München",
+        "league": "Bundesliga",
+        "appearances": {
+            "matches_played": 32,
+            "started": 23,
+            "minutes_played": 2317
+        },
+        "core_stats": {
+            "goals": 15,
+            "assists": 19,
+            "xg": 11.46,
+            "xgot": 14.14,
+            "npxg": 11.46,
+            "xa": 17.23,
+            "xgi": 28.69,
+            "clean_sheets": 8,
+            "goals_conceded": 25,
+            "xgc": 28.59
+        },
+        "detailed_actions": {
+            "shots": 101,
+            "shots_on_target": 50,
+            "chances_created": 79,
+            "big_chances_created": 27,
+            "clearances": 9,
+            "blocks": 1,
+            "interceptions": 13,
+            "tackles": 24,
+            "recoveries": 100
+        },
+        "discipline": {
+            "yellow_cards": 8,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 621562,
+        "name": "Marcus Thuram",
+        "position": "Striker",
+        "nationality": "France",
+        "club": "Inter",
+        "league": "Serie A",
+        "appearances": {
+            "matches_played": 29,
+            "started": 24,
+            "minutes_played": 1913
+        },
+        "core_stats": {
+            "goals": 13,
+            "assists": 6,
+            "xg": 9.43,
+            "xgot": 11.41,
+            "npxg": 9.43,
+            "xa": 2.56,
+            "xgi": 11.99,
+            "clean_sheets": null,
+            "goals_conceded": 18,
+            "xgc": 20.07
+        },
+        "detailed_actions": {
+            "shots": 74,
+            "shots_on_target": 29,
+            "chances_created": 29,
+            "big_chances_created": 7,
+            "clearances": 10,
+            "blocks": 2,
+            "interceptions": 1,
+            "tackles": 24,
+            "recoveries": 39
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 0
+        }
+    }
+]

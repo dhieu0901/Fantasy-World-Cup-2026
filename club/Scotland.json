@@ -1,0 +1,987 @@
+[
+    {
+        "id": 32562,
+        "name": "Craig Gordon",
+        "position": "Keeper",
+        "nationality": "Scotland",
+        "club": "Hearts",
+        "league": "Premiership",
+        "appearances": {
+            "matches_played": 3,
+            "started": 0,
+            "minutes_played": 226
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 1,
+            "goals_conceded": 2,
+            "xgc": null
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        "goalkeeping_metrics": {
+            "penalties_conceded": null,
+            "penalties_saved": null,
+            "saves": 7,
+            "goal_prevented": 0.36
+        }
+    },
+    {
+        "id": 172489,
+        "name": "Zander Clark",
+        "position": "Keeper",
+        "nationality": "Scotland",
+        "club": "Doncaster Rovers",
+        "league": "League One",
+        "appearances": {
+            "matches_played": 7,
+            "started": 0,
+            "minutes_played": 630
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 2,
+            "goals_conceded": 8,
+            "xgc": null
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        "goalkeeping_metrics": {
+            "penalties_conceded": 0,
+            "penalties_saved": 1,
+            "saves": 13,
+            "goal_prevented": -2.34
+        }
+    },
+    {
+        "id": 760746,
+        "name": "Angus Gunn",
+        "position": "Keeper",
+        "nationality": "Scotland",
+        "club": "Nottingham Forest",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 1,
+            "started": 0,
+            "minutes_played": 45
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": null,
+            "xgc": null
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        "goalkeeping_metrics": {
+            "penalties_conceded": null,
+            "penalties_saved": null,
+            "saves": null,
+            "goal_prevented": null
+        }
+    },
+    {
+        "id": 202180,
+        "name": "Grant Hanley",
+        "position": "Center Back",
+        "nationality": "Scotland",
+        "club": "Hibernian",
+        "league": "Premiership",
+        "appearances": {
+            "matches_played": 24,
+            "started": 23,
+            "minutes_played": 1931
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": 1.17,
+            "xgot": 1.9,
+            "npxg": 1.17,
+            "xa": 0.11,
+            "xgi": 1.28,
+            "clean_sheets": 6,
+            "goals_conceded": 23,
+            "xgc": 26.2
+        },
+        "detailed_actions": {
+            "shots": 14,
+            "shots_on_target": 7,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": 147,
+            "blocks": 32,
+            "interceptions": 24,
+            "tackles": 21,
+            "recoveries": 53
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 2
+        }
+    },
+    {
+        "id": 640642,
+        "name": "Jack Hendry",
+        "position": "Center Back",
+        "nationality": "Scotland",
+        "club": "Al-Ettifaq",
+        "league": "Saudi Pro League",
+        "appearances": {
+            "matches_played": 30,
+            "started": 29,
+            "minutes_played": 2558
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 0,
+            "xg": 0.74,
+            "xgot": 0.76,
+            "npxg": 0.74,
+            "xa": 0.41,
+            "xgi": 1.15,
+            "clean_sheets": 7,
+            "goals_conceded": 48,
+            "xgc": 51.02
+        },
+        "detailed_actions": {
+            "shots": 5,
+            "shots_on_target": 1,
+            "chances_created": 6,
+            "big_chances_created": 1,
+            "clearances": 122,
+            "blocks": 25,
+            "interceptions": 17,
+            "tackles": 18,
+            "recoveries": 98
+        },
+        "discipline": {
+            "yellow_cards": 8,
+            "red_cards": 1
+        }
+    },
+    {
+        "id": 1002039,
+        "name": "Aaron Hickey",
+        "position": "Right Back",
+        "nationality": "Scotland",
+        "club": "Brentford",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 21,
+            "started": 8,
+            "minutes_played": 685
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": 0.46,
+            "xgot": 0.24,
+            "npxg": 0.46,
+            "xa": 0.14,
+            "xgi": 0.6,
+            "clean_sheets": null,
+            "goals_conceded": 9,
+            "xgc": 9.11
+        },
+        "detailed_actions": {
+            "shots": 6,
+            "shots_on_target": 1,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": 23,
+            "blocks": 6,
+            "interceptions": 8,
+            "tackles": 15,
+            "recoveries": 35
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 694558,
+        "name": "Dominic Hyam",
+        "position": "Center Back",
+        "nationality": "Scotland",
+        "club": "Wrexham",
+        "league": "Championship",
+        "appearances": {
+            "matches_played": 44,
+            "started": 44,
+            "minutes_played": 3950
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": 1.39,
+            "xgot": 0.19,
+            "npxg": 1.39,
+            "xa": 0.3,
+            "xgi": 1.69,
+            "clean_sheets": 12,
+            "goals_conceded": 58,
+            "xgc": 53.59
+        },
+        "detailed_actions": {
+            "shots": 14,
+            "shots_on_target": 2,
+            "chances_created": 3,
+            "big_chances_created": null,
+            "clearances": 343,
+            "blocks": 28,
+            "interceptions": 49,
+            "tackles": 41,
+            "recoveries": 134
+        },
+        "discipline": {
+            "yellow_cards": 4,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 551805,
+        "name": "Scott McKenna",
+        "position": "Center Back",
+        "nationality": "Scotland",
+        "club": "Dinamo Zagreb",
+        "league": "HNL",
+        "appearances": {
+            "matches_played": 30,
+            "started": 30,
+            "minutes_played": 2627
+        },
+        "core_stats": {
+            "goals": 2,
+            "assists": 3,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 13,
+            "goals_conceded": 23,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": 27,
+            "shots_on_target": 8,
+            "chances_created": 11,
+            "big_chances_created": 2,
+            "clearances": 150,
+            "blocks": 17,
+            "interceptions": 17,
+            "tackles": 28,
+            "recoveries": 105
+        },
+        "discipline": {
+            "yellow_cards": 3,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1112684,
+        "name": "Nathan Patterson",
+        "position": "Right Back",
+        "nationality": "Scotland",
+        "club": "Everton",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 7,
+            "started": 3,
+            "minutes_played": 240
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": 0.03,
+            "xgot": 0.06,
+            "npxg": 0.03,
+            "xa": 0.04,
+            "xgi": 0.07,
+            "clean_sheets": 1,
+            "goals_conceded": 2,
+            "xgc": 3.77
+        },
+        "detailed_actions": {
+            "shots": 1,
+            "shots_on_target": 1,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": 17,
+            "blocks": 2,
+            "interceptions": 2,
+            "tackles": 10,
+            "recoveries": 14
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 668422,
+        "name": "Anthony Ralston",
+        "position": "Right Back",
+        "nationality": "Scotland",
+        "club": "Celtic",
+        "league": "Premiership",
+        "appearances": {
+            "matches_played": 24,
+            "started": 14,
+            "minutes_played": 1300
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": 0.18,
+            "xgot": 0.37,
+            "npxg": 0.18,
+            "xa": 1.38,
+            "xgi": 1.56,
+            "clean_sheets": 4,
+            "goals_conceded": 18,
+            "xgc": 15.34
+        },
+        "detailed_actions": {
+            "shots": 7,
+            "shots_on_target": 3,
+            "chances_created": 9,
+            "big_chances_created": null,
+            "clearances": 51,
+            "blocks": 8,
+            "interceptions": 12,
+            "tackles": 30,
+            "recoveries": 63
+        },
+        "discipline": {
+            "yellow_cards": 4,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 357880,
+        "name": "Andrew Robertson",
+        "position": "Left Back",
+        "nationality": "Scotland",
+        "club": "Liverpool",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 24,
+            "started": 11,
+            "minutes_played": 1172
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 0,
+            "xg": 1.1,
+            "xgot": 1.43,
+            "npxg": 1.1,
+            "xa": 1.39,
+            "xgi": 2.49,
+            "clean_sheets": 3,
+            "goals_conceded": 16,
+            "xgc": 17.38
+        },
+        "detailed_actions": {
+            "shots": 10,
+            "shots_on_target": 3,
+            "chances_created": 20,
+            "big_chances_created": 3,
+            "clearances": 32,
+            "blocks": 3,
+            "interceptions": 8,
+            "tackles": 12,
+            "recoveries": 40
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 419207,
+        "name": "John Souttar",
+        "position": "Center Back",
+        "nationality": "Scotland",
+        "club": "Rangers",
+        "league": "Premiership",
+        "appearances": {
+            "matches_played": 24,
+            "started": 23,
+            "minutes_played": 2014
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": 0.97,
+            "xgot": 1.06,
+            "npxg": 0.97,
+            "xa": 0.8,
+            "xgi": 1.77,
+            "clean_sheets": 5,
+            "goals_conceded": 23,
+            "xgc": 27.17
+        },
+        "detailed_actions": {
+            "shots": 13,
+            "shots_on_target": 3,
+            "chances_created": 10,
+            "big_chances_created": 1,
+            "clearances": 149,
+            "blocks": 15,
+            "interceptions": 9,
+            "tackles": 25,
+            "recoveries": 82
+        },
+        "discipline": {
+            "yellow_cards": 7,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 582499,
+        "name": "Kieran Tierney",
+        "position": "Left Back",
+        "nationality": "Scotland",
+        "club": "Celtic",
+        "league": "Premiership",
+        "appearances": {
+            "matches_played": 35,
+            "started": 29,
+            "minutes_played": 2515
+        },
+        "core_stats": {
+            "goals": 6,
+            "assists": 8,
+            "xg": 2.84,
+            "xgot": 3.7,
+            "npxg": 2.84,
+            "xa": 7.51,
+            "xgi": 10.35,
+            "clean_sheets": 3,
+            "goals_conceded": 33,
+            "xgc": 26.74
+        },
+        "detailed_actions": {
+            "shots": 29,
+            "shots_on_target": 10,
+            "chances_created": 53,
+            "big_chances_created": 12,
+            "clearances": 133,
+            "blocks": 10,
+            "interceptions": 14,
+            "tackles": 58,
+            "recoveries": 107
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 439369,
+        "name": "Ryan Christie",
+        "position": "Defensive Midfielder",
+        "nationality": "Scotland",
+        "club": "AFC Bournemouth",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 26,
+            "started": 9,
+            "minutes_played": 986
+        },
+        "core_stats": {
+            "goals": 2,
+            "assists": 0,
+            "xg": 1.92,
+            "xgot": 2.61,
+            "npxg": 1.92,
+            "xa": 0.83,
+            "xgi": 2.75,
+            "clean_sheets": null,
+            "goals_conceded": 14,
+            "xgc": 19.15
+        },
+        "detailed_actions": {
+            "shots": 25,
+            "shots_on_target": 8,
+            "chances_created": 11,
+            "big_chances_created": 2,
+            "clearances": 18,
+            "blocks": 4,
+            "interceptions": 12,
+            "tackles": 27,
+            "recoveries": 62
+        },
+        "discipline": {
+            "yellow_cards": 3,
+            "red_cards": 1
+        }
+    },
+    {
+        "id": 1558461,
+        "name": "Findlay Curtis",
+        "position": "Left Winger",
+        "nationality": "Scotland",
+        "club": "Kilmarnock",
+        "league": "Premiership",
+        "appearances": {
+            "matches_played": 24,
+            "started": 14,
+            "minutes_played": 1268
+        },
+        "core_stats": {
+            "goals": 6,
+            "assists": 1,
+            "xg": 5.16,
+            "xgot": 4.04,
+            "npxg": 5.16,
+            "xa": 3.17,
+            "xgi": 8.33,
+            "clean_sheets": 1,
+            "goals_conceded": 16,
+            "xgc": 18.19
+        },
+        "detailed_actions": {
+            "shots": 51,
+            "shots_on_target": 15,
+            "chances_created": 20,
+            "big_chances_created": 5,
+            "clearances": 24,
+            "blocks": 3,
+            "interceptions": 12,
+            "tackles": 34,
+            "recoveries": 64
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 888921,
+        "name": "Lewis Ferguson",
+        "position": "Defensive Midfielder",
+        "nationality": "Scotland",
+        "club": "Bologna",
+        "league": "Serie A",
+        "appearances": {
+            "matches_played": 27,
+            "started": 17,
+            "minutes_played": 1596
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 0,
+            "xg": 0.67,
+            "xgot": 0.05,
+            "npxg": 0.67,
+            "xa": 1.22,
+            "xgi": 1.89,
+            "clean_sheets": 3,
+            "goals_conceded": 29,
+            "xgc": 25.35
+        },
+        "detailed_actions": {
+            "shots": 13,
+            "shots_on_target": 2,
+            "chances_created": 16,
+            "big_chances_created": 1,
+            "clearances": 27,
+            "blocks": 8,
+            "interceptions": 11,
+            "tackles": 26,
+            "recoveries": 63
+        },
+        "discipline": {
+            "yellow_cards": 5,
+            "red_cards": 1
+        }
+    },
+    {
+        "id": 942549,
+        "name": "Billy Gilmour",
+        "position": "Defensive Midfielder",
+        "nationality": "Scotland",
+        "club": "Napoli",
+        "league": "Serie A",
+        "appearances": {
+            "matches_played": 17,
+            "started": 8,
+            "minutes_played": 803
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 0,
+            "xg": 0.69,
+            "xgot": 1.12,
+            "npxg": 0.69,
+            "xa": 1.04,
+            "xgi": 1.73,
+            "clean_sheets": 1,
+            "goals_conceded": 5,
+            "xgc": 9.97
+        },
+        "detailed_actions": {
+            "shots": 10,
+            "shots_on_target": 3,
+            "chances_created": 6,
+            "big_chances_created": null,
+            "clearances": 10,
+            "blocks": 1,
+            "interceptions": 11,
+            "tackles": 14,
+            "recoveries": 56
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 356406,
+        "name": "John McGinn",
+        "position": "Right Winger",
+        "nationality": "Scotland",
+        "club": "Aston Villa",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 30,
+            "started": 28,
+            "minutes_played": 2157
+        },
+        "core_stats": {
+            "goals": 5,
+            "assists": 4,
+            "xg": 2.96,
+            "xgot": 3.9,
+            "npxg": 2.96,
+            "xa": 3.99,
+            "xgi": 6.95,
+            "clean_sheets": 2,
+            "goals_conceded": 28,
+            "xgc": 32.92
+        },
+        "detailed_actions": {
+            "shots": 28,
+            "shots_on_target": 12,
+            "chances_created": 41,
+            "big_chances_created": 7,
+            "clearances": 15,
+            "blocks": 5,
+            "interceptions": 12,
+            "tackles": 29,
+            "recoveries": 89
+        },
+        "discipline": {
+            "yellow_cards": 5,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 190851,
+        "name": "Kenny McLean",
+        "position": "Defensive Midfielder",
+        "nationality": "Scotland",
+        "club": "Norwich City",
+        "league": "Championship",
+        "appearances": {
+            "matches_played": 42,
+            "started": 41,
+            "minutes_played": 3619
+        },
+        "core_stats": {
+            "goals": 3,
+            "assists": 4,
+            "xg": 2.62,
+            "xgot": 4.11,
+            "npxg": 1.83,
+            "xa": 6.32,
+            "xgi": 8.94,
+            "clean_sheets": 7,
+            "goals_conceded": 44,
+            "xgc": 54.62
+        },
+        "detailed_actions": {
+            "shots": 34,
+            "shots_on_target": 13,
+            "chances_created": 53,
+            "big_chances_created": 10,
+            "clearances": 78,
+            "blocks": 12,
+            "interceptions": 37,
+            "tackles": 73,
+            "recoveries": 216
+        },
+        "discipline": {
+            "yellow_cards": 6,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 843099,
+        "name": "Scott McTominay",
+        "position": "Defensive Midfielder",
+        "nationality": "Scotland",
+        "club": "Napoli",
+        "league": "Serie A",
+        "appearances": {
+            "matches_played": 33,
+            "started": 31,
+            "minutes_played": 2793
+        },
+        "core_stats": {
+            "goals": 10,
+            "assists": 3,
+            "xg": 11.01,
+            "xgot": 10.41,
+            "npxg": 10.23,
+            "xa": 1.58,
+            "xgi": 12.59,
+            "clean_sheets": 13,
+            "goals_conceded": 27,
+            "xgc": 30.05
+        },
+        "detailed_actions": {
+            "shots": 101,
+            "shots_on_target": 34,
+            "chances_created": 22,
+            "big_chances_created": 1,
+            "clearances": 48,
+            "blocks": 13,
+            "interceptions": 21,
+            "tackles": 28,
+            "recoveries": 131
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 599353,
+        "name": "Che Adams",
+        "position": "Striker",
+        "nationality": "Scotland",
+        "club": "Torino",
+        "league": "Serie A",
+        "appearances": {
+            "matches_played": 33,
+            "started": 19,
+            "minutes_played": 1896
+        },
+        "core_stats": {
+            "goals": 6,
+            "assists": 2,
+            "xg": 5.74,
+            "xgot": 7.24,
+            "npxg": 5.74,
+            "xa": 2.13,
+            "xgi": 7.87,
+            "clean_sheets": 1,
+            "goals_conceded": 30,
+            "xgc": 27.93
+        },
+        "detailed_actions": {
+            "shots": 53,
+            "shots_on_target": 18,
+            "chances_created": 26,
+            "big_chances_created": 6,
+            "clearances": 11,
+            "blocks": 1,
+            "interceptions": 1,
+            "tackles": 14,
+            "recoveries": 54
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 768635,
+        "name": "Lyndon Dykes",
+        "position": "Striker",
+        "nationality": "Scotland",
+        "club": "Charlton Athletic",
+        "league": "Championship",
+        "appearances": {
+            "matches_played": 41,
+            "started": 18,
+            "minutes_played": 1936
+        },
+        "core_stats": {
+            "goals": 5,
+            "assists": 3,
+            "xg": 5.23,
+            "xgot": 4.47,
+            "npxg": 5.23,
+            "xa": 1.86,
+            "xgi": 7.09,
+            "clean_sheets": 2,
+            "goals_conceded": 32,
+            "xgc": 33.42
+        },
+        "detailed_actions": {
+            "shots": 41,
+            "shots_on_target": 13,
+            "chances_created": 21,
+            "big_chances_created": 3,
+            "clearances": 50,
+            "blocks": 4,
+            "interceptions": 8,
+            "tackles": 19,
+            "recoveries": 51
+        },
+        "discipline": {
+            "yellow_cards": 4,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 317544,
+        "name": "Lawrence Shankland",
+        "position": "Striker",
+        "nationality": "Scotland",
+        "club": "Hearts",
+        "league": "Premiership",
+        "appearances": {
+            "matches_played": 29,
+            "started": 28,
+            "minutes_played": 2495
+        },
+        "core_stats": {
+            "goals": 16,
+            "assists": 3,
+            "xg": 11.32,
+            "xgot": 14.82,
+            "npxg": 8.16,
+            "xa": 3.55,
+            "xgi": 14.87,
+            "clean_sheets": 6,
+            "goals_conceded": 23,
+            "xgc": 27.45
+        },
+        "detailed_actions": {
+            "shots": 86,
+            "shots_on_target": 37,
+            "chances_created": 35,
+            "big_chances_created": 4,
+            "clearances": 28,
+            "blocks": 2,
+            "interceptions": 7,
+            "tackles": 22,
+            "recoveries": 116
+        },
+        "discipline": {
+            "yellow_cards": 4,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 776159,
+        "name": "Ross Stewart",
+        "position": "Striker",
+        "nationality": "Scotland",
+        "club": "Southampton",
+        "league": "Championship",
+        "appearances": {
+            "matches_played": 25,
+            "started": 11,
+            "minutes_played": 980
+        },
+        "core_stats": {
+            "goals": 8,
+            "assists": 2,
+            "xg": 5.0,
+            "xgot": 7.99,
+            "npxg": 5.0,
+            "xa": 0.57,
+            "xgi": 5.57,
+            "clean_sheets": null,
+            "goals_conceded": 10,
+            "xgc": 13.53
+        },
+        "detailed_actions": {
+            "shots": 28,
+            "shots_on_target": 17,
+            "chances_created": 12,
+            "big_chances_created": 1,
+            "clearances": 15,
+            "blocks": null,
+            "interceptions": 3,
+            "tackles": 13,
+            "recoveries": 22
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1739006,
+        "name": "Ben Doak",
+        "position": "Center Back",
+        "nationality": "Scotland",
+        "club": "Braintree Town",
+        "league": "National League",
+        "appearances": {
+            "matches_played": 21,
+            "started": 21,
+            "minutes_played": 1839
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 3,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": null,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": null,
+            "shots_on_target": null,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": null,
+            "blocks": null,
+            "interceptions": null,
+            "tackles": null,
+            "recoveries": null
+        },
+        "discipline": {
+            "yellow_cards": 6,
+            "red_cards": 0
+        }
+    }
+]

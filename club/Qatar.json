@@ -1,0 +1,592 @@
+[
+    {
+        "id": 922387,
+        "name": "Meshaal Barsham",
+        "position": "Keeper",
+        "nationality": "Qatar",
+        "club": "Al-Sadd",
+        "league": "Qatar Stars League",
+        "appearances": {
+            "matches_played": 20,
+            "started": 0,
+            "minutes_played": 1800
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": null,
+            "xgc": null
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        },
+        "goalkeeping_metrics": {
+            "penalties_conceded": null,
+            "penalties_saved": null,
+            "saves": null,
+            "goal_prevented": null
+        }
+    },
+    {
+        "id": 117496,
+        "name": "Saad Al Sheeb",
+        "position": "Keeper",
+        "nationality": "Qatar",
+        "club": "Al-Sadd",
+        "league": "Qatar Stars League",
+        "appearances": {
+            "matches_played": 2,
+            "started": 0,
+            "minutes_played": 180
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": null,
+            "xgc": null
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        "goalkeeping_metrics": {
+            "penalties_conceded": null,
+            "penalties_saved": null,
+            "saves": null,
+            "goal_prevented": null
+        }
+    },
+    {
+        "id": 734637,
+        "name": "Pedro Miguel",
+        "position": "Center Back",
+        "nationality": "Qatar",
+        "club": "Al-Sadd",
+        "league": "Qatar Stars League",
+        "appearances": {
+            "matches_played": 18,
+            "started": 17,
+            "minutes_played": 1476
+        },
+        "core_stats": {
+            "goals": 2,
+            "assists": 3,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": null,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": null,
+            "shots_on_target": null,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": null,
+            "blocks": null,
+            "interceptions": null,
+            "tackles": null,
+            "recoveries": null
+        },
+        "discipline": {
+            "yellow_cards": 7,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 308921,
+        "name": "Boualem Khoukhi",
+        "position": "Center Back",
+        "nationality": "Qatar",
+        "club": "Al-Sadd",
+        "league": "Qatar Stars League",
+        "appearances": {
+            "matches_played": 18,
+            "started": 16,
+            "minutes_played": 1451
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": null,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": null,
+            "shots_on_target": null,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": null,
+            "blocks": null,
+            "interceptions": null,
+            "tackles": null,
+            "recoveries": null
+        },
+        "discipline": {
+            "yellow_cards": 3,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 149583,
+        "name": "Lucas Mendes",
+        "position": "Center Back",
+        "nationality": "Qatar",
+        "club": "Al-Wakrah",
+        "league": "Qatar Stars League",
+        "appearances": {
+            "matches_played": 17,
+            "started": 17,
+            "minutes_played": 1472
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 1,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": null,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": null,
+            "shots_on_target": null,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": null,
+            "blocks": null,
+            "interceptions": null,
+            "tackles": null,
+            "recoveries": null
+        },
+        "discipline": {
+            "yellow_cards": 3,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 644018,
+        "name": "Tarek Salman",
+        "position": "Right Back",
+        "nationality": "Qatar",
+        "club": "Al-Sadd",
+        "league": "Qatar Stars League",
+        "appearances": {
+            "matches_played": 21,
+            "started": 18,
+            "minutes_played": 1632
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 1,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": null,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": null,
+            "shots_on_target": null,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": null,
+            "blocks": null,
+            "interceptions": null,
+            "tackles": null,
+            "recoveries": null
+        },
+        "discipline": {
+            "yellow_cards": 4,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 255250,
+        "name": "Almahdi Ali",
+        "position": "Center Back",
+        "nationality": "Qatar",
+        "club": "Al-Wakrah",
+        "league": "Qatar Stars League",
+        "appearances": {
+            "matches_played": 11,
+            "started": 6,
+            "minutes_played": 693
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": null,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": null,
+            "shots_on_target": null,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": null,
+            "blocks": null,
+            "interceptions": null,
+            "tackles": null,
+            "recoveries": null
+        },
+        "discipline": {
+            "yellow_cards": 3,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 308909,
+        "name": "Abdulaziz Hatem",
+        "position": "Attacking Midfielder",
+        "nationality": "Qatar",
+        "club": "Al-Rayyan",
+        "league": "Qatar Stars League",
+        "appearances": {
+            "matches_played": 18,
+            "started": 8,
+            "minutes_played": 922
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 1,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": null,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": null,
+            "shots_on_target": null,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": null,
+            "blocks": null,
+            "interceptions": null,
+            "tackles": null,
+            "recoveries": null
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 1
+        }
+    },
+    {
+        "id": 1195865,
+        "name": "Jassem Gaber",
+        "position": "Defensive Midfielder",
+        "nationality": "Qatar",
+        "club": "Al-Rayyan",
+        "league": "Qatar Stars League",
+        "appearances": {
+            "matches_played": 15,
+            "started": 9,
+            "minutes_played": 701
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": null,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": null,
+            "shots_on_target": null,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": null,
+            "blocks": null,
+            "interceptions": null,
+            "tackles": null,
+            "recoveries": null
+        },
+        "discipline": {
+            "yellow_cards": 3,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1009249,
+        "name": "Mohammed Waad",
+        "position": "Left Back",
+        "nationality": "Qatar",
+        "club": "Al-Shamal",
+        "league": "Qatar Stars League",
+        "appearances": {
+            "matches_played": 16,
+            "started": 9,
+            "minutes_played": 877
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": null,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": null,
+            "shots_on_target": null,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": null,
+            "blocks": null,
+            "interceptions": null,
+            "tackles": null,
+            "recoveries": null
+        },
+        "discipline": {
+            "yellow_cards": 5,
+            "red_cards": 1
+        }
+    },
+    {
+        "id": 899278,
+        "name": "Ali Asad",
+        "position": "keeper",
+        "nationality": "Qatar",
+        "club": "Iranjavan Bushehr",
+        "league": null,
+        "appearances": {
+            "matches_played": 0,
+            "started": 0,
+            "minutes_played": 0
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": null,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": null,
+            "shots_on_target": null,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": null,
+            "blocks": null,
+            "interceptions": null,
+            "tackles": null,
+            "recoveries": null
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 613792,
+        "name": "Akram Afif",
+        "position": "Left Winger",
+        "nationality": "Qatar",
+        "club": "Al-Sadd",
+        "league": "Qatar Stars League",
+        "appearances": {
+            "matches_played": 22,
+            "started": 22,
+            "minutes_played": 1935
+        },
+        "core_stats": {
+            "goals": 15,
+            "assists": 12,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": null,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": null,
+            "shots_on_target": null,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": null,
+            "blocks": null,
+            "interceptions": null,
+            "tackles": null,
+            "recoveries": null
+        },
+        "discipline": {
+            "yellow_cards": 3,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 644017,
+        "name": "Almoez Ali",
+        "position": "Striker",
+        "nationality": "Qatar",
+        "club": "Al-Duhail SC",
+        "league": "Qatar Stars League",
+        "appearances": {
+            "matches_played": 4,
+            "started": 1,
+            "minutes_played": 168
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": null,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": null,
+            "shots_on_target": null,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": null,
+            "blocks": null,
+            "interceptions": null,
+            "tackles": null,
+            "recoveries": null
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1053987,
+        "name": "Yusuf Abdurisag",
+        "position": "Right Winger",
+        "nationality": "Qatar",
+        "club": "Al-Wakrah",
+        "league": "Qatar Stars League",
+        "appearances": {
+            "matches_played": 18,
+            "started": 11,
+            "minutes_played": 1029
+        },
+        "core_stats": {
+            "goals": 4,
+            "assists": 2,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": null,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": null,
+            "shots_on_target": null,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": null,
+            "blocks": null,
+            "interceptions": null,
+            "tackles": null,
+            "recoveries": null
+        },
+        "discipline": {
+            "yellow_cards": 3,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 930068,
+        "name": "Ahmed Alaaeldin",
+        "position": "Center Back",
+        "nationality": "Qatar",
+        "club": "Tala'ea El Gaish",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 28,
+            "started": 26,
+            "minutes_played": 2362
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 1,
+            "xg": 1.2,
+            "xgot": 0.18,
+            "npxg": 1.2,
+            "xa": 0.73,
+            "xgi": 1.93,
+            "clean_sheets": 12,
+            "goals_conceded": 26,
+            "xgc": 26.54
+        },
+        "detailed_actions": {
+            "shots": 12,
+            "shots_on_target": 2,
+            "chances_created": 12,
+            "big_chances_created": 1,
+            "clearances": 116,
+            "blocks": 14,
+            "interceptions": 30,
+            "tackles": 33,
+            "recoveries": 84
+        },
+        "discipline": {
+            "yellow_cards": 6,
+            "red_cards": 0
+        }
+    }
+]

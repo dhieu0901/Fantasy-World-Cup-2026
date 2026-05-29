@@ -1,0 +1,872 @@
+[
+    {
+        "id": 103468,
+        "name": "Johny Placide",
+        "position": "Keeper",
+        "nationality": "Haiti",
+        "club": "SC Bastia",
+        "league": "Ligue 2",
+        "appearances": {
+            "matches_played": 23,
+            "started": 0,
+            "minutes_played": 2070
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 8,
+            "goals_conceded": 24,
+            "xgc": null
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 0
+        },
+        "goalkeeping_metrics": {
+            "penalties_conceded": 4,
+            "penalties_saved": 2,
+            "saves": 50,
+            "goal_prevented": 3.55
+        }
+    },
+    {
+        "id": 1209244,
+        "name": "Alexandre Pierre",
+        "position": "Keeper",
+        "nationality": "Haiti",
+        "club": "Sochaux",
+        "league": "National",
+        "appearances": {
+            "matches_played": 26,
+            "started": 0,
+            "minutes_played": 2295
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": null,
+            "xgc": null
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 0
+        },
+        "goalkeeping_metrics": {
+            "penalties_conceded": null,
+            "penalties_saved": null,
+            "saves": null,
+            "goal_prevented": null
+        }
+    },
+    {
+        "id": 634110,
+        "name": "Carlens Arcus",
+        "position": "Right Back",
+        "nationality": "Haiti",
+        "club": "Angers",
+        "league": "Ligue 1",
+        "appearances": {
+            "matches_played": 26,
+            "started": 24,
+            "minutes_played": 2044
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 3,
+            "xg": 0.29,
+            "xgot": 0.01,
+            "npxg": 0.29,
+            "xa": 1.5,
+            "xgi": 1.79,
+            "clean_sheets": 7,
+            "goals_conceded": 27,
+            "xgc": 34.46
+        },
+        "detailed_actions": {
+            "shots": 9,
+            "shots_on_target": 1,
+            "chances_created": 16,
+            "big_chances_created": 3,
+            "clearances": 66,
+            "blocks": 3,
+            "interceptions": 31,
+            "tackles": 37,
+            "recoveries": 93
+        },
+        "discipline": {
+            "yellow_cards": 7,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1394254,
+        "name": "Wilguens Paugain",
+        "position": "Right Wing-Back",
+        "nationality": "Haiti",
+        "club": "Zulte Waregem",
+        "league": "Belgian Pro League",
+        "appearances": {
+            "matches_played": 24,
+            "started": 15,
+            "minutes_played": 1281
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 0,
+            "xg": 0.5,
+            "xgot": 0.81,
+            "npxg": 0.5,
+            "xa": 0.84,
+            "xgi": 1.34,
+            "clean_sheets": 2,
+            "goals_conceded": 21,
+            "xgc": 22.34
+        },
+        "detailed_actions": {
+            "shots": 6,
+            "shots_on_target": 1,
+            "chances_created": 3,
+            "big_chances_created": null,
+            "clearances": 40,
+            "blocks": 3,
+            "interceptions": 28,
+            "tackles": 33,
+            "recoveries": 41
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 532700,
+        "name": "Ricardo Adé",
+        "position": "Center Back",
+        "nationality": "Haiti",
+        "club": "LDU de Quito",
+        "league": "Serie A",
+        "appearances": {
+            "matches_played": 11,
+            "started": 10,
+            "minutes_played": 840
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 2,
+            "goals_conceded": 9,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": 3,
+            "shots_on_target": 2,
+            "chances_created": 2,
+            "big_chances_created": null,
+            "clearances": 52,
+            "blocks": 3,
+            "interceptions": 12,
+            "tackles": 10,
+            "recoveries": 38
+        },
+        "discipline": {
+            "yellow_cards": 3,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 769168,
+        "name": "Jean Kévin Duverne",
+        "position": "Center Back",
+        "nationality": "Haiti",
+        "club": "Gent",
+        "league": "Belgian Pro League",
+        "appearances": {
+            "matches_played": 22,
+            "started": 12,
+            "minutes_played": 1155
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 1,
+            "xg": 1.66,
+            "xgot": 1.63,
+            "npxg": 1.66,
+            "xa": 0.88,
+            "xgi": 2.54,
+            "clean_sheets": 2,
+            "goals_conceded": 21,
+            "xgc": 21.03
+        },
+        "detailed_actions": {
+            "shots": 4,
+            "shots_on_target": 3,
+            "chances_created": 4,
+            "big_chances_created": 1,
+            "clearances": 76,
+            "blocks": 5,
+            "interceptions": 10,
+            "tackles": 25,
+            "recoveries": 39
+        },
+        "discipline": {
+            "yellow_cards": 5,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 822716,
+        "name": "Hannes Delcroix",
+        "position": "Center Back",
+        "nationality": "Haiti",
+        "club": "Lugano",
+        "league": "Super League",
+        "appearances": {
+            "matches_played": 14,
+            "started": 14,
+            "minutes_played": 1155
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": 8,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": 1,
+            "shots_on_target": null,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": 8,
+            "blocks": 1,
+            "interceptions": null,
+            "tackles": 1,
+            "recoveries": 5
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1807873,
+        "name": "Keeto Thermoncy",
+        "position": "defender",
+        "nationality": "Haiti",
+        "club": "Young Boys II",
+        "league": null,
+        "appearances": {
+            "matches_played": 0,
+            "started": 0,
+            "minutes_played": 0
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": null,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": null,
+            "shots_on_target": null,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": null,
+            "blocks": null,
+            "interceptions": null,
+            "tackles": null,
+            "recoveries": null
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1181438,
+        "name": "Martin Expérience",
+        "position": "Left Wing-Back",
+        "nationality": "Haiti",
+        "club": "Nancy",
+        "league": "Ligue 2",
+        "appearances": {
+            "matches_played": 20,
+            "started": 13,
+            "minutes_played": 1272
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 1,
+            "xg": 0.41,
+            "xgot": 0.37,
+            "npxg": 0.41,
+            "xa": 0.96,
+            "xgi": 1.37,
+            "clean_sheets": 3,
+            "goals_conceded": 21,
+            "xgc": 22.68
+        },
+        "detailed_actions": {
+            "shots": 12,
+            "shots_on_target": 3,
+            "chances_created": 11,
+            "big_chances_created": 1,
+            "clearances": 30,
+            "blocks": 1,
+            "interceptions": 12,
+            "tackles": 28,
+            "recoveries": 63
+        },
+        "discipline": {
+            "yellow_cards": 4,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 649744,
+        "name": "Duke Lacroix",
+        "position": "Left Back",
+        "nationality": "Haiti",
+        "club": "Colorado Springs Switchbacks FC",
+        "league": "USL Championship",
+        "appearances": {
+            "matches_played": 1,
+            "started": 0,
+            "minutes_played": 4
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": null,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": null,
+            "shots_on_target": null,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": null,
+            "blocks": null,
+            "interceptions": null,
+            "tackles": null,
+            "recoveries": null
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1199382,
+        "name": "Josué Casimir",
+        "position": "Right Midfielder",
+        "nationality": "Haiti",
+        "club": "Auxerre",
+        "league": "Ligue 1",
+        "appearances": {
+            "matches_played": 31,
+            "started": 16,
+            "minutes_played": 1521
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 0,
+            "xg": 2.85,
+            "xgot": 1.98,
+            "npxg": 2.06,
+            "xa": 1.44,
+            "xgi": 4.29,
+            "clean_sheets": null,
+            "goals_conceded": 25,
+            "xgc": 22.64
+        },
+        "detailed_actions": {
+            "shots": 22,
+            "shots_on_target": 12,
+            "chances_created": 10,
+            "big_chances_created": 1,
+            "clearances": 12,
+            "blocks": null,
+            "interceptions": 11,
+            "tackles": 31,
+            "recoveries": 67
+        },
+        "discipline": {
+            "yellow_cards": 4,
+            "red_cards": 1
+        }
+    },
+    {
+        "id": 899318,
+        "name": "Leverton Pierre",
+        "position": "Central Midfielder",
+        "nationality": "Haiti",
+        "club": "Vizela",
+        "league": "Liga Portugal 2",
+        "appearances": {
+            "matches_played": 11,
+            "started": 0,
+            "minutes_played": 181
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": null,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": null,
+            "shots_on_target": null,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": null,
+            "blocks": null,
+            "interceptions": null,
+            "tackles": null,
+            "recoveries": null
+        },
+        "discipline": {
+            "yellow_cards": 3,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1356595,
+        "name": "Dominique Simon",
+        "position": "Central Midfielder",
+        "nationality": "Haiti",
+        "club": "Tatran Presov",
+        "league": "1. Liga",
+        "appearances": {
+            "matches_played": 20,
+            "started": 11,
+            "minutes_played": 979
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 1,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": null,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": null,
+            "shots_on_target": null,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": null,
+            "blocks": null,
+            "interceptions": null,
+            "tackles": null,
+            "recoveries": null
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1329461,
+        "name": "Danley Jean-Jacques",
+        "position": "Central Midfielder",
+        "nationality": "Haiti",
+        "club": "Philadelphia Union",
+        "league": "Major League Soccer",
+        "appearances": {
+            "matches_played": 14,
+            "started": 13,
+            "minutes_played": 1151
+        },
+        "core_stats": {
+            "goals": 2,
+            "assists": 0,
+            "xg": 1.34,
+            "xgot": 0.71,
+            "npxg": 1.34,
+            "xa": 1.12,
+            "xgi": 2.46,
+            "clean_sheets": 1,
+            "goals_conceded": 29,
+            "xgc": 22.3
+        },
+        "detailed_actions": {
+            "shots": 14,
+            "shots_on_target": 2,
+            "chances_created": 7,
+            "big_chances_created": 1,
+            "clearances": 17,
+            "blocks": 2,
+            "interceptions": 19,
+            "tackles": 19,
+            "recoveries": 80
+        },
+        "discipline": {
+            "yellow_cards": 5,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 769166,
+        "name": "Jean-Ricner Bellegarde",
+        "position": "Central Midfielder",
+        "nationality": "Haiti",
+        "club": "Wolverhampton Wanderers",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 26,
+            "started": 15,
+            "minutes_played": 1251
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 1,
+            "xg": 0.99,
+            "xgot": 1.8,
+            "npxg": 0.99,
+            "xa": 1.12,
+            "xgi": 2.11,
+            "clean_sheets": null,
+            "goals_conceded": 30,
+            "xgc": 23.28
+        },
+        "detailed_actions": {
+            "shots": 21,
+            "shots_on_target": 7,
+            "chances_created": 13,
+            "big_chances_created": 2,
+            "clearances": 20,
+            "blocks": 3,
+            "interceptions": 10,
+            "tackles": 28,
+            "recoveries": 44
+        },
+        "discipline": {
+            "yellow_cards": 5,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 525445,
+        "name": "Duckens Nazon",
+        "position": "Striker",
+        "nationality": "Haiti",
+        "club": "Esteghlal",
+        "league": null,
+        "appearances": {
+            "matches_played": 0,
+            "started": 0,
+            "minutes_played": 0
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": 8,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": 4,
+            "shots_on_target": 3,
+            "chances_created": 3,
+            "big_chances_created": null,
+            "clearances": 1,
+            "blocks": null,
+            "interceptions": 1,
+            "tackles": 2,
+            "recoveries": 4
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 833641,
+        "name": "Frantzdy Pierrot",
+        "position": "Striker",
+        "nationality": "Haiti",
+        "club": "Rizespor",
+        "league": "Super Lig",
+        "appearances": {
+            "matches_played": 10,
+            "started": 0,
+            "minutes_played": 115
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": null,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": null,
+            "shots_on_target": null,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": null,
+            "blocks": null,
+            "interceptions": null,
+            "tackles": null,
+            "recoveries": null
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1079194,
+        "name": "Deedson Louicius",
+        "position": "Right Winger",
+        "nationality": "Haiti",
+        "club": "FC Dallas",
+        "league": "Major League Soccer",
+        "appearances": {
+            "matches_played": 7,
+            "started": 3,
+            "minutes_played": 253
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 0,
+            "xg": 0.64,
+            "xgot": 0.58,
+            "npxg": 0.64,
+            "xa": 0.8,
+            "xgi": 1.44,
+            "clean_sheets": null,
+            "goals_conceded": 5,
+            "xgc": 3.38
+        },
+        "detailed_actions": {
+            "shots": 6,
+            "shots_on_target": 1,
+            "chances_created": 3,
+            "big_chances_created": 2,
+            "clearances": 11,
+            "blocks": null,
+            "interceptions": 5,
+            "tackles": 2,
+            "recoveries": 11
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1200016,
+        "name": "Ruben Providence",
+        "position": "Left Winger",
+        "nationality": "Haiti",
+        "club": "Almere City FC",
+        "league": "Eerste Divisie",
+        "appearances": {
+            "matches_played": 25,
+            "started": 10,
+            "minutes_played": 1028
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 2,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 1,
+            "goals_conceded": 25,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": 18,
+            "shots_on_target": 6,
+            "chances_created": 18,
+            "big_chances_created": 2,
+            "clearances": 10,
+            "blocks": 2,
+            "interceptions": 3,
+            "tackles": 12,
+            "recoveries": 44
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 1
+        }
+    },
+    {
+        "id": 759569,
+        "name": "Yassin Fortuné",
+        "position": "Striker",
+        "nationality": "Haiti",
+        "club": "Vizela",
+        "league": "Liga Portugal 2",
+        "appearances": {
+            "matches_played": 23,
+            "started": 14,
+            "minutes_played": 1253
+        },
+        "core_stats": {
+            "goals": 3,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": null,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": null,
+            "shots_on_target": null,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": null,
+            "blocks": null,
+            "interceptions": null,
+            "tackles": null,
+            "recoveries": null
+        },
+        "discipline": {
+            "yellow_cards": 5,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 887703,
+        "name": "Wilson Isidor",
+        "position": "Striker",
+        "nationality": "Haiti",
+        "club": "Sunderland",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 32,
+            "started": 11,
+            "minutes_played": 1158
+        },
+        "core_stats": {
+            "goals": 6,
+            "assists": 0,
+            "xg": 4.75,
+            "xgot": 5.21,
+            "npxg": 4.75,
+            "xa": 0.39,
+            "xgi": 5.14,
+            "clean_sheets": 1,
+            "goals_conceded": 17,
+            "xgc": 20.06
+        },
+        "detailed_actions": {
+            "shots": 43,
+            "shots_on_target": 17,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": 15,
+            "blocks": 1,
+            "interceptions": 1,
+            "tackles": 11,
+            "recoveries": 23
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1242314,
+        "name": "Lenny Joseph",
+        "position": "Striker",
+        "nationality": "Haiti",
+        "club": "Ferencvaros",
+        "league": "NB I",
+        "appearances": {
+            "matches_played": 25,
+            "started": 12,
+            "minutes_played": 1209
+        },
+        "core_stats": {
+            "goals": 7,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": null,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": null,
+            "shots_on_target": null,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": null,
+            "blocks": null,
+            "interceptions": null,
+            "tackles": null,
+            "recoveries": null
+        },
+        "discipline": {
+            "yellow_cards": 3,
+            "red_cards": 0
+        }
+    }
+]

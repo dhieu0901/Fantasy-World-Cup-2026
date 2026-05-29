@@ -1,0 +1,667 @@
+[
+    {
+        "id": 463967,
+        "name": "Jindřich Staněk",
+        "position": "Keeper",
+        "nationality": "Czech Republic",
+        "club": "Slavia Prague",
+        "league": "1. Liga",
+        "appearances": {
+            "matches_played": 19,
+            "started": 0,
+            "minutes_played": 1710
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 6,
+            "goals_conceded": 20,
+            "xgc": null
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        },
+        "goalkeeping_metrics": {
+            "penalties_conceded": 1,
+            "penalties_saved": 1,
+            "saves": 41,
+            "goal_prevented": null
+        }
+    },
+    {
+        "id": 1077903,
+        "name": "Matěj Kovář",
+        "position": "Keeper",
+        "nationality": "Czech Republic",
+        "club": "PSV Eindhoven",
+        "league": "Eredivisie",
+        "appearances": {
+            "matches_played": 31,
+            "started": 0,
+            "minutes_played": 2790
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 7,
+            "goals_conceded": 41,
+            "xgc": null
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        "goalkeeping_metrics": {
+            "penalties_conceded": 3,
+            "penalties_saved": 0,
+            "saves": 85,
+            "goal_prevented": -2.77
+        }
+    },
+    {
+        "id": 1068920,
+        "name": "Vítězslav Jaroš",
+        "position": "Keeper",
+        "nationality": "Czech Republic",
+        "club": "Ajax",
+        "league": "Eredivisie",
+        "appearances": {
+            "matches_played": 19,
+            "started": 0,
+            "minutes_played": 1710
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 5,
+            "goals_conceded": 23,
+            "xgc": null
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        },
+        "goalkeeping_metrics": {
+            "penalties_conceded": 3,
+            "penalties_saved": 0,
+            "saves": 62,
+            "goal_prevented": 1.68
+        }
+    },
+    {
+        "id": 307317,
+        "name": "Vladimír Coufal",
+        "position": "Right Back",
+        "nationality": "Czech Republic",
+        "club": "Hoffenheim",
+        "league": "Bundesliga",
+        "appearances": {
+            "matches_played": 34,
+            "started": 34,
+            "minutes_played": 3017
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 8,
+            "xg": 0.88,
+            "xgot": 1.04,
+            "npxg": 0.88,
+            "xa": 8.99,
+            "xgi": 9.87,
+            "clean_sheets": 7,
+            "goals_conceded": 50,
+            "xgc": 48.01
+        },
+        "detailed_actions": {
+            "shots": 25,
+            "shots_on_target": 6,
+            "chances_created": 59,
+            "big_chances_created": 16,
+            "clearances": 108,
+            "blocks": 16,
+            "interceptions": 37,
+            "tackles": 60,
+            "recoveries": 176
+        },
+        "discipline": {
+            "yellow_cards": 4,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 306168,
+        "name": "Tomáš Holeš",
+        "position": "Center Back",
+        "nationality": "Czech Republic",
+        "club": "Slavia Prague",
+        "league": "1. Liga",
+        "appearances": {
+            "matches_played": 25,
+            "started": 23,
+            "minutes_played": 2092
+        },
+        "core_stats": {
+            "goals": 2,
+            "assists": 2,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 9,
+            "goals_conceded": 19,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": 17,
+            "shots_on_target": 5,
+            "chances_created": 8,
+            "big_chances_created": 2,
+            "clearances": 106,
+            "blocks": 12,
+            "interceptions": 40,
+            "tackles": 37,
+            "recoveries": 118
+        },
+        "discipline": {
+            "yellow_cards": 5,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 798029,
+        "name": "Ladislav Krejčí",
+        "position": "Center Back",
+        "nationality": "Czech Republic",
+        "club": "Wolverhampton Wanderers",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 28,
+            "started": 27,
+            "minutes_played": 2361
+        },
+        "core_stats": {
+            "goals": 2,
+            "assists": 1,
+            "xg": 2.22,
+            "xgot": 2.8,
+            "npxg": 2.22,
+            "xa": 1.49,
+            "xgi": 3.71,
+            "clean_sheets": 3,
+            "goals_conceded": 45,
+            "xgc": 40.96
+        },
+        "detailed_actions": {
+            "shots": 21,
+            "shots_on_target": 10,
+            "chances_created": 9,
+            "big_chances_created": 2,
+            "clearances": 117,
+            "blocks": 15,
+            "interceptions": 32,
+            "tackles": 32,
+            "recoveries": 79
+        },
+        "discipline": {
+            "yellow_cards": 3,
+            "red_cards": 1
+        }
+    },
+    {
+        "id": 1085401,
+        "name": "David Zima",
+        "position": "Center Back",
+        "nationality": "Czech Republic",
+        "club": "Slavia Prague",
+        "league": "1. Liga",
+        "appearances": {
+            "matches_played": 24,
+            "started": 22,
+            "minutes_played": 1860
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 3,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 8,
+            "goals_conceded": 15,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": 14,
+            "shots_on_target": 3,
+            "chances_created": 10,
+            "big_chances_created": 2,
+            "clearances": 97,
+            "blocks": 7,
+            "interceptions": 34,
+            "tackles": 24,
+            "recoveries": 65
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1247323,
+        "name": "David Jurásek",
+        "position": "Left Back",
+        "nationality": "Czech Republic",
+        "club": "Slavia Prague",
+        "league": "1. Liga",
+        "appearances": {
+            "matches_played": 16,
+            "started": 15,
+            "minutes_played": 1346
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 6,
+            "xg": 0.2,
+            "xgot": null,
+            "npxg": 0.2,
+            "xa": 2.09,
+            "xgi": 2.29,
+            "clean_sheets": 2,
+            "goals_conceded": 10,
+            "xgc": 7.36
+        },
+        "detailed_actions": {
+            "shots": 1,
+            "shots_on_target": null,
+            "chances_created": 8,
+            "big_chances_created": 4,
+            "clearances": 14,
+            "blocks": 1,
+            "interceptions": 6,
+            "tackles": 13,
+            "recoveries": 31
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 524437,
+        "name": "Tomáš Souček",
+        "position": "Defensive Midfielder",
+        "nationality": "Czech Republic",
+        "club": "West Ham United",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 35,
+            "started": 24,
+            "minutes_played": 2198
+        },
+        "core_stats": {
+            "goals": 5,
+            "assists": 0,
+            "xg": 5.68,
+            "xgot": 6.97,
+            "npxg": 5.68,
+            "xa": 0.53,
+            "xgi": 6.21,
+            "clean_sheets": 6,
+            "goals_conceded": 41,
+            "xgc": 38.75
+        },
+        "detailed_actions": {
+            "shots": 26,
+            "shots_on_target": 14,
+            "chances_created": 11,
+            "big_chances_created": 1,
+            "clearances": 83,
+            "blocks": 15,
+            "interceptions": 16,
+            "tackles": 43,
+            "recoveries": 66
+        },
+        "discipline": {
+            "yellow_cards": 3,
+            "red_cards": 1
+        }
+    },
+    {
+        "id": 451966,
+        "name": "Antonín Barák",
+        "position": "Central Midfielder",
+        "nationality": "Czech Republic",
+        "club": "Sampdoria",
+        "league": "Serie B",
+        "appearances": {
+            "matches_played": 28,
+            "started": 10,
+            "minutes_played": 1054
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 1,
+            "xg": 1.89,
+            "xgot": 2.96,
+            "npxg": 1.1,
+            "xa": 1.05,
+            "xgi": 2.94,
+            "clean_sheets": null,
+            "goals_conceded": 19,
+            "xgc": 14.22
+        },
+        "detailed_actions": {
+            "shots": 16,
+            "shots_on_target": 5,
+            "chances_created": 18,
+            "big_chances_created": 2,
+            "clearances": 13,
+            "blocks": 2,
+            "interceptions": 8,
+            "tackles": 14,
+            "recoveries": 60
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 791682,
+        "name": "Lukáš Provod",
+        "position": "Attacking Midfielder",
+        "nationality": "Czech Republic",
+        "club": "Slavia Prague",
+        "league": "1. Liga",
+        "appearances": {
+            "matches_played": 30,
+            "started": 28,
+            "minutes_played": 2495
+        },
+        "core_stats": {
+            "goals": 7,
+            "assists": 10,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 6,
+            "goals_conceded": 24,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": 78,
+            "shots_on_target": 27,
+            "chances_created": 56,
+            "big_chances_created": 15,
+            "clearances": 39,
+            "blocks": 3,
+            "interceptions": 4,
+            "tackles": 30,
+            "recoveries": 122
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 806551,
+        "name": "Michal Sadílek",
+        "position": "Central Midfielder",
+        "nationality": "Czech Republic",
+        "club": "Slavia Prague",
+        "league": "1. Liga",
+        "appearances": {
+            "matches_played": 29,
+            "started": 23,
+            "minutes_played": 2093
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 4,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 8,
+            "goals_conceded": 20,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": 29,
+            "shots_on_target": 5,
+            "chances_created": 64,
+            "big_chances_created": 9,
+            "clearances": 29,
+            "blocks": 7,
+            "interceptions": 15,
+            "tackles": 34,
+            "recoveries": 79
+        },
+        "discipline": {
+            "yellow_cards": 6,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1037539,
+        "name": "Pavel Šulc",
+        "position": "Attacking Midfielder",
+        "nationality": "Czech Republic",
+        "club": "Lyon",
+        "league": "Ligue 1",
+        "appearances": {
+            "matches_played": 27,
+            "started": 17,
+            "minutes_played": 1568
+        },
+        "core_stats": {
+            "goals": 11,
+            "assists": 3,
+            "xg": 9.1,
+            "xgot": 10.47,
+            "npxg": 9.1,
+            "xa": 1.91,
+            "xgi": 11.01,
+            "clean_sheets": 3,
+            "goals_conceded": 22,
+            "xgc": 22.12
+        },
+        "detailed_actions": {
+            "shots": 44,
+            "shots_on_target": 18,
+            "chances_created": 22,
+            "big_chances_created": 5,
+            "clearances": 11,
+            "blocks": null,
+            "interceptions": 7,
+            "tackles": 24,
+            "recoveries": 42
+        },
+        "discipline": {
+            "yellow_cards": 3,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 540097,
+        "name": "Patrik Schick",
+        "position": "Striker",
+        "nationality": "Czech Republic",
+        "club": "Bayer Leverkusen",
+        "league": "Bundesliga",
+        "appearances": {
+            "matches_played": 28,
+            "started": 23,
+            "minutes_played": 1995
+        },
+        "core_stats": {
+            "goals": 16,
+            "assists": 3,
+            "xg": 17.18,
+            "xgot": 14.97,
+            "npxg": 13.24,
+            "xa": 2.78,
+            "xgi": 19.96,
+            "clean_sheets": 1,
+            "goals_conceded": 29,
+            "xgc": 30.02
+        },
+        "detailed_actions": {
+            "shots": 72,
+            "shots_on_target": 34,
+            "chances_created": 14,
+            "big_chances_created": 5,
+            "clearances": 21,
+            "blocks": 2,
+            "interceptions": 3,
+            "tackles": 9,
+            "recoveries": 23
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 969870,
+        "name": "Adam Hložek",
+        "position": "forward",
+        "nationality": "Czech Republic",
+        "club": "Hoffenheim",
+        "league": "Bundesliga",
+        "appearances": {
+            "matches_played": 5,
+            "started": 0,
+            "minutes_played": 36
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": null,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": null,
+            "shots_on_target": null,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": null,
+            "blocks": null,
+            "interceptions": null,
+            "tackles": null,
+            "recoveries": null
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 690332,
+        "name": "Jan Kuchta",
+        "position": "Striker",
+        "nationality": "Czech Republic",
+        "club": "Sparta Prague",
+        "league": "1. Liga",
+        "appearances": {
+            "matches_played": 30,
+            "started": 17,
+            "minutes_played": 1683
+        },
+        "core_stats": {
+            "goals": 12,
+            "assists": 6,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 2,
+            "goals_conceded": 23,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": 59,
+            "shots_on_target": 22,
+            "chances_created": 24,
+            "big_chances_created": 7,
+            "clearances": 8,
+            "blocks": 3,
+            "interceptions": 1,
+            "tackles": 2,
+            "recoveries": 35
+        },
+        "discipline": {
+            "yellow_cards": 6,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 988769,
+        "name": "Mojmír Chytil",
+        "position": "Striker",
+        "nationality": "Czech Republic",
+        "club": "Slavia Prague",
+        "league": "1. Liga",
+        "appearances": {
+            "matches_played": 29,
+            "started": 15,
+            "minutes_played": 1500
+        },
+        "core_stats": {
+            "goals": 13,
+            "assists": 1,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 3,
+            "goals_conceded": 13,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": 65,
+            "shots_on_target": 29,
+            "chances_created": 28,
+            "big_chances_created": 6,
+            "clearances": 10,
+            "blocks": 3,
+            "interceptions": 3,
+            "tackles": 4,
+            "recoveries": 33
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    }
+]

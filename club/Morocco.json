@@ -1,0 +1,917 @@
+[
+    {
+        "id": 340020,
+        "name": "Yassine Bounou",
+        "position": "Keeper",
+        "nationality": "Morocco",
+        "club": "Al Hilal",
+        "league": "Saudi Pro League",
+        "appearances": {
+            "matches_played": 26,
+            "started": 0,
+            "minutes_played": 2340
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 14,
+            "goals_conceded": 20,
+            "xgc": null
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        },
+        "goalkeeping_metrics": {
+            "penalties_conceded": 2,
+            "penalties_saved": 0,
+            "saves": 46,
+            "goal_prevented": -3.25
+        }
+    },
+    {
+        "id": 775539,
+        "name": "Noussair Mazraoui",
+        "position": "Right Back",
+        "nationality": "Morocco",
+        "club": "Manchester United",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 20,
+            "started": 11,
+            "minutes_played": 984
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": 0.19,
+            "xgot": null,
+            "npxg": 0.19,
+            "xa": 0.36,
+            "xgi": 0.55,
+            "clean_sheets": 2,
+            "goals_conceded": 10,
+            "xgc": 13.12
+        },
+        "detailed_actions": {
+            "shots": 5,
+            "shots_on_target": null,
+            "chances_created": 6,
+            "big_chances_created": null,
+            "clearances": 54,
+            "blocks": 2,
+            "interceptions": 14,
+            "tackles": 28,
+            "recoveries": 46
+        },
+        "discipline": {
+            "yellow_cards": 3,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1050838,
+        "name": "Anass Salah-Eddine",
+        "position": "Left Back",
+        "nationality": "Morocco",
+        "club": "PSV Eindhoven",
+        "league": "Eredivisie",
+        "appearances": {
+            "matches_played": 17,
+            "started": 12,
+            "minutes_played": 1092
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": 0.59,
+            "xgot": 0.15,
+            "npxg": 0.59,
+            "xa": 0.97,
+            "xgi": 1.56,
+            "clean_sheets": 3,
+            "goals_conceded": 14,
+            "xgc": 16.66
+        },
+        "detailed_actions": {
+            "shots": 8,
+            "shots_on_target": 2,
+            "chances_created": 10,
+            "big_chances_created": null,
+            "clearances": 20,
+            "blocks": 3,
+            "interceptions": 10,
+            "tackles": 28,
+            "recoveries": 69
+        },
+        "discipline": {
+            "yellow_cards": 3,
+            "red_cards": 1
+        }
+    },
+    {
+        "id": 909908,
+        "name": "Youssef Belammari",
+        "position": "Left Back",
+        "nationality": "Morocco",
+        "club": "Al Ahly SC",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 9,
+            "started": 8,
+            "minutes_played": 715
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": 0.22,
+            "xgot": 0.01,
+            "npxg": 0.22,
+            "xa": 1.13,
+            "xgi": 1.35,
+            "clean_sheets": 2,
+            "goals_conceded": 6,
+            "xgc": 5.09
+        },
+        "detailed_actions": {
+            "shots": 4,
+            "shots_on_target": 1,
+            "chances_created": 6,
+            "big_chances_created": 1,
+            "clearances": 17,
+            "blocks": 4,
+            "interceptions": 3,
+            "tackles": 13,
+            "recoveries": 28
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 770881,
+        "name": "Achraf Hakimi",
+        "position": "Right Back",
+        "nationality": "Morocco",
+        "club": "Paris Saint-Germain",
+        "league": "Ligue 1",
+        "appearances": {
+            "matches_played": 18,
+            "started": 15,
+            "minutes_played": 1374
+        },
+        "core_stats": {
+            "goals": 2,
+            "assists": 2,
+            "xg": 2.42,
+            "xgot": 3.31,
+            "npxg": 2.42,
+            "xa": 2.29,
+            "xgi": 4.71,
+            "clean_sheets": 6,
+            "goals_conceded": 15,
+            "xgc": 14.04
+        },
+        "detailed_actions": {
+            "shots": 27,
+            "shots_on_target": 9,
+            "chances_created": 21,
+            "big_chances_created": 2,
+            "clearances": 12,
+            "blocks": 1,
+            "interceptions": 11,
+            "tackles": 18,
+            "recoveries": 70
+        },
+        "discipline": {
+            "yellow_cards": 3,
+            "red_cards": 1
+        }
+    },
+    {
+        "id": 1287871,
+        "name": "Zakaria El Ouahdi",
+        "position": "Right Back",
+        "nationality": "Morocco",
+        "club": "Genk",
+        "league": "Belgian Pro League",
+        "appearances": {
+            "matches_played": 34,
+            "started": 34,
+            "minutes_played": 2996
+        },
+        "core_stats": {
+            "goals": 8,
+            "assists": 4,
+            "xg": 4.96,
+            "xgot": 6.31,
+            "npxg": 4.96,
+            "xa": 4.37,
+            "xgi": 9.33,
+            "clean_sheets": 6,
+            "goals_conceded": 44,
+            "xgc": 38.6
+        },
+        "detailed_actions": {
+            "shots": 70,
+            "shots_on_target": 24,
+            "chances_created": 49,
+            "big_chances_created": 7,
+            "clearances": 96,
+            "blocks": 15,
+            "interceptions": 24,
+            "tackles": 42,
+            "recoveries": 162
+        },
+        "discipline": {
+            "yellow_cards": 4,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 617310,
+        "name": "Nayef Aguerd",
+        "position": "Center Back",
+        "nationality": "Morocco",
+        "club": "Marseille",
+        "league": "Ligue 1",
+        "appearances": {
+            "matches_played": 16,
+            "started": 16,
+            "minutes_played": 1399
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 0,
+            "xg": 0.1,
+            "xgot": null,
+            "npxg": 0.1,
+            "xa": 0.03,
+            "xgi": 0.13,
+            "clean_sheets": null,
+            "goals_conceded": 8,
+            "xgc": 3.5
+        },
+        "detailed_actions": {
+            "shots": 2,
+            "shots_on_target": null,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": 11,
+            "blocks": 2,
+            "interceptions": 1,
+            "tackles": 1,
+            "recoveries": 8
+        },
+        "discipline": {
+            "yellow_cards": 4,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1187506,
+        "name": "Chadi Riad",
+        "position": "Center Back",
+        "nationality": "Morocco",
+        "club": "Crystal Palace",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 9,
+            "started": 6,
+            "minutes_played": 554
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 1,
+            "xg": 0.33,
+            "xgot": 0.16,
+            "npxg": 0.33,
+            "xa": 0.13,
+            "xgi": 0.46,
+            "clean_sheets": null,
+            "goals_conceded": 8,
+            "xgc": 8.65
+        },
+        "detailed_actions": {
+            "shots": 4,
+            "shots_on_target": 2,
+            "chances_created": 1,
+            "big_chances_created": 1,
+            "clearances": 28,
+            "blocks": 3,
+            "interceptions": 6,
+            "tackles": 8,
+            "recoveries": 32
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1298186,
+        "name": "Redouane Halhal",
+        "position": "Center Back",
+        "nationality": "Morocco",
+        "club": "KV Mechelen",
+        "league": "Belgian Pro League",
+        "appearances": {
+            "matches_played": 33,
+            "started": 32,
+            "minutes_played": 2849
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 2,
+            "xg": 0.94,
+            "xgot": 1.02,
+            "npxg": 0.94,
+            "xa": 1.04,
+            "xgi": 1.98,
+            "clean_sheets": 5,
+            "goals_conceded": 49,
+            "xgc": 56.29
+        },
+        "detailed_actions": {
+            "shots": 12,
+            "shots_on_target": 4,
+            "chances_created": 7,
+            "big_chances_created": 1,
+            "clearances": 195,
+            "blocks": 22,
+            "interceptions": 41,
+            "tackles": 50,
+            "recoveries": 136
+        },
+        "discipline": {
+            "yellow_cards": 10,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 696443,
+        "name": "Issa Diop",
+        "position": "Center Back",
+        "nationality": "Morocco",
+        "club": "Fulham",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 13,
+            "started": 8,
+            "minutes_played": 814
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 0,
+            "xg": 0.8,
+            "xgot": 0.98,
+            "npxg": 0.8,
+            "xa": 0.05,
+            "xgi": 0.85,
+            "clean_sheets": null,
+            "goals_conceded": 13,
+            "xgc": 12.43
+        },
+        "detailed_actions": {
+            "shots": 2,
+            "shots_on_target": 1,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": 42,
+            "blocks": 7,
+            "interceptions": 6,
+            "tackles": 6,
+            "recoveries": 19
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1598170,
+        "name": "Samir El Mourabet",
+        "position": "Defensive Midfielder",
+        "nationality": "Morocco",
+        "club": "Strasbourg",
+        "league": "Ligue 1",
+        "appearances": {
+            "matches_played": 33,
+            "started": 25,
+            "minutes_played": 2135
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 2,
+            "xg": 0.33,
+            "xgot": 0.36,
+            "npxg": 0.33,
+            "xa": 2.39,
+            "xgi": 2.72,
+            "clean_sheets": 2,
+            "goals_conceded": 28,
+            "xgc": 31.88
+        },
+        "detailed_actions": {
+            "shots": 12,
+            "shots_on_target": 1,
+            "chances_created": 28,
+            "big_chances_created": 5,
+            "clearances": 22,
+            "blocks": 13,
+            "interceptions": 25,
+            "tackles": 79,
+            "recoveries": 133
+        },
+        "discipline": {
+            "yellow_cards": 4,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1561552,
+        "name": "Ayyoub Bouaddi",
+        "position": "Defensive Midfielder",
+        "nationality": "Morocco",
+        "club": "Lille",
+        "league": "Ligue 1",
+        "appearances": {
+            "matches_played": 30,
+            "started": 28,
+            "minutes_played": 2329
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 1,
+            "xg": 1.65,
+            "xgot": 0.83,
+            "npxg": 1.65,
+            "xa": 1.68,
+            "xgi": 3.33,
+            "clean_sheets": 7,
+            "goals_conceded": 26,
+            "xgc": 26.37
+        },
+        "detailed_actions": {
+            "shots": 16,
+            "shots_on_target": 5,
+            "chances_created": 21,
+            "big_chances_created": 3,
+            "clearances": 29,
+            "blocks": 7,
+            "interceptions": 27,
+            "tackles": 59,
+            "recoveries": 151
+        },
+        "discipline": {
+            "yellow_cards": 7,
+            "red_cards": 1
+        }
+    },
+    {
+        "id": 1274060,
+        "name": "Neil El Aynaoui",
+        "position": "Defensive Midfielder",
+        "nationality": "Morocco",
+        "club": "Roma",
+        "league": "Serie A",
+        "appearances": {
+            "matches_played": 25,
+            "started": 8,
+            "minutes_played": 991
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 2,
+            "xg": 1.08,
+            "xgot": 1.08,
+            "npxg": 1.08,
+            "xa": 0.95,
+            "xgi": 2.03,
+            "clean_sheets": 3,
+            "goals_conceded": 11,
+            "xgc": 13.17
+        },
+        "detailed_actions": {
+            "shots": 6,
+            "shots_on_target": 4,
+            "chances_created": 12,
+            "big_chances_created": 2,
+            "clearances": 15,
+            "blocks": 2,
+            "interceptions": 17,
+            "tackles": 20,
+            "recoveries": 53
+        },
+        "discipline": {
+            "yellow_cards": 5,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 593116,
+        "name": "Sofyan Amrabat",
+        "position": "Defensive Midfielder",
+        "nationality": "Morocco",
+        "club": "Real Betis",
+        "league": "LaLiga",
+        "appearances": {
+            "matches_played": 17,
+            "started": 14,
+            "minutes_played": 1296
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": 0.05,
+            "xgi": 0.05,
+            "clean_sheets": 1,
+            "goals_conceded": null,
+            "xgc": 0.61
+        },
+        "detailed_actions": {
+            "shots": 0,
+            "shots_on_target": null,
+            "chances_created": 2,
+            "big_chances_created": null,
+            "clearances": 3,
+            "blocks": 1,
+            "interceptions": 2,
+            "tackles": 1,
+            "recoveries": 3
+        },
+        "discipline": {
+            "yellow_cards": 4,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1073143,
+        "name": "Azzedine Ounahi",
+        "position": "Attacking Midfielder",
+        "nationality": "Morocco",
+        "club": "Girona",
+        "league": "LaLiga",
+        "appearances": {
+            "matches_played": 24,
+            "started": 20,
+            "minutes_played": 1766
+        },
+        "core_stats": {
+            "goals": 5,
+            "assists": 2,
+            "xg": 3.4,
+            "xgot": 6.04,
+            "npxg": 2.61,
+            "xa": 4.42,
+            "xgi": 7.82,
+            "clean_sheets": 1,
+            "goals_conceded": 23,
+            "xgc": 25.71
+        },
+        "detailed_actions": {
+            "shots": 51,
+            "shots_on_target": 19,
+            "chances_created": 35,
+            "big_chances_created": 11,
+            "clearances": 9,
+            "blocks": 1,
+            "interceptions": 16,
+            "tackles": 23,
+            "recoveries": 80
+        },
+        "discipline": {
+            "yellow_cards": 7,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1340895,
+        "name": "Bilal El Khannouss",
+        "position": "Attacking Midfielder",
+        "nationality": "Morocco",
+        "club": "VfB Stuttgart",
+        "league": "Bundesliga",
+        "appearances": {
+            "matches_played": 25,
+            "started": 19,
+            "minutes_played": 1634
+        },
+        "core_stats": {
+            "goals": 4,
+            "assists": 5,
+            "xg": 0.59,
+            "xgot": 0.43,
+            "npxg": 0.59,
+            "xa": 0.46,
+            "xgi": 1.05,
+            "clean_sheets": null,
+            "goals_conceded": 2,
+            "xgc": 1.18
+        },
+        "detailed_actions": {
+            "shots": 5,
+            "shots_on_target": 1,
+            "chances_created": 6,
+            "big_chances_created": 3,
+            "clearances": null,
+            "blocks": null,
+            "interceptions": 3,
+            "tackles": 2,
+            "recoveries": 8
+        },
+        "discipline": {
+            "yellow_cards": 6,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1180288,
+        "name": "Ismael Saibari",
+        "position": "Attacking Midfielder",
+        "nationality": "Morocco",
+        "club": "PSV Eindhoven",
+        "league": "Eredivisie",
+        "appearances": {
+            "matches_played": 27,
+            "started": 26,
+            "minutes_played": 2145
+        },
+        "core_stats": {
+            "goals": 15,
+            "assists": 8,
+            "xg": 12.95,
+            "xgot": 14.53,
+            "npxg": 12.16,
+            "xa": 7.41,
+            "xgi": 20.36,
+            "clean_sheets": 2,
+            "goals_conceded": 32,
+            "xgc": 29.37
+        },
+        "detailed_actions": {
+            "shots": 91,
+            "shots_on_target": 37,
+            "chances_created": 52,
+            "big_chances_created": 11,
+            "clearances": 8,
+            "blocks": 2,
+            "interceptions": 9,
+            "tackles": 33,
+            "recoveries": 94
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1368654,
+        "name": "Chemsdine Talbi",
+        "position": "Right Winger",
+        "nationality": "Morocco",
+        "club": "Sunderland",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 28,
+            "started": 16,
+            "minutes_played": 1561
+        },
+        "core_stats": {
+            "goals": 4,
+            "assists": 1,
+            "xg": 2.13,
+            "xgot": 3.83,
+            "npxg": 2.13,
+            "xa": 1.19,
+            "xgi": 3.32,
+            "clean_sheets": 2,
+            "goals_conceded": 14,
+            "xgc": 22.49
+        },
+        "detailed_actions": {
+            "shots": 25,
+            "shots_on_target": 10,
+            "chances_created": 12,
+            "big_chances_created": null,
+            "clearances": 17,
+            "blocks": 1,
+            "interceptions": 2,
+            "tackles": 11,
+            "recoveries": 61
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 988749,
+        "name": "Soufiane Rahimi",
+        "position": "Striker",
+        "nationality": "Morocco",
+        "club": "Al-Ain",
+        "league": "Pro League",
+        "appearances": {
+            "matches_played": 16,
+            "started": 16,
+            "minutes_played": 1345
+        },
+        "core_stats": {
+            "goals": 7,
+            "assists": 5,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 4,
+            "goals_conceded": 9,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": 56,
+            "shots_on_target": 20,
+            "chances_created": 35,
+            "big_chances_created": 7,
+            "clearances": 12,
+            "blocks": null,
+            "interceptions": 8,
+            "tackles": 8,
+            "recoveries": 30
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 884382,
+        "name": "Ayoub El Kaabi",
+        "position": "Striker",
+        "nationality": "Morocco",
+        "club": "Olympiacos",
+        "league": "Super League",
+        "appearances": {
+            "matches_played": 28,
+            "started": 25,
+            "minutes_played": 2108
+        },
+        "core_stats": {
+            "goals": 18,
+            "assists": 2,
+            "xg": 18.17,
+            "xgot": 19.25,
+            "npxg": 14.22,
+            "xa": 1.41,
+            "xgi": 19.58,
+            "clean_sheets": 6,
+            "goals_conceded": 14,
+            "xgc": 14.74
+        },
+        "detailed_actions": {
+            "shots": 90,
+            "shots_on_target": 45,
+            "chances_created": 21,
+            "big_chances_created": 1,
+            "clearances": 8,
+            "blocks": null,
+            "interceptions": 3,
+            "tackles": 3,
+            "recoveries": 41
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 750027,
+        "name": "Brahim Diaz",
+        "position": "Right Winger",
+        "nationality": "Morocco",
+        "club": "Real Madrid",
+        "league": "LaLiga",
+        "appearances": {
+            "matches_played": 30,
+            "started": 13,
+            "minutes_played": 1252
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 6,
+            "xg": 1.84,
+            "xgot": 1.69,
+            "npxg": 1.84,
+            "xa": 2.46,
+            "xgi": 4.3,
+            "clean_sheets": null,
+            "goals_conceded": 11,
+            "xgc": 13.88
+        },
+        "detailed_actions": {
+            "shots": 15,
+            "shots_on_target": 7,
+            "chances_created": 30,
+            "big_chances_created": 7,
+            "clearances": 4,
+            "blocks": null,
+            "interceptions": 2,
+            "tackles": 15,
+            "recoveries": 59
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1603755,
+        "name": "Gessime Yassine",
+        "position": "Right Winger",
+        "nationality": "Morocco",
+        "club": "Strasbourg",
+        "league": "Ligue 1",
+        "appearances": {
+            "matches_played": 12,
+            "started": 6,
+            "minutes_played": 509
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 1,
+            "xg": 0.82,
+            "xgot": 0.87,
+            "npxg": 0.82,
+            "xa": 1.34,
+            "xgi": 2.16,
+            "clean_sheets": null,
+            "goals_conceded": 9,
+            "xgc": 9.47
+        },
+        "detailed_actions": {
+            "shots": 8,
+            "shots_on_target": 1,
+            "chances_created": 8,
+            "big_chances_created": 3,
+            "clearances": 1,
+            "blocks": null,
+            "interceptions": 2,
+            "tackles": 23,
+            "recoveries": 25
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1680173,
+        "name": "Ayoube Amaimouni",
+        "position": "Right Winger",
+        "nationality": "Morocco",
+        "club": "Eintracht Frankfurt",
+        "league": "Bundesliga",
+        "appearances": {
+            "matches_played": 17,
+            "started": 6,
+            "minutes_played": 580
+        },
+        "core_stats": {
+            "goals": 2,
+            "assists": 3,
+            "xg": 0.52,
+            "xgot": 1.7,
+            "npxg": 0.52,
+            "xa": 0.38,
+            "xgi": 0.9,
+            "clean_sheets": null,
+            "goals_conceded": 11,
+            "xgc": 13.04
+        },
+        "detailed_actions": {
+            "shots": 12,
+            "shots_on_target": 7,
+            "chances_created": 6,
+            "big_chances_created": 1,
+            "clearances": 10,
+            "blocks": 1,
+            "interceptions": 3,
+            "tackles": 6,
+            "recoveries": 21
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        }
+    }
+]

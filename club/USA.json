@@ -1,0 +1,907 @@
+[
+    {
+        "id": 729988,
+        "name": "Matt Turner",
+        "position": "Keeper",
+        "nationality": "USA",
+        "club": "New England Revolution",
+        "league": "Major League Soccer",
+        "appearances": {
+            "matches_played": 14,
+            "started": 0,
+            "minutes_played": 1260
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 3,
+            "goals_conceded": 18,
+            "xgc": null
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        },
+        "goalkeeping_metrics": {
+            "penalties_conceded": 1,
+            "penalties_saved": 0,
+            "saves": 60,
+            "goal_prevented": 5.98
+        }
+    },
+    {
+        "id": 1026065,
+        "name": "Matt Freese",
+        "position": "Keeper",
+        "nationality": "USA",
+        "club": "New York City FC",
+        "league": "Major League Soccer",
+        "appearances": {
+            "matches_played": 15,
+            "started": 0,
+            "minutes_played": 1350
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 3,
+            "goals_conceded": 21,
+            "xgc": null
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        "goalkeeping_metrics": {
+            "penalties_conceded": 3,
+            "penalties_saved": 0,
+            "saves": 50,
+            "goal_prevented": 0.53
+        }
+    },
+    {
+        "id": 1245998,
+        "name": "Chris Brady",
+        "position": "Keeper",
+        "nationality": "USA",
+        "club": "Chicago Fire FC",
+        "league": "Major League Soccer",
+        "appearances": {
+            "matches_played": 14,
+            "started": 0,
+            "minutes_played": 1260
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 6,
+            "goals_conceded": 16,
+            "xgc": null
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        },
+        "goalkeeping_metrics": {
+            "penalties_conceded": 4,
+            "penalties_saved": 0,
+            "saves": 42,
+            "goal_prevented": 2.91
+        }
+    },
+    {
+        "id": 892816,
+        "name": "Sergiño Dest",
+        "position": "Right Back",
+        "nationality": "USA",
+        "club": "PSV Eindhoven",
+        "league": "Eredivisie",
+        "appearances": {
+            "matches_played": 27,
+            "started": 26,
+            "minutes_played": 2204
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 5,
+            "xg": 0.84,
+            "xgot": 0.74,
+            "npxg": 0.84,
+            "xa": 4.44,
+            "xgi": 5.28,
+            "clean_sheets": 4,
+            "goals_conceded": 31,
+            "xgc": 29.01
+        },
+        "detailed_actions": {
+            "shots": 14,
+            "shots_on_target": 5,
+            "chances_created": 28,
+            "big_chances_created": 10,
+            "clearances": 28,
+            "blocks": 6,
+            "interceptions": 13,
+            "tackles": 52,
+            "recoveries": 152
+        },
+        "discipline": {
+            "yellow_cards": 5,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 950829,
+        "name": "Chris Richards",
+        "position": "Center Back",
+        "nationality": "USA",
+        "club": "Crystal Palace",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 33,
+            "started": 31,
+            "minutes_played": 2826
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 0,
+            "xg": 2.36,
+            "xgot": 1.62,
+            "npxg": 2.36,
+            "xa": 1.38,
+            "xgi": 3.74,
+            "clean_sheets": 10,
+            "goals_conceded": 42,
+            "xgc": 40.67
+        },
+        "detailed_actions": {
+            "shots": 15,
+            "shots_on_target": 2,
+            "chances_created": 9,
+            "big_chances_created": 1,
+            "clearances": 196,
+            "blocks": 19,
+            "interceptions": 43,
+            "tackles": 55,
+            "recoveries": 65
+        },
+        "discipline": {
+            "yellow_cards": 4,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 662428,
+        "name": "Antonee Robinson",
+        "position": "Left Back",
+        "nationality": "USA",
+        "club": "Fulham",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 22,
+            "started": 17,
+            "minutes_played": 1492
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 0,
+            "xg": 1.07,
+            "xgot": 0.76,
+            "npxg": 0.28,
+            "xa": 1.57,
+            "xgi": 2.64,
+            "clean_sheets": 4,
+            "goals_conceded": 19,
+            "xgc": 24.51
+        },
+        "detailed_actions": {
+            "shots": 6,
+            "shots_on_target": 1,
+            "chances_created": 22,
+            "big_chances_created": 1,
+            "clearances": 55,
+            "blocks": 3,
+            "interceptions": 29,
+            "tackles": 48,
+            "recoveries": 98
+        },
+        "discipline": {
+            "yellow_cards": 5,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 688271,
+        "name": "Auston Trusty",
+        "position": "Center Back",
+        "nationality": "USA",
+        "club": "Celtic",
+        "league": "Premiership",
+        "appearances": {
+            "matches_played": 26,
+            "started": 24,
+            "minutes_played": 2162
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": 1.27,
+            "xgot": 0.29,
+            "npxg": 1.27,
+            "xa": 0.6,
+            "xgi": 1.87,
+            "clean_sheets": 7,
+            "goals_conceded": 25,
+            "xgc": 22.71
+        },
+        "detailed_actions": {
+            "shots": 13,
+            "shots_on_target": 2,
+            "chances_created": 6,
+            "big_chances_created": null,
+            "clearances": 169,
+            "blocks": 16,
+            "interceptions": 15,
+            "tackles": 23,
+            "recoveries": 89
+        },
+        "discipline": {
+            "yellow_cards": 4,
+            "red_cards": 2
+        }
+    },
+    {
+        "id": 825623,
+        "name": "Miles Robinson",
+        "position": "Center Back",
+        "nationality": "USA",
+        "club": "FC Cincinnati",
+        "league": "Major League Soccer",
+        "appearances": {
+            "matches_played": 9,
+            "started": 8,
+            "minutes_played": 606
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": 0.59,
+            "xgot": 0.19,
+            "npxg": 0.59,
+            "xa": 0.3,
+            "xgi": 0.89,
+            "clean_sheets": 1,
+            "goals_conceded": 14,
+            "xgc": 9.31
+        },
+        "detailed_actions": {
+            "shots": 3,
+            "shots_on_target": 2,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": 35,
+            "blocks": 11,
+            "interceptions": 5,
+            "tackles": 10,
+            "recoveries": 23
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 1
+        }
+    },
+    {
+        "id": 198444,
+        "name": "Tim Ream",
+        "position": "Center Back",
+        "nationality": "USA",
+        "club": "Charlotte FC",
+        "league": "Major League Soccer",
+        "appearances": {
+            "matches_played": 11,
+            "started": 11,
+            "minutes_played": 945
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 1,
+            "xg": 0.04,
+            "xgot": null,
+            "npxg": 0.04,
+            "xa": 0.38,
+            "xgi": 0.42,
+            "clean_sheets": 2,
+            "goals_conceded": 12,
+            "xgc": 14.29
+        },
+        "detailed_actions": {
+            "shots": 1,
+            "shots_on_target": null,
+            "chances_created": 1,
+            "big_chances_created": 1,
+            "clearances": 45,
+            "blocks": 2,
+            "interceptions": 7,
+            "tackles": 7,
+            "recoveries": 32
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1338696,
+        "name": "Alex Freeman",
+        "position": "Right Back",
+        "nationality": "USA",
+        "club": "Villarreal",
+        "league": "LaLiga",
+        "appearances": {
+            "matches_played": 9,
+            "started": 3,
+            "minutes_played": 340
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": 0.02,
+            "xgot": null,
+            "npxg": 0.02,
+            "xa": 0.06,
+            "xgi": 0.08,
+            "clean_sheets": null,
+            "goals_conceded": 6,
+            "xgc": 4.45
+        },
+        "detailed_actions": {
+            "shots": 1,
+            "shots_on_target": null,
+            "chances_created": 1,
+            "big_chances_created": null,
+            "clearances": 16,
+            "blocks": 2,
+            "interceptions": 4,
+            "tackles": 13,
+            "recoveries": 19
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1348329,
+        "name": "Max Arfsten",
+        "position": "Left Wing-Back",
+        "nationality": "USA",
+        "club": "Columbus Crew",
+        "league": "Major League Soccer",
+        "appearances": {
+            "matches_played": 15,
+            "started": 15,
+            "minutes_played": 1287
+        },
+        "core_stats": {
+            "goals": 4,
+            "assists": 4,
+            "xg": 3.35,
+            "xgot": 2.91,
+            "npxg": 3.35,
+            "xa": 3.06,
+            "xgi": 6.41,
+            "clean_sheets": 1,
+            "goals_conceded": 21,
+            "xgc": 15.27
+        },
+        "detailed_actions": {
+            "shots": 19,
+            "shots_on_target": 8,
+            "chances_created": 22,
+            "big_chances_created": 7,
+            "clearances": 18,
+            "blocks": 1,
+            "interceptions": 7,
+            "tackles": 27,
+            "recoveries": 44
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 924485,
+        "name": "Mark McKenzie",
+        "position": "Center Back",
+        "nationality": "USA",
+        "club": "Toulouse",
+        "league": "Ligue 1",
+        "appearances": {
+            "matches_played": 30,
+            "started": 28,
+            "minutes_played": 2427
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 2,
+            "xg": 0.32,
+            "xgot": 0.5,
+            "npxg": 0.32,
+            "xa": 1.02,
+            "xgi": 1.34,
+            "clean_sheets": 7,
+            "goals_conceded": 38,
+            "xgc": 32.63
+        },
+        "detailed_actions": {
+            "shots": 6,
+            "shots_on_target": 1,
+            "chances_created": 19,
+            "big_chances_created": 3,
+            "clearances": 99,
+            "blocks": 13,
+            "interceptions": 24,
+            "tackles": 45,
+            "recoveries": 97
+        },
+        "discipline": {
+            "yellow_cards": 7,
+            "red_cards": 1
+        }
+    },
+    {
+        "id": 729769,
+        "name": "Tyler Adams",
+        "position": "Defensive Midfielder",
+        "nationality": "USA",
+        "club": "AFC Bournemouth",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 25,
+            "started": 21,
+            "minutes_played": 1778
+        },
+        "core_stats": {
+            "goals": 2,
+            "assists": 2,
+            "xg": 0.6,
+            "xgot": 1.65,
+            "npxg": 0.6,
+            "xa": 0.61,
+            "xgi": 1.21,
+            "clean_sheets": 4,
+            "goals_conceded": 28,
+            "xgc": 26.82
+        },
+        "detailed_actions": {
+            "shots": 10,
+            "shots_on_target": 6,
+            "chances_created": 7,
+            "big_chances_created": 2,
+            "clearances": 42,
+            "blocks": 9,
+            "interceptions": 33,
+            "tackles": 53,
+            "recoveries": 96
+        },
+        "discipline": {
+            "yellow_cards": 8,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 848266,
+        "name": "Weston McKennie",
+        "position": "Right Wing-Back",
+        "nationality": "USA",
+        "club": "Juventus",
+        "league": "Serie A",
+        "appearances": {
+            "matches_played": 36,
+            "started": 32,
+            "minutes_played": 2841
+        },
+        "core_stats": {
+            "goals": 5,
+            "assists": 5,
+            "xg": 7.54,
+            "xgot": 5.06,
+            "npxg": 7.54,
+            "xa": 6.06,
+            "xgi": 13.6,
+            "clean_sheets": 11,
+            "goals_conceded": 31,
+            "xgc": 26.02
+        },
+        "detailed_actions": {
+            "shots": 43,
+            "shots_on_target": 16,
+            "chances_created": 48,
+            "big_chances_created": 6,
+            "clearances": 49,
+            "blocks": 8,
+            "interceptions": 25,
+            "tackles": 40,
+            "recoveries": 106
+        },
+        "discipline": {
+            "yellow_cards": 5,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1136096,
+        "name": "Sebastian Berhalter",
+        "position": "Defensive Midfielder",
+        "nationality": "USA",
+        "club": "Vancouver Whitecaps",
+        "league": "Major League Soccer",
+        "appearances": {
+            "matches_played": 14,
+            "started": 13,
+            "minutes_played": 1124
+        },
+        "core_stats": {
+            "goals": 6,
+            "assists": 4,
+            "xg": 3.4,
+            "xgot": 3.18,
+            "npxg": 2.61,
+            "xa": 4.75,
+            "xgi": 8.15,
+            "clean_sheets": 1,
+            "goals_conceded": 11,
+            "xgc": 10.91
+        },
+        "detailed_actions": {
+            "shots": 34,
+            "shots_on_target": 9,
+            "chances_created": 36,
+            "big_chances_created": 11,
+            "clearances": 8,
+            "blocks": 1,
+            "interceptions": 11,
+            "tackles": 35,
+            "recoveries": 77
+        },
+        "discipline": {
+            "yellow_cards": 3,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 621946,
+        "name": "Cristian Roldan",
+        "position": "Defensive Midfielder",
+        "nationality": "USA",
+        "club": "Seattle Sounders FC",
+        "league": "Major League Soccer",
+        "appearances": {
+            "matches_played": 12,
+            "started": 10,
+            "minutes_played": 954
+        },
+        "core_stats": {
+            "goals": 3,
+            "assists": 1,
+            "xg": 0.98,
+            "xgot": 1.56,
+            "npxg": 0.98,
+            "xa": 0.84,
+            "xgi": 1.82,
+            "clean_sheets": 4,
+            "goals_conceded": 9,
+            "xgc": 14.07
+        },
+        "detailed_actions": {
+            "shots": 16,
+            "shots_on_target": 5,
+            "chances_created": 8,
+            "big_chances_created": 1,
+            "clearances": 22,
+            "blocks": 1,
+            "interceptions": 11,
+            "tackles": 25,
+            "recoveries": 55
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1126058,
+        "name": "Malik Tillman",
+        "position": "Attacking Midfielder",
+        "nationality": "USA",
+        "club": "Bayer Leverkusen",
+        "league": "Bundesliga",
+        "appearances": {
+            "matches_played": 29,
+            "started": 18,
+            "minutes_played": 1677
+        },
+        "core_stats": {
+            "goals": 6,
+            "assists": 0,
+            "xg": 4.62,
+            "xgot": 5.26,
+            "npxg": 4.62,
+            "xa": 2.91,
+            "xgi": 7.53,
+            "clean_sheets": 1,
+            "goals_conceded": 25,
+            "xgc": 24.81
+        },
+        "detailed_actions": {
+            "shots": 34,
+            "shots_on_target": 13,
+            "chances_created": 26,
+            "big_chances_created": 8,
+            "clearances": 13,
+            "blocks": 6,
+            "interceptions": 18,
+            "tackles": 38,
+            "recoveries": 82
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1036401,
+        "name": "Ricardo Pepi",
+        "position": "Striker",
+        "nationality": "USA",
+        "club": "PSV Eindhoven",
+        "league": "Eredivisie",
+        "appearances": {
+            "matches_played": 26,
+            "started": 16,
+            "minutes_played": 1415
+        },
+        "core_stats": {
+            "goals": 16,
+            "assists": 1,
+            "xg": 11.41,
+            "xgot": 12.86,
+            "npxg": 9.83,
+            "xa": 2.22,
+            "xgi": 13.63,
+            "clean_sheets": 2,
+            "goals_conceded": 23,
+            "xgc": 21.93
+        },
+        "detailed_actions": {
+            "shots": 61,
+            "shots_on_target": 32,
+            "chances_created": 16,
+            "big_chances_created": 5,
+            "clearances": 7,
+            "blocks": 2,
+            "interceptions": 3,
+            "tackles": 7,
+            "recoveries": 57
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 688295,
+        "name": "Christian Pulisic",
+        "position": "Striker",
+        "nationality": "USA",
+        "club": "Milan",
+        "league": "Serie A",
+        "appearances": {
+            "matches_played": 30,
+            "started": 18,
+            "minutes_played": 1611
+        },
+        "core_stats": {
+            "goals": 8,
+            "assists": 4,
+            "xg": 8.07,
+            "xgot": 7.59,
+            "npxg": 7.28,
+            "xa": 4.15,
+            "xgi": 12.22,
+            "clean_sheets": null,
+            "goals_conceded": 14,
+            "xgc": 18.66
+        },
+        "detailed_actions": {
+            "shots": 54,
+            "shots_on_target": 25,
+            "chances_created": 38,
+            "big_chances_created": 9,
+            "clearances": 11,
+            "blocks": 1,
+            "interceptions": 3,
+            "tackles": 15,
+            "recoveries": 53
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 952322,
+        "name": "Brenden Aaronson",
+        "position": "Attacking Midfielder",
+        "nationality": "USA",
+        "club": "Leeds United",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 37,
+            "started": 30,
+            "minutes_played": 2465
+        },
+        "core_stats": {
+            "goals": 4,
+            "assists": 5,
+            "xg": 4.55,
+            "xgot": 4.5,
+            "npxg": 4.55,
+            "xa": 3.63,
+            "xgi": 8.18,
+            "clean_sheets": 1,
+            "goals_conceded": 32,
+            "xgc": 37.7
+        },
+        "detailed_actions": {
+            "shots": 47,
+            "shots_on_target": 17,
+            "chances_created": 34,
+            "big_chances_created": 9,
+            "clearances": 17,
+            "blocks": 4,
+            "interceptions": 15,
+            "tackles": 50,
+            "recoveries": 130
+        },
+        "discipline": {
+            "yellow_cards": 3,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 848268,
+        "name": "Haji Wright",
+        "position": "Striker",
+        "nationality": "USA",
+        "club": "Coventry City",
+        "league": "Championship",
+        "appearances": {
+            "matches_played": 40,
+            "started": 31,
+            "minutes_played": 2593
+        },
+        "core_stats": {
+            "goals": 17,
+            "assists": 1,
+            "xg": 18.32,
+            "xgot": 16.0,
+            "npxg": 16.75,
+            "xa": 1.51,
+            "xgi": 19.83,
+            "clean_sheets": 1,
+            "goals_conceded": 25,
+            "xgc": 28.55
+        },
+        "detailed_actions": {
+            "shots": 98,
+            "shots_on_target": 37,
+            "chances_created": 19,
+            "big_chances_created": 1,
+            "clearances": 27,
+            "blocks": 4,
+            "interceptions": 2,
+            "tackles": 11,
+            "recoveries": 34
+        },
+        "discipline": {
+            "yellow_cards": 4,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 982677,
+        "name": "Folarin Balogun",
+        "position": "Striker",
+        "nationality": "USA",
+        "club": "Monaco",
+        "league": "Ligue 1",
+        "appearances": {
+            "matches_played": 30,
+            "started": 26,
+            "minutes_played": 2245
+        },
+        "core_stats": {
+            "goals": 13,
+            "assists": 4,
+            "xg": 13.39,
+            "xgot": 10.7,
+            "npxg": 11.02,
+            "xa": 1.9,
+            "xgi": 15.29,
+            "clean_sheets": 2,
+            "goals_conceded": 36,
+            "xgc": 32.51
+        },
+        "detailed_actions": {
+            "shots": 77,
+            "shots_on_target": 32,
+            "chances_created": 24,
+            "big_chances_created": 8,
+            "clearances": 7,
+            "blocks": 2,
+            "interceptions": 4,
+            "tackles": 5,
+            "recoveries": 48
+        },
+        "discipline": {
+            "yellow_cards": 4,
+            "red_cards": 1
+        }
+    },
+    {
+        "id": 889536,
+        "name": "Timothy Weah",
+        "position": "Right Wing-Back",
+        "nationality": "USA",
+        "club": "Marseille",
+        "league": "Ligue 1",
+        "appearances": {
+            "matches_played": 29,
+            "started": 26,
+            "minutes_played": 2263
+        },
+        "core_stats": {
+            "goals": 2,
+            "assists": 2,
+            "xg": 1.71,
+            "xgot": 1.94,
+            "npxg": 1.71,
+            "xa": 2.88,
+            "xgi": 4.59,
+            "clean_sheets": 3,
+            "goals_conceded": 34,
+            "xgc": 34.1
+        },
+        "detailed_actions": {
+            "shots": 29,
+            "shots_on_target": 10,
+            "chances_created": 29,
+            "big_chances_created": 7,
+            "clearances": 26,
+            "blocks": 4,
+            "interceptions": 17,
+            "tackles": 48,
+            "recoveries": 101
+        },
+        "discipline": {
+            "yellow_cards": 5,
+            "red_cards": 0
+        }
+    }
+]

@@ -1,0 +1,947 @@
+[
+    {
+        "id": 315201,
+        "name": "Max Crocombe",
+        "position": "Keeper",
+        "nationality": "New Zealand",
+        "club": "Millwall",
+        "league": "Championship",
+        "appearances": {
+            "matches_played": 23,
+            "started": 0,
+            "minutes_played": 2070
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 9,
+            "goals_conceded": 25,
+            "xgc": null
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        "goalkeeping_metrics": {
+            "penalties_conceded": 1,
+            "penalties_saved": 0,
+            "saves": 78,
+            "goal_prevented": 3.36
+        }
+    },
+    {
+        "id": 1272118,
+        "name": "Alex Paulsen",
+        "position": "Keeper",
+        "nationality": "New Zealand",
+        "club": "Lechia Gdańsk",
+        "league": "Ekstraklasa",
+        "appearances": {
+            "matches_played": 24,
+            "started": 0,
+            "minutes_played": 2160
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 2,
+            "goals_conceded": 41,
+            "xgc": null
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 0
+        },
+        "goalkeeping_metrics": {
+            "penalties_conceded": 5,
+            "penalties_saved": 0,
+            "saves": 64,
+            "goal_prevented": -8.26
+        }
+    },
+    {
+        "id": 848317,
+        "name": "Michael Woud",
+        "position": "Keeper",
+        "nationality": "New Zealand",
+        "club": "Auckland FC",
+        "league": "A-League Men",
+        "appearances": {
+            "matches_played": 24,
+            "started": 0,
+            "minutes_played": 2091
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 7,
+            "goals_conceded": 26,
+            "xgc": null
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 0
+        },
+        "goalkeeping_metrics": {
+            "penalties_conceded": 1,
+            "penalties_saved": 0,
+            "saves": 55,
+            "goal_prevented": 1.08
+        }
+    },
+    {
+        "id": 1524716,
+        "name": "Tyler Bindon",
+        "position": "Center Back",
+        "nationality": "New Zealand",
+        "club": "Sheffield United",
+        "league": "Championship",
+        "appearances": {
+            "matches_played": 25,
+            "started": 22,
+            "minutes_played": 2029
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 0,
+            "xg": 1.47,
+            "xgot": 0.87,
+            "npxg": 1.47,
+            "xa": 0.34,
+            "xgi": 1.81,
+            "clean_sheets": 3,
+            "goals_conceded": 31,
+            "xgc": 26.79
+        },
+        "detailed_actions": {
+            "shots": 14,
+            "shots_on_target": 3,
+            "chances_created": 5,
+            "big_chances_created": 1,
+            "clearances": 174,
+            "blocks": 18,
+            "interceptions": 35,
+            "tackles": 33,
+            "recoveries": 93
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 128949,
+        "name": "Michael Boxall",
+        "position": "Center Back",
+        "nationality": "New Zealand",
+        "club": "Minnesota United",
+        "league": "Major League Soccer",
+        "appearances": {
+            "matches_played": 7,
+            "started": 5,
+            "minutes_played": 397
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": 0.08,
+            "xgi": 0.08,
+            "clean_sheets": null,
+            "goals_conceded": 6,
+            "xgc": 5.26
+        },
+        "detailed_actions": {
+            "shots": 0,
+            "shots_on_target": null,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": 20,
+            "blocks": 6,
+            "interceptions": 3,
+            "tackles": 3,
+            "recoveries": 9
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 919671,
+        "name": "Liberato Cacace",
+        "position": "Left Wing-Back",
+        "nationality": "New Zealand",
+        "club": "Wrexham",
+        "league": "Championship",
+        "appearances": {
+            "matches_played": 12,
+            "started": 8,
+            "minutes_played": 722
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": 0.26,
+            "xgot": 0.06,
+            "npxg": 0.26,
+            "xa": 0.47,
+            "xgi": 0.73,
+            "clean_sheets": 2,
+            "goals_conceded": 4,
+            "xgc": 8.99
+        },
+        "detailed_actions": {
+            "shots": 7,
+            "shots_on_target": 1,
+            "chances_created": 8,
+            "big_chances_created": 1,
+            "clearances": 14,
+            "blocks": 4,
+            "interceptions": 8,
+            "tackles": 6,
+            "recoveries": 38
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 825593,
+        "name": "Francis de Vries",
+        "position": "Left Back",
+        "nationality": "New Zealand",
+        "club": "Auckland FC",
+        "league": "A-League Men",
+        "appearances": {
+            "matches_played": 22,
+            "started": 22,
+            "minutes_played": 1979
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 7,
+            "xg": 1.6,
+            "xgot": 1.93,
+            "npxg": 0.81,
+            "xa": 7.88,
+            "xgi": 9.48,
+            "clean_sheets": 7,
+            "goals_conceded": 23,
+            "xgc": 25.21
+        },
+        "detailed_actions": {
+            "shots": 16,
+            "shots_on_target": 4,
+            "chances_created": 61,
+            "big_chances_created": 14,
+            "clearances": 77,
+            "blocks": 9,
+            "interceptions": 19,
+            "tackles": 49,
+            "recoveries": 92
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1013276,
+        "name": "Callan Elliot",
+        "position": "Right Back",
+        "nationality": "New Zealand",
+        "club": "Auckland FC",
+        "league": "A-League Men",
+        "appearances": {
+            "matches_played": 23,
+            "started": 16,
+            "minutes_played": 1406
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 1,
+            "xg": 0.86,
+            "xgot": 0.31,
+            "npxg": 0.86,
+            "xa": 0.99,
+            "xgi": 1.85,
+            "clean_sheets": 2,
+            "goals_conceded": 22,
+            "xgc": 20.37
+        },
+        "detailed_actions": {
+            "shots": 10,
+            "shots_on_target": 2,
+            "chances_created": 14,
+            "big_chances_created": 2,
+            "clearances": 84,
+            "blocks": 11,
+            "interceptions": 20,
+            "tackles": 41,
+            "recoveries": 56
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 324305,
+        "name": "Tim Payne",
+        "position": "Right Back",
+        "nationality": "New Zealand",
+        "club": "Wellington Phoenix",
+        "league": "A-League Men",
+        "appearances": {
+            "matches_played": 14,
+            "started": 13,
+            "minutes_played": 867
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 5,
+            "xg": 0.64,
+            "xgot": 0.49,
+            "npxg": 0.64,
+            "xa": 1.65,
+            "xgi": 2.29,
+            "clean_sheets": null,
+            "goals_conceded": 19,
+            "xgc": 13.7
+        },
+        "detailed_actions": {
+            "shots": 4,
+            "shots_on_target": 2,
+            "chances_created": 11,
+            "big_chances_created": 5,
+            "clearances": 27,
+            "blocks": 1,
+            "interceptions": 6,
+            "tackles": 5,
+            "recoveries": 41
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1053731,
+        "name": "Nando Pijnaker",
+        "position": "Center Back",
+        "nationality": "New Zealand",
+        "club": "Auckland FC",
+        "league": "A-League Men",
+        "appearances": {
+            "matches_played": 13,
+            "started": 8,
+            "minutes_played": 719
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": 0.41,
+            "xgot": 0.78,
+            "npxg": 0.41,
+            "xa": 0.27,
+            "xgi": 0.68,
+            "clean_sheets": 1,
+            "goals_conceded": 9,
+            "xgc": 11.01
+        },
+        "detailed_actions": {
+            "shots": 5,
+            "shots_on_target": 2,
+            "chances_created": 3,
+            "big_chances_created": null,
+            "clearances": 80,
+            "blocks": 6,
+            "interceptions": 8,
+            "tackles": 6,
+            "recoveries": 28
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 115025,
+        "name": "Tommy Smith",
+        "position": "Center Back",
+        "nationality": "New Zealand",
+        "club": "Braintree Town",
+        "league": "National League",
+        "appearances": {
+            "matches_played": 17,
+            "started": 14,
+            "minutes_played": 1173
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 1,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": null,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": null,
+            "shots_on_target": null,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": null,
+            "blocks": null,
+            "interceptions": null,
+            "tackles": null,
+            "recoveries": null
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 1
+        }
+    },
+    {
+        "id": 1325761,
+        "name": "Finn Surman",
+        "position": "Center Back",
+        "nationality": "New Zealand",
+        "club": "Portland Timbers",
+        "league": "Major League Soccer",
+        "appearances": {
+            "matches_played": 14,
+            "started": 14,
+            "minutes_played": 1215
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 1,
+            "xg": 0.57,
+            "xgot": 0.65,
+            "npxg": 0.57,
+            "xa": 0.24,
+            "xgi": 0.81,
+            "clean_sheets": 1,
+            "goals_conceded": 28,
+            "xgc": 27.67
+        },
+        "detailed_actions": {
+            "shots": 4,
+            "shots_on_target": 2,
+            "chances_created": 4,
+            "big_chances_created": null,
+            "clearances": 92,
+            "blocks": 30,
+            "interceptions": 17,
+            "tackles": 25,
+            "recoveries": 38
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1565865,
+        "name": "Lachlan Bayliss",
+        "position": "Attacking Midfielder",
+        "nationality": "New Zealand",
+        "club": "Newcastle Jets",
+        "league": "A-League Men",
+        "appearances": {
+            "matches_played": 25,
+            "started": 17,
+            "minutes_played": 1644
+        },
+        "core_stats": {
+            "goals": 5,
+            "assists": 3,
+            "xg": 1.92,
+            "xgot": 3.49,
+            "npxg": 1.92,
+            "xa": 2.82,
+            "xgi": 4.74,
+            "clean_sheets": 3,
+            "goals_conceded": 23,
+            "xgc": 28.68
+        },
+        "detailed_actions": {
+            "shots": 28,
+            "shots_on_target": 9,
+            "chances_created": 26,
+            "big_chances_created": 4,
+            "clearances": 24,
+            "blocks": 5,
+            "interceptions": 8,
+            "tackles": 24,
+            "recoveries": 67
+        },
+        "discipline": {
+            "yellow_cards": 5,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 848345,
+        "name": "Joe Bell",
+        "position": "Defensive Midfielder",
+        "nationality": "New Zealand",
+        "club": "Viking",
+        "league": "Eliteserien",
+        "appearances": {
+            "matches_played": 6,
+            "started": 6,
+            "minutes_played": 520
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 1,
+            "xg": 0.39,
+            "xgot": 0.26,
+            "npxg": 0.39,
+            "xa": 1.44,
+            "xgi": 1.83,
+            "clean_sheets": 2,
+            "goals_conceded": 6,
+            "xgc": 6.66
+        },
+        "detailed_actions": {
+            "shots": 7,
+            "shots_on_target": 1,
+            "chances_created": 4,
+            "big_chances_created": 1,
+            "clearances": 9,
+            "blocks": 3,
+            "interceptions": 4,
+            "tackles": 12,
+            "recoveries": 25
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 848352,
+        "name": "Callum McCowatt",
+        "position": "Attacking Midfielder",
+        "nationality": "New Zealand",
+        "club": "Silkeborg",
+        "league": "Superligaen",
+        "appearances": {
+            "matches_played": 32,
+            "started": 30,
+            "minutes_played": 2498
+        },
+        "core_stats": {
+            "goals": 11,
+            "assists": 5,
+            "xg": 6.38,
+            "xgot": 10.29,
+            "npxg": 6.38,
+            "xa": 4.15,
+            "xgi": 10.53,
+            "clean_sheets": 2,
+            "goals_conceded": 57,
+            "xgc": 52.68
+        },
+        "detailed_actions": {
+            "shots": 80,
+            "shots_on_target": 38,
+            "chances_created": 38,
+            "big_chances_created": 6,
+            "clearances": 29,
+            "blocks": 1,
+            "interceptions": 17,
+            "tackles": 50,
+            "recoveries": 121
+        },
+        "discipline": {
+            "yellow_cards": 4,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 31050,
+        "name": "Ben Old",
+        "position": "Coach",
+        "nationality": "New Zealand",
+        "club": "Houston Dynamo FC",
+        "league": null,
+        "appearances": {
+            "matches_played": 0,
+            "started": 0,
+            "minutes_played": 0
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": null,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": null,
+            "shots_on_target": null,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": null,
+            "blocks": null,
+            "interceptions": null,
+            "tackles": null,
+            "recoveries": null
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 519240,
+        "name": "Alex Rufer",
+        "position": "Central Midfielder",
+        "nationality": "New Zealand",
+        "club": "Wellington Phoenix",
+        "league": "A-League Men",
+        "appearances": {
+            "matches_played": 23,
+            "started": 23,
+            "minutes_played": 2044
+        },
+        "core_stats": {
+            "goals": 2,
+            "assists": 1,
+            "xg": 1.22,
+            "xgot": 0.89,
+            "npxg": 1.22,
+            "xa": 2.1,
+            "xgi": 3.32,
+            "clean_sheets": 4,
+            "goals_conceded": 39,
+            "xgc": 38.62
+        },
+        "detailed_actions": {
+            "shots": 25,
+            "shots_on_target": 4,
+            "chances_created": 20,
+            "big_chances_created": 3,
+            "clearances": 49,
+            "blocks": 7,
+            "interceptions": 31,
+            "tackles": 60,
+            "recoveries": 116
+        },
+        "discipline": {
+            "yellow_cards": 8,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1209597,
+        "name": "Marko Stamenic",
+        "position": "Defensive Midfielder",
+        "nationality": "New Zealand",
+        "club": "Swansea City",
+        "league": "Championship",
+        "appearances": {
+            "matches_played": 36,
+            "started": 29,
+            "minutes_played": 2499
+        },
+        "core_stats": {
+            "goals": 3,
+            "assists": 2,
+            "xg": 2.42,
+            "xgot": 3.36,
+            "npxg": 2.42,
+            "xa": 0.96,
+            "xgi": 3.38,
+            "clean_sheets": 7,
+            "goals_conceded": 29,
+            "xgc": 34.75
+        },
+        "detailed_actions": {
+            "shots": 24,
+            "shots_on_target": 9,
+            "chances_created": 9,
+            "big_chances_created": 2,
+            "clearances": 55,
+            "blocks": 8,
+            "interceptions": 50,
+            "tackles": 48,
+            "recoveries": 110
+        },
+        "discipline": {
+            "yellow_cards": 12,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 724531,
+        "name": "Sarpreet Singh",
+        "position": "Attacking Midfielder",
+        "nationality": "New Zealand",
+        "club": "Wellington Phoenix",
+        "league": "A-League Men",
+        "appearances": {
+            "matches_played": 2,
+            "started": 1,
+            "minutes_played": 74
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 1,
+            "goals_conceded": 11,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": 25,
+            "shots_on_target": 7,
+            "chances_created": 9,
+            "big_chances_created": 4,
+            "clearances": 5,
+            "blocks": 1,
+            "interceptions": 6,
+            "tackles": 9,
+            "recoveries": 37
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 496356,
+        "name": "Ryan Thomas",
+        "position": "Defensive Midfielder",
+        "nationality": "New Zealand",
+        "club": "PEC Zwolle",
+        "league": "Eredivisie",
+        "appearances": {
+            "matches_played": 27,
+            "started": 27,
+            "minutes_played": 2157
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 1,
+            "xg": 0.56,
+            "xgot": 0.36,
+            "npxg": 0.56,
+            "xa": 2.38,
+            "xgi": 2.94,
+            "clean_sheets": 4,
+            "goals_conceded": 41,
+            "xgc": 39.89
+        },
+        "detailed_actions": {
+            "shots": 14,
+            "shots_on_target": 2,
+            "chances_created": 14,
+            "big_chances_created": 1,
+            "clearances": 98,
+            "blocks": 13,
+            "interceptions": 49,
+            "tackles": 60,
+            "recoveries": 129
+        },
+        "discipline": {
+            "yellow_cards": 7,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 96488,
+        "name": "Kosta Barbarouses",
+        "position": "Striker",
+        "nationality": "New Zealand",
+        "club": "Western Sydney Wanderers FC",
+        "league": "A-League Men",
+        "appearances": {
+            "matches_played": 22,
+            "started": 16,
+            "minutes_played": 1332
+        },
+        "core_stats": {
+            "goals": 4,
+            "assists": 1,
+            "xg": 6.21,
+            "xgot": 6.03,
+            "npxg": 4.63,
+            "xa": 2.07,
+            "xgi": 8.28,
+            "clean_sheets": 2,
+            "goals_conceded": 17,
+            "xgc": 16.95
+        },
+        "detailed_actions": {
+            "shots": 34,
+            "shots_on_target": 12,
+            "chances_created": 13,
+            "big_chances_created": 4,
+            "clearances": 7,
+            "blocks": 1,
+            "interceptions": 3,
+            "tackles": 11,
+            "recoveries": 34
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1460327,
+        "name": "Jesse Randall",
+        "position": "Left Midfielder",
+        "nationality": "New Zealand",
+        "club": "Auckland FC",
+        "league": "A-League Men",
+        "appearances": {
+            "matches_played": 26,
+            "started": 26,
+            "minutes_played": 2123
+        },
+        "core_stats": {
+            "goals": 9,
+            "assists": 6,
+            "xg": 8.64,
+            "xgot": 7.14,
+            "npxg": 8.64,
+            "xa": 7.66,
+            "xgi": 16.3,
+            "clean_sheets": 3,
+            "goals_conceded": 27,
+            "xgc": 30.11
+        },
+        "detailed_actions": {
+            "shots": 79,
+            "shots_on_target": 31,
+            "chances_created": 49,
+            "big_chances_created": 14,
+            "clearances": 12,
+            "blocks": null,
+            "interceptions": 10,
+            "tackles": 21,
+            "recoveries": 87
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1034995,
+        "name": "Ben Waine",
+        "position": "Striker",
+        "nationality": "New Zealand",
+        "club": "Port Vale",
+        "league": "League One",
+        "appearances": {
+            "matches_played": 27,
+            "started": 14,
+            "minutes_played": 1133
+        },
+        "core_stats": {
+            "goals": 3,
+            "assists": 1,
+            "xg": 3.32,
+            "xgot": 3.22,
+            "npxg": 3.32,
+            "xa": 1.15,
+            "xgi": 4.47,
+            "clean_sheets": null,
+            "goals_conceded": 17,
+            "xgc": 21.01
+        },
+        "detailed_actions": {
+            "shots": 31,
+            "shots_on_target": 11,
+            "chances_created": 8,
+            "big_chances_created": 2,
+            "clearances": 20,
+            "blocks": 1,
+            "interceptions": 4,
+            "tackles": 16,
+            "recoveries": 47
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 169719,
+        "name": "Chris Wood",
+        "position": "Striker",
+        "nationality": "New Zealand",
+        "club": "Nottingham Forest",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 15,
+            "started": 11,
+            "minutes_played": 906
+        },
+        "core_stats": {
+            "goals": 3,
+            "assists": 0,
+            "xg": 4.25,
+            "xgot": 2.6,
+            "npxg": 4.25,
+            "xa": 0.32,
+            "xgi": 4.57,
+            "clean_sheets": null,
+            "goals_conceded": 14,
+            "xgc": 14.53
+        },
+        "detailed_actions": {
+            "shots": 23,
+            "shots_on_target": 9,
+            "chances_created": 5,
+            "big_chances_created": null,
+            "clearances": 9,
+            "blocks": 4,
+            "interceptions": 1,
+            "tackles": 1,
+            "recoveries": 14
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    }
+]

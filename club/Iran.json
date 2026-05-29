@@ -1,0 +1,1112 @@
+[
+    {
+        "id": 505313,
+        "name": "Alireza Beiranvand",
+        "position": "Keeper",
+        "nationality": "Iran",
+        "club": "Tractor",
+        "league": null,
+        "appearances": {
+            "matches_played": 0,
+            "started": 0,
+            "minutes_played": 0
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 5,
+            "goals_conceded": 4,
+            "xgc": null
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        "goalkeeping_metrics": {
+            "penalties_conceded": 1,
+            "penalties_saved": 0,
+            "saves": 35,
+            "goal_prevented": null
+        }
+    },
+    {
+        "id": 1729679,
+        "name": "Mohammad Khalifeh",
+        "position": "keeper",
+        "nationality": "Iran",
+        "club": "Aluminium Arak",
+        "league": null,
+        "appearances": {
+            "matches_played": 0,
+            "started": 0,
+            "minutes_played": 0
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": null,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": null,
+            "shots_on_target": null,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": null,
+            "blocks": null,
+            "interceptions": null,
+            "tackles": null,
+            "recoveries": null
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 872590,
+        "name": "Payam Niazmand",
+        "position": "Keeper",
+        "nationality": "Iran",
+        "club": "Persepolis",
+        "league": null,
+        "appearances": {
+            "matches_played": 0,
+            "started": 0,
+            "minutes_played": 0
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 2,
+            "goals_conceded": 7,
+            "xgc": null
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        "goalkeeping_metrics": {
+            "penalties_conceded": 1,
+            "penalties_saved": 0,
+            "saves": 10,
+            "goal_prevented": null
+        }
+    },
+    {
+        "id": 1729681,
+        "name": "Danial Eiri",
+        "position": "defender",
+        "nationality": "Iran",
+        "club": "Malavan",
+        "league": null,
+        "appearances": {
+            "matches_played": 0,
+            "started": 0,
+            "minutes_played": 0
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": null,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": null,
+            "shots_on_target": null,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": null,
+            "blocks": null,
+            "interceptions": null,
+            "tackles": null,
+            "recoveries": null
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 117222,
+        "name": "Ehsan Hajsafi",
+        "position": "Left Back",
+        "nationality": "Iran",
+        "club": "Sepahan",
+        "league": null,
+        "appearances": {
+            "matches_played": 0,
+            "started": 0,
+            "minutes_played": 0
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 1,
+            "goals_conceded": 6,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": 6,
+            "shots_on_target": 1,
+            "chances_created": 17,
+            "big_chances_created": 2,
+            "clearances": 6,
+            "blocks": null,
+            "interceptions": 5,
+            "tackles": 11,
+            "recoveries": 26
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1221526,
+        "name": "Saleh Hardani",
+        "position": "Right Back",
+        "nationality": "Iran",
+        "club": "Esteghlal",
+        "league": null,
+        "appearances": {
+            "matches_played": 0,
+            "started": 0,
+            "minutes_played": 0
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 2,
+            "goals_conceded": 6,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": 4,
+            "shots_on_target": 1,
+            "chances_created": 7,
+            "big_chances_created": 1,
+            "clearances": 14,
+            "blocks": 1,
+            "interceptions": 10,
+            "tackles": 27,
+            "recoveries": 40
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 500637,
+        "name": "Hossein Kanaani",
+        "position": "Center Back",
+        "nationality": "Iran",
+        "club": "Persepolis",
+        "league": null,
+        "appearances": {
+            "matches_played": 0,
+            "started": 0,
+            "minutes_played": 0
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 1,
+            "goals_conceded": 8,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": 4,
+            "shots_on_target": 1,
+            "chances_created": 2,
+            "big_chances_created": null,
+            "clearances": null,
+            "blocks": 4,
+            "interceptions": 3,
+            "tackles": 6,
+            "recoveries": 14
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 511397,
+        "name": "Shoja Khalilzadeh",
+        "position": "Center Back",
+        "nationality": "Iran",
+        "club": "Tractor",
+        "league": null,
+        "appearances": {
+            "matches_played": 0,
+            "started": 0,
+            "minutes_played": 0
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 5,
+            "goals_conceded": 6,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": 6,
+            "shots_on_target": 2,
+            "chances_created": 2,
+            "big_chances_created": null,
+            "clearances": 65,
+            "blocks": 8,
+            "interceptions": 15,
+            "tackles": 13,
+            "recoveries": 32
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 630459,
+        "name": "Milad Mohammadi",
+        "position": "Left Back",
+        "nationality": "Iran",
+        "club": "Persepolis",
+        "league": null,
+        "appearances": {
+            "matches_played": 0,
+            "started": 0,
+            "minutes_played": 0
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": 0.14,
+            "xgi": 0.14,
+            "clean_sheets": null,
+            "goals_conceded": 3,
+            "xgc": 2.94
+        },
+        "detailed_actions": {
+            "shots": 0,
+            "shots_on_target": null,
+            "chances_created": 2,
+            "big_chances_created": null,
+            "clearances": null,
+            "blocks": null,
+            "interceptions": 1,
+            "tackles": 7,
+            "recoveries": 8
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 872575,
+        "name": "Ali Nemati",
+        "position": "Center Back",
+        "nationality": "Iran",
+        "club": "Foolad Khuzestan",
+        "league": null,
+        "appearances": {
+            "matches_played": 0,
+            "started": 0,
+            "minutes_played": 0
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 3,
+            "goals_conceded": 5,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": 6,
+            "shots_on_target": null,
+            "chances_created": 1,
+            "big_chances_created": null,
+            "clearances": null,
+            "blocks": 4,
+            "interceptions": 8,
+            "tackles": 10,
+            "recoveries": 42
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 822235,
+        "name": "Omid Noorafkan",
+        "position": "Left Back",
+        "nationality": "Iran",
+        "club": "Sepahan",
+        "league": null,
+        "appearances": {
+            "matches_played": 0,
+            "started": 0,
+            "minutes_played": 0
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": 3,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": 9,
+            "shots_on_target": 3,
+            "chances_created": 4,
+            "big_chances_created": null,
+            "clearances": 1,
+            "blocks": null,
+            "interceptions": 3,
+            "tackles": 1,
+            "recoveries": 12
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 505959,
+        "name": "Ramin Rezaeian",
+        "position": "Right Back",
+        "nationality": "Iran",
+        "club": "Foolad Khuzestan",
+        "league": null,
+        "appearances": {
+            "matches_played": 0,
+            "started": 0,
+            "minutes_played": 0
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": 8,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": 2,
+            "shots_on_target": null,
+            "chances_created": 3,
+            "big_chances_created": null,
+            "clearances": null,
+            "blocks": 1,
+            "interceptions": 2,
+            "tackles": 3,
+            "recoveries": 6
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 505385,
+        "name": "Rouzbeh Cheshmi",
+        "position": "Central Midfielder",
+        "nationality": "Iran",
+        "club": "Esteghlal",
+        "league": null,
+        "appearances": {
+            "matches_played": 0,
+            "started": 0,
+            "minutes_played": 0
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 1,
+            "goals_conceded": 6,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": 3,
+            "shots_on_target": 3,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": 1,
+            "blocks": 1,
+            "interceptions": 2,
+            "tackles": 6,
+            "recoveries": 13
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 505281,
+        "name": "Saeid Ezatolahi",
+        "position": "Defensive Midfielder",
+        "nationality": "Iran",
+        "club": "Shabab Al-Ahli Dubai FC",
+        "league": "Pro League",
+        "appearances": {
+            "matches_played": 22,
+            "started": 20,
+            "minutes_played": 1701
+        },
+        "core_stats": {
+            "goals": 5,
+            "assists": 1,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 4,
+            "goals_conceded": 11,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": 24,
+            "shots_on_target": 11,
+            "chances_created": 18,
+            "big_chances_created": 1,
+            "clearances": 19,
+            "blocks": 5,
+            "interceptions": 11,
+            "tackles": 28,
+            "recoveries": 77
+        },
+        "discipline": {
+            "yellow_cards": 5,
+            "red_cards": 1
+        }
+    },
+    {
+        "id": 848314,
+        "name": "Mehdi Ghaedi",
+        "position": "Attacking Midfielder",
+        "nationality": "Iran",
+        "club": "Al-Nasr SC",
+        "league": "Pro League",
+        "appearances": {
+            "matches_played": 20,
+            "started": 14,
+            "minutes_played": 1308
+        },
+        "core_stats": {
+            "goals": 4,
+            "assists": 4,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 2,
+            "goals_conceded": 22,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": 36,
+            "shots_on_target": 18,
+            "chances_created": 24,
+            "big_chances_created": 3,
+            "clearances": 2,
+            "blocks": null,
+            "interceptions": 1,
+            "tackles": 7,
+            "recoveries": 23
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 532220,
+        "name": "Saman Ghoddos",
+        "position": "Attacking Midfielder",
+        "nationality": "Iran",
+        "club": "Al Ittihad Kalba",
+        "league": "Pro League",
+        "appearances": {
+            "matches_played": 25,
+            "started": 22,
+            "minutes_played": 1806
+        },
+        "core_stats": {
+            "goals": 5,
+            "assists": 3,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 2,
+            "goals_conceded": 31,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": 34,
+            "shots_on_target": 8,
+            "chances_created": 27,
+            "big_chances_created": 6,
+            "clearances": 15,
+            "blocks": 2,
+            "interceptions": 9,
+            "tackles": 21,
+            "recoveries": 76
+        },
+        "discipline": {
+            "yellow_cards": 3,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1420509,
+        "name": "Mohammad Ghorbani",
+        "position": "Central Midfielder",
+        "nationality": "Iran",
+        "club": "Al-Wahda",
+        "league": "Pro League",
+        "appearances": {
+            "matches_played": 22,
+            "started": 12,
+            "minutes_played": 1199
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 4,
+            "goals_conceded": 13,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": 18,
+            "shots_on_target": 6,
+            "chances_created": 3,
+            "big_chances_created": 1,
+            "clearances": 25,
+            "blocks": 3,
+            "interceptions": 12,
+            "tackles": 23,
+            "recoveries": 46
+        },
+        "discipline": {
+            "yellow_cards": 6,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 466890,
+        "name": "Alireza Jahanbakhsh",
+        "position": "Right Winger",
+        "nationality": "Iran",
+        "club": "FCV Dender EH",
+        "league": "Belgian Pro League",
+        "appearances": {
+            "matches_played": 21,
+            "started": 9,
+            "minutes_played": 902
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 1,
+            "xg": 2.38,
+            "xgot": 2.21,
+            "npxg": 1.6,
+            "xa": 1.07,
+            "xgi": 3.45,
+            "clean_sheets": null,
+            "goals_conceded": 18,
+            "xgc": 21.31
+        },
+        "detailed_actions": {
+            "shots": 20,
+            "shots_on_target": 7,
+            "chances_created": 11,
+            "big_chances_created": null,
+            "clearances": 16,
+            "blocks": 3,
+            "interceptions": 4,
+            "tackles": 9,
+            "recoveries": 35
+        },
+        "discipline": {
+            "yellow_cards": 5,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1227853,
+        "name": "Mohammad Mohebi",
+        "position": "Right Winger",
+        "nationality": "Iran",
+        "club": "Sepahan",
+        "league": "Pro League",
+        "appearances": {
+            "matches_played": 8,
+            "started": 4,
+            "minutes_played": 255
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": 2,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": 7,
+            "shots_on_target": null,
+            "chances_created": 3,
+            "big_chances_created": null,
+            "clearances": 2,
+            "blocks": 1,
+            "interceptions": null,
+            "tackles": 8,
+            "recoveries": 16
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 1
+        }
+    },
+    {
+        "id": 1583232,
+        "name": "Amir Mohammad Razzaghinia",
+        "position": "Defensive Midfielder",
+        "nationality": "Iran",
+        "club": "Esteghlal",
+        "league": null,
+        "appearances": {
+            "matches_played": 0,
+            "started": 0,
+            "minutes_played": 0
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": null,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": null,
+            "shots_on_target": null,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": null,
+            "blocks": null,
+            "interceptions": null,
+            "tackles": null,
+            "recoveries": null
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 621519,
+        "name": "Mehdi Torabi",
+        "position": "Left Midfielder",
+        "nationality": "Iran",
+        "club": "Tractor",
+        "league": null,
+        "appearances": {
+            "matches_played": 0,
+            "started": 0,
+            "minutes_played": 0
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": 4,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": 5,
+            "shots_on_target": 1,
+            "chances_created": 9,
+            "big_chances_created": 1,
+            "clearances": 4,
+            "blocks": null,
+            "interceptions": 4,
+            "tackles": 3,
+            "recoveries": 16
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1350138,
+        "name": "Aria Yousefi",
+        "position": "Right Back",
+        "nationality": "Iran",
+        "club": "Sepahan",
+        "league": null,
+        "appearances": {
+            "matches_played": 0,
+            "started": 0,
+            "minutes_played": 0
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 1,
+            "goals_conceded": 6,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": 11,
+            "shots_on_target": 4,
+            "chances_created": 9,
+            "big_chances_created": null,
+            "clearances": 10,
+            "blocks": 5,
+            "interceptions": 12,
+            "tackles": 16,
+            "recoveries": 31
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 505960,
+        "name": "Ali Alipour",
+        "position": "Striker",
+        "nationality": "Iran",
+        "club": "Persepolis",
+        "league": null,
+        "appearances": {
+            "matches_played": 0,
+            "started": 0,
+            "minutes_played": 0
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": 9,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": 10,
+            "shots_on_target": 4,
+            "chances_created": 6,
+            "big_chances_created": 2,
+            "clearances": null,
+            "blocks": null,
+            "interceptions": 1,
+            "tackles": 10,
+            "recoveries": 13
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 619693,
+        "name": "Hadi Habibinejad",
+        "position": "midfielder",
+        "nationality": "Iran",
+        "club": "Chadormalu Ardakan SC",
+        "league": null,
+        "appearances": {
+            "matches_played": 0,
+            "started": 0,
+            "minutes_played": 0
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": null,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": null,
+            "shots_on_target": null,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": null,
+            "blocks": null,
+            "interceptions": null,
+            "tackles": null,
+            "recoveries": null
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1031319,
+        "name": "Amirhossein Hosseinzadeh",
+        "position": "Striker",
+        "nationality": "Iran",
+        "club": "Tractor",
+        "league": null,
+        "appearances": {
+            "matches_played": 0,
+            "started": 0,
+            "minutes_played": 0
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 5,
+            "goals_conceded": 7,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": 21,
+            "shots_on_target": 6,
+            "chances_created": 20,
+            "big_chances_created": 3,
+            "clearances": 6,
+            "blocks": null,
+            "interceptions": 2,
+            "tackles": 7,
+            "recoveries": 42
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1844610,
+        "name": "Amirhossein Mahmoudi",
+        "position": "forward",
+        "nationality": "Iran",
+        "club": "Persepolis",
+        "league": null,
+        "appearances": {
+            "matches_played": 0,
+            "started": 0,
+            "minutes_played": 0
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": null,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": null,
+            "shots_on_target": null,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": null,
+            "blocks": null,
+            "interceptions": null,
+            "tackles": null,
+            "recoveries": null
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1580548,
+        "name": "Kasra Taheri",
+        "position": "forward",
+        "nationality": "Iran",
+        "club": "Paykan",
+        "league": null,
+        "appearances": {
+            "matches_played": 0,
+            "started": 0,
+            "minutes_played": 0
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": null,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": null,
+            "shots_on_target": null,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": null,
+            "blocks": null,
+            "interceptions": null,
+            "tackles": null,
+            "recoveries": null
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 619506,
+        "name": "Mehdi Taremi",
+        "position": "Striker",
+        "nationality": "Iran",
+        "club": "Olympiacos",
+        "league": "Super League",
+        "appearances": {
+            "matches_played": 24,
+            "started": 14,
+            "minutes_played": 1261
+        },
+        "core_stats": {
+            "goals": 10,
+            "assists": 2,
+            "xg": 9.47,
+            "xgot": 9.57,
+            "npxg": 7.9,
+            "xa": 2.77,
+            "xgi": 12.24,
+            "clean_sheets": 2,
+            "goals_conceded": 7,
+            "xgc": 8.56
+        },
+        "detailed_actions": {
+            "shots": 58,
+            "shots_on_target": 24,
+            "chances_created": 25,
+            "big_chances_created": 5,
+            "clearances": 8,
+            "blocks": null,
+            "interceptions": 3,
+            "tackles": 15,
+            "recoveries": 30
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        }
+    }
+]

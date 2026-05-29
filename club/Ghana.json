@@ -1,0 +1,1062 @@
+[
+    {
+        "id": 615411,
+        "name": "Lawrence Ati-Zigi",
+        "position": "Keeper",
+        "nationality": "Ghana",
+        "club": "St. Gallen",
+        "league": "Super League",
+        "appearances": {
+            "matches_played": 35,
+            "started": 0,
+            "minutes_played": 3150
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 7,
+            "goals_conceded": 45,
+            "xgc": null
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        },
+        "goalkeeping_metrics": {
+            "penalties_conceded": 3,
+            "penalties_saved": 3,
+            "saves": 119,
+            "goal_prevented": 8.46
+        }
+    },
+    {
+        "id": 1663132,
+        "name": "Benjamin Asare",
+        "position": "Keeper",
+        "nationality": "Ghana",
+        "club": "Ishøj IF",
+        "league": null,
+        "appearances": {
+            "matches_played": 0,
+            "started": 0,
+            "minutes_played": 0
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": null,
+            "xgc": null
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        "goalkeeping_metrics": {
+            "penalties_conceded": null,
+            "penalties_saved": null,
+            "saves": null,
+            "goal_prevented": null
+        }
+    },
+    {
+        "id": 1213675,
+        "name": "Solomon Agbasi",
+        "position": "keeper",
+        "nationality": "Ghana",
+        "club": "Dreams FC",
+        "league": null,
+        "appearances": {
+            "matches_played": 0,
+            "started": 0,
+            "minutes_played": 0
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 1,
+            "goals_conceded": 7,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": null,
+            "shots_on_target": null,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": null,
+            "blocks": null,
+            "interceptions": null,
+            "tackles": null,
+            "recoveries": null
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 963812,
+        "name": "Joseph Anang",
+        "position": "Keeper",
+        "nationality": "Ghana",
+        "club": "St. Patrick's Athletic",
+        "league": "Premier Division",
+        "appearances": {
+            "matches_played": 18,
+            "started": 0,
+            "minutes_played": 1620
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 6,
+            "goals_conceded": 16,
+            "xgc": null
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        },
+        "goalkeeping_metrics": {
+            "penalties_conceded": 1,
+            "penalties_saved": 1,
+            "saves": 54,
+            "goal_prevented": 0.57
+        }
+    },
+    {
+        "id": 1463688,
+        "name": "Paul Reverson",
+        "position": "Keeper",
+        "nationality": "Ghana",
+        "club": "Jong Ajax",
+        "league": "Eerste Divisie",
+        "appearances": {
+            "matches_played": 16,
+            "started": 0,
+            "minutes_played": 1440
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": 2,
+            "goals_conceded": 32,
+            "xgc": null
+        },
+        "discipline": {
+            "yellow_cards": 4,
+            "red_cards": 0
+        },
+        "goalkeeping_metrics": {
+            "penalties_conceded": 3,
+            "penalties_saved": 0,
+            "saves": 61,
+            "goal_prevented": null
+        }
+    },
+    {
+        "id": 1432344,
+        "name": "Jonas Adjetey",
+        "position": "Center Back",
+        "nationality": "Ghana",
+        "club": "Wolfsburg",
+        "league": "Bundesliga",
+        "appearances": {
+            "matches_played": 4,
+            "started": 1,
+            "minutes_played": 137
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": 0.08,
+            "xgot": null,
+            "npxg": 0.08,
+            "xa": 0.11,
+            "xgi": 0.19,
+            "clean_sheets": null,
+            "goals_conceded": 3,
+            "xgc": 3.14
+        },
+        "detailed_actions": {
+            "shots": 3,
+            "shots_on_target": null,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": 7,
+            "blocks": 1,
+            "interceptions": 1,
+            "tackles": 2,
+            "recoveries": 7
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 324910,
+        "name": "Abdul Rahman Baba",
+        "position": "Left Back",
+        "nationality": "Ghana",
+        "club": "PAOK Thessaloniki",
+        "league": "Super League",
+        "appearances": {
+            "matches_played": 25,
+            "started": 20,
+            "minutes_played": 1915
+        },
+        "core_stats": {
+            "goals": 2,
+            "assists": 2,
+            "xg": 1.43,
+            "xgot": 1.5,
+            "npxg": 1.43,
+            "xa": 1.87,
+            "xgi": 3.3,
+            "clean_sheets": 9,
+            "goals_conceded": 18,
+            "xgc": 22.0
+        },
+        "detailed_actions": {
+            "shots": 14,
+            "shots_on_target": 4,
+            "chances_created": 13,
+            "big_chances_created": 4,
+            "clearances": 61,
+            "blocks": 5,
+            "interceptions": 19,
+            "tackles": 29,
+            "recoveries": 69
+        },
+        "discipline": {
+            "yellow_cards": 3,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 407765,
+        "name": "Alexander Djiku",
+        "position": "Center Back",
+        "nationality": "Ghana",
+        "club": "Spartak Moscow",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 20,
+            "started": 20,
+            "minutes_played": 1725
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": 0.58,
+            "xgot": 0.18,
+            "npxg": 0.58,
+            "xa": 0.7,
+            "xgi": 1.28,
+            "clean_sheets": 4,
+            "goals_conceded": 23,
+            "xgc": 18.9
+        },
+        "detailed_actions": {
+            "shots": 9,
+            "shots_on_target": 3,
+            "chances_created": 4,
+            "big_chances_created": null,
+            "clearances": 94,
+            "blocks": 16,
+            "interceptions": 40,
+            "tackles": 27,
+            "recoveries": 79
+        },
+        "discipline": {
+            "yellow_cards": 5,
+            "red_cards": 1
+        }
+    },
+    {
+        "id": 771630,
+        "name": "Gideon Mensah",
+        "position": "Left Back",
+        "nationality": "Ghana",
+        "club": "Auxerre",
+        "league": "Ligue 1",
+        "appearances": {
+            "matches_played": 30,
+            "started": 26,
+            "minutes_played": 2333
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 2,
+            "xg": 0.0,
+            "xgot": null,
+            "npxg": 0.0,
+            "xa": 1.54,
+            "xgi": 1.54,
+            "clean_sheets": 6,
+            "goals_conceded": 28,
+            "xgc": 35.16
+        },
+        "detailed_actions": {
+            "shots": 1,
+            "shots_on_target": null,
+            "chances_created": 17,
+            "big_chances_created": 3,
+            "clearances": 72,
+            "blocks": 4,
+            "interceptions": 28,
+            "tackles": 51,
+            "recoveries": 128
+        },
+        "discipline": {
+            "yellow_cards": 8,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 776591,
+        "name": "Abdul Mumin",
+        "position": "defender",
+        "nationality": "Ghana",
+        "club": "Rayo Vallecano",
+        "league": "LaLiga",
+        "appearances": {
+            "matches_played": 3,
+            "started": 1,
+            "minutes_played": 78
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": 0.0,
+            "xgi": 0,
+            "clean_sheets": null,
+            "goals_conceded": 1,
+            "xgc": 1.95
+        },
+        "detailed_actions": {
+            "shots": 0,
+            "shots_on_target": null,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": 4,
+            "blocks": 2,
+            "interceptions": 2,
+            "tackles": null,
+            "recoveries": 3
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 873227,
+        "name": "Jerome Opoku",
+        "position": "Center Back",
+        "nationality": "Ghana",
+        "club": "Başakşehir",
+        "league": "Super Lig",
+        "appearances": {
+            "matches_played": 32,
+            "started": 31,
+            "minutes_played": 2740
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 1,
+            "xg": 1.24,
+            "xgot": 0.52,
+            "npxg": 1.24,
+            "xa": 0.9,
+            "xgi": 2.14,
+            "clean_sheets": 11,
+            "goals_conceded": 31,
+            "xgc": 38.93
+        },
+        "detailed_actions": {
+            "shots": 16,
+            "shots_on_target": 2,
+            "chances_created": 5,
+            "big_chances_created": 1,
+            "clearances": 123,
+            "blocks": 30,
+            "interceptions": 37,
+            "tackles": 22,
+            "recoveries": 100
+        },
+        "discipline": {
+            "yellow_cards": 10,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1429607,
+        "name": "Kojo Peprah Oppong",
+        "position": "Center Back",
+        "nationality": "Ghana",
+        "club": "Nice",
+        "league": "Ligue 1",
+        "appearances": {
+            "matches_played": 29,
+            "started": 28,
+            "minutes_played": 2428
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 0,
+            "xg": 1.59,
+            "xgot": 1.01,
+            "npxg": 1.59,
+            "xa": 0.4,
+            "xgi": 1.99,
+            "clean_sheets": 5,
+            "goals_conceded": 43,
+            "xgc": 44.25
+        },
+        "detailed_actions": {
+            "shots": 11,
+            "shots_on_target": 3,
+            "chances_created": 6,
+            "big_chances_created": 1,
+            "clearances": 147,
+            "blocks": 18,
+            "interceptions": 27,
+            "tackles": 48,
+            "recoveries": 103
+        },
+        "discipline": {
+            "yellow_cards": 4,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1177779,
+        "name": "Alidu Seidu",
+        "position": "Center Back",
+        "nationality": "Ghana",
+        "club": "Rennes",
+        "league": "Ligue 1",
+        "appearances": {
+            "matches_played": 21,
+            "started": 13,
+            "minutes_played": 1185
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 1,
+            "xg": 0.14,
+            "xgot": 0.07,
+            "npxg": 0.14,
+            "xa": 0.92,
+            "xgi": 1.06,
+            "clean_sheets": 2,
+            "goals_conceded": 24,
+            "xgc": 18.65
+        },
+        "detailed_actions": {
+            "shots": 5,
+            "shots_on_target": 1,
+            "chances_created": 8,
+            "big_chances_created": 3,
+            "clearances": 36,
+            "blocks": 2,
+            "interceptions": 17,
+            "tackles": 35,
+            "recoveries": 89
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1201760,
+        "name": "Marvin Senaya",
+        "position": "Center Back",
+        "nationality": "Ghana",
+        "club": "Auxerre",
+        "league": "Ligue 1",
+        "appearances": {
+            "matches_played": 25,
+            "started": 20,
+            "minutes_played": 1784
+        },
+        "core_stats": {
+            "goals": 1,
+            "assists": 0,
+            "xg": 1.38,
+            "xgot": 0.93,
+            "npxg": 1.38,
+            "xa": 0.56,
+            "xgi": 1.94,
+            "clean_sheets": 3,
+            "goals_conceded": 28,
+            "xgc": 30.03
+        },
+        "detailed_actions": {
+            "shots": 15,
+            "shots_on_target": 5,
+            "chances_created": 6,
+            "big_chances_created": null,
+            "clearances": 77,
+            "blocks": 14,
+            "interceptions": 34,
+            "tackles": 57,
+            "recoveries": 60
+        },
+        "discipline": {
+            "yellow_cards": 5,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1211610,
+        "name": "Augustine Boakye",
+        "position": "Attacking Midfielder",
+        "nationality": "Ghana",
+        "club": "Saint-Etienne",
+        "league": "Ligue 2",
+        "appearances": {
+            "matches_played": 31,
+            "started": 30,
+            "minutes_played": 2476
+        },
+        "core_stats": {
+            "goals": 5,
+            "assists": 9,
+            "xg": 4.15,
+            "xgot": 4.13,
+            "npxg": 4.15,
+            "xa": 8.17,
+            "xgi": 12.32,
+            "clean_sheets": 7,
+            "goals_conceded": 31,
+            "xgc": 29.38
+        },
+        "detailed_actions": {
+            "shots": 56,
+            "shots_on_target": 18,
+            "chances_created": 50,
+            "big_chances_created": 11,
+            "clearances": 20,
+            "blocks": 6,
+            "interceptions": 15,
+            "tackles": 51,
+            "recoveries": 108
+        },
+        "discipline": {
+            "yellow_cards": 12,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1265626,
+        "name": "Abdul Fatawu",
+        "position": "Right Winger",
+        "nationality": "Ghana",
+        "club": "Leicester City",
+        "league": "Championship",
+        "appearances": {
+            "matches_played": 44,
+            "started": 43,
+            "minutes_played": 3718
+        },
+        "core_stats": {
+            "goals": 9,
+            "assists": 7,
+            "xg": 5.0,
+            "xgot": 6.66,
+            "npxg": 5.0,
+            "xa": 6.31,
+            "xgi": 11.31,
+            "clean_sheets": 2,
+            "goals_conceded": 61,
+            "xgc": 56.1
+        },
+        "detailed_actions": {
+            "shots": 112,
+            "shots_on_target": 28,
+            "chances_created": 56,
+            "big_chances_created": 8,
+            "clearances": 62,
+            "blocks": 3,
+            "interceptions": 18,
+            "tackles": 43,
+            "recoveries": 200
+        },
+        "discipline": {
+            "yellow_cards": 8,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 883823,
+        "name": "Elisha Owusu",
+        "position": "Central Midfielder",
+        "nationality": "Ghana",
+        "club": "Auxerre",
+        "league": "Ligue 1",
+        "appearances": {
+            "matches_played": 29,
+            "started": 27,
+            "minutes_played": 2349
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": 0.16,
+            "xgot": null,
+            "npxg": 0.16,
+            "xa": 0.57,
+            "xgi": 0.73,
+            "clean_sheets": 7,
+            "goals_conceded": 31,
+            "xgc": 34.98
+        },
+        "detailed_actions": {
+            "shots": 7,
+            "shots_on_target": null,
+            "chances_created": 12,
+            "big_chances_created": null,
+            "clearances": 46,
+            "blocks": 9,
+            "interceptions": 26,
+            "tackles": 69,
+            "recoveries": 151
+        },
+        "discipline": {
+            "yellow_cards": 7,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 434325,
+        "name": "Thomas Partey",
+        "position": "Central Midfielder",
+        "nationality": "Ghana",
+        "club": "Villarreal",
+        "league": "LaLiga",
+        "appearances": {
+            "matches_played": 25,
+            "started": 8,
+            "minutes_played": 923
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": 0.7,
+            "xgot": 0.14,
+            "npxg": 0.7,
+            "xa": 0.44,
+            "xgi": 1.14,
+            "clean_sheets": 2,
+            "goals_conceded": 13,
+            "xgc": 17.54
+        },
+        "detailed_actions": {
+            "shots": 11,
+            "shots_on_target": 2,
+            "chances_created": 8,
+            "big_chances_created": null,
+            "clearances": 18,
+            "blocks": 4,
+            "interceptions": 14,
+            "tackles": 18,
+            "recoveries": 55
+        },
+        "discipline": {
+            "yellow_cards": 1,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 948745,
+        "name": "Kwasi Sibo",
+        "position": "Defensive Midfielder",
+        "nationality": "Ghana",
+        "club": "Real Oviedo",
+        "league": "LaLiga",
+        "appearances": {
+            "matches_played": 26,
+            "started": 21,
+            "minutes_played": 1686
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": 0.36,
+            "xgot": 0.15,
+            "npxg": 0.36,
+            "xa": 0.25,
+            "xgi": 0.61,
+            "clean_sheets": 3,
+            "goals_conceded": 26,
+            "xgc": 25.75
+        },
+        "detailed_actions": {
+            "shots": 9,
+            "shots_on_target": 2,
+            "chances_created": 3,
+            "big_chances_created": null,
+            "clearances": 36,
+            "blocks": 6,
+            "interceptions": 15,
+            "tackles": 34,
+            "recoveries": 82
+        },
+        "discipline": {
+            "yellow_cards": 3,
+            "red_cards": 1
+        }
+    },
+    {
+        "id": 1130691,
+        "name": "Kamaldeen Sulemana",
+        "position": "Attacking Midfielder",
+        "nationality": "Ghana",
+        "club": "Atalanta",
+        "league": "Serie A",
+        "appearances": {
+            "matches_played": 25,
+            "started": 9,
+            "minutes_played": 1002
+        },
+        "core_stats": {
+            "goals": 2,
+            "assists": 1,
+            "xg": 2.32,
+            "xgot": 3.39,
+            "npxg": 2.32,
+            "xa": 2.09,
+            "xgi": 4.41,
+            "clean_sheets": null,
+            "goals_conceded": 12,
+            "xgc": 14.23
+        },
+        "detailed_actions": {
+            "shots": 25,
+            "shots_on_target": 10,
+            "chances_created": 13,
+            "big_chances_created": 3,
+            "clearances": 8,
+            "blocks": 1,
+            "interceptions": 2,
+            "tackles": 9,
+            "recoveries": 47
+        },
+        "discipline": {
+            "yellow_cards": 4,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1615927,
+        "name": "Caleb Yirenkyi",
+        "position": "Central Midfielder",
+        "nationality": "Ghana",
+        "club": "Nordsjælland",
+        "league": "Superligaen",
+        "appearances": {
+            "matches_played": 30,
+            "started": 30,
+            "minutes_played": 2614
+        },
+        "core_stats": {
+            "goals": 2,
+            "assists": 6,
+            "xg": 2.03,
+            "xgot": 2.03,
+            "npxg": 2.03,
+            "xa": 3.56,
+            "xgi": 5.59,
+            "clean_sheets": 5,
+            "goals_conceded": 44,
+            "xgc": 43.48
+        },
+        "detailed_actions": {
+            "shots": 20,
+            "shots_on_target": 7,
+            "chances_created": 31,
+            "big_chances_created": 6,
+            "clearances": 76,
+            "blocks": 9,
+            "interceptions": 32,
+            "tackles": 57,
+            "recoveries": 205
+        },
+        "discipline": {
+            "yellow_cards": 9,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 154280,
+        "name": "Jordan Ayew",
+        "position": "Striker",
+        "nationality": "Ghana",
+        "club": "Leicester City",
+        "league": "Championship",
+        "appearances": {
+            "matches_played": 42,
+            "started": 24,
+            "minutes_played": 2257
+        },
+        "core_stats": {
+            "goals": 6,
+            "assists": 3,
+            "xg": 5.39,
+            "xgot": 6.33,
+            "npxg": 3.02,
+            "xa": 2.31,
+            "xgi": 7.7,
+            "clean_sheets": 2,
+            "goals_conceded": 35,
+            "xgc": 35.52
+        },
+        "detailed_actions": {
+            "shots": 47,
+            "shots_on_target": 19,
+            "chances_created": 27,
+            "big_chances_created": 5,
+            "clearances": 44,
+            "blocks": 3,
+            "interceptions": 11,
+            "tackles": 25,
+            "recoveries": 80
+        },
+        "discipline": {
+            "yellow_cards": 5,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1452385,
+        "name": "Christopher Bonsu Baah",
+        "position": "Left Midfielder",
+        "nationality": "Ghana",
+        "club": "Al Qadsiah",
+        "league": "Saudi Pro League",
+        "appearances": {
+            "matches_played": 32,
+            "started": 32,
+            "minutes_played": 2679
+        },
+        "core_stats": {
+            "goals": 3,
+            "assists": 12,
+            "xg": 3.8,
+            "xgot": 4.79,
+            "npxg": 3.8,
+            "xa": 9.61,
+            "xgi": 13.41,
+            "clean_sheets": 3,
+            "goals_conceded": 29,
+            "xgc": 32.5
+        },
+        "detailed_actions": {
+            "shots": 30,
+            "shots_on_target": 11,
+            "chances_created": 56,
+            "big_chances_created": 20,
+            "clearances": 35,
+            "blocks": null,
+            "interceptions": 20,
+            "tackles": 43,
+            "recoveries": 140
+        },
+        "discipline": {
+            "yellow_cards": 5,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 1338390,
+        "name": "Ernest Nuamah",
+        "position": "forward",
+        "nationality": "Ghana",
+        "club": "Lyon",
+        "league": "Ligue 1",
+        "appearances": {
+            "matches_played": 3,
+            "started": 0,
+            "minutes_played": 32
+        },
+        "core_stats": {
+            "goals": 0,
+            "assists": 0,
+            "xg": null,
+            "xgot": null,
+            "npxg": null,
+            "xa": null,
+            "xgi": null,
+            "clean_sheets": null,
+            "goals_conceded": null,
+            "xgc": null
+        },
+        "detailed_actions": {
+            "shots": null,
+            "shots_on_target": null,
+            "chances_created": null,
+            "big_chances_created": null,
+            "clearances": null,
+            "blocks": null,
+            "interceptions": null,
+            "tackles": null,
+            "recoveries": null
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 933576,
+        "name": "Antoine Semenyo",
+        "position": "Right Winger",
+        "nationality": "Ghana",
+        "club": "Manchester City",
+        "league": "Premier League",
+        "appearances": {
+            "matches_played": 37,
+            "started": 37,
+            "minutes_played": 3200
+        },
+        "core_stats": {
+            "goals": 17,
+            "assists": 4,
+            "xg": 11.09,
+            "xgot": 13.02,
+            "npxg": 9.52,
+            "xa": 3.12,
+            "xgi": 14.21,
+            "clean_sheets": 11,
+            "goals_conceded": 52,
+            "xgc": 47.71
+        },
+        "detailed_actions": {
+            "shots": 83,
+            "shots_on_target": 41,
+            "chances_created": 39,
+            "big_chances_created": 8,
+            "clearances": 29,
+            "blocks": 7,
+            "interceptions": 13,
+            "tackles": 45,
+            "recoveries": 143
+        },
+        "discipline": {
+            "yellow_cards": 7,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 776184,
+        "name": "Brandon Thomas-Asante",
+        "position": "Left Winger",
+        "nationality": "Ghana",
+        "club": "Coventry City",
+        "league": "Championship",
+        "appearances": {
+            "matches_played": 32,
+            "started": 21,
+            "minutes_played": 1864
+        },
+        "core_stats": {
+            "goals": 13,
+            "assists": 4,
+            "xg": 11.67,
+            "xgot": 12.46,
+            "npxg": 10.88,
+            "xa": 1.92,
+            "xgi": 13.59,
+            "clean_sheets": 4,
+            "goals_conceded": 14,
+            "xgc": 20.7
+        },
+        "detailed_actions": {
+            "shots": 63,
+            "shots_on_target": 26,
+            "chances_created": 18,
+            "big_chances_created": 5,
+            "clearances": 11,
+            "blocks": 3,
+            "interceptions": 18,
+            "tackles": 14,
+            "recoveries": 84
+        },
+        "discipline": {
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    },
+    {
+        "id": 604105,
+        "name": "Inaki Williams",
+        "position": "Right Winger",
+        "nationality": "Ghana",
+        "club": "Athletic Club",
+        "league": "LaLiga",
+        "appearances": {
+            "matches_played": 30,
+            "started": 25,
+            "minutes_played": 2168
+        },
+        "core_stats": {
+            "goals": 3,
+            "assists": 6,
+            "xg": 6.39,
+            "xgot": 4.88,
+            "npxg": 5.6,
+            "xa": 3.45,
+            "xgi": 9.84,
+            "clean_sheets": 1,
+            "goals_conceded": 34,
+            "xgc": 23.07
+        },
+        "detailed_actions": {
+            "shots": 57,
+            "shots_on_target": 20,
+            "chances_created": 25,
+            "big_chances_created": 7,
+            "clearances": 14,
+            "blocks": 2,
+            "interceptions": 8,
+            "tackles": 12,
+            "recoveries": 67
+        },
+        "discipline": {
+            "yellow_cards": 2,
+            "red_cards": 0
+        }
+    }
+]
