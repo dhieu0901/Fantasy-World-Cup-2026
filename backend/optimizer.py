@@ -263,14 +263,6 @@ def optimize_lp(players: list[dict], stage: str = "GROUP_MD1",
     locked_out = set(locked_out or [])
     current_squad = set(current_squad or [])
 
-    # ─── PRE-SELECT 12TH MAN ───
-    twelfth_man = None
-    if chip == "12th_man":
-        available_12th = [p for p in players if p["id"] not in locked_out]
-        if available_12th:
-            twelfth_man = max(available_12th, key=lambda p: p.get("projected_pts", 0))
-            players = [p for p in players if p["id"] != twelfth_man["id"]]
-
     # Calculate objective values based on preset
     obj_values = {}
     for p in players:
@@ -301,21 +293,30 @@ def optimize_lp(players: list[dict], stage: str = "GROUP_MD1",
     squad_vars = {}     # x[i] = 1 if player i is in the 15-man squad
     xi_vars = {}        # xi[i] = 1 if player i is in the Starting XI
     cap_vars = {}       # c[i] = 1 if player i is the Captain
+    twelfth_vars = {}   # t[i] = 1 if player i is the 12th man
     
     for p in players:
         pid = p["id"]
         squad_vars[pid] = pulp.LpVariable(f"squad_{pid}", cat="Binary")
         xi_vars[pid] = pulp.LpVariable(f"xi_{pid}", cat="Binary")
         cap_vars[pid] = pulp.LpVariable(f"cap_{pid}", cat="Binary")
+        twelfth_vars[pid] = pulp.LpVariable(f"12th_{pid}", cat="Binary")
         
         # Constraints tying variables together
         prob += xi_vars[pid] <= squad_vars[pid], f"Xi_in_Squad_{pid}"
         prob += cap_vars[pid] <= xi_vars[pid], f"Cap_in_Xi_{pid}"
+        prob += twelfth_vars[pid] + squad_vars[pid] <= 1, f"Mutually_Exclusive_12th_{pid}"
 
-    # Objective: maximize weighted projected points from Starting XI + Captain bonus
+    if chip == "12th_man":
+        prob += pulp.lpSum(twelfth_vars[p["id"]] for p in players) == 1, "One12thMan"
+    else:
+        prob += pulp.lpSum(twelfth_vars[p["id"]] for p in players) == 0, "No12thMan"
+
+    # Objective: maximize weighted projected points from Starting XI + Captain bonus + 12th man
     objective = pulp.lpSum(
         obj_values.get(p["id"], 0) * xi_vars[p["id"]] + 
-        obj_values.get(p["id"], 0) * cap_vars[p["id"]]  # Captain gets double points
+        obj_values.get(p["id"], 0) * cap_vars[p["id"]] +
+        obj_values.get(p["id"], 0) * twelfth_vars[p["id"]]
         for p in players
     )
     
@@ -440,10 +441,10 @@ def optimize_lp(players: list[dict], stage: str = "GROUP_MD1",
     # Constraint 5: Locked in/out
     for pid in locked_in:
         if pid in squad_vars:
-            prob += squad_vars[pid] == 1, f"LockedIn_{pid}"
+            prob += squad_vars[pid] + twelfth_vars[pid] == 1, f"LockedIn_{pid}"
     for pid in locked_out:
         if pid in squad_vars:
-            prob += squad_vars[pid] == 0, f"LockedOut_{pid}"
+            prob += squad_vars[pid] + twelfth_vars[pid] == 0, f"LockedOut_{pid}"
 
     # Solve
     prob.solve(pulp.PULP_CBC_CMD(msg=0, timeLimit=10))
@@ -456,8 +457,13 @@ def optimize_lp(players: list[dict], stage: str = "GROUP_MD1",
     selected = []
     starting_xi = []
     captain = None
+    twelfth_man = None
     for p in players:
         pid = p["id"]
+        if twelfth_vars[pid].varValue and twelfth_vars[pid].varValue > 0.5:
+            twelfth_man = p
+            twelfth_man["is_12th_man"] = True
+            
         if squad_vars[pid].varValue and squad_vars[pid].varValue > 0.5:
             selected.append(p)
             if xi_vars[pid].varValue and xi_vars[pid].varValue > 0.5:
@@ -465,18 +471,18 @@ def optimize_lp(players: list[dict], stage: str = "GROUP_MD1",
                 if cap_vars[pid].varValue and cap_vars[pid].varValue > 0.5:
                     captain = p
 
-    bench = [p for p in selected if p not in starting_xi]
     # Ensure starting_xi format matches what greedy would return
-    if not starting_xi:
+    if len(starting_xi) != 11:
         starting_xi, bench = _select_starting_xi(selected, chip, stage)
         captain = max(starting_xi, key=lambda p: p.get("projected_pts", 0)) if starting_xi else None
+    else:
+        bench = [p for p in selected if p not in starting_xi]
 
     vice_candidates = [p for p in starting_xi if not captain or p["id"] != captain["id"]]
     vice_captain = max(vice_candidates, key=lambda p: p.get("projected_pts", 0)) if vice_candidates else None
 
     # Handle 12th Man Booster
     if twelfth_man:
-        twelfth_man["is_12th_man"] = True
         starting_xi.append(twelfth_man)
         selected.append(twelfth_man)
 
@@ -671,7 +677,7 @@ def optimize_squad(stage: str = "GROUP_MD1",
     if use_lp and HAS_PULP:
         result = optimize_lp(players, stage, preset, locked_in, locked_out, chip, current_squad, free_transfers)
     else:
-        result = optimize_greedy(players, stage, preset, chip)
+        result = optimize_greedy(players, stage, preset, chip, locked_in, locked_out)
 
     # Clean up internal fields
     for p in result.get("squad", []):
