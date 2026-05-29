@@ -579,31 +579,79 @@ def api_advisor(req: AdvisorRequest):
         for p in players:
             p_dict = dict(p)
             p_dict["display_name"] = p_dict.get("known_name") or f"{p_dict.get('first_name', '')} {p_dict.get('last_name', '')}".strip()
+            
+            # Calculate xPts dynamically
+            xpts_data = calculate_xpts_from_db(
+                player_id=p["id"],
+                position=p.get("position", "MID"),
+                price=p.get("price", 4.0),
+                percent_selected=p.get("percent_selected", 0.0),
+                conn=conn
+            )
+            p_dict["xpts"] = xpts_data["total_xpts"]
+            
+            # Determine "Actual" points. If mock_points is set, use it. Otherwise assume not played yet.
+            if p["mock_points"] is not None:
+                p_dict["actual_pts"] = p["mock_points"]
+                p_dict["is_finished"] = True
+            else:
+                p_dict["actual_pts"] = 0
+                p_dict["is_finished"] = False
+                
             player_map[p["id"]] = p_dict
+            
+        # --- 1. CAPTAIN ADVISOR ---
+        captain_advice = None
+        if req.captain_id and req.captain_id in player_map:
+            cap = player_map[req.captain_id]
+            if cap["is_finished"]:
+                cap_pts = cap["actual_pts"]
+                
+                # Find best upcoming player to twist to
+                best_twist = None
+                best_ev = -1
+                for pid, p in player_map.items():
+                    if not p["is_finished"] and p["xpts"] > best_ev:
+                        best_twist = p
+                        best_ev = p["xpts"]
+                
+                if best_twist and best_ev > cap_pts:
+                    captain_advice = {
+                        "action": "TWIST",
+                        "from_name": cap["display_name"],
+                        "from_pts": cap_pts,
+                        "to_id": best_twist["id"],
+                        "to_name": best_twist["display_name"],
+                        "ev_gain": round(best_ev - cap_pts, 1)
+                    }
+                    
+        # --- 2. SUB ADVISOR ---
+        sub_advice = []
+        finished_starters = [player_map[pid] for pid in req.xi_ids if pid in player_map and player_map[pid]["is_finished"]]
+        upcoming_benchers = [player_map[pid] for pid in req.bench_ids if pid in player_map and not player_map[pid]["is_finished"]]
         
-        recommendations = []
-        available_bench = list(bench_ids)
-        for sid in starters_ids:
-            p = player_map.get(sid)
-            if not p: continue
-            
-            pts = p["mock_points"] if p["mock_points"] is not None else p["total_points"]
-            status = p["mock_match_status"] if p["mock_match_status"] is not None else "upcoming"
-            
-            if status == "finished" and pts < 3:
-                for bid in available_bench:
-                    bp = player_map.get(bid)
-                    if not bp: continue
-                    b_status = bp["mock_match_status"] if bp["mock_match_status"] is not None else "upcoming"
-                    if b_status != "finished":
-                        recommendations.append({
-                            "out": p,
-                            "in": bp,
-                            "reason": f"Sub out {p['display_name']} ({pts} pts). Bring in {bp['display_name']} (hasn't played yet)."
-                        })
-                        available_bench.remove(bid)
-                        break
-                        
-        return {"recommendations": recommendations}
+        # Simple greedy matching: try to replace lowest scoring starters with highest EV benchers
+        finished_starters.sort(key=lambda x: x["actual_pts"])
+        upcoming_benchers.sort(key=lambda x: x["xpts"], reverse=True)
+        
+        used_bench = set()
+        for starter in finished_starters:
+            for bencher in upcoming_benchers:
+                if bencher["id"] not in used_bench and bencher["xpts"] > starter["actual_pts"]:
+                    sub_advice.append({
+                        "out_id": starter["id"],
+                        "out_name": starter["display_name"],
+                        "out_pts": starter["actual_pts"],
+                        "in_id": bencher["id"],
+                        "in_name": bencher["display_name"],
+                        "ev_gain": round(bencher["xpts"] - starter["actual_pts"], 1)
+                    })
+                    used_bench.add(bencher["id"])
+                    break # Replaced this starter, move to next
+                    
+        return {
+            "captain_advice": captain_advice,
+            "sub_advice": sub_advice
+        }
     finally:
         conn.close()
