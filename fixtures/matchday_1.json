@@ -1,0 +1,32 @@
+[
+    {"date": "2026-06-12", "time_gmt7": "02:00", "team_1": "Mexico", "team_2": "South Africa", "group": "A", "day_index": 1, "is_home": "Mexico"},
+    {"date": "2026-06-12", "time_gmt7": "09:00", "team_1": "Korea Republic", "team_2": "Czechia", "group": "A", "day_index": 1},
+    
+    {"date": "2026-06-13", "time_gmt7": "02:00", "team_1": "Canada", "team_2": "Bosnia and Herzegovina", "group": "B", "day_index": 2, "is_home": "Canada"},
+    {"date": "2026-06-13", "time_gmt7": "08:00", "team_1": "USA", "team_2": "Paraguay", "group": "D", "day_index": 2, "is_home": "USA"},
+    
+    {"date": "2026-06-14", "time_gmt7": "02:00", "team_1": "Qatar", "team_2": "Switzerland", "group": "B", "day_index": 3},
+    {"date": "2026-06-14", "time_gmt7": "05:00", "team_1": "Brazil", "team_2": "Morocco", "group": "C", "day_index": 3},
+    {"date": "2026-06-14", "time_gmt7": "08:00", "team_1": "Haiti", "team_2": "Scotland", "group": "C", "day_index": 3},
+    {"date": "2026-06-14", "time_gmt7": "11:00", "team_1": "Australia", "team_2": "Türkiye", "group": "D", "day_index": 3},
+    
+    {"date": "2026-06-15", "time_gmt7": "00:00", "team_1": "Germany", "team_2": "Curaçao", "group": "E", "day_index": 4},
+    {"date": "2026-06-15", "time_gmt7": "03:00", "team_1": "Netherlands", "team_2": "Japan", "group": "F", "day_index": 4},
+    {"date": "2026-06-15", "time_gmt7": "06:00", "team_1": "Côte d'Ivoire", "team_2": "Ecuador", "group": "E", "day_index": 4},
+    {"date": "2026-06-15", "time_gmt7": "09:00", "team_1": "Sweden", "team_2": "Tunisia", "group": "F", "day_index": 4},
+    {"date": "2026-06-15", "time_gmt7": "23:00", "team_1": "Spain", "team_2": "Cabo Verde", "group": "H", "day_index": 4},
+    
+    {"date": "2026-06-16", "time_gmt7": "02:00", "team_1": "Belgium", "team_2": "Egypt", "group": "G", "day_index": 5},
+    {"date": "2026-06-16", "time_gmt7": "05:00", "team_1": "Saudi Arabia", "team_2": "Uruguay", "group": "H", "day_index": 5},
+    {"date": "2026-06-16", "time_gmt7": "08:00", "team_1": "IR Iran", "team_2": "New Zealand", "group": "G", "day_index": 5},
+    
+    {"date": "2026-06-17", "time_gmt7": "02:00", "team_1": "France", "team_2": "Senegal", "group": "I", "day_index": 6},
+    {"date": "2026-06-17", "time_gmt7": "05:00", "team_1": "Iraq", "team_2": "Norway", "group": "I", "day_index": 6},
+    {"date": "2026-06-17", "time_gmt7": "08:00", "team_1": "Argentina", "team_2": "Algeria", "group": "J", "day_index": 6},
+    {"date": "2026-06-17", "time_gmt7": "11:00", "team_1": "Austria", "team_2": "Jordan", "group": "J", "day_index": 6},
+    
+    {"date": "2026-06-18", "time_gmt7": "00:00", "team_1": "Portugal", "team_2": "Congo DR", "group": "K", "day_index": 7},
+    {"date": "2026-06-18", "time_gmt7": "03:00", "team_1": "England", "team_2": "Croatia", "group": "L", "day_index": 7},
+    {"date": "2026-06-18", "time_gmt7": "06:00", "team_1": "Ghana", "team_2": "Panama", "group": "L", "day_index": 7},
+    {"date": "2026-06-18", "time_gmt7": "09:00", "team_1": "Uzbekistan", "team_2": "Colombia", "group": "K", "day_index": 7}
+]

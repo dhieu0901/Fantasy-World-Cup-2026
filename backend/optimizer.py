@@ -34,7 +34,7 @@ try:
     HAS_PULP = True
 except ImportError:
     HAS_PULP = False
-    print("⚠ PuLP not installed. Using greedy optimizer. Install: pip install pulp")
+    print("[!] PuLP not installed. Using greedy optimizer. Install: pip install pulp")
 
 
 # ══════════════════════════════════════════════
@@ -283,11 +283,46 @@ def optimize_lp(players: list[dict], stage: str = "GROUP_MD1",
         for p in players
     )
     
-    # Bench points: assume 10% chance a bench player auto-subs in, so we give them a small weight
-    objective += pulp.lpSum(
-        obj_values.get(p["id"], 0) * 0.1 * (squad_vars[p["id"]] - xi_vars[p["id"]])
-        for p in players
-    )
+    # ─── SMART BENCHING (Manual Sub Optimization) ───
+    # We want to encourage players who play EARLY (small day_index) to be in the Starting XI,
+    # and players who play LATE (large day_index) to be on the Bench.
+    # This maximizes the manager's ability to sub out early blanks for late bench players.
+    try:
+        import json
+        from pathlib import Path
+        fixtures_path = Path(__file__).parent.parent / "fixtures" / "matchday_1.json"
+        
+        # Load the fixture schedule
+        with open(fixtures_path, 'r', encoding='utf-8') as f:
+            fixtures = json.load(f)
+            
+        team_day_map = {}
+        for match in fixtures:
+            team_day_map[match["team_1"]] = match["day_index"]
+            team_day_map[match["team_2"]] = match["day_index"]
+            
+        # Get squad ID -> team Name mapping from DB
+        conn = sqlite3.connect(Path(__file__).parent / "wc2026.db")
+        squads = {row[0]: row[1] for row in conn.execute("SELECT id, name FROM squads")}
+        conn.close()
+        
+        # Identify MAX_DAY for fallback (teams not in fixture file)
+        MAX_DAY = max(team_day_map.values()) if team_day_map else 7
+        
+        # Add the day_index bonus to the objective
+        # Formula: 0.01 * (MAX_DAY - day_index) * xi_vars[pid]
+        # This rewards putting EARLY players (day_index = 1) in the Starting XI (xi_vars = 1)
+        objective += pulp.lpSum(
+            0.01 * (MAX_DAY - team_day_map.get(squads.get(p.get("squad_id"), ""), MAX_DAY)) * xi_vars[p["id"]]
+            for p in players
+        )
+    except Exception as e:
+        print(f"  [!] Could not load fixtures for smart benching: {e}")
+        # Fallback to simple bench weight if fixtures fail
+        objective += pulp.lpSum(
+            obj_values.get(p["id"], 0) * 0.01 * (squad_vars[p["id"]] - xi_vars[p["id"]])
+            for p in players
+        )
 
     # Transfer Optimization (if current squad exists and not on Wildcard)
     extra_transfers_var = None
@@ -366,7 +401,7 @@ def optimize_lp(players: list[dict], stage: str = "GROUP_MD1",
     prob.solve(pulp.PULP_CBC_CMD(msg=0, timeLimit=10))
 
     if prob.status != pulp.constants.LpStatusOptimal:
-        print(f"  ⚠ LP solver status: {pulp.LpStatus[prob.status]}. Falling back to greedy.")
+        print(f"  [!] LP solver status: {pulp.LpStatus[prob.status]}. Falling back to greedy.")
         return optimize_greedy(players, stage, preset, chip)
 
     # Extract selected players
