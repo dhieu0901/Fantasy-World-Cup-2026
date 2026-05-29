@@ -439,6 +439,16 @@ async def api_trigger_sync():
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Sync failed: {str(e)}")
 
+@app.post("/api/live-sync")
+async def api_trigger_live_sync():
+    """Trigger Fotmob live match sync to update actual points."""
+    try:
+        from live_sync import run_live_sync
+        res = await run_live_sync()
+        return res
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Live sync failed: {str(e)}")
+
 
 # ──────────────────────────────────────────────
 # ENDPOINTS — Rules Reference
