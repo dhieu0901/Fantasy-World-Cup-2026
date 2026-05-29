@@ -157,7 +157,7 @@ function PlayerSelectModal({ isOpen, onClose, players, targetPos, onSelect, curr
 // ══════════════════════════════════════════════
 // Action Menu Modal (with Captain option)
 // ══════════════════════════════════════════════
-function ActionMenuModal({ player, isOpen, onClose, onTransfer, onSub, onSetCaptain, onSetViceCaptain, isInXI }) {
+function ActionMenuModal({ player, isOpen, onClose, onTransfer, onSub, onSetCaptain, onSetViceCaptain, onOpenScenario, isInXI }) {
   if (!isOpen || !player) return null;
   return (
     <div style={{ position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, background: 'rgba(0,0,0,0.7)', zIndex: 1000, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
@@ -201,9 +201,135 @@ function ActionMenuModal({ player, isOpen, onClose, onTransfer, onSub, onSetCapt
             🛒 Transfer
           </button>
           <button 
+            onClick={() => { onOpenScenario(player); onClose(); }} 
+            style={{ background: 'linear-gradient(135deg, #3b82f6, #1d4ed8)', color: 'white', border: 'none', padding: '12px', borderRadius: '8px', cursor: 'pointer', fontWeight: 700, display: 'flex', justifyContent: 'center', gap: '8px' }}
+          >
+            🎮 Scenario Simulator
+          </button>
+          <button 
             onClick={onClose} 
             style={{ background: 'transparent', color: 'var(--clr-text-muted)', border: '1px solid var(--clr-border)', padding: '10px', borderRadius: '8px', cursor: 'pointer', marginTop: '4px' }}
           >
+            Cancel
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+// ══════════════════════════════════════════════
+// Scenario Simulator Modal
+// ══════════════════════════════════════════════
+function ScenarioSimulatorModal({ player, isOpen, onClose, onSaveMockPoints }) {
+  const [minutes, setMinutes] = useState(90);
+  const [goals, setGoals] = useState(0);
+  const [assists, setAssists] = useState(0);
+  const [yellowCards, setYellowCards] = useState(0);
+  const [redCards, setRedCards] = useState(0);
+  const [ownGoals, setOwnGoals] = useState(0);
+  const [goalsConceded, setGoalsConceded] = useState(0);
+  const [cleanSheet, setCleanSheet] = useState(false);
+  const [saves, setSaves] = useState(0);
+
+  if (!isOpen || !player) return null;
+
+  const calculatePoints = () => {
+     let pts = 0;
+     const pos = player.position;
+     // Appearance
+     if (minutes > 0 && minutes < 60) pts += 1;
+     else if (minutes >= 60) pts += 2;
+     
+     // Assists & Cards
+     pts += assists * 3;
+     pts += yellowCards * -1;
+     pts += redCards * -2;
+     pts += ownGoals * -2;
+     
+     // Position Specific
+     if (pos === 'GK' || pos === 'DEF') {
+         if (cleanSheet && minutes >= 60) pts += 5;
+         if (goalsConceded > 1) pts -= (goalsConceded - 1);
+         if (pos === 'GK') {
+             pts += goals * 9;
+             pts += Math.floor(saves / 3);
+         } else {
+             pts += goals * 7;
+         }
+     } else if (pos === 'MID') {
+         if (cleanSheet && minutes >= 60) pts += 1;
+         pts += goals * 6;
+     } else if (pos === 'FWD') {
+         pts += goals * 5;
+     }
+     return pts;
+  };
+
+  const currentMockPts = calculatePoints();
+
+  return (
+    <div style={{ position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, background: 'rgba(0,0,0,0.8)', zIndex: 1100, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+      <div style={{ background: 'var(--clr-bg)', padding: '24px', borderRadius: '12px', width: '350px', border: '1px solid var(--clr-border)', boxShadow: '0 10px 30px rgba(0,0,0,0.8)' }}>
+        <h3 style={{ margin: '0 0 4px 0', color: 'var(--clr-teal)' }}>🎮 Scenario Simulator</h3>
+        <p style={{ margin: '0 0 16px 0', fontSize: '0.9rem', color: 'var(--clr-text-muted)' }}>{player.display_name} ({player.position})</p>
+        
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '12px', marginBottom: '20px', fontSize: '0.85rem' }}>
+          <div>
+            <label style={{ display: 'block', marginBottom: '4px', color: 'var(--clr-text-muted)' }}>Minutes Played</label>
+            <input type="number" min="0" max="120" value={minutes} onChange={e => setMinutes(Number(e.target.value))} style={{ width: '100%', padding: '6px', background: 'var(--clr-bg-elevated)', color: 'white', border: '1px solid var(--clr-border)', borderRadius: '4px' }} />
+          </div>
+          <div>
+            <label style={{ display: 'block', marginBottom: '4px', color: 'var(--clr-text-muted)' }}>Goals Scored</label>
+            <input type="number" min="0" value={goals} onChange={e => setGoals(Number(e.target.value))} style={{ width: '100%', padding: '6px', background: 'var(--clr-bg-elevated)', color: 'white', border: '1px solid var(--clr-border)', borderRadius: '4px' }} />
+          </div>
+          <div>
+            <label style={{ display: 'block', marginBottom: '4px', color: 'var(--clr-text-muted)' }}>Assists</label>
+            <input type="number" min="0" value={assists} onChange={e => setAssists(Number(e.target.value))} style={{ width: '100%', padding: '6px', background: 'var(--clr-bg-elevated)', color: 'white', border: '1px solid var(--clr-border)', borderRadius: '4px' }} />
+          </div>
+          {(player.position === 'GK' || player.position === 'DEF' || player.position === 'MID') && (
+            <div>
+              <label style={{ display: 'flex', alignItems: 'center', gap: '6px', marginTop: '24px', cursor: 'pointer' }}>
+                <input type="checkbox" checked={cleanSheet} onChange={e => setCleanSheet(e.target.checked)} />
+                Clean Sheet
+              </label>
+            </div>
+          )}
+          {(player.position === 'GK' || player.position === 'DEF') && (
+            <div>
+              <label style={{ display: 'block', marginBottom: '4px', color: 'var(--clr-text-muted)' }}>Goals Conceded</label>
+              <input type="number" min="0" value={goalsConceded} onChange={e => setGoalsConceded(Number(e.target.value))} style={{ width: '100%', padding: '6px', background: 'var(--clr-bg-elevated)', color: 'white', border: '1px solid var(--clr-border)', borderRadius: '4px' }} />
+            </div>
+          )}
+          {player.position === 'GK' && (
+            <div>
+              <label style={{ display: 'block', marginBottom: '4px', color: 'var(--clr-text-muted)' }}>Saves</label>
+              <input type="number" min="0" value={saves} onChange={e => setSaves(Number(e.target.value))} style={{ width: '100%', padding: '6px', background: 'var(--clr-bg-elevated)', color: 'white', border: '1px solid var(--clr-border)', borderRadius: '4px' }} />
+            </div>
+          )}
+          <div>
+            <label style={{ display: 'block', marginBottom: '4px', color: 'var(--clr-text-muted)' }}>Cards & O.G.</label>
+            <div style={{ display: 'flex', gap: '8px' }}>
+              <button onClick={() => setYellowCards(y => y ? 0 : 1)} style={{ padding: '4px 8px', background: yellowCards ? '#eab308' : 'var(--clr-bg-elevated)', color: yellowCards ? 'black' : 'white', border: '1px solid #eab308', borderRadius: '4px', cursor: 'pointer' }}>🟨</button>
+              <button onClick={() => setRedCards(r => r ? 0 : 1)} style={{ padding: '4px 8px', background: redCards ? '#ef4444' : 'var(--clr-bg-elevated)', color: 'white', border: '1px solid #ef4444', borderRadius: '4px', cursor: 'pointer' }}>🟥</button>
+              <button onClick={() => setOwnGoals(o => o ? 0 : 1)} style={{ padding: '4px 8px', background: ownGoals ? '#ef4444' : 'var(--clr-bg-elevated)', color: 'white', border: '1px solid #ef4444', borderRadius: '4px', cursor: 'pointer' }}>OG</button>
+            </div>
+          </div>
+        </div>
+
+        <div style={{ padding: '16px', background: 'var(--clr-bg-card)', borderRadius: '8px', textAlign: 'center', marginBottom: '20px', border: '1px solid var(--clr-border)' }}>
+          <span style={{ fontSize: '0.85rem', color: 'var(--clr-text-muted)', display: 'block', marginBottom: '4px' }}>Simulated Points</span>
+          <strong style={{ fontSize: '2rem', color: 'var(--clr-teal)' }}>{currentMockPts}</strong>
+        </div>
+
+        <div style={{ display: 'flex', gap: '10px' }}>
+          <button onClick={() => { onSaveMockPoints(player.id, currentMockPts); onClose(); }} style={{ flex: 1, background: 'var(--clr-teal)', color: 'var(--clr-bg)', border: 'none', padding: '10px', borderRadius: '8px', fontWeight: 'bold', cursor: 'pointer' }}>
+            Apply Scenario
+          </button>
+          <button onClick={() => { onSaveMockPoints(player.id, null); onClose(); }} style={{ background: 'transparent', color: '#fca5a5', border: '1px solid rgba(252,165,165,0.3)', padding: '10px', borderRadius: '8px', cursor: 'pointer' }}>
+            Clear
+          </button>
+          <button onClick={onClose} style={{ background: 'transparent', color: 'var(--clr-text-muted)', border: '1px solid var(--clr-border)', padding: '10px', borderRadius: '8px', cursor: 'pointer' }}>
             Cancel
           </button>
         </div>
@@ -257,8 +383,14 @@ function PitchPlayer({ player: p, isCaptain, isViceCaptain, isSubSource, onClick
     case '% Selected': displayValue = `${p.percent_selected?.toFixed(1)}%`; break;
     case 'Date': displayValue = (p.next_match_date && p.next_match_date !== "2099-12-31T00:00:00Z") ? new Date(p.next_match_date).toLocaleDateString('en-GB', { day: 'numeric', month: 'short' }) : '-'; break;
     case 'xPts':
-    default: displayValue = p.projected_pts?.toFixed(1); break;
+    default: 
+      displayValue = p.mock_points !== null && p.mock_points !== undefined 
+          ? `${p.mock_points}` 
+          : p.projected_pts?.toFixed(1); 
+      break;
   }
+
+  const isMocked = p.mock_points !== null && p.mock_points !== undefined && viewMode === 'xPts';
 
   return (
     <div className="pitch-player" onClick={onClick} style={{ cursor: 'pointer' }}>
@@ -282,7 +414,9 @@ function PitchPlayer({ player: p, isCaptain, isViceCaptain, isSubSource, onClick
             <span style={{ color: '#64748b', fontWeight: 700 }}>v</span> <strong style={{ letterSpacing: '0.5px', fontWeight: 800 }}>{p.next_opponent}</strong>
           </div>
         )}
-        <div className={`pitch-pts ${isCaptain ? 'is-captain' : ''}`}>{displayValue}</div>
+        <div className={`pitch-pts ${isCaptain ? 'is-captain' : ''}`} style={isMocked ? { background: '#1d4ed8', color: 'white', fontWeight: 'bold' } : {}}>
+          {displayValue}
+        </div>
       </div>
     </div>
   );
@@ -294,6 +428,7 @@ function PitchPlayer({ player: p, isCaptain, isViceCaptain, isSubSource, onClick
 export default function SquadPlannerTab({ players, myTeamIds, setMyTeam, optimResult, setOptimResult }) {
   const [playerSelectModalOpen, setPlayerSelectModalOpen] = useState(false);
   const [actionModalOpen, setActionModalOpen] = useState(false);
+  const [scenarioModalOpen, setScenarioModalOpen] = useState(false);
   
   const [targetPos, setTargetPos] = useState('ANY');
   const [playerToAction, setPlayerToAction] = useState(null);
@@ -476,6 +611,25 @@ export default function SquadPlannerTab({ players, myTeamIds, setMyTeam, optimRe
 
   const handleSubClick = (player) => {
     setSubSourcePlayer(player);
+  };
+
+  const handleOpenScenario = (player) => {
+    setPlayerToAction(player);
+    setScenarioModalOpen(true);
+  };
+
+  const handleSaveMockPoints = async (playerId, pts) => {
+    try {
+      await fetch('/api/mock-points', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ player_id: playerId, points: pts })
+      });
+      // Force a full refresh of players to get the updated mock_points
+      window.location.reload(); 
+    } catch (e) {
+      console.error("Failed to save mock points", e);
+    }
   };
 
   const handleSetCaptain = (player) => {

@@ -487,6 +487,25 @@ class SaveTeamRequest(BaseModel):
     device_id: str = Field(..., description="Unique device ID for the user")
     player_ids: list[int] = Field(..., description="List of 15 player IDs")
 
+@app.post('/api/mock-points')
+def update_mock_points(req: dict):
+    player_id = req.get('player_id')
+    points = req.get('points')
+    
+    if not player_id:
+        raise HTTPException(status_code=400, detail="Missing player_id")
+        
+    conn = get_connection()
+    try:
+        if points is None:
+            conn.execute("UPDATE players SET mock_points = NULL, mock_match_status = NULL WHERE id = ?", (player_id,))
+        else:
+            conn.execute("UPDATE players SET mock_points = ?, mock_match_status = 'finished' WHERE id = ?", (points, player_id))
+        conn.commit()
+        return {"success": True}
+    finally:
+        conn.close()
+
 @app.post("/api/team")
 def api_save_team(req: SaveTeamRequest):
     """Save a user's team by device_id."""
