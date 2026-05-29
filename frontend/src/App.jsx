@@ -131,10 +131,11 @@ export default function App() {
   // Removed search API fetch to prevent overwriting master players list
 
   // Optimize
+  const [optimStage, setOptimStage] = useState('GROUP_MD1');
   const runOptimize = useCallback(async () => {
     setOptimizing(true);
     try {
-      const payload = { preset, stage: 'GROUP_MD1', chip };
+      const payload = { preset, stage: optimStage, chip };
       if (transferMode && myTeam.length > 0) {
         payload.current_squad = myTeam;
         payload.free_transfers = freeTransfers;
@@ -144,7 +145,7 @@ export default function App() {
       setTab('lineup');
     } catch (e) { console.error('Optimize failed:', e); }
     setOptimizing(false);
-  }, [preset, chip, transferMode, myTeam, freeTransfers]);
+  }, [preset, optimStage, chip, transferMode, myTeam, freeTransfers]);
 
   // Force Sync
   const [isSyncing, setIsSyncing] = useState(false);
@@ -319,20 +320,18 @@ export default function App() {
               {isSyncing ? 'Syncing...' : 'Force Sync Data'}
             </button>
           </div>
-          <OptimizerPanel
-            preset={preset}
-            setPreset={setPreset}
-            chip={chip}
-            setChip={setChip}
-            transferMode={transferMode}
-            setTransferMode={setTransferMode}
-            myTeam={myTeam}
-            freeTransfers={freeTransfers}
-            setFreeTransfers={setFreeTransfers}
-            optimizing={optimizing}
-            runOptimize={runOptimize}
-            result={optimResult}
-          />
+          <div className="sidebar-container">
+            <OptimizerPanel 
+              preset={preset} setPreset={setPreset}
+              stage={optimStage} setStage={setOptimStage}
+              chip={chip} setChip={setChip}
+              transferMode={transferMode} setTransferMode={setTransferMode}
+              myTeam={myTeam}
+              freeTransfers={freeTransfers} setFreeTransfers={setFreeTransfers}
+              optimizing={optimizing} runOptimize={runOptimize}
+              result={optimResult}
+            />
+          </div>
         </aside>
       </div>
     </div>
@@ -390,7 +389,7 @@ function ProjectionsTab({ players, search, setSearch, posFilter, setPosFilter, s
       <div style={{ display: 'flex', gap: '16px', marginBottom: '16px', alignItems: 'center', flexWrap: 'wrap' }}>
         <input 
           type="text" 
-          placeholder="🔍 Search players..." 
+          placeholder="Search players..." 
           value={search} 
           onChange={e => setSearch(e.target.value)}
           className="search-input"
@@ -577,7 +576,7 @@ function FixturesTab({ squads, fixtures, setSelectedTeamFilter, setTab }) {
 /* ═══════════════════════════════════════════
    OPTIMIZER PANEL (Sidebar)
    ═══════════════════════════════════════════ */
-function OptimizerPanel({ preset, setPreset, chip, setChip, transferMode, setTransferMode, myTeam, freeTransfers, setFreeTransfers, optimizing, runOptimize, result }) {
+function OptimizerPanel({ preset, setPreset, stage, setStage, chip, setChip, transferMode, setTransferMode, myTeam, freeTransfers, setFreeTransfers, optimizing, runOptimize, result }) {
   const presets = [
     { id: 'default', label: 'Balanced', desc: 'Max total xPts, balanced risk & reward' },
     { id: 'value', label: 'Value', desc: 'Maximize points-per-million, hunt for budget gems' },
@@ -614,9 +613,25 @@ function OptimizerPanel({ preset, setPreset, chip, setChip, transferMode, setTra
           {/* Stage selector */}
           <div style={{ marginBottom: 'var(--sp-4)' }}>
             <div style={{ fontSize: '0.7rem', color: 'var(--clr-text-muted)', marginBottom: 'var(--sp-2)', fontWeight: 600 }}>STAGE</div>
-            <div style={{ fontSize: '0.8rem', color: 'var(--clr-text)', padding: 'var(--sp-2)', background: 'var(--clr-bg-elevated)', borderRadius: 'var(--r-sm)', textAlign: 'center', fontWeight: 600 }}>
-              Group Stage — Matchday 1
-            </div>
+            <select
+              value={stage}
+              onChange={e => setStage(e.target.value)}
+              style={{
+                width: '100%', padding: 'var(--sp-2)',
+                background: 'var(--clr-bg-elevated)', color: 'var(--clr-text)',
+                border: '1px solid var(--clr-border)', borderRadius: 'var(--r-sm)',
+                fontSize: '0.8rem', outline: 'none', cursor: 'pointer', fontWeight: 600
+              }}
+            >
+              <option value="GROUP_MD1">Group Stage — Matchday 1</option>
+              <option value="GROUP_MD2">Group Stage — Matchday 2</option>
+              <option value="GROUP_MD3">Group Stage — Matchday 3</option>
+              <option value="ROUND_OF_32">Round of 32</option>
+              <option value="ROUND_OF_16">Round of 16</option>
+              <option value="QUARTER_FINAL">Quarter-Final</option>
+              <option value="SEMI_FINAL">Semi-Final</option>
+              <option value="FINAL">Final</option>
+            </select>
           </div>
           
           {/* Transfer Planner Toggle */}
@@ -696,6 +711,14 @@ function OptimizerPanel({ preset, setPreset, chip, setChip, transferMode, setTra
                 <div className="val" style={{ color: 'var(--clr-text)', fontSize: '0.8rem' }}>{result.method?.toUpperCase()}</div>
                 <div className="lbl">Method</div>
               </div>
+              {result.chip && result.chip !== 'none' && (
+                <div className="item" style={{ gridColumn: '1 / -1', marginTop: '4px' }}>
+                  <div className="val" style={{ color: '#facc15', fontSize: '0.8rem', fontWeight: 700 }}>
+                    {result.chip === '12th_man' ? '12th Man' : result.chip === 'max_captain' ? 'Max Captain' : result.chip === 'wildcard' ? 'Wildcard' : result.chip === 'qualification' ? 'Qualification' : result.chip}
+                  </div>
+                  <div className="lbl">Booster Active</div>
+                </div>
+              )}
             </div>
           )}
         </div>

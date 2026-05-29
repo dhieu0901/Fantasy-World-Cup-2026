@@ -181,8 +181,14 @@ def optimize_greedy(players: list[dict], stage: str = "GROUP_MD1",
             selected.append(twelfth_man)
 
     total_xpts = sum(p.get("projected_pts", 0) for p in starting_xi)
-    if captain:
-        total_xpts += captain.get("projected_pts", 0)  # Captain gets double
+
+    # Handle Maximum Captain Booster (captain scores triple xPts: 1x base + 2x captain)
+    if chip == "max_captain":
+        if captain:
+            total_xpts += captain.get("projected_pts", 0) * 2  # Triple total for captain
+    else:
+        if captain:
+            total_xpts += captain.get("projected_pts", 0)  # Normal double for captain
 
     # Handle Qualification Booster
     if chip == "qualification" and stage not in ("GROUP_MD1", "GROUP_MD2", "GROUP_MD3"):
@@ -201,6 +207,7 @@ def optimize_greedy(players: list[dict], stage: str = "GROUP_MD1",
         "total_projected_pts": round(total_xpts, 1),
         "preset": preset,
         "stage": stage,
+        "chip": chip,
         "method": "greedy",
     }
 
@@ -312,15 +319,14 @@ def optimize_lp(players: list[dict], stage: str = "GROUP_MD1",
         # ─── DYNAMIC BENCH WEIGHTING (The WC Fantasy Secret) ───
         # In FPL, the bench is largely useless (weight ~0.1).
         # In World Cup (Manual Subs), the bench is incredibly valuable, BUT ONLY if they play LATE.
-        # You cannot sub in a Day 1 player. So Day 1 players have terrible bench value.
-        # You CAN sub in a Day 5 player to replace an early blanker. So Day 5 players have massive bench value (~0.8).
+        # Scale from 0.1 (Day 1) to 0.4 (Max Day) to ensure Starting XI is still prioritized.
         for p in players:
             pid = p["id"]
             team_name = squads.get(p.get("squad_id", 0), "")
             day_idx = team_day_map.get(team_name, 1)
             
-            # Scale from 0.2 (Day 1) to 0.85 (Max Day)
-            bench_weight = 0.2 + 0.65 * ((day_idx - 1) / max(1, MAX_DAY - 1))
+            # Max bench weight = 0.4 so the solver doesn't sacrifice the Starting XI too much
+            bench_weight = 0.1 + 0.3 * ((day_idx - 1) / max(1, MAX_DAY - 1))
             
             objective += obj_values.get(pid, 0) * bench_weight * (squad_vars[pid] - xi_vars[pid])
 
@@ -451,8 +457,14 @@ def optimize_lp(players: list[dict], stage: str = "GROUP_MD1",
 
     spent = sum(p["price"] for p in selected if not p.get("is_12th_man"))
     total_xpts = sum(p.get("projected_pts", 0) for p in starting_xi)
-    if captain:
-        total_xpts += captain.get("projected_pts", 0)
+
+    # Handle Maximum Captain Booster (captain scores triple xPts: 1x base + 2x captain)
+    if chip == "max_captain":
+        if captain:
+            total_xpts += captain.get("projected_pts", 0) * 2  # Triple total for captain
+    else:
+        if captain:
+            total_xpts += captain.get("projected_pts", 0)  # Normal double for captain
         
     # Handle Qualification Booster
     if chip == "qualification" and stage not in ("GROUP_MD1", "GROUP_MD2", "GROUP_MD3"):
@@ -486,6 +498,7 @@ def optimize_lp(players: list[dict], stage: str = "GROUP_MD1",
         "transfer_cost": transfer_cost,
         "preset": preset,
         "stage": stage,
+        "chip": chip,
         "method": "lp" if HAS_PULP else "greedy",
         "solver_status": pulp.LpStatus[prob.status],
     }
