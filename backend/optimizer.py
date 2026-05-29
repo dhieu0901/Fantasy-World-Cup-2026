@@ -309,13 +309,20 @@ def optimize_lp(players: list[dict], stage: str = "GROUP_MD1",
         # Identify MAX_DAY for fallback (teams not in fixture file)
         MAX_DAY = max(team_day_map.values()) if team_day_map else 7
         
-        # Add bench value + day_index bonus to the objective
-        # In a manual sub game, a strong bench is valuable, but starting XI is still king.
-        # We value bench xPts at 35% of starting xPts (the "Goldilocks" ratio).
-        objective += pulp.lpSum(
-            obj_values.get(p["id"], 0) * 0.35 * (squad_vars[p["id"]] - xi_vars[p["id"]])
-            for p in players
-        )
+        # ─── DYNAMIC BENCH WEIGHTING (The WC Fantasy Secret) ───
+        # In FPL, the bench is largely useless (weight ~0.1).
+        # In World Cup (Manual Subs), the bench is incredibly valuable, BUT ONLY if they play LATE.
+        # You cannot sub in a Day 1 player. So Day 1 players have terrible bench value.
+        # You CAN sub in a Day 5 player to replace an early blanker. So Day 5 players have massive bench value (~0.8).
+        for p in players:
+            pid = p["id"]
+            team_name = squads.get(p.get("squad_id", 0), "")
+            day_idx = team_day_map.get(team_name, 1)
+            
+            # Scale from 0.2 (Day 1) to 0.85 (Max Day)
+            bench_weight = 0.2 + 0.65 * ((day_idx - 1) / max(1, MAX_DAY - 1))
+            
+            objective += obj_values.get(pid, 0) * bench_weight * (squad_vars[pid] - xi_vars[pid])
 
         # Formula: 0.01 * (MAX_DAY - day_index) * xi_vars[pid]
         # This rewards putting EARLY players (day_index = 1) in the Starting XI (xi_vars = 1)
