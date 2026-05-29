@@ -1,5 +1,5 @@
 """
-FotMob Scraper — Fetch xG, xA, defensive stats for WC2026 Fantasy players.
+FotMob Scraper  Fetch xG, xA, defensive stats for WC2026 Fantasy players.
 ============================================================================
 
 FotMob has no official API. This module uses their internal JSON endpoints
@@ -12,7 +12,7 @@ Key endpoints (unofficial, reverse-engineered):
   Search:  GET https://www.fotmob.com/api/searchapi/?term={name}
 
 Strategy:
-  1. Use search API to map FIFA Fantasy player names → FotMob player IDs
+  1. Use search API to map FIFA Fantasy player names  FotMob player IDs
   2. Fetch player data for current club season stats (xG, xA, tackles, etc.)
   3. Store in player_xstats table
   
@@ -22,7 +22,7 @@ Cache responses to avoid re-fetching.
 Usage:
   python fotmob_scraper.py                    # Scrape top 100 players by price
   python fotmob_scraper.py --all              # Scrape all 1410 players (slow, ~45 min)
-  python fotmob_scraper.py --player "Mbappé"  # Scrape a single player
+  python fotmob_scraper.py --player "Mbapp"  # Scrape a single player
 """
 
 import httpx
@@ -38,9 +38,9 @@ from difflib import SequenceMatcher
 
 from database import get_connection, init_db
 
-# ──────────────────────────────────────────────
+# ----------------------------------------------
 # CONFIG
-# ──────────────────────────────────────────────
+# ----------------------------------------------
 FOTMOB_BASE = "https://www.fotmob.com/api"
 RATE_LIMIT_SECONDS = 2.0   # Minimum delay between requests
 CACHE_DIR = Path(__file__).parent / "cache" / "fotmob"
@@ -59,9 +59,9 @@ HEADERS = {
 }
 
 
-# ──────────────────────────────────────────────
-# HTTP CLIENT — Session + rate limiting + cache
-# ──────────────────────────────────────────────
+# ----------------------------------------------
+# HTTP CLIENT  Session + rate limiting + cache
+# ----------------------------------------------
 class FotMobClient:
     """HTTP client with session, rate limiting, and disk cache."""
 
@@ -141,10 +141,10 @@ class FotMobClient:
                     self._save_cache(url, data)
                     return data
                 elif resp.status_code == 403:
-                    print(f"    [403] Blocked by Cloudflare — waiting 10s...")
+                    print(f"    [403] Blocked by Cloudflare  waiting 10s...")
                     await asyncio.sleep(10)
                 elif resp.status_code == 429:
-                    print(f"    [429] Rate limited — waiting 30s...")
+                    print(f"    [429] Rate limited  waiting 30s...")
                     await asyncio.sleep(30)
                 else:
                     print(f"    [{resp.status_code}] {url}")
@@ -159,9 +159,9 @@ class FotMobClient:
         return None
 
 
-# ──────────────────────────────────────────────
-# SEARCH — Map player names to FotMob IDs
-# ──────────────────────────────────────────────
+# ----------------------------------------------
+# SEARCH  Map player names to FotMob IDs
+# ----------------------------------------------
 def _name_similarity(a: str, b: str) -> float:
     """Fuzzy name matching score (0-1)."""
     a = a.lower().strip()
@@ -225,9 +225,9 @@ async def search_player(client: FotMobClient, name: str) -> dict | None:
     return None
 
 
-# ──────────────────────────────────────────────
-# PLAYER DATA — Fetch detailed stats
-# ──────────────────────────────────────────────
+# ----------------------------------------------
+# PLAYER DATA  Fetch detailed stats
+# ----------------------------------------------
 async def fetch_player_stats(client: FotMobClient, fotmob_id: int) -> dict | None:
     """
     Fetch detailed player stats from FotMob.
@@ -258,7 +258,7 @@ async def fetch_player_stats(client: FotMobClient, fotmob_id: int) -> dict | Non
     result["position"] = pos_desc.get("primaryPosition", {}).get("label")
 
     # Find season stats
-    # FotMob structure: statSeasons → each season has stats per competition
+    # FotMob structure: statSeasons  each season has stats per competition
     stat_seasons = data.get("statSeasons", [])
 
     if not stat_seasons:
@@ -283,7 +283,7 @@ async def fetch_player_stats(client: FotMobClient, fotmob_id: int) -> dict | Non
     main_tournament = tournaments[0]
     result["competition"] = main_tournament.get("name", main_tournament.get("tournamentName"))
 
-    # Parse stats — FotMob uses a nested structure:
+    # Parse stats  FotMob uses a nested structure:
     # stats > [{title: "Goals", items: [{title: "Goals", stat: {value: 5}}]}]
     stats = main_tournament.get("stats", [])
     if not stats:
@@ -356,9 +356,9 @@ async def fetch_player_stats(client: FotMobClient, fotmob_id: int) -> dict | Non
     return result
 
 
-# ──────────────────────────────────────────────
-# UPSERT — Save stats to player_xstats table
-# ──────────────────────────────────────────────
+# ----------------------------------------------
+# UPSERT  Save stats to player_xstats table
+# ----------------------------------------------
 def save_player_xstats(conn: sqlite3.Connection, player_id: int, stats: dict):
     """Save fetched stats to the player_xstats table."""
     now = datetime.now(timezone.utc).isoformat()
@@ -443,9 +443,9 @@ def save_player_xstats(conn: sqlite3.Connection, player_id: int, stats: dict):
     conn.commit()
 
 
-# ──────────────────────────────────────────────
-# MAIN — Orchestrate scraping
-# ──────────────────────────────────────────────
+# ----------------------------------------------
+# MAIN  Orchestrate scraping
+# ----------------------------------------------
 async def scrape_fotmob(limit: int = 100, player_name: str = None):
     """
     Main scraping pipeline.
@@ -483,7 +483,7 @@ async def scrape_fotmob(limit: int = 100, player_name: str = None):
         return
 
     print(f"\n{'=' * 56}")
-    print(f"  FotMob Scraper — {total} players to process")
+    print(f"  FotMob Scraper  {total} players to process")
     print(f"  Est. time: ~{total * RATE_LIMIT_SECONDS / 60:.0f} min (with rate limiting)")
     print(f"{'=' * 56}\n")
 
@@ -565,16 +565,16 @@ async def scrape_fotmob(limit: int = 100, player_name: str = None):
     if top_xg:
         print("  Top 15 by xG (current club season):")
         print(f"  {'Name':25s} {'Team':15s} {'Pos':4s} {'Price':6s} {'xG':6s} {'xA':6s} {'Rating':6s}")
-        print(f"  {'─' * 75}")
+        print(f"  {'-' * 75}")
         for r in top_xg:
             print(f"  {r[1]:25s} {r[2] or '?':15s} {r[3]:4s} ${r[4]:<5.1f} {r[5]:6.1f} {r[6]:6.1f} {r[7]:6.1f}")
 
     conn.close()
 
 
-# ──────────────────────────────────────────────
+# ----------------------------------------------
 # CLI
-# ──────────────────────────────────────────────
+# ----------------------------------------------
 if __name__ == "__main__":
     args = sys.argv[1:]
 

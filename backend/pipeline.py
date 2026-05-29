@@ -1,17 +1,17 @@
 """
-FIFA Fantasy World Cup 2026 — Data Pipeline
+FIFA Fantasy World Cup 2026  Data Pipeline
 =============================================
-Cào data từ FIFA Fantasy API (public, không cần auth).
-Chạy hàng ngày để tự động phát hiện:
-  - Cầu thủ mới được thêm vào game
-  - Thay đổi giá (price changes)
-  - Cầu thủ bị loại / injured / status thay đổi
-  - Kết quả trận đấu mới
+Co data t FIFA Fantasy API (public, khng cn auth).
+Chy hng ngy  t ng pht hin:
+  - Cu th mi c thm vo game
+  - Thay i gi (price changes)
+  - Cu th b loi / injured / status thay i
+  - Kt qu trn u mi
 
 Endpoints:
-  1. play.fifa.com/json/fantasy/players.json     → players + price + stats
-  2. play.fifa.com/json/fantasy/squads_fifa.json  → teams / national squads
-  3. play.fifa.com/json/fantasy/rounds.json       → schedule + results
+  1. play.fifa.com/json/fantasy/players.json      players + price + stats
+  2. play.fifa.com/json/fantasy/squads_fifa.json   teams / national squads
+  3. play.fifa.com/json/fantasy/rounds.json        schedule + results
 
 Usage:
   python pipeline.py                # Full sync (players + squads + fixtures)
@@ -32,9 +32,9 @@ from pathlib import Path
 # Import our database module
 from database import get_connection, init_db, get_stats_summary
 
-# ──────────────────────────────────────────────
+# ----------------------------------------------
 # CONFIG
-# ──────────────────────────────────────────────
+# ----------------------------------------------
 FIFA_BASE = "https://play.fifa.com/json/fantasy"
 ENDPOINTS = {
     "players": f"{FIFA_BASE}/players.json",
@@ -54,9 +54,9 @@ CSV_EXPORT_PATH = Path(__file__).parent / "exports"
 CACHE_PATH = Path(__file__).parent / "cache"   # JSON snapshot fallback
 
 
-# ──────────────────────────────────────────────
-# FETCH — Download data from FIFA Fantasy API
-# ──────────────────────────────────────────────
+# ----------------------------------------------
+# FETCH  Download data from FIFA Fantasy API
+# ----------------------------------------------
 def _save_cache(name: str, data: list):
     """Save successful API response as JSON snapshot for fallback."""
     CACHE_PATH.mkdir(exist_ok=True)
@@ -71,10 +71,10 @@ def _load_cache(name: str) -> list | None:
         try:
             data = json.loads(cache_file.read_text(encoding="utf-8"))
             age_hours = (time.time() - cache_file.stat().st_mtime) / 3600
-            print(f"  ↩ {name}: Loaded cache ({len(data)} records, {age_hours:.1f}h old)")
+            print(f"   {name}: Loaded cache ({len(data)} records, {age_hours:.1f}h old)")
             return data
         except Exception as e:
-            print(f"  ✗ {name}: Cache read error: {e}")
+            print(f"   {name}: Cache read error: {e}")
     return None
 
 
@@ -85,19 +85,19 @@ async def fetch_endpoint(client: httpx.AsyncClient, name: str, url: str) -> list
             resp = await client.get(url, headers=HEADERS, timeout=30, follow_redirects=True)
             if resp.status_code == 200:
                 data = resp.json()
-                print(f"  ✓ {name}: {len(data)} records")
+                print(f"   {name}: {len(data)} records")
                 _save_cache(name, data)  # Save snapshot for fallback
                 return data
             else:
-                print(f"  ⚠ {name}: HTTP {resp.status_code} (attempt {attempt + 1}/3)")
+                print(f"   {name}: HTTP {resp.status_code} (attempt {attempt + 1}/3)")
         except Exception as e:
-            print(f"  ✗ {name}: {e} (attempt {attempt + 1}/3)")
+            print(f"   {name}: {e} (attempt {attempt + 1}/3)")
         
         if attempt < 2:
             await asyncio.sleep(2 ** attempt)  # Exponential backoff
 
-    # All retries failed — try fallback cache
-    print(f"  ✗ {name}: FAILED after 3 attempts — trying cache fallback...")
+    # All retries failed  try fallback cache
+    print(f"   {name}: FAILED after 3 attempts  trying cache fallback...")
     return _load_cache(name)
 
 
@@ -123,9 +123,9 @@ async def fetch_all_data(players_only: bool = False) -> dict:
         }
 
 
-# ──────────────────────────────────────────────
-# SYNC SQUADS — Upsert national teams
-# ──────────────────────────────────────────────
+# ----------------------------------------------
+# SYNC SQUADS  Upsert national teams
+# ----------------------------------------------
 def sync_squads(conn: sqlite3.Connection, squads: list) -> int:
     """Upsert squads. Handles both squads.json and squads_fifa.json formats."""
     if not squads:
@@ -172,9 +172,9 @@ def sync_squads(conn: sqlite3.Connection, squads: list) -> int:
     return len(squads)
 
 
-# ──────────────────────────────────────────────
-# SYNC ROUNDS + FIXTURES — Upsert schedule
-# ──────────────────────────────────────────────
+# ----------------------------------------------
+# SYNC ROUNDS + FIXTURES  Upsert schedule
+# ----------------------------------------------
 def sync_rounds(conn: sqlite3.Connection, rounds: list) -> tuple[int, int]:
     """Upsert rounds and fixtures. Returns (rounds_count, fixtures_count)."""
     if not rounds:
@@ -261,16 +261,16 @@ def sync_rounds(conn: sqlite3.Connection, rounds: list) -> tuple[int, int]:
     return len(rounds), total_fixtures
 
 
-# ──────────────────────────────────────────────
-# SYNC PLAYERS — The core upsert logic
-# ──────────────────────────────────────────────
+# ----------------------------------------------
+# SYNC PLAYERS  The core upsert logic
+# ----------------------------------------------
 def sync_players(conn: sqlite3.Connection, players: list) -> dict:
     """
     Upsert players with full change detection:
-    - New player → INSERT + log as 'added'
-    - Price changed → UPDATE + record in price_history
-    - Status changed → UPDATE
-    - Player removed from API → deactivate (is_active=0)
+    - New player  INSERT + log as 'added'
+    - Price changed  UPDATE + record in price_history
+    - Status changed  UPDATE
+    - Player removed from API  deactivate (is_active=0)
     
     Returns dict with counts: {added, updated, deactivated, price_changes}
     """
@@ -324,7 +324,7 @@ def sync_players(conn: sqlite3.Connection, players: list) -> dict:
         }
 
         if pid in existing:
-            # ─── EXISTING PLAYER: check for changes ───
+            # --- EXISTING PLAYER: check for changes ---
             old = existing[pid]
 
             # Detect price change
@@ -373,7 +373,7 @@ def sync_players(conn: sqlite3.Connection, players: list) -> dict:
             """, player_data)
             updated += 1
         else:
-            # ─── NEW PLAYER: insert ───
+            # --- NEW PLAYER: insert ---
             player_data["first_seen_at"] = now
             cur.execute("""
                 INSERT INTO players (
@@ -405,7 +405,7 @@ def sync_players(conn: sqlite3.Connection, players: list) -> dict:
                 (pid, None, player_data["price"], now)
             )
 
-    # ─── DEACTIVATE removed players ───
+    # --- DEACTIVATE removed players ---
     old_active_ids = set(existing.keys())
     removed_ids = old_active_ids - new_ids
     deactivated = 0
@@ -421,24 +421,24 @@ def sync_players(conn: sqlite3.Connection, players: list) -> dict:
 
     conn.commit()
 
-    # ─── Print change report ───
+    # --- Print change report ---
     if new_players_list:
-        print(f"\n  🆕 New players ({len(new_players_list)}):")
+        print(f"\n   New players ({len(new_players_list)}):")
         for name in new_players_list[:20]:  # Show max 20
             print(f"     + {name}")
         if len(new_players_list) > 20:
             print(f"     ... and {len(new_players_list) - 20} more")
 
     if price_change_list:
-        print(f"\n  💰 Price changes ({len(price_change_list)}):")
+        print(f"\n   Price changes ({len(price_change_list)}):")
         for pc in sorted(price_change_list, key=lambda x: abs(x["diff"]), reverse=True)[:15]:
-            arrow = "📈" if pc["diff"] > 0 else "📉"
-            print(f"     {arrow} {pc['name']}: ${pc['old']:.1f}m → ${pc['new']:.1f}m ({pc['diff']:+.1f})")
+            arrow = "" if pc["diff"] > 0 else ""
+            print(f"     {arrow} {pc['name']}: ${pc['old']:.1f}m  ${pc['new']:.1f}m ({pc['diff']:+.1f})")
         if len(price_change_list) > 15:
             print(f"     ... and {len(price_change_list) - 15} more")
 
     if deactivated_names:
-        print(f"\n  ❌ Deactivated ({len(deactivated_names)}):")
+        print(f"\n   Deactivated ({len(deactivated_names)}):")
         for name in deactivated_names[:10]:
             print(f"     - {name}")
 
@@ -450,9 +450,9 @@ def sync_players(conn: sqlite3.Connection, players: list) -> dict:
     }
 
 
-# ──────────────────────────────────────────────
-# SYNC ROUND POINTS — Normalize JSON → table
-# ──────────────────────────────────────────────
+# ----------------------------------------------
+# SYNC ROUND POINTS  Normalize JSON  table
+# ----------------------------------------------
 def sync_round_points(conn: sqlite3.Connection, players: list) -> int:
     """
     Extract roundPoints JSON from each player and populate
@@ -501,9 +501,9 @@ def sync_round_points(conn: sqlite3.Connection, players: list) -> int:
     return count
 
 
-# ──────────────────────────────────────────────
-# EXPORT — CSV for debugging/analysis
-# ──────────────────────────────────────────────
+# ----------------------------------------------
+# EXPORT  CSV for debugging/analysis
+# ----------------------------------------------
 def export_csv(conn: sqlite3.Connection):
     """Export players to CSV with team names joined."""
     CSV_EXPORT_PATH.mkdir(exist_ok=True)
@@ -553,62 +553,62 @@ def export_csv(conn: sqlite3.Connection):
     if not df_prices.empty:
         prices_path = CSV_EXPORT_PATH / "wc2026_price_history.csv"
         df_prices.to_csv(prices_path, index=False)
-        print(f"  📄 Price history → {prices_path} ({len(df_prices)} records)")
+        print(f"   Price history  {prices_path} ({len(df_prices)} records)")
 
     # Summary
     active = df[df["is_active"] == 1]
-    print(f"\n{'─' * 50}")
-    print(f"📊 Database Summary ({len(active)} active players)")
-    print(f"{'─' * 50}")
+    print(f"\n{'-' * 50}")
+    print(f" Database Summary ({len(active)} active players)")
+    print(f"{'-' * 50}")
 
     pos_count = active["position"].value_counts()
     for pos in ["GK", "DEF", "MID", "FWD"]:
         print(f"   {pos}: {pos_count.get(pos, 0)}")
 
     print(f"   Teams: {active['team'].nunique()}")
-    print(f"   Price range: ${active['price'].min():.1f}m – ${active['price'].max():.1f}m")
+    print(f"   Price range: ${active['price'].min():.1f}m  ${active['price'].max():.1f}m")
     print(f"   Avg price: ${active['price'].mean():.1f}m")
 
-    print(f"\n   🏆 Top 10 by Fantasy Points:")
+    print(f"\n    Top 10 by Fantasy Points:")
     top = active.nlargest(10, "total_points")[
         ["name", "team", "position", "price", "total_points", "pct_selected"]
     ]
     if not top.empty:
         print(top.to_string(index=False))
     else:
-        print("   (No points data yet — tournament hasn't started)")
+        print("   (No points data yet  tournament hasn't started)")
 
-    print(f"\n   🔥 Most Selected:")
+    print(f"\n    Most Selected:")
     popular = active.nlargest(10, "pct_selected")[
         ["name", "team", "position", "price", "pct_selected"]
     ]
     print(popular.to_string(index=False))
 
-    print(f"\n  ✅ Full export → {csv_path}")
+    print(f"\n   Full export  {csv_path}")
 
 
-# ──────────────────────────────────────────────
+# ----------------------------------------------
 # MAIN PIPELINE
-# ──────────────────────────────────────────────
+# ----------------------------------------------
 async def run_pipeline(players_only: bool = False):
     """Run the full data sync pipeline."""
     start_time = time.time()
     now_str = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
-    print(f"\n{'═' * 56}")
-    print(f"  ⚽ WC2026 Fantasy Pipeline — {now_str}")
-    print(f"{'═' * 56}\n")
+    print(f"\n{'=' * 56}")
+    print(f"   WC2026 Fantasy Pipeline  {now_str}")
+    print(f"{'=' * 56}\n")
 
     # 1. Init database
     conn = get_connection()
     init_db(conn)
 
     # 2. Fetch data from FIFA Fantasy API
-    print("📥 Fetching FIFA Fantasy data...")
+    print(" Fetching FIFA Fantasy data...")
     data = await fetch_all_data(players_only=players_only)
 
     if data["players"] is None:
-        print("\n❌ Failed to fetch players (API down, no cache) — aborting.")
+        print("\n Failed to fetch players (API down, no cache)  aborting.")
         conn.close()
         return
         # Note: If cache existed, fetch_endpoint already loaded it.
@@ -617,33 +617,33 @@ async def run_pipeline(players_only: bool = False):
     # 3. Sync squads (if fetched)
     squads_count = 0
     if data["squads"]:
-        print("\n💾 Syncing squads...")
+        print("\n Syncing squads...")
         squads_count = sync_squads(conn, data["squads"])
-        print(f"  ✓ {squads_count} squads synced")
+        print(f"   {squads_count} squads synced")
     
     # 3b. Merge squads_fifa data (seed info, FIFA IDs) - optional enrichment
     if data.get("squads_fifa"):
         # We store these separately but could merge later
-        print(f"  ✓ {len(data['squads_fifa'])} FIFA squad records available for enrichment")
+        print(f"   {len(data['squads_fifa'])} FIFA squad records available for enrichment")
 
     # 4. Sync rounds + fixtures (if fetched)
     rounds_count = 0
     fixtures_count = 0
     if data["rounds"]:
-        print("\n📅 Syncing rounds & fixtures...")
+        print("\n Syncing rounds & fixtures...")
         rounds_count, fixtures_count = sync_rounds(conn, data["rounds"])
-        print(f"  ✓ {rounds_count} rounds, {fixtures_count} fixtures synced")
+        print(f"   {rounds_count} rounds, {fixtures_count} fixtures synced")
 
     # 5. Sync players (the important part!)
-    print("\n👥 Syncing players...")
+    print("\n Syncing players...")
     result = sync_players(conn, data["players"])
-    print(f"\n  ✓ Added: {result['added']} | Updated: {result['updated']} | "
+    print(f"\n   Added: {result['added']} | Updated: {result['updated']} | "
           f"Deactivated: {result['deactivated']} | Price changes: {result['price_changes']}")
 
     # 5b. Populate player_round_points (normalized from JSON)
-    print("\n📊 Syncing round points...")
+    print("\n Syncing round points...")
     rp_count = sync_round_points(conn, data["players"])
-    print(f"  ✓ {rp_count} player-round records synced")
+    print(f"   {rp_count} player-round records synced")
 
     # 6. Log this run
     duration_ms = int((time.time() - start_time) * 1000)
@@ -673,41 +673,41 @@ async def run_pipeline(players_only: bool = False):
     conn.commit()
 
     # 7. Export CSV
-    print("\n📤 Exporting CSV...")
+    print("\n Exporting CSV...")
     export_csv(conn)
 
     # 8. Done
-    print(f"\n{'═' * 56}")
-    print(f"  ✅ Pipeline complete in {duration_ms}ms")
-    print(f"{'═' * 56}\n")
+    print(f"\n{'=' * 56}")
+    print(f"   Pipeline complete in {duration_ms}ms")
+    print(f"{'=' * 56}\n")
 
     conn.close()
 
 
-# ──────────────────────────────────────────────
+# ----------------------------------------------
 # SCHEDULED AUTO-SYNC (every N hours)
-# ──────────────────────────────────────────────
+# ----------------------------------------------
 async def run_scheduled(interval_hours: int = 4):
     """Run pipeline on a schedule (every N hours)."""
-    print(f"🔄 Starting scheduled sync every {interval_hours} hours.")
+    print(f" Starting scheduled sync every {interval_hours} hours.")
     print("   Press Ctrl+C to stop.\n")
 
     while True:
         try:
             await run_pipeline(players_only=False)
         except Exception as e:
-            print(f"\n❌ Pipeline error: {e}")
+            print(f"\n Pipeline error: {e}")
             import traceback
             traceback.print_exc()
 
         next_run = datetime.now().strftime("%H:%M:%S")
-        print(f"\n⏰ Next sync in {interval_hours}h (sleeping since {next_run})...\n")
+        print(f"\n Next sync in {interval_hours}h (sleeping since {next_run})...\n")
         await asyncio.sleep(interval_hours * 3600)
 
 
-# ──────────────────────────────────────────────
+# ----------------------------------------------
 # CLI
-# ──────────────────────────────────────────────
+# ----------------------------------------------
 if __name__ == "__main__":
     args = sys.argv[1:]
 
@@ -716,7 +716,7 @@ if __name__ == "__main__":
 Usage: python pipeline.py [OPTIONS]
 
 Options:
-  (no args)       Full sync — players + squads + fixtures
+  (no args)       Full sync  players + squads + fixtures
   --players-only  Only sync players (faster, for frequent updates)
   --schedule      Run auto-sync every 4 hours
   --schedule=N    Run auto-sync every N hours
