@@ -261,15 +261,31 @@ def optimize_lp(players: list[dict], stage: str = "GROUP_MD1",
     # Create problem
     prob = pulp.LpProblem("WC2026_Fantasy_Optimizer", pulp.LpMaximize)
 
-    # Decision variables: x[i] = 1 if player i is selected
-    player_vars = {}
+    # Decision variables
+    squad_vars = {}     # x[i] = 1 if player i is in the 15-man squad
+    xi_vars = {}        # xi[i] = 1 if player i is in the Starting XI
+    cap_vars = {}       # c[i] = 1 if player i is the Captain
+    
     for p in players:
         pid = p["id"]
-        player_vars[pid] = pulp.LpVariable(f"x_{pid}", cat="Binary")
+        squad_vars[pid] = pulp.LpVariable(f"squad_{pid}", cat="Binary")
+        xi_vars[pid] = pulp.LpVariable(f"xi_{pid}", cat="Binary")
+        cap_vars[pid] = pulp.LpVariable(f"cap_{pid}", cat="Binary")
+        
+        # Constraints tying variables together
+        prob += xi_vars[pid] <= squad_vars[pid], f"Xi_in_Squad_{pid}"
+        prob += cap_vars[pid] <= xi_vars[pid], f"Cap_in_Xi_{pid}"
 
-    # Objective: maximize weighted projected points
+    # Objective: maximize weighted projected points from Starting XI + Captain bonus
     objective = pulp.lpSum(
-        obj_values.get(p["id"], 0) * player_vars[p["id"]]
+        obj_values.get(p["id"], 0) * xi_vars[p["id"]] + 
+        obj_values.get(p["id"], 0) * cap_vars[p["id"]]  # Captain gets double points
+        for p in players
+    )
+    
+    # Bench points: assume 10% chance a bench player auto-subs in, so we give them a small weight
+    objective += pulp.lpSum(
+        obj_values.get(p["id"], 0) * 0.1 * (squad_vars[p["id"]] - xi_vars[p["id"]])
         for p in players
     )
 
@@ -279,7 +295,7 @@ def optimize_lp(players: list[dict], stage: str = "GROUP_MD1",
         extra_transfers_var = pulp.LpVariable("ExtraTransfers", lowBound=0, cat="Continuous")
         
         # Transfers made = 15 - (players kept from current squad)
-        players_kept = pulp.lpSum(player_vars[pid] for pid in current_squad if pid in player_vars)
+        players_kept = pulp.lpSum(squad_vars[pid] for pid in current_squad if pid in squad_vars)
         transfers_made = 15 - players_kept
         
         # ExtraTransfers >= TransfersMade - free_transfers
@@ -290,49 +306,61 @@ def optimize_lp(players: list[dict], stage: str = "GROUP_MD1",
 
     prob += objective, "TotalProjectedPoints"
 
-    # Constraint 1: Squad size = 15
-    prob += pulp.lpSum(player_vars[p["id"]] for p in players) == 15, "SquadSize"
+    # Constraint 1: Squad sizes
+    prob += pulp.lpSum(squad_vars[p["id"]] for p in players) == 15, "SquadSize"
+    prob += pulp.lpSum(xi_vars[p["id"]] for p in players) == 11, "StartingXiSize"
+    prob += pulp.lpSum(cap_vars[p["id"]] for p in players) == 1, "OneCaptain"
 
     # Constraint 2: Budget
     prob += pulp.lpSum(
-        p["price"] * player_vars[p["id"]] for p in players
+        p["price"] * squad_vars[p["id"]] for p in players
     ) <= budget, "Budget"
 
-    # Constraint 3: Position requirements
+    # Constraint 3: Position requirements for 15-man squad
     for pos, limits in SQUAD_RULES["positions"].items():
         pos_players = [p for p in players if p["position"] == pos]
         prob += pulp.lpSum(
-            player_vars[p["id"]] for p in pos_players
+            squad_vars[p["id"]] for p in pos_players
         ) == limits["min"], f"Position_{pos}"
+
+    # Constraint 3b: Valid formation for Starting XI
+    gk_players = [p for p in players if p["position"] == "GK"]
+    def_players = [p for p in players if p["position"] == "DEF"]
+    mid_players = [p for p in players if p["position"] == "MID"]
+    fwd_players = [p for p in players if p["position"] == "FWD"]
+
+    prob += pulp.lpSum(xi_vars[p["id"]] for p in gk_players) == 1, "Xi_GK"
+    prob += pulp.lpSum(xi_vars[p["id"]] for p in def_players) >= 3, "Xi_DEF_Min"
+    prob += pulp.lpSum(xi_vars[p["id"]] for p in def_players) <= 5, "Xi_DEF_Max"
+    prob += pulp.lpSum(xi_vars[p["id"]] for p in mid_players) >= 2, "Xi_MID_Min"
+    prob += pulp.lpSum(xi_vars[p["id"]] for p in mid_players) <= 5, "Xi_MID_Max"
+    prob += pulp.lpSum(xi_vars[p["id"]] for p in fwd_players) >= 1, "Xi_FWD_Min"
+    prob += pulp.lpSum(xi_vars[p["id"]] for p in fwd_players) <= 3, "Xi_FWD_Max"
 
     # Constraint 4: Max per country
     squad_ids = set(p.get("squad_id", 0) for p in players)
     for sid in squad_ids:
         country_players = [p for p in players if p.get("squad_id") == sid]
         prob += pulp.lpSum(
-            player_vars[p["id"]] for p in country_players
+            squad_vars[p["id"]] for p in country_players
         ) <= max_per_country, f"Country_{sid}"
         
         # Hard constraint: Max 1 LB and Max 1 RB per team
-        # IMPORTANT LIMITATION (Pre-MD1): 
-        # Only ~5% of players (Spain, Portugal, Curacao) have `raw_position` imported from FotMob.
-        # For teams without `raw_position`, these constraints will NOT fire and the optimizer
-        # might still pick 2 LBs if their xPts are high enough. We will import the rest after MD1.
         team_lbs = [p for p in country_players if p.get("raw_position") in ["Left Back", "Left Wing-Back"]]
         if team_lbs:
-            prob += pulp.lpSum(player_vars[p["id"]] for p in team_lbs) <= 1, f"MaxLB_{sid}"
+            prob += pulp.lpSum(squad_vars[p["id"]] for p in team_lbs) <= 1, f"MaxLB_{sid}"
             
         team_rbs = [p for p in country_players if p.get("raw_position") in ["Right Back", "Right Wing-Back"]]
         if team_rbs:
-            prob += pulp.lpSum(player_vars[p["id"]] for p in team_rbs) <= 1, f"MaxRB_{sid}"
+            prob += pulp.lpSum(squad_vars[p["id"]] for p in team_rbs) <= 1, f"MaxRB_{sid}"
 
     # Constraint 5: Locked in/out
     for pid in locked_in:
-        if pid in player_vars:
-            prob += player_vars[pid] == 1, f"LockedIn_{pid}"
+        if pid in squad_vars:
+            prob += squad_vars[pid] == 1, f"LockedIn_{pid}"
     for pid in locked_out:
-        if pid in player_vars:
-            prob += player_vars[pid] == 0, f"LockedOut_{pid}"
+        if pid in squad_vars:
+            prob += squad_vars[pid] == 0, f"LockedOut_{pid}"
 
     # Solve
     prob.solve(pulp.PULP_CBC_CMD(msg=0, timeLimit=10))
@@ -343,15 +371,23 @@ def optimize_lp(players: list[dict], stage: str = "GROUP_MD1",
 
     # Extract selected players
     selected = []
+    starting_xi = []
+    captain = None
     for p in players:
-        if player_vars[p["id"]].varValue and player_vars[p["id"]].varValue > 0.5:
+        pid = p["id"]
+        if squad_vars[pid].varValue and squad_vars[pid].varValue > 0.5:
             selected.append(p)
+            if xi_vars[pid].varValue and xi_vars[pid].varValue > 0.5:
+                starting_xi.append(p)
+                if cap_vars[pid].varValue and cap_vars[pid].varValue > 0.5:
+                    captain = p
 
-    # Select starting XI
-    starting_xi, bench = _select_starting_xi(selected)
+    bench = [p for p in selected if p not in starting_xi]
+    # Ensure starting_xi format matches what greedy would return
+    if not starting_xi:
+        starting_xi, bench = _select_starting_xi(selected)
+        captain = max(starting_xi, key=lambda p: p.get("projected_pts", 0)) if starting_xi else None
 
-    # Captain
-    captain = max(starting_xi, key=lambda p: p.get("projected_pts", 0)) if starting_xi else None
     vice_captain = sorted(starting_xi, key=lambda p: p.get("projected_pts", 0), reverse=True)[1] if len(starting_xi) > 1 else None
 
     # Handle 12th Man Booster
@@ -586,7 +622,7 @@ if __name__ == "__main__":
 
     print(f"\n  Starting XI:")
     print(f"  {'Name':25s} {'Team':15s} {'Pos':4s} {'Price':6s} {'xPts':5s} {'Own%':5s}")
-    print(f"  {'─' * 65}")
+    print(f"  {'-' * 65}")
     for p in sorted(result["starting_xi"], key=lambda x: ["GK", "DEF", "MID", "FWD"].index(x["position"])):
         marker = " (C)" if result.get("captain") and p["id"] == result["captain"]["id"] else ""
         marker = " (VC)" if result.get("vice_captain") and p["id"] == result["vice_captain"]["id"] else marker
