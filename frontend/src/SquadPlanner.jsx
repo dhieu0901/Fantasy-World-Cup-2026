@@ -278,8 +278,8 @@ function PitchPlayer({ player: p, isCaptain, isViceCaptain, isSubSource, onClick
       <div className="pitch-player-info">
         <div className="pitch-nameplate">{lastName}</div>
         {p.next_opponent && (
-          <div style={{ background: '#111', color: '#fff', fontSize: '0.65rem', padding: '1px 0', textAlign: 'center', width: '100%', borderTop: '1px solid rgba(255,255,255,0.1)' }}>
-            <span style={{ color: '#38bdf8', fontWeight: 600 }}>v</span> <strong style={{ letterSpacing: '0.5px' }}>{p.next_opponent}</strong>
+          <div style={{ background: '#f8fafc', color: '#0f172a', fontSize: '0.65rem', padding: '1px 0', textAlign: 'center', width: '100%', borderTop: '1px solid rgba(0,0,0,0.1)', borderBottom: '1px solid rgba(0,0,0,0.1)' }}>
+            <span style={{ color: '#64748b', fontWeight: 700 }}>v</span> <strong style={{ letterSpacing: '0.5px', fontWeight: 800 }}>{p.next_opponent}</strong>
           </div>
         )}
         <div className={`pitch-pts ${isCaptain ? 'is-captain' : ''}`}>{displayValue}</div>

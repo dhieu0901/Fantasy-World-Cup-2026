@@ -309,7 +309,15 @@ def optimize_lp(players: list[dict], stage: str = "GROUP_MD1",
         # Identify MAX_DAY for fallback (teams not in fixture file)
         MAX_DAY = max(team_day_map.values()) if team_day_map else 7
         
-        # Add the day_index bonus to the objective
+        # Add bench value + day_index bonus to the objective
+        # In a manual sub game, a strong bench is VERY valuable because 
+        # you will frequently sub them in for blanking starters.
+        # We value bench xPts at 50% of starting xPts.
+        objective += pulp.lpSum(
+            obj_values.get(p["id"], 0) * 0.5 * (squad_vars[p["id"]] - xi_vars[p["id"]])
+            for p in players
+        )
+
         # Formula: 0.01 * (MAX_DAY - day_index) * xi_vars[pid]
         # This rewards putting EARLY players (day_index = 1) in the Starting XI (xi_vars = 1)
         objective += pulp.lpSum(
