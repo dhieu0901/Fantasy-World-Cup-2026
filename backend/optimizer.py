@@ -257,7 +257,9 @@ def optimize_lp(players: list[dict], stage: str = "GROUP_MD1",
         if preset == "value":
             obj_values[pid] = xpts + (15.0 - price) * 0.2  # Additive bonus for cheap players
         elif preset == "safe":
-            obj_values[pid] = xpts + (pct / 30.0)  # Additive bonus for popular (up to +3.3)
+            floor_bonus = min(pct, 30.0) / 30.0  # Caps at 30% ownership
+            price_stability = (price / 10.0)   # Expensive = more reliable
+            obj_values[pid] = xpts * (0.8 + floor_bonus * 0.2) + price_stability * 0.5
         elif preset == "risky":
             obj_values[pid] = xpts + ((100.0 - pct) / 30.0)  # Additive bonus for differentials (up to +3.3)
         elif preset == "template":
@@ -325,8 +327,8 @@ def optimize_lp(players: list[dict], stage: str = "GROUP_MD1",
             team_name = squads.get(p.get("squad_id", 0), "")
             day_idx = team_day_map.get(team_name, 1)
             
-            # Max bench weight = 0.4 so the solver doesn't sacrifice the Starting XI too much
-            bench_weight = 0.1 + 0.3 * ((day_idx - 1) / max(1, MAX_DAY - 1))
+            # Max bench weight = 0.6 so the solver doesn't sacrifice the Starting XI too much
+            bench_weight = 0.3 + 0.3 * ((day_idx - 1) / max(1, MAX_DAY - 1))
             
             objective += obj_values.get(pid, 0) * bench_weight * (squad_vars[pid] - xi_vars[pid])
 
@@ -340,7 +342,7 @@ def optimize_lp(players: list[dict], stage: str = "GROUP_MD1",
         print(f"  [!] Could not load fixtures for smart benching: {e}")
         # Fallback to simple bench weight if fixtures fail
         objective += pulp.lpSum(
-            obj_values.get(p["id"], 0) * 0.01 * (squad_vars[p["id"]] - xi_vars[p["id"]])
+            obj_values.get(p["id"], 0) * 0.3 * (squad_vars[p["id"]] - xi_vars[p["id"]])
             for p in players
         )
 
@@ -417,6 +419,13 @@ def optimize_lp(players: list[dict], stage: str = "GROUP_MD1",
         if pid in squad_vars:
             prob += squad_vars[pid] == 0, f"LockedOut_{pid}"
 
+    # Constraint 6: No bench fodder (Low ownership players must start)
+    for p in players:
+        if p.get("percent_selected", 0) < 3.0:
+            pid = p["id"]
+            if pid in squad_vars and pid in xi_vars:
+                prob += squad_vars[pid] <= xi_vars[pid], f"NoBenchFodder_{pid}"
+
     # Solve
     prob.solve(pulp.PULP_CBC_CMD(msg=0, timeLimit=10))
 
@@ -443,7 +452,8 @@ def optimize_lp(players: list[dict], stage: str = "GROUP_MD1",
         starting_xi, bench = _select_starting_xi(selected)
         captain = max(starting_xi, key=lambda p: p.get("projected_pts", 0)) if starting_xi else None
 
-    vice_captain = sorted(starting_xi, key=lambda p: p.get("projected_pts", 0), reverse=True)[1] if len(starting_xi) > 1 else None
+    vice_candidates = [p for p in starting_xi if not captain or p["id"] != captain["id"]]
+    vice_captain = max(vice_candidates, key=lambda p: p.get("projected_pts", 0)) if vice_candidates else None
 
     # Handle 12th Man Booster
     if chip == "12th_man":
