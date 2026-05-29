@@ -1,22 +1,22 @@
 """
-FastAPI Server — REST API for WC2026 Fantasy Dashboard
+FastAPI Server  REST API for WC2026 Fantasy Dashboard
 ========================================================
 
 Endpoints:
-  GET  /api/players              → All active players (filterable)
-  GET  /api/players/{id}         → Single player details
-  GET  /api/squads               → All teams with group info
-  GET  /api/rounds               → Schedule + results
-  GET  /api/fixtures             → All fixtures
-  GET  /api/fixtures/{squad_id}  → Fixtures for a specific team
-  GET  /api/stats                → Database summary stats
-  GET  /api/sync-history         → Pipeline run history
-  POST /api/optimize             → Run squad optimizer
-  POST /api/sync                 → Trigger data pipeline re-sync
+  GET  /api/players               All active players (filterable)
+  GET  /api/players/{id}          Single player details
+  GET  /api/squads                All teams with group info
+  GET  /api/rounds                Schedule + results
+  GET  /api/fixtures              All fixtures
+  GET  /api/fixtures/{squad_id}   Fixtures for a specific team
+  GET  /api/stats                 Database summary stats
+  GET  /api/sync-history          Pipeline run history
+  POST /api/optimize              Run squad optimizer
+  POST /api/sync                  Trigger data pipeline re-sync
 
 Usage:
   uvicorn server:app --reload --port 8000
-  → http://localhost:8000/docs  (Swagger UI)
+   http://localhost:8000/docs  (Swagger UI)
 """
 
 from fastapi import FastAPI, Query, HTTPException
@@ -34,9 +34,9 @@ from rules import get_scoring_rules, validate_squad, calculate_xpts_from_db, \
     TOURNAMENT, SQUAD_RULES, TRANSFER_RULES, BOOSTERS, SCORING_ALL, \
     SCORING_GK, SCORING_DEF, SCORING_MID, SCORING_FWD, SCORING_BONUS
 
-# ──────────────────────────────────────────────
+# 
 # APP SETUP
-# ──────────────────────────────────────────────
+# 
 
 app = FastAPI(
     title="WC2026 Fantasy API",
@@ -44,7 +44,7 @@ app = FastAPI(
     version="1.0.0",
 )
 
-# CORS — allow React dev server
+# CORS  allow React dev server
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -54,9 +54,9 @@ app.add_middleware(
 )
 
 
-# ──────────────────────────────────────────────
+# 
 # MODELS (Pydantic)
-# ──────────────────────────────────────────────
+# 
 
 class OptimizeRequest(BaseModel):
     stage: str = Field(default="GROUP_MD1", description="Tournament stage")
@@ -74,9 +74,9 @@ class ValidateSquadRequest(BaseModel):
     stage: str = Field(default="GROUP_MD1")
 
 
-# ──────────────────────────────────────────────
-# ENDPOINTS — Players
-# ──────────────────────────────────────────────
+# 
+# ENDPOINTS  Players
+# 
 
 @app.get("/api/players")
 def api_get_players(
@@ -92,7 +92,7 @@ def api_get_players(
     """Get all active players with optional filters."""
     conn = get_connection()
     try:
-        # When searching, don't limit SQL query — limit AFTER filtering
+        # When searching, don't limit SQL query  limit AFTER filtering
         sql_limit = None if search else limit
         players = get_all_players(conn, position=position, squad_id=squad_id,
                                   sort_by=sort_by, sort_desc=sort_desc, limit=sql_limit)
@@ -100,7 +100,7 @@ def api_get_players(
         # Apply text search filter (with Unicode normalization for diacritics)
         if search:
             def _strip_diacritics(text: str) -> str:
-                """Normalize 'Mbappé' → 'mbappe' for matching."""
+                """Normalize 'Mbapp'  'mbappe' for matching."""
                 nfkd = unicodedata.normalize("NFKD", text.lower())
                 return "".join(c for c in nfkd if not unicodedata.combining(c))
 
@@ -221,9 +221,9 @@ def api_get_player(player_id: int):
         conn.close()
 
 
-# ──────────────────────────────────────────────
-# ENDPOINTS — Squads & Fixtures
-# ──────────────────────────────────────────────
+# 
+# ENDPOINTS  Squads & Fixtures
+# 
 
 @app.get("/api/squads")
 def api_get_squads():
@@ -325,9 +325,9 @@ def api_get_squad_fixtures(squad_id: int):
         conn.close()
 
 
-# ──────────────────────────────────────────────
-# ENDPOINTS — Optimizer
-# ──────────────────────────────────────────────
+# 
+# ENDPOINTS  Optimizer
+# 
 
 @app.post("/api/optimize")
 def api_optimize(req: OptimizeRequest):
@@ -401,9 +401,9 @@ def api_validate_squad(req: ValidateSquadRequest):
         conn.close()
 
 
-# ──────────────────────────────────────────────
-# ENDPOINTS — Stats & Meta
-# ──────────────────────────────────────────────
+# 
+# ENDPOINTS  Stats & Meta
+# 
 
 @app.get("/api/stats")
 def api_get_stats():
@@ -450,9 +450,9 @@ async def api_trigger_live_sync():
         raise HTTPException(status_code=500, detail=f"Live sync failed: {str(e)}")
 
 
-# ──────────────────────────────────────────────
-# ENDPOINTS — Rules Reference
-# ──────────────────────────────────────────────
+# 
+# ENDPOINTS  Rules Reference
+# 
 
 @app.get("/api/rules")
 def api_get_rules():
@@ -476,9 +476,9 @@ def api_get_rules():
     }
 
 
-# ──────────────────────────────────────────────
+# 
 # STARTUP
-# ──────────────────────────────────────────────
+# 
 
 @app.on_event("startup")
 def startup():
@@ -489,9 +489,9 @@ def startup():
     print("[OK] WC2026 Fantasy API ready")
     print("   Docs: http://localhost:8000/docs")
 
-# ──────────────────────────────────────────────
-# ENDPOINTS — Teams & Live Subs
-# ──────────────────────────────────────────────
+# 
+# ENDPOINTS  Teams & Live Subs
+# 
 
 class SaveTeamRequest(BaseModel):
     device_id: str = Field(..., description="Unique device ID for the user")

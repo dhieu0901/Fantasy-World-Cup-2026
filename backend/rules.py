@@ -1,5 +1,5 @@
 """
-FIFA World Cup Fantasy 2026™ — Complete Game Rules & Expected Points (xPts) Engine
+FIFA World Cup Fantasy 2026  Complete Game Rules & Expected Points (xPts) Engine
 =====================================================================================
 
 This module contains:
@@ -11,12 +11,12 @@ This module contains:
 Source: https://play.fifa.com/fantasy - Official "How to Play" rules
 """
 
-# ══════════════════════════════════════════════
+# 
 # 1. TOURNAMENT STRUCTURE
-# ══════════════════════════════════════════════
+# 
 
 TOURNAMENT = {
-    "name": "FIFA World Cup 2026™",
+    "name": "FIFA World Cup 2026",
     "hosts": ["USA", "Canada", "Mexico"],
     "dates": {"start": "2026-06-11", "end": "2026-07-19"},
     "total_teams": 48,
@@ -29,9 +29,9 @@ TOURNAMENT = {
     ],
 }
 
-# ══════════════════════════════════════════════
+# 
 # 2. SQUAD RULES
-# ══════════════════════════════════════════════
+# 
 
 SQUAD_RULES = {
     "squad_size": 15,
@@ -63,9 +63,9 @@ SQUAD_RULES = {
     },
 }
 
-# ══════════════════════════════════════════════
+# 
 # 3. TRANSFER RULES
-# ══════════════════════════════════════════════
+# 
 
 TRANSFER_RULES = {
     "allocations": {
@@ -86,9 +86,9 @@ TRANSFER_RULES = {
     "prices_fixed": True,                   # Player prices do NOT change during tournament
 }
 
-# ══════════════════════════════════════════════
+# 
 # 4. BOOSTERS (CHIPS)
-# ══════════════════════════════════════════════
+# 
 
 BOOSTERS = {
     "wildcard": {
@@ -123,9 +123,9 @@ BOOSTERS = {
     },
 }
 
-# ══════════════════════════════════════════════
+# 
 # 5. SCORING SYSTEM (Official FIFA WC Fantasy)
-# ══════════════════════════════════════════════
+# 
 
 # --- Universal (all positions) ---
 SCORING_ALL = {
@@ -181,9 +181,9 @@ SCORING_BONUS = {
 GOAL_POINTS = {"GK": 9, "DEF": 7, "MID": 6, "FWD": 5}
 
 
-# ══════════════════════════════════════════════
+# 
 # 6. EXPECTED POINTS (xPts) FORMULA
-# ══════════════════════════════════════════════
+# 
 #
 # Inspired by xFPL but adapted for WC Fantasy scoring.
 # Instead of just xG + xA, we model EVERY scoring action.
@@ -228,20 +228,20 @@ def calculate_xpts(player_stats: dict, position: str) -> dict:
 
     breakdown = {}
 
-    # ── 1. Appearance points ──
+    #  1. Appearance points 
     # If they play at all: +1. If 60+: another +1
     breakdown["xAppearance"] = p_play * 1 + p_play * p_60 * 1
 
-    # ── 2. Goals ──
+    #  2. Goals 
     xg = s.get("xG", 0.0)
     goal_pts = GOAL_POINTS.get(position, 5)
     breakdown["xGoals"] = xg * p_play * goal_pts
 
-    # ── 3. Assists ──
+    #  3. Assists 
     xa = s.get("xA", 0.0)
     breakdown["xAssists"] = xa * p_play * SCORING_ALL["assist"]
 
-    # ── 4. Clean Sheet ──
+    #  4. Clean Sheet 
     xcs = s.get("xCS", 0.0)
     if position == "GK":
         breakdown["xCleanSheet"] = xcs * p_play * p_60 * SCORING_GK["clean_sheet"]
@@ -252,11 +252,11 @@ def calculate_xpts(player_stats: dict, position: str) -> dict:
     else:
         breakdown["xCleanSheet"] = 0.0
 
-    # ── 5. Goals Conceded (GK, DEF only) ──
+    #  5. Goals Conceded (GK, DEF only) 
     if position in ("GK", "DEF"):
         xgc = s.get("xGC", 0.0)  # Expected goals conceded by team
         # Expected additional goals conceded (beyond the first)
-        # E[max(0, GC - 1)] ≈ max(0, xGC - 1) for simplification
+        # E[max(0, GC - 1)]  max(0, xGC - 1) for simplification
         # More accurately: sum over k>=2 of P(GC=k) * (k-1)
         # Using Poisson approximation: E[max(0, GC-1)] = xGC - (1 - e^(-xGC))
         import math
@@ -268,64 +268,64 @@ def calculate_xpts(player_stats: dict, position: str) -> dict:
     else:
         breakdown["xGoalsConceded"] = 0.0
 
-    # ── 6. Saves (GK only) ──
+    #  6. Saves (GK only) 
     if position == "GK":
         x_saves = s.get("xSaves", 0.0)
         breakdown["xSaves"] = (x_saves / 3) * p_play * SCORING_GK["every_3_saves"]
     else:
         breakdown["xSaves"] = 0.0
 
-    # ── 7. Penalty Save (GK only) ──
+    #  7. Penalty Save (GK only) 
     if position == "GK":
         p_pen_save = s.get("p_pen_save", 0.0)
         breakdown["xPenaltySave"] = p_pen_save * SCORING_GK["penalty_save"]
     else:
         breakdown["xPenaltySave"] = 0.0
 
-    # ── 8. Tackles (MID only) ──
+    #  8. Tackles (MID only) 
     if position == "MID":
         x_tackles = s.get("xTackles", 0.0)
         breakdown["xTackles"] = (x_tackles / 3) * p_play * SCORING_MID["every_3_tackles"]
     else:
         breakdown["xTackles"] = 0.0
 
-    # ── 9. Chances Created (MID only) ──
+    #  9. Chances Created (MID only) 
     if position == "MID":
         x_cc = s.get("xChancesCreated", 0.0)
         breakdown["xChancesCreated"] = (x_cc / 2) * p_play * SCORING_MID["every_2_chances_created"]
     else:
         breakdown["xChancesCreated"] = 0.0
 
-    # ── 10. Shots on Target (FWD only) ──
+    #  10. Shots on Target (FWD only) 
     if position == "FWD":
         x_sot = s.get("xShotsOnTarget", 0.0)
         breakdown["xShotsOnTarget"] = (x_sot / 2) * p_play * SCORING_FWD["every_2_shots_on_target"]
     else:
         breakdown["xShotsOnTarget"] = 0.0
 
-    # ── 11. Cards ──
+    #  11. Cards 
     p_yellow = s.get("p_yellow", 0.0)
     p_red = s.get("p_red", 0.0)
     breakdown["xCards"] = -(p_yellow * abs(SCORING_ALL["yellow_card"]) +
                             p_red * abs(SCORING_ALL["red_card"])) * p_play
 
-    # ── 12. Own Goal ──
+    #  12. Own Goal 
     p_og = s.get("p_own_goal", 0.0)
     breakdown["xOwnGoal"] = -p_og * abs(SCORING_ALL["own_goal"]) * p_play
 
-    # ── 13. Penalty Won ──
+    #  13. Penalty Won 
     p_pen_won = s.get("p_pen_won", 0.0)
     breakdown["xPenaltyWon"] = p_pen_won * SCORING_ALL["winning_penalty"]
 
-    # ── 14. Penalty Conceded ──
+    #  14. Penalty Conceded 
     p_pen_conc = s.get("p_pen_conceded", 0.0)
     breakdown["xPenaltyConceded"] = -p_pen_conc * abs(SCORING_ALL["conceding_penalty"]) * p_play
 
-    # ── 15. Free-kick Goal Bonus ──
+    #  15. Free-kick Goal Bonus 
     p_fk = s.get("p_fk_goal", 0.0)
     breakdown["xFreeKickBonus"] = p_fk * SCORING_BONUS["free_kick_goal"]
 
-    # ── 16. Scouting Bonus (estimated) ──
+    #  16. Scouting Bonus (estimated) 
     # +2 if player scores >4pts AND is in <5% of teams
     pct_selected = s.get("percent_selected", 50.0)
     if pct_selected < 5.0:
@@ -335,7 +335,7 @@ def calculate_xpts(player_stats: dict, position: str) -> dict:
     else:
         breakdown["xScoutingBonus"] = 0.0
 
-    # ── TOTAL ──
+    #  TOTAL 
     breakdown["xPts"] = sum(breakdown.values())
 
     return breakdown
@@ -355,7 +355,7 @@ def calculate_simple_xpts(price: float, position: str, team_strength: float = 0.
         team_strength: 0-1 (higher = stronger team)
         opponent_strength: 0-1 (higher = stronger opponent)
         is_home: home advantage
-        percent_selected: ownership % (0-100) — collective intelligence signal
+        percent_selected: ownership % (0-100)  collective intelligence signal
         
     Returns:
         Estimated xPts (float)
@@ -454,15 +454,15 @@ def calculate_xpts_from_db(player_id: int, position: str, price: float,
             xstats = dict(row)
 
     if xstats and xstats.get("minutes_played", 0) > 300:
-        # ── We have real stats! Convert to per-match expected values ──
+        #  We have real stats! Convert to per-match expected values 
         minutes = xstats["minutes_played"]
         nineties = minutes / 90 if minutes > 0 else 1
 
         # Adjust for opponent strength (WC matches vs club matches)
-        # Strong opponent → fewer goals, more defensive actions
+        # Strong opponent  fewer goals, more defensive actions
         # Opponent strength is absolute: playing FDR 5 reduces attacking output by ~35%
         opp_factor = max(0.5, 1.0 - (opponent_strength - 0.5) * 0.7)
-        team_factor = 1.0 + (team_strength - 0.5) * 0.3  # ±15%
+        team_factor = 1.0 + (team_strength - 0.5) * 0.3  # 15%
 
         # Smart Starter probability: Signal Blending (Ownership + Price + Fitness)
         matches = xstats.get("matches_played", 0) or 1
@@ -533,7 +533,7 @@ def calculate_xpts_from_db(player_id: int, position: str, price: float,
         return result
 
     else:
-        # ── Fallback: price-based estimate ──
+        #  Fallback: price-based estimate 
         simple_xpts = calculate_simple_xpts(
             price, position, team_strength, opponent_strength, is_home,
             percent_selected=percent_selected,
@@ -562,64 +562,64 @@ def _estimate_xgc(team_strength: float, opp_strength: float) -> float:
     return max(0.2, base + diff * 0.8)
 
 
-# ══════════════════════════════════════════════
-# 7. DATA SOURCES — Where to get stats for xPts
-# ══════════════════════════════════════════════
+# 
+# 7. DATA SOURCES  Where to get stats for xPts
+# 
 #
 # Priority order for enriching player data:
 #
-# ┌─────────────────────┬──────────────────┬──────────────────────────────────────┐
-# │ Source              │ Access           │ Data Available                       │
-# ├─────────────────────┼──────────────────┼──────────────────────────────────────┤
-# │ FIFA Fantasy API    │ Public, free     │ Price, position, points, % selected  │
-# │ play.fifa.com       │ No auth          │ Round scores, status                 │
-# ├─────────────────────┼──────────────────┼──────────────────────────────────────┤
-# │ FotMob              │ Unofficial API   │ xG, xA, shots, tackles, saves,      │
-# │ fotmob.com          │ (reverse eng.)   │ chances created, heatmaps, ratings   │
-# │                     │ Rate limit!      │ Per-match + season aggregates        │
-# ├─────────────────────┼──────────────────┼──────────────────────────────────────┤
-# │ Sofascore           │ Unofficial API   │ Player ratings, xG, shots on target, │
-# │ sofascore.com       │ (reverse eng.)   │ tackles, passes, dribbles, cards     │
-# │                     │ Anti-bot!        │ Live match data                      │
-# ├─────────────────────┼──────────────────┼──────────────────────────────────────┤
-# │ Understat           │ Scrape-friendly  │ xG, xA per shot (best granularity)   │
-# │ understat.com       │ Public           │ Top 5 leagues only (not WC)          │
-# ├─────────────────────┼──────────────────┼──────────────────────────────────────┤
-# │ FBref               │ Scrape (3s rate) │ Standard stats, match logs           │
-# │ fbref.com           │ Anti-bot         │ xG/xA REMOVED as of Jan 2026        │
-# ├─────────────────────┼──────────────────┼──────────────────────────────────────┤
-# │ API-Football        │ Free tier        │ Match events, lineups, stats         │
-# │ api-sports.io       │ 100 req/day      │ Cards, goals, substitutions          │
-# ├─────────────────────┼──────────────────┼──────────────────────────────────────┤
-# │ BallDontLie         │ Free tier        │ Basic stats (goals, assists, cards)  │
-# │ balldontlie.io      │ API key needed   │ WC-specific endpoint                 │
-# └─────────────────────┴──────────────────┴──────────────────────────────────────┘
+# 
+#  Source               Access            Data Available                       
+# 
+#  FIFA Fantasy API     Public, free      Price, position, points, % selected  
+#  play.fifa.com        No auth           Round scores, status                 
+# 
+#  FotMob               Unofficial API    xG, xA, shots, tackles, saves,      
+#  fotmob.com           (reverse eng.)    chances created, heatmaps, ratings   
+#                       Rate limit!       Per-match + season aggregates        
+# 
+#  Sofascore            Unofficial API    Player ratings, xG, shots on target, 
+#  sofascore.com        (reverse eng.)    tackles, passes, dribbles, cards     
+#                       Anti-bot!         Live match data                      
+# 
+#  Understat            Scrape-friendly   xG, xA per shot (best granularity)   
+#  understat.com        Public            Top 5 leagues only (not WC)          
+# 
+#  FBref                Scrape (3s rate)  Standard stats, match logs           
+#  fbref.com            Anti-bot          xG/xA REMOVED as of Jan 2026        
+# 
+#  API-Football         Free tier         Match events, lineups, stats         
+#  api-sports.io        100 req/day       Cards, goals, substitutions          
+# 
+#  BallDontLie          Free tier         Basic stats (goals, assists, cards)  
+#  balldontlie.io       API key needed    WC-specific endpoint                 
+# 
 #
 # RECOMMENDED STRATEGY:
-#   Phase 1 (now):    FIFA Fantasy API → prices, points, ownership
-#   Phase 2 (pre-WC): FotMob unofficial API → xG, xA, defensive stats (club season)
-#   Phase 3 (live):   FotMob/Sofascore → live match xG, tackles, saves for xPts
+#   Phase 1 (now):    FIFA Fantasy API  prices, points, ownership
+#   Phase 2 (pre-WC): FotMob unofficial API  xG, xA, defensive stats (club season)
+#   Phase 3 (live):   FotMob/Sofascore  live match xG, tackles, saves for xPts
 #   Fallback:         Simple price-based xPts when detailed stats unavailable
 #
 
 
-# ══════════════════════════════════════════════
+# 
 # 8. FOTMOB SCRAPER ENDPOINTS (for future use)
-# ══════════════════════════════════════════════
+# 
 #
 # FotMob internal API (discovered via browser DevTools):
 #
 # Player profile:
 #   GET https://www.fotmob.com/api/playerData?id={fotmob_player_id}
-#   → seasons, stats (goals, assists, xG, xA, tackles, saves, etc.)
+#    seasons, stats (goals, assists, xG, xA, tackles, saves, etc.)
 #
 # Match details:
 #   GET https://www.fotmob.com/api/matchDetails?matchId={match_id}
-#   → lineups, events, stats per player
+#    lineups, events, stats per player
 #
 # League/competition:
 #   GET https://www.fotmob.com/api/leagues?id={league_id}
-#   → standings, top scorers, fixtures
+#    standings, top scorers, fixtures
 #
 # World Cup 2026 league ID: TBD (check fotmob.com when tournament starts)
 #
@@ -627,9 +627,9 @@ def _estimate_xgc(team_strength: float, opp_strength: float) -> float:
 # cache responses aggressively. Do NOT hammer their servers.
 #
 
-# ══════════════════════════════════════════════
+# 
 # 9. HELPER FUNCTIONS
-# ══════════════════════════════════════════════
+# 
 
 def get_scoring_rules(position: str) -> dict:
     """Get combined scoring rules for a position."""
@@ -810,16 +810,16 @@ def validate_squad(players: list[dict], stage: str = "GROUP_MD1") -> dict:
     }
 
 
-# ══════════════════════════════════════════════
+# 
 # DEMO / TEST
-# ══════════════════════════════════════════════
+# 
 
 if __name__ == "__main__":
     print("=" * 60)
-    print("FIFA WC Fantasy 2026 — Rules & xPts Engine")
+    print("FIFA WC Fantasy 2026  Rules & xPts Engine")
     print("=" * 60)
 
-    # Test: Calculate xPts for Mbappé (FWD, ~$12m)
+    # Test: Calculate xPts for Mbapp (FWD, ~$12m)
     mbappe_stats = {
         "p_start": 0.95,
         "p_60_plus": 0.85,
@@ -836,15 +836,15 @@ if __name__ == "__main__":
     }
     
     result = calculate_xpts(mbappe_stats, "FWD")
-    print(f"\n🇫🇷 Mbappé (FWD) xPts Breakdown:")
+    print(f"\n Mbapp (FWD) xPts Breakdown:")
     for key, val in result.items():
         if key != "xPts":
             print(f"   {key:25s}: {val:+.3f}")
-    print(f"   {'─' * 35}")
+    print(f"   {'' * 35}")
     print(f"   {'TOTAL xPts':25s}: {result['xPts']:.2f}")
 
     # Test: Calculate actual points
-    print(f"\n{'─' * 60}")
+    print(f"\n{'' * 60}")
     print("Test: Match points calculation")
     events = {
         "minutes_played": 90,
@@ -870,10 +870,10 @@ if __name__ == "__main__":
         print(f"   {pos}: {pts} pts (1 goal + 1 assist + CS + 90min)")
 
     # Test: Simple xPts
-    print(f"\n{'─' * 60}")
+    print(f"\n{'' * 60}")
     print("Simple xPts (with ownership_mod):")
     test_cases = [
-        (10.5, "FWD", 51.4, "Mbappé-like"),
+        (10.5, "FWD", 51.4, "Mbapp-like"),
         (10.5, "FWD",  0.5, "Bench FWD same price"),
         (8.5,  "MID", 53.8, "Bruno Fernandes-like"),
         (8.5,  "MID",  1.0, "Bench MID same price"),
@@ -882,10 +882,10 @@ if __name__ == "__main__":
     ]
     for price, pos, own, label in test_cases:
         xpts = calculate_simple_xpts(price, pos, team_strength=0.8, opponent_strength=0.3, percent_selected=own)
-        print(f"   ${price}m {pos} ({own}% owned): {xpts:.2f} xPts  ← {label}")
+        print(f"   ${price}m {pos} ({own}% owned): {xpts:.2f} xPts   {label}")
 
     # Test: Squad validation
-    print(f"\n{'─' * 60}")
+    print(f"\n{'' * 60}")
     print("Squad validation test:")
     fake_squad = [
         {"position": "GK", "price": 5.0, "squad_id": 1},
@@ -908,4 +908,4 @@ if __name__ == "__main__":
     print(f"   Valid: {result['valid']}")
     print(f"   Budget: ${result['budget_used']:.1f}m / $100m")
     for err in result["errors"]:
-        print(f"   ❌ {err}")
+        print(f"    {err}")

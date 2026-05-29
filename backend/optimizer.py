@@ -1,5 +1,5 @@
 """
-Squad Optimizer — Find the best Fantasy WC2026 squad using Linear Programming.
+Squad Optimizer  Find the best Fantasy WC2026 squad using Linear Programming.
 ===============================================================================
 
 Uses PuLP to solve the constrained optimization problem:
@@ -37,9 +37,9 @@ except ImportError:
     print("[!] PuLP not installed. Using greedy optimizer. Install: pip install pulp")
 
 
-# ══════════════════════════════════════════════
+# 
 # TEAM STRENGTH RATINGS (FIFA ranking-based)
-# ══════════════════════════════════════════════
+# 
 
 # Simplified strength ratings (0-1) based on FIFA rankings / Elo
 # Will be used for xPts calculations
@@ -69,9 +69,9 @@ def get_team_strength(abbr: str) -> float:
     return TEAM_STRENGTH.get(abbr, 0.50)
 
 
-# ══════════════════════════════════════════════
-# PLAYER SCORING — Calculate projected points
-# ══════════════════════════════════════════════
+# 
+# PLAYER SCORING  Calculate projected points
+# 
 
 def project_player_points(player: dict, conn: sqlite3.Connection = None,
                           opponent_abbr: str = None) -> float:
@@ -93,16 +93,16 @@ def project_player_points(player: dict, conn: sqlite3.Connection = None,
         percent_selected=player.get("percent_selected", 50),
         team_strength=team_str,
         opponent_strength=opp_str,
-        is_home=True,  # Simplified — could check from fixtures
+        is_home=True,  # Simplified  could check from fixtures
         conn=conn,
     )
 
     return result.get("xPts", 2.0)
 
 
-# ══════════════════════════════════════════════
+# 
 # GREEDY OPTIMIZER (fallback when PuLP unavailable)
-# ══════════════════════════════════════════════
+# 
 
 def optimize_greedy(players: list[dict], stage: str = "GROUP_MD1", preset: str = "default", chip: str = "none", locked_in: list[int] = None, locked_out: list[int] = None) -> dict:
     """
@@ -114,7 +114,7 @@ def optimize_greedy(players: list[dict], stage: str = "GROUP_MD1", preset: str =
     # Filter out locked_out players immediately
     players = [p for p in players if p["id"] not in locked_out]
 
-    # ─── PRE-SELECT 12TH MAN ───
+    #  PRE-SELECT 12TH MAN 
     twelfth_man = None
     if chip == "12th_man":
         if players:
@@ -234,9 +234,9 @@ def optimize_greedy(players: list[dict], stage: str = "GROUP_MD1", preset: str =
     }
 
 
-# ══════════════════════════════════════════════
-# LP OPTIMIZER (PuLP — globally optimal)
-# ══════════════════════════════════════════════
+# 
+# LP OPTIMIZER (PuLP  globally optimal)
+# 
 
 def optimize_lp(players: list[dict], stage: str = "GROUP_MD1",
                 preset: str = "default",
@@ -326,7 +326,7 @@ def optimize_lp(players: list[dict], stage: str = "GROUP_MD1",
         for p in players
     )
     
-    # ─── SMART BENCHING (Manual Sub Optimization) ───
+    #  SMART BENCHING (Manual Sub Optimization) 
     try:
         import json
         from pathlib import Path
@@ -351,7 +351,7 @@ def optimize_lp(players: list[dict], stage: str = "GROUP_MD1",
         # Identify MAX_DAY for fallback (teams not in fixture file)
         MAX_DAY = max(team_day_map.values()) if team_day_map else 7
         
-        # ─── DYNAMIC BENCH WEIGHTING (The WC Fantasy Secret) ───
+        #  DYNAMIC BENCH WEIGHTING (The WC Fantasy Secret) 
         # In FPL, the bench is largely useless (weight ~0.1).
         # In World Cup (Manual Subs), the bench is incredibly valuable, BUT ONLY if they play LATE.
         # Scale from 0.1 (Day 1) to 0.4 (Max Day) to ensure Starting XI is still prioritized.
@@ -543,9 +543,9 @@ def optimize_lp(players: list[dict], stage: str = "GROUP_MD1",
     }
 
 
-# ══════════════════════════════════════════════
+# 
 # STARTING XI SELECTION
-# ══════════════════════════════════════════════
+# 
 
 def _select_starting_xi(squad: list[dict], chip: str = "none", stage: str = "GROUP_MD1") -> tuple[list[dict], list[dict]]:
     """
@@ -622,9 +622,9 @@ def _select_starting_xi(squad: list[dict], chip: str = "none", stage: str = "GRO
     return best_xi, bench
 
 
-# ══════════════════════════════════════════════
-# PUBLIC API — Main optimization function
-# ══════════════════════════════════════════════
+# 
+# PUBLIC API  Main optimization function
+# 
 
 def optimize_squad(stage: str = "GROUP_MD1",
                    preset: str = "default",
@@ -695,9 +695,9 @@ def optimize_squad(stage: str = "GROUP_MD1",
     return result
 
 
-# ══════════════════════════════════════════════
+# 
 # CLI TEST
-# ══════════════════════════════════════════════
+# 
 
 if __name__ == "__main__":
     import sys
@@ -706,7 +706,7 @@ if __name__ == "__main__":
     stage = sys.argv[2] if len(sys.argv) > 2 else "GROUP_MD1"
 
     print(f"\n{'=' * 60}")
-    print(f"  Squad Optimizer — Preset: {preset}, Stage: {stage}")
+    print(f"  Squad Optimizer  Preset: {preset}, Stage: {stage}")
     print(f"{'=' * 60}\n")
 
     result = optimize_squad(stage=stage, preset=preset)

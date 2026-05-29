@@ -1,5 +1,5 @@
 """
-Database module — SQLite schema and query helpers for WC2026 Fantasy.
+Database module  SQLite schema and query helpers for WC2026 Fantasy.
 Tables: squads, players, rounds, fixtures, sync_log
 """
 
@@ -28,9 +28,9 @@ def init_db(conn: sqlite3.Connection = None):
         should_close = True
 
     conn.executescript("""
-        -- ─────────────────────────────────────────
+        -- 
         -- Squads / National Teams
-        -- ─────────────────────────────────────────
+        -- 
         CREATE TABLE IF NOT EXISTS squads (
             id            INTEGER PRIMARY KEY,   -- FIFA Fantasy squad ID
             name          TEXT NOT NULL,
@@ -43,9 +43,9 @@ def init_db(conn: sqlite3.Connection = None):
             updated_at    TEXT
         );
 
-        -- ─────────────────────────────────────────
+        -- 
         -- Players
-        -- ─────────────────────────────────────────
+        -- 
         CREATE TABLE IF NOT EXISTS players (
             id                INTEGER PRIMARY KEY,  -- FIFA Fantasy player ID
             first_name        TEXT,
@@ -80,7 +80,7 @@ def init_db(conn: sqlite3.Connection = None):
             updated_at        TEXT,
             is_active         INTEGER DEFAULT 1,
 
-            -- NOTE: No FK to squads — players use sequential IDs (1-48),
+            -- NOTE: No FK to squads  players use sequential IDs (1-48),
             -- squads_fifa.json uses FIFA IDs (43817+). Different systems.
             squad_id_fifa     INTEGER,             -- FIFA squad ID for cross-ref
 
@@ -94,9 +94,9 @@ def init_db(conn: sqlite3.Connection = None):
         CREATE INDEX IF NOT EXISTS idx_players_price ON players(price);
         CREATE INDEX IF NOT EXISTS idx_players_active ON players(is_active);
 
-        -- ─────────────────────────────────────────
+        -- 
         -- Rounds (Matchdays)
-        -- ─────────────────────────────────────────
+        -- 
         CREATE TABLE IF NOT EXISTS rounds (
             id          INTEGER PRIMARY KEY,
             status      TEXT,           -- scheduled / active / completed
@@ -106,9 +106,9 @@ def init_db(conn: sqlite3.Connection = None):
             updated_at  TEXT
         );
 
-        -- ─────────────────────────────────────────
+        -- 
         -- Fixtures (individual matches)
-        -- ─────────────────────────────────────────
+        -- 
         CREATE TABLE IF NOT EXISTS fixtures (
             id                INTEGER PRIMARY KEY,  -- Match/tournament ID
             round_id          INTEGER,
@@ -137,7 +137,7 @@ def init_db(conn: sqlite3.Connection = None):
 
             updated_at        TEXT,
 
-            -- NOTE: No FK constraints — fixture squad IDs are a third system
+            -- NOTE: No FK constraints  fixture squad IDs are a third system
             -- different from both players.squadId and squads_fifa.id
             home_squad_id_fifa INTEGER,
             away_squad_id_fifa INTEGER
@@ -147,9 +147,9 @@ def init_db(conn: sqlite3.Connection = None):
         CREATE INDEX IF NOT EXISTS idx_fixtures_home ON fixtures(home_squad_id);
         CREATE INDEX IF NOT EXISTS idx_fixtures_away ON fixtures(away_squad_id);
 
-        -- ─────────────────────────────────────────
+        -- 
         -- Sync Log (pipeline run history)
-        -- ─────────────────────────────────────────
+        -- 
         CREATE TABLE IF NOT EXISTS sync_log (
             id          INTEGER PRIMARY KEY AUTOINCREMENT,
             run_at      TEXT,
@@ -164,9 +164,9 @@ def init_db(conn: sqlite3.Connection = None):
             duration_ms INTEGER DEFAULT 0
         );
 
-        -- ─────────────────────────────────────────
+        -- 
         -- Price History (track price changes daily)
-        -- ─────────────────────────────────────────
+        -- 
         CREATE TABLE IF NOT EXISTS price_history (
             id          INTEGER PRIMARY KEY AUTOINCREMENT,
             player_id   INTEGER NOT NULL,
@@ -180,9 +180,9 @@ def init_db(conn: sqlite3.Connection = None):
         CREATE INDEX IF NOT EXISTS idx_price_history_player ON price_history(player_id);
         CREATE INDEX IF NOT EXISTS idx_price_history_date ON price_history(changed_at);
 
-        -- ─────────────────────────────────────────
+        -- 
         -- Player Round Points (normalized from JSON)
-        -- ─────────────────────────────────────────
+        -- 
         CREATE TABLE IF NOT EXISTS player_round_points (
             player_id   INTEGER NOT NULL,
             round_id    INTEGER NOT NULL,
@@ -194,9 +194,9 @@ def init_db(conn: sqlite3.Connection = None):
         CREATE INDEX IF NOT EXISTS idx_prp_player ON player_round_points(player_id);
         CREATE INDEX IF NOT EXISTS idx_prp_round ON player_round_points(round_id);
 
-        -- ─────────────────────────────────────────
+        -- 
         -- Player Advanced Stats (from FotMob/Sofascore)
-        -- ─────────────────────────────────────────
+        -- 
         CREATE TABLE IF NOT EXISTS player_xstats (
             player_id       INTEGER NOT NULL,
             source          TEXT NOT NULL,        -- 'fotmob' / 'sofascore' / 'manual'
@@ -252,9 +252,9 @@ def init_db(conn: sqlite3.Connection = None):
         CREATE INDEX IF NOT EXISTS idx_xstats_player ON player_xstats(player_id);
         CREATE INDEX IF NOT EXISTS idx_xstats_source ON player_xstats(source);
         
-        -- ─────────────────────────────────────────
+        -- 
         -- User Teams (Saved Squads)
-        -- ─────────────────────────────────────────
+        -- 
         CREATE TABLE IF NOT EXISTS user_teams (
             device_id   TEXT PRIMARY KEY,
             player_ids  TEXT,
@@ -278,9 +278,9 @@ def init_db(conn: sqlite3.Connection = None):
         conn.close()
 
 
-# ─────────────────────────────────────────────
+# 
 # Query helpers
-# ─────────────────────────────────────────────
+# 
 
 def get_all_players(conn: sqlite3.Connection, active_only: bool = True,
                     position: str = None, squad_id: int = None,
@@ -421,4 +421,4 @@ def get_stats_summary(conn: sqlite3.Connection) -> dict:
 if __name__ == "__main__":
     print("Initializing database...")
     init_db()
-    print(f"✅ Database created at: {DB_PATH}")
+    print(f" Database created at: {DB_PATH}")

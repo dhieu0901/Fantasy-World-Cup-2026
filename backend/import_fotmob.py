@@ -13,16 +13,16 @@ COUNTRY_MAP = {
     "South_Korea": "Korea Republic",
     "Korea Republic": "Korea Republic",
     "DR_Congo": "Congo DR",
-    "Ivory_Coast": "Côte d'Ivoire",
+    "Ivory_Coast": "Cte d'Ivoire",
     "Cape_Verde": "Cabo Verde",
     "Bosnia": "Bosnia and Herzegovina",
     "Czech_Republic": "Czechia",
     "Saudi_Arabia": "Saudi Arabia",
     "South_Africa": "South Africa",
     "New_Zealand": "New Zealand",
-    "Curacao": "Curaçao",
+    "Curacao": "Curaao",
     "Iran": "IR Iran",
-    "Turkey": "Türkiye"
+    "Turkey": "Trkiye"
 }
 
 def normalize_name(name):
