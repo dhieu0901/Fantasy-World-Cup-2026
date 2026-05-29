@@ -120,11 +120,12 @@ def api_get_players(
         if max_price is not None:
             players = [p for p in players if p.get("price", 0) <= max_price]
 
-        # Load fixtures to find next opponent
+        # Load fixtures to find next opponent and date
         import json
         from pathlib import Path
         fixtures_path = Path(__file__).parent.parent / "fixtures" / "matchday_1.json"
         opp_map = {}
+        date_map = {}
         if fixtures_path.exists():
             squad_names = {row["name"]: row["abbr"] for row in conn.execute("SELECT name, abbr FROM squads")}
             with open(fixtures_path, 'r', encoding='utf-8') as f:
@@ -132,15 +133,19 @@ def api_get_players(
                 for match in fixtures:
                     t1 = squad_names.get(match["team_1"])
                     t2 = squad_names.get(match["team_2"])
+                    match_date_str = match.get("date", "")
                     if t1 and t2:
                         opp_map[t1] = t2
                         opp_map[t2] = t1
+                        date_map[t1] = match_date_str
+                        date_map[t2] = match_date_str
 
         # Add display_name, projected_pts, and next_opponent
         from rules import calculate_xpts_from_db
         for p in players:
             p["display_name"] = p.get("known_name") or f"{p.get('first_name', '')} {p.get('last_name', '')}"
             p["next_opponent"] = opp_map.get(p.get("team_abbr", ""), "")
+            p["next_match_date"] = date_map.get(p.get("team_abbr", ""), "")
             xpts_data = calculate_xpts_from_db(
                 player_id=p["id"],
                 position=p.get("position", "MID"),
