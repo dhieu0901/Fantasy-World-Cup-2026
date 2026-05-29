@@ -248,13 +248,13 @@ def optimize_lp(players: list[dict], stage: str = "GROUP_MD1",
         pct = p.get("percent_selected", 50)
 
         if preset == "value":
-            obj_values[pid] = (xpts / max(price, 3.5)) * 10
+            obj_values[pid] = xpts + (15.0 - price) * 0.2  # Additive bonus for cheap players
         elif preset == "safe":
-            obj_values[pid] = xpts * (1 + pct / 200)
+            obj_values[pid] = xpts + (pct / 30.0)  # Additive bonus for popular (up to +3.3)
         elif preset == "risky":
-            obj_values[pid] = xpts * (1 + (100 - pct) / 200)
+            obj_values[pid] = xpts + ((100.0 - pct) / 30.0)  # Additive bonus for differentials (up to +3.3)
         elif preset == "template":
-            obj_values[pid] = xpts * (1 + pct / 100)
+            obj_values[pid] = xpts + (pct / 15.0)  # Strong additive bonus for popular (up to +6.6)
         else:
             obj_values[pid] = xpts
 
@@ -310,11 +310,10 @@ def optimize_lp(players: list[dict], stage: str = "GROUP_MD1",
         MAX_DAY = max(team_day_map.values()) if team_day_map else 7
         
         # Add bench value + day_index bonus to the objective
-        # In a manual sub game, a strong bench is VERY valuable because 
-        # you will frequently sub them in for blanking starters.
-        # We value bench xPts at 50% of starting xPts.
+        # In a manual sub game, a strong bench is valuable, but starting XI is still king.
+        # We value bench xPts at 20% of starting xPts to ensure we don't sacrifice premium starters.
         objective += pulp.lpSum(
-            obj_values.get(p["id"], 0) * 0.5 * (squad_vars[p["id"]] - xi_vars[p["id"]])
+            obj_values.get(p["id"], 0) * 0.2 * (squad_vars[p["id"]] - xi_vars[p["id"]])
             for p in players
         )
 
