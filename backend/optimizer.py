@@ -597,7 +597,8 @@ def _select_starting_xi(squad: list[dict], chip: str = "none", stage: str = "GRO
         if not feasible or len(xi) != 11:
             continue
 
-        score = sum(p.get("projected_pts", 0) for p in xi)
+        score = sum(p.get("projected_pts", 0) + (get_team_strength(p.get("team_abbr", "")) * 2.0 if is_qual else 0) for p in xi)
+
         if score > best_score:
             best_score = score
             best_xi = xi
