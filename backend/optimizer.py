@@ -134,20 +134,21 @@ def optimize_greedy(players: list[dict], stage: str = "GROUP_MD1", preset: str =
         price = p.get("price", 4.0)
         pct = p.get("percent_selected", 50)
 
+        # Qualification booster EV for Greedy
+        if chip == "qualification" and stage not in ("GROUP_MD1", "GROUP_MD2", "GROUP_MD3"):
+            team_str = get_team_strength(p.get("team_abbr", ""))
+            xpts += team_str * 2.0  # +2 pts scaled by probability of advancing
+
         if preset == "value":
-            p["_score"] = (xpts / max(price, 3.5)) * 10  # Points per million
+            p["_score"] = xpts / max(p["price"], 4.0)
         elif preset == "safe":
-            p["_score"] = xpts * (1 + pct / 200)  # Boost popular picks
+            p["_score"] = xpts * (1 + pct / 200)
         elif preset == "risky":
-            p["_score"] = xpts * (1 + (100 - pct) / 200)  # Boost differentials
+            p["_score"] = xpts * (1 + (100 - pct) / 200)
         elif preset == "template":
             p["_score"] = xpts + (pct / 15.0)
         else:
             p["_score"] = xpts
-
-        # Qualification booster EV for Greedy
-        if chip == "qualification" and stage not in ("GROUP_MD1", "GROUP_MD2", "GROUP_MD3"):
-            p["_score"] += 1.0
 
         # Boost locked_in players so they are always picked
         if p["id"] in locked_in:
@@ -275,6 +276,11 @@ def optimize_lp(players: list[dict], stage: str = "GROUP_MD1",
         price = p.get("price", 4.0)
         pct = p.get("percent_selected", 50)
 
+        # Qualification booster: +2 pts scaled by probability of advancing
+        if chip == "qualification" and stage not in ("GROUP_MD1", "GROUP_MD2", "GROUP_MD3"):
+            team_str = get_team_strength(p.get("team_abbr", ""))
+            xpts += team_str * 2.0
+
         if preset == "value":
             obj_values[pid] = xpts + (15.0 - price) * 0.2  # Additive bonus for cheap players
         elif preset == "safe":
@@ -285,10 +291,6 @@ def optimize_lp(players: list[dict], stage: str = "GROUP_MD1",
             obj_values[pid] = xpts + (pct / 15.0)  # Strong additive bonus for popular (up to +6.6)
         else:
             obj_values[pid] = xpts
-            
-        # Qualification booster: players in XI get +2 if team advances (~50% chance = +1.0 EV)
-        if chip == "qualification" and stage not in ("GROUP_MD1", "GROUP_MD2", "GROUP_MD3"):
-            obj_values[pid] += 1.0
 
     # Create problem
     prob = pulp.LpProblem("WC2026_Fantasy_Optimizer", pulp.LpMaximize)
@@ -566,11 +568,11 @@ def _select_starting_xi(squad: list[dict], chip: str = "none", stage: str = "GRO
             by_pos[pos].append(p)
 
     # Sort each position group by next_match_date (earliest first), then projected points (boosted by qualification)
-    qual_bonus = 1.0 if (chip == "qualification" and stage not in ("GROUP_MD1", "GROUP_MD2", "GROUP_MD3")) else 0.0
+    is_qual = chip == "qualification" and stage not in ("GROUP_MD1", "GROUP_MD2", "GROUP_MD3")
     for pos in by_pos:
         by_pos[pos].sort(key=lambda p: (
             p.get("next_match_date") or "2099-12-31T00:00:00Z",
-            -(p.get("projected_pts", 0) + qual_bonus)
+            -(p.get("projected_pts", 0) + (get_team_strength(p.get("team_abbr", "")) * 2.0 if is_qual else 0))
         ))
 
     # Try each formation, pick the one with highest total xPts from starters? 
@@ -602,7 +604,7 @@ def _select_starting_xi(squad: list[dict], chip: str = "none", stage: str = "GRO
         # Fallback: just take top 11 by date
         best_xi = sorted(squad, key=lambda p: (
             p.get("next_match_date") or "2099-12-31T00:00:00Z",
-            -(p.get("projected_pts", 0) + qual_bonus)
+            -(p.get("projected_pts", 0) + (get_team_strength(p.get("team_abbr", "")) * 2.0 if is_qual else 0))
         ))[:11]
 
     xi_ids = {p["id"] for p in best_xi}
@@ -611,7 +613,7 @@ def _select_starting_xi(squad: list[dict], chip: str = "none", stage: str = "GRO
     # Re-sort Bench by date
     bench.sort(key=lambda p: (
         p.get("next_match_date") or "2099-12-31T00:00:00Z",
-        -(p.get("projected_pts", 0) + qual_bonus)
+        -(p.get("projected_pts", 0) + (get_team_strength(p.get("team_abbr", "")) * 2.0 if is_qual else 0))
     ))
 
     return best_xi, bench
