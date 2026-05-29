@@ -311,9 +311,9 @@ def optimize_lp(players: list[dict], stage: str = "GROUP_MD1",
         
         # Add bench value + day_index bonus to the objective
         # In a manual sub game, a strong bench is valuable, but starting XI is still king.
-        # We value bench xPts at 20% of starting xPts to ensure we don't sacrifice premium starters.
+        # We value bench xPts at 35% of starting xPts (the "Goldilocks" ratio).
         objective += pulp.lpSum(
-            obj_values.get(p["id"], 0) * 0.2 * (squad_vars[p["id"]] - xi_vars[p["id"]])
+            obj_values.get(p["id"], 0) * 0.35 * (squad_vars[p["id"]] - xi_vars[p["id"]])
             for p in players
         )
 
