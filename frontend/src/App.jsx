@@ -164,6 +164,40 @@ export default function App() {
     setIsSyncing(false);
   };
 
+  // Live Sync
+  const [isLiveSyncing, setIsLiveSyncing] = useState(false);
+  const [liveSyncMsg, setLiveSyncMsg] = useState('');
+  
+  const handleLiveSync = async () => {
+    if (isLiveSyncing) return;
+    setIsLiveSyncing(true);
+    setLiveSyncMsg('Syncing...');
+    try {
+      const res = await api.triggerLiveSync();
+      if (res.status === 'no_matches') {
+        setLiveSyncMsg('No live matches');
+      } else {
+        setLiveSyncMsg(`Updated ${res.updated_players} players`);
+        // Silently reload players and recommendations
+        const [pData, subData] = await Promise.all([
+          api.getPlayers({ sortBy: 'price', sortDesc: true }),
+          api.getRecommendSubs(deviceId)
+        ]);
+        setPlayers(pData.players || []);
+        setRecommendations(subData?.recommendations || []);
+      }
+    } catch (e) {
+      console.error('Live Sync failed:', e);
+      setLiveSyncMsg('Sync failed');
+    }
+    
+    // Clear message after 4s
+    setTimeout(() => {
+      setLiveSyncMsg('');
+      setIsLiveSyncing(false);
+    }, 4000);
+  };
+
   // Sort handler
   const handleSort = (col) => {
     if (sortBy === col) { setSortDesc(!sortDesc); }
@@ -217,13 +251,36 @@ export default function App() {
           <h1>WC2026 Fantasy Planner</h1>
           <span className="badge">Beta</span>
         </div>
-        <div className="header-meta">
+        <div className="header-meta" style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
           <div className="dot" />
           <span>{stats ? `${stats.players?.active ?? 0} players` : '...'}</span>
           <span>•</span>
           <span>{stats ? `${stats.squads ?? 0} teams` : '...'}</span>
           <span>•</span>
           <span>{stats?.last_sync ? `Synced ${new Date(stats.last_sync.run_at).toLocaleDateString()}` : ''}</span>
+          
+          <button 
+            onClick={handleLiveSync} 
+            disabled={isLiveSyncing && liveSyncMsg === 'Syncing...'}
+            style={{
+              marginLeft: '12px',
+              padding: '4px 10px',
+              background: 'rgba(45, 212, 191, 0.1)',
+              color: '#2dd4bf',
+              border: '1px solid rgba(45, 212, 191, 0.3)',
+              borderRadius: '4px',
+              display: 'flex',
+              alignItems: 'center',
+              gap: '6px',
+              fontSize: '0.75rem',
+              cursor: (isLiveSyncing && liveSyncMsg === 'Syncing...') ? 'wait' : 'pointer',
+              transition: 'all 0.2s',
+              fontWeight: 600
+            }}
+          >
+            {isLiveSyncing && liveSyncMsg === 'Syncing...' ? <Icon.Loader /> : <Icon.Zap />}
+            {liveSyncMsg || 'Live Sync'}
+          </button>
         </div>
       </header>
 

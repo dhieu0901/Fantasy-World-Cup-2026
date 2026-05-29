@@ -82,3 +82,9 @@ export async function triggerSync() {
   if (!res.ok) throw new Error('Failed to sync');
   return res.json();
 }
+
+export async function triggerLiveSync() {
+  const res = await fetch(`${API_BASE}/live-sync`, { method: 'POST' });
+  if (!res.ok) throw new Error('Failed to live sync');
+  return res.json();
+}
