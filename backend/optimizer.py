@@ -79,6 +79,10 @@ def project_player_points(player: dict, conn: sqlite3.Connection = None,
     Project Fantasy points for a player for their next match.
     Uses xPts engine with real stats if available.
     """
+    # Injured, suspended, or unavailable players are expected to score 0
+    if player.get("status") != "playing":
+        return 0.0
+
     team_str = get_team_strength(player.get("team_abbr", ""))
     opp_str = get_team_strength(opponent_abbr) if opponent_abbr else 0.50
 
@@ -659,7 +663,7 @@ def optimize_squad(stage: str = "GROUP_MD1",
         FROM players p
         LEFT JOIN squads s ON p.squad_id = s.id
         LEFT JOIN fixtures f ON (f.home_squad_id = s.id OR f.away_squad_id = s.id) AND f.round_id = ?
-        WHERE p.is_active = 1 AND p.status = 'playing'
+        WHERE p.is_active = 1
         GROUP BY p.id
         ORDER BY p.price DESC
     """, (round_id,)).fetchall()
