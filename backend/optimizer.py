@@ -141,8 +141,19 @@ def get_player_xpts_horizon(player: dict, conn: sqlite3.Connection, current_roun
         
         if rid == current_round:
             current_xpts += pts
-        else:
-            future_xpts += pts
+        elif rid == current_round + 1:
+            # MD2: Transfer decay (0.6) + Future Captain Proxy
+            cap_proxy = 1.4 if pts > 5.5 else 1.0
+            future_xpts += pts * 0.6 * cap_proxy
+        elif rid == current_round + 2:
+            # MD3: Transfer decay (0.3) + Future Captain Proxy + Rotation Risk
+            cap_proxy = 1.4 if pts > 5.5 else 1.0
+            md3_rotation_penalty = 1.0
+            # Strong teams (>= 0.85) likely qualify after 2 games -> heavy rotation in MD3
+            if team_str >= 0.85:
+                md3_rotation_penalty = 0.5
+            
+            future_xpts += pts * 0.3 * cap_proxy * md3_rotation_penalty
             
     # Fallback if no fixtures found in DB (e.g. tests)
     if current_xpts == 0.0 and len(fixtures) == 0:
