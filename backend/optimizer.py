@@ -424,7 +424,7 @@ def optimize_lp(players: list[dict], stage: str = "GROUP_MD1",
     # Constraint 4: Max per country
     squad_ids = set(p.get("squad_id", 0) for p in players)
     for sid in squad_ids:
-        country_players = [p for p in players if p.get("squad_id") == sid]
+        country_players = [p for p in players if p.get("squad_id", 0) == sid]
         prob += pulp.lpSum(
             squad_vars[p["id"]] for p in country_players
         ) <= max_per_country, f"Country_{sid}"
