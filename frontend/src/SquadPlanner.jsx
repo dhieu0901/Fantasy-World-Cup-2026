@@ -213,21 +213,29 @@ function ActionMenuModal({ player, isOpen, onClose, onTransfer, onSub, onSetCapt
 }
 
 // ══════════════════════════════════════════════
-// Country flags
+// Country Code Mappings & Kits pathing
 // ══════════════════════════════════════════════
 const COUNTRY_ISO = {
-  ARG:'ar',FRA:'fr',BRA:'br',ENG:'gb-eng',ESP:'es',POR:'pt',GER:'de',NED:'nl',
-  URU:'uy',COL:'co',CRO:'hr',MAR:'ma',JPN:'jp',BEL:'be',SUI:'ch',USA:'us',
-  SEN:'sn',TUR:'tr',AUT:'at',KOR:'kr',NOR:'no',EGY:'eg',MEX:'mx',SWE:'se',
-  ECU:'ec',IRN:'ir',SCO:'gb-sct',CIV:'ci',PAR:'py',ALG:'dz',CZE:'cz',AUS:'au',
-  RSA:'za',TUN:'tn',PAN:'pa',GHA:'gh',IRQ:'iq',QAT:'qa',CAN:'ca',BIH:'ba',
-  JOR:'jo',UZB:'uz',KSA:'sa',NZL:'nz',COD:'cd',HAI:'ht',CUW:'cw',CPV:'cv',
+  ARG:'arg',FRA:'fra',BRA:'bra',ENG:'eng',ESP:'esp',POR:'por',GER:'ger',NED:'ned',
+  URU:'uru',COL:'col',CRO:'cro',MAR:'mar',JPN:'jpn',BEL:'bel',SUI:'sui',USA:'usa',
+  SEN:'sen',TUR:'tur',AUT:'aut',KOR:'kor',NOR:'nor',EGY:'egy',MEX:'mex',SWE:'swe',
+  ECU:'ecu',IRN:'irn',SCO:'sco',CIV:'civ',PAR:'par',ALG:'alg',CZE:'cze',AUS:'aus',
+  RSA:'rsa',TUN:'tun',PAN:'pan',GHA:'gha',IRQ:'irq',QAT:'qat',CAN:'can',BIH:'bih',
+  JOR:'jor',UZB:'uzb',KSA:'ksa',NZL:'nzl',COD:'cod',HAI:'hai',CUW:'cuw',CPV:'cpv',
 };
 
-function getFlagUrl(abbr) {
+function getKitUrl(abbr) {
   const iso = COUNTRY_ISO[abbr];
   if (!iso) return null;
-  return `https://flagcdn.com/w80/${iso}.png`;
+  
+  // Script is in `../frontend/src/ SquadPlanner.jsx` 
+  // Custom kits are in `../kit/` (relative to root)
+  // Back out twice to reach root from src/
+  try {
+    return new URL(`../../kit_img/${iso}.png`, import.meta.url).href;
+  } catch (e) {
+    return `../../kit_img/${iso}.png`;
+  }
 }
 
 // ══════════════════════════════════════════════
@@ -248,7 +256,7 @@ function PitchPlayer({ player: p, isCaptain, isViceCaptain, isSubSource, onClick
   }
 
   const lastName = p.display_name?.split(' ').pop() || '?';
-  const flagUrl = getFlagUrl(p.team_abbr);
+  const kitUrl = getKitUrl(p.team_abbr);
   const pos = p.position?.toLowerCase();
 
   let displayValue = '';
@@ -269,14 +277,24 @@ function PitchPlayer({ player: p, isCaptain, isViceCaptain, isSubSource, onClick
       <div className={`pitch-jersey ${pos}`} style={{
         boxShadow: isSubSource ? '0 0 0 3px var(--clr-teal), 0 0 15px var(--clr-teal)' : 'none',
         transition: 'all 0.2s',
-        transform: isSubSource ? 'scale(1.1)' : 'scale(1)'
+        transform: isSubSource ? 'scale(1.1)' : 'scale(1)',
+        background: 'transparent' // Allows full-bleed transparent kit PNGs
       }}>
         {isCaptain && <div className="pitch-badge captain">C</div>}
         {isViceCaptain && <div className="pitch-badge vice">VC</div>}
-        {flagUrl ? (
-          <img className="jersey-flag" src={flagUrl} alt={p.team_abbr} onError={e => { e.target.style.display = 'none'; e.target.parentNode.innerText = p.team_abbr; }} />
+        {kitUrl ? (
+          <img 
+            className="jersey-kit" 
+            src={kitUrl} 
+            alt={p.team_abbr} 
+            style={{ width: '100%', height: '100%', objectFit: 'contain' }}
+            onError={e => { 
+              e.target.style.display = 'none'; 
+              e.target.parentNode.innerText = p.team_abbr; 
+            }} 
+          />
         ) : (
-          <span style={{ fontSize: '0.8rem' }}>None</span>
+          <span style={{ fontSize: '0.8rem' }}>{p.team_abbr}</span>
         )}
       </div>
       <div className="pitch-player-info">
