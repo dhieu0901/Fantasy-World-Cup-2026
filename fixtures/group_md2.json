@@ -1,0 +1,122 @@
+[
+    {
+        "team_1": "Czechia",
+        "team_2": "South Africa",
+        "day_index": 1
+    },
+    {
+        "team_1": "Switzerland",
+        "team_2": "Bosnia and Herzegovina",
+        "day_index": 2
+    },
+    {
+        "team_1": "Canada",
+        "team_2": "Qatar",
+        "day_index": 2
+    },
+    {
+        "team_1": "Mexico",
+        "team_2": "Korea Republic",
+        "day_index": 2
+    },
+    {
+        "team_1": "USA",
+        "team_2": "Australia",
+        "day_index": 3
+    },
+    {
+        "team_1": "Scotland",
+        "team_2": "Morocco",
+        "day_index": 3
+    },
+    {
+        "team_1": "Brazil",
+        "team_2": "Haiti",
+        "day_index": 3
+    },
+    {
+        "team_1": "Türkiye",
+        "team_2": "Paraguay",
+        "day_index": 3
+    },
+    {
+        "team_1": "Netherlands",
+        "team_2": "Sweden",
+        "day_index": 4
+    },
+    {
+        "team_1": "Germany",
+        "team_2": "Côte d'Ivoire",
+        "day_index": 4
+    },
+    {
+        "team_1": "Ecuador",
+        "team_2": "Curaçao",
+        "day_index": 4
+    },
+    {
+        "team_1": "Tunisia",
+        "team_2": "Japan",
+        "day_index": 4
+    },
+    {
+        "team_1": "Spain",
+        "team_2": "Saudi Arabia",
+        "day_index": 4
+    },
+    {
+        "team_1": "Belgium",
+        "team_2": "IR Iran",
+        "day_index": 5
+    },
+    {
+        "team_1": "Uruguay",
+        "team_2": "Cabo Verde",
+        "day_index": 5
+    },
+    {
+        "team_1": "New Zealand",
+        "team_2": "Egypt",
+        "day_index": 5
+    },
+    {
+        "team_1": "Argentina",
+        "team_2": "Austria",
+        "day_index": 6
+    },
+    {
+        "team_1": "France",
+        "team_2": "Iraq",
+        "day_index": 6
+    },
+    {
+        "team_1": "Norway",
+        "team_2": "Senegal",
+        "day_index": 6
+    },
+    {
+        "team_1": "Jordan",
+        "team_2": "Algeria",
+        "day_index": 6
+    },
+    {
+        "team_1": "Portugal",
+        "team_2": "Uzbekistan",
+        "day_index": 7
+    },
+    {
+        "team_1": "England",
+        "team_2": "Ghana",
+        "day_index": 7
+    },
+    {
+        "team_1": "Panama",
+        "team_2": "Croatia",
+        "day_index": 7
+    },
+    {
+        "team_1": "Colombia",
+        "team_2": "Congo DR",
+        "day_index": 7
+    }
+]
