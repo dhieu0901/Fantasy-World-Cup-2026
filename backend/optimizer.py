@@ -442,12 +442,9 @@ def optimize_lp(players: list[dict], stage: str = "GROUP_MD1",
             # Their effective value is the (Points - 2) they bring, which is roughly 40-70% of their EV.
             bench_weight = 0.4 + 0.3 * ((day_idx - 1) / max(1, MAX_DAY - 1))
             
-            # Captain Weight: Early players are MUCH better captains because you can twist.
-            # Day 1: weight = 1.0. Day MAX: weight = 0.8.
-            cap_weight = 1.0 - 0.2 * ((day_idx - 1) / max(1, MAX_DAY - 1))
-            
             objective += obj_values_current.get(pid, 0) * bench_weight * (squad_vars[pid] - xi_vars[pid])
-            objective += obj_values_current.get(pid, 0) * cap_weight * cap_vars[pid]
+            # Cap can be changed day by day, so no penalty for late captains in LP objective!
+            objective += obj_values_current.get(pid, 0) * 1.0 * cap_vars[pid]
 
         # Formula: 0.01 * (MAX_DAY - day_index) * xi_vars[pid]
         # This rewards putting EARLY players (day_index = 1) in the Starting XI (xi_vars = 1)
@@ -507,10 +504,11 @@ def optimize_lp(players: list[dict], stage: str = "GROUP_MD1",
     prob += pulp.lpSum(xi_vars[p["id"]] for p in gk_players) == 1, "Xi_GK"
     prob += pulp.lpSum(xi_vars[p["id"]] for p in def_players) >= 3, "Xi_DEF_Min"
     prob += pulp.lpSum(xi_vars[p["id"]] for p in def_players) <= 5, "Xi_DEF_Max"
-    prob += pulp.lpSum(xi_vars[p["id"]] for p in mid_players) >= 3, "Xi_MID_Min"
+    prob += pulp.lpSum(xi_vars[p["id"]] for p in mid_players) >= 2, "Xi_MID_Min"
     prob += pulp.lpSum(xi_vars[p["id"]] for p in mid_players) <= 5, "Xi_MID_Max"
     prob += pulp.lpSum(xi_vars[p["id"]] for p in fwd_players) >= 1, "Xi_FWD_Min"
     prob += pulp.lpSum(xi_vars[p["id"]] for p in fwd_players) <= 3, "Xi_FWD_Max"
+    prob += pulp.lpSum(xi_vars[p["id"]] for p in def_players) + pulp.lpSum(xi_vars[p["id"]] for p in fwd_players) <= 7, "Max_Def_Fwd_Sum"
 
     # Constraint 4: Max per country
     squad_ids = set(p.get("squad_id", 0) for p in players)
@@ -556,14 +554,9 @@ def optimize_lp(players: list[dict], stage: str = "GROUP_MD1",
     starting_xi, bench = _select_starting_xi(selected, chip, stage)
     
     # Re-evaluate Captain based on the actual Starting XI
-    # A captain should ideally play EARLY so we can sub them if they blank.
-    def get_cap_score(p):
-        day = team_day_map.get(squads.get(p.get("squad_id", 0), ""), 1) if 'team_day_map' in locals() else 1
-        max_d = MAX_DAY if 'MAX_DAY' in locals() else 7
-        decay = 1.0 - 0.2 * ((day - 1) / max(1, max_d - 1))
-        return p.get("projected_pts", 0) * decay
-
-    captain = max(starting_xi, key=get_cap_score) if starting_xi else None
+    # Since we can change captain day by day, we just pick the highest EV player who plays EARLY.
+    # To start the chain, we just find the absolute highest EV player.
+    captain = max(starting_xi, key=lambda p: p.get("projected_pts", 0)) if starting_xi else None
 
     # Handle Qualification Booster (Apply to projected_pts BEFORE total points calc)
     if chip == "qualification" and stage not in ("GROUP_MD1", "GROUP_MD2", "GROUP_MD3"):
