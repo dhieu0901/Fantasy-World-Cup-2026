@@ -635,11 +635,8 @@ function FixturesTab({ squads, fixtures, setSelectedTeamFilter, setTab }) {
    ═══════════════════════════════════════════ */
 function OptimizerPanel({ preset, setPreset, stage, setStage, chip, setChip, transferMode, setTransferMode, myTeam, freeTransfers, setFreeTransfers, optimizing, runOptimize, result }) {
   const presets = [
-    { id: 'default', label: 'Balanced', desc: 'Max total xPts, balanced risk & reward' },
-    { id: 'value', label: 'Value', desc: 'Maximize points-per-million, hunt for budget gems' },
-    { id: 'safe', label: 'Safe', desc: 'Prioritize high ownership, protect your rank' },
-    { id: 'risky', label: 'Differential', desc: 'Target low ownership gems for maximum upside' },
-    { id: 'template', label: 'Template', desc: 'Follow the crowd, highly popular picks' },
+    { id: 'default', label: 'Balanced', desc: 'Max total xPts, prioritize highest points' },
+    { id: 'risky', label: 'Differential', desc: 'Target low ownership hidden gems for upside' },
   ];
 
   return (
