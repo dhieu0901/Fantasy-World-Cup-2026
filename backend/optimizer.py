@@ -354,10 +354,11 @@ def optimize_lp(players: list[dict], stage: str = "GROUP_MD1",
             team_name = squads.get(p.get("squad_id", 0), "")
             day_idx = team_day_map.get(team_name, 1)
             
-            # Dynamic Bench Weight: 0.05 (Day 1) to 0.20 (Max Day)
-            # We lower this so the solver heavily prioritizes spending on the Starting XI.
-            # A late-playing bench player is more valuable, but still only ~20% expected value of a starter.
-            bench_weight = 0.05 + 0.15 * ((day_idx - 1) / max(1, MAX_DAY - 1))
+            # Dynamic Bench Weight (Crucial for World Cup Fantasy)
+            # Since we can make manual substitutions, bench players are NOT fodder.
+            # A late-playing bench player will almost certainly be subbed in for an early blanker.
+            # Their effective value is the (Points - 2) they bring, which is roughly 40-70% of their EV.
+            bench_weight = 0.4 + 0.3 * ((day_idx - 1) / max(1, MAX_DAY - 1))
             
             objective += obj_values.get(pid, 0) * bench_weight * (squad_vars[pid] - xi_vars[pid])
 
