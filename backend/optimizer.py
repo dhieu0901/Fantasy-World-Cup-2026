@@ -354,8 +354,10 @@ def optimize_lp(players: list[dict], stage: str = "GROUP_MD1",
             team_name = squads.get(p.get("squad_id", 0), "")
             day_idx = team_day_map.get(team_name, 1)
             
-            # Increase bench weight to 0.4 (from 0.1) to encourage better bench quality
-            bench_weight = 0.4 + 0.2 * ((day_idx - 1) / max(1, MAX_DAY - 1))
+            # Dynamic Bench Weight: 0.05 (Day 1) to 0.20 (Max Day)
+            # We lower this so the solver heavily prioritizes spending on the Starting XI.
+            # A late-playing bench player is more valuable, but still only ~20% expected value of a starter.
+            bench_weight = 0.05 + 0.15 * ((day_idx - 1) / max(1, MAX_DAY - 1))
             
             objective += obj_values.get(pid, 0) * bench_weight * (squad_vars[pid] - xi_vars[pid])
 
@@ -428,16 +430,6 @@ def optimize_lp(players: list[dict], stage: str = "GROUP_MD1",
         prob += pulp.lpSum(
             squad_vars[p["id"]] for p in country_players
         ) <= max_per_country, f"Country_{sid}"
-        
-        # Hard constraint: Max 1 LB and Max 1 RB per team
-        team_lbs = [p for p in country_players if p.get("raw_position") in ["Left Back", "Left Wing-Back"]]
-        if team_lbs:
-            prob += pulp.lpSum(squad_vars[p["id"]] for p in team_lbs) <= 1, f"MaxLB_{sid}"
-            
-        team_rbs = [p for p in country_players if p.get("raw_position") in ["Right Back", "Right Wing-Back"]]
-        if team_rbs:
-            prob += pulp.lpSum(squad_vars[p["id"]] for p in team_rbs) <= 1, f"MaxRB_{sid}"
-
     # Constraint 5: Locked in/out
     for pid in locked_in:
         if pid in squad_vars:
