@@ -100,6 +100,67 @@ def project_player_points(player: dict, conn: sqlite3.Connection = None,
     return result.get("xPts", 2.0)
 
 
+def get_player_xpts_horizon(player: dict, conn: sqlite3.Connection, current_round: int) -> dict:
+    """
+    Project Fantasy points for the current gameweek and the rest of the group stage horizon.
+    """
+    if player.get("status") != "playing":
+        return {"current": 0.0, "future": 0.0}
+
+    # Only look ahead in the group stage. If we are in knockouts, future = 0 (we only optimize 1 week)
+    max_round = 3 if current_round <= 3 else current_round
+    
+    fixtures = conn.execute("""
+        SELECT round_id, home_squad_abbr, away_squad_abbr 
+        FROM fixtures 
+        WHERE (home_squad_id = ? OR away_squad_id = ?) 
+          AND round_id >= ? AND round_id <= ?
+    """, (player.get("squad_id", 0), player.get("squad_id", 0), current_round, max_round)).fetchall()
+
+    team_str = get_team_strength(player.get("team_abbr", ""))
+    
+    current_xpts = 0.0
+    future_xpts = 0.0
+    
+    for f in fixtures:
+        rid = f["round_id"]
+        opp_abbr = f["away_squad_abbr"] if f["home_squad_abbr"] == player.get("team_abbr") else f["home_squad_abbr"]
+        opp_str = get_team_strength(opp_abbr) if opp_abbr else 0.50
+        
+        res = calculate_xpts_from_db(
+            player_id=player["id"],
+            position=player["position"],
+            price=player["price"],
+            percent_selected=player.get("percent_selected", 50),
+            team_strength=team_str,
+            opponent_strength=opp_str,
+            is_home=True,
+            conn=conn,
+        )
+        pts = res.get("xPts", 2.0)
+        
+        if rid == current_round:
+            current_xpts += pts
+        else:
+            future_xpts += pts
+            
+    # Fallback if no fixtures found in DB (e.g. tests)
+    if current_xpts == 0.0 and len(fixtures) == 0:
+        res = calculate_xpts_from_db(
+            player_id=player["id"],
+            position=player["position"],
+            price=player["price"],
+            percent_selected=player.get("percent_selected", 50),
+            team_strength=team_str,
+            opponent_strength=0.50,
+            is_home=True,
+            conn=conn,
+        )
+        current_xpts = res.get("xPts", 2.0)
+
+    return {"current": round(current_xpts, 2), "future": round(future_xpts, 2)}
+
+
 # 
 # GREEDY OPTIMIZER (fallback when PuLP unavailable)
 # 
@@ -266,29 +327,37 @@ def optimize_lp(players: list[dict], stage: str = "GROUP_MD1",
     current_squad = set(current_squad or [])
 
     # Calculate objective values based on preset
-    obj_values = {}
+    obj_values_current = {}
+    obj_values_future = {}
     for p in players:
         pid = p["id"]
-        xpts = p.get("projected_pts", 2.0)
+        xpts_current = p.get("projected_pts", 2.0)
+        xpts_future = p.get("projected_pts_future", 0.0)
         price = p.get("price", 4.0)
         pct = p.get("percent_selected", 50)
 
         # Qualification booster: +2 pts scaled by probability of advancing
         if chip == "qualification" and stage not in ("GROUP_MD1", "GROUP_MD2", "GROUP_MD3"):
             team_str = get_team_strength(p.get("team_abbr", ""))
-            xpts += team_str * 2.0
+            xpts_current += team_str * 2.0
 
         if preset == "risky":
             # Additive bonus for differentials + explicitly penalize high ownership (negative rank bonus)
-            obj_values[pid] = xpts + ((100.0 - pct) / 30.0) - ((pct / 100.0) * 0.3)
+            obj_current = xpts_current + ((100.0 - pct) / 30.0) - ((pct / 100.0) * 0.3)
+            obj_future = xpts_future + ((100.0 - pct) / 30.0) - ((pct / 100.0) * 0.3) if xpts_future > 0 else 0.0
             # Hidden Gem Boost: Massively boost cheap differentials in Risky preset
             if pct < 3.0 and price <= 6.0:
-                obj_values[pid] += 3.0
+                obj_current += 3.0
+                if xpts_future > 0: obj_future += 3.0
         else:
             # Rank Protection (Default/Balanced)
             # Max +0.5 objective bonus for 100% ownership.
             # Prevents solver from dropping a 60% owned player for a 5% owned player over a 0.1 xPts difference.
-            obj_values[pid] = xpts + (pct / 100.0) * 0.5
+            obj_current = xpts_current + (pct / 100.0) * 0.5
+            obj_future = xpts_future + (pct / 100.0) * 0.5 if xpts_future > 0 else 0.0
+
+        obj_values_current[pid] = obj_current
+        obj_values_future[pid] = obj_future
 
     # Create problem
     prob = pulp.LpProblem("WC2026_Fantasy_Optimizer", pulp.LpMaximize)
@@ -318,9 +387,10 @@ def optimize_lp(players: list[dict], stage: str = "GROUP_MD1",
 
     # Objective: maximize weighted projected points from Starting XI + Captain bonus + 12th man
     objective = pulp.lpSum(
-        obj_values.get(p["id"], 0) * xi_vars[p["id"]] + 
-        obj_values.get(p["id"], 0) * cap_vars[p["id"]] +
-        obj_values.get(p["id"], 0) * twelfth_vars[p["id"]]
+        obj_values_current.get(p["id"], 0) * xi_vars[p["id"]] + 
+        obj_values_current.get(p["id"], 0) * cap_vars[p["id"]] +
+        obj_values_current.get(p["id"], 0) * twelfth_vars[p["id"]] +
+        obj_values_future.get(p["id"], 0) * 0.85 * squad_vars[p["id"]]
         for p in players
     )
     
@@ -364,7 +434,7 @@ def optimize_lp(players: list[dict], stage: str = "GROUP_MD1",
             # Their effective value is the (Points - 2) they bring, which is roughly 40-70% of their EV.
             bench_weight = 0.4 + 0.3 * ((day_idx - 1) / max(1, MAX_DAY - 1))
             
-            objective += obj_values.get(pid, 0) * bench_weight * (squad_vars[pid] - xi_vars[pid])
+            objective += obj_values_current.get(pid, 0) * bench_weight * (squad_vars[pid] - xi_vars[pid])
 
         # Formula: 0.01 * (MAX_DAY - day_index) * xi_vars[pid]
         # This rewards putting EARLY players (day_index = 1) in the Starting XI (xi_vars = 1)
@@ -376,7 +446,7 @@ def optimize_lp(players: list[dict], stage: str = "GROUP_MD1",
         print(f"  [!] Could not load fixtures for smart benching: {e}")
         # Fallback to simple bench weight if fixtures fail
         objective += pulp.lpSum(
-            obj_values.get(p["id"], 0) * 0.4 * (squad_vars[p["id"]] - xi_vars[p["id"]])
+            obj_values_current.get(p["id"], 0) * 0.4 * (squad_vars[p["id"]] - xi_vars[p["id"]])
             for p in players
         )
 
@@ -665,7 +735,9 @@ def optimize_squad(stage: str = "GROUP_MD1",
     for r in rows:
         p = dict(r)
         p["display_name"] = p["known_name"] or f"{p['first_name']} {p['last_name']}"
-        p["projected_pts"] = project_player_points(p, conn)
+        pts_data = get_player_xpts_horizon(p, conn, round_id)
+        p["projected_pts"] = pts_data["current"]
+        p["projected_pts_future"] = pts_data["future"]
         players.append(p)
 
     conn.close()
