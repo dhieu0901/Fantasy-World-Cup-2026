@@ -279,12 +279,16 @@ def optimize_lp(players: list[dict], stage: str = "GROUP_MD1",
             xpts += team_str * 2.0
 
         if preset == "risky":
-            obj_values[pid] = xpts + ((100.0 - pct) / 30.0)  # Additive bonus for differentials (up to +3.3)
+            # Additive bonus for differentials + explicitly penalize high ownership (negative rank bonus)
+            obj_values[pid] = xpts + ((100.0 - pct) / 30.0) - ((pct / 100.0) * 0.3)
             # Hidden Gem Boost: Massively boost cheap differentials in Risky preset
             if pct < 3.0 and price <= 6.0:
                 obj_values[pid] += 3.0
         else:
-            obj_values[pid] = xpts
+            # Rank Protection (Default/Balanced)
+            # Max +0.5 objective bonus for 100% ownership.
+            # Prevents solver from dropping a 60% owned player for a 5% owned player over a 0.1 xPts difference.
+            obj_values[pid] = xpts + (pct / 100.0) * 0.5
 
     # Create problem
     prob = pulp.LpProblem("WC2026_Fantasy_Optimizer", pulp.LpMaximize)

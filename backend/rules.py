@@ -223,83 +223,85 @@ def calculate_xpts(player_stats: dict, position: str) -> dict:
 
     # Probabilities
     p_play = s.get("p_start", 0.0)              # Probability of playing any minutes
-    p_60 = s.get("p_60_plus", 0.0)              # Probability of playing 60+ min (given they play)
-    p_sub = p_play * (1 - p_60)                  # Probability of playing but < 60 min
+    p_60_raw = s.get("p_60_plus", 0.0)          # Probability of playing 60+ min
+    
+    # Ensure P(60+) <= P(play) to prevent impossible states
+    p_60 = min(p_play, p_60_raw)
+    p_sub_appearance = p_play - p_60
+
+    # Expected minutes
+    # Assume 60+ means avg 85 mins, <60 means avg 25 mins
+    exp_mins = p_60 * 85 + p_sub_appearance * 25
+    min_fraction = exp_mins / 90.0
 
     breakdown = {}
 
     #  1. Appearance points 
     # If they play at all: +1. If 60+: another +1
-    breakdown["xAppearance"] = p_play * 1 + p_play * p_60 * 1
+    breakdown["xAppearance"] = p_play * 1 + p_60 * 1
 
     #  2. Goals 
     xg = s.get("xG", 0.0)
     goal_pts = GOAL_POINTS.get(position, 5)
-    breakdown["xGoals"] = xg * p_play * goal_pts
+    breakdown["xGoals"] = xg * min_fraction * goal_pts
 
     #  3. Assists 
     xa = s.get("xA", 0.0)
-    breakdown["xAssists"] = xa * p_play * SCORING_ALL["assist"]
+    breakdown["xAssists"] = xa * min_fraction * SCORING_ALL["assist"]
 
     #  4. Clean Sheet 
     xcs = s.get("xCS", 0.0)
     if position == "GK":
-        breakdown["xCleanSheet"] = xcs * p_play * p_60 * SCORING_GK["clean_sheet"]
+        breakdown["xCleanSheet"] = xcs * p_60 * SCORING_GK["clean_sheet"]
     elif position == "DEF":
-        breakdown["xCleanSheet"] = xcs * p_play * p_60 * SCORING_DEF["clean_sheet"]
+        breakdown["xCleanSheet"] = xcs * p_60 * SCORING_DEF["clean_sheet"]
     elif position == "MID":
-        breakdown["xCleanSheet"] = xcs * p_play * p_60 * SCORING_MID["clean_sheet"]
+        breakdown["xCleanSheet"] = xcs * p_60 * SCORING_MID["clean_sheet"]
     else:
         breakdown["xCleanSheet"] = 0.0
 
     #  5. Goals Conceded (GK, DEF only) 
     if position in ("GK", "DEF"):
         xgc = s.get("xGC", 0.0)  # Expected goals conceded by team
-        # Expected additional goals conceded (beyond the first)
-        # E[max(0, GC - 1)]  max(0, xGC - 1) for simplification
-        # More accurately: sum over k>=2 of P(GC=k) * (k-1)
-        # Using Poisson approximation: E[max(0, GC-1)] = xGC - (1 - e^(-xGC))
         import math
-        if xgc > 0:
-            expected_additional_gc = xgc - (1 - math.exp(-xgc))
-        else:
-            expected_additional_gc = 0.0
-        breakdown["xGoalsConceded"] = -expected_additional_gc * p_play * p_60
+        # Poisson approximation: expected goals conceded beyond the first
+        expected_additional_gc = max(0.0, xgc - (1 - math.exp(-xgc))) if xgc > 0 else 0.0
+        breakdown["xGoalsConceded"] = -expected_additional_gc * p_60
     else:
         breakdown["xGoalsConceded"] = 0.0
 
     #  6. Saves (GK only) 
     if position == "GK":
         x_saves = s.get("xSaves", 0.0)
-        breakdown["xSaves"] = (x_saves / 3) * p_play * SCORING_GK["every_3_saves"]
+        breakdown["xSaves"] = (x_saves / 3) * min_fraction * SCORING_GK["every_3_saves"]
     else:
         breakdown["xSaves"] = 0.0
 
     #  7. Penalty Save (GK only) 
     if position == "GK":
         p_pen_save = s.get("p_pen_save", 0.0)
-        breakdown["xPenaltySave"] = p_pen_save * SCORING_GK["penalty_save"]
+        breakdown["xPenaltySave"] = p_pen_save * min_fraction * SCORING_GK["penalty_save"]
     else:
         breakdown["xPenaltySave"] = 0.0
 
     #  8. Tackles (MID only) 
     if position == "MID":
         x_tackles = s.get("xTackles", 0.0)
-        breakdown["xTackles"] = (x_tackles / 3) * p_play * SCORING_MID["every_3_tackles"]
+        breakdown["xTackles"] = (x_tackles / 3) * min_fraction * SCORING_MID["every_3_tackles"]
     else:
         breakdown["xTackles"] = 0.0
 
     #  9. Chances Created (MID only) 
     if position == "MID":
         x_cc = s.get("xChancesCreated", 0.0)
-        breakdown["xChancesCreated"] = (x_cc / 2) * p_play * SCORING_MID["every_2_chances_created"]
+        breakdown["xChancesCreated"] = (x_cc / 2) * min_fraction * SCORING_MID["every_2_chances_created"]
     else:
         breakdown["xChancesCreated"] = 0.0
 
     #  10. Shots on Target (FWD only) 
     if position == "FWD":
         x_sot = s.get("xShotsOnTarget", 0.0)
-        breakdown["xShotsOnTarget"] = (x_sot / 2) * p_play * SCORING_FWD["every_2_shots_on_target"]
+        breakdown["xShotsOnTarget"] = (x_sot / 2) * min_fraction * SCORING_FWD["every_2_shots_on_target"]
     else:
         breakdown["xShotsOnTarget"] = 0.0
 
@@ -307,29 +309,27 @@ def calculate_xpts(player_stats: dict, position: str) -> dict:
     p_yellow = s.get("p_yellow", 0.0)
     p_red = s.get("p_red", 0.0)
     breakdown["xCards"] = -(p_yellow * abs(SCORING_ALL["yellow_card"]) +
-                            p_red * abs(SCORING_ALL["red_card"])) * p_play
+                            p_red * abs(SCORING_ALL["red_card"])) * min_fraction
 
     #  12. Own Goal 
     p_og = s.get("p_own_goal", 0.0)
-    breakdown["xOwnGoal"] = -p_og * abs(SCORING_ALL["own_goal"]) * p_play
+    breakdown["xOwnGoal"] = -p_og * abs(SCORING_ALL["own_goal"]) * min_fraction
 
     #  13. Penalty Won 
     p_pen_won = s.get("p_pen_won", 0.0)
-    breakdown["xPenaltyWon"] = p_pen_won * SCORING_ALL["winning_penalty"]
+    breakdown["xPenaltyWon"] = p_pen_won * min_fraction * SCORING_ALL["winning_penalty"]
 
     #  14. Penalty Conceded 
     p_pen_conc = s.get("p_pen_conceded", 0.0)
-    breakdown["xPenaltyConceded"] = -p_pen_conc * abs(SCORING_ALL["conceding_penalty"]) * p_play
+    breakdown["xPenaltyConceded"] = -p_pen_conc * abs(SCORING_ALL["conceding_penalty"]) * min_fraction
 
     #  15. Free-kick Goal Bonus 
     p_fk = s.get("p_fk_goal", 0.0)
-    breakdown["xFreeKickBonus"] = p_fk * SCORING_BONUS["free_kick_goal"]
+    breakdown["xFreeKickBonus"] = p_fk * min_fraction * SCORING_BONUS["free_kick_goal"]
 
     #  16. Scouting Bonus (estimated) 
-    # +2 if player scores >4pts AND is in <5% of teams
     pct_selected = s.get("percent_selected", 50.0)
     if pct_selected < 5.0:
-        # Rough estimate: probability of scoring >4 pts
         p_over_4 = s.get("p_over_4pts", 0.1)  # Default 10%
         breakdown["xScoutingBonus"] = p_over_4 * SCORING_BONUS["scouting_bonus"]
     else:
