@@ -391,16 +391,18 @@ def optimize_lp(players: list[dict], stage: str = "GROUP_MD1",
     else:
         prob += pulp.lpSum(twelfth_vars[p["id"]] for p in players) == 0, "No12thMan"
 
-    # Objective: maximize weighted projected points from Starting XI + Captain bonus + 12th man
+    # Objective: maximize weighted projected points from Starting XI + 12th man
     objective = pulp.lpSum(
         obj_values_current.get(p["id"], 0) * xi_vars[p["id"]] + 
-        obj_values_current.get(p["id"], 0) * cap_vars[p["id"]] +
         obj_values_current.get(p["id"], 0) * twelfth_vars[p["id"]] +
         obj_values_future.get(p["id"], 0) * 0.85 * squad_vars[p["id"]]
         for p in players
     )
     
     #  SMART BENCHING (Manual Sub Optimization) 
+    MAX_DAY = 7
+    team_day_map = {}
+    squads = {}
     try:
         import json
         from pathlib import Path
@@ -440,7 +442,12 @@ def optimize_lp(players: list[dict], stage: str = "GROUP_MD1",
             # Their effective value is the (Points - 2) they bring, which is roughly 40-70% of their EV.
             bench_weight = 0.4 + 0.3 * ((day_idx - 1) / max(1, MAX_DAY - 1))
             
+            # Captain Weight: Early players are MUCH better captains because you can twist.
+            # Day 1: weight = 1.0. Day MAX: weight = 0.8.
+            cap_weight = 1.0 - 0.2 * ((day_idx - 1) / max(1, MAX_DAY - 1))
+            
             objective += obj_values_current.get(pid, 0) * bench_weight * (squad_vars[pid] - xi_vars[pid])
+            objective += obj_values_current.get(pid, 0) * cap_weight * cap_vars[pid]
 
         # Formula: 0.01 * (MAX_DAY - day_index) * xi_vars[pid]
         # This rewards putting EARLY players (day_index = 1) in the Starting XI (xi_vars = 1)
@@ -452,7 +459,8 @@ def optimize_lp(players: list[dict], stage: str = "GROUP_MD1",
         print(f"  [!] Could not load fixtures for smart benching: {e}")
         # Fallback to simple bench weight if fixtures fail
         objective += pulp.lpSum(
-            obj_values_current.get(p["id"], 0) * 0.4 * (squad_vars[p["id"]] - xi_vars[p["id"]])
+            obj_values_current.get(p["id"], 0) * 0.4 * (squad_vars[p["id"]] - xi_vars[p["id"]]) +
+            obj_values_current.get(p["id"], 0) * 1.0 * cap_vars[p["id"]]
             for p in players
         )
 
@@ -548,7 +556,14 @@ def optimize_lp(players: list[dict], stage: str = "GROUP_MD1",
     starting_xi, bench = _select_starting_xi(selected, chip, stage)
     
     # Re-evaluate Captain based on the actual Starting XI
-    captain = max(starting_xi, key=lambda p: p.get("projected_pts", 0)) if starting_xi else None
+    # A captain should ideally play EARLY so we can sub them if they blank.
+    def get_cap_score(p):
+        day = team_day_map.get(squads.get(p.get("squad_id", 0), ""), 1) if 'team_day_map' in locals() else 1
+        max_d = MAX_DAY if 'MAX_DAY' in locals() else 7
+        decay = 1.0 - 0.2 * ((day - 1) / max(1, max_d - 1))
+        return p.get("projected_pts", 0) * decay
+
+    captain = max(starting_xi, key=get_cap_score) if starting_xi else None
 
     # Handle Qualification Booster (Apply to projected_pts BEFORE total points calc)
     if chip == "qualification" and stage not in ("GROUP_MD1", "GROUP_MD2", "GROUP_MD3"):
@@ -556,8 +571,17 @@ def optimize_lp(players: list[dict], stage: str = "GROUP_MD1",
             bonus = get_team_strength(p.get("team_abbr", "")) * 2.0
             p["projected_pts"] = p.get("projected_pts", 0) + bonus
 
-    vice_candidates = [p for p in starting_xi if not captain or p["id"] != captain["id"]]
-    vice_captain = max(vice_candidates, key=lambda p: p.get("projected_pts", 0)) if vice_candidates else None
+    # Vice Captain MUST play AFTER the Captain. If no one plays after, just pick highest.
+    if captain:
+        cap_day = team_day_map.get(squads.get(captain.get("squad_id", 0), ""), 1) if 'team_day_map' in locals() else 1
+        valid_vcs = [p for p in starting_xi if p["id"] != captain["id"] and (team_day_map.get(squads.get(p.get("squad_id", 0), ""), 1) if 'team_day_map' in locals() else 1) > cap_day]
+        if valid_vcs:
+            vice_captain = max(valid_vcs, key=lambda p: p.get("projected_pts", 0))
+        else:
+            vice_candidates = [p for p in starting_xi if p["id"] != captain["id"]]
+            vice_captain = max(vice_candidates, key=lambda p: p.get("projected_pts", 0)) if vice_candidates else None
+    else:
+        vice_captain = None
 
     # Handle 12th Man Booster
     if twelfth_man:
