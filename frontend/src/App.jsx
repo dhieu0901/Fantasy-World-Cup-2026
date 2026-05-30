@@ -286,12 +286,13 @@ export default function App() {
 
       {/* ── Main Content ── */}
       <div className="app-main">
+        {/* ── Main Content (Left) ── */}
         <main className="app-content">
           {recommendations.length > 0 && (
-            <div className="slide-up" style={{ background: 'rgba(245, 158, 11, 0.15)', border: '1px solid rgba(245, 158, 11, 0.5)', color: '#fcd34d', padding: '12px 16px', borderRadius: '8px', marginBottom: '20px', display: 'flex', alignItems: 'center', gap: '12px' }}>
+            <div style={{ background: '#fffbeb', border: '1px solid #fde68a', color: '#b45309', padding: '16px', marginBottom: '24px', display: 'flex', alignItems: 'center', gap: '12px', borderRadius: '8px' }}>
               <div>
                 <strong style={{ display: 'block', fontSize: '0.9rem', marginBottom: '4px' }}>Live Sub Recommendation</strong>
-                <span style={{ fontSize: '0.85rem', color: '#fde68a' }}>{recommendations[0].reason}</span>
+                <span style={{ fontSize: '0.85rem' }}>{recommendations[0].reason}</span>
               </div>
             </div>
           )}
@@ -357,38 +358,36 @@ export default function App() {
           )}
         </main>
 
-        {/* ── Sidebar ── */}
+        {/* ── Sidebar (Right) ── */}
         <aside className="app-sidebar">
-          <div style={{ display: 'flex', justifyContent: 'flex-end', marginBottom: '16px' }}>
+          <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
             <button 
               onClick={handleSync}
               disabled={isSyncing}
               style={{
                 display: 'flex', alignItems: 'center', gap: '6px',
-                background: 'var(--clr-bg-elevated)', border: '1px solid var(--clr-border)',
+                background: '#fff', border: '1px solid var(--clr-border)',
                 color: 'var(--clr-text-muted)', padding: '6px 12px', borderRadius: '4px',
                 fontSize: '0.75rem', cursor: isSyncing ? 'not-allowed' : 'pointer',
-                transition: 'all 0.2s'
+                transition: 'all 0.2s', fontWeight: 600
               }}
-              onMouseEnter={(e) => { e.currentTarget.style.color = 'var(--clr-text)'; e.currentTarget.style.borderColor = 'var(--clr-border-hover)'; }}
+              onMouseEnter={(e) => { e.currentTarget.style.color = 'var(--clr-text)'; e.currentTarget.style.borderColor = 'var(--clr-primary)'; }}
               onMouseLeave={(e) => { e.currentTarget.style.color = 'var(--clr-text-muted)'; e.currentTarget.style.borderColor = 'var(--clr-border)'; }}
             >
               {isSyncing ? <Icon.Loader /> : <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 2v6h-6"/><path d="M3 12a9 9 0 1 0 2.13-5.88L2 8"/></svg>}
               {isSyncing ? 'Syncing...' : 'Force Sync Data'}
             </button>
           </div>
-          <div className="sidebar-container">
-            <OptimizerPanel 
-              preset={preset} setPreset={setPreset}
-              stage={optimStage} setStage={setOptimStage}
-              chip={chip} setChip={setChip}
-              transferMode={transferMode} setTransferMode={setTransferMode}
-              myTeam={myTeam}
-              freeTransfers={freeTransfers} setFreeTransfers={setFreeTransfers}
-              optimizing={optimizing} runOptimize={runOptimize}
-              result={optimResult}
-            />
-          </div>
+          <OptimizerPanel 
+            preset={preset} setPreset={setPreset}
+            stage={optimStage} setStage={setOptimStage}
+            chip={chip} setChip={setChip}
+            transferMode={transferMode} setTransferMode={setTransferMode}
+            myTeam={myTeam}
+            freeTransfers={freeTransfers} setFreeTransfers={setFreeTransfers}
+            optimizing={optimizing} runOptimize={runOptimize}
+            result={optimResult}
+          />
         </aside>
       </div>
     </div>
@@ -819,7 +818,7 @@ function OptimizerPanel({ preset, setPreset, stage, setStage, chip, setChip, tra
           <div style={{ marginBottom: '6px' }}><strong>Rolling Lockout:</strong> Manual subs allowed during a round! Swap unlocked bench players for unlocked starters, OR for locked starters who have <em>finished</em> playing.</div>
           <div style={{ marginBottom: '6px', color: 'var(--clr-warning)' }}><strong>Warning:</strong> Making a manual sub or changing Captain cancels Auto-Subs for that matchday.</div>
           <div style={{ marginBottom: '6px' }}><strong>Captaincy:</strong> Can be changed multiple times to players who haven't played yet.</div>
-          <div style={{ marginBottom: '6px' }}><strong>Transfers:</strong> -3 pts per extra transfer (not -4 like FPL).</div>
+          <div style={{ marginBottom: '6px' }}><strong>Transfers:</strong> -3 pts per extra transfer.</div>
           <div><strong>Boosters:</strong> 12th Man (extra player), Max Captain (auto highest scorer), Wildcard, Qualification, Mystery.</div>
         </div>
       </div>

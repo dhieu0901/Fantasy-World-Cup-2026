@@ -41,58 +41,52 @@ from database import get_connection, init_db
 # ----------------------------------------------
 # CONFIG
 # ----------------------------------------------
+# FotMob uses Cloudflare, so standard requests might get blocked sometimes.
+# We will use headers to mimic a browser.
 FOTMOB_BASE = "https://www.fotmob.com/api"
+FOTMOB_SEARCH_API = "https://apigw.fotmob.com/searchapi/suggest"
+FOTMOB_BASE_URL = "https://www.fotmob.com"
 RATE_LIMIT_SECONDS = 2.0   # Minimum delay between requests
 CACHE_DIR = Path(__file__).parent / "cache" / "fotmob"
-
-HEADERS = {
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
-                  "(KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36",
-    "Accept": "application/json, text/plain, */*",
-    "Accept-Language": "en-US,en;q=0.9",
-    "Accept-Encoding": "gzip, deflate, br",
-    "Referer": "https://www.fotmob.com/",
-    "Origin": "https://www.fotmob.com",
-    "Sec-Fetch-Dest": "empty",
-    "Sec-Fetch-Mode": "cors",
-    "Sec-Fetch-Site": "same-origin",
-}
 
 
 # ----------------------------------------------
 # HTTP CLIENT  Session + rate limiting + cache
 # ----------------------------------------------
 class FotMobClient:
-    """HTTP client with session, rate limiting, and disk cache."""
-
+    """Async client for FotMob API with rate limiting and retries."""
+    
     def __init__(self):
+        self.headers = {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+            "Accept": "application/json, text/plain, */*",
+            "Accept-Language": "en-US,en;q=0.9",
+        }
+        self.client = httpx.AsyncClient(headers=self.headers, timeout=15.0)
+        self.build_id = None
         self._last_request_time = 0.0
-        self._client: httpx.AsyncClient | None = None
-        self._request_count = 0
-        self._cache_hits = 0
-        CACHE_DIR.mkdir(parents=True, exist_ok=True)
 
     async def __aenter__(self):
-        self._client = httpx.AsyncClient(
-            headers=HEADERS,
-            timeout=30,
-            follow_redirects=True,
-        )
-        # Warm up session by visiting homepage first
-        try:
-            await self._client.get("https://www.fotmob.com/", timeout=10)
-        except Exception:
-            pass
+        await self.init_build_id()
         return self
 
-    async def __aexit__(self, *args):
-        if self._client:
-            await self._client.aclose()
+    async def __aexit__(self, exc_type, exc_val, exc_tb):
+        await self.client.aclose()
+        
+    async def init_build_id(self):
+        try:
+            r = await self.client.get(FOTMOB_BASE_URL)
+            if r.status_code == 200:
+                match = re.search(r'<script id="__NEXT_DATA__" type="application/json">(.*?)</script>', r.text)
+                if match:
+                    data = json.loads(match.group(1))
+                    self.build_id = data.get('buildId')
+        except Exception as e:
+            print(f"Failed to fetch build ID: {e}")
 
     def _cache_key(self, url: str) -> Path:
         """Generate cache file path from URL."""
-        # Simple hash of URL for filename
-        safe_name = re.sub(r'[^\w]', '_', url.split('/api/')[-1]) + ".json"
+        safe_name = re.sub(r'[^\w]', '_', url.split('fotmob.com/')[-1]) + ".json"
         return CACHE_DIR / safe_name
 
     def _get_cached(self, url: str, max_age_hours: float = 24) -> dict | None:
@@ -103,7 +97,6 @@ class FotMobClient:
             if age_hours < max_age_hours:
                 try:
                     data = json.loads(path.read_text(encoding="utf-8"))
-                    self._cache_hits += 1
                     return data
                 except Exception:
                     pass
@@ -115,52 +108,39 @@ class FotMobClient:
         path.write_text(json.dumps(data, ensure_ascii=False), encoding="utf-8")
 
     async def get(self, url: str, cache_hours: float = 24) -> dict | None:
-        """
-        GET request with rate limiting and caching.
-        Returns parsed JSON dict or None on failure.
-        """
-        # Check cache first
+        """GET request with rate limiting and caching."""
         cached = self._get_cached(url, cache_hours)
         if cached is not None:
             return cached
 
-        # Rate limit
         elapsed = time.time() - self._last_request_time
         if elapsed < RATE_LIMIT_SECONDS:
             await asyncio.sleep(RATE_LIMIT_SECONDS - elapsed)
 
-        # Make request
-        for attempt in range(3):
-            try:
-                resp = await self._client.get(url)
-                self._last_request_time = time.time()
-                self._request_count += 1
-
-                if resp.status_code == 200:
-                    data = resp.json()
-                    self._save_cache(url, data)
-                    return data
-                elif resp.status_code == 403:
-                    print(f"    [403] Blocked by Cloudflare  waiting 10s...")
-                    await asyncio.sleep(10)
-                elif resp.status_code == 429:
-                    print(f"    [429] Rate limited  waiting 30s...")
-                    await asyncio.sleep(30)
-                else:
-                    print(f"    [{resp.status_code}] {url}")
-                    return None
-            except Exception as e:
-                if attempt < 2:
-                    await asyncio.sleep(3)
-                else:
-                    print(f"    Error: {e}")
-                    return None
-
+        try:
+            resp = await self.client.get(url)
+            self._last_request_time = time.time()
+            if resp.status_code == 200:
+                data = resp.json()
+                self._save_cache(url, data)
+                return data
+        except Exception as e:
+            print(f"    Error: {e}")
         return None
+
+    async def get_search(self, term: str) -> dict:
+        url = f"{FOTMOB_SEARCH_API}?term={httpx.QueryParams({'term': term}).__str__().replace('term=', '')}"
+        return await self.get(url, cache_hours=24)
+        
+    async def get_player_data(self, player_id: int) -> dict:
+        if not self.build_id:
+            await self.init_build_id()
+        url = f"{FOTMOB_BASE_URL}/_next/data/{self.build_id}/en/players/{player_id}/xyz.json"
+        return await self.get(url, cache_hours=4)
 
 
 # ----------------------------------------------
-# SEARCH  Map player names to FotMob IDs
+# 1. Search & Resolve ID
 # ----------------------------------------------
 def _name_similarity(a: str, b: str) -> float:
     """Fuzzy name matching score (0-1)."""
@@ -169,59 +149,29 @@ def _name_similarity(a: str, b: str) -> float:
     return SequenceMatcher(None, a, b).ratio()
 
 
-async def search_player(client: FotMobClient, name: str) -> dict | None:
+async def search_player(client: FotMobClient, search_name: str) -> dict | None:
     """
-    Search FotMob for a player by name.
-    Returns dict with fotmob_id, name, team, etc.
+    Find a player on FotMob and return their ID.
+    Returns: {"fotmob_id": int, "name": str, "team": str, "score": float} or None
     """
-    url = f"{FOTMOB_BASE}/searchapi/?term={name}"
-    data = await client.get(url, cache_hours=168)  # Cache search for 7 days
-
+    data = await client.get_search(search_name)
     if not data:
         return None
 
-    # Search results structure: data = [{suggestion groups}]
-    # We want squad/player suggestions
-    players = []
-    if isinstance(data, list):
-        for group in data:
-            if isinstance(group, dict) and group.get("type") == "player":
-                for item in group.get("suggestions", []):
-                    players.append(item)
-            elif isinstance(group, dict):
-                # Some formats nest differently
-                suggestions = group.get("suggestions", [])
-                for s in suggestions:
-                    if s.get("type") == "player":
-                        players.append(s)
-    elif isinstance(data, dict):
-        # Alternative format
-        for key in ("players", "squad", "player"):
-            items = data.get(key, [])
-            if isinstance(items, list):
-                players.extend(items)
-
-    if not players:
-        return None
-
-    # Find best match by name similarity
-    best = None
-    best_score = 0.0
-    for p in players:
-        p_name = p.get("name", p.get("text", ""))
-        score = _name_similarity(name, p_name)
-        if score > best_score:
-            best_score = score
-            best = p
-
-    if best and best_score >= 0.5:  # At least 50% name match
-        return {
-            "fotmob_id": best.get("id"),
-            "name": best.get("name", best.get("text")),
-            "team": best.get("teamName", best.get("team")),
-            "score": best_score,
-        }
-
+    # APIGW search format has squadMemberSuggest -> options
+    for suggest in data.get('squadMemberSuggest', []):
+        options = suggest.get('options', [])
+        if options:
+            first_match = options[0]['payload']
+            text = options[0].get('text', '')
+            name = text.split('|')[0] if '|' in text else search_name
+            return {
+                "fotmob_id": int(first_match['id']),
+                "name": name,
+                "team": first_match.get('teamName', ''),
+                "score": 1.0,
+            }
+            
     return None
 
 
@@ -233,10 +183,14 @@ async def fetch_player_stats(client: FotMobClient, fotmob_id: int) -> dict | Non
     Fetch detailed player stats from FotMob.
     Returns normalized stats dict or None.
     """
-    url = f"{FOTMOB_BASE}/playerData?id={fotmob_id}"
-    data = await client.get(url, cache_hours=12)  # Refresh every 12 hours
+    raw_data = await client.get_player_data(fotmob_id)
 
-    if not data:
+    if not raw_data:
+        return None
+
+    try:
+        data = raw_data['pageProps']['fallback'][f'player:{fotmob_id}']
+    except KeyError:
         return None
 
     # Parse the complex FotMob player data structure

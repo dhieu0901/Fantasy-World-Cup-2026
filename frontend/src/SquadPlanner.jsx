@@ -160,50 +160,29 @@ function PlayerSelectModal({ isOpen, onClose, players, targetPos, onSelect, curr
 function ActionMenuModal({ player, isOpen, onClose, onTransfer, onSub, onSetCaptain, onSetViceCaptain, isInXI }) {
   if (!isOpen || !player) return null;
   return (
-    <div style={{ position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, background: 'rgba(0,0,0,0.7)', zIndex: 1000, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-      <div style={{ background: 'var(--clr-bg-card)', padding: '24px', borderRadius: '12px', width: '280px', textAlign: 'center', border: '1px solid var(--clr-border)', boxShadow: '0 8px 24px rgba(0,0,0,0.5)' }}>
+    <div className="action-modal-overlay">
+      <div className="action-modal-card">
         <h3 style={{ marginTop: 0, marginBottom: '4px' }}>{player.display_name}</h3>
         <p style={{ color: 'var(--clr-text-muted)', fontSize: '0.85rem', marginBottom: '20px' }}>What would you like to do?</p>
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
           {/* Set Captain - only for XI players */}
           {isInXI && onSetCaptain && (
-            <button 
-              onClick={() => { onSetCaptain(player); onClose(); }} 
-              style={{ background: 'linear-gradient(135deg, rgba(250, 204, 21, 0.2), rgba(250, 204, 21, 0.05))', color: 'var(--clr-gold)', border: '1px solid rgba(250, 204, 21, 0.4)', padding: '12px', borderRadius: '8px', cursor: 'pointer', fontWeight: 700, display: 'flex', justifyContent: 'center', gap: '8px', transition: 'all 0.2s' }}
-              onMouseEnter={e => { e.currentTarget.style.background = 'rgba(250, 204, 21, 0.25)'; e.currentTarget.style.transform = 'translateY(-1px)'; }}
-              onMouseLeave={e => { e.currentTarget.style.background = 'linear-gradient(135deg, rgba(250, 204, 21, 0.2), rgba(250, 204, 21, 0.05))'; e.currentTarget.style.transform = 'translateY(0)'; }}
-            >
+            <button className="action-modal-btn action-btn-cap" onClick={() => { onSetCaptain(player); onClose(); }}>
               Set Captain
             </button>
           )}
           {isInXI && onSetViceCaptain && (
-            <button 
-              onClick={() => { onSetViceCaptain(player); onClose(); }} 
-              style={{ background: 'linear-gradient(135deg, rgba(167, 139, 250, 0.2), rgba(167, 139, 250, 0.05))', color: '#a78bfa', border: '1px solid rgba(167, 139, 250, 0.4)', padding: '12px', borderRadius: '8px', cursor: 'pointer', fontWeight: 700, display: 'flex', justifyContent: 'center', gap: '8px', transition: 'all 0.2s' }}
-              onMouseEnter={e => { e.currentTarget.style.background = 'rgba(167, 139, 250, 0.25)'; e.currentTarget.style.transform = 'translateY(-1px)'; }}
-              onMouseLeave={e => { e.currentTarget.style.background = 'linear-gradient(135deg, rgba(167, 139, 250, 0.2), rgba(167, 139, 250, 0.05))'; e.currentTarget.style.transform = 'translateY(0)'; }}
-            >
+            <button className="action-modal-btn action-btn-vcap" onClick={() => { onSetViceCaptain(player); onClose(); }}>
               Set Vice Captain
             </button>
           )}
-          <button 
-            onClick={() => { onSub(player); onClose(); }} 
-            style={{ background: 'var(--clr-bg-elevated)', color: 'var(--clr-text)', border: '1px solid var(--clr-teal)', padding: '12px', borderRadius: '8px', cursor: 'pointer', fontWeight: 600, display: 'flex', justifyContent: 'center', gap: '8px', transition: 'all 0.2s' }}
-            onMouseEnter={e => e.currentTarget.style.background = 'rgba(45, 212, 191, 0.1)'}
-            onMouseLeave={e => e.currentTarget.style.background = 'var(--clr-bg-elevated)'}
-          >
+          <button className="action-modal-btn action-btn-sub" onClick={() => { onSub(player); onClose(); }}>
             Substitute
           </button>
-          <button 
-            onClick={() => { onTransfer(player); onClose(); }} 
-            style={{ background: 'linear-gradient(135deg, var(--clr-gold), var(--clr-gold-dim))', color: 'var(--clr-bg)', border: 'none', padding: '12px', borderRadius: '8px', cursor: 'pointer', fontWeight: 700, display: 'flex', justifyContent: 'center', gap: '8px' }}
-          >
+          <button className="action-modal-btn action-btn-trans" onClick={() => { onTransfer(player); onClose(); }}>
             Transfer
           </button>
-          <button 
-            onClick={onClose} 
-            style={{ background: 'transparent', color: 'var(--clr-text-muted)', border: '1px solid var(--clr-border)', padding: '10px', borderRadius: '8px', cursor: 'pointer', marginTop: '4px' }}
-          >
+          <button className="action-modal-btn" onClick={onClose}>
             Cancel
           </button>
         </div>
@@ -267,12 +246,12 @@ function PitchPlayer({ player: p, isCaptain, isViceCaptain, isSubSource, onClick
   return (
     <div className="pitch-player" onClick={onClick} style={{ cursor: 'pointer' }}>
       <div className={`pitch-jersey ${pos}`} style={{
-        boxShadow: isSubSource ? '0 0 0 3px var(--clr-teal), 0 0 15px var(--clr-teal)' : 'none',
-        transition: 'all 0.2s',
-        transform: isSubSource ? 'scale(1.1)' : 'scale(1)'
+        boxShadow: isSubSource ? '0 0 0 3px var(--clr-secondary), 0 0 15px var(--clr-secondary)' : 'none',
+        transform: isSubSource ? 'scale(1.1)' : 'scale(1)',
       }}>
         {isCaptain && <div className="pitch-badge captain">C</div>}
-        {isViceCaptain && <div className="pitch-badge vice">VC</div>}
+        {isViceCaptain && <div className="pitch-badge vice">V</div>}
+        {p.injury_status === 'INJURED' && <div className="pitch-badge injury" title="Injured">!</div>}
         {flagUrl ? (
           <img className="jersey-flag" src={flagUrl} alt={p.team_abbr} onError={e => { e.target.style.display = 'none'; e.target.parentNode.innerText = p.team_abbr; }} />
         ) : (
@@ -280,13 +259,21 @@ function PitchPlayer({ player: p, isCaptain, isViceCaptain, isSubSource, onClick
         )}
       </div>
       <div className="pitch-player-info">
-        <div className="pitch-nameplate">{lastName}</div>
+        <div className="pitch-nameplate" title={p.display_name} style={{
+          background: (p.injury_status === 'INJURED' || p.injury_status === 'SUSPENDED') ? 'var(--clr-danger)' : 
+                      p.injury_status === 'DOUBTFUL' ? 'var(--clr-gold)' : undefined,
+          borderColor: (p.injury_status === 'INJURED' || p.injury_status === 'SUSPENDED') ? 'var(--clr-danger)' : 
+                       p.injury_status === 'DOUBTFUL' ? 'var(--clr-gold)' : undefined,
+          color: p.injury_status === 'DOUBTFUL' ? '#000' : undefined
+        }}>
+          {lastName}
+        </div>
         {p.next_opponent && (
-          <div style={{ background: '#f8fafc', color: '#0f172a', fontSize: '0.65rem', padding: '1px 0', textAlign: 'center', width: '100%', borderTop: '1px solid rgba(0,0,0,0.1)', borderBottom: '1px solid rgba(0,0,0,0.1)' }}>
-            <span style={{ color: '#64748b', fontWeight: 700 }}>v</span> <strong style={{ letterSpacing: '0.5px', fontWeight: 800 }}>{p.next_opponent}</strong>
+          <div style={{ background: '#f8fafc', color: 'var(--clr-text-dim)', fontSize: '0.65rem', textAlign: 'center', width: '100%', borderLeft: '1px solid var(--clr-border)', borderRight: '1px solid var(--clr-border)' }}>
+            v <strong>{p.next_opponent}</strong>
           </div>
         )}
-        <div className={`pitch-pts ${isCaptain ? 'is-captain' : ''}`} style={is12thMan ? { background: '#7c3aed', color: 'white', fontWeight: 'bold' } : {}}>
+        <div className={`pitch-pts ${isCaptain ? 'is-captain' : ''}`} style={is12thMan ? { color: '#a78bfa' } : {}}>
           {displayValue}
           {is12thMan && <span style={{ fontSize: '0.55rem', display: 'block', marginTop: '1px' }}>12th</span>}
         </div>

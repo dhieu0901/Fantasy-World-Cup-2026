@@ -119,6 +119,11 @@ def get_player_xpts_horizon(player: dict, conn: sqlite3.Connection, current_roun
 
     team_str = get_team_strength(player.get("team_abbr", ""))
     
+    # 1. LIVE DATA: Injury Check
+    injury_status = player.get("injury_status", "OK")
+    if injury_status in ("INJURED", "SUSPENDED"):
+        return {"current": 0.0, "future": 0.0}
+    
     current_xpts = 0.0
     future_xpts = 0.0
     
@@ -146,9 +151,15 @@ def get_player_xpts_horizon(player: dict, conn: sqlite3.Connection, current_roun
             cap_proxy = 1.4 if pts > 5.5 else 1.0
             future_xpts += pts * 0.8 * cap_proxy
         elif rid == current_round + 2:
-            # MD3: Completely dropped from horizon optimization. 
-            # Too much rotation variance, better to use Free Transfers later based on live standings.
-            pass
+            # MD3: Re-introduced ONLY for Live Data!
+            # If the team is QUALIFIED_EARLY (6 pts), slash expected minutes by 80% due to heavy rotation.
+            qual_status = player.get("team_qualification_status", "TBD")
+            if qual_status == "QUALIFIED":
+                pts *= 0.2
+            elif qual_status == "ELIMINATED":
+                pts *= 0.5 # Eliminated teams also rotate to give youth a chance
+            # Transfer decay (0.3) for MD3
+            future_xpts += pts * 0.3
             
     # Fallback if no fixtures found in DB (e.g. tests)
     if current_xpts == 0.0 and len(fixtures) == 0:
@@ -744,7 +755,9 @@ def optimize_squad(stage: str = "GROUP_MD1",
         SELECT p.id, p.first_name, p.last_name, p.known_name,
                p.squad_id, p.position, p.price, p.status, p.raw_position,
                p.percent_selected, p.total_points, p.avg_points, p.form,
+               p.injury_status,
                s.name as team_name, s.abbr as team_abbr, s."group" as team_group,
+               s.qualification_status as team_qualification_status,
                MIN(f.match_date) as next_match_date
         FROM players p
         LEFT JOIN squads s ON p.squad_id = s.id

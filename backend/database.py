@@ -271,6 +271,14 @@ def init_db(conn: sqlite3.Connection = None):
         conn.execute("ALTER TABLE players ADD COLUMN mock_match_status TEXT DEFAULT NULL")
     except sqlite3.OperationalError:
         pass
+    try:
+        conn.execute("ALTER TABLE players ADD COLUMN injury_status TEXT DEFAULT 'OK'")
+    except sqlite3.OperationalError:
+        pass
+    try:
+        conn.execute("ALTER TABLE squads ADD COLUMN qualification_status TEXT DEFAULT 'TBD'")
+    except sqlite3.OperationalError:
+        pass
 
     conn.commit()
 
