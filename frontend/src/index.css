@@ -348,13 +348,34 @@ h1, h2, h3, h4 {
 
 .bench-section {
   display: flex;
-  justify-content: center;
-  gap: 16px;
-  padding: 16px;
+  flex-direction: column;
+  align-items: center;
   background: #e2e8f0;
   border-radius: var(--r-md);
   margin-top: 16px;
   border: 1px solid #cbd5e1;
+  padding: 16px;
+}
+
+.bench-row {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  width: 100%;
+}
+
+.bench-player-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.bench-slot-label {
+  font-size: 0.75rem;
+  font-weight: 800;
+  color: var(--clr-text-muted);
+  text-transform: uppercase;
 }
 
 /* ── Sidebar (Optimizer Panel) ── */

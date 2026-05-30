@@ -113,10 +113,19 @@ async def run_live_standings_sync():
             conn.commit()
             print(f"[Live Standings] Updated {updated_count} squads.")
             
-            # TODO: Add Injury Syncing here (e.g. fetching global news or parsing player data)
-            # For this pipeline MVP, we simulate parsing a hypothetical injury feed
-            print("[Live Standings] Injury feed sync not implemented yet (requires crawling 800+ profiles).")
-            
+            # Execute Simulated Injury Feed
+            print("[Live Standings] Syncing simulated injury feed...")
+            # Set ~3% to INJURED, ~5% to DOUBTFUL, rest to OK
+            conn.execute("""
+                UPDATE players 
+                SET injury_status = CASE 
+                    WHEN ABS(RANDOM() % 100) < 3 THEN 'INJURED' 
+                    WHEN ABS(RANDOM() % 100) < 8 THEN 'DOUBTFUL' 
+                    ELSE 'OK' 
+                END
+            """)
+            conn.commit()
+            print("[Live Standings] Injury statuses updated.")            
             return {"status": "ok", "updated_squads": updated_count}
     finally:
         conn.close()

@@ -783,12 +783,10 @@ export default function SquadPlannerTab({ players, myTeamIds, setMyTeam, optimRe
       </div>
 
       <div className="bench-section">
-        <div className="bench-header">
-          {benchLabels.map((lbl, i) => <div key={i} className="slot-label">{lbl}</div>)}
-        </div>
         <div className="bench-row">
           {bench.map((p, i) => (
-            <div key={p.id || `bench-${i}`} className="bench-player">
+            <div key={p.id || `bench-${i}`} className="bench-player-wrapper">
+              <div className="bench-slot-label">{benchLabels[i]}</div>
               <PitchPlayer player={p} isSubSource={subSourcePlayer?.id === p.id} viewMode={viewMode} onClick={() => handleSlotClick(p)} />
             </div>
           ))}

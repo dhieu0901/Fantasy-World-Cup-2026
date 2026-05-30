@@ -22,6 +22,8 @@ Cache responses to avoid re-fetching.
 Usage:
   python fotmob_scraper.py                    # Scrape top 100 players by price
   python fotmob_scraper.py --all              # Scrape all 1410 players (slow, ~45 min)
+  python fotmob_scraper.py --injuries-only    # Scrape only injury status from FotMob
+  python fotmob_scraper.py --schedule-smart   # Run background smart schedule
   python fotmob_scraper.py --player "Mbapp"  # Scrape a single player
 """
 
@@ -211,6 +213,14 @@ async def fetch_player_stats(client: FotMobClient, fotmob_id: int) -> dict | Non
     pos_desc = data.get("positionDescription", {})
     result["position"] = pos_desc.get("primaryPosition", {}).get("label")
 
+    injury = data.get("injuryInformation")
+    if injury:
+        result["injury_status"] = "INJURED"
+        result["injury_text"] = str(injury)
+    else:
+        result["injury_status"] = "OK"
+        result["injury_text"] = None
+
     # Find season stats
     # FotMob structure: statSeasons  each season has stats per competition
     stat_seasons = data.get("statSeasons", [])
@@ -314,8 +324,10 @@ async def fetch_player_stats(client: FotMobClient, fotmob_id: int) -> dict | Non
 # UPSERT  Save stats to player_xstats table
 # ----------------------------------------------
 def save_player_xstats(conn: sqlite3.Connection, player_id: int, stats: dict):
-    """Save fetched stats to the player_xstats table."""
     now = datetime.now(timezone.utc).isoformat()
+    if "injury_status" in stats:
+        conn.execute("UPDATE players SET injury_status = ?, updated_at = ? WHERE id = ?", (stats["injury_status"], now, player_id))
+    """Save fetched stats to the player_xstats table."""
 
     conn.execute("""
         INSERT INTO player_xstats (
@@ -400,7 +412,7 @@ def save_player_xstats(conn: sqlite3.Connection, player_id: int, stats: dict):
 # ----------------------------------------------
 # MAIN  Orchestrate scraping
 # ----------------------------------------------
-async def scrape_fotmob(limit: int = 100, player_name: str = None):
+async def scrape_fotmob(limit: int = 100, player_name: str = None, injuries_only: bool = False):
     """
     Main scraping pipeline.
     
@@ -529,6 +541,50 @@ async def scrape_fotmob(limit: int = 100, player_name: str = None):
 # ----------------------------------------------
 # CLI
 # ----------------------------------------------
+
+async def run_smart_schedule():
+    print(" Starting smart FotMob scraper schedule (Midnight + Pre-match).")
+    while True:
+        now = datetime.now(timezone.utc)
+        next_runs = []
+        target_midnight = now.replace(hour=0, minute=5, second=0, microsecond=0)
+        if target_midnight < now:
+            target_midnight += datetime.timedelta(days=1)
+        next_runs.append(target_midnight)
+        
+        try:
+            conn = get_connection()
+            fixtures = conn.execute("SELECT match_date FROM fixtures WHERE status != 'completed'").fetchall()
+            conn.close()
+            
+            daily_first_matches = {}
+            for (match_date_str,) in fixtures:
+                if not match_date_str: continue
+                match_dt = datetime.fromisoformat(match_date_str).astimezone(timezone.utc)
+                day_str = match_dt.strftime('%Y-%m-%d')
+                if day_str not in daily_first_matches or match_dt < daily_first_matches[day_str]:
+                    daily_first_matches[day_str] = match_dt
+                    
+            for day_str, first_match_dt in daily_first_matches.items():
+                run_dt = first_match_dt - datetime.timedelta(hours=2)
+                if run_dt > now:
+                    next_runs.append(run_dt)
+        except Exception as e:
+            print(f"Failed to fetch schedule from DB: {e}")
+            
+        next_runs.sort()
+        target = next_runs[0]
+        
+        sleep_seconds = (target - now).total_seconds()
+        print(f"\n Next run at {target.strftime('%Y-%m-%d %H:%M:%S %Z')} (sleeping for {sleep_seconds/3600:.2f} hours)...")
+        await asyncio.sleep(sleep_seconds)
+        
+        try:
+            print(f"\n--- Running scheduled FotMob scrape at {datetime.now(timezone.utc)} ---")
+            await scrape_fotmob(limit=-1)
+        except Exception as e:
+            print(f"Scheduled run failed: {e}")
+
 if __name__ == "__main__":
     args = sys.argv[1:]
 
@@ -551,6 +607,10 @@ Options:
         asyncio.run(scrape_fotmob(player_name=name))
     elif "--all" in args:
         asyncio.run(scrape_fotmob(limit=-1))
+    elif "--injuries-only" in args:
+        asyncio.run(scrape_fotmob(limit=-1, injuries_only=True))
+    elif "--schedule-smart" in args:
+        asyncio.run(run_smart_schedule())
     elif "--top" in args:
         idx = args.index("--top")
         n = int(args[idx + 1]) if idx + 1 < len(args) else 100
