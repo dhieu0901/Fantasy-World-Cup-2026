@@ -422,7 +422,7 @@ def optimize_lp(players: list[dict], stage: str = "GROUP_MD1",
     prob += pulp.lpSum(xi_vars[p["id"]] for p in gk_players) == 1, "Xi_GK"
     prob += pulp.lpSum(xi_vars[p["id"]] for p in def_players) >= 3, "Xi_DEF_Min"
     prob += pulp.lpSum(xi_vars[p["id"]] for p in def_players) <= 5, "Xi_DEF_Max"
-    prob += pulp.lpSum(xi_vars[p["id"]] for p in mid_players) >= 2, "Xi_MID_Min"
+    prob += pulp.lpSum(xi_vars[p["id"]] for p in mid_players) >= 3, "Xi_MID_Min"
     prob += pulp.lpSum(xi_vars[p["id"]] for p in mid_players) <= 5, "Xi_MID_Max"
     prob += pulp.lpSum(xi_vars[p["id"]] for p in fwd_players) >= 1, "Xi_FWD_Min"
     prob += pulp.lpSum(xi_vars[p["id"]] for p in fwd_players) <= 3, "Xi_FWD_Max"
@@ -459,11 +459,10 @@ def optimize_lp(players: list[dict], stage: str = "GROUP_MD1",
         print(f"  [!] LP solver status: {pulp.LpStatus[prob.status]}. Falling back to greedy.")
         return optimize_greedy(players, stage, preset, chip)
 
-    # Extract selected players
+    # Extract selected players (15-man squad)
     selected = []
-    starting_xi = []
-    captain = None
     twelfth_man = None
+    
     for p in players:
         pid = p["id"]
         if twelfth_vars[pid].varValue and twelfth_vars[pid].varValue > 0.5:
@@ -472,19 +471,17 @@ def optimize_lp(players: list[dict], stage: str = "GROUP_MD1",
             
         if squad_vars[pid].varValue and squad_vars[pid].varValue > 0.5:
             selected.append(p)
-            if xi_vars[pid].varValue and xi_vars[pid].varValue > 0.5:
-                starting_xi.append(p)
-                if cap_vars[pid].varValue and cap_vars[pid].varValue > 0.5:
-                    captain = p
 
-    # Ensure starting_xi format matches what greedy would return
-    if len(starting_xi) != 11:
-        starting_xi, bench = _select_starting_xi(selected, chip, stage)
-        # Captain was already chosen by LP, keep it unless it was lost in fallback
-        if not captain or captain not in starting_xi:
-            captain = max(starting_xi, key=lambda p: p.get("projected_pts", 0)) if starting_xi else None
-    else:
-        bench = [p for p in selected if p not in starting_xi]
+    #  CRITICAL FIX: Always use _select_starting_xi for Manual Sub games
+    # The LP solver optimizes for total expected points, which often forces premium 
+    # late-playing players into xi_vars and cheap early-playing players onto the bench.
+    # In reality, we ALWAYS want early players in the Starting XI so we get a "free roll",
+    # and late players on the bench to sub in. 
+    # So we discard the LP's xi_vars and sort by date.
+    starting_xi, bench = _select_starting_xi(selected, chip, stage)
+    
+    # Re-evaluate Captain based on the actual Starting XI
+    captain = max(starting_xi, key=lambda p: p.get("projected_pts", 0)) if starting_xi else None
 
     # Handle Qualification Booster (Apply to projected_pts BEFORE total points calc)
     if chip == "qualification" and stage not in ("GROUP_MD1", "GROUP_MD2", "GROUP_MD3"):

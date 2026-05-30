@@ -397,18 +397,20 @@ def calculate_simple_xpts(price: float, position: str, team_strength: float = 0.
 
     # Ownership as quality/play-probability signal
     # Extremely low ownership usually means they don't play (0 points).
-    # We must heavily penalize fodder so the optimizer doesn't pick non-starters.
+    # We must heavily penalize expensive bench traps, but allow cheap differentials (hidden gems).
     ownership = max(0.0, percent_selected or 0.0)
-    if ownership < 0.5:
-        ownership_mod = 0.1   # <0.5%: Almost certainly won't play (xPts ~ 0)
-    elif ownership < 2.0:
-        ownership_mod = 0.4   # <2%: Unlikely to start / deep bench
-    elif ownership < 5.0:
-        ownership_mod = 0.75  # <5%: Rotation risk or weak team starter
-    elif ownership < 10.0:
-        ownership_mod = 0.9   # <10%: Regular starter, minor rotation risk
+    is_expensive = price >= 7.0
+    
+    if ownership < 1.0:
+        ownership_mod = 0.05 if is_expensive else 0.30  # Cheap hidden gems get 0.3 (risky, but not 0)
+    elif ownership < 3.0:
+        ownership_mod = 0.20 if is_expensive else 0.60  # Cheap differentials get 0.6
+    elif ownership < 6.0:
+        ownership_mod = 0.60 if is_expensive else 0.85
+    elif ownership < 15.0:
+        ownership_mod = 0.90  # <15%: Regular starter, minor rotation risk
     else:
-        ownership_mod = 1.0   # >10%: Nailed starter
+        ownership_mod = 1.0   # >15%: Nailed starter
 
     base *= ownership_mod
 
@@ -469,24 +471,33 @@ def calculate_xpts_from_db(player_id: int, position: str, price: float,
         min_per_match = minutes / matches if matches > 0 else 0
         club_p = min_per_match / 90
 
-        # 1. Ownership Signal (60%)
+        # 1. Ownership Signal
         ownership = percent_selected
-        if ownership > 10: ownership_p = 0.95
-        elif ownership > 5: ownership_p = 0.85
-        elif ownership > 2: ownership_p = 0.70
-        elif ownership > 0.5: ownership_p = 0.40
-        else: ownership_p = 0.10
+        if ownership > 15: ownership_p = 0.95
+        elif ownership > 6: ownership_p = 0.85
+        elif ownership > 3: ownership_p = 0.60
+        elif ownership > 1: ownership_p = 0.20
+        else: ownership_p = 0.05
 
-        # 2. Price Signal (40%)
+        # 2. Price Signal
         base_price = 4.0 if position in ("GK", "DEF") else 4.5
         premium = price - base_price
         if premium >= 1.5: price_p = 0.95
         elif premium >= 1.0: price_p = 0.85
         elif premium >= 0.5: price_p = 0.60
         else: price_p = 0.20
+        
+        is_expensive = price >= 7.0
 
         # Blended base probability
-        p_base = (ownership_p * 0.6) + (price_p * 0.4)
+        # CRITICAL: Distinguish between "Expensive Bench Traps" and "Cheap Hidden Gems"
+        if ownership < 2.0:
+            if is_expensive:
+                p_base = ownership_p  # Bench trap! Ignore price, trust the low ownership.
+            else:
+                p_base = max(0.40, (ownership_p * 0.5) + (price_p * 0.5))  # Cheap hidden gem, give them a fighting chance (40%)
+        else:
+            p_base = (ownership_p * 0.7) + (price_p * 0.3)
 
         # 3. Fitness Penalty (from club stats)
         fitness_penalty = 1.0
