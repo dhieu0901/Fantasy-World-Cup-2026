@@ -145,6 +145,9 @@ def optimize_greedy(players: list[dict], stage: str = "GROUP_MD1", preset: str =
             p["_score"] = xpts * (1 + pct / 200)
         elif preset == "risky":
             p["_score"] = xpts * (1 + (100 - pct) / 200)
+            # Hidden Gem Boost: Massively boost cheap differentials in Risky preset
+            if pct < 3.0 and price <= 6.0:
+                p["_score"] += 3.0
         elif preset == "template":
             p["_score"] = xpts + (pct / 15.0)
         else:
@@ -287,6 +290,9 @@ def optimize_lp(players: list[dict], stage: str = "GROUP_MD1",
             obj_values[pid] = xpts + (pct / 30.0)  # Additive bonus for popular (up to +3.3)
         elif preset == "risky":
             obj_values[pid] = xpts + ((100.0 - pct) / 30.0)  # Additive bonus for differentials (up to +3.3)
+            # Hidden Gem Boost: Massively boost cheap differentials in Risky preset
+            if pct < 3.0 and price <= 6.0:
+                obj_values[pid] += 3.0
         elif preset == "template":
             obj_values[pid] = xpts + (pct / 15.0)  # Strong additive bonus for popular (up to +6.6)
         else:
