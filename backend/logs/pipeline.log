@@ -59,3 +59,73 @@ UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f504' in posit
            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f504' in position 0: character maps to <undefined>
 ^C^C^C
+========================================================
+   WC2026 Fantasy Pipeline  2026-05-30 23:33:14
+========================================================
+
+ Fetching FIFA Fantasy data...
+   rounds: 8 records
+   squads: 48 records
+   players: 1454 records
+   squads_fifa: 32 records
+
+ Syncing squads...
+   48 squads synced
+   32 FIFA squad records available for enrichment
+
+ Syncing rounds & fixtures...
+   8 rounds, 72 fixtures synced
+
+ Syncing players...
+
+   Added: 0 | Updated: 1454 | Deactivated: 0 | Price changes: 0
+
+ Syncing round points...
+   0 player-round records synced
+
+ Exporting CSV...
+   Price history  D:\code\fantasy wc\backend\exports\wc2026_price_history.csv (1454 records)
+
+--------------------------------------------------
+ Database Summary (1454 active players)
+--------------------------------------------------
+   GK: 174
+   DEF: 471
+   MID: 504
+   FWD: 305
+   Teams: 48
+   Price range: $3.5m  $10.5m
+   Avg price: $4.8m
+
+    Top 10 by Fantasy Points:
+             name      team position  price  total_points  pct_selected
+       Harry Kane   England      FWD   10.5           0.0          39.7
+    Kylian Mbappé    France      FWD   10.5           0.0          51.5
+   Erling Haaland    Norway      FWD   10.5           0.0          33.4
+     Lionel Messi Argentina      FWD   10.0           0.0          19.1
+  Vinícius Júnior    Brazil      MID   10.0           0.0          12.8
+  Ousmane Dembélé    France      MID   10.0           0.0          20.9
+     Lamine Yamal     Spain      MID   10.0           0.0          43.4
+Cristiano Ronaldo  Portugal      FWD   10.0           0.0          13.6
+    Mohamed Salah     Egypt      MID   10.0           0.0           6.9
+      Bukayo Saka   England      MID    9.5           0.0           6.9
+
+    Most Selected:
+             name      team position  price  pct_selected
+    Kylian Mbappé    France      FWD   10.5          51.5
+  Bruno Fernandes  Portugal      MID    8.5          50.6
+      Nuno Mendes  Portugal      DEF    5.8          44.5
+     Lamine Yamal     Spain      MID   10.0          43.4
+       Harry Kane   England      FWD   10.5          39.7
+   Erling Haaland    Norway      FWD   10.5          33.4
+Gabriel Magalhães    Brazil      DEF    5.5          28.1
+   Joshua Kimmich   Germany      DEF    5.5          25.7
+    Michael Olise    France      MID    9.5          25.4
+Emiliano Martínez Argentina       GK    5.0          22.0
+
+   Full export  D:\code\fantasy wc\backend\exports\wc2026_players.csv
+
+========================================================
+   Pipeline complete in 2919ms
+========================================================
+

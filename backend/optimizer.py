@@ -401,7 +401,7 @@ def optimize_lp(players: list[dict], stage: str = "GROUP_MD1",
         stage_filename = stage.lower() + ".json"
         fixtures_path = Path(__file__).parent.parent / "fixtures" / stage_filename
         if not fixtures_path.exists():
-            fixtures_path = Path(__file__).parent.parent / "fixtures" / "matchday_1.json"
+            fixtures_path = Path(__file__).parent.parent / "fixtures" / "group_md1.json"
             
         with open(fixtures_path, "r", encoding="utf-8") as f:
             fixtures = json.load(f)
