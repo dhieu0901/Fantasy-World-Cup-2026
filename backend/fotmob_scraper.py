@@ -209,7 +209,7 @@ async def fetch_player_stats(client: FotMobClient, fotmob_id: int) -> dict | Non
     }
 
     # Get current team
-    primary_team = data.get("primaryTeam", {})
+    primary_team = data.get("primaryTeam") or {}
     result["team"] = primary_team.get("teamName")
 
     # Get position
