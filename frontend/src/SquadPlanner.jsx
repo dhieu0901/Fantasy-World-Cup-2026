@@ -71,10 +71,6 @@ function isValidFormation(xi) {
 }
 
 function padSquad(xi, bench, teamPlayers) {
-  if (teamPlayers.length === 0) {
-    return { xi: [], bench: [] };
-  }
-
   let gks = teamPlayers.filter(p => p.position === 'GK').length;
   let defs = teamPlayers.filter(p => p.position === 'DEF').length;
   let mids = teamPlayers.filter(p => p.position === 'MID').length;
@@ -224,7 +220,7 @@ function PitchPlayer({ player: p, isCaptain, isViceCaptain, isSubSource, onClick
           <span style={{ fontSize: '1.2rem', lineHeight: '40px', color: 'rgba(255,255,255,0.5)' }}>+</span>
         </div>
         <div className="pitch-player-info">
-          <div className="pitch-nameplate" style={{ background: 'var(--clr-text-dim)', color: '#fff' }}>Add</div>
+          <div className="pitch-nameplate" style={{ background: 'var(--clr-text-dim)', color: '#fff' }}>Add {p.position}</div>
         </div>
       </div>
     );
