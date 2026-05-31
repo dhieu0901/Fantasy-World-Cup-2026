@@ -183,6 +183,14 @@ def api_get_player(player_id: int):
 
         # Next opponent logic
         opp_abbr = ""
+        fixtures = conn.execute("""
+            SELECT home_squad_abbr, away_squad_abbr 
+            FROM fixtures 
+            WHERE (home_squad_id = ? OR away_squad_id = ?) 
+              AND status != 'completed'
+            ORDER BY match_date ASC LIMIT 1
+        """, (player.get("squad_id", 0), player.get("squad_id", 0))).fetchall()
+
         if len(fixtures) > 0:
             f = fixtures[0]
             opp_abbr = f["away_squad_abbr"] if f["home_squad_abbr"] == player.get("team_abbr") else f["home_squad_abbr"]
@@ -605,6 +613,18 @@ def api_advisor(req: AdvisorRequest):
     """Advanced In-Gameweek Assistant using Expected Points (xPts) vs Actual Points."""
     conn = get_connection()
     try:
+        opp_map = {}
+        all_fixtures = conn.execute(
+            "SELECT home_squad_abbr, away_squad_abbr FROM fixtures WHERE status != 'completed' ORDER BY match_date ASC"
+        ).fetchall()
+        for f in all_fixtures:
+            h = f["home_squad_abbr"]
+            a = f["away_squad_abbr"]
+            if h not in opp_map:
+                opp_map[h] = a
+            if a not in opp_map:
+                opp_map[a] = h
+
         all_ids = req.xi_ids + req.bench_ids
         if not all_ids:
             return {"captain_advice": None, "sub_advice": []}
