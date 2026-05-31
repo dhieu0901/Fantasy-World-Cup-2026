@@ -152,6 +152,7 @@ def api_get_players(
                 price=p.get("price", 4.0),
                 percent_selected=p.get("percent_selected", 0.0),
                 team_strength=TEAM_STRENGTH.get(p.get("team_abbr", ""), 0.5),
+                opponent_strength=TEAM_STRENGTH.get(p.get("next_opponent", ""), 0.5),
                 conn=conn
             )
             p["projected_pts"] = xpts_data.get("xPts", 2.0)
@@ -180,14 +181,22 @@ def api_get_player(player_id: int):
         player["display_name"] = player.get("known_name") or \
             f"{player.get('first_name', '')} {player.get('last_name', '')}"
 
+        # Next opponent logic
+        opp_abbr = ""
+        if len(fixtures) > 0:
+            f = fixtures[0]
+            opp_abbr = f["away_squad_abbr"] if f["home_squad_abbr"] == player.get("team_abbr") else f["home_squad_abbr"]
+
         # Get xPts with full breakdown
         team_str = TEAM_STRENGTH.get(player.get("team_abbr", ""), 0.5)
+        opp_str = TEAM_STRENGTH.get(opp_abbr, 0.5) if opp_abbr else 0.5
         xpts_result = calculate_xpts_from_db(
             player_id=player_id,
             position=player["position"],
             price=player["price"],
             percent_selected=player.get("percent_selected", 50),
             team_strength=team_str,
+            opponent_strength=opp_str,
             conn=conn,
         )
         player["xpts_breakdown"] = xpts_result
@@ -584,15 +593,20 @@ def api_advisor(req: AdvisorRequest):
             p_dict = dict(p)
             p_dict["display_name"] = p_dict.get("known_name") or f"{p_dict.get('first_name', '')} {p_dict.get('last_name', '')}".strip()
             
+            # Get next opponent for this player's team
+            opp_abbr = opp_map.get(p.get("team_abbr", ""), "")
+
             # Calculate xPts dynamically
             xpts_data = calculate_xpts_from_db(
                 player_id=p["id"],
                 position=p.get("position", "MID"),
                 price=p.get("price", 4.0),
                 percent_selected=p.get("percent_selected", 0.0),
+                team_strength=TEAM_STRENGTH.get(p.get("team_abbr", ""), 0.5),
+                opponent_strength=TEAM_STRENGTH.get(opp_abbr, 0.5),
                 conn=conn
             )
-            p_dict["xpts"] = xpts_data["total_xpts"]
+            p_dict["xpts"] = xpts_data.get("xPts", 2.0)
             
             # Determine "Actual" points. If mock_points is set, use it. Otherwise assume not played yet.
             if p["mock_points"] is not None:
