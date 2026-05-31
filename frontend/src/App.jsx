@@ -750,7 +750,7 @@ function OptimizerPanel({ preset, setPreset, stage, setStage, chip, setChip, tra
     { id: 'risky', label: 'Differential', desc: 'Target low ownership hidden gems for upside' },
   ];
 
-  const displayStats = React.useMemo(() => {
+  const displayStats = useMemo(() => {
     if (result) return result;
     if (myTeam.length === 0) return null;
     
