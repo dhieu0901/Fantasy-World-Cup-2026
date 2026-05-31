@@ -523,6 +523,13 @@ def optimize_lp(players: list[dict], stage: str = "GROUP_MD1",
     prob += pulp.lpSum(xi_vars[p["id"]] for p in fwd_players) <= 3, "Xi_FWD_Max"
     prob += pulp.lpSum(xi_vars[p["id"]] for p in def_players) + pulp.lpSum(xi_vars[p["id"]] for p in fwd_players) <= 7, "Max_Def_Fwd_Sum"
 
+    # Constraint 3c: Visual Quality / Trust constraint (Don't start budget forwards)
+    # Budget forwards (< $6.0m) are often bench fodders. Users lose trust if the optimizer 
+    # starts a $4.5m forward just to stack premium midfielders.
+    for p in fwd_players:
+        if p["price"] < 6.0 and p["id"] not in locked_in:
+            prob += xi_vars[p["id"]] == 0, f"NoBudgetFwdStarter_{p['id']}"
+
     # Constraint 4: Max per country
     squad_ids = set(p.get("squad_id", 0) for p in players)
     for sid in squad_ids:
@@ -663,10 +670,14 @@ def _select_starting_xi(squad: list[dict], chip: str = "none", stage: str = "GRO
         if pos in by_pos:
             by_pos[pos].append(p)
 
-    # Sort each position group by next_match_date (earliest first), then projected points (boosted by qualification)
+    # Sort each position group
+    # 1. Good players (xPts >= 3.0) get priority over bench fodders (xPts < 3.0) to preserve visual trust.
+    # 2. Within tiers, sort by next_match_date (earliest first) to maximize manual sub free rolls.
+    # 3. Finally by projected points.
     is_qual = chip == "qualification" and stage not in ("GROUP_MD1", "GROUP_MD2", "GROUP_MD3")
     for pos in by_pos:
         by_pos[pos].sort(key=lambda p: (
+            0 if p.get("projected_pts", 0) >= 3.0 else 1,
             p.get("next_match_date") or "2099-12-31T00:00:00Z",
             -(p.get("projected_pts", 0) + (get_team_strength(p.get("team_abbr", "")) * 2.0 if is_qual else 0))
         ))

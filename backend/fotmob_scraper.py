@@ -35,7 +35,7 @@ import sys
 import time
 import re
 from pathlib import Path
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 from difflib import SequenceMatcher
 
 from database import get_connection, init_db
@@ -522,7 +522,6 @@ async def scrape_fotmob(limit: int = 100, player_name: str = None, injuries_only
     # Summary
     print(f"\n{'=' * 56}")
     print(f"  Done: {success} scraped | {failed} failed | {skipped} cached")
-    print(f"  Cache hits: {client._cache_hits if 'client' in dir() else 'N/A'}")
     print(f"{'=' * 56}\n")
 
     # Show top players by xG
@@ -557,7 +556,7 @@ async def run_smart_schedule():
         next_runs = []
         target_midnight = now.replace(hour=0, minute=5, second=0, microsecond=0)
         if target_midnight < now:
-            target_midnight += datetime.timedelta(days=1)
+            target_midnight += timedelta(days=1)
         next_runs.append(target_midnight)
         
         try:
