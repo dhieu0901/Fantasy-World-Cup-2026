@@ -1,0 +1,50 @@
+name: Daily FotMob Scraper
+
+on:
+  schedule:
+    # Runs at 18:00 UTC which is 01:00 GMT+7 (Vietnam time)
+    - cron: '0 18 * * *'
+  workflow_dispatch: # Allows manual triggering from the GitHub Actions UI
+
+jobs:
+  scrape-and-update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # Needed to push commits back to the repo
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        working-directory: backend
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run Scraper
+        working-directory: backend
+        run: |
+          # Run the scraper for all players
+          python fotmob_scraper.py --all
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          
+          # Only add the database file
+          git add backend/wc2026.db
+          
+          # Commit if there are changes, otherwise exit gracefully
+          git diff-index --quiet HEAD || git commit -m "chore: auto-update injuries and stats from FotMob"
+          
+          # Push the changes
+          git push
