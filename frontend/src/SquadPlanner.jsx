@@ -276,7 +276,12 @@ function PitchPlayer({ player: p, isCaptain, isViceCaptain, isSubSource, onClick
           {lastName}
         </div>
         <div className={`pitch-pts ${isCaptain ? 'is-captain' : ''}`} style={is12thMan ? { color: '#a78bfa' } : {}}>
-          {displayValue}
+          {p.next_opponent && (
+            <div style={{ fontSize: '0.6rem', borderBottom: '1px solid rgba(0,0,0,0.1)', paddingBottom: '1px', marginBottom: '1px', opacity: 0.85, fontWeight: 600 }}>
+              v {p.next_opponent}
+            </div>
+          )}
+          <div>{displayValue}</div>
           {is12thMan && <span style={{ fontSize: '0.55rem', display: 'block', marginTop: '1px' }}>12th</span>}
         </div>
       </div>
