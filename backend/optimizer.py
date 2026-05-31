@@ -451,7 +451,9 @@ def optimize_lp(players: list[dict], stage: str = "GROUP_MD1",
             # Since we can make manual substitutions, bench players are NOT fodder.
             # A late-playing bench player will almost certainly be subbed in for an early blanker.
             # Their effective value is the (Points - 2) they bring, which is roughly 40-70% of their EV.
-            bench_weight = 0.4 + 0.3 * ((day_idx - 1) / max(1, MAX_DAY - 1))
+            # However, setting it too high makes the solver bench premiums (visually confusing for users).
+            # We scale it from 0.05 to 0.15 so it breaks ties for late bench players without benching premiums.
+            bench_weight = 0.05 + 0.1 * ((day_idx - 1) / max(1, MAX_DAY - 1))
             
             objective += obj_values_current.get(pid, 0) * bench_weight * (squad_vars[pid] - xi_vars[pid])
             # Cap can be changed day by day, so no penalty for late captains in LP objective!
@@ -467,7 +469,7 @@ def optimize_lp(players: list[dict], stage: str = "GROUP_MD1",
         print(f"  [!] Could not load fixtures for smart benching: {e}")
         # Fallback to simple bench weight if fixtures fail
         objective += pulp.lpSum(
-            obj_values_current.get(p["id"], 0) * 0.4 * (squad_vars[p["id"]] - xi_vars[p["id"]]) +
+            obj_values_current.get(p["id"], 0) * 0.1 * (squad_vars[p["id"]] - xi_vars[p["id"]]) +
             obj_values_current.get(p["id"], 0) * 1.0 * cap_vars[p["id"]]
             for p in players
         )
