@@ -391,7 +391,7 @@ export default function App() {
                   setSelectedTeamFilter={setSelectedTeamFilter} 
                   setTab={setTab} 
                 />
-              )}
+              </div>
             </>
           )}
         </main>
