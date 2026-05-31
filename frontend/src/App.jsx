@@ -388,6 +388,8 @@ export default function App() {
                   optimResult={optimResult}
                   setOptimResult={setOptimResult}
                   onXPtsChange={setManualXPts}
+                  stage={optimStage}
+                  freeTransfers={freeTransfers}
                 />
               </div>
               <div style={{ display: tab === 'fixtures' ? 'block' : 'none' }}>

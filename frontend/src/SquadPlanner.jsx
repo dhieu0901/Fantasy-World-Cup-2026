@@ -3,7 +3,7 @@ import React, { useState, useMemo, useRef, useEffect } from 'react';
 // ══════════════════════════════════════════════
 // Transfer rules per stage (WC 2026 Fantasy)
 // ══════════════════════════════════════════════
-const TRANSFER_RULES = {
+export const TRANSFER_RULES = {
   GROUP_MD1: { label: 'Group MD1', freeOptions: ['unlimited'], default: 'unlimited', maxCountry: 3 },
   GROUP_MD2: { label: 'Group MD2', freeOptions: [0, 1, 2, 3], default: 2, maxCountry: 3 },
   GROUP_MD3: { label: 'Group MD3', freeOptions: [0, 1, 2, 3], default: 2, maxCountry: 3 },
@@ -107,13 +107,31 @@ function padSquad(xi, bench, teamPlayers) {
 // ══════════════════════════════════════════════
 // Player Search Modal
 // ══════════════════════════════════════════════
-function PlayerSelectModal({ isOpen, onClose, players, targetPos, onSelect, currentTeamIds }) {
+function PlayerSelectModal({ isOpen, onClose, players, targetPos, onSelect, currentTeamIds, playerToAction, maxPerCountry }) {
   const [search, setSearch] = useState('');
   if (!isOpen) return null;
+
+  const countryCounts = {};
+  const posCounts = {};
+  currentTeamIds.forEach(id => {
+    if (playerToAction && id === playerToAction.id) return;
+    const p = players.find(x => x.id === id);
+    if (p) {
+      countryCounts[p.team_abbr] = (countryCounts[p.team_abbr] || 0) + 1;
+      posCounts[p.position] = (posCounts[p.position] || 0) + 1;
+    }
+  });
+  
+  const POS_LIMITS = { 'GK': 2, 'DEF': 5, 'MID': 5, 'FWD': 3 };
 
   const filtered = players.filter(p => {
     if (currentTeamIds.includes(p.id)) return false;
     if (targetPos && targetPos !== 'ANY' && p.position !== targetPos) return false;
+    
+    // Completely hide players that violate limits
+    if ((countryCounts[p.team_abbr] || 0) >= maxPerCountry) return false;
+    if ((posCounts[p.position] || 0) >= POS_LIMITS[p.position]) return false;
+
     const normalizeStr = (str) => str ? str.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase() : '';
     if (search && !normalizeStr(p.display_name).includes(normalizeStr(search))) return false;
     return true;
@@ -291,7 +309,7 @@ function PitchPlayer({ player: p, isCaptain, isViceCaptain, isSubSource, onClick
 // ══════════════════════════════════════════════
 // MAIN: SquadPlannerTab
 // ══════════════════════════════════════════════
-export default function SquadPlannerTab({ players, myTeamIds, setMyTeam, optimResult, setOptimResult, onXPtsChange }) {
+export default function SquadPlannerTab({ players, myTeamIds, setMyTeam, optimResult, setOptimResult, onXPtsChange, stage, freeTransfers }) {
   const [playerSelectModalOpen, setPlayerSelectModalOpen] = useState(false);
   const [actionModalOpen, setActionModalOpen] = useState(false);
   
@@ -309,8 +327,6 @@ export default function SquadPlannerTab({ players, myTeamIds, setMyTeam, optimRe
   const [viewMode, setViewMode] = useState('xPts');
 
   // Transfer planner state
-  const [stage, setStage] = useState('GROUP_MD1');
-  const [freeTransfers, setFreeTransfers] = useState('unlimited');
   const [transfersUsed, setTransfersUsed] = useState(0);
 
   // Flag to skip auto-sort when we manually set benchedIds (e.g. on Accept)
@@ -338,20 +354,12 @@ export default function SquadPlannerTab({ players, myTeamIds, setMyTeam, optimRe
     setSubSourcePlayer(null); // Cancel any active sub
   }
 
-  // Update free transfers default when stage changes
-  useEffect(() => {
-    const rule = TRANSFER_RULES[stage];
-    if (rule) {
-      setFreeTransfers(rule.default);
-    }
-  }, [stage]);
-
-  // Determine which squad to show: optimizer result OR myTeam
+  // Auto-sort to find best XI based on points
   const isOptimMode = !!optimResult;
   
   const rawXi = isOptimMode ? [...optimResult.starting_xi] : teamPlayers.filter(p => !benchedIds.includes(p.id));
   const rawBench = isOptimMode ? [...optimResult.bench] : teamPlayers.filter(p => benchedIds.includes(p.id));
-  
+
   // Sort bench properly (GK first, then pts descending)
   rawBench.sort((a, b) => {
     if (a.position === 'GK' && b.position !== 'GK') return -1;
@@ -746,7 +754,7 @@ export default function SquadPlannerTab({ players, myTeamIds, setMyTeam, optimRe
           </div>
           {transferPenalty < 0 && (
             <div style={{ marginLeft: 'auto', color: '#ef4444', fontWeight: 700, fontSize: '0.8rem', display: 'flex', alignItems: 'center', gap: '4px' }}>
-              Hit: {transferPenalty} pts
+              Penalty: {transferPenalty} pts
             </div>
           )}
         </div>
@@ -830,14 +838,20 @@ export default function SquadPlannerTab({ players, myTeamIds, setMyTeam, optimRe
         isInXI={playerToAction ? isPlayerInXI(playerToAction.id) : false}
       />
 
-      <PlayerSelectModal 
-        isOpen={playerSelectModalOpen} 
-        onClose={() => setPlayerSelectModalOpen(false)} 
-        players={players} 
-        targetPos={targetPos} 
-        onSelect={handleSelectPlayer} 
-        currentTeamIds={myTeamIds} 
-      />
+      {playerSelectModalOpen && (
+        <div style={{ position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, background: 'rgba(0,0,0,0.8)', zIndex: 1000, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+          <PlayerSelectModal 
+            isOpen={playerSelectModalOpen} 
+            onClose={() => setPlayerSelectModalOpen(false)} 
+            players={players} 
+            targetPos={targetPos} 
+            onSelect={handleSelectPlayer} 
+            currentTeamIds={myTeamIds}
+            playerToAction={playerToAction}
+            maxPerCountry={TRANSFER_RULES[stage]?.maxCountry || 3}
+          />
+        </div>
+      )}
     </div>
   );
 }
