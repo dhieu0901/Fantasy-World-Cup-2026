@@ -91,12 +91,13 @@ class FotMobClient:
         safe_name = re.sub(r'[^\w]', '_', url.split('fotmob.com/')[-1]) + ".json"
         return CACHE_DIR / safe_name
 
-    def _get_cached(self, url: str, max_age_hours: float = 24) -> dict | None:
+    def _get_cached(self, url: str, max_age_hours: float = 0) -> dict | None:
         """Load cached response if fresh enough."""
+        # Cache disabled (max_age_hours=0) to ensure we always get fresh injury data
         path = self._cache_key(url)
         if path.exists():
             age_hours = (time.time() - path.stat().st_mtime) / 3600
-            if age_hours < max_age_hours:
+            if max_age_hours > 0 and age_hours < max_age_hours:
                 try:
                     data = json.loads(path.read_text(encoding="utf-8"))
                     return data
@@ -472,14 +473,8 @@ async def scrape_fotmob(limit: int = 100, player_name: str = None, injuries_only
                 (pid,)
             ).fetchone()
 
-            if existing:
-                updated = existing[0]
-                if updated:
-                    age_hours = (time.time() - datetime.fromisoformat(updated).timestamp()) / 3600
-                    if age_hours < 12:
-                        print(f"cached ({age_hours:.0f}h old)")
-                        skipped += 1
-                        continue
+            # Removed DB cache check to ensure we always fetch fresh injury data
+
 
             # Step 1: Search for player on FotMob
             search_result = await search_player(client, name)
