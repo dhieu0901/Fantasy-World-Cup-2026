@@ -395,22 +395,10 @@ def calculate_simple_xpts(price: float, position: str, team_strength: float = 0.
         context_mod *= 1.05
     base *= max(0.5, context_mod)
 
-    # Ownership as quality/play-probability signal
+    # Ownership as quality/play-probability signal (Claude's Formula)
     # Extremely low ownership usually means they don't play (0 points).
-    # We must heavily penalize expensive bench traps, but allow cheap differentials (hidden gems).
-    ownership = max(0.0, percent_selected or 0.0)
-    is_expensive = price >= 7.0
-    
-    if ownership < 1.0:
-        ownership_mod = 0.05 if is_expensive else 0.30  # Cheap hidden gems get 0.3 (risky, but not 0)
-    elif ownership < 3.0:
-        ownership_mod = 0.20 if is_expensive else 0.60  # Cheap differentials get 0.6
-    elif ownership < 6.0:
-        ownership_mod = 0.60 if is_expensive else 0.85
-    elif ownership < 15.0:
-        ownership_mod = 0.90  # <15%: Regular starter, minor rotation risk
-    else:
-        ownership_mod = 1.0   # >15%: Nailed starter
+    pct_selected = max(0.0, percent_selected or 0.0)
+    ownership_mod = min(1.0, 0.6 + (pct_selected / 100.0) * 0.8)
 
     base *= ownership_mod
 

@@ -438,9 +438,20 @@ async def scrape_fotmob(limit: int = 100, player_name: str = None, injuries_only
     else:
         limit_clause = f"LIMIT {limit}" if limit > 0 else ""
         rows = conn.execute(
-            f"SELECT id, COALESCE(known_name, first_name || ' ' || last_name) as name, "
-            f"position, price FROM players WHERE is_active = 1 "
-            f"ORDER BY price DESC {limit_clause}"
+            f"SELECT p.id, COALESCE(p.known_name, p.first_name || ' ' || p.last_name) as name, "
+            f"p.position, p.price "
+            f"FROM players p "
+            f"LEFT JOIN squads s ON p.squad_id = s.id "
+            f"WHERE p.is_active = 1 "
+            f"ORDER BY "
+            f"  CASE "
+            f"    WHEN s.abbr IN ('FRA', 'BRA', 'ARG', 'ENG', 'GER') THEN 1 "
+            f"    WHEN s.abbr IN ('NED', 'BEL', 'URU', 'COL', 'JPN', 'ESP', 'POR') THEN 2 "
+            f"    ELSE 3 "
+            f"  END ASC, "
+            f"  p.percent_selected DESC, "
+            f"  p.price DESC "
+            f"{limit_clause}"
         ).fetchall()
 
     players = [dict(r) for r in rows]

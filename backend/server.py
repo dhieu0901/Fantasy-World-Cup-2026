@@ -351,6 +351,16 @@ def api_optimize(req: OptimizeRequest):
         free_transfers=req.free_transfers
     )
 
+    # --- DEBUG LOGGING ---
+    xi_players = result.get('starting_xi', [])
+    print("\nStarting XI xPts distribution:")
+    for p in sorted(xi_players, key=lambda x: x.get('projected_pts', 0), reverse=True):
+        print(f"  {p.get('display_name', '?'):20} {p.get('position', '?')} ${p.get('price', 0)}m "
+              f"xPts={p.get('projected_pts', 0):.2f} own={p.get('percent_selected', 0):.1f}%")
+    print(f"\nTotal XI xPts: {sum(p.get('projected_pts', 0) for p in xi_players):.1f}")
+    print(f"Budget used: ${sum(p.get('price', 0) for p in result.get('squad', [])):.1f}m\n")
+    # ---------------------
+
     # Serialize players for JSON response
     def serialize_player(p):
         return {
