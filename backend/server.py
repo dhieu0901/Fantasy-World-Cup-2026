@@ -370,35 +370,60 @@ def api_optimize(req: OptimizeRequest):
     print(f"Budget used: ${sum(p.get('price', 0) for p in result.get('squad', [])):.1f}m\n")
     # ---------------------
 
-    # Serialize players for JSON response
-    def serialize_player(p):
-        return {
-            "id": p["id"],
-            "display_name": p.get("display_name", p.get("known_name", "")),
-            "position": p["position"],
-            "price": p["price"],
-            "team_name": p.get("team_name"),
-            "team_abbr": p.get("team_abbr"),
-            "percent_selected": p.get("percent_selected", 0),
-            "projected_pts": round(p.get("projected_pts", 0), 2),
-            "total_points": p.get("total_points", 0),
-            "injury_status": p.get("injury_status", "OK"),
-            "injury_text": p.get("injury_text"),
-        }
+    conn = get_connection()
+    try:
+        round_map = {"GROUP_MD1": 1, "GROUP_MD2": 2, "GROUP_MD3": 3, "ROUND_OF_16": 4, "QUARTER_FINALS": 5, "SEMI_FINALS": 6, "FINAL": 7}
+        round_id = round_map.get(req.stage, 1)
+        
+        date_map = {}
+        opp_map = {}
+        all_fixtures = conn.execute(
+            "SELECT home_squad_abbr, away_squad_abbr, match_date FROM fixtures WHERE round_id = ?",
+            (round_id,)
+        ).fetchall()
+        for f in all_fixtures:
+            h = f["home_squad_abbr"]
+            a = f["away_squad_abbr"]
+            d = f["match_date"]
+            opp_map[h] = a
+            date_map[h] = d
+            opp_map[a] = h
+            date_map[a] = d
 
-    return {
-        "squad": [serialize_player(p) for p in result["squad"]],
-        "starting_xi": [serialize_player(p) for p in result["starting_xi"]],
-        "bench": [serialize_player(p) for p in result["bench"]],
-        "captain": serialize_player(result["captain"]) if result.get("captain") else None,
-        "vice_captain": serialize_player(result["vice_captain"]) if result.get("vice_captain") else None,
-        "budget_used": result["budget_used"],
-        "budget_remaining": result["budget_remaining"],
-        "total_projected_pts": result["total_projected_pts"],
-        "preset": result["preset"],
-        "stage": result["stage"],
-        "method": result["method"],
-    }
+        def serialize_player(p):
+            team_abbr = p.get("team_abbr", "")
+            return {
+                "id": p["id"],
+                "display_name": p.get("display_name", p.get("known_name", "")),
+                "position": p["position"],
+                "price": p["price"],
+                "team_name": p.get("team_name"),
+                "team_abbr": team_abbr,
+                "percent_selected": p.get("percent_selected", 0),
+                "projected_pts": round(p.get("projected_pts", 0), 2),
+                "total_points": p.get("total_points", 0),
+                "injury_status": p.get("injury_status", "OK"),
+                "injury_text": p.get("injury_text"),
+                "next_opponent": opp_map.get(team_abbr, ""),
+                "next_match_date": date_map.get(team_abbr, "2099-12-31T00:00:00Z"),
+            }
+
+        return {
+            "squad": [serialize_player(p) for p in result["squad"]],
+            "starting_xi": [serialize_player(p) for p in result["starting_xi"]],
+            "bench": [serialize_player(p) for p in result["bench"]],
+            "captain": serialize_player(result["captain"]) if result.get("captain") else None,
+            "vice_captain": serialize_player(result["vice_captain"]) if result.get("vice_captain") else None,
+            "budget_used": result["budget_used"],
+            "budget_remaining": result["budget_remaining"],
+            "total_projected_pts": result["total_projected_pts"],
+            "preset": result["preset"],
+            "stage": result["stage"],
+            "chip": result["chip"],
+            "opponents": opp_map
+        }
+    finally:
+        conn.close()
 
 
 @app.post("/api/validate")
