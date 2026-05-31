@@ -193,6 +193,8 @@ async def fetch_player_stats(client: FotMobClient, fotmob_id: int) -> dict | Non
 
     try:
         data = raw_data['pageProps']['fallback'][f'player:{fotmob_id}']
+        if not data:
+            return None
     except KeyError:
         return None
 
