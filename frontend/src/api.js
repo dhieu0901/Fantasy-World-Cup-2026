@@ -40,16 +40,11 @@ export async function getRules() {
   return fetchJSON(`${API_BASE}/rules`);
 }
 
-export async function optimize({ stage = 'GROUP_MD1', preset = 'default', lockedIn = [], lockedOut = [], useLp = true } = {}) {
+export async function optimize(payload = {}) {
   const res = await fetch(`${API_BASE}/optimize`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({
-      stage, preset,
-      locked_in: lockedIn,
-      locked_out: lockedOut,
-      use_lp: useLp,
-    }),
+    body: JSON.stringify(payload),
   });
   if (!res.ok) throw new Error(`Optimize failed: ${res.statusText}`);
   return res.json();

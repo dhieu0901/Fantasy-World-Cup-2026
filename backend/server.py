@@ -67,6 +67,7 @@ class OptimizeRequest(BaseModel):
     use_lp: bool = Field(default=True, description="Use LP solver (True) or greedy (False)")
     current_squad: Optional[list[int]] = Field(default=None, description="List of 15 player IDs in the current squad for transfer calc")
     free_transfers: int = Field(default=2, description="Number of free transfers available")
+    banned_combinations: list[list[int]] = Field(default=[], description="List of previous squad combinations to avoid")
 
 
 class ValidateSquadRequest(BaseModel):
@@ -365,7 +366,8 @@ def api_optimize(req: OptimizeRequest):
         use_lp=req.use_lp,
         chip=req.chip,
         current_squad=req.current_squad,
-        free_transfers=req.free_transfers
+        free_transfers=req.free_transfers,
+        banned_combinations=req.banned_combinations
     )
 
     # --- DEBUG LOGGING ---

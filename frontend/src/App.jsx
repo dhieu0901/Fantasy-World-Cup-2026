@@ -132,7 +132,14 @@ export default function App() {
 
   // Optimize
   const [optimStage, setOptimStage] = useState('GROUP_MD1');
-  const runOptimize = useCallback(async () => {
+  const [bannedCombos, setBannedCombos] = useState([]);
+
+  // Reset banned combos when configuration changes
+  useEffect(() => {
+    setBannedCombos([]);
+  }, [preset, optimStage, chip, transferMode, myTeam, freeTransfers]);
+
+  const runOptimize = useCallback(async (extraBanned = []) => {
     setOptimizing(true);
     try {
       const payload = { preset, stage: optimStage, chip };
@@ -140,6 +147,36 @@ export default function App() {
         payload.current_squad = myTeam;
         payload.free_transfers = freeTransfers;
       }
+      if (bannedCombos.length > 0 || extraBanned.length > 0) {
+        payload.banned_combinations = [...bannedCombos, ...extraBanned];
+      }
+      const result = await api.optimize(payload);
+      setOptimResult(result);
+      setTab('lineup');
+    } catch (e) { console.error('Optimize failed:', e); }
+    setOptimizing(false);
+  }, [preset, optimStage, chip, transferMode, myTeam, freeTransfers, bannedCombos]);
+
+  const runSuggestAlternatives = useCallback(() => {
+    if (optimResult && optimResult.squad) {
+      const currentOptIds = optimResult.squad.map(p => p.id);
+      const newBanned = [currentOptIds];
+      setBannedCombos(prev => [...prev, currentOptIds]);
+      runOptimize(newBanned);
+    }
+  }, [optimResult, runOptimize]);
+
+  const runSuggestPlayerAlternative = useCallback(async (playerIdToReplace) => {
+    setOptimizing(true);
+    try {
+      const payload = { preset, stage: optimStage, chip };
+      if (transferMode && myTeam.length > 0) {
+        payload.current_squad = myTeam;
+        payload.free_transfers = freeTransfers;
+      }
+      payload.locked_in = myTeam.filter(id => id !== playerIdToReplace);
+      payload.locked_out = [playerIdToReplace];
+      
       const result = await api.optimize(payload);
       setOptimResult(result);
       setTab('lineup');
@@ -323,7 +360,7 @@ export default function App() {
             <LoadingSkeleton />
           ) : (
             <>
-              {tab === 'projections' && (
+              <div style={{ display: tab === 'projections' ? 'block' : 'none' }}>
                 <ProjectionsTab
                   players={displayPlayers}
                   search={search}
@@ -336,17 +373,18 @@ export default function App() {
                   selectedTeamFilter={selectedTeamFilter}
                   setSelectedTeamFilter={setSelectedTeamFilter}
                 />
-              )}
-              {tab === 'lineup' && (
+              </div>
+              <div style={{ display: tab === 'lineup' ? 'block' : 'none' }}>
                 <SquadPlannerTab 
                   players={players} 
                   myTeamIds={myTeamState} 
                   setMyTeam={setMyTeam}
                   optimResult={optimResult}
                   setOptimResult={setOptimResult}
+                  onSuggestPlayerAlternative={runSuggestPlayerAlternative}
                 />
-              )}
-              {tab === 'fixtures' && (
+              </div>
+              <div style={{ display: tab === 'fixtures' ? 'block' : 'none' }}>
                 <FixturesTab 
                   squads={squads} 
                   fixtures={fixtures} 
@@ -383,9 +421,8 @@ export default function App() {
             stage={optimStage} setStage={setOptimStage}
             chip={chip} setChip={setChip}
             transferMode={transferMode} setTransferMode={setTransferMode}
-            myTeam={myTeam}
-            freeTransfers={freeTransfers} setFreeTransfers={setFreeTransfers}
-            optimizing={optimizing} runOptimize={runOptimize}
+            myTeam={myTeam} freeTransfers={freeTransfers} setFreeTransfers={setFreeTransfers}
+            optimizing={optimizing} runOptimize={runOptimize} runSuggestAlternatives={runSuggestAlternatives}
             result={optimResult}
           />
         </aside>
@@ -638,7 +675,7 @@ function FixturesTab({ squads, fixtures, setSelectedTeamFilter, setTab }) {
 /* ═══════════════════════════════════════════
    OPTIMIZER PANEL (Sidebar)
    ═══════════════════════════════════════════ */
-function OptimizerPanel({ preset, setPreset, stage, setStage, chip, setChip, transferMode, setTransferMode, myTeam, freeTransfers, setFreeTransfers, optimizing, runOptimize, result }) {
+function OptimizerPanel({ preset, setPreset, stage, setStage, chip, setChip, transferMode, setTransferMode, myTeam, freeTransfers, setFreeTransfers, optimizing, runOptimize, runSuggestAlternatives, result }) {
   const presets = [
     { id: 'default', label: 'Balanced', desc: 'Max total xPts, prioritize highest points' },
     { id: 'risky', label: 'Differential', desc: 'Target low ownership hidden gems for upside' },
@@ -743,13 +780,36 @@ function OptimizerPanel({ preset, setPreset, stage, setStage, chip, setChip, tra
           </div>
 
           {/* Run button */}
-          <button className="optimize-btn" onClick={runOptimize} disabled={optimizing}>
-            {optimizing ? (
-              <><Icon.Loader /> Optimizing...</>
-            ) : (
-              <><Icon.Zap /> Optimize Squad</>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+            <button className="optimize-btn" onClick={() => runOptimize([])} disabled={optimizing}>
+              {optimizing ? (
+                <><Icon.Loader /> Optimizing...</>
+              ) : (
+                <><Icon.Zap /> Optimize Squad</>
+              )}
+            </button>
+            {result && (
+              <button 
+                onClick={runSuggestAlternatives} 
+                disabled={optimizing}
+                style={{
+                  background: 'rgba(255,255,255,0.1)',
+                  color: 'var(--clr-text)',
+                  border: '1px solid rgba(255,255,255,0.2)',
+                  padding: '10px',
+                  borderRadius: '8px',
+                  cursor: 'pointer',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  gap: '6px',
+                  fontWeight: '600'
+                }}
+              >
+                <Icon.RefreshCw size={16} /> Suggest Alternative
+              </button>
             )}
-          </button>
+          </div>
 
           {/* Result summary */}
           {result && (

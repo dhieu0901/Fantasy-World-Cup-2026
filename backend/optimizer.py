@@ -319,7 +319,8 @@ def optimize_lp(players: list[dict], stage: str = "GROUP_MD1",
                 locked_out: list[int] = None,
                 chip: str = "none",
                 current_squad: list[int] = None,
-                free_transfers: int = 2) -> dict:
+                free_transfers: int = 2,
+                banned_combinations: list[list[int]] = None) -> dict:
     """
     Linear Programming squad optimizer using PuLP.
     Finds the globally optimal squad.
@@ -545,6 +546,11 @@ def optimize_lp(players: list[dict], stage: str = "GROUP_MD1",
         if pid in squad_vars:
             prob += squad_vars[pid] + twelfth_vars[pid] == 0, f"LockedOut_{pid}"
 
+    # Constraint 6: Banned Combinations (Integer Cuts)
+    if banned_combinations:
+        for i, combo in enumerate(banned_combinations):
+            prob += pulp.lpSum(squad_vars[pid] for pid in combo if pid in squad_vars) <= 14, f"BannedCombo_{i}"
+
     # Solve
     prob.solve(pulp.PULP_CBC_CMD(msg=0, timeLimit=10))
 
@@ -738,7 +744,8 @@ def optimize_squad(stage: str = "GROUP_MD1",
                    use_lp: bool = True,
                    chip: str = "none",
                    current_squad: list[int] = None,
-                   free_transfers: int = 2) -> dict:
+                   free_transfers: int = 2,
+                   banned_combinations: list[list[int]] = None) -> dict:
     """
     Main entry point for squad optimization.
     
@@ -793,7 +800,7 @@ def optimize_squad(stage: str = "GROUP_MD1",
 
     # Run optimizer
     if use_lp and HAS_PULP:
-        result = optimize_lp(players, stage, preset, locked_in, locked_out, chip, current_squad, free_transfers)
+        result = optimize_lp(players, stage, preset, locked_in, locked_out, chip, current_squad, free_transfers, banned_combinations)
     else:
         result = optimize_greedy(players, stage, preset, chip, locked_in, locked_out)
 
