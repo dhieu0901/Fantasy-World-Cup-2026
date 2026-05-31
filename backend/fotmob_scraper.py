@@ -218,7 +218,13 @@ async def fetch_player_stats(client: FotMobClient, fotmob_id: int) -> dict | Non
 
     injury = data.get("injuryInformation")
     if injury:
-        result["injury_status"] = "INJURED"
+        injury_text_lower = str(injury).lower()
+        if "suspend" in injury_text_lower or "red card" in injury_text_lower:
+            result["injury_status"] = "SUSPENDED"
+        elif any(word in injury_text_lower for word in ["knock", "doubt", "ill", "minor", "virus", "sick", "flu", "late"]):
+            result["injury_status"] = "DOUBTFUL"
+        else:
+            result["injury_status"] = "INJURED"
         result["injury_text"] = str(injury)
     else:
         result["injury_status"] = "OK"
@@ -329,7 +335,7 @@ async def fetch_player_stats(client: FotMobClient, fotmob_id: int) -> dict | Non
 def save_player_xstats(conn: sqlite3.Connection, player_id: int, stats: dict):
     now = datetime.now(timezone.utc).isoformat()
     if "injury_status" in stats:
-        conn.execute("UPDATE players SET injury_status = ?, updated_at = ? WHERE id = ?", (stats["injury_status"], now, player_id))
+        conn.execute("UPDATE players SET injury_status = ?, injury_text = ?, updated_at = ? WHERE id = ?", (stats["injury_status"], stats.get("injury_text"), now, player_id))
     """Save fetched stats to the player_xstats table."""
 
     conn.execute("""

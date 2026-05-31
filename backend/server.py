@@ -373,6 +373,8 @@ def api_optimize(req: OptimizeRequest):
             "percent_selected": p.get("percent_selected", 0),
             "projected_pts": round(p.get("projected_pts", 0), 2),
             "total_points": p.get("total_points", 0),
+            "injury_status": p.get("injury_status", "OK"),
+            "injury_text": p.get("injury_text"),
         }
 
     return {
@@ -574,7 +576,7 @@ def api_advisor(req: AdvisorRequest):
             return {"captain_advice": None, "sub_advice": []}
             
         placeholders = ",".join("?" for _ in all_ids)
-        query = f"SELECT id, known_name, first_name, last_name, position, price, percent_selected, mock_points, mock_match_status, total_points, team_abbr FROM players WHERE id IN ({placeholders})"
+        query = f"SELECT id, known_name, first_name, last_name, position, price, percent_selected, mock_points, mock_match_status, total_points, team_abbr, injury_status FROM players WHERE id IN ({placeholders})"
         players = conn.execute(query, all_ids).fetchall()
         
         player_map = {}
