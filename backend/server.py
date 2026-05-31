@@ -121,24 +121,23 @@ def api_get_players(
             players = [p for p in players if p.get("price", 0) <= max_price]
 
         # Load fixtures to find next opponent and date
-        import json
-        from pathlib import Path
-        fixtures_path = Path(__file__).parent.parent / "fixtures" / "matchday_1.json"
         opp_map = {}
         date_map = {}
-        if fixtures_path.exists():
-            squad_names = {row["name"]: row["abbr"] for row in conn.execute("SELECT name, abbr FROM squads")}
-            with open(fixtures_path, 'r', encoding='utf-8') as f:
-                fixtures = json.load(f)
-                for match in fixtures:
-                    t1 = squad_names.get(match["team_1"])
-                    t2 = squad_names.get(match["team_2"])
-                    match_date_str = match.get("date", "")
-                    if t1 and t2:
-                        opp_map[t1] = t2
-                        opp_map[t2] = t1
-                        date_map[t1] = match_date_str
-                        date_map[t2] = match_date_str
+        fdr_map = {}
+        
+        # Get next match for each team from DB
+        db_fixtures = conn.execute("SELECT home_squad_abbr, away_squad_abbr, match_date FROM fixtures WHERE status != 'completed' ORDER BY match_date ASC").fetchall()
+        
+        # Only take the first upcoming match for each team
+        for h, a, d in db_fixtures:
+            if h not in opp_map:
+                opp_map[h] = a
+                date_map[h] = d
+                fdr_map[h] = get_fdr(TEAM_STRENGTH.get(a, 0.5))
+            if a not in opp_map:
+                opp_map[a] = h
+                date_map[a] = d
+                fdr_map[a] = get_fdr(TEAM_STRENGTH.get(h, 0.5))
 
         # Add display_name, projected_pts, and next_opponent
         from rules import calculate_xpts_from_db
@@ -146,6 +145,7 @@ def api_get_players(
             p["display_name"] = p.get("known_name") or f"{p.get('first_name', '')} {p.get('last_name', '')}"
             p["next_opponent"] = opp_map.get(p.get("team_abbr", ""), "")
             p["next_match_date"] = date_map.get(p.get("team_abbr", ""), "")
+            p["next_match_fdr"] = fdr_map.get(p.get("team_abbr", ""), 3)
             xpts_data = calculate_xpts_from_db(
                 player_id=p["id"],
                 position=p.get("position", "MID"),
