@@ -608,3 +608,47 @@ input:checked + .slider:before { transform: translateX(14px); }
  . f d r - 5   {   b a c k g r o u n d :   # 8 0 0 0 2 d ;   c o l o r :   # f f f ;   } 
   
  
+/* Animations */
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.spin {
+  animation: spin 1s linear infinite;
+}
+
+/* Fixtures Tab */
+.fixture-row {
+  display: flex;
+  align-items: center;
+  padding: 4px 12px;
+  border-bottom: 1px solid var(--clr-border);
+}
+.fixture-row .team-name {
+  width: 100px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.fixture-cells {
+  display: flex;
+  flex: 1;
+  gap: 4px;
+}
+.fixture-cell {
+  flex: 1;
+  padding: 6px;
+  text-align: center;
+  font-size: 0.75rem;
+  font-weight: 700;
+  border-radius: 4px;
+  color: #fff;
+  background: var(--clr-bg-elevated);
+}
+.fixture-cell.diff-1 { background: #00ff87; color: #37003c; }
+.fixture-cell.diff-2 { background: #00ff87; color: #37003c; opacity: 0.8; }
+.fixture-cell.diff-3 { background: #ebebe4; color: #37003c; }
+.fixture-cell.diff-4 { background: #ff005a; color: #fff; opacity: 0.8; }
+.fixture-cell.diff-5 { background: #ff005a; color: #fff; }
