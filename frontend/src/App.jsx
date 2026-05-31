@@ -54,6 +54,7 @@ export default function App() {
   const [preset, setPreset] = useState('default');
   const [chip, setChip] = useState('none');
   const [optimResult, setOptimResult] = useState(null);
+  const [manualXPts, setManualXPts] = useState(0);
   const [optimizing, setOptimizing] = useState(false);
 
   // Transfer Planner & Live Subs
@@ -386,6 +387,7 @@ export default function App() {
                   setMyTeam={setMyTeam}
                   optimResult={optimResult}
                   setOptimResult={setOptimResult}
+                  onXPtsChange={setManualXPts}
                 />
               </div>
               <div style={{ display: tab === 'fixtures' ? 'block' : 'none' }}>
@@ -429,6 +431,8 @@ export default function App() {
             optimizing={optimizing} runOptimize={runOptimize} runSuggestAlternatives={runSuggestAlternatives}
             result={optimResult}
             setSuggestModalOpen={setSuggestModalOpen}
+            manualXPts={manualXPts}
+            players={players}
           />
         </aside>
       </div>
@@ -738,11 +742,28 @@ function FixturesTab({ squads, fixtures, setSelectedTeamFilter, setTab }) {
 /* ═══════════════════════════════════════════
    OPTIMIZER PANEL (Sidebar)
    ═══════════════════════════════════════════ */
-function OptimizerPanel({ preset, setPreset, stage, setStage, chip, setChip, transferMode, setTransferMode, myTeam, freeTransfers, setFreeTransfers, optimizing, runOptimize, runSuggestAlternatives, result, setSuggestModalOpen }) {
+function OptimizerPanel({ preset, setPreset, stage, setStage, chip, setChip, transferMode, setTransferMode, myTeam, freeTransfers, setFreeTransfers, optimizing, runOptimize, runSuggestAlternatives, result, setSuggestModalOpen, manualXPts, players }) {
   const presets = [
     { id: 'default', label: 'Balanced', desc: 'Max total xPts, prioritize highest points' },
     { id: 'risky', label: 'Differential', desc: 'Target low ownership hidden gems for upside' },
   ];
+
+  const displayStats = React.useMemo(() => {
+    if (result) return result;
+    if (myTeam.length === 0) return null;
+    
+    const teamPlayers = myTeam.map(id => players.find(p => p.id === id)).filter(Boolean);
+    const budget_used = teamPlayers.reduce((sum, p) => sum + p.price, 0);
+    const maxBudget = stage.startsWith('GROUP') ? 100.0 : 105.0;
+    
+    return {
+      total_projected_pts: manualXPts,
+      budget_used,
+      budget_remaining: maxBudget - budget_used,
+      method: 'MANUAL',
+      chip: 'none'
+    };
+  }, [result, myTeam, players, stage, manualXPts]);
 
   return (
     <div>
@@ -891,28 +912,28 @@ function OptimizerPanel({ preset, setPreset, stage, setStage, chip, setChip, tra
           </div>
 
           {/* Result summary */}
-          {result && (
+          {displayStats && (
             <div className="squad-summary" style={{ marginTop: 'var(--sp-3)' }}>
               <div className="item">
-                <div className="val">{result.total_projected_pts?.toFixed(1)}</div>
+                <div className="val">{displayStats.total_projected_pts?.toFixed(1) || '0.0'}</div>
                 <div className="lbl">Proj. Pts</div>
               </div>
               <div className="item">
-                <div className="val">${result.budget_used?.toFixed(1)}m</div>
+                <div className="val">${displayStats.budget_used?.toFixed(1)}m</div>
                 <div className="lbl">Budget</div>
               </div>
               <div className="item">
-                <div className="val" style={{ color: 'var(--clr-teal)' }}>${result.budget_remaining?.toFixed(1)}m</div>
+                <div className="val" style={{ color: 'var(--clr-teal)' }}>${displayStats.budget_remaining?.toFixed(1)}m</div>
                 <div className="lbl">Remaining</div>
               </div>
               <div className="item">
-                <div className="val" style={{ color: 'var(--clr-text)', fontSize: '0.8rem' }}>{result.method?.toUpperCase()}</div>
+                <div className="val" style={{ color: 'var(--clr-text)', fontSize: '0.8rem' }}>{displayStats.method?.toUpperCase()}</div>
                 <div className="lbl">Method</div>
               </div>
-              {result.chip && result.chip !== 'none' && (
+              {displayStats.chip && displayStats.chip !== 'none' && (
                 <div className="item" style={{ gridColumn: '1 / -1', marginTop: '4px' }}>
                   <div className="val" style={{ color: '#facc15', fontSize: '0.8rem', fontWeight: 700 }}>
-                    {result.chip === '12th_man' ? '12th Man' : result.chip === 'max_captain' ? 'Max Captain' : result.chip === 'wildcard' ? 'Wildcard' : result.chip === 'qualification' ? 'Qualification' : result.chip}
+                    {displayStats.chip === '12th_man' ? '12th Man' : displayStats.chip === 'max_captain' ? 'Max Captain' : displayStats.chip === 'wildcard' ? 'Wildcard' : displayStats.chip === 'qualification' ? 'Qualification' : displayStats.chip}
                   </div>
                   <div className="lbl">Booster Active</div>
                 </div>

@@ -291,7 +291,7 @@ function PitchPlayer({ player: p, isCaptain, isViceCaptain, isSubSource, onClick
 // ══════════════════════════════════════════════
 // MAIN: SquadPlannerTab
 // ══════════════════════════════════════════════
-export default function SquadPlannerTab({ players, myTeamIds, setMyTeam, optimResult, setOptimResult }) {
+export default function SquadPlannerTab({ players, myTeamIds, setMyTeam, optimResult, setOptimResult, onXPtsChange }) {
   const [playerSelectModalOpen, setPlayerSelectModalOpen] = useState(false);
   const [actionModalOpen, setActionModalOpen] = useState(false);
   
@@ -401,6 +401,12 @@ export default function SquadPlannerTab({ players, myTeamIds, setMyTeam, optimRe
   const captainBonus = captain?.projected_pts || 0;
   const totalXPts = isOptimMode ? optimResult.total_projected_pts : xiTotalPts + captainBonus;
 
+  useEffect(() => {
+    if (!isOptimMode && onXPtsChange) {
+      onXPtsChange(totalXPts);
+    }
+  }, [totalXPts, isOptimMode, onXPtsChange]);
+
   // Transfer penalty calculation
   const transferPenalty = useMemo(() => {
     if (freeTransfers === 'unlimited') return 0;
@@ -493,6 +499,20 @@ export default function SquadPlannerTab({ players, myTeamIds, setMyTeam, optimRe
   const handleSelectPlayer = (newPlayer) => {
     let newIds = [...myTeamIds];
     
+    // Budget Validation
+    if (playerToAction && !isOptimMode) {
+      const currentTeamPlayers = newIds.map(id => players.find(p => p.id === id)).filter(Boolean);
+      const currentCost = currentTeamPlayers.reduce((sum, p) => sum + p.price, 0);
+      const oldPrice = playerToAction.isPlaceholder ? 0 : (playerToAction.price || 0);
+      const priceDiff = newPlayer.price - oldPrice;
+      const maxBudget = stage.startsWith('GROUP') ? 100.0 : 105.0;
+      
+      if (currentCost + priceDiff > maxBudget) {
+        alert(`Insufficient budget! Max budget is $${maxBudget}m. You need $${(currentCost + priceDiff - maxBudget).toFixed(1)}m more to transfer in ${newPlayer.display_name}.`);
+        return;
+      }
+    }
+
     // Validate country limit
     const maxPerCountry = TRANSFER_RULES[stage]?.maxCountry || 3;
     const currentCountryCount = newIds.reduce((count, id) => {
