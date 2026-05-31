@@ -138,7 +138,14 @@ function PlayerSelectModal({ isOpen, onClose, players, targetPos, onSelect, curr
           {filtered.map(p => (
             <div key={p.id} onClick={() => onSelect(p)} className="table-row-hover" style={{ display: 'flex', justifyContent: 'space-between', padding: '12px', background: 'var(--clr-bg-elevated)', borderRadius: '8px', cursor: 'pointer' }}>
               <div>
-                <strong style={{ display: 'block' }}>{p.display_name}</strong>
+                <strong style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
+                  {p.display_name}
+                  {p.injury_status === 'INJURED' || p.injury_status === 'SUSPENDED' ? (
+                    <span style={{ color: '#fff', background: 'var(--clr-danger)', borderRadius: '50%', width: '14px', height: '14px', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '10px', fontWeight: 'bold' }} title={p.injury_text || 'Injured'}>!</span>
+                  ) : p.injury_status === 'DOUBTFUL' ? (
+                    <span style={{ color: '#000', background: 'var(--clr-gold)', borderRadius: '50%', width: '14px', height: '14px', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '10px', fontWeight: 'bold' }} title={p.injury_text || 'Doubtful'}>?</span>
+                  ) : null}
+                </strong>
                 <span style={{ fontSize: '0.75rem', color: 'var(--clr-text-muted)' }}>{p.team_abbr} • {p.position}</span>
               </div>
               <div style={{ textAlign: 'right' }}>

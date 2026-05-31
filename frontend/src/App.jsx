@@ -492,7 +492,13 @@ function ProjectionsTab({ players, search, setSearch, posFilter, setPosFilter, s
               <tr key={p.id} style={{ borderTop: '1px solid rgba(255,255,255,0.05)' }}>
                 <td style={{ padding: '8px 12px', fontWeight: 600 }}>
                   <span style={{ marginRight: '8px' }}>{countryFlag(p.team_abbr)}</span>
-                  {p.display_name} <span style={{ color: 'var(--clr-text-muted)', fontSize: '0.7rem', fontWeight: 400 }}>{p.team_abbr}</span>
+                  {p.display_name}
+                  {p.injury_status === 'INJURED' || p.injury_status === 'SUSPENDED' ? (
+                    <span style={{ display: 'inline-flex', verticalAlign: 'middle', color: '#fff', background: 'var(--clr-danger)', borderRadius: '50%', width: '14px', height: '14px', alignItems: 'center', justifyContent: 'center', fontSize: '10px', fontWeight: 'bold', marginLeft: '6px' }} title={p.injury_text || 'Injured'}>!</span>
+                  ) : p.injury_status === 'DOUBTFUL' ? (
+                    <span style={{ display: 'inline-flex', verticalAlign: 'middle', color: '#000', background: 'var(--clr-gold)', borderRadius: '50%', width: '14px', height: '14px', alignItems: 'center', justifyContent: 'center', fontSize: '10px', fontWeight: 'bold', marginLeft: '6px' }} title={p.injury_text || 'Doubtful'}>?</span>
+                  ) : null}
+                  <span style={{ color: 'var(--clr-text-muted)', fontSize: '0.7rem', fontWeight: 400, marginLeft: '6px' }}>{p.team_abbr}</span>
                 </td>
                 <td style={{ padding: '8px 12px', textAlign: 'center' }}><span className={`pos-badge ${p.position?.toLowerCase()}`}>{p.position}</span></td>
                 <td style={{ padding: '8px 12px', textAlign: 'center' }}>${p.price?.toFixed(1)}m</td>

@@ -492,8 +492,23 @@ def calculate_xpts_from_db(player_id: int, position: str, price: float,
         if club_p < 0.1: fitness_penalty = 0.7   # <9 mins/match -> severe penalty
         elif club_p < 0.3: fitness_penalty = 0.9 # <27 mins/match -> minor penalty
 
-        p_start = min(0.98, max(0.05, p_base * fitness_penalty))
-        p_60_plus = min(0.95, p_start * (1.05 if position in ("GK", "DEF") else 0.85))
+        # Fetch injury status to apply heavy penalty
+        injury_status = "OK"
+        if conn:
+            player_row = conn.execute("SELECT injury_status FROM players WHERE id = ?", (player_id,)).fetchone()
+            if player_row:
+                injury_status = player_row[0]
+
+        if injury_status in ("INJURED", "SUSPENDED"):
+            p_start = 0.0
+            p_60_plus = 0.0
+        else:
+            p_start = min(0.98, max(0.05, p_base * fitness_penalty))
+            p_60_plus = min(0.95, p_start * (1.05 if position in ("GK", "DEF") else 0.85))
+
+            if injury_status == "DOUBTFUL":
+                p_start *= 0.25
+                p_60_plus *= 0.25
 
         # Build per-match stats from per-90 data
         xg_per90 = xstats.get("xG_per90", 0) or 0
