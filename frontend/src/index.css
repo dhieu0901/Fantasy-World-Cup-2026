@@ -303,8 +303,8 @@ h1, h2, h3, h4 {
   justify-content: center;
   border: 1px solid #fff;
 }
-.pitch-badge.captain { top: -2px; right: -2px; background: var(--clr-primary); }
-.pitch-badge.vice { top: -2px; right: -2px; background: var(--clr-text-muted); }
+.pitch-badge.captain { top: -2px; right: -2px; background: #000; color: #fff; border: 1px solid #fff; }
+.pitch-badge.vice { top: -2px; right: -2px; background: #fff; color: #000; border: 1px solid #000; }
 .pitch-badge.injury { top: -2px; left: -2px; background: var(--clr-danger); }
 
 /* Classic Two-Tone Nameplate */

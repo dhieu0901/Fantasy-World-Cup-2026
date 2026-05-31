@@ -71,6 +71,10 @@ function isValidFormation(xi) {
 }
 
 function padSquad(xi, bench, teamPlayers) {
+  if (teamPlayers.length === 0) {
+    return { xi: [], bench: [] };
+  }
+
   let gks = teamPlayers.filter(p => p.position === 'GK').length;
   let defs = teamPlayers.filter(p => p.position === 'DEF').length;
   let mids = teamPlayers.filter(p => p.position === 'MID').length;
@@ -220,7 +224,7 @@ function PitchPlayer({ player: p, isCaptain, isViceCaptain, isSubSource, onClick
           <span style={{ fontSize: '1.2rem', lineHeight: '40px', color: 'rgba(255,255,255,0.5)' }}>+</span>
         </div>
         <div className="pitch-player-info">
-          <div className="pitch-nameplate" style={{ background: 'var(--clr-text-dim)', color: '#fff' }}>Add {p.position}</div>
+          <div className="pitch-nameplate" style={{ background: 'var(--clr-text-dim)', color: '#fff' }}>Add</div>
         </div>
       </div>
     );
@@ -268,11 +272,6 @@ function PitchPlayer({ player: p, isCaptain, isViceCaptain, isSubSource, onClick
         }}>
           {lastName}
         </div>
-          {p.next_opponent && (
-            <div className={`fdr-block fdr-${p.next_match_fdr || 3}`}>
-              {p.next_opponent}
-            </div>
-          )}
         <div className={`pitch-pts ${isCaptain ? 'is-captain' : ''}`} style={is12thMan ? { color: '#a78bfa' } : {}}>
           {displayValue}
           {is12thMan && <span style={{ fontSize: '0.55rem', display: 'block', marginTop: '1px' }}>12th</span>}
