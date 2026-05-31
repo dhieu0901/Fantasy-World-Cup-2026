@@ -291,21 +291,20 @@ h1, h2, h3, h4 {
 
 .pitch-badge {
   position: absolute;
-  background: var(--clr-primary);
-  color: #fff;
-  font-weight: 800;
-  font-size: 0.65rem;
-  width: 16px;
-  height: 16px;
+  z-index: 5;
+  width: 14px;
+  height: 14px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid #fff;
+  font-weight: 800;
+  font-size: 0.65rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.5);
 }
-.pitch-badge.captain { top: -2px; right: -2px; background: #000; color: #fff; border: 1px solid #fff; }
-.pitch-badge.vice { top: -2px; right: -2px; background: #fff; color: #000; border: 1px solid #000; }
-.pitch-badge.injury { top: -2px; left: -2px; background: var(--clr-danger); }
+.pitch-badge.captain { top: -4px; right: -4px; background: #000; color: #fff; border: 1px solid #fff; }
+.pitch-badge.vice { top: -4px; right: -4px; background: #fff; color: #000; border: 1px solid #000; }
+.pitch-badge.injury { top: -4px; left: -4px; background: var(--clr-danger); color: #fff; border: 1px solid #fff; }
 
 /* Classic Two-Tone Nameplate */
 .pitch-player-info {
