@@ -523,11 +523,11 @@ def optimize_lp(players: list[dict], stage: str = "GROUP_MD1",
     prob += pulp.lpSum(xi_vars[p["id"]] for p in fwd_players) <= 3, "Xi_FWD_Max"
     prob += pulp.lpSum(xi_vars[p["id"]] for p in def_players) + pulp.lpSum(xi_vars[p["id"]] for p in fwd_players) <= 7, "Max_Def_Fwd_Sum"
 
-    # Constraint 3c: Visual Quality / Trust constraint (Don't start budget forwards)
-    # Budget forwards (< $6.0m) are often bench fodders. Users lose trust if the optimizer 
-    # starts a $4.5m forward just to stack premium midfielders.
+    # Constraint 3c: Visual Quality / Trust constraint (Don't start bench forwards)
+    # Forwards under $6.0m OR under $7.0m with <2% ownership are almost always bench fodders. 
+    # Users lose trust if the optimizer starts them just to stack premium midfielders.
     for p in fwd_players:
-        if p["price"] < 6.0 and p["id"] not in locked_in:
+        if (p["price"] < 6.0 or (p["price"] < 7.0 and p.get("percent_selected", 100) < 2.0)) and p["id"] not in locked_in:
             prob += xi_vars[p["id"]] == 0, f"NoBudgetFwdStarter_{p['id']}"
 
     # Constraint 4: Max per country
