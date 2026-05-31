@@ -135,6 +135,10 @@ export default function App() {
   const [optimStage, setOptimStage] = useState('GROUP_MD1');
   const [bannedCombos, setBannedCombos] = useState([]);
 
+  // Suggest Alternatives (Partial) Modal
+  const [suggestModalOpen, setSuggestModalOpen] = useState(false);
+  const [suggestSelectedIds, setSuggestSelectedIds] = useState([]);
+
   // Reset banned combos when configuration changes
   useEffect(() => {
     setBannedCombos([]);
@@ -167,7 +171,7 @@ export default function App() {
     }
   }, [optimResult, runOptimize]);
 
-  const runSuggestPlayerAlternative = useCallback(async (playerIdToReplace) => {
+  const runPartialSuggest = useCallback(async (playerIdsToReplace) => {
     setOptimizing(true);
     try {
       const payload = { preset, stage: optimStage, chip };
@@ -175,8 +179,8 @@ export default function App() {
         payload.current_squad = myTeam;
         payload.free_transfers = freeTransfers;
       }
-      payload.locked_in = myTeam.filter(id => id !== playerIdToReplace);
-      payload.locked_out = [playerIdToReplace];
+      payload.locked_in = myTeam.filter(id => !playerIdsToReplace.includes(id));
+      payload.locked_out = playerIdsToReplace;
       
       const result = await api.optimize(payload);
       setOptimResult(result);
@@ -382,7 +386,6 @@ export default function App() {
                   setMyTeam={setMyTeam}
                   optimResult={optimResult}
                   setOptimResult={setOptimResult}
-                  onSuggestPlayerAlternative={runSuggestPlayerAlternative}
                 />
               </div>
               <div style={{ display: tab === 'fixtures' ? 'block' : 'none' }}>
@@ -425,9 +428,68 @@ export default function App() {
             myTeam={myTeam} freeTransfers={freeTransfers} setFreeTransfers={setFreeTransfers}
             optimizing={optimizing} runOptimize={runOptimize} runSuggestAlternatives={runSuggestAlternatives}
             result={optimResult}
+            setSuggestModalOpen={setSuggestModalOpen}
           />
         </aside>
       </div>
+
+      {/* Suggest Alternatives Modal */}
+      {suggestModalOpen && (
+        <div className="action-modal-overlay" onClick={() => setSuggestModalOpen(false)}>
+          <div className="action-modal-card" onClick={e => e.stopPropagation()} style={{ maxWidth: '400px', width: '90%' }}>
+            <h3 style={{ marginTop: 0, marginBottom: '8px' }}>Suggest Alternatives</h3>
+            <p style={{ fontSize: '0.85rem', color: 'var(--clr-text-muted)', marginBottom: '16px' }}>
+              Select the players you want to <strong>REPLACE</strong>. The optimizer will keep the unselected players and find the best replacements for the selected ones.
+            </p>
+            
+            <div style={{ maxHeight: '300px', overflowY: 'auto', marginBottom: '16px', border: '1px solid var(--clr-border)', borderRadius: '8px', padding: '8px', display: 'flex', flexDirection: 'column', gap: '4px' }}>
+              {myTeam.map(id => {
+                const p = players.find(x => x.id === id);
+                if (!p) return null;
+                const isSelected = suggestSelectedIds.includes(id);
+                return (
+                  <div key={id} 
+                    onClick={() => {
+                      if (isSelected) setSuggestSelectedIds(prev => prev.filter(x => x !== id));
+                      else setSuggestSelectedIds(prev => [...prev, id]);
+                    }}
+                    style={{
+                      display: 'flex', alignItems: 'center', gap: '12px', padding: '8px', cursor: 'pointer',
+                      background: isSelected ? 'rgba(239, 68, 68, 0.1)' : 'transparent',
+                      borderRadius: '6px',
+                      border: isSelected ? '1px solid rgba(239, 68, 68, 0.3)' : '1px solid transparent',
+                      transition: 'all 0.2s'
+                    }}
+                  >
+                    <input type="checkbox" checked={isSelected} readOnly style={{ cursor: 'pointer', accentColor: 'var(--clr-danger)' }} />
+                    <div>
+                      <div style={{ fontWeight: '600', fontSize: '0.9rem' }}>{p.display_name}</div>
+                      <div style={{ fontSize: '0.75rem', color: 'var(--clr-text-muted)' }}>{p.position} A· ${p.price}m A· {p.team_abbr}</div>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+
+            <div style={{ display: 'flex', justifyContent: 'flex-end', gap: '8px' }}>
+              <button className="action-modal-btn" onClick={() => { setSuggestModalOpen(false); setSuggestSelectedIds([]); }} style={{ background: 'var(--clr-bg-elevated)', border: '1px solid var(--clr-border)' }}>Cancel</button>
+              <button className="action-modal-btn" 
+                onClick={() => {
+                  if (suggestSelectedIds.length === 0) return alert('Select at least 1 player to replace');
+                  if (suggestSelectedIds.length === 15) return alert('Cannot replace all 15 players. Use Optimize Squad instead.');
+                  runPartialSuggest(suggestSelectedIds);
+                  setSuggestModalOpen(false);
+                  setSuggestSelectedIds([]);
+                }}
+                disabled={suggestSelectedIds.length === 0 || suggestSelectedIds.length === 15 || optimizing}
+                style={{ background: 'var(--clr-primary)', color: 'white', border: 'none', opacity: (suggestSelectedIds.length === 0 || suggestSelectedIds.length === 15 || optimizing) ? 0.5 : 1 }}>
+                {optimizing ? 'Suggesting...' : `Suggest (${suggestSelectedIds.length})`}
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
     </div>
   );
 }
@@ -676,7 +738,7 @@ function FixturesTab({ squads, fixtures, setSelectedTeamFilter, setTab }) {
 /* ═══════════════════════════════════════════
    OPTIMIZER PANEL (Sidebar)
    ═══════════════════════════════════════════ */
-function OptimizerPanel({ preset, setPreset, stage, setStage, chip, setChip, transferMode, setTransferMode, myTeam, freeTransfers, setFreeTransfers, optimizing, runOptimize, runSuggestAlternatives, result }) {
+function OptimizerPanel({ preset, setPreset, stage, setStage, chip, setChip, transferMode, setTransferMode, myTeam, freeTransfers, setFreeTransfers, optimizing, runOptimize, runSuggestAlternatives, result, setSuggestModalOpen }) {
   const presets = [
     { id: 'default', label: 'Balanced', desc: 'Max total xPts, prioritize highest points' },
     { id: 'risky', label: 'Differential', desc: 'Target low ownership hidden gems for upside' },
@@ -789,6 +851,22 @@ function OptimizerPanel({ preset, setPreset, stage, setStage, chip, setChip, tra
                 <><Icon.Zap /> Optimize Squad</>
               )}
             </button>
+            
+            {!result && myTeam.length === 15 && (
+              <button 
+                className="optimize-btn" 
+                onClick={() => setSuggestModalOpen(true)}
+                disabled={optimizing}
+                style={{
+                  background: 'var(--clr-bg-card)',
+                  color: 'var(--clr-text)',
+                  border: '1px solid var(--clr-border)',
+                }}
+              >
+                <Icon.RefreshCw size={14} /> Suggest Alternatives (Partial)
+              </button>
+            )}
+            
             {result && (
               <button 
                 onClick={runSuggestAlternatives} 
@@ -807,7 +885,7 @@ function OptimizerPanel({ preset, setPreset, stage, setStage, chip, setChip, tra
                   fontWeight: '600'
                 }}
               >
-                <Icon.RefreshCw size={16} /> Suggest Alternative
+                <Icon.RefreshCw size={16} /> Suggest Alternative (Whole Team)
               </button>
             )}
           </div>

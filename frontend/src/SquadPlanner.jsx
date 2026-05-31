@@ -164,7 +164,7 @@ function PlayerSelectModal({ isOpen, onClose, players, targetPos, onSelect, curr
 // ══════════════════════════════════════════════
 // Action Menu Modal (with Captain option)
 // ══════════════════════════════════════════════
-function ActionMenuModal({ player, isOpen, onClose, onTransfer, onSub, onSetCaptain, onSetViceCaptain, isInXI, onSuggestAlternative }) {
+function ActionMenuModal({ player, isOpen, onClose, onTransfer, onSub, onSetCaptain, onSetViceCaptain, isInXI }) {
   if (!isOpen || !player) return null;
   return (
     <div className="action-modal-overlay">
@@ -172,7 +172,6 @@ function ActionMenuModal({ player, isOpen, onClose, onTransfer, onSub, onSetCapt
         <h3 style={{ marginTop: 0, marginBottom: '4px' }}>{player.display_name}</h3>
         <p style={{ color: 'var(--clr-text-muted)', fontSize: '0.85rem', marginBottom: '20px' }}>What would you like to do?</p>
         <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
-          {/* Set Captain - only for XI players */}
           {isInXI && onSetCaptain && (
             <button className="action-modal-btn action-btn-cap" onClick={() => { onSetCaptain(player); onClose(); }}>
               Set Captain
@@ -189,18 +188,6 @@ function ActionMenuModal({ player, isOpen, onClose, onTransfer, onSub, onSetCapt
           <button className="action-modal-btn action-btn-trans" onClick={() => { onTransfer(player); onClose(); }}>
             Transfer Out
           </button>
-          {onSuggestAlternative && (
-            <button 
-              className="action-modal-btn" 
-              style={{
-                background: 'rgba(255,255,255,0.1)',
-                border: '1px solid rgba(255,255,255,0.2)',
-              }}
-              onClick={() => { onSuggestAlternative(player.id); onClose(); }}
-            >
-              Suggest Alternative
-            </button>
-          )}
           <button className="action-modal-btn" onClick={onClose}>
             Cancel
           </button>
@@ -304,7 +291,7 @@ function PitchPlayer({ player: p, isCaptain, isViceCaptain, isSubSource, onClick
 // ══════════════════════════════════════════════
 // MAIN: SquadPlannerTab
 // ══════════════════════════════════════════════
-export default function SquadPlannerTab({ players, myTeamIds, setMyTeam, optimResult, setOptimResult, onSuggestPlayerAlternative }) {
+export default function SquadPlannerTab({ players, myTeamIds, setMyTeam, optimResult, setOptimResult }) {
   const [playerSelectModalOpen, setPlayerSelectModalOpen] = useState(false);
   const [actionModalOpen, setActionModalOpen] = useState(false);
   
@@ -821,7 +808,6 @@ export default function SquadPlannerTab({ players, myTeamIds, setMyTeam, optimRe
         onSetCaptain={handleSetCaptain}
         onSetViceCaptain={handleSetViceCaptain}
         isInXI={playerToAction ? isPlayerInXI(playerToAction.id) : false}
-        onSuggestAlternative={onSuggestPlayerAlternative}
       />
 
       <PlayerSelectModal 
