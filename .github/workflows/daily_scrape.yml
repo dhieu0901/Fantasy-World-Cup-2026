@@ -46,5 +46,8 @@ jobs:
           # Commit if there are changes, otherwise exit gracefully
           git diff-index --quiet HEAD || git commit -m "chore: auto-update injuries and stats from FotMob"
           
+          # Pull latest changes from remote to avoid push conflicts
+          git pull --rebase origin main
+          
           # Push the changes
           git push
