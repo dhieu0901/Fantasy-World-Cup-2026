@@ -258,15 +258,12 @@ async def fetch_player_stats(client: FotMobClient, fotmob_id: int) -> dict | Non
 
     # Parse stats  FotMob uses a nested structure:
     # stats > [{title: "Goals", items: [{title: "Goals", stat: {value: 5}}]}]
-    stats = main_tournament.get("stats", [])
-    if not stats:
-        # Try alternative path
-        stats = data.get("stats", [])
+    stats = main_tournament.get("stats") or data.get("stats") or []
 
     flat_stats = {}
     for category in stats:
         if isinstance(category, dict):
-            items = category.get("items", category.get("stats", []))
+            items = category.get("items") or category.get("stats") or []
             for item in items:
                 if isinstance(item, dict):
                     title = item.get("title", item.get("key", "")).lower().replace(" ", "_")
@@ -311,18 +308,28 @@ async def fetch_player_stats(client: FotMobClient, fotmob_id: int) -> dict | Non
                 break
 
     # Calculate per-90 stats if we have minutes
-    minutes = result.get("minutes_played", 0) or 0
+    try:
+        minutes = float(result.get("minutes_played", 0) or 0)
+    except ValueError:
+        minutes = 0.0
+
     if minutes > 0:
-        nineties = minutes / 90
+        nineties = minutes / 90.0
         if nineties > 0:
             for key in ["goals", "assists", "xG", "xA", "shots", "tackles",
                         "interceptions", "chances_created", "saves"]:
-                val = result.get(key, 0) or 0
+                try:
+                    val = float(result.get(key, 0) or 0)
+                except ValueError:
+                    val = 0.0
                 if val > 0:
                     result[f"{key}_per90"] = round(val / nineties, 2)
 
             # Yellow card rate
-            yellows = result.get("yellow_cards", 0) or 0
+            try:
+                yellows = float(result.get("yellow_cards", 0) or 0)
+            except ValueError:
+                yellows = 0.0
             if yellows > 0:
                 result["yellow_per90"] = round(yellows / nineties, 3)
 
