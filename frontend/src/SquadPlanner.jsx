@@ -142,7 +142,7 @@ function PlayerSelectModal({ isOpen, onClose, players, targetPos, onSelect, curr
       <div style={{ background: 'var(--clr-bg-card)', padding: '20px', borderRadius: '12px', width: '90%', maxWidth: '500px', maxHeight: '80vh', overflowY: 'auto', border: '1px solid var(--clr-border)' }}>
         <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '16px' }}>
           <h3 style={{ margin: 0 }}>Select {targetPos !== 'ANY' ? targetPos : 'Player'}</h3>
-          <button onClick={onClose} style={{ background: 'transparent', border: 'none', color: 'white', cursor: 'pointer' }}>Close</button>
+          <button onClick={onClose} style={{ background: 'transparent', border: '1px solid var(--clr-border)', color: 'var(--clr-text-muted)', padding: '4px 10px', borderRadius: '4px', cursor: 'pointer', fontSize: '0.8rem', fontWeight: 600 }}>Close</button>
         </div>
         <input 
           type="text" 

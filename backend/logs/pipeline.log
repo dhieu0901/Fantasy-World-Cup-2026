@@ -201,3 +201,73 @@ Emiliano Martínez Argentina       GK    5.0          22.2
 ========================================================
 
 ^C
+========================================================
+   WC2026 Fantasy Pipeline  2026-06-01 11:33:11
+========================================================
+
+ Fetching FIFA Fantasy data...
+   squads: 48 records
+   players: 1454 records
+   rounds: 8 records
+   squads_fifa: 32 records
+
+ Syncing squads...
+   48 squads synced
+   32 FIFA squad records available for enrichment
+
+ Syncing rounds & fixtures...
+   8 rounds, 72 fixtures synced
+
+ Syncing players...
+
+   Added: 0 | Updated: 1454 | Deactivated: 0 | Price changes: 0
+
+ Syncing round points...
+   0 player-round records synced
+
+ Exporting CSV...
+   Price history  D:\code\fantasy wc\backend\exports\wc2026_price_history.csv (1454 records)
+
+--------------------------------------------------
+ Database Summary (1454 active players)
+--------------------------------------------------
+   GK: 174
+   DEF: 471
+   MID: 504
+   FWD: 305
+   Teams: 48
+   Price range: $3.5m  $10.5m
+   Avg price: $4.8m
+
+    Top 10 by Fantasy Points:
+             name      team position  price  total_points  pct_selected
+       Harry Kane   England      FWD   10.5           0.0          38.7
+    Kylian Mbappé    France      FWD   10.5           0.0          50.6
+   Erling Haaland    Norway      FWD   10.5           0.0          32.9
+     Lionel Messi Argentina      FWD   10.0           0.0          19.4
+  Vinícius Júnior    Brazil      MID   10.0           0.0          13.5
+  Ousmane Dembélé    France      MID   10.0           0.0          20.9
+     Lamine Yamal     Spain      MID   10.0           0.0          43.1
+Cristiano Ronaldo  Portugal      FWD   10.0           0.0          14.1
+    Mohamed Salah     Egypt      MID   10.0           0.0           7.2
+      Bukayo Saka   England      MID    9.5           0.0           6.8
+
+    Most Selected:
+             name      team position  price  pct_selected
+    Kylian Mbappé    France      FWD   10.5          50.6
+  Bruno Fernandes  Portugal      MID    8.5          49.1
+      Nuno Mendes  Portugal      DEF    5.8          43.9
+     Lamine Yamal     Spain      MID   10.0          43.1
+       Harry Kane   England      FWD   10.5          38.7
+   Erling Haaland    Norway      FWD   10.5          32.9
+Gabriel Magalhães    Brazil      DEF    5.5          27.0
+   Joshua Kimmich   Germany      DEF    5.5          26.1
+    Michael Olise    France      MID    9.5          24.9
+Emiliano Martínez Argentina       GK    5.0          22.4
+
+   Full export  D:\code\fantasy wc\backend\exports\wc2026_players.csv
+
+========================================================
+   Pipeline complete in 2519ms
+========================================================
+
