@@ -492,12 +492,14 @@ def calculate_xpts_from_db(player_id: int, position: str, price: float,
         if club_p < 0.1: fitness_penalty = 0.7   # <9 mins/match -> severe penalty
         elif club_p < 0.3: fitness_penalty = 0.9 # <27 mins/match -> minor penalty
 
-        # Fetch injury status to apply heavy penalty
+        # Fetch injury status and raw_position to apply heavy penalty and determine scoring share
         injury_status = "OK"
+        raw_position = position
         if conn:
-            player_row = conn.execute("SELECT injury_status FROM players WHERE id = ?", (player_id,)).fetchone()
+            player_row = conn.execute("SELECT injury_status, raw_position FROM players WHERE id = ?", (player_id,)).fetchone()
             if player_row:
                 injury_status = player_row[0]
+                raw_position = player_row[1] or position
 
         if injury_status in ("INJURED", "SUSPENDED"):
             p_start = 0.0
@@ -520,11 +522,40 @@ def calculate_xpts_from_db(player_id: int, position: str, price: float,
         if xa_per90 == 0 and (xstats.get("assists", 0) or 0) > 0:
             xa_per90 = (xstats["assists"] / nineties) * 0.85
 
+        # Team Scoring Share (Blend approach)
+        team_xg = _estimate_xgc(opponent_strength, team_strength)
+        
+        raw_pos_lower = raw_position.lower() if raw_position else ""
+        if "striker" in raw_pos_lower or "centre-forward" in raw_pos_lower:
+            share = 0.35
+        elif "winger" in raw_pos_lower or "attacking midfield" in raw_pos_lower or "second striker" in raw_pos_lower:
+            share = 0.18
+        elif "central midfield" in raw_pos_lower or "defensive midfield" in raw_pos_lower:
+            share = 0.08
+        elif position == "FWD":
+            share = 0.30
+        elif position == "MID":
+            share = 0.12
+        elif position == "DEF":
+            share = 0.05
+        else:
+            share = 0.0
+
+        alpha = 0.4  # Trust club stats 40%, team context 60%
+        
+        xG_club = xg_per90 * opp_factor
+        xG_international = team_xg * share
+        xG_final = (alpha * xG_club) + ((1 - alpha) * xG_international) if xG_club > 0 else 0.0
+
+        xA_club = xa_per90 * opp_factor
+        xA_international = team_xg * share * 0.8  # Assists typically lower than goals
+        xA_final = (alpha * xA_club) + ((1 - alpha) * xA_international) if xA_club > 0 else 0.0
+
         player_stats = {
             "p_start": p_start,
             "p_60_plus": p_60_plus,
-            "xG": xg_per90 * opp_factor,
-            "xA": xa_per90 * opp_factor,
+            "xG": xG_final,
+            "xA": xA_final,
             "xCS": _estimate_xcs(team_strength, opponent_strength),
             "xGC": _estimate_xgc(team_strength, opponent_strength),
             "xSaves": (xstats.get("saves_per90", 0) or 0) * opp_factor,

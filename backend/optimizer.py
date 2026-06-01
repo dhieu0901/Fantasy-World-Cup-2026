@@ -182,6 +182,22 @@ def get_player_xpts_horizon(player: dict, conn: sqlite3.Connection, current_roun
 # GREEDY OPTIMIZER (fallback when PuLP unavailable)
 # 
 
+def estimate_variance(player: dict) -> float:
+    """Estimate individual player variance based on position, ownership, and price."""
+    position_variance = {'GK': 1.8, 'DEF': 1.5, 'MID': 1.2, 'FWD': 2.1}
+    base_var = position_variance.get(player.get('position', 'MID'), 1.2)
+    
+    # Low ownership = high variance (unpredictable)
+    pct = player.get('percent_selected', 50.0)
+    ownership_var = max(0.0, (10.0 - pct) / 10.0)
+    
+    # High price = lower variance (reliable starter)
+    price = player.get('price', 4.0)
+    price_var = max(0.0, (8.0 - price) / 8.0)
+    
+    return base_var * (1.0 + 0.3 * ownership_var + 0.2 * price_var)
+
+
 def optimize_greedy(players: list[dict], stage: str = "GROUP_MD1", preset: str = "default", chip: str = "none", locked_in: list[int] = None, locked_out: list[int] = None) -> dict:
     """
     Fallback greedy optimizer if PuLP is not available or fails.
@@ -212,16 +228,20 @@ def optimize_greedy(players: list[dict], stage: str = "GROUP_MD1", preset: str =
         price = p.get("price", 4.0)
         pct = p.get("percent_selected", 50)
 
+        variance = estimate_variance(p)
+
         # Qualification booster EV for Greedy
         if chip == "qualification" and stage not in ("GROUP_MD1", "GROUP_MD2", "GROUP_MD3"):
             team_str = get_team_strength(p.get("team_abbr", ""))
             xpts += team_str * 2.0  # +2 pts scaled by probability of advancing
 
         if preset == "risky":
-            p["_score"] = xpts * (1 + (100 - pct) / 200)
+            p["_score"] = xpts + 0.3 * variance
             # Hidden Gem Boost: Massively boost cheap differentials in Risky preset
             if pct < 3.0 and price <= 6.0:
                 p["_score"] += 3.0
+        elif preset == "safe":
+            p["_score"] = xpts - 0.3 * variance
         else:
             p["_score"] = xpts
 
@@ -354,19 +374,24 @@ def optimize_lp(players: list[dict], stage: str = "GROUP_MD1",
         price = p.get("price", 4.0)
         pct = p.get("percent_selected", 50)
 
+        variance = estimate_variance(p)
+
         # Qualification booster: +2 pts scaled by probability of advancing
         if chip == "qualification" and stage not in ("GROUP_MD1", "GROUP_MD2", "GROUP_MD3"):
             team_str = get_team_strength(p.get("team_abbr", ""))
             xpts_current += team_str * 2.0
 
         if preset == "risky":
-            # Additive bonus for differentials + explicitly penalize high ownership (negative rank bonus)
-            obj_current = xpts_current + ((100.0 - pct) / 30.0) - ((pct / 100.0) * 0.3)
-            obj_future = xpts_future + ((100.0 - pct) / 30.0) - ((pct / 100.0) * 0.3) if xpts_future > 0 else 0.0
+            obj_current = xpts_current + 0.3 * variance
+            obj_future = xpts_future + 0.3 * variance if xpts_future > 0 else 0.0
             # Hidden Gem Boost: Massively boost cheap differentials in Risky preset
             if pct < 3.0 and price <= 6.0:
                 obj_current += 3.0
                 if xpts_future > 0: obj_future += 3.0
+        elif preset == "safe":
+            # Safe preset reduces variance but still applies rank protection
+            obj_current = xpts_current - 0.3 * variance + (pct / 100.0) * 0.5
+            obj_future = xpts_future - 0.3 * variance + (pct / 100.0) * 0.5 if xpts_future > 0 else 0.0
         else:
             # Rank Protection (Default/Balanced)
             # Max +0.5 objective bonus for 100% ownership.
