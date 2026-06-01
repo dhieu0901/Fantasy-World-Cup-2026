@@ -182,7 +182,7 @@ function PlayerSelectModal({ isOpen, onClose, players, targetPos, onSelect, curr
 // ══════════════════════════════════════════════
 // Action Menu Modal (with Captain option)
 // ══════════════════════════════════════════════
-function ActionMenuModal({ player, isOpen, onClose, onTransfer, onSub, onSetCaptain, onSetViceCaptain, isInXI }) {
+function ActionMenuModal({ player, isOpen, onClose, onTransfer, onRemove, onSub, onSetCaptain, onSetViceCaptain, isInXI }) {
   if (!isOpen || !player) return null;
   return (
     <div className="action-modal-overlay">
@@ -204,7 +204,10 @@ function ActionMenuModal({ player, isOpen, onClose, onTransfer, onSub, onSetCapt
             Substitute
           </button>
           <button className="action-modal-btn action-btn-trans" onClick={() => { onTransfer(player); onClose(); }}>
-            Transfer Out
+            Replace (Transfer Out)
+          </button>
+          <button className="action-modal-btn" style={{ color: '#fca5a5', border: '1px solid rgba(239, 68, 68, 0.3)' }} onClick={() => { onRemove(player); onClose(); }}>
+            Remove Player
           </button>
           <button className="action-modal-btn" onClick={onClose}>
             Cancel
@@ -502,6 +505,15 @@ export default function SquadPlannerTab({ players, myTeamIds, setMyTeam, optimRe
   const handleSetViceCaptain = (player) => {
     if (player.id === manualCaptainId) setManualCaptainId(null);
     setManualViceCaptainId(player.id);
+  };
+
+  const handleRemovePlayer = (player) => {
+    const newIds = myTeamIds.filter(id => id !== player.id);
+    if (player.id === manualCaptainId) setManualCaptainId(null);
+    if (player.id === manualViceCaptainId) setManualViceCaptainId(null);
+    setMyTeam(newIds);
+    setPlayerSelectModalOpen(false);
+    setPlayerToAction(null);
   };
 
   const handleSelectPlayer = (newPlayer) => {
@@ -832,6 +844,7 @@ export default function SquadPlannerTab({ players, myTeamIds, setMyTeam, optimRe
         player={playerToAction}
         onClose={() => setActionModalOpen(false)}
         onTransfer={handleTransferClick}
+        onRemove={handleRemovePlayer}
         onSub={handleSubClick}
         onSetCaptain={handleSetCaptain}
         onSetViceCaptain={handleSetViceCaptain}
