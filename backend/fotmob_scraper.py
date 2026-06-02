@@ -107,6 +107,7 @@ class FotMobClient:
 
     def _save_cache(self, url: str, data: dict):
         """Save response to disk cache."""
+        CACHE_DIR.mkdir(parents=True, exist_ok=True)
         path = self._cache_key(url)
         path.write_text(json.dumps(data, ensure_ascii=False), encoding="utf-8")
 

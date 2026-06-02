@@ -43,7 +43,7 @@ jobs:
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
           
           # Only add the database file
-          git add backend/wc2026.db
+          git add -f backend/wc2026.db
           
           # Commit if there are changes, otherwise exit gracefully
           git diff-index --quiet HEAD || git commit -m "chore: auto-update injuries and stats from FotMob"
